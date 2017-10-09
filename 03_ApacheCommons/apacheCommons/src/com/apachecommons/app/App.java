@@ -18,8 +18,8 @@ public class App {
     public static void main(String[] args) throws Exception {
 //        acLang.testStringUtils();
 //        acBeanUtils.testPropertyUtils();
-        acCodec.testBase64();
-//        jLang.testString();
+//        acCodec.testBase64();
+        jLang.testString();
     }
 
 }
