@@ -4,6 +4,12 @@ import java.util.HashMap;
 
 import org.apache.commons.chain.impl.ContextBase;
 
+/**
+ * 责任链上下文
+ * 
+ * @author liuxl
+ * 2017-10-11 下午6:29:25
+ */
 public class StoryContext extends ContextBase {
 
     private static final long serialVersionUID = 1L;
