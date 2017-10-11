@@ -11,9 +11,6 @@ import com.commons.consts.Consts2;
 public class ACCodec {
 
     private static Logger logger = Logger.getLogger(ACCodec.class);
-    {
-        logger.info("/*** 测试  Template ***/\n");
-    }
 
     public void testBase64() throws Exception {
         
@@ -26,6 +23,8 @@ public class ACCodec {
         
         File f = new File(outputPath);
         FileUtils.writeByteArrayToFile(f, bytes);
+        
+        logger.info("test");
     }
 
 }

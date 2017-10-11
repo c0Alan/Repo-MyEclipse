@@ -11,8 +11,8 @@ import org.apache.log4j.Logger;
 public class ACChain {
     
     private static Logger logger = Logger.getLogger(ACChain.class);
-    {
-        logger.info("/*** 测试  Template ***/\n");
-    }
 
+    public void test(){
+        logger.info("test");
+    }
 }

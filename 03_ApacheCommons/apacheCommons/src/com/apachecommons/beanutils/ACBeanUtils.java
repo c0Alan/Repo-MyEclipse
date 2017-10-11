@@ -22,9 +22,6 @@ import com.commons.model.Student;
  */
 public class ACBeanUtils {
     private static Logger logger = Logger.getLogger(ACBeanUtils.class);
-    {
-        logger.info("/*** 测试  ACBeanUtils ***/\n");
-    }
     
     /**
      * 测试 PropertyUtils 类
@@ -72,6 +69,10 @@ public class ACBeanUtils {
         /** 同 copyProperties, populate: 对象属性的复制, 如果存在名称不相同的属性，则BeanUtils不对这些属性进行处理, 提供类型转换功能 */
         BeanUtils.populate(p, map2);
         
+    }
+    
+    public void test(){
+        logger.info("test");
     }
     
 }
