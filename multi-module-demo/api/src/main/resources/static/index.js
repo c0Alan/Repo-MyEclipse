@@ -18,10 +18,10 @@ var vm = new Vue({
             }
             this.$http.get("/user/getTableData", {params: params_}).then(function (response) {
                 console.log(response.data);
-                this.total = response.data.length;
+                this.total = response.data.count;
                 this.tableData = [];
-                for (var i = 0; i < response.data.length; i++) {
-                    this.$set(this.tableData, i, response.data[i]);
+                for (var i in response.data.list) {
+                    this.$set(this.tableData, i, response.data.list[i]);
                 }
 
             }).catch(function (response) {

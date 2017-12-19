@@ -7,7 +7,7 @@ spring:
         url: jdbc:mysql://192.168.12.57/DB_ATY
         username: root
         password: 6789@jkl
-        # Ê¹ÓÃdruidÊı¾İÔ´
+        # ä½¿ç”¨druidæ•°æ®æº
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
         filters: stat
@@ -27,7 +27,7 @@ spring:
 #  mapper-locations: classpath:mapping/**/*.xml
 #  type-aliases-package: com.model.redfox
 
-#pagehelper·ÖÒ³²å¼ş
+#pagehelperåˆ†é¡µæ’ä»¶
 pagehelper:
     helperDialect: mysql
     reasonable: true
