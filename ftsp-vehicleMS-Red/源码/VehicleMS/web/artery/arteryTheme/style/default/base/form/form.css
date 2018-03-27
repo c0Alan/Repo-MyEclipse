@@ -1,0 +1,110 @@
+/***************************************************************************************
+ * x-theme-form-funis
+ ***************************************************************************************/
+.x-theme-form-funis .x-panel-tc-funis {
+	background-image: url(images/funis/top.png);
+}
+
+.x-theme-form-funis .x-panel-tl-funis {
+	background-image: url(images/funis/left-top-corners.png);
+	border-bottom: 1px solid #B0BDDD;
+}
+.x-theme-form-funis .x-panel-header-funis{
+	padding-bottom: 0px;
+	border-bottom: 0px;
+}
+
+.x-theme-form-funis .x-panel-tr-funis {
+	background-image: url(images/funis/right-top-corners.png);
+}
+
+.x-theme-form-funis .x-panel-noHeader .x-panel-tc-funis {
+	height: 5px;
+	background-image: url(images/funis/noheader.png);
+	background-position: 0 -63px;
+}
+
+.x-theme-form-funis .x-panel-noHeader .x-panel-tl-funis {
+	background-image: url(images/funis/noheader.png);
+	border-bottom: 0px solid #B0BDDD;
+}
+.x-theme-form-funis .x-panel-noHeader .x-panel-tr-funis {
+	background-image: url(images/funis/noheader.png);
+	background-position: right -28px;
+}
+
+.x-theme-form-funis .x-panel-bc-funis {
+	background-image: url(images/funis/bottom.png);
+	background-position: 0 bottom;
+}
+
+.x-theme-form-funis .x-panel-bl-funis {
+	background-image: url(images/funis/left-bottom-corners.png);
+	background-position: 0 bottom;
+	border-top: 1px solid #B0BDDD;
+}
+.x-theme-form-funis .x-panel-nofooter .x-panel-bl-funis {
+	border-top: 0px solid #B0BDDD;
+}
+.x-theme-form-funis .x-panel-nofooter .x-panel-bc-funis {
+	height:4px;
+}
+
+.x-theme-form-funis .x-panel-br-funis {
+	background-image: url(images/funis/right-bottom-corners.png);
+	background-position: right bottom;
+}
+
+.x-theme-form-funis .x-panel-mc-funis {
+    background-color:#F4F7FE;
+    padding-top: 0px;
+}
+
+.x-theme-form-funis .x-panel-ml-funis {
+	background-image: url(images/funis/left-right.png);
+	padding-left: 1px;
+}
+
+.x-theme-form-funis .x-panel-mr-funis {
+	background-image: url(images/funis/left-right.png);
+	padding-right:1px;
+}
+
+.x-theme-form-funis .x-panel-tbar .x-toolbar{
+	border: 0px;
+	background-image: url(images/funis/tbar.png);
+	background-position: 0 0;
+	background-repeat: repeat-x;
+}
+
+/*noframe*/
+.x-theme-form-noframe-funis .x-panel-header-funis {
+	background-image: url(images/funis/top.png);
+	border-bottom: 1px solid #B0BDDD;
+}
+.x-theme-form-noframe-funis .x-panel-body-funis {
+	background-color: #F4F7FE;
+	border: 0px;
+}
+
+.x-theme-form-noframe-funis .x-panel-footer-funis {
+	background-image: url(images/funis/bottom.png);
+	background-position: 0 bottom;
+	border-top: 1px solid #B0BDDD;
+}
+
+/*x-window-iframe-funis*/
+.x-window-iframe-funis .x-window-mc {
+	border: 1px solid #C3E0EB;
+}
+
+.x-window-iframe-funis .x-theme-form-noframe-funis .x-panel-footer-funis {
+	background-image: none;
+	background-color: #C3E0EB;
+	border-top: 0px;
+}
+
+.x-window-iframe-funis .x-panel-body-funis{
+	border: 1px solid #99BBE8 !important;
+}
+

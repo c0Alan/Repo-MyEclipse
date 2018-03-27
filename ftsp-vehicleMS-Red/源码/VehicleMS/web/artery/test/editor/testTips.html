@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>测试Tips</title>
+    <script type="text/javascript">
+    function setCode_Null(){
+      var edit = document.getElementById("textEDTor");
+      edit.setCode(null);
+    }
+    function setCode_Kong(){
+      var edit = document.getElementById("textEDTor");
+      edit.setCode("");
+    }
+    function getCode_show(){
+      var edit = document.getElementById("textEDTor");
+      var c = edit.getCode();
+      alert(">"+c+"<");
+    }
+    function hideEditor(){
+      var con = document.getElementById("textEDTor_container");
+      con.style.display = "none";
+    }
+    function showEditor(){
+      var con = document.getElementById("textEDTor_container");
+      con.style.display = "";
+    }
+    </script>
+  </head>
+  <body>
+    <div id="textEDTor_container" style="width: 500px; height: 200px;">
+      <object id="textEDTor"
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        width="100%" height="100%" style="width: 100%; height: 100%">
+        <param name="movie" value="editor.swf" />
+        <param name="bgcolor" value="#FFFFFF" />
+        <param name="quality" value="high" />
+        <param name="flashvars" value="Fonts=宋体&fontsSize=14&cType=SQL&cPath=config/sql.xml" />
+      </object>
+    </div>
+    <div style="width: 500px; height: 200px;">
+      <object id="ext-gen30"
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        width="100%" height="100%" style=""
+        codebase="/Artery/artery/ocx/swflash.cab">
+        <param name="movie"
+          value="/Artery/artery/components/textEditor/editor.swf" />
+        <param name="bgcolor" value="#FFFFFF" />
+        <param name="quality" value="high" />
+        <param name="flashvars" value="Fonts=宋体&fontsSize=14&cTips=remoteCaller,remoteCaller.putParam&cType=JAVA" />
+      </object>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <button onclick="setCode_Null();">设置null</button>
+          </td>
+          <td>
+            <button onclick="setCode_Kong();">设置""</button>
+          </td>
+          <td>
+            <button onclick="getCode_show();">得到值</button>
+          </td>
+          <td>
+            <button onclick="hideEditor();">隐藏flash</button>
+          </td>
+          <td>
+            <button onclick="showEditor();">显示flash</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

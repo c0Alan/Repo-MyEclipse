@@ -1,0 +1,5 @@
+Artery.confirmMsg("title","message",function(btn){
+	if(btn == "yes"){
+		
+	}
+})

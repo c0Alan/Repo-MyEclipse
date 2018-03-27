@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>cc334ad01ee8fb53c374b5430b05f82c</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.area._loopAreaTable.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/area/_loopAreaTable.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form1a1c8">
+      <id>form1a1c8</id>
+      <Items>
+        <blankPanel sid="7c14fe67e9645e3d42ea42b7490d43c3">
+          <id>blankPanel0ad3d</id>
+          <width>300</width>
+          <frame>true</frame>
+          <themeStyle>cherry</themeStyle>
+          <Items>
+            <blankPanel sid="ccd7aa926eed90d39a3b4327d1a4f095">
+              <id>blankPanelad267</id>
+              <Items>
+                <blankPanel sid="0296fcc7480f3b797d6304994cab222d">
+                  <id>blankPanel8ec96</id>
+                  <bodyStyle>padding:3px;</bodyStyle>
+                  <Items>
+                    <loopArea sid="f1a64b1fd5cb01ab1e696bfbcfa3a873">
+                      <id>loopArea1d24e</id>
+                      <ds>rs1</ds>
+                      <Items>
+                        <blankPanel sid="f6b217c61671011369c9d7c3e31e897f">
+                          <id>blankPanel0e613</id>
+                          <bodyStyle>border-bottom:1px dashed #E1E1E1;padding-bottom:3px;padding-top:3px;</bodyStyle>
+                          <toggleGroup>group1</toggleGroup>
+                          <onMouseOutClient><![CDATA[blankPanel0e613_onMouseOutClient]]></onMouseOutClient>
+                          <Items>
+                            <tableLayout sid="8f215e18cc96d521820bcc6359f01301">
+                              <id>tableLayouta095d</id>
+                              <cellpadding>3</cellpadding>
+                              <Items>
+                                <htmlArea sid="50395d5864d92dac7ab0436e464217e4">
+                                  <id>htmlAreab357f</id>
+                                  <value>{rs1.C_NAME}</value>
+                                  <style>color:#3A6BB6;font-size:14px;</style>
+                                </htmlArea>
+                                <htmlArea sid="2fd0401fccf5e9f6cc876fb6ead6f7ac">
+                                  <id>htmlArea124a9</id>
+                                  <value>{rs1.C_AUTH}</value>
+                                  <style>color:#999999;text-align:right;</style>
+                                </htmlArea>
+                              </Items>
+                            </tableLayout>
+                            <tableLayout sid="e0588e9c49f232ac36f0ae60d04cb557">
+                              <id>tableLayout38fc0</id>
+                              <colWidths>80%</colWidths>
+                              <height>28</height>
+                              <cellpadding />
+                              <Items>
+                                <htmlArea sid="60d8b1ae9cecdeb2e575924a2922fa59">
+                                  <id>htmlAreaca29a</id>
+                                  <value>{rs1.C_PUBLISHER}</value>
+                                  <style>padding-left:3px;</style>
+                                </htmlArea>
+                                <imageArea sid="e2b7da16542cb4dc626da3a1328f25c9">
+                                  <id>imageArea7af3b</id>
+                                  <icon>/artery/arteryImage/arrow/down.gif</icon>
+                                  <value>1</value>
+                                  <tip>显示详情</tip>
+                                  <style>text-align:right;</style>
+                                  <hidden>true</hidden>
+                                </imageArea>
+                              </Items>
+                            </tableLayout>
+                            <blankPanel sid="982f838b083c4e443e08f716faa236ab">
+                              <id>blankPanel75d97</id>
+                              <hidden>true</hidden>
+                            </blankPanel>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </loopArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+            <pagingbar1 sid="b3b26523794548d730fc0f7e922c1ffc">
+              <id>pagingbar196360</id>
+              <ds>rs1</ds>
+              <pageCount>5</pageCount>
+            </pagingbar1>
+          </Items>
+        </blankPanel>
+        <formArea sid="6cda4197fe63fd967080e4afa1d62577">
+          <id>formArea50f57</id>
+          <ds>rs2</ds>
+          <colNum>1</colNum>
+          <show>false</show>
+          <Items>
+            <faString sid="0ff425a2d3aade52720e0d46dc7d14d7">
+              <id>faStringCISBN</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ISBN</inheritfld>
+              <dataName>{rs2.C_ISBN}</dataName>
+            </faString>
+            <faDate sid="cb59670f346deb60a27703ad6472943e">
+              <id>faDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs2.D_PUBLISHER}</dataName>
+            </faDate>
+            <faDate sid="2143da0f86dfc09492b2d4d5836584a3">
+              <id>faDateDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{rs2.D_BUY}</dataName>
+            </faDate>
+            <faBinary sid="804f0ca24a2cb3cbe35e4b4039d10273">
+              <id>faBinaryIPHOTO</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>I_PHOTO</inheritfld>
+              <dataName>{rs2.I_PHOTO}</dataName>
+            </faBinary>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Book where C_ID='{req.bookId}'</ds>
+  </dslist>
+</form>
+

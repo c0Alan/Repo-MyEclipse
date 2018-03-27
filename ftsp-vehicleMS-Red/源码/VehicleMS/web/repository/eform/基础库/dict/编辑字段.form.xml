@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>78b9c29f89be46de74019ebc74af188c</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.dict.Bjzd.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/dict/Bjzd.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form22210">
+      <id>form_main</id>
+      <text-align>left</text-align>
+      <onShow><![CDATA[form_main_onShow]]></onShow>
+      <Items>
+        <blankPanel sid="a2db43028449c8354bc091ea280a655a">
+          <id>blankPanelf1917</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="a3e9b3af308d96401fe930fcd955e5d6">
+              <id>header92859</id>
+              <text />
+              <Items>
+                <blankPanel sid="e15541498a2967015d8021c177f6f65a">
+                  <id>blankPanel3257b</id>
+                  <bodyStyle>display:none;</bodyStyle>
+                  <Items>
+                    <topbar sid="5636f978fb5e7825b0ccb56587d7ae0a">
+                      <id>topbar57423</id>
+                      <themeStyle>unis</themeStyle>
+                      <Items>
+                        <tbText sid="078c398bbf4251323c791703d395ff42">
+                          <id>tbText_info</id>
+                          <onShow><![CDATA[tbText_info_onShow]]></onShow>
+                        </tbText>
+                      </Items>
+                    </topbar>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+            <formArea sid="51417ed453ca29924b96ba536a3b166a">
+              <id>formArea_field</id>
+              <width>600</width>
+              <colNum>1</colNum>
+              <style>margin-top:10px;</style>
+              <onShow><![CDATA[formArea_field_onShow]]></onShow>
+              <cellpadding>5</cellpadding>
+              <Items>
+                <faBlankLayout sid="3baa9ac0f11b8a3528e4a6aee312a30c">
+                  <id>faBlankLayout1ed5b</id>
+                  <colWidths>66%,34%</colWidths>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faCode sid="1bf577a04fd397df87c97c0704a786a9">
+                      <id>faCode_baseType</id>
+                      <required>true</required>
+                      <showClear>false</showClear>
+                      <dynamicData><![CDATA[faCode_baseType_dynamicData]]></dynamicData>
+                      <ajaxLoad>false</ajaxLoad>
+                      <onShow><![CDATA[faCode_baseType_onShow]]></onShow>
+                      <label>基础类型</label>
+                    </faCode>
+                    <htmlArea sid="3fbf81f208bf371e2b9d345db8b69595">
+                      <id>htmlArea_baseType</id>
+                      <style>padding-top:4px;</style>
+                      <onShow><![CDATA[htmlArea_baseType_onShow]]></onShow>
+                      <hideLabel>true</hideLabel>
+                    </htmlArea>
+                  </Items>
+                </faBlankLayout>
+                <footer sid="b0ad940f3e78850dd61d9122ce82d4af">
+                  <id>footerd4aa7</id>
+                  <buttonAlign>left</buttonAlign>
+                  <footerStyle>padding-left:95px;</footerStyle>
+                  <Items>
+                    <button sid="fa60a294774662356c316b3566cf1bd2">
+                      <id>button_save</id>
+                      <width>90</width>
+                      <text>保存设置</text>
+                      <onClickClient><![CDATA[button_save_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[button_save_onClickServer]]></onClickServer>
+                      <themeStyle>apple</themeStyle>
+                      <onShow><![CDATA[button_save_onShow]]></onShow>
+                    </button>
+                    <simpleButton sid="56ca53531277abdbbdcfbdd57839a900">
+                      <id>simpleButtonc0b6f</id>
+                      <text>返回列表</text>
+                      <linkto>{"formId":"3841caaebeabf9c8b87f91c4a3e3770b","formName":"表个性化维护","formType":"1","params":{"groupId":"{req.groupId}","tableId":"{req.tableId}"},"target":"_self","targetWidth":"","targetHeight":"","runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                    </simpleButton>
+                  </Items>
+                </footer>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="groupId" showName="院id" value="" pvalue="" />
+    <param name="tableId" showName="表id" value="" pvalue="" />
+    <param name="fieldName" showName="字段名" value="" pvalue="" />
+  </params>
+</form>
+

@@ -1,0 +1,21 @@
+.detail{
+    background-image: url(../images/savedetail.gif) !important;
+}
+.table{
+    background-image: url(../images/savetable.gif) !important;
+}
+.savesql{
+    background-image: url(../images/savesql.gif) !important;
+}
+.savecondition{
+    background-image: url(../images/savecondition.gif) !important;
+}
+.saverelation{
+    background-image: url(../images/saverelation.gif) !important;
+}
+.saveorder{
+    background-image: url(../images/saveorder.gif) !important;
+}
+.saveafterdeal{
+    background-image: url(../images/saveafterdeal.gif) !important;
+}

@@ -1,0 +1,61 @@
+
+/***************************************************************************************
+ * Report
+ ***************************************************************************************/
+.report-page-go {
+	height: 11px;
+	width: 11px;
+	cursor: hand;
+	background-image: url("images/report/go.gif");
+	background-repeat: no-repeat;
+}
+
+.report-order {
+	height: 10px;
+	width: 10px;
+	cursor: hand;
+	margin-left: 4px;
+	background-image: url("images/report/order.gif");
+	background-repeat: no-repeat;
+}
+.report-order-asc {
+	height: 10px;
+	width: 10px;
+	cursor: hand;
+	margin-left: 4px;
+	background-image: url("images/report/order_asc.gif");
+	background-repeat: no-repeat;
+}
+.report-order-desc {
+	height: 10px;
+	width: 10px;
+	cursor: hand;
+	margin-left: 4px;
+	background-image: url("images/report/order_desc.gif");
+	background-repeat: no-repeat;
+}
+.report-result-area {
+	padding-top: 8px;
+	background-color: transparent;
+}
+
+/*print button cls*/
+.print .x-btn-text {
+	background-image: url(images/report/print.gif);
+}
+
+.close .x-btn-text {
+	background-image: url(images/report/close.gif);
+}
+
+.hidePage .x-btn-text {
+	background-image: url(images/report/split.gif);
+}
+
+.page-break-div {
+	padding-bottom: 5px;
+}
+
+#resultDiv {
+	padding-top: 5px;
+}

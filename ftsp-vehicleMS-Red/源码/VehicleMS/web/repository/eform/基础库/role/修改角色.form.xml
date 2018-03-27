@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9351b100a3036cbdd43493c1d9ff2e4a</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.role.Xgjs.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/role/Xgjs.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form988b4">
+      <id>form988b4</id>
+      <onLoadClient><![CDATA[form988b4_onLoadClient]]></onLoadClient>
+      <Items>
+        <tableLayout sid="c0dcd8c8557f21b2aab14e7c8947edb3">
+          <id>tableLayoutd2a72</id>
+          <colWidths>67%,33%</colWidths>
+          <colSpacing>4</colSpacing>
+          <height>100%</height>
+          <Items>
+            <blankPanel sid="de7f215d55dd1a80e1846f2ea9ab70f8">
+              <id>blankPanel3cc06</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <border>true</border>
+              <themeStyle>pear</themeStyle>
+              <Items>
+                <header sid="fdab01a91273b39d41b038081d8c6377">
+                  <id>header69402</id>
+                  <text />
+                  <headerStyle>padding:0;</headerStyle>
+                  <Items>
+                    <blankPanel sid="f9a873622fb0176e8e728aa8d9a4a72d">
+                      <id>blankPanelf3cce</id>
+                      <bodyStyle>overflow:hidden;</bodyStyle>
+                      <Items>
+                        <topbar sid="addaddc6ca66b965b23823db25a9f48f">
+                          <id>topbare437b</id>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbText sid="2fe35bc32473cb9ca3017ce84e743c83">
+                              <id>tbTextbdbe7</id>
+                              <text>&lt;span style="padding:3px;font-size:14px;color:#15428B;"&gt;权限&lt;/span&gt;</text>
+                            </tbText>
+                            <tbSeparator sid="019bc70661d99660c3b035ef9136000c">
+                              <id>tbSeparator6c90a</id>
+                            </tbSeparator>
+                            <tbButton sid="1b1917f38ac0a19d2089e48b33782ed6">
+                              <id>saveBtn_Right</id>
+                              <text>保存</text>
+                              <icon>/artery/arteryImage/file/image005.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[saveBtn_Right_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[saveBtn_Right_onClickServer]]></onClickServer>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <treeArea sid="98d457d20fad0fceec1b928ac4fcc3c8">
+                  <id>rightTreeArea</id>
+                  <selType>checkbox</selType>
+                  <expandTree>true</expandTree>
+                  <height>100%</height>
+                  <cascade>true</cascade>
+                  <line>false</line>
+                  <useArrows>true</useArrows>
+                  <Items>
+                    <treeDynamic sid="58da94be7e0c709e3dcccd5dd6553fca">
+                      <id>rightTreeAreaNode</id>
+                      <onLoadTree><![CDATA[rightTreeAreaNode_onLoadTree]]></onLoadTree>
+                    </treeDynamic>
+                  </Items>
+                </treeArea>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="7f7280ec7583acb67941e03d6960870f">
+              <id>blankPanelc815f</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <border>true</border>
+              <themeStyle>pear</themeStyle>
+              <Items>
+                <header sid="318b8bb7c11c0ae790a59bc365717f44">
+                  <id>header19139</id>
+                  <text />
+                  <headerStyle>padding:0;</headerStyle>
+                  <Items>
+                    <blankPanel sid="529e9986352b3f9a86794904a77b208d">
+                      <id>blankPanel369b1</id>
+                      <bodyStyle>overflow:hidden;</bodyStyle>
+                      <Items>
+                        <topbar sid="917e76dfc0a2939d7946bc36ef7b162a">
+                          <id>topbara47d2</id>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbText sid="f7edc254ee8b1516a831bad7add8cedf">
+                              <id>tbText4bf21</id>
+                              <text>&lt;span style="font-size:14px;padding:3px;color:#15428B;"&gt;组织机构&lt;/span&gt;</text>
+                            </tbText>
+                            <tbSeparator sid="d74e4e3336ba2c563e91e3e4b09c278d">
+                              <id>tbSeparator75516</id>
+                            </tbSeparator>
+                            <tbButton sid="5c8f6b265f8463c78f3de7a8eb4d6521">
+                              <id>saveBtn_Organ</id>
+                              <text>保存</text>
+                              <icon>/artery/arteryImage/file/image005.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[saveBtn_Organ_onClickClient]]></onClickClient>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <treeArea sid="b1bd1d9ebd0f29b421c4baa3b345709b">
+                  <id>organTreeArea</id>
+                  <selType>checkbox</selType>
+                  <height>100%</height>
+                  <line>false</line>
+                  <useArrows>true</useArrows>
+                  <onShow><![CDATA[organTreeArea_onShow]]></onShow>
+                  <Items>
+                    <treeDynamic sid="a826d5dfacbed0854e3fff8139eab0de">
+                      <id>organTreeDynamic</id>
+                      <onLoadTree><![CDATA[organTreeDynamic_onLoadTree]]></onLoadTree>
+                    </treeDynamic>
+                  </Items>
+                </treeArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="roleId" showName="角色id" value="" pvalue="" />
+    <param name="roleType" showName="角色类型" value="" pvalue="" />
+  </params>
+</form>
+

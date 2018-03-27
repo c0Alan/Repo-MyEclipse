@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="ribbonCell" cn="ribbonCell" jsType="artery-base"
+	nameprop="title" icon="ribbonCell.gif" iconNew="ribbonCellNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2010-05-13</CreateTime>
+		<Describe>RibbonCell控件</Describe>
+		<Images>
+			<File>info2.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="ribbonGroup" />
+	</Parents>
+	<Children>
+		<Child type="blankPanel" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.tabs.ribbon.RibbonCell
+	</Class>
+	<JsFile>
+		<File>ribbonCell.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apRibbonCell</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width">
+			<Value></Value>
+		</Property>
+		<Property cn="标题" type="1" name="title" export="true"
+			tips="设置RibbonCell标题，支持html">
+			<Value>title</Value>
+		</Property>
+		<Property cn="默认激活" type="11" name="active" export="true" tips="ribbon初始化默认激活的RibbonCell,相当于点击事件">
+			<Value>false</Value>
+		</Property>
+		<Property cn="提示" type="1" name="tip" export="true" tips ="ribbonCell的提示信息">
+		 <Description><![CDATA[
+		 <p>ribbonCell的提示信息</p>
+		 <p>第一个图表是当tip设置为ok时,第二个图表是当tip设置为warn时,当tip设置为其余值时是第三种显示,直接显示tip的内容</p>
+<table width=1><tr><td><img src='../../resources/images/common/tibboncelltip.png'></td></tr></table>
+      ]]></Description>
+			<Value></Value>
+		</Property>
+		<Property cn="提示说明" type="1" name="tipInfo" export="true" tips="当鼠标浮于tip图表上的时候显示提示信息">
+		   <Description><![CDATA[
+		 当鼠标浮于tip图表上的时候显示提示信息,如下图
+<table width=1><tr><td><img src='../../resources/images/common/ribbontipinfo.png'></td></tr></table>
+      ]]></Description>
+			<Value></Value>
+		</Property>
+		<Property cn="链接到" type="6" name="linkto" tips="选择当组件点击时连接到的表单">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient"
+			tips="鼠标点击本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer"
+			tips="鼠标点击本组件时触发的服务器端事件">
+			<Value />
+        <Description>
+        
+        <![CDATA[
+        <p>鼠标点击本组件时触发的服务器端事件</p>     
+
+        <pre>
+/**
+	 * 点击时脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public Object ribbonCell7dc91_onClickServer(Item item) {
+		return null;
+	}
+</pre>]]>
+      </Description>
+		</Property>
+		<Property cn="客户端" type="15" group="取消选中时脚本" name="onDeselectClient"
+			tips="取消选中本组件时触发的客户端事件">
+			<Value />
+        <Description>
+        
+        <![CDATA[
+        <p>取消选中本组件时触发的客户端事件</p>     
+
+        <pre>
+/**
+ * onDeselectClient(ribbonCell7dc91)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function ribbonCell7dc91_onDeselectClient (rc){
+	
+}
+</pre>]]>
+      </Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="取消选中时脚本" name="onDeselectServer"
+			tips="取消选中本组件时触发的服务器端事件">
+			<Value />
+        <Description>
+        
+        <![CDATA[
+        <p>取消选中本组件时触发的服务器端事件</p>     
+
+        <pre>
+/**
+ *  ribbonCell
+ * 
+ * @param item
+ *            控件对象
+ */
+public void ribbonCell7dc91_onDeselectServer(Item item) {
+		
+}
+</pre>]]>
+      </Description>
+		</Property>
+		<Property cn="客户端" type="15" group="reload脚本" name="onReloadClient"
+			tips="reload客户端脚本，通过对象的reload方法执行">
+			<Value />
+        <Description>
+        
+        <![CDATA[
+        <p>reload客户端脚本，通过对象的reload方法执行</p>     
+
+        <pre>
+/**
+ * onReloadClient(ribbonCell7dc91)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function ribbonCell7dc91_onReloadClient (rc){
+	
+}
+</pre>]]>
+      </Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="reload脚本" name="onReloadServer"
+			tips="reload服务端脚本，通过对象的reload方法执行">
+			<Value />
+        <Description>
+        
+        <![CDATA[
+        <p>reload服务端脚本，通过对象的reload方法执行</p>     
+
+        <pre>
+/**
+ *  ribbonCell
+ * 
+ * @param item
+ *            控件对象
+ */
+public void ribbonCell7dc91_onReloadServer(Item item) {
+		
+}
+</pre>]]>
+      </Description>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"  tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+	      <Value />
+	    </Property>
+		<Property cn="是否隐藏" type="11" name="hidden"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="click" inherit="false" return="void" tips="点击该ribbonCell">
+			<Description><![CDATA[<p>点击该ribbonCell</p><pre>
+Artery.get("ribbonCellId").click();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="updateMore" inherit="false" return="void" tips="更新ribbonCell所在的ribbonItem的更多页签">
+			<Description><![CDATA[<p>更新ribbonCell所在的ribbonItem的更多页签</p><pre>
+Artery.get("ribbonCellId").updateMore();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="reload" inherit="false" return="void" tips="重新加载组件,params是所要传递的参数">
+			<Description><![CDATA[<p>重新加载组件,params是所要传递的参数</p><pre>
+Artery.get("ribbonCellId").reload(params);
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>params:Object</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="select" inherit="false" return="void" tips="选择当前ribbonCell">
+			<Description><![CDATA[<p>选择当前ribbonCell</p><pre>
+Artery.get("ribbonCellId").select();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="deselect" inherit="false" return="void" tips="取消对该ribbonCell的选择">
+			<Description><![CDATA[<p>取消对该ribbonCell的选择</p><pre>
+Artery.get("ribbonCellId").deselect();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="setTip" inherit="false" return="void" tips="设置提示类型,tip如果是ok和warn将会有特定的图表,如果是其他的直接显示字符串,required表示是否需要提示">
+			<Description><![CDATA[<p>设置提示类型,tip如果是ok和warn将会有特定的图表,如果是其他的直接显示字符串,required表示是否需要提示</p><pre>
+Artery.get("ribbonCellId").setTip(tip,required);
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>tip:String</Param>
+				<Param>required:Boolean</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="setTipInfo" inherit="false" return="void" tips="设置提示信息">
+			<Description><![CDATA[<p>设置提示信息</p><pre>
+Artery.get("ribbonCellId").setTipInfo(info);
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>info:String</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="showTip" return="void" tips="显示提示信息">
+			<Description><![CDATA[<p>显示提示信息</p><pre>
+Artery.get("ribbonCellId").showTip();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="hideTip" return="void" tips="隐藏提示信息">
+			<Description><![CDATA[<p>隐藏提示信息</p><pre>
+Artery.get("ribbonCellId").hideTip();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+	
+  	<JavaFunctions>
+		<JavaFunction name="onClickServer">
+<![CDATA[
+ 	/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

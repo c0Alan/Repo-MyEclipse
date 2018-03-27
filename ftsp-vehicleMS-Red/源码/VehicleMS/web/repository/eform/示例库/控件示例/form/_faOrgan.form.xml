@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>49a7f555aed2bd77bbc2befefb6cbeed</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form._faOrgan.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_faOrgan.js</jsLocation>
+  <descript>组织机构控件示例</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form2abe7">
+      <id>form2abe7</id>
+      <Items>
+        <tableLayout sid="0cd45d7d61b3aca4e33c2ac2bf103eba">
+          <id>tableLayoutfb159</id>
+          <colSpacing>10</colSpacing>
+          <width>80%</width>
+          <Items>
+            <formArea sid="be871adaa0a617462096115bf50f14c7">
+              <id>formArea542f7</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="834f0764ad85a75f3ef6f378745160e5">
+                  <id>faFieldSetd51dc</id>
+                  <fieldSetName>【是否必填】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="a42b60e66b9651f823f608116e47972a">
+                      <id>faOrgan291ee</id>
+                      <required>true</required>
+                      <label>必填项</label>
+                    </faOrgan>
+                    <faOrgan sid="bf278a4e301b5e69da97af09f0325f3e">
+                      <id>faOrgan880d7</id>
+                      <label>非必填项</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="6913100f624035bd647b4a5f6c50c3a1">
+              <id>formAread8649</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="7f77627b919fbb1bd1bad0281b0ecf4e">
+                  <id>faFieldSeta8b7d</id>
+                  <fieldSetName>【display必填标识】属性</fieldSetName>
+                  <labelWidth>85</labelWidth>
+                  <displayType>display</displayType>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="cc095b8cdec87f40bcdda1db5a41ee77">
+                      <id>faOrgan9fdbb</id>
+                      <required>true</required>
+                      <displayRequiredStyle>true</displayRequiredStyle>
+                      <value>-1</value>
+                      <label>必填项</label>
+                    </faOrgan>
+                    <faOrgan sid="061e36de7896bec2280a82778eea38cc">
+                      <id>faOrgan52f3f</id>
+                      <required>true</required>
+                      <value>-1</value>
+                      <label>必填项</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="bb95edaa328c19070cef896b328fadc8">
+              <id>formArea8dd64</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="3a64df43946a211182c8c3480b646414">
+                  <id>faFieldSete35fd</id>
+                  <fieldSetName>【只读时是否验证】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="47c13d44a9b3103eb0130fd31c0a8695">
+                      <id>faOrganc7151</id>
+                      <required>true</required>
+                      <validOnReadOnly>true</validOnReadOnly>
+                      <displayType>readOnly</displayType>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="9037bf073febb6ca8b680a852c573c26">
+                      <id>faOrgan05384</id>
+                      <required>true</required>
+                      <displayType>readOnly</displayType>
+                      <label>false</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="a3841ce2dfe3dd1ad68788ad37be0acb">
+              <id>formArea8097b</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="3c5c53be4237b0aea257f3dd1e164b46">
+                  <id>faFieldSetb27e7</id>
+                  <fieldSetName>【无效时是否提交】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="44817bf3ea225c8942042b50c39629d4">
+                      <id>submitDisabled_true</id>
+                      <submitDisabled>true</submitDisabled>
+                      <value>-1</value>
+                      <displayType>disabled</displayType>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="a5e749455657b9d0d6d5fc88db235453">
+                      <id>submitDisabled_false</id>
+                      <submitDisabled>false</submitDisabled>
+                      <value>-1</value>
+                      <displayType>disabled</displayType>
+                      <label>false</label>
+                    </faOrgan>
+                    <buttonArea sid="e5edc209176d3cb8557ac0604dfad456">
+                      <id>buttonArea99b17</id>
+                      <align>center</align>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="6f4396e6671dcccdfefe34b2c34972ed">
+                          <id>button1e6d1</id>
+                          <text>提交表单</text>
+                          <onClickClient><![CDATA[button1e6d1_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[button1e6d1_onClickServer]]></onClickServer>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="2f08cff463191ba11da550f6b8abada3">
+              <id>formArea28ad1</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="ccb839717c8b5c1c0cad9c4a03193b75">
+                  <id>faFieldSetf256f</id>
+                  <fieldSetName>【控件类型】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="39bae840de440962f4aab8f2769219ca">
+                      <id>faOrgan5f48e</id>
+                      <label>sTree</label>
+                    </faOrgan>
+                    <faOrgan sid="9fd992db9b2571d4943c0343ec4cf7e1">
+                      <id>faOrgan2e092</id>
+                      <editor>mTree</editor>
+                      <label>mTree</label>
+                    </faOrgan>
+                    <faOrgan sid="799ed17eba992a04fbda853d0f02c2ad">
+                      <id>faOrgan5a3fe</id>
+                      <editor>mList</editor>
+                      <label>mList</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="a5656cac8578ff325738f77f783ef1ad">
+              <id>formArea1bedd</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="84dca55a38376d0ceee592d8b26640be">
+                  <id>faFieldSeta819d</id>
+                  <fieldSetName>【显示方式】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="9ddfc652a2964fe115de2700f13378d5">
+                      <id>faOrgan81a62</id>
+                      <label>popup</label>
+                    </faOrgan>
+                    <faOrgan sid="72eccf8fdbb991e225e986e62b3f6149">
+                      <id>faOrgan02d3e</id>
+                      <showType>window</showType>
+                      <label>window</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="4ab0e3e738ff3f2940f5ae0b8f9c5c15">
+              <id>formArea405d4</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="14d612dd6d9b669434e0216c1ff8c0b1">
+                  <id>faFieldSet58d2d</id>
+                  <fieldSetName>【弹出窗口高度】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="9c18710df219a83b2cd94b1b7137455f">
+                      <id>faOrgan8b43a</id>
+                      <showType>window</showType>
+                      <label>400</label>
+                    </faOrgan>
+                    <faOrgan sid="431430a822dc1b418cde0970bfbb7f0a">
+                      <id>faOrgan74d3f</id>
+                      <showType>window</showType>
+                      <windowHeight>200</windowHeight>
+                      <label>200</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="f6dd47184077ca9036c6eab2d88812ba">
+              <id>formArea76be6</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="6155195f738589ca525bc589738e6bd1">
+                  <id>faFieldSetfc6c5</id>
+                  <fieldSetName>【弹出层最小宽度】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="f69a6a2d814c287f5eb760aba4aa3194">
+                      <id>faOrgan61637</id>
+                      <label>150</label>
+                    </faOrgan>
+                    <faOrgan sid="23e134b2b0fb8598e0feb29775ce322c">
+                      <id>faOrganafacc</id>
+                      <minLayerWidth>300</minLayerWidth>
+                      <label>300</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="17801f29530c5006d008870d6233d0a9">
+              <id>formArea8df48</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="68a1d8e7ee07aaad3cd10d15d5ff6c57">
+                  <id>faFieldSet59039</id>
+                  <fieldSetName>【弹出层最小高度】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="a8826b7bda4ed1138414bcb15c504722">
+                      <id>faOrgan24dc6</id>
+                      <minLayerHeight>0</minLayerHeight>
+                      <label>0</label>
+                    </faOrgan>
+                    <faOrgan sid="60a14c3b776e64fefc34c432422a80cb">
+                      <id>faOrgan1e25a</id>
+                      <label>300</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="b24dcfcff633d27fc20d8649db2be90d">
+              <id>formArea76f22</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="65a81dab71a295fd5c49f50c5c76456b">
+                  <id>faFieldSet0c615</id>
+                  <fieldSetName>【弹出层最大高度】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="53420b605314142fa852eb85aaf402b6">
+                      <id>faOrgan01b61</id>
+                      <minLayerHeight>0</minLayerHeight>
+                      <maxLayerHeight>200</maxLayerHeight>
+                      <label>200</label>
+                    </faOrgan>
+                    <faOrgan sid="7d2bca02810c7893291b6ea894c51e79">
+                      <id>faOrgane486c</id>
+                      <minLayerHeight>0</minLayerHeight>
+                      <label>300</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="d65c44b730b7bb99b8c68a59ef5060e7">
+              <id>formAreaceb09</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="932369f9ef9c15c4468f36509a0e0b54">
+                  <id>faFieldSet63ea5</id>
+                  <fieldSetName>【单击节点时展开】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="e35d77dfa0acca1eefe77f104bf3d2e5">
+                      <id>faOrganec293</id>
+                      <singleClickExpand>true</singleClickExpand>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="90969679e59aee7e9af783b1b8d5aeee">
+                      <id>faOrgan390dd</id>
+                      <label>false</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="ec87558cf2bd99c4de61887c2f616b91">
+              <id>formAreaee7eb</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="7b7e0f76e220d0dfdadd57f8db7ab9a1">
+                  <id>faFieldSet11f3c</id>
+                  <fieldSetName>【是否显示清空按钮】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="8ae8f4351aa7bcee29f18f0877229e21">
+                      <id>faOrgan6e262</id>
+                      <value>-1</value>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="fe65689bf06e15d8ae7767766f8df081">
+                      <id>faOrgand773b</id>
+                      <showClear>false</showClear>
+                      <value>-1</value>
+                      <label>false</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="b50b0dfb9b9a15a468eb9f1152aaf8a4">
+              <id>formAreab884d</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="31d3dacbe21d690839a23fde4b4bdc11">
+                  <id>faFieldSeta2704</id>
+                  <fieldSetName>【选择类型】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="daa9d563cb7e41862fa664fe1e5e79a9">
+                      <id>faOrgan2657c</id>
+                      <label>user</label>
+                    </faOrgan>
+                    <faOrgan sid="19b3ae97225b900d7eab658d6b2b4f55">
+                      <id>faOrgan089a9</id>
+                      <organType>dept</organType>
+                      <label>dept</label>
+                    </faOrgan>
+                    <faOrgan sid="1abf69b9743718aef21e3e89167f792e">
+                      <id>faOrgand06f9</id>
+                      <organType>corp</organType>
+                      <label>corp</label>
+                    </faOrgan>
+                    <faOrgan sid="60ca8d8d4d677de51da6c1233260d3a7">
+                      <id>faOrgan5814f</id>
+                      <organType>corp_dept</organType>
+                      <label>corp_dept</label>
+                    </faOrgan>
+                    <faOrgan sid="3324392660767f3375ea6ae51f245658">
+                      <id>faOrgan363fa</id>
+                      <organType>all</organType>
+                      <label>all</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="7200e77252cbb7b4450d48df88a495a9">
+              <id>formAreaec187</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="12385866fc7753ae6408c805a94de925">
+                  <id>faFieldSet317ec</id>
+                  <fieldSetName>【是否显示无效节点】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="e5b84819e8ed0feb0f2f593a71b82eaf">
+                      <id>faOrganb6a7f</id>
+                      <showInvalidNode>true</showInvalidNode>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="a5b35386d9b86553bc393d88f183cbb4">
+                      <id>faOrgan99d89</id>
+                      <label>false</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="e68fa82ea01bafd4cfdfc03392010c7f">
+              <id>formArea71c4d</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="2b179f1052b30ff25aadda6053c4d2b5">
+                  <id>faFieldSet9c4cb</id>
+                  <fieldSetName>【是否可输入】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="771c6382713fa43e4da51159cfa5df57">
+                      <id>faOrgan6ead2</id>
+                      <editable>true</editable>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="2efd15dc447249634f12a21a640656d7">
+                      <id>faOrgan62711</id>
+                      <label>false</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="a5e6af544b3d698dc907f3a929111778">
+              <id>formAreaab70c</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="6dcc712477aed1f8d50034e886021fe3">
+                  <id>faFieldSetb213f</id>
+                  <fieldSetName>【输入最大长度】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="a7a07c9c912b54b409945d99da1922b9">
+                      <id>faOrgane591a</id>
+                      <editable>true</editable>
+                      <maxLength>4</maxLength>
+                      <label>最大长度为5</label>
+                    </faOrgan>
+                    <faOrgan sid="96bfb5a401eba85f77a0950dd0ccf846">
+                      <id>faOrgan2af06</id>
+                      <editable>true</editable>
+                      <maxLength>50</maxLength>
+                      <label>最大长度为50</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="7e4b644b2ab3c078292036ef579ef9fe">
+              <id>formArea3a8fd</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="29a98f572566266679747212c8a36a6a">
+                  <id>faFieldSetc82db</id>
+                  <fieldSetName>【拼音控件】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="bde0f8d828fab6fe25743e95a6ee8335">
+                      <id>faOrgan69540</id>
+                      <minLayerWidth>300</minLayerWidth>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="450a9d10cb4519e702d788f5e61bab9c">
+                      <id>faOrgan5ddf2</id>
+                      <minLayerWidth>300</minLayerWidth>
+                      <enablePinyin>false</enablePinyin>
+                      <label>false</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="447e88ddf7c1444fbeaa7f16a8dac3a3">
+              <id>formArea0de58</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="0d13132593c4e8ddc6bb8d0536549fca">
+                  <id>faFieldSet1600e</id>
+                  <fieldSetName>【是否启用下拉列表】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="535a479f0a25f7c258276421c5f63f21">
+                      <id>faOrganed28f</id>
+                      <minLayerWidth>300</minLayerWidth>
+                      <organType>all</organType>
+                      <editable>true</editable>
+                      <emptyText>请输入过滤条件</emptyText>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="a625e1a42514956e5dbd935121f12a4a">
+                      <id>faOrgan3182d</id>
+                      <minLayerWidth>300</minLayerWidth>
+                      <organType>all</organType>
+                      <editable>true</editable>
+                      <selectList>false</selectList>
+                      <emptyText>请输入过滤条件</emptyText>
+                      <label>false</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="fb3250ef52cf1786ead9e87a829f888b">
+              <id>formAreadfab7</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="30f00fcb65e93da5164fa92e874adf58">
+                  <id>faFieldSet0fa8c</id>
+                  <fieldSetName>【下拉列表显示个数】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="5190a63f49e53eac2cd8ba4af0b7f1e9">
+                      <id>faOrganad9ba</id>
+                      <minLayerWidth>300</minLayerWidth>
+                      <organType>all</organType>
+                      <editable>true</editable>
+                      <maxSelectCount>5</maxSelectCount>
+                      <emptyText>请输入过滤条件</emptyText>
+                      <label>5</label>
+                    </faOrgan>
+                    <faOrgan sid="44c87e29e213ddfb96b4d129d7738803">
+                      <id>faOrgan9dc27</id>
+                      <minLayerWidth>300</minLayerWidth>
+                      <organType>all</organType>
+                      <editable>true</editable>
+                      <maxSelectCount>10</maxSelectCount>
+                      <emptyText>请输入过滤条件</emptyText>
+                      <label>10</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="98da1fb4b30b5159f38db98267649fd0">
+              <id>formAreaa0516</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="ec3d3033c211a13e77183e8b393fb42b">
+                  <id>faFieldSete415c</id>
+                  <fieldSetName>【值附带类型】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="c9e1a0a01fa832e1b1ca61bfe6aae340">
+                      <id>faOrgan0cb5f</id>
+                      <value>user_-1</value>
+                      <valueWithType>true</valueWithType>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="94c3b792aa60b2804c18d845d5ee2262">
+                      <id>faOrgan2a4f2</id>
+                      <value>-1</value>
+                      <label>false</label>
+                    </faOrgan>
+                    <buttonArea sid="b88d849b657685e779a5f70cdc2ee98c">
+                      <id>buttonArea2fe26</id>
+                      <label />
+                      <Items>
+                        <button sid="3dc7ee337b29be1999e7de82b71b34af">
+                          <id>button8735f</id>
+                          <text>getValue1</text>
+                          <onClickClient><![CDATA[button8735f_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="9194122a90a615483e9ce937030c17bd">
+                          <id>button5f502</id>
+                          <text>setValue1</text>
+                          <onClickClient><![CDATA[button5f502_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                    <buttonArea sid="7f5cebf91aa7258f57c0e2f8f820e5cc">
+                      <id>buttonArea105ad</id>
+                      <label />
+                      <Items>
+                        <button sid="86fc5630a5ca55e2d25acec30e06b40f">
+                          <id>buttoncf2d4</id>
+                          <text>getValue2</text>
+                          <onClickClient><![CDATA[buttoncf2d4_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="072790f2eb6a7d58dfa8f3ae9b232c86">
+                          <id>button7ec71</id>
+                          <text>setValue2</text>
+                          <onClickClient><![CDATA[button7ec71_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="944330c8ca2e64af782ac214eae926b7">
+              <id>formAreaa921e</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="ea6b922c386e9c5658e7edf95b42ee15">
+                  <id>faFieldSetd6af7</id>
+                  <fieldSetName>【显示值提示】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="dd80a34b7f18054d406d4785f0336297">
+                      <id>faOrgand0a2f</id>
+                      <value>-1</value>
+                      <showValueTip>true</showValueTip>
+                      <label>true</label>
+                    </faOrgan>
+                    <faOrgan sid="38f2039f6247f65d11741d3dde2776a7">
+                      <id>faOrgan43368</id>
+                      <value>-1</value>
+                      <label>false</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="f3abf563dbddbd836deebf9453e83e81">
+              <id>formAreaa14de</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="ee60f7af33cc02451b1426ee510a6435">
+                  <id>faFieldSet259e4</id>
+                  <fieldSetName>【输入提示】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="b182af940442a9c907bfc868981f0ba6">
+                      <id>faOrgan789a4</id>
+                      <emptyText>这里显示的是输入提示</emptyText>
+                      <label>输入提示</label>
+                    </faOrgan>
+                    <faOrgan sid="892d151eb4c3910ace587746d679d6ef">
+                      <id>faOrganc9341</id>
+                      <emptyText>请输入</emptyText>
+                      <label>输入提示</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="27efb6f10577a089c41544adb4de1494">
+              <id>formAread1b3e</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="cc53f9e8bfca913df5c0b2e4a0fc431f">
+                  <id>faFieldSet7fba0</id>
+                  <fieldSetName>【输入框样式】属性和【输入框样式(只读)】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="4b8d38143ea587d025fe35dfaf7c1885">
+                      <id>faOrgan6a54e</id>
+                      <valueStyle>border:solid red 1px;</valueStyle>
+                      <label>输入框样式</label>
+                    </faOrgan>
+                    <faOrgan sid="4b8c00b8fa022125e4641c8b197e2e79">
+                      <id>faOrgan8b872</id>
+                      <valueStyleRead>border:solid blue 1px;</valueStyleRead>
+                      <displayType>readOnly</displayType>
+                      <label>输入框样式只读</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="73777145c0e025300b95cd82c3b1e75d">
+              <id>formArea64d83</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="1546906ff81abde01ea854e6be6fd81c">
+                  <id>faFieldSetfd4f7</id>
+                  <fieldSetName>【验证提示方式】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="48d580be0f5c3d5949510818949550ad">
+                      <id>faOrganb2b50</id>
+                      <required>true</required>
+                      <label>cooltip</label>
+                    </faOrgan>
+                    <faOrgan sid="d98c664c37660322f0f458933e42813a">
+                      <id>faOrgan4640b</id>
+                      <required>true</required>
+                      <validType>title</validType>
+                      <label>title</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="7fa47c5a4ae9509d576e6d83f75ed8e0">
+              <id>formArea6ece1</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="76fc9ec85b6f9bc8957f1a60b68b1859">
+                  <id>faFieldSetde5f4</id>
+                  <fieldSetName>【展现类型】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="5bd1d7d969107339239722fd14754100">
+                      <id>faOrganaa19c</id>
+                      <value>-1</value>
+                      <displayType>editable</displayType>
+                      <label>editable</label>
+                    </faOrgan>
+                    <faOrgan sid="2d5dcc32c8c1da142ef65d5b8dfa393c">
+                      <id>faOrgan3763e</id>
+                      <value>-1</value>
+                      <displayType>readOnly</displayType>
+                      <label>readOnly</label>
+                    </faOrgan>
+                    <faOrgan sid="6d993e3b77587386304e9134caca3fcc">
+                      <id>faOrgan2ec9b</id>
+                      <value>-1</value>
+                      <displayType>display</displayType>
+                      <label>display</label>
+                    </faOrgan>
+                    <faOrgan sid="a007e3aebb0df19078b86a10019b43ca">
+                      <id>faOrgana46c9</id>
+                      <value>-1</value>
+                      <displayType>disabled</displayType>
+                      <label>disabled</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="99fad233c038a033a7a4086658a3d234">
+              <id>formAreaa6a5a</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="68953a0da25e0d390fdb52f1a66d90e8">
+                  <id>faFieldSet2a335</id>
+                  <fieldSetName>【是否隐藏】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="0941ac9aa379b91494901cf89b65d346">
+                      <id>faOrganfdb1b</id>
+                      <hidden>true</hidden>
+                      <label>隐藏</label>
+                    </faOrgan>
+                    <faOrgan sid="690c43c21f832fc1de7dc30bb2c3ddd1">
+                      <id>faOrganf664e</id>
+                      <label>显示</label>
+                    </faOrgan>
+                    <buttonArea sid="78857d59cdd8095554d9b339551926ee">
+                      <id>buttonArea84363</id>
+                      <align>center</align>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="2d467873ce1212330552f40d81a6808f">
+                          <id>button18fab</id>
+                          <text>显示控件1</text>
+                          <onClickClient><![CDATA[button18fab_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="a2fa167b5a897ca2338d553ce422394c">
+                          <id>buttona5e6e</id>
+                          <text>隐藏控件1</text>
+                          <onClickClient><![CDATA[buttona5e6e_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="883c88e6ec2e84f220e0e3503632806f">
+              <id>formAreaff07e</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="b6d21e4654e436bed4150b6a19c0b3db">
+                  <id>faFieldSetb78f4</id>
+                  <fieldSetName>【隐藏方式】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="98c2c48dbdb1f707c28a77cfd3e9e7a9">
+                      <id>faOrganf4530</id>
+                      <hidden>true</hidden>
+                      <label>display方式隐藏</label>
+                    </faOrgan>
+                    <faOrgan sid="2a56f91f25e024f44c4f86fb8fb9bce5">
+                      <id>faOrganb828e</id>
+                      <label>显示</label>
+                    </faOrgan>
+                    <buttonArea sid="7c0b571ab75298cc72319fff674cf9aa">
+                      <id>buttonAreac9526</id>
+                      <align>center</align>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="91134cb2114c5da392edba18aa8d26d5">
+                          <id>button72cba</id>
+                          <text>显示控件2</text>
+                          <onClickClient><![CDATA[button72cba_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="1c341d41a8f0ef8f8b06beab54b50940">
+                          <id>buttoncfde9</id>
+                          <text>隐藏控件2</text>
+                          <onClickClient><![CDATA[buttoncfde9_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                    <faOrgan sid="eb2f5b1a6f6b7d8273d25667052d584e">
+                      <id>faOrgan85ec8</id>
+                      <hidden>true</hidden>
+                      <hideMode>visibility</hideMode>
+                      <label>visibility方式隐藏</label>
+                      <hideMode>visibility</hideMode>
+                    </faOrgan>
+                    <faOrgan sid="8b640041be72cdafcb0644da4ed01d43">
+                      <id>faOrgan577c0</id>
+                      <label>显示</label>
+                    </faOrgan>
+                    <buttonArea sid="874c9145ba0e877d0d1dd397232f7ed7">
+                      <id>buttonAreac4c2c</id>
+                      <align>center</align>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="73233b9ef75b92526c75d89632839825">
+                          <id>buttonafc9d</id>
+                          <text>显示控件3</text>
+                          <onClickClient><![CDATA[buttonafc9d_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="653345521a4d4d60faaad9d7d04dd928">
+                          <id>buttonf4be1</id>
+                          <text>隐藏控件3</text>
+                          <onClickClient><![CDATA[buttonf4be1_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="cd5b624c4e053c7ff4072045bdcda054">
+              <id>formAreac5cb8</id>
+              <colNum>1</colNum>
+              <colSpan>2</colSpan>
+              <Items>
+                <faFieldSet sid="f7c8adb46c4891986c268f3c9c24a1a2">
+                  <id>faFieldSet2b85c</id>
+                  <fieldSetName>控件的方法</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="584fba3bba9a241b2e3fde1e188a7752">
+                      <id>faOrgan79d00</id>
+                      <width>200</width>
+                      <value>-1</value>
+                      <label>组织机构控件</label>
+                      <labelCntStyle>padding:5px;</labelCntStyle>
+                    </faOrgan>
+                    <buttonArea sid="1e29e14b4d87af63fcfc83d31e982a21">
+                      <id>buttonAreab8e0f</id>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="9c83c75a6dbd30fe6855882cd499b15c">
+                          <id>button3dddd</id>
+                          <width>100</width>
+                          <text>getValue</text>
+                          <onClickClient><![CDATA[button3dddd_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="1577570a1377afbb20eba1f520bbdd78">
+                          <id>buttond954e</id>
+                          <width>100</width>
+                          <text>getValueText</text>
+                          <onClickClient><![CDATA[buttond954e_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="9f2519537ae3e85a65010eba4c7f8318">
+                          <id>buttonda1c1</id>
+                          <width>100</width>
+                          <text>setValue</text>
+                          <onClickClient><![CDATA[buttonda1c1_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="0b5b88c786c0cb9ae165b30ee0f52010">
+                          <id>buttona2d9f</id>
+                          <width>100</width>
+                          <text>reset</text>
+                          <onClickClient><![CDATA[buttona2d9f_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="d5ec1f2251ee38d6acedce54f4f2f209">
+                          <id>button5f155</id>
+                          <width>100</width>
+                          <text>setOriginalValue</text>
+                          <onClickClient><![CDATA[button5f155_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                    <buttonArea sid="82a7445f2b65abc855d8a29f91ef813c">
+                      <id>buttonAreaa7ddb</id>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="7bee5f1efbead02e53335e2acf707b63">
+                          <id>buttoncd37b</id>
+                          <width>100</width>
+                          <text>setLabel</text>
+                          <onClickClient><![CDATA[buttoncd37b_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="87d8a7caa157694e2e1c7034baf280d9">
+                          <id>buttonb43cf</id>
+                          <width>100</width>
+                          <text>setLabelColor</text>
+                          <onClickClient><![CDATA[buttonb43cf_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="93a4e5e13c912b39bfc17dead5848b8c">
+                          <id>button3cbf8</id>
+                          <width>100</width>
+                          <text>setLabelStyle</text>
+                          <onClickClient><![CDATA[button3cbf8_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="40d0caf1c1ae3bb6fb2fe5eb4dd20b65">
+                          <id>buttonc6030</id>
+                          <width>100</width>
+                          <text>setLabelCntStyle</text>
+                          <onClickClient><![CDATA[buttonc6030_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="d8671455e888abfd62043203ecbb4f04">
+                          <id>button5e466</id>
+                          <width>100</width>
+                          <text>setValueStyle</text>
+                          <onClickClient><![CDATA[button5e466_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="65a3228e85dc8ef54fcc699369a45465">
+                          <id>button55e17</id>
+                          <width>100</width>
+                          <text>setRequired</text>
+                          <onClickClient><![CDATA[button55e17_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                    <buttonArea sid="a8ead445575116a35bef83a3fc4c72bc">
+                      <id>buttonArea731bc</id>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="d3c8ef45022d1e4037f7903df0ac332b">
+                          <id>button18f1e</id>
+                          <width>100</width>
+                          <text>read</text>
+                          <onClickClient><![CDATA[button18f1e_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="a202fca4cd8c953bc9486c96804dc862">
+                          <id>buttoneca99</id>
+                          <width>100</width>
+                          <text>edit</text>
+                          <onClickClient><![CDATA[buttoneca99_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="258db0edbad7e6aa6617e2c18217a451">
+                          <id>buttonb633c</id>
+                          <width>100</width>
+                          <text>disable</text>
+                          <onClickClient><![CDATA[buttonb633c_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="81a82c94470eec18454feb9c2a1ffff1">
+                          <id>button34f1a</id>
+                          <width>100</width>
+                          <text>enable</text>
+                          <onClickClient><![CDATA[button34f1a_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="f0f0dae0516321cbf26e276f20083aac">
+                          <id>buttonf9726</id>
+                          <width>100</width>
+                          <text>hide</text>
+                          <onClickClient><![CDATA[buttonf9726_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="8d720688a3402fc0fbbe322ebfc9cfb6">
+                          <id>buttonfd0d3</id>
+                          <width>100</width>
+                          <text>show</text>
+                          <onClickClient><![CDATA[buttonfd0d3_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="dee0a7cd3bc0a7f34b171a79cc56c1f8">
+              <id>formArea91446</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="4ed1afa0d4585f5c577ac1031159d18f">
+                  <id>faFieldSet86789</id>
+                  <fieldSetName>【值改变时脚本】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="18711bc8f5faaa22c2cd254d2b92b1f6">
+                      <id>faOrgan71526</id>
+                      <onChangeClient><![CDATA[faOrgan71526_onChangeClient]]></onChangeClient>
+                      <onChangeServer><![CDATA[faOrgan71526_onChangeServer]]></onChangeServer>
+                      <label>组织机构控件</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="4a40e75a7570d16a73fe3367c7ef2d6e">
+              <id>formArea3a386</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="8501865f1a4eaca2eee2ac4acc0db6ef">
+                  <id>faFieldSet2ded6</id>
+                  <fieldSetName>【验证脚本】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="d12dbb98aafaa28ba07f79f87722ab3c">
+                      <id>faOrgan881d9</id>
+                      <emptyText>选择超级管理员可通过验证</emptyText>
+                      <onValidClient><![CDATA[faOrgan881d9_onValidClient]]></onValidClient>
+                      <onValidServer><![CDATA[faOrgan881d9_onValidServer]]></onValidServer>
+                      <label>组织机构控件</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="e9c8d0ccee6d1d6a5c517358462de6ae">
+              <id>formArea6bc54</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="b71cf549cce44c7c1f8b56c52247fc2f">
+                  <id>faFieldSet3cb7c</id>
+                  <fieldSetName>【根节点规则】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="f6e4b6f005b94e7a26f882c8eda34095">
+                      <id>faOrgana4ef5</id>
+                      <onRootFilter><![CDATA[faOrgana4ef5_onRootFilter]]></onRootFilter>
+                      <label>组织机构控件</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="bd7a6288cdc42e93f5e6d20354f9661f">
+              <id>formArea76415</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="8d6a2c2a9452dc5c1119dc54914bb24d">
+                  <id>faFieldSet90c49</id>
+                  <fieldSetName>【过滤规则】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="4cc3cff476a2d08eea9bfacd4bd8a48d">
+                      <id>faOrgan6570a</id>
+                      <onFilter><![CDATA[faOrgan6570a_onFilter]]></onFilter>
+                      <label>组织机构控件</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="2fa9376e0541f252c1928454ebd90cf1">
+              <id>formAreac2681</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="c08c4eff22e7fe5a7474b74354aa54a0">
+                  <id>faFieldSetc4209</id>
+                  <fieldSetName>【节点规则】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="d0376b79292dbacb123fcc6da47ff1d7">
+                      <id>faOrgan79880</id>
+                      <organType>all</organType>
+                      <onNodeRule><![CDATA[faOrgan79880_onNodeRule]]></onNodeRule>
+                      <label>组织机构控件</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="ae0cd73cb1f87da1dd1446b667a5d633">
+              <id>formAreabe7c2</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="a36163af7a0eac3ed39939f6f00ff918">
+                  <id>faFieldSet96328</id>
+                  <fieldSetName>【下拉列表显示规则】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faOrgan sid="85dd7187d7051cd84a46bd628fe79af9">
+                      <id>faOrganf0cf2</id>
+                      <editable>true</editable>
+                      <emptyText>请输入</emptyText>
+                      <onListDisplayRule><![CDATA[faOrganf0cf2_onListDisplayRule]]></onListDisplayRule>
+                      <label>组织机构控件</label>
+                    </faOrgan>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

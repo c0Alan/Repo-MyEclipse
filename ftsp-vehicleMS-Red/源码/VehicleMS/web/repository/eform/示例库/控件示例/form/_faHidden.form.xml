@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>7acb6f335bacc81ba997166260d1a272</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form._faHidden.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_faHidden.js</jsLocation>
+  <descript>隐藏控件示例表单</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formb51cc">
+      <id>formb51cc</id>
+      <Items>
+        <tableLayout sid="24152291382721706e96bdc7469cc2c1">
+          <id>tableLayoutfb159</id>
+          <colSpacing>10</colSpacing>
+          <width>80%</width>
+          <Items>
+            <formArea sid="5f09b5103463cc45e22dfc27fe448a50">
+              <id>formArea8097b</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="e93ad804823f935d818dc15725827bc2">
+                  <id>faFieldSetb27e7</id>
+                  <fieldSetName>【无效时是否提交】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faHidden sid="f39c3d8a701604a69de1ebfa27746fed">
+                      <id>submitDisabled_true</id>
+                      <submitDisabled>true</submitDisabled>
+                      <value>无效时提交</value>
+                      <label>true</label>
+                    </faHidden>
+                    <faHidden sid="6f8afc27efaea6b8ab748f6b3519b62b">
+                      <id>submitDisabled_false</id>
+                      <submitDisabled>false</submitDisabled>
+                      <value>无效时不提交</value>
+                      <label>false</label>
+                    </faHidden>
+                    <buttonArea sid="f6ba73d68a177d36baa6113e334b78c4">
+                      <id>buttonArea99b17</id>
+                      <align>center</align>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="802676746d97cdadb2d36cee94e64780">
+                          <id>button1e6d1</id>
+                          <text>提交表单</text>
+                          <onClickClient><![CDATA[button1e6d1_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[button1e6d1_onClickServer]]></onClickServer>
+                        </button>
+                        <button sid="6f733ea1e1c0fb6f9d7a577b2db30951">
+                          <id>button15da7</id>
+                          <text>disable后提交表单</text>
+                          <onClickClient><![CDATA[button15da7_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[button15da7_onClickServer]]></onClickServer>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

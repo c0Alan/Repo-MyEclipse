@@ -1,0 +1,21 @@
+.dBody{
+	font-size: 12px;
+}
+.tabsetCurrent{
+	border: 1px solid #ACA899;
+	padding: 2px 10px 3px;
+	border-bottom: none;
+	background-color: #ECE9D8;
+	color: #000000;
+	font-size: 12px;
+	cursor: default;
+}
+.tabset{
+	border: 1px solid #ACA899;
+	padding: 2px 10px 3px;
+	border-bottom: none;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-size: 12px;
+	cursor: default;
+}

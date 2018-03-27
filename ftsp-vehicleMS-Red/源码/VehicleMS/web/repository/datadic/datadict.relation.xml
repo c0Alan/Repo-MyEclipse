@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relations>
+  <relation>
+    <cid>fc8455c8005e05a21f65eae60988d265</cid>
+    <mainTable>T_Eg_Library</mainTable>
+    <mainField>C_ID</mainField>
+    <subTable>T_Eg_Book</subTable>
+    <subField>C_LIBRARYID</subField>
+    <cascadeDelete>1</cascadeDelete>
+  </relation>
+  <relation>
+    <cid>f8f2bda9c73cd971ff56fb9832c3867f</cid>
+    <mainTable>T_Eg_Book</mainTable>
+    <mainField>C_ID</mainField>
+    <subTable>T_Eg_History</subTable>
+    <subField>C_BOOKID</subField>
+    <cascadeDelete>1</cascadeDelete>
+  </relation>
+</relations>
+

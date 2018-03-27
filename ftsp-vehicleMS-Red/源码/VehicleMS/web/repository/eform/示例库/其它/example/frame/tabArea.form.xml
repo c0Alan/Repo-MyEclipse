@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>6318a832c551e73761679931896c1aea</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.frame.TabArea.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/frame/TabArea.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <centerRegion sid="centerRegion3B4A20B15201A7E51C446EC029237498">
+          <id>centerRegion3B4A20B15201A7E51C446EC029237498</id>
+          <Items>
+            <topbar sid="topbar9B742F9B4D683A2E1DB2AD4F321A7783">
+              <id>topbar9B742F9B4D683A2E1DB2AD4F321A7783</id>
+              <Items>
+                <tbButton sid="tbButton4365A9DEF1FD1BAA2F268CD18D38CB66">
+                  <id>tbButton_addTab</id>
+                  <text>添加页签</text>
+                  <onClickClient><![CDATA[tbButton_addTab_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <leftRegion sid="leftRegion983FEB49C39329D00DEA637AA38EEC60">
+              <id>leftRegion983FEB49C39329D00DEA637AA38EEC60</id>
+              <width>600</width>
+              <isFixScroll>true</isFixScroll>
+              <Items>
+                <tabArea sid="sheetPanel93B1B99D0D26E06ED7AD89A1143F6A71">
+                  <id>tabArea1</id>
+                  <height>100%</height>
+                  <dynamicData><![CDATA[tabArea1_dynamicData]]></dynamicData>
+                  <Items>
+                    <tabItem sid="sheetItemE1D11ED4FD1D1067874EC0A86A978019">
+                      <xtype>apRelForm</xtype>
+                      <id>sheetItemE1D11ED4FD1D1067874EC0A86A978019</id>
+                      <title>HTML页签</title>
+                      <Items>
+                        <htmlArea sid="htmlAreaA3EC2AF9844AB856CBA1B0E3017E6688">
+                          <id>htmlAreaA3EC2AF9844AB856CBA1B0E3017E6688</id>
+                          <value>&lt;P&gt;HTML内容的页签&lt;/P&gt;</value>
+                          <style>padding:5px;</style>
+                        </htmlArea>
+                      </Items>
+                    </tabItem>
+                    <tabItem sid="sheetItem0188BB6172E87736E9E9224ABB51D416">
+                      <xtype>apRelForm</xtype>
+                      <id>sheetItem0188BB6172E87736E9E9224ABB51D416</id>
+                      <title>静态导航</title>
+                      <Items>
+                        <treeNav sid="staticNav33FA26B358B24CFF31095479E1514676">
+                          <id>staticNav33FA26B358B24CFF31095479E1514676</id>
+                          <operAreaId>operArea1</operAreaId>
+                          <Items>
+                            <treeCatalog sid="catalog61CFFBA1D8EEA3F0E869AFD8AF7BAFFF">
+                              <id>catalog61CFFBA1D8EEA3F0E869AFD8AF7BAFFF</id>
+                              <caption>目录1</caption>
+                              <Items>
+                                <treeItem sid="snItem2D46BEE46C4402A9690AEE92C8838E1B">
+                                  <id>snItem2D46BEE46C4402A9690AEE92C8838E1B</id>
+                                  <caption>节点1</caption>
+                                  <linkto>{"formId":"1A10E601D4B3CE26719E4831864E0F0F","formName":"业务提示","formType":"1","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","location":"0","menubar":"0","status":"0","titlebar":"0","toolbar":"0","resizable":"1"}</linkto>
+                                </treeItem>
+                              </Items>
+                            </treeCatalog>
+                            <treeCatalog sid="catalog65A936292C8F8D91E8400781CEBE1F1C">
+                              <id>catalog65A936292C8F8D91E8400781CEBE1F1C</id>
+                              <caption>目录2</caption>
+                              <Items>
+                                <treeItem sid="snItem0CA04A20A29D29CA43885860E5291350">
+                                  <id>snItem0CA04A20A29D29CA43885860E5291350</id>
+                                  <caption>节点2</caption>
+                                </treeItem>
+                              </Items>
+                            </treeCatalog>
+                          </Items>
+                        </treeNav>
+                      </Items>
+                    </tabItem>
+                    <tabItem sid="sheetItem075FE22F9D4076A7F00793CA9204A1F7">
+                      <xtype>apRelForm</xtype>
+                      <id>sheetItem075FE22F9D4076A7F00793CA9204A1F7</id>
+                      <title>URL页签</title>
+                      <icon>/artery/arteryImage/book/album.gif</icon>
+                    </tabItem>
+                  </Items>
+                </tabArea>
+              </Items>
+            </leftRegion>
+            <centerRegion sid="centerRegion0235557BD56E681CA1F61B8D726BE715">
+              <id>centerRegion0235557BD56E681CA1F61B8D726BE715</id>
+              <Items>
+                <operArea sid="operAreaCFDB2C33E471D923C3F4F92825F61ADD">
+                  <id>operArea1</id>
+                </operArea>
+              </Items>
+            </centerRegion>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

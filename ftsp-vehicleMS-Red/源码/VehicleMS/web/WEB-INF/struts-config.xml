@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+
+	<form-beans>
+		<form-bean name="memoryForm"
+			type="com.thunisoft.summer.web.action.MemoryActionForm" />
+	</form-beans>
+
+	<global-exceptions>
+		<exception key="error.application" type="com.thunisoft.summer.exception.AppException"
+			path="/artery/pub/jsp/error/syserror.jsp" handler="com.thunisoft.summer.exception.AppExceptionHandler" />
+		<exception key="error.system"
+			type="com.thunisoft.summer.exception.SystemException" path="/artery/pub/jsp/error/syserror.jsp"
+			handler="com.thunisoft.summer.exception.AppExceptionHandler" />
+	</global-exceptions>
+
+	<global-forwards>
+		<forward name="login" path="/artery/pub/login/login.jsp" />
+		<forward name="logout" path="/artery/pub/login/login.jsp" />
+		<forward name="enterLoginSystem" path="/artery/subsys.do?action=enterLoginSystem" />
+	</global-forwards>
+
+	<action-mappings>
+		<action path="/summer/common/login"
+			type="org.springframework.web.struts.DelegatingActionProxy" scope="request"
+			validate="true" input="/summer/jsp/login/login.jsp">
+			<forward name="success"
+				path="/artery/form/dealParse.do?action=parseForm&amp;formid=2b9fecffbda50bbb66797ce3b4619a80&amp;runTimeType=display" />
+		</action>
+		
+		<action path="/GetExampleTree"
+			type="com.thunisoft.artery.example.GetExampleTree" scope="request">
+		</action>
+		<action path="/GetExampleFormFile"
+			type="com.thunisoft.artery.example.GetExampleFormFile" scope="request">
+		</action>
+	</action-mappings>
+
+	<controller processorClass="com.thunisoft.summer.web.action.SummerRequestProcessor"
+		nocache="true" maxFileSize="1G" />
+
+	<message-resources parameter="props.application" />
+
+<!-- 更新了Artery context loader,用于自动读取spring配置目录 -->
+	<plug-in className="com.thunisoft.artery.support.ContextLoaderPlugIn">
+		<set-property property="contextConfigLocation"
+			value="/WEB-INF/classes/applicationContext.xml" />
+	</plug-in>
+
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="definitions-parser-validate"
+			value="true" />
+	</plug-in>
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+
+</struts-config>

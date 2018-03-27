@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>a25c709bd74d761acfbacbdffea81ad4</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tabs.tabPanel._tabInTab.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tabs/tabPanel/_tabInTab.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formbb1d3">
+      <id>formbb1d3</id>
+      <Items>
+        <centerRegion sid="b0755eb12a1d2b16ae500056d0f56bbf">
+          <id>centerRegiond9a36</id>
+          <Items>
+            <tabArea sid="9af3cc732690ca146fbca3877bb4cc36">
+              <id>tabAreaAEF52</id>
+              <height>100%</height>
+              <Items>
+                <tabItem sid="2e9fa2d5dee3c6dceb85a3ee293d5f56">
+                  <id>tabItem8D4E6</id>
+                  <title>abc</title>
+                  <Items>
+                    <tabArea sid="279e0dacad075b72bd8a8f23133dffe5">
+                      <id>tabArea62A18</id>
+                      <height>100%</height>
+                      <Items>
+                        <tabItem sid="3dd5e44af8ef72576caf5bafe60e33a8">
+                          <id>tabItemF7D10</id>
+                          <title>abc</title>
+                          <url>http://www.google.cn</url>
+                        </tabItem>
+                        <tabItem sid="1f616779c557c9dafe8f25d547effa26">
+                          <id>tabItemB5A65</id>
+                          <title>bcd</title>
+                          <Items>
+                            <buttonArea sid="bfd47754c7211182db57c0b81b47e30b">
+                              <id>buttonArea5562D</id>
+                              <height>30</height>
+                              <Items>
+                                <button sid="5e31c08a70a8a9f45c6e953fcda25919">
+                                  <id>buttonB4C4E</id>
+                                </button>
+                              </Items>
+                            </buttonArea>
+                          </Items>
+                        </tabItem>
+                      </Items>
+                    </tabArea>
+                  </Items>
+                </tabItem>
+                <tabItem sid="b927c09ee43f464a81642e3976df0001">
+                  <id>tabItem43D2BA818BBF320F6F5AC95B2EFCDE0E</id>
+                  <title>bcd</title>
+                  <Items>
+                    <buttonArea sid="7d63f4f4db48dd6a75d97bb3f811db6b">
+                      <id>buttonArea2CEE79280A939E4E4DDEDE3A26281A8F</id>
+                      <height>30</height>
+                      <Items>
+                        <button sid="aea435dd8c06a580b6ec26f3b6cab06f">
+                          <id>button4ED91CDE14C26B83C8C99EC2878DA651</id>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </tabItem>
+              </Items>
+            </tabArea>
+          </Items>
+        </centerRegion>
+        <leftRegion sid="ac44a3ab14b41f2ed9121fc2a8ea6ebb">
+          <id>leftRegionff317</id>
+          <split>false</split>
+          <border>false</border>
+        </leftRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

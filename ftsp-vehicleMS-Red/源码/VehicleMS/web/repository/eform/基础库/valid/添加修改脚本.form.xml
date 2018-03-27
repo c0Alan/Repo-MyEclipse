@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>25fe3f97f19e6df408fa58966ee95c45</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.valid.Tjxgjb.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/valid/Tjxgjb.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form4eeee">
+      <id>form4eeee</id>
+      <Items>
+        <blankPanel sid="822ae96255d1bcc5508b5f1eb762f0eb">
+          <id>scriptContainer</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="79bd531c1cbd0fb0c4ffef3a2e85f53c">
+              <id>header8deba</id>
+              <text />
+              <headerStyle>padding:0px;</headerStyle>
+              <Items>
+                <blankPanel sid="beefa317ebab70d35976cc1799d5863f">
+                  <id>blankPanel84035</id>
+                  <bodyStyle>display:none;</bodyStyle>
+                  <Items>
+                    <topbar sid="17bcefd80a7e1dc2bb7ad259cfd2257c">
+                      <id>topbar75087</id>
+                      <themeStyle>unis</themeStyle>
+                      <Items>
+                        <tbText sid="cdc27513c3e3aa2d8801299155dc7987">
+                          <id>modifyScriptTitleText</id>
+                          <text>新建脚本</text>
+                          <style>font-size:14px;font-weight:700;color:#15428B;</style>
+                        </tbText>
+                        <tbSeparator sid="90c643b5e3f87db95cd972286381a362">
+                          <id>tbSeparator01c0f</id>
+                        </tbSeparator>
+                        <tbButton sid="f62c7ff084df4b69e164bd511f2e3aef">
+                          <id>saveScriptBtn</id>
+                          <text>保存</text>
+                          <icon>/artery/arteryImage/file/save.gif</icon>
+                        </tbButton>
+                        <tbFill sid="ec19ff05637a1455913216022e5ce2ef">
+                          <id>tbFill78cfc</id>
+                        </tbFill>
+                        <tbButton sid="94be62e0423de7b3bdb6f3ffbca5bb05">
+                          <id>returnBtn</id>
+                          <text>返回</text>
+                          <tooltip>返回</tooltip>
+                          <icon>/artery/arteryImage/arrow/backward.gif</icon>
+                          <onlyShowIcon>true</onlyShowIcon>
+                        </tbButton>
+                      </Items>
+                    </topbar>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+            <formArea sid="018fabd7e9a19918be5e11d4a3eafbdc">
+              <id>editScriptForm</id>
+              <height>100%</height>
+              <colNum>1</colNum>
+              <tableStyle>height:100%;</tableStyle>
+              <runTimeDisplay>false</runTimeDisplay>
+              <displayType>editable</displayType>
+              <Items>
+                <blankPanel sid="faef7783f4ce1341847b36a6da52186e">
+                  <id>blankPanel4fb36</id>
+                  <bodyStyle>padding:10px;</bodyStyle>
+                  <themeStyle>collapseUnis</themeStyle>
+                  <colSpan>2</colSpan>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <header sid="61443d49de8f67ef0e6f05fac3b05ae8">
+                      <id>header4e0f6</id>
+                      <text>基本信息</text>
+                      <Items>
+                        <collapseBtn sid="3dd939e9450f8657304a44a6b73ce251">
+                          <id>collapseBtna5581</id>
+                        </collapseBtn>
+                      </Items>
+                    </header>
+                    <faBlankLayout sid="0045543b7130745cc5cc5df08c5c2f76">
+                      <id>faBlankLayoutfe32c</id>
+                      <colSpacing>5</colSpacing>
+                      <labelWidth>70</labelWidth>
+                      <Items>
+                        <faString sid="be9413d4a42965938b285e2391e34040">
+                          <id>faString2f563</id>
+                          <submitName>script.desc</submitName>
+                          <required>true</required>
+                          <dataName>{rs1.desc}</dataName>
+                          <label>脚本描述</label>
+                        </faString>
+                        <faString sid="a3d697250afc7670c8a3f174ba8216a8">
+                          <id>faString99fb3</id>
+                          <submitName>script.formId</submitName>
+                          <dataName>{rs1.formId}</dataName>
+                          <label>定位表单</label>
+                        </faString>
+                      </Items>
+                    </faBlankLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="a4e2917af72d865f4ffef262f325c56c">
+                  <id>blankPanel79331</id>
+                  <height>100%</height>
+                  <themeStyle>collapseUnis</themeStyle>
+                  <colSpan>2</colSpan>
+                  <synTabHeight>true</synTabHeight>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <header sid="d956731f641f02b4127ef200f71c5515">
+                      <id>header64d35</id>
+                      <text>定位脚本</text>
+                      <Items>
+                        <collapseBtn sid="7fb84619e99d43fbc7d59442d94e1542">
+                          <id>collapseBtnddfa5</id>
+                        </collapseBtn>
+                      </Items>
+                    </header>
+                    <faBlankLayout sid="6d1c00c46d96f76afd1472c0ad5a0b1a">
+                      <id>faBlankLayoute5697</id>
+                      <colNum>1</colNum>
+                      <style>height:100%</style>
+                      <tableStyle>height:100%</tableStyle>
+                      <Items>
+                        <faString sid="1e47e844f9273b644f1539bfe90b7e2c">
+                          <id>faString404db</id>
+                          <submitName>script.script</submitName>
+                          <dataName>{rs1.script}</dataName>
+                          <editor>textarea</editor>
+                          <height>100%</height>
+                          <synTabHeight>true</synTabHeight>
+                          <hideLabel>true</hideLabel>
+                        </faString>
+                      </Items>
+                    </faBlankLayout>
+                  </Items>
+                </blankPanel>
+                <faHidden sid="c9372b31aa56b34d70b4b16b09bae0ac">
+                  <id>faHiddenb74e0</id>
+                  <submitName>script.id</submitName>
+                  <dataName>{rs1.id}</dataName>
+                </faHidden>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="scriptId" showName="脚本id" value="" pvalue="" />
+    <param name="tplId" showName="模板id" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>de518589b46fb6fb4601757571ce6926</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.faCode._faCode_onBeforeChangeEvent.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/faCode/_faCode_onBeforeChangeEvent.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formcecf3">
+      <id>formcecf3</id>
+      <text-align>left</text-align>
+      <Items>
+        <formArea sid="8b0c5eb770b85d5edc9572813fa566c8">
+          <id>formArea8784c</id>
+          <width>1000</width>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <Items>
+            <faCode sid="4c245541b592b5ebd96dc0b93bc09197">
+              <id>faCode8598d</id>
+              <codeType>-5</codeType>
+              <onBeforeChangeClient><![CDATA[faCode8598d_onBeforeChangeClient]]></onBeforeChangeClient>
+              <onBeforeChangeServer><![CDATA[faCode8598d_onBeforeChangeServer]]></onBeforeChangeServer>
+              <label>请选择</label>
+            </faCode>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

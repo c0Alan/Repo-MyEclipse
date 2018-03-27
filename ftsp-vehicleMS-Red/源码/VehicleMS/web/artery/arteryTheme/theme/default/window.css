@@ -1,0 +1,107 @@
+.x-window {
+    z-index:12000;
+}
+.x-window-body {
+	background-color: #ffffff;
+}
+
+.x-window-tl .x-window-header{
+	padding-top: 1px;
+	height: 100%;
+}
+
+.x-window .x-window-header-container{
+	overflow: visible;
+	padding: 0px;
+	position: relative;
+}
+
+.x-window-header .x-tool-close{
+	background-image: url("images/window-close.gif");
+	width: 38px;
+	height: 21px;
+	position: absolute;
+	top: 1px;
+	right: 2px;
+	z-index: 20000;
+}
+
+.x-window-header .x-tool-close-over{
+	background-position: top right;
+}
+
+.x-window-header .x-window-header-text{
+	display:block;
+	padding-top: 4px;
+	margin: 0px;
+}
+
+
+.x-window-noresize .x-resizable-handle{
+	cursor: auto;
+}
+
+.x-window-tl {
+	background-image: url("images/window/left-corners.png");
+	padding-left: 5px;
+}
+.x-window-tr {
+	background-image: url("images/window/right-corners.png");
+	background-position:right 0;
+	padding-right:9px;
+}
+.x-window-tc {
+	background-image: url("images/window/top-bottom.png");
+	height: 26px;
+	overflow: visible;
+}
+
+.x-window-bl {
+	background-image: url("images/window/left-corners.png");
+	background-position:0 bottom;
+	padding-left: 5px;
+}
+.x-window-br {
+	background-image: url("images/window/right-corners.png");
+	background-position:right bottom;
+	padding-right:9px;
+}
+.x-window-bc {
+	background-image: url("images/window/top-bottom.png");
+	background-position: 0 bottom;
+	padding-bottom: 8px;
+}
+
+.x-window-ml {
+	background-image: url("images/window/left-right.png");
+	padding-left: 5px;
+}
+.x-window-mr {
+	background-image: url("images/window/left-right.png");
+	background-position:right 0;
+	padding-right:9px;
+}
+.x-window-mc {
+	background-color: #fff;
+}
+/* window dialog css to cover .x-window */
+.x-window-dlg{
+	z-index: 25000 !important
+}
+
+/***************************************************************************************
+ * x-mini-close-window
+ ***************************************************************************************/
+.x-mini-close-window{
+	z-index: 21000 !important;
+}
+.x-mini-close-window .x-tool-close{
+	background-image: url("images/window/tool-sprites.gif");
+	width: 15px;
+	height: 15px;
+	position: static;
+}
+
+.x-mini-close-window .x-window-tl .x-window-header{
+	padding-top: 5px;
+}

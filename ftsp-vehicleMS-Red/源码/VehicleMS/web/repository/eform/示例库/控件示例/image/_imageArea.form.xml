@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>75d3a55f52b6e5ebbf9b49a19c13e559</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.image._imageArea.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/image/_imageArea.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formc37c7">
+      <id>formc37c7</id>
+      <Items>
+        <imageArea sid="7ec0e045e913c2775edd455eb360a0e4">
+          <id>imageArea40a57</id>
+          <width>100</width>
+          <height>400</height>
+          <Items>
+            <imageItem sid="f3b1269559c61dca7fcce246281d7aea">
+              <id>imageItem291f1</id>
+              <title>图片1</title>
+              <icon>/artery/arteryImage/book/logo64-64.gif</icon>
+            </imageItem>
+            <imageItem sid="af946be8372321bcdc7e125c8e411b6b">
+              <id>imageItem41380</id>
+              <title>图片2</title>
+              <icon>/artery/arteryImage/arrow/arrow_left_2.png</icon>
+            </imageItem>
+            <imageItem sid="ec020be9c3c8f99bc65d7593091ce3e0">
+              <id>imageItem0ddac</id>
+              <title>图片3</title>
+              <icon>/artery/arteryImage/arrow/back_2.png</icon>
+            </imageItem>
+            <imageItem sid="0dfa04f63f8fc47bc41d2d54bb32bd04">
+              <id>imageItem390a9</id>
+              <title>图片4</title>
+              <icon>/artery/arteryImage/book/script_obj.gif</icon>
+            </imageItem>
+          </Items>
+        </imageArea>
+        <imageArea sid="f613bf0c1d9674a03cb16e842f0df6ea">
+          <id>imageAreaf8efb</id>
+          <icon>/artery/arteryImage/sample/logo-baidu.gif</icon>
+        </imageArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

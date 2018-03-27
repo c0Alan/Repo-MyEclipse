@@ -1,0 +1,116 @@
+/*
+ * Ext JS Library 2.1
+ * Copyright(c) 2006-2008, Ext JS, LLC.
+ * licensing@extjs.com
+ * 
+ * http://extjs.com/license
+ */
+
+/*
+ * Ext JS Library 2.0
+ * Copyright(c) 2006-2007, Ext JS, LLC.
+ * licensing@extjs.com
+ * 
+ * http://extjs.com/license
+ */
+
+.details{ 
+    padding: 10px; 
+    text-align: center; 
+} 
+.details-info{ 
+    border-top: 1px solid #cccccc; 
+    font: 11px Arial, Helvetica, sans-serif; 
+    margin-top: 5px; 
+    padding-top: 5px; 
+    text-align: left; 
+} 
+.details-info b{ 
+    color: #555555; 
+    display: block; 
+    margin-bottom: 4px; 
+} 
+.details-info span{ 
+    display: block; 
+    margin-bottom: 5px; 
+    margin-left: 5px; 
+} 
+.copy .x-btn-text{
+    background-image: url(../images/copy.gif)  
+}
+.paste .x-btn-text{
+    background-image: url(../images/paste.gif)
+}
+
+#img-chooser-view{ 
+    background: white; 
+    font: 11px Arial, Helvetica, sans-serif;
+} 
+.thumb{ 
+    background: #dddddd; 
+    padding: 3px; 
+} 
+ .thumb img{ 
+    height: 60px; 
+    width: 80px; 
+} 
+.thumb-wrap{ 
+    float: left; 
+    margin: 4px; 
+    margin-right: 0; 
+    padding: 5px;
+} 
+.thumb-wrap span{ 
+    display: block; 
+    overflow: hidden; 
+    text-align: center; 
+} 
+.x-view-over{
+    border:1px solid #dddddd; 
+    background: #efefef url(../../resources/images/default/grid/row-over.gif) repeat-x left top; 
+    padding: 4px; 
+}
+.x-view-selected{ 
+    background: #DFEDFF; 
+    border: 1px solid #6593cf; 
+    padding: 4px; 
+} 
+ .thumb{ 
+    background:transparent; 
+}
+span{ 
+    color:#1A4D8F;
+}
+loading-indicator { 
+    font-size:11px; 
+    background-image:url('../../resources/images/grid/loading.gif'); 
+    background-repeat: no-repeat; 
+    background-position: left; 
+    padding-left:20px; 
+    margin:10px; 
+} 
+.piclib{
+    background-image: url(../images/folder.gif) !important;
+}
+.menu-addcomp{
+    background-image: url(../images/addcomp.gif)
+}
+.menu-addform{
+    background-image: url(../images/addform.gif)
+}
+.menu-delete{
+    background-image: url(../images/del.gif)
+}
+.menu-copy{
+    background-image: url(../images/copy.gif)
+}
+.menu-paste{
+    background-image: url(../images/paste.gif)
+}
+.menu-import{
+    background-image: url(../images/import.gif)
+}
+.menu-export{
+    background-image: url(../images/export.gif)
+}
+

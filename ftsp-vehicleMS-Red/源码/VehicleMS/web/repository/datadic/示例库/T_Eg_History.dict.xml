@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+  <cid>C858C0917A0B46C7939952437BEE40CF</cid>
+  <dbName>T_Eg_History</dbName>
+  <showName>借阅历史表</showName>
+  <desc />
+  <fields>
+    <field>
+      <cid>D2AAC57EF48B9D98DF4A8C27C29348C3</cid>
+      <fieldName>C_ID</fieldName>
+      <showName>C_ID</showName>
+      <fieldType>2</fieldType>
+      <pk>1</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_text_length">32</property>
+        <property name="field_text_openmask">2</property>
+        <property name="field_text_allownull">1</property>
+      </properties>
+    </field>
+    <field>
+      <cid>F514A6EC63E917C88A7E4E5D816EE7A0</cid>
+      <fieldName>C_BOOKID</fieldName>
+      <showName>图书编号</showName>
+      <fieldType>2</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_text_length" />
+        <property name="field_text_openmask">2</property>
+        <property name="field_text_allownull">2</property>
+      </properties>
+    </field>
+    <field>
+      <cid>EB8BBE3898B9E7DE71DC2C490BCA8653</cid>
+      <fieldName>D_LEND</fieldName>
+      <showName>借阅日期</showName>
+      <fieldType>3</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_date_max" />
+        <property name="field_date_showtype" />
+        <property name="field_date_min" />
+      </properties>
+    </field>
+    <field>
+      <cid>2E81C9FC4F39789D9CA2040546DF83A9</cid>
+      <fieldName>D_RETURN</fieldName>
+      <showName>归还日期</showName>
+      <fieldType>3</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_date_max" />
+        <property name="field_date_showtype" />
+        <property name="field_date_min" />
+      </properties>
+    </field>
+    <field>
+      <cid>4C6A5C601CB7A2EBC9AB6C28037552AF</cid>
+      <fieldName>N_USER</fieldName>
+      <showName>借阅人编号</showName>
+      <fieldType>1</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_number_length" />
+        <property name="field_number_max" />
+        <property name="field_number_showtype" />
+        <property name="field_number_precision" />
+        <property name="field_number_min" />
+      </properties>
+    </field>
+  </fields>
+</table>
+

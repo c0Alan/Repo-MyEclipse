@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>a7e4d095e864f70a0b3f5a957f0b7326</id>
+  <cfgTbl>T_Eg_Library,T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.list.loop.Slist2R.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/list/loop/Slist2R.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <bodyStyle>padding:30px;</bodyStyle>
+      <Items>
+        <blankPanel sid="69ec162deef7cd669ff3dec76d79b39e">
+          <id>blankPanel69dce</id>
+          <Items>
+            <loopArea sid="05a0d411bfefec9ebcc59c12f2c5d422">
+              <id>loopAreac9951</id>
+              <ds>rs1</ds>
+              <Items>
+                <tableLayout sid="a6a83e344b4e13deac310947c4cd1812">
+                  <id>tableLayout70274</id>
+                  <colNum>2</colNum>
+                  <cellpadding>5</cellpadding>
+                  <style>border-bottom:1px dotted gray;</style>
+                  <Items>
+                    <htmlArea sid="ae847f8ad25f3a33c74c2ccdcfbaecc9">
+                      <id>htmlArea4fae0</id>
+                      <value>{rs1.C_NAME}</value>
+                    </htmlArea>
+                    <blankPanel sid="56fe62a40a00276043c39ef65fe43129">
+                      <id>blankPanel767ae</id>
+                      <Items>
+                        <loopArea sid="49fe225d4751fe93686fc851187f4198">
+                          <id>loopArea55501</id>
+                          <ds>{rs2,'#C_LIBRARYID'='[rs1.C_ID]'}</ds>
+                          <Items>
+                            <tableLayout sid="abbd681112d675032d9748be6f5068f2">
+                              <id>tableLayoutfa17f</id>
+                              <colNum>3</colNum>
+                              <colWidths>20,*,50</colWidths>
+                              <cellpadding>2</cellpadding>
+                              <Items>
+                                <imageArea sid="1788f3494ba67374ceca238969de4f54">
+                                  <id>imageArea7b6ce</id>
+                                  <icon>/artery/arteryImage/RSS/rss.gif</icon>
+                                </imageArea>
+                                <htmlArea sid="d9a0e85d68b4dc2fcb131586863121ae">
+                                  <id>htmlArea44f2c</id>
+                                  <value>{rs2.C_NAME}</value>
+                                </htmlArea>
+                                <linkArea sid="3257dfbbe4979779e5a7f94e66f3691c">
+                                  <id>linkArea8504a</id>
+                                  <value>详情</value>
+                                </linkArea>
+                              </Items>
+                            </tableLayout>
+                          </Items>
+                        </loopArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </loopArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Library</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">SELECT *&#xD;
+FROM&#xD;
+    T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d48c393f7570f25519b8821f046952d5</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.dict.group.Fzdyck.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/dict/group/Fzdyck.js</jsLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="form2cf75">
+      <id>form2cf75</id>
+      <themeStyle>funis</themeStyle>
+      <onShow><![CDATA[form2cf75_onShow]]></onShow>
+      <Items>
+        <blankPanel sid="3b0b3109172165b79ddc9eafab931fc6">
+          <id>blankPanelb3e52</id>
+          <width>100%</width>
+          <height>100%</height>
+          <Items>
+            <treeArea sid="3f1de55ff4242d82ed036103dddc1464">
+              <id>treeArea2c703</id>
+              <selType>radio</selType>
+              <width>100%</width>
+              <height>100%</height>
+              <Items>
+                <treeDynamic sid="81d4b2f033749fe756af52b72f95c364">
+                  <id>treeDynamic9ff42</id>
+                  <onLoadTree><![CDATA[group_onLoadTree]]></onLoadTree>
+                </treeDynamic>
+              </Items>
+            </treeArea>
+          </Items>
+        </blankPanel>
+        <footer sid="b8e5629cbf9003e12904967706e55840">
+          <id>footerbe627</id>
+          <Items>
+            <button sid="01032412e3d4dd371ac9fea03078ee10">
+              <id>buttonOk</id>
+              <text>确定</text>
+              <onClickClient><![CDATA[buttonOk_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[buttonOk_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <button sid="0294e594600722fc6665473997b1d41a">
+              <id>buttonCancel</id>
+              <text>取消</text>
+              <onClickClient><![CDATA[buttonCancel_onClickClient]]></onClickClient>
+              <themeStyle>cookie</themeStyle>
+            </button>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="key" showName="key" value="" pvalue="" />
+    <param name="tableName" showName="表名称" value="" pvalue="" />
+    <param name="nodeIds" showName="nodes" value="" pvalue="" />
+  </params>
+</form>
+

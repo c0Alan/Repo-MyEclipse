@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>a7963d9af6aaba7b6f2aa611853726c0</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.faCode._faCode_onNodeRuleEvent.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/faCode/_faCode_onNodeRuleEvent.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form6ef27">
+      <id>form6ef27</id>
+      <text-align>left</text-align>
+      <Items>
+        <formArea sid="46353e477db16fc47eab17cf0de9f957">
+          <id>formArea9bac7</id>
+          <width>1000</width>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <Items>
+            <faCode sid="5cb4683ff0dedf6fd15e23dee5c065f5">
+              <id>faCode8eddc</id>
+              <editor>sTree</editor>
+              <dynamicData><![CDATA[faCode8eddc_dynamicData]]></dynamicData>
+              <onNodeRule><![CDATA[faCode8eddc_onNodeRule]]></onNodeRule>
+            </faCode>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

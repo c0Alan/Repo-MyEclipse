@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>92500e26d9868e3f0b6fd9bf599f41a4</id>
+  <cfgTbl>T_Aty_Code</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.list.xzl.Xzgz.java</javaLocation>
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>ffffff</background-color>
+      <Items>
+        <listArea sid="A0c758c294a0fee28985730bea4c42599">
+          <id>listArea</id>
+          <ds>rs1</ds>
+          <height>100%</height>
+          <pageCount>10</pageCount>
+          <isStartNew>true</isStartNew>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <themeStyle>table</themeStyle>
+          <Items>
+            <column sid="A9ee3d61c1592254d54d67e8be3284be5">
+              <id>check1</id>
+              <dataName>{rs1.C_Name}</dataName>
+              <editor>checkbox</editor>
+              <title>选择</title>
+              <checkedRule><![CDATA[check1_checkedRule]]></checkedRule>
+            </column>
+            <column sid="A2d3eac621f851d7cf7a25f7abb80766f">
+              <id>lstNPID</id>
+              <inherittbl>T_Aty_Code</inherittbl>
+              <inheritfld>C_PID</inheritfld>
+              <dataName>{ncode([rs1.C_PID])}</dataName>
+              <title>类型</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Ac57e4e9b4b08ce8469dc19d98296bfff">
+              <id>check2</id>
+              <dataName>{rs1.C_Code}</dataName>
+              <editor>checkbox</editor>
+              <title>选择2</title>
+              <checkedRule><![CDATA[check2_checkedRule]]></checkedRule>
+            </column>
+            <column sid="A1fc97dab5ad86a94b3a094dc66b14fa1">
+              <id>lstNCode</id>
+              <inherittbl>T_Aty_Code</inherittbl>
+              <inheritfld>C_Code</inheritfld>
+              <dataName>{rs1.C_Code}</dataName>
+              <title>代码值</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A0adb6d344c7c7a7443478f32c4ef047c">
+              <id>radio1</id>
+              <dataName>{rs1.C_Name}</dataName>
+              <editor>radio</editor>
+              <title>选择3</title>
+              <checkedRule><![CDATA[radio1_checkedRule]]></checkedRule>
+            </column>
+            <column sid="Ac74b0367c4e0eb1810553342bad71cf9">
+              <id>lstCName</id>
+              <inherittbl>T_Aty_Code</inherittbl>
+              <inheritfld>C_Name</inheritfld>
+              <dataName>{rs1.C_Name}</dataName>
+              <title>代码名称</title>
+              <width>100</width>
+              <isOrderBy>true</isOrderBy>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT * FROM DB_ATY..T_Aty_Code</ds>
+  </dslist>
+</form>
+

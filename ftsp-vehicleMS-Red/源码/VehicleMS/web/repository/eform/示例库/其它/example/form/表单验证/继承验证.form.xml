@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>191efb3759ba7929fba366d454f5be81</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <formArea sid="A33ef34a418af6e15ad5e508849566cf0">
+          <id>formArea</id>
+          <ds>rs1</ds>
+          <height>100%</height>
+          <border>true</border>
+          <formTableBorder>false</formTableBorder>
+          <cellpadding>2</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <faString sid="A8fe958be6469e70659ea5ee17792d64a">
+              <id>frmCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <height>0</height>
+              <label extend="true">图书名称</label>
+            </faString>
+            <htmlArea sid="htmlArea230E6">
+              <id>htmlArea230E6</id>
+              <value>长度在2－50之间（继承自数据字典），不能为空（继承自数据字典）</value>
+              <labelColor extend="true" />
+              <hideLabel extend="true">true</hideLabel>
+            </htmlArea>
+            <faString sid="faStringFDE403EE180CE1453560E13964B7D926">
+              <id>faStringFDE403EE180CE1453560E13964B7D926</id>
+              <required>false</required>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <maxLength>20</maxLength>
+              <minLength>10</minLength>
+              <regex>^[\u4E00-\u9FA5]+$</regex>
+              <regexText>只能包含中文</regexText>
+              <height>0</height>
+              <label extend="true">图书名称</label>
+            </faString>
+            <htmlArea sid="htmlArea9DECC">
+              <id>htmlArea9DECC</id>
+              <value>长度在10－20之间（控件配置），可以为空（控件配置），只能是中文（控件配置）</value>
+              <labelColor extend="true" />
+              <hideLabel extend="true">true</hideLabel>
+            </htmlArea>
+            <faNumeric sid="faNumeric0EA95">
+              <id>faNumeric0EA95</id>
+              <required>true</required>
+              <maxLength>5</maxLength>
+              <maxPrecision>0</maxPrecision>
+              <maxValue>10</maxValue>
+              <minValue>1</minValue>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">购买数量</label>
+              <labelColor extend="true" />
+            </faNumeric>
+            <htmlArea sid="htmlAreaDCFBF">
+              <id>htmlAreaDCFBF</id>
+              <value>有效位数为5，精度为0，不能为空，最大10，最小1</value>
+              <labelColor extend="true" />
+              <hideLabel extend="true">true</hideLabel>
+            </htmlArea>
+            <faDate sid="faDate84D00">
+              <id>faDate84D00</id>
+              <maxValue>2009-08-31</maxValue>
+              <minValue>2009-05-01</minValue>
+              <customFormat>Y年m月d日</customFormat>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">日期控件</label>
+              <labelColor extend="true" />
+            </faDate>
+            <htmlArea sid="htmlArea0396D">
+              <id>htmlArea0396D</id>
+              <value>最大值2009-08-31，最小值2009-05-01，可以为空</value>
+              <labelColor extend="true" />
+              <hideLabel extend="true">true</hideLabel>
+            </htmlArea>
+            <htmlArea sid="htmlAreaE5587">
+              <id>htmlAreaE5587</id>
+              <value>&lt;font color=red&gt;下面列出了数据字典和控件的对应关系，如果控件设置了相应的属性，则以控件为准，如果没有设置相应属性并且设置了继承表和继承字段，则会参考数据字典中的设置&lt;/font&gt;</value>
+              <colSpan extend="true">2</colSpan>
+              <labelColor extend="true" />
+              <hideLabel extend="true">true</hideLabel>
+            </htmlArea>
+            <htmlArea sid="htmlArea0F8E7">
+              <id>htmlArea0F8E7</id>
+              <value>&lt;table width="100%" border="1" bordercolor="blue" style="border-collapse: collapse;font-size: 14px;"&gt;
+      &lt;tr&gt;
+        &lt;td width="20%" style="padding: 4px;"&gt;数据字典字段类型&lt;/td&gt;
+        &lt;td width="40%" style="padding: 4px;"&gt;字段属性&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;控件属性&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;" rowspan="6" align="left"&gt;数字&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;可以为空&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;是否必填&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;长度&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;长度&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;精度&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;精度&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;最小值&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;最小值&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;最大值&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;最大值&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;显示格式&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;显示格式&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;" rowspan="5" align="left"&gt;文本&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;可以为空&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;是否必填&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;最大长度&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;输入最大长度&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;最小长度&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;输入最小长度&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;掩码&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;掩码&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;掩码提示&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;掩码提示&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;" rowspan="4" align="left"&gt;日期&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;可以为空&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;是否必填&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;最小值&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;最小值&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;最大值&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;最大值&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;显示格式&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;显示格式&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;二进制&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;可以为空&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;是否必填&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;普通代码&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;可以为空&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;是否必填&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;分级代码&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;可以为空&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;是否必填&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;机构人员选择&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;可以为空&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;是否必填&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td style="padding: 4px;"&gt;自动编号&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;可以为空&lt;/td&gt;
+        &lt;td style="padding: 4px;"&gt;是否必填&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;</value>
+              <colSpan extend="true">2</colSpan>
+              <labelColor extend="true" />
+              <hideLabel extend="true">true</hideLabel>
+            </htmlArea>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="libraryId" />
+    <param name="bookId" pvalue="1000000000004127" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book where C_ID='{req.bookId}'</ds>
+  </dslist>
+</form>
+

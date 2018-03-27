@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>03e6a6c5b7de2053dc5e4e72f80641aa</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.schedule.Ckrz.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/schedule/Ckrz.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formf9a73">
+      <id>formf9a73</id>
+      <themeStyle>funis</themeStyle>
+      <show>false</show>
+      <Items>
+        <blankPanel sid="2a33dbf23911ee617f20fa9bb2540b0e">
+          <id>blankPanel0e7fa</id>
+          <height>100%</height>
+          <themeStyle>blankWhite</themeStyle>
+          <Items>
+            <listArea sid="079488e05d39285773709552245b0998">
+              <id>logListArea</id>
+              <ds>rs1</ds>
+              <height>100%</height>
+              <emptyDataTip />
+              <isPageSplit>false</isPageSplit>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <columnDate sid="c14ac7a5fb7da721fb74dc18d1b06127">
+                  <id>columnDate06d90</id>
+                  <inheritfld>time</inheritfld>
+                  <dataName>{rs1.time}</dataName>
+                  <title>触发时间</title>
+                  <showTime>true</showTime>
+                  <isFilter>true</isFilter>
+                  <isOrderBy>true</isOrderBy>
+                </columnDate>
+                <column sid="8ab4938fbff3d5aa68900cfb522649d4">
+                  <id>logType_column</id>
+                  <inheritfld>logType</inheritfld>
+                  <title>日志类别</title>
+                  <isFilter>true</isFilter>
+                  <dynamicDataFilter>logType_column_dynamicDataFilter</dynamicDataFilter>
+                  <isOrderBy>true</isOrderBy>
+                  <rowScript><![CDATA[logType_column_rowScript]]></rowScript>
+                </column>
+                <column sid="56a1c0b427a721ca3c8f5c389fd8c8d6">
+                  <id>column645ac</id>
+                  <inheritfld>logInfo</inheritfld>
+                  <dataName>{rs1.logInfo}</dataName>
+                  <title>日志信息</title>
+                  <isFilter>true</isFilter>
+                </column>
+              </Items>
+            </listArea>
+            <footer sid="6189a357d07dd031b7f42c683998f444">
+              <id>footere92ed</id>
+              <Items>
+                <blankPanel sid="690c0866f4e0d1a13313935348cef70a">
+                  <id>blankPanel67f19</id>
+                  <Items>
+                    <pagingbar1 sid="324ae1fe083200cc20d85b77983ea5c9">
+                      <id>rightpagingbar</id>
+                      <ds>rs1</ds>
+                      <align>right</align>
+                      <onSearch><![CDATA[rightpagingbar_onSearch]]></onSearch>
+                    </pagingbar1>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </footer>
+            <header sid="fb58cca7ddaeb43505f54b41b95d67c6">
+              <id>header54967</id>
+              <text />
+              <Items>
+                <blankPanel sid="223e10f798ba874147a3a4d2c71e0254">
+                  <id>blankPanelafa41</id>
+                  <Items>
+                    <formArea sid="633dee74ca6e16da2e0927bc53a9276b">
+                      <id>formArea815e4</id>
+                      <Items>
+                        <faString sid="e233c3b281de94bba07ab223b01981b1">
+                          <id>planName_faString</id>
+                          <displayType>readOnly</displayType>
+                          <onShow><![CDATA[planName_faString_onShow]]></onShow>
+                          <label>计划名称</label>
+                        </faString>
+                        <faString sid="6983efdf2e53d7ed8ee8eb583c2cf0be">
+                          <id>exeTime_faString</id>
+                          <displayType>readOnly</displayType>
+                          <onShow><![CDATA[exeTime_faString_onShow]]></onShow>
+                          <label>执行次数</label>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+          </Items>
+        </blankPanel>
+        <footer sid="503f3cc178c7008daed0014c0e77a4ca">
+          <id>footer5ccd5</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="49654b879ef419fd52d529668657c30d">
+              <id>refresh_button</id>
+              <text>刷新日志</text>
+              <icon>/arteryImage/file/syn.gif</icon>
+              <onClickClient><![CDATA[refresh_button_onClickClient]]></onClickClient>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <button sid="02c4445b52f69cdeaf3c825fd3a98b1e">
+              <id>clear_button</id>
+              <text>清除</text>
+              <icon>/arteryImage/symbol/clear.gif</icon>
+              <onClickClient><![CDATA[clear_button_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[clear_button_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <simpleButton sid="b0537acc0df48bb4796877165b59f98c">
+              <id>cancel_simpleButton</id>
+              <text>关闭</text>
+              <onClickClient><![CDATA[cancel_simpleButton_onClickClient]]></onClickClient>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="cid" showName="" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getLogList</ds>
+  </dslist>
+</form>
+

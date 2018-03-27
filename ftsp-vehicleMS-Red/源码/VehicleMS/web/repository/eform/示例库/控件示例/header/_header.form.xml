@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ead846be327f1aa36d97159ced1017ea</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.header._header.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/header/_header.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form00ac1">
+      <id>form00ac1</id>
+      <Items>
+        <blankPanel sid="234701adb8605c4e6330765ef02db22e">
+          <id>blankPanel0e8f5</id>
+          <Items>
+            <header sid="11515e52fe159a962fa1e1e2f83d44f4">
+              <id>header8e50b</id>
+              <text>这是标题栏和折叠按钮的示例</text>
+              <Items>
+                <collapseBtn sid="f08a868ec08fcbd2da2972647fe9df12">
+                  <id>collapseBtn39810</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <formArea sid="98fa79b12af5d2e6d284ce8bcd511165">
+              <id>formArea9fee9</id>
+              <Items>
+                <faString sid="2741ffc245c85b4c157bee2f6977c1e8">
+                  <id>faString5e330</id>
+                </faString>
+                <faDate sid="5f69330133663bd4649df08eb73f6ff8">
+                  <id>faDatecf8d1</id>
+                </faDate>
+                <faTime sid="1fabbc870d8f2dde1ab38676eb7b6f6d">
+                  <id>faTimede890</id>
+                </faTime>
+                <faOrgan sid="5e92ff9634b476e1c29f87050728bc8f">
+                  <id>faOrganbaa94</id>
+                </faOrgan>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

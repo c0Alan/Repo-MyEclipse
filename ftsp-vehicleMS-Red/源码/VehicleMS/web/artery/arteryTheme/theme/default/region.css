@@ -1,0 +1,86 @@
+/***************************************************************************************
+ * RegionLayout
+ ***************************************************************************************/
+.x-border-layout-ct{
+	background-color: transparent;
+}
+.x-layout-split{
+	overflow: visible;
+}
+
+.x-layout-mini {
+	overflow:hidden;
+    filter:none;
+}
+/***************************************************************************************
+* x-layout-mini-right-cust-unis
+***************************************************************************************/
+.x-layout-arrow-unis .x-layout-collapsed{
+	background-color: transparent;
+	overflow: visible;
+}
+.x-layout-arrow-unis .x-layout-split-west .x-layout-mini {
+	height:100%;
+	width:6px;
+	background-image: url(images/region/unis/mini-left.gif);
+	background-position: 0 center;
+	background-repeat:no-repeat;
+	position: static;
+}
+.x-layout-arrow-unis .x-layout-cmini-west .x-layout-mini{
+	height:100%;
+	width:6px;
+	background-image: url(images/region/unis/mini-right.gif);
+	background-position: 0 center;
+	background-repeat:no-repeat;
+	position: static;
+}
+.x-layout-arrow-unis .x-layout-split-east .x-layout-mini {
+	height:100%;
+	width:6px;
+	background-image: url(images/region/unis/mini-right.gif);
+	background-position: 0 center;
+	background-repeat:no-repeat;
+	position: static;
+}
+.x-layout-arrow-unis .x-layout-cmini-east .x-layout-mini{
+	height:100%;
+	width:6px;
+	background-image: url(images/region/unis/mini-left.gif);
+	background-position: 0 center;
+	background-repeat:no-repeat;
+	position: static;
+}
+.x-layout-arrow-unis .x-layout-split-north .x-layout-mini {
+	height:6px;
+	width:126px;
+	background-image: url(images/region/unis/mini-top.gif);
+	background-position: center 0;
+	background-repeat:no-repeat;
+	position: static;
+}
+.x-layout-arrow-unis .x-layout-cmini-north .x-layout-mini{
+	height:6px;
+	width:126px;
+	background-image: url(images/region/unis/mini-bottom.gif);
+	background-position: center 0;
+	background-repeat:no-repeat;
+	position: static;
+}
+
+.x-layout-arrow-unis .x-layout-split-south .x-layout-mini {
+	height:6px;
+	width:126px;
+	background-image: url(images/region/unis/mini-bottom.gif);
+	background-position: center 0;
+	background-repeat:no-repeat;
+	position: static;
+}
+.x-layout-arrow-unis .x-layout-cmini-south .x-layout-mini{
+	height:6px;
+	width:126px;
+	background-image: url(images/region/unis/mini-top.gif);
+	background-position: center 0;
+	background-repeat:no-repeat;
+	position: static;
+}

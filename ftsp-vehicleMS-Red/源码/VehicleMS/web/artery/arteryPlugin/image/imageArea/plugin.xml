@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="imageArea" cn="图片区域" menu="图形控件" jsType="artery-base"
+	icon="imageArea.gif" iconNew="imageAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-05-05</CreateTime>
+		<Describe>
+  		<![CDATA[此控件有两个主要功能：<br>
+  		1.用于显示单张图片，图片可来自于图片库或指定图片路径。<br>
+  		2.当此控件增加“图片组件”控件时，就相当于容器。
+  		]]>
+		</Describe>
+		<Images>
+			<File>info3.png</File>		
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+		<Parent type="formArea" />
+		<Parent type="faBlankLayout" />
+		<Parent type="upRegion" />
+		<Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" />
+	</Parents>
+	<Children>
+		<Child type="header" />
+		<Child type="topbar" />
+		<Child type="bottomBar" />
+		<Child type="footer" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.image.ImageArea
+	</Class>
+	<JsFile>
+		<File>imageArea.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apimagearea</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="图片" type="5" name="icon" export="true" inherit="false" tips="设置组件的显示图片，图片从系统文件中读取。">
+			<Value />
+			<Describe>
+	  		<![CDATA[
+	  			设置组件的显示图片，图片从系统文件中读取。此处要写相对路径，如/artery/form/parse/images/checked.gif
+	  		]]>
+		</Describe>
+		</Property>
+		<Property cn="图片宽度" type="1" name="imgWidth" inherit="false" tips="设置图片宽度 （可输入数值或百分比，实现缩放图片效果）">
+			<Value />
+		</Property>
+		<Property cn="图片高度" type="1" name="imgHeight" inherit="false" tips="设置图片高度（可输入数值或百分比，实现缩放图片效果）">
+			<Value />
+		</Property>
+		<Property cn="图片样式" type="1" name="imgStyle" >
+			<Value />
+		</Property>
+		<Property cn="鼠标移上时图片" type="5" name="iconOver" export="true" tips="设置当鼠标移上时组件的显示图片，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value/>
+		</Property>
+		<Property cn="值" type="1" name="value" export="true" inherit="false"
+			tips="图片区域代表的值，当有图片子组件时，其值为选中的子组件的值">
+			<Value></Value>
+		</Property>
+		<Property cn="加载的数据" type="14" name="getImage"
+			tips="可写服务器端脚本，用于控件初始的数据，优先级低于‘从本地文件加载’和‘从URL加载’两个属性">
+			<Description><![CDATA[
+			可写服务器端脚本，用于控件初始的数据，优先级低于‘从本地文件加载’和‘从URL加载’两个属性"
+			<pre>
+	/**
+	 * 生成时脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public byte[] imageAreac7b44_getImage(Item item) {
+		String pathname = "C:/Users/artery/Desktop/1.jpg";
+		File file = new File(pathname);
+		return FileUtils.readFileData(file);
+	}
+			</pre>
+			]]></Description>
+			<Value />
+		</Property>
+		<Property cn="提示信息" type="1" name="tip" inherit="false"
+			tips="设置提示信息，当鼠标移动到图片区域上时，显示的提示信息">
+			<Value></Value>
+		</Property>
+		<Property cn="是否显示边框" type="11" name="border" export="true" inherit="false"
+			tips="设置为true时，显示最外层的边框，否则不显示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className" inherit="false"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1" name="showRight">
+			<Value />
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true">
+			<Value>false</Value>
+		</Property>
+		<Property cn="链接到" type="6" name="linkto">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient" >
+			<Value/>
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer" inherit="false"
+			tips="鼠标点击本组件时触发的服务器端事件">
+			<Value/>
+			<Description><![CDATA[			
+			<p>当前台导航栏节点被点击时，如发送后台请求，将执行此方法</p>  
+        	<p>示例代码如下：</p>    
+        	<pre> 
+			/**
+			 * 点击时脚本
+			 * 
+			 * @param item
+			 *            控件对象
+			 */
+				public Object dynamicNavc2551_onNodeClickServer(Item item) {
+					//获取参数
+					String param = ParamUtil.getString("param1");
+					//后台操作
+					
+					//返回消息
+					return "ok";
+				}
+			</pre>
+			]]></Description>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"	>
+			<Value/>
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="getValue" return="string" tips="得到设置的图片区域的值..." inherit="false">
+			<Description><![CDATA[得到设置的图片区域的值，如果有子组件，则为选中的子组件的值
+			]]></Description>
+			<Return>string</Return>
+		</Method>
+		<Method name="setValue" return="void" tips="设置图片区域代表的值..." inherit="false">
+			<Description><![CDATA[设置图片区域代表的值,不会影响图片子项的选中情况。
+			]]></Description>
+			<Parameters>
+				<Param>value:String</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="changeImage" return="void" tips="改变图片区域中的图片..." inherit="false">
+			<Description><![CDATA[
+			改变图片区域中的图片，需要传递图片的url路径，路径不包括项目的ContextPath。
+			<pre>
+			Artery.get(id).changeImage('/artery/arteryImage/arrow/up.gif');
+			<pre>
+			]]></Description>
+			<Parameters>
+				<Param>url:String</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="setTip" return="void" tips="改变图片区域中的提示信息..." inherit="false">
+			<Description><![CDATA[
+			改变图片区域中的提示信息。
+			<pre>
+			Artery.get(id).setTip('显示详情');
+			<pre>
+			]]></Description>
+			<Parameters>
+				<Param>tip:String</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		
+	</Methods>
+  	<JavaFunctions>
+  	<JavaFunction name="onClickServer">
+<![CDATA[
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+<JavaFunction name="getImage">
+<![CDATA[
+/**
+ * 获得图片数据
+ * 
+ * @param item
+ *            控件对象
+ */
+public byte[] {methodName}(Item item) {
+	return null;
+}
+]]>
+</JavaFunction>
+	</JavaFunctions>
+</Item>
+

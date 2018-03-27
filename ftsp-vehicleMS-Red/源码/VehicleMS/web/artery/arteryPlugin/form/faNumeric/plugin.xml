@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="faNumeric" cn="数值类型" menu="输入控件" nameprop="label"
+	icon="faNumeric.gif" iconNew="faNumericNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>数值控件</Describe>
+	</Info>
+	<Parents>
+		<Parent type="formArea" />
+		<Parent type="faFieldSet" />
+		<Parent type="faBlankLayout" />
+	</Parents>
+	<Children />
+	<Class more="editor">com.thunisoft.artery.plugin.form.FaNumeric
+	</Class>
+	<JsFile>
+		<File>faNumeric.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="提交名称" type="1" name="submitName"
+			tips="用于设置form提交时本控件的提交名称，也就是input标签的name属性">
+			<Value />
+		</Property>
+				<Property cn="控件提示" type="1" name="comment" tips="用于产生控件的提示信息">
+			<Value />
+			<Description><![CDATA[
+			用于产生控件的提示信息,如果控件指定了继承表，继承字段，此项默认会显示数据字典中相应字段的描述信息。
+			如果填写此属性，则会覆盖数据字典中的描述信息。
+			]]></Description>
+		</Property>
+		<Property cn="是否必填" type="11" name="required" tips="设置是否必须填写">
+			<Value>false</Value>
+		</Property>
+		<Property cn="display必填标识" type="11" name="displayRequiredStyle" tips="当运行时类型为display时是否应用label的必填样式，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="只读时是否验证" type="11" name="validOnReadOnly" export="true" tips="当设置为true时，调用表单的submit方法时 会对展现类型（displayType）属性为ReadOnly的控件进行验证，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="无效时是否提交" type="3" name="submitDisabled" ct="[inherit,true,false]"
+			 tips="设置表单提交的时候，当displayType属性为disabled时是否提交，默认为inherit">
+			<Value>inherit</Value>
+		</Property>
+        <Property cn="继承key" type="1" name="inheritkey"
+            tips="继承的数据字典的key，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+            <Value />
+        </Property>
+		<Property cn="继承表" type="1" name="inherittbl"
+			tips="继承的数据字典的表名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="继承字段" type="1" name="inheritfld"
+			tips="继承的数据字典的字段名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="dataName" tips="对应着从数据源中取数据">
+			<Value />
+		</Property>
+		<Property cn="控件类型" type="3" name="editor" ct="[input]"
+			tips="选择数值控件的子类型，目前只有input类型">
+			<Value>input</Value>
+		</Property>
+		<Property cn="长度" type="2" name="maxLength"
+			tips="数字的最大有效位数，仅整数，不包括小数，不指定则以数据字典为准">
+			<Value />
+		</Property>
+		<Property cn="精度" type="2" name="maxPrecision" tips="数字的精度，最大小数位数，不指定则以数据字典为准">
+			<Value />
+		</Property>
+		<Property cn="最大值" type="2" name="maxValue" tips="最大值，不指定则以数据字典为准">
+			<Value />
+		</Property>
+		<Property cn="最小值" type="2" name="minValue" tips="最小值，不指定则以数据字典为准">
+			<Value />
+		</Property>
+		<Property cn="显示格式" type="1" name="showType"
+			tips="定义数字显示格式,支持货币,数字等，控件只读时有效，不指定则以数据字典为准">
+			<Value />
+			<Description><![CDATA[
+			<p>定义数字显示格式,支持货币,数字等，控件只读时有效，不指定则以数据字典为准</p>
+			<table><tr><td colspan="2">例如，值为12345678.9，不同showType的显示如下</td></tr><tr><td style='font-weight:700'>showType：000,000,000.00</td><td style='font-weight:700'>showType：###,###,##.##</td></tr><tr><td><img src='../../resources/images/common/form/faNumeric/faNumeric_showType1.png'></td><td><img src='../../resources/images/common/form/faNumeric/faNumeric_showType2.png'></td></tr><tr><td style='font-weight:700'>showType：#,##,###.00</td><td style='font-weight:700'>showType：0.###E0</td></tr><tr><td><img src='../../resources/images/common/form/faNumeric/faNumeric_showType3.png'></td><td><img src='../../resources/images/common/form/faNumeric/faNumeric_showType4.png'></td></tr></table>
+<PRE>
+此说明摘自Java帮助文档（java.text.DecimalFormat）
+
+符号        位置         本地化？            含义  
+--------  -----------  ----------  --------------------------------
+0           数字         是          阿拉伯数字，如果不存在则显示为 0
+#           数字字       是          阿拉伯数字 
+.           数字         是          小数分隔符或货币小数分隔符 
+-           数字         是          减号 
+,           数字         是          分组分隔符 
+E           数字         是          分隔科学计数法中的尾数和指数。在前缀或后缀中无需加引号。 
+;           子模式边界   是          分隔正数和负数子模式 
+%           前缀或后缀   是          乘以 100 并显示为百分数 
+\u2030      前缀或后缀   是          乘以 1000 并显示为千分数 
+¤ \u00A4   前缀或后缀   否          货币记号，由货币符号替换。如果两个同时出现，则用国际货币符号替换。如果出现在某个模式中，则使用货币小数分隔符，而不使用小数分隔符。 
+'           前缀或后缀   否          用于在前缀或或后缀中为特殊字符加引号，例如 "'#'#" 将 123 格式化为 "#123"。要创建单引号本身，请连续使用两个单引号："# o''clock"。 
+</PRE>
+			]]></Description>
+			<Conditions>
+				<Condition>
+				控件只读时有效
+				</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value />
+    </Property>
+    <Property cn="缩写单位" type="3" name="valueUnit" ct="[无,百,千,万,十万]" export="true" tips="设置本控件的值的缩写单位" group="值">
+      <Value/>
+      <Description><![CDATA[
+      	<p>设置本控件的值的缩写单位，可选“无,百,千,万,十万”</p>
+		<table><tr><td colspan="2">例如，值为12345678.9，不同valueUnit的显示如下</td></tr><tr><td style='font-weight:700'>valueUnit：百</td><td style='font-weight:700'>valueUnit：千</td></tr><tr><td><img src='../../resources/images/common/form/faNumeric/faNumeric_valueUnit1.png'></td><td><img src='../../resources/images/common/form/faNumeric/faNumeric_valueUnit2.png'></td></tr><tr><td style='font-weight:700'>valueUnit：万</td><td style='font-weight:700'>valueUnit：十万</td></tr><tr><td><img src='../../resources/images/common/form/faNumeric/faNumeric_valueUnit3.png'></td><td><img src='../../resources/images/common/form/faNumeric/faNumeric_valueUnit4.png'></td></tr></table>
+      ]]></Description>
+      <Conditions>
+         <Condition>设置了控件的缩写单位，不影响getValue()方法的返回值，如：值为12345678.9，缩写单位为“百”，getValue()返回12345678.9，getValueText()返回123456.789</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="值" type="1" name="value" export="true" tips="设置本控件的值" group="值">
+      <Value />
+    </Property>
+    <Property cn="显示值提示" type="11" name="showValueTip"  export="true" tips="鼠标移动到控件上，显示控件的值...">
+      <Value>false</Value>
+    </Property>
+    <Property cn="输入提示" type="1" name="emptyText" export="true" tips="设置本控件的输入提示值，相当于ext的emptyText属性">
+      <Value />
+    </Property>
+    <Property cn="输入框样式" type="1" name="valueStyle" export="true" tips="设置输入框的样式">
+      <Value />
+    </Property>
+    <Property cn="输入框样式(只读)" type="1" name="valueStyleRead" export="true" tips="设置输入框的样式">
+      <Value />
+    </Property>
+    <Property cn="验证提示方式" type="3" name="validType" ct="[cooltip,title]" tips="设置验证的提示方式，默认为tip提示的方式，选择title则以html的title样式展现">
+      <Value>cooltip</Value>
+    </Property>
+    <Property cn="展现类型" type="3" name="displayType" ct="[inherit,editable,readOnly,display,disabled]" export="true" tips="当设置此属性为true时，整个表单组件都会为只读的">
+      <Value>inherit</Value>
+    </Property>
+    <Property cn="是否隐藏" type="11" name="hidden" export="true"  tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="隐藏方式" type="3" name="hideMode" export="true" ct="[display,visibility]" tips="设置组件的隐藏方式，相当于css的样式，可选display和visibility">
+      <Value>display</Value>
+    </Property>
+    <Property cn="客户端" type="15" group="值改变时脚本" name="onChangeClient" tips="当本组件的值改变时触发的事件，客户端脚本">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="值改变时脚本" name="onChangeServer" tips="当本组件的值改变时触发的事件，服务器端脚本">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" group="验证脚本" name="onValidClient" tips="表单控件的验证事件(客户端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="验证脚本" name="onValidServer" tips="表单控件的验证事件(服务器端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"
+		tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14" name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+    <Methods>
+  	<Method name="getValue" return="string" tips="得到控件的值">
+  	</Method>
+  	<Method name="getValueText" return="string" tips="得到控件的显示值">
+  	</Method>
+  	<Method name="setValue" return="void" tips="设置控件的值">
+  	</Method>
+  	<Method name="reset" return="void" tips="恢复控件的初始值">
+  	</Method>
+  	<Method name="setOriginalValue" return="void" tips="设置控件的初始值">
+  	</Method>
+  	<Method name="setLabel" return="void" tips="设置控件的label的显示内容">
+  	</Method>
+  	<Method name="setLabelColor" return="void" tips="设置控件的label的显示内容的颜色">
+  	</Method>
+  	<Method name="setLabelStyle" return="void" tips="设置控件的label的样式">
+  	</Method>
+  	<Method name="setLabelCntStyle" return="void" tips="设置控件的label容器的样式">
+  	</Method>
+  	<Method name="setValueStyle" return="void" tips="设置控件的内容样式">
+  	</Method>
+  	<Method name="setRequired" return="void" tips="设置控件是否必填">
+  	</Method>
+  	<Method name="read" return="void" tips="设置控件为只读">
+  	</Method>
+  	<Method name="edit" return="void" tips="设置控件为可编辑">
+  	</Method>
+  	<Method name="disable" return="void" tips="设置控件无效">
+  	</Method>
+  	<Method name="enable" return="void" tips="设置控件有效">
+  	</Method>
+  	<Method name="hide" return="void" tips="隐藏本控件">
+  	</Method>
+  	<Method name="show" return="void" tips="显示本控件">
+  	</Method>
+  </Methods>
+  <JsFunctions>
+  	<JsFunction name="onChangeClient">
+/**
+ * 值改变时脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  oldValue 控件改变前的旧值
+ * @param  newValue 控件改变后的新值
+ */
+function {methodName} (rc, oldValue, newValue){
+	
+}
+  	</JsFunction>
+  	<JsFunction name="onValidClient">
+/**
+ * 验证脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ */
+function {methodName} (rc, value){
+	
+}
+  	</JsFunction>
+  </JsFunctions>
+  	<JavaFunctions>
+		<JavaFunction name="onChangeServer">
+<![CDATA[
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onValidServer">
+<![CDATA[
+/**
+ * 验证时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

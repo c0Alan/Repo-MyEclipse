@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="treeArea" cn="树区域" menu="树区域" icon="treeArea.gif" iconNew="treeAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe><![CDATA[
+		树区域控件，可在页面上生成一棵树,树区域有两种生成方式，（静态与动态）。
+		静态树通过构造书目录，树节点来生成树，可通过循环方式生成。
+		动态方式通过动态节点的加载节点脚本动态加载数据生成树。
+		
+		动态树初始化时将会执行后台加载时脚本onload初始化数据，此函数默认通过前台传递的需要加载的节点信息参数返回此节点下的树节点列表。
+		此方法首次调用会传递根节点，通过<pre>node.getType()</pre>判断节点类型，并查询返回相应节点下的子节点列表。根节点类型为“root”
+		树区域默认展开根节点下1级节点，初始化后，每次展开相应节点时，会再次调用后台加载脚本，加载相应节点下的子节点列表。
+		已加载的节点不会重复请求加载。
+		加载脚本示例如下:
+				<pre>
+				public List daynmic_tree_onLoad(Item item, TreeNode node) throws Exception {
+					//准备初始化返回列表
+					List alist = new ArrayList();
+					if(node.getType().equals("root")){
+						//如果是根节点，返回第一层列表
+						dealCorp("select * from T_Aty_Corp where C_PID is null", alist);
+					}else if(node.getType().equals("corp")){
+						//如果是组织类型节点，查询组织下的组织，部门，人员信息，并分别加入到alist中
+						dealCorp("select * from T_Aty_Corp where C_PID='"+node.getId()+"'", alist);
+						dealDept("select * from T_Aty_Dept where C_PID is null and C_CORP='"+node.getId()+"'", alist);
+						dealUser("select * from T_Aty_User where C_DEPT is null and C_CORP='"+node.getId()+"'", alist);
+					}else if(node.getType().equals("dept")){
+						//如果是部门节点，查询部门下设部门，人员信息，并分别加入到alist中
+						dealDept("select * from T_Aty_Dept where C_PID='"+node.getId()+"'", alist);
+						dealUser("select * from T_Aty_User where C_DEPT='"+node.getId()+"'", alist);
+					}
+					//返回此节点下一层级节点列表
+					return alist;
+				}
+				</pre>
+		]]></Describe>
+
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+	</Parents>
+	<Children>
+		<Child type="treeMenu" />
+		<Child type="treeNode" />
+		<Child type="treeDynamic" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.tree.TreeArea
+	</Class>
+	<JsFile>
+		<File>treeArea.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"	export="true" cfg="true">
+			<Value>aptreearea</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true" 	tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="选择类型" type="3" name="selType" ct="[none,radio,checkbox]"	tips="none：不选择， radio：单选， checkbox：多选">
+			<Value>none</Value>
+		</Property>
+		<Property cn="展开树" type="11" name="expandTree" tips="设置是否将树展开">
+			<Value>false</Value>
+		</Property>
+		<Property cn="值" type="1" name="value" tips="设置本控件的值" export="true">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"	et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="级联选择" type="11" name="cascade" tips="如果为true，则选择父节点会自动选中全部子节点">
+			<Value>false</Value>
+		</Property>
+        <Property cn="级联父节点" type="3" name="cascadeParent" ct="[allchild,singlechild,false]" tips="如果为allChild，则子节点全选时，父节点自动被选中...">
+        	<Description><![CDATA[
+如果为allChild，则子节点全选时，父节点自动被选中,如果为singleChild，则有子节点被选中，父节点被选中，如果为false，没有子节点到父节点的级联效果     
+        	]]>
+			</Description>
+            <Value>allchild</Value>
+            <Conditions>
+            	<Condition>控件类型（editor）属性为mTree，且级联选择（cascade）属性为true时有效</Condition>
+			</Conditions>
+        </Property>
+		<Property cn="使用Frame样式" type="11" name="frame" export="true" tips="当设置为true时，本组件会显示Ext的边框">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否显示边框" type="11" name="border" export="true" tips="设置为true时，显示最外层的边框，否则不显示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="使用虚线" type="3" name="line" ct="[true,false]" tips="当设置为true时,树的父子节点之间会用虚线连接">
+	      <Value>true</Value>
+	      <Description><![CDATA[
+当设置为true时,树的父子节点之间会用虚线连接,设置为false时则不会用虚线连接
+<table border="1">  
+  <tr>
+   <td><img src='../../resources/images/common/tree/line.gif'></td>
+   <td><img src='../../resources/images/common/tree/arrow.gif'></td>
+  </tr>
+</table>
+			     ]]>
+			</Description>
+	      <Conditions>
+				<Condition>此属性与使用箭头属性互斥。</Condition>      			
+		  </Conditions>
+	    </Property>
+	    <Property cn="使用箭头" type="3" name="useArrows" ct="[true,false]" tips="当设置为true时,树的父节点使用箭头表示收起与展开...">
+	      <Value>false</Value>
+	            <Description>
+			<![CDATA[当设置为true时,树的父节点使用箭头表示收起与展开,并且此时默认'使用虚线'为false,且不可修改.
+<table border="1">  
+  <tr>
+   <td><img src='../../resources/images/common/tree/line.gif'></td>
+   <td><img src='../../resources/images/common/tree/arrow.gif'></td>
+  </tr>
+</table>
+			]]>
+		</Description>
+	        <Conditions>
+				<Condition>此属性与使用虚线属性互斥。</Condition>      			
+		  </Conditions>
+	    </Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" tips="设置风格样式">
+	  <Value>inherit</Value>
+	</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true" tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show" tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"	tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>		<Property cn="客户端" type="15" group="点击节点脚本" name="onClickClient"
+			tips="点击树上节点时，将调用此方法，可以发送ajax请求">
+			<Value />
+			<Description><![CDATA[ 
+        <p>当前台树区域节点被点击时，将首先执行此方法,此方法可发送后台请求，已触发相应后台事件方法</p>
+        <p>示例代码如下：</p>    
+        <pre> 
+       
+/**
+ * 点击节点脚本(treeAreac2551)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  node 树节点
+ */
+function treeAreac2551_onClickClient (rc, node){
+	//要传递的参数
+	rc.put("param1","ok");
+	//必须调用此方法才会执行服务器端点击事件方法
+	rc.send(function(result){
+		//成功返回result
+		
+		//判断返回信息
+		if(result=="ok"){
+			//操作成功
+		}else{
+			//操作失败
+		}
+ 		
+	});
+}
+		</pre>
+      ]]></Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="点击节点脚本" name="onClickServer"
+			tips="点击树上节点时，将调用此方法，可以发送ajax请求">
+			<Value />
+			<Description><![CDATA[ 
+        <p>当前台树区域节点被点击时，如发送后台请求，将执行此方法</p>  
+         <p>示例代码如下：</p>    
+        <pre> 
+/**
+* 点击时脚本
+* 
+* @param item
+*            控件对象
+*/
+public Object treeAreac2551_onClickServer(Item item) {
+	//获取参数
+	String param = ParamUtil.getString("param1");
+	//后台操作
+	
+	//返回消息
+	return "ok";
+}
+</pre>
+      ]]></Description>
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow" tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="getValue" inherit="false" return="valueStr" tips="获得选中节点的值字符串">
+			<Description><![CDATA[获得选中节点的值字符串
+			      <pre>
+						// 返回值类似："val1;val2;val3"
+						var varStr = Artery.get("treeArea").getValue();
+						alert(varStr);
+			      </pre>]]>
+			</Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>valueStr:string 逗号分割的值字符串</Return>
+		</Method>
+		<Method name="setValue" inherit="false" return="void"  tips="设置选中节点的值字符串">
+			<Description><![CDATA[
+					设置选中节点的值字符串，例如"val1;val2;val3"
+			      <pre>
+						Artery.get("treeArea").setValue("val1;val2;val3");
+			      </pre>
+			 ]]></Description>
+			<Parameters>
+				<Param>value:string</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="reload" inherit="false" return="void"  tips="刷新树区域控件的内容">
+			<Description><![CDATA[
+					刷新树区域控件的内容，支持参数和回调函数
+			      <pre>
+						Artery.get("treeArea").reload({params:{},callback:function});
+			      </pre>
+			 ]]></Description>
+			<Parameters>
+				<Param>value:string</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+	<JsFunctions>
+<JsFunction name="onClickClient">
+	<![CDATA[
+	/**
+	 * 点击节点脚本({itemid})
+	 *
+	 * @param rc 系统提供的AJAX调用对象
+	 * @param node 树节点
+	 */
+	function {methodName} (rc, node){
+	
+	}
+	]]>
+	</JsFunction>
+</JsFunctions>
+	<JavaFunctions>
+		<JavaFunction name="onClickServer">
+<![CDATA[
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

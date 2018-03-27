@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>a13bd482ed5035fa3823b65e8ad34455</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._listArea_pagingBar.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_listArea_pagingBar.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formb0ef3">
+      <id>formb0ef3</id>
+      <Items>
+        <listArea sid="52f7c5de9ec75674636c2c32c40a6922">
+          <id>listArea4cb71</id>
+          <ds>rs1</ds>
+          <isPageSplit>false</isPageSplit>
+          <displayInfo>false</displayInfo>
+          <Items>
+            <columnIdentity sid="9d7b0a4ed74e61bee71917d124242f3b">
+              <id>columnIdentityCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>图书编号</title>
+              <autoRowHeight>true</autoRowHeight>
+            </columnIdentity>
+            <columnCode sid="6ab832f352b8ad13da3f66162aca220e">
+              <id>columnCodeNTYPE</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{rs1.N_TYPE}</dataName>
+              <title>图书类型</title>
+              <autoRowHeight>true</autoRowHeight>
+            </columnCode>
+            <columnString sid="0fdd7d69b7c9493ca5850179cdc3be09">
+              <id>columnStringCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <autoRowHeight>true</autoRowHeight>
+            </columnString>
+            <columnString sid="2701703fbb741560c6929a02baccd9df">
+              <id>columnStringTABSTRACT</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>T_ABSTRACT</inheritfld>
+              <dataName>{rs1.T_ABSTRACT}</dataName>
+              <title>摘要</title>
+              <autoWidth>true</autoWidth>
+              <autoRowHeight>false</autoRowHeight>
+            </columnString>
+            <columnString sid="dee4de9590ce4bcf2bc06fadbf890cd8">
+              <id>columnStringCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <autoRowHeight>true</autoRowHeight>
+            </columnString>
+          </Items>
+        </listArea>
+        <pagingbar1 sid="3f63669618a973547aaf8c2da90ec647">
+          <id>pagingbar1db667</id>
+          <ds>rs1</ds>
+          <pageCount>5</pageCount>
+          <pagePerNext>3</pagePerNext>
+          <onSearch><![CDATA[pagingbar1db667_onSearch]]></onSearch>
+        </pagingbar1>
+        <pagingbar2 sid="ceec0a177b883a7e4e6576e87bae27c1">
+          <id>pagingbar2c89d3</id>
+          <ds>rs1</ds>
+          <onSearch><![CDATA[pagingbar2c89d3_onSearch]]></onSearch>
+        </pagingbar2>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

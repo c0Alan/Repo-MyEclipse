@@ -1,0 +1,58 @@
+.dlgClose{background: url(images/close.gif) no-repeat;height: 9px;width: 10px;cursor: pointer;}
+.dlgMinimize{background: url(images/minimize.gif) no-repeat;height: 9px;width: 9px;cursor: pointer;}
+.dlgRestore{background: url(images/restore.gif) no-repeat;height: 9px;width: 8px;cursor: pointer;}
+.waitDialogBg{background:url(images/wait_bg.gif ) left top no-repeat;width:262px;height:116px;}
+.dialogWhiteBg{background-color:#FFFFFF;border:2px solid #CCCCCC;}
+.aboutDialogBg{background:url(images/about_2.gif ) left top no-repeat;width:380px;height:103px;}
+/*左上角*/
+.dlgLt {
+	background: url(images/dlg_1.gif) no-repeat left top;
+	height: 27px;
+	width: 9px;
+}
+/*右上角*/
+.dlgRt {
+	background: url(images/dlg_4.gif) no-repeat right top;
+	height: 27px;
+	width: 9px;
+}
+/*标题*/
+.dlgTitle {
+	background: url(images/dlg_2.gif) repeat-x left top;
+  width: 100%;
+	height: 27px;
+}
+/*左下角*/
+.dlgLb {
+	background: url(images/dlg_10.gif) no-repeat left bottom;
+	height: 40px;
+	width: 9px;
+}
+/*右下角*/
+.dlgRb {
+	background: url(images/dlg_12.gif) no-repeat right bottom;
+	height: 40px;
+	width: 9px;
+}
+/*下部*/
+.dlgBottom {
+	background: url(images/dlg_11.gif) repeat-x left bottom;
+  width: 100%;
+	height: 40px;
+}
+/*左边线*/
+.dlgLBorder {
+	background: url(images/dlg_5.gif) repeat-y left top;
+	width: 9px;
+  height: 100%;
+}
+/*右边线*/
+.dlgRBorder {
+	background: url(images/dlg_7.gif) repeat-y right top;
+  height: 100%;
+	width: 9px;
+}
+/*背景*/
+.dlgBg {
+	background-color: #FFECFF;
+}

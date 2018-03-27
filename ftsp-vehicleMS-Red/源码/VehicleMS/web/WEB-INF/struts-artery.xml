@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <action-mappings>
+    <!-- 分级代码 -->
+    <action path="/artery/classCode/dealClassCode" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="listClassCode" path="/artery/arteryConsole/classCode/listClassCode.jsp"/>
+      <forward name="showClassCodeTree" path="/artery/arteryConsole/classCode/showClassCodeTree.jsp"/>
+      <forward name="editClassCode" path="/artery/arteryConsole/classCode/editClassCode.jsp"/>
+      <forward name="addClassCode" path="/artery/arteryConsole/classCode/addClassCode.jsp"/>
+    </action>
+    <!-- 普通代码 -->
+    <action path="/artery/code/dealCode" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="listCodeType" path="/artery/code/listCodeType.jsp"/>
+      <forward name="listCode" path="/artery/code/listCode.jsp"/>
+    </action>
+    <!-- 构件库维护 -->
+    <action path="/artery/complib" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="index" path="/artery/arteryConsole/complib/complib.jsp"/>
+      <forward name="welcome" path="/artery/arteryConsole/complib/welcome.jsp"/>
+      <forward name="editform" path="/artery/formmake.do?action=formmake"/>
+      <forward name="editreport" path="/artery/report/make/reportmake.jsp"/>
+      <forward name="editwrit" path="/artery/writ/make/writmake.jsp"/>
+      <forward name="editplugin" path="/artery/pluginmake/main.jsp"/>
+      <forward name="listRelForm" path="/artery/arteryConsole/complib/listRelForm.jsp"/>
+    </action>
+    <!-- 构件库刷新(与插件通信) -->
+    <action path="/artery/refresh" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+    </action>
+    <!-- 数据字典维护 -->
+    <action path="/artery/dict/dealDict" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="index" path="/artery/arteryConsole/dict/dict.jsp"/>
+    </action>
+    <!-- 表间关系 -->
+    <action path="/artery/dict/dealRel" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="relationList" path="/artery/arteryConsole/dict/relationList.jsp"/>
+    </action>
+    <!-- 高级查询 -->
+    <action path="/artery/search" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="make" path="/artery/arteryConsole/search/make.jsp"/>
+      <forward name="list" path="/artery/arteryConsole/search/list.jsp"/>
+      <forward name="error" path="/artery/arteryConsole/search/error.jsp"/>
+    </action>
+    <!-- 表单制作 -->
+    <action path="/artery/formmake" type="org.springframework.web.struts.DelegatingActionProxy"
+      scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="formmake" path="/artery/form/make/formmake.jsp"/>
+      <forward name="forminterface" path="/artery/form/make/forminterface.jsp"/>
+      <forward name="params" path="/artery/form/make/params.jsp"/>
+      <forward name="ds" path="/artery/form/make/ds.jsp"/>
+    </action>
+    <!-- 系统监控 -->
+    <action path="/artery/monitor" type="org.springframework.web.struts.DelegatingActionProxy"
+      scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+	  <forward name="monitor" path="/artery/arteryConsole/monitor/monitor.jsp"/>
+	</action>
+    <!-- 表单解析 -->
+    <action path="/artery/form/dealParse" type="org.springframework.web.struts.DelegatingActionProxy"
+      scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="parse" path="/artery/form/parse/parse.jsp"/>
+    </action>
+    <!-- 表单预览(与插件通信) -->
+    <action path="/artery/preview" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="parse" path="/artery/form/parse/parse.jsp"/>
+    </action>
+    <!-- 报表制作 -->
+    <action path="/artery/report" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="table" path="/artery/report/make/table.jsp" />
+      <forward name="grammar" path="/artery/report/make/grammar.jsp" />
+      <forward name="order" path="/artery/report/make/order.jsp" />
+      <forward name="light" path="/artery/report/make/light.jsp" />
+      <forward name="relation" path="/artery/report/make/relation.jsp" />
+      <forward name="makeLayout" path="/artery/report/make/makeLayout.jsp" />
+    </action>
+    <!-- 报表解析 -->
+    <action path="/artery/report/dealParse" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="parse" path="/artery/report/parse/parse.jsp"></forward>
+    </action>
+    <!-- 系统调度 -->
+    <action path="/artery/sche/scheduler" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="index" path="/artery/sche/sche.jsp"/>
+    </action>
+    <!-- 脚本执行 -->
+    <action path="/artery/script" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+    </action>
+    <!-- 子系统维护 -->
+    <action path="/artery/subsys" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+    </action>
+    <!-- 文书表单制作 -->
+    <action path="/artery/writmake" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="writTemplate" path="/artery/writ/make/writtemplate.jsp"/>
+      <forward name="writLayout" path="/artery/writ/make/writlayout.jsp"/>
+      <forward name="params" path="/artery/writ/make/params.jsp"/>
+      <forward name="ds" path="/artery/writ/make/ds.jsp"/>
+    </action>
+    <!-- 文书页面解析 -->
+    <action path="/artery/writparse" type="org.springframework.web.struts.DelegatingActionProxy"
+      name="memoryForm" scope="request" validate="true" input="/summer/jsp/error/noright.jsp">
+      <forward name="parse" path="/artery/writ/parse/parse.jsp"/>
+      <forward name="showHis" path="/artery/writ/parse/showHis.jsp"/>
+    </action>
+  </action-mappings>
+</struts-config>

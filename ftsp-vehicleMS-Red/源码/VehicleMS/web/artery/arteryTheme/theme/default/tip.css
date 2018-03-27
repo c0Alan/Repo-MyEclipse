@@ -1,0 +1,243 @@
+/***************************************************************************************
+ * tipPanel
+ ***************************************************************************************/
+ 
+.x-aty-tipPanel{
+	width: 150px;
+	z-index: 30000;
+	border: 1px solid #FF9000;
+	background-color: #FFFFC6;
+	padding: 3px;
+}
+
+.x-aty-tipPanel-header{
+	text-align: right;
+}
+.x-aty-tipPanel-header-close{
+	height: 16px;
+	width:16px;
+	cursor:pointer;
+	background-image: url("images/closepage.gif");
+	background-repeat: no-repeat;
+	background-position: right 0;
+	display: inline-block;
+}
+
+.x-aty-tipPanel-body{
+	word-wrap:break-word;
+	word-break:break-all;
+}
+
+.x-aty-tipPanel-body-container{
+	width: 100%;
+	overflow: visible;
+	overflow-y:auto;
+	border: 0px;
+	background-color: transparent;
+	
+}
+
+.x-aty-tipPanel-footer{
+	padding-top:3px;
+	cursor:pointer;
+	text-align: right;
+}
+ /***************************************************************************************
+ * tipWin cooltip left
+ ***************************************************************************************/
+.x-aty-tipWin-left .x-aty-tipPanel-header{
+	position: relative;
+	top: -7px;
+}
+.x-aty-tipWin-left .x-aty-tipPanel-body{
+	position: relative;
+	top: -7px;
+}
+.x-aty-tipWin-left .x-tip-tc {
+	background-image: url(images/cooltip/arrowLeft/top-bottom.png);
+	background-position:0 0;
+	background-repeat: repeat-x;
+	height: 10px;
+}
+
+.x-aty-tipWin-left .x-tip-tl {
+	background-image: url(images/cooltip/arrowLeft/left-corners.png);
+	padding-left: 24px;
+	width: 100%;
+}
+
+.x-aty-tipWin-left .x-tip-tr {
+	background-image: url(images/cooltip/arrowLeft/right-corners.png);
+}
+
+.x-aty-tipWin-left .x-tip-bc {
+	background-image: url(images/cooltip/arrowLeft/top-bottom.png);
+	background-position: 0 -139px;
+	background-repeat:repeat-x;
+	height: 7px;
+}
+
+.x-aty-tipWin-left .x-tip-bl {
+	background-image: url(images/cooltip/arrowLeft/left-corners.png);
+	padding-left: 37px;
+	background-position: 0 bottom;
+}
+
+.x-aty-tipWin-left .x-tip-br {
+	background-image: url(images/cooltip/arrowLeft/right-corners.png);
+	padding-right: 24px;
+	background-position: right bottom;
+}
+
+.x-aty-tipWin-left .x-tip-mc {
+    border-color:#99bbe8;
+    font: normal 11px tahoma,arial,helvetica,sans-serif;
+    background-color:transparent;
+    background-image: url(images/cooltip/arrowLeft/middle.png);
+    padding-top: 0px;
+}
+
+.x-aty-tipWin-left .x-tip-ml {
+	background-image: url(images/cooltip/arrowLeft/left-right.png);
+	padding-left: 16px;
+	background-color: transparent;
+	background-position:0 0;
+}
+
+.x-aty-tipWin-left .x-tip-mr {
+	background-image: url(images/cooltip/arrowLeft/left-right.png);
+	padding-right:8px;
+	background-position:right 0;
+}
+
+ /***************************************************************************************
+ * tipWin cooltip top
+ ***************************************************************************************/
+.x-aty-tipWin-top .x-aty-tipPanel-header{
+	position: relative;
+	top: -7px;
+}
+.x-aty-tipWin-top .x-aty-tipPanel-body{
+	position: relative;
+	top: -7px;
+}
+.x-aty-tipWin-top .x-tip-tc {
+	background-image: url(images/cooltip/arrowTop/top-bottom.png);
+	background-position:0 0;
+	background-repeat: repeat-x;
+	height: 18px;
+}
+
+.x-aty-tipWin-top .x-tip-tl {
+	background-image: url(images/cooltip/arrowTop/left-corners.png);
+	background-position:0 8px;
+	width: 100%;
+}
+
+.x-aty-tipWin-top .x-tip-tr {
+	background-image: url(images/cooltip/arrowTop/right-corners.png);
+	background-position:right 8px;
+}
+
+.x-aty-tipWin-top .x-tip-bc {
+	background-image: url(images/cooltip/arrowTop/top-bottom.png);
+	background-position: 0 -147px;
+	background-repeat:repeat-x;
+	height: 7px;
+}
+
+.x-aty-tipWin-top .x-tip-bl {
+	background-image: url(images/cooltip/arrowTop/left-corners.png);
+	padding-left: 27px;
+	background-position: 0 bottom;
+}
+
+.x-aty-tipWin-top .x-tip-br {
+	background-image: url(images/cooltip/arrowTop/right-corners.png);
+	padding-right: 24px;
+	background-position: right bottom;
+}
+
+.x-aty-tipWin-top .x-tip-mc {
+    border-color:#99bbe8;
+    background-color:transparent;
+    background-image: url(images/cooltip/arrowTop/middle.png);
+    padding-top: 0px;
+}
+
+.x-aty-tipWin-top .x-tip-ml {
+	background-image: url(images/cooltip/arrowTop/left-right.png);
+	background-color: transparent;
+	background-position:0 0;
+}
+
+.x-aty-tipWin-top .x-tip-mr {
+	background-image: url(images/cooltip/arrowTop/left-right.png);
+	padding-right:8px;
+	background-position:right 0;
+}
+
+ /***************************************************************************************
+ * tipWin cooltip bottom
+ ***************************************************************************************/
+.x-aty-tipWin-bottom .x-aty-tipPanel-header{
+	position: relative;
+}
+.x-aty-tipWin-bottom .x-aty-tipPanel-body{
+	position: relative;
+}
+.x-aty-tipWin-bottom .x-tip-tc {
+	background-image: url(images/cooltip/arrowBottom/top-bottom.png);
+	background-position:0 0;
+	background-repeat: repeat-x;
+	height: 10px;
+}
+
+.x-aty-tipWin-bottom .x-tip-tl {
+	background-image: url(images/cooltip/arrowBottom/left-corners.png);
+	background-position:0 5px;
+	width: 100%;
+}
+
+.x-aty-tipWin-bottom .x-tip-tr {
+	background-image: url(images/cooltip/arrowBottom/right-corners.png);
+	background-position:right 0px;
+	padding-right: 9px;
+}
+
+.x-aty-tipWin-bottom .x-tip-bc {
+	background-image: url(images/cooltip/arrowBottom/top-bottom.png);
+	background-position: 0 -97px;
+	background-repeat:repeat-x;
+	height: 20px;
+}
+
+.x-aty-tipWin-bottom .x-tip-bl {
+	background-image: url(images/cooltip/arrowBottom/left-corners.png);
+	background-position: 0 -92px;
+	
+}
+
+.x-aty-tipWin-bottom .x-tip-br {
+	background-image: url(images/cooltip/arrowBottom/right-corners.png);
+	background-position: right -98px;
+}
+
+.x-aty-tipWin-bottom .x-tip-mc {
+    border-color:#99bbe8;
+    background-color:transparent;
+    background-image: url(images/cooltip/arrowBottom/middle.png);
+    padding-top: 0px;
+}
+
+.x-aty-tipWin-bottom .x-tip-ml {
+	background-image: url(images/cooltip/arrowBottom/left-right.png);
+	background-color: transparent;
+	background-position:0 0;
+}
+
+.x-aty-tipWin-bottom .x-tip-mr {
+	background-image: url(images/cooltip/arrowBottom/left-right.png);
+	padding-right:8px;
+	background-position:right 0;
+}

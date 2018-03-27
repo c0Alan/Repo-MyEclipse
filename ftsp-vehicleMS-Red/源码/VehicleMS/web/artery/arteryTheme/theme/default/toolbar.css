@@ -1,0 +1,196 @@
+
+/***************************************************************************************
+ * Toolbars
+ ***************************************************************************************/
+.x-toolbar DIV {
+	font:12px arial,tahoma, helvetica, sans-serif;
+}
+.x-toolbar .x-btn {
+	height: 22px;
+}
+
+.x-toolbar .x-btn-left {
+	background-image: none;
+}
+
+.x-toolbar .x-btn-right {
+	background-image: none;
+}
+
+.x-toolbar .x-btn-center {
+	height:23px;
+	background-image: none;
+}
+
+.x-toolbar .x-btn-over .x-btn-left,.x-toolbar .x-btn-frame .x-btn-left {
+	background: url(images/button/default/button.png) no-repeat 0
+		-220px;
+}
+
+.x-toolbar .x-btn-over .x-btn-right,.x-toolbar .x-btn-frame .x-btn-right {
+	background: url(images/button/default/button.png) no-repeat right
+		-287px;
+}
+
+.x-toolbar .x-btn-over .x-btn-center,.x-toolbar .x-btn-frame .x-btn-center {
+	background: url(images/button/default/button.png) repeat-x 0
+		-253px;
+}
+
+.x-toolbar .x-btn-click .x-btn-left,.x-toolbar .x-btn-pressed .x-btn-left,.x-toolbar .x-btn-menu-active .x-btn-left
+{
+	background-image: url(images/button/default/button.png);
+	background-position: 0 -471px;
+}
+
+.x-toolbar .x-btn-click .x-btn-right,.x-toolbar .x-btn-pressed .x-btn-right,.x-toolbar .x-btn-menu-active .x-btn-right
+{
+	background-image: url(images/button/default/button.png);
+	background-position: right -544px;
+}
+
+.x-toolbar .x-btn-click .x-btn-center,.x-toolbar .x-btn-pressed .x-btn-center,.x-toolbar .x-btn-menu-active .x-btn-center
+{
+	background-image: url(images/button/default/button.png);
+	background-position: 0 -507px;
+}
+
+/*arrow button*/
+.x-toolbar .x-btn-center .x-btn-arrow{
+	padding-right: 10px !important;
+	background-image: url(images/button/default/btn-arrow.gif);
+	background-repeat: no-repeat;
+	background-position: right 2px;
+}
+
+
+/***************************************************************************************
+ * x-theme-topbar-unis
+ ***************************************************************************************/
+.x-theme-topbar-unis{
+	background-image: none !important;
+	background-color: transparent !important;
+	border-bottom: 0px !important;
+}
+
+.x-theme-topbar-unis .x-btn {
+	height: 23px !important;
+}
+
+.x-theme-topbar-unis .x-btn-left {
+	background-image: none;
+}
+
+.x-theme-topbar-unis .x-btn-right {
+	background-image: none;
+}
+
+.x-theme-topbar-unis .x-btn-center {
+	background-image: none;
+}
+
+.x-theme-topbar-unis .x-btn-over .x-btn-left,.x-theme-topbar-unis .x-btn-focus .x-btn-left
+	{
+	background-image: url(../../style/default/buttonArea/images/simple/button.png) !important;
+	background-position: 0 0px !important;
+}
+
+.x-theme-topbar-unis .x-btn-over .x-btn-right,.x-theme-topbar-unis .x-btn-focus .x-btn-right
+	{
+	background-image: url(../../style/default/buttonArea/images/simple/button.png) !important;
+	background-position: right -26px !important;
+}
+
+.x-theme-topbar-unis .x-btn-over .x-btn-center,.x-theme-topbar-unis .x-btn-focus .x-btn-center
+	{
+	background-image: url(../../style/default/buttonArea/images/simple/button.png) !important;
+	background-position: 0 -54px !important;
+}
+
+.x-theme-topbar-unis .x-btn-pressed .x-btn-left
+	{
+	background-image: url(../../style/default/buttonArea/images/simple/button.png) !important;
+	background-position: 0 -79px !important;
+}
+
+.x-theme-topbar-unis .x-btn-pressed .x-btn-right
+	{
+	background-image: url(../../style/default/buttonArea/images/simple/button.png) !important;
+	background-position: right -107px !important;
+}
+
+.x-theme-topbar-unis .x-btn-pressed .x-btn-center
+	{
+	background-image: url(../../style/default/buttonArea/images/simple/button.png) !important;
+	background-position: 0 -135px !important;
+}
+
+/***************************************************************************************
+ * x-theme-tbButton-cat
+ ***************************************************************************************/
+.x-toolbar .x-theme-tbButton-cat .x-btn {
+	height: 26px;
+}
+.x-toolbar .x-theme-tbButton-cat .x-btn-left {
+	background-image: url(images/button/cat/button-left.png);
+	background-position: 0 0;
+}
+.x-toolbar .x-theme-tbButton-cat .x-btn-right {
+	background-image: url(images/button/cat/button-right.png);
+	background-position: right 0px;
+}
+.x-toolbar .x-theme-tbButton-cat .x-btn-center {
+	background-image: url(images/button/cat/button.png);
+	background-position: 0 0;
+}
+.x-toolbar .x-theme-tbButton-cat .x-btn-center .x-btn-text {
+	color: #fff;
+	font-weight: 500;
+}
+
+.x-toolbar .x-theme-tbButton-cat .x-btn-over .x-btn-left,.x-toolbar .x-theme-tbButton-cat .x-btn-focus .x-btn-left{
+	background-image: url(images/button/cat/button-left.png) !important;
+	background-position: 0 -26px !important;
+}
+
+.x-toolbar .x-theme-tbButton-cat .x-btn-over .x-btn-right,.x-toolbar .x-theme-tbButton-cat .x-btn-focus .x-btn-right{
+	background-image: url(images/button/cat/button-right.png) !important;
+	background-position: right -26px !important;
+}
+
+.x-toolbar .x-theme-tbButton-cat .x-btn-over .x-btn-center,.x-toolbar .x-theme-tbButton-cat .x-btn-focus .x-btn-center{
+	background-image: url(images/button/cat/button.png) !important;
+	background-position: 0 -26px !important;
+}
+
+.x-toolbar .x-theme-tbButton-cat .x-btn-click .x-btn-left,.x-toolbar .x-theme-tbButton-cat .x-btn-pressed .x-btn-left {
+	background-image: url(images/button/cat/button-left.png) !important;
+	background-position: 0 -26px !important;
+}
+.x-toolbar .x-theme-tbButton-cat .x-btn-click .x-btn-right,.x-toolbar .x-theme-tbButton-cat .x-btn-pressed .x-btn-right {
+	background-image: url(images/button/cat/button-right.png) !important;
+	background-position: right -26px !important;
+}
+.x-toolbar .x-theme-tbButton-cat .x-btn-click .x-btn-center,.x-toolbar .x-theme-tbButton-cat .x-btn-pressed .x-btn-center {
+	background-image: url(images/button/cat/button.png) !important;
+	background-position: 0 -26px !important;
+}
+
+/***************************************************************************************
+ * x-theme-tbButton-blank
+ ***************************************************************************************/
+.x-toolbar .x-theme-tbButton-blank .x-btn {
+	height: 23px;
+}
+.x-toolbar .x-theme-tbButton-blank .x-btn-left {
+	background-image: url(images/button/default/button.png);
+	background-position: 0 -588px;
+}
+.x-toolbar .x-theme-tbButton-blank .x-btn-right {
+	background-image: url(images/button/default/button.png);
+	background-position: right -651px;
+}
+.x-toolbar .x-theme-tbButton-blank .x-btn-center {
+	background-image: url(images/button/default/button.png);
+	background-position: 0 -620px;
+}

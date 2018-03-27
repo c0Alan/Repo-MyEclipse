@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>4da795742e4d5c12b0ccfa564179474a</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.faCode._faCode_onFilterEvent.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/faCode/_faCode_onFilterEvent.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form9e8ca">
+      <id>form9e8ca</id>
+      <text-align>left</text-align>
+      <Items>
+        <formArea sid="334fade83e12f1cb64a7ddc1729e4a1b">
+          <id>formAreaadddc</id>
+          <width>1000</width>
+          <colNum>3</colNum>
+          <labelWidth>150</labelWidth>
+          <displaySuffixPosition>follow</displaySuffixPosition>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <Items>
+            <faCode sid="553f254f690b94c990c2cd616a27c6d5">
+              <id>faCode3bc2e</id>
+              <dynamicData><![CDATA[common_dynamicData]]></dynamicData>
+              <label>原始数据</label>
+              <suffixLabel>元</suffixLabel>
+            </faCode>
+            <faCode sid="6e2bd747b498cecfc5d0819f8f99594c">
+              <id>faCode4b79c</id>
+              <dynamicData><![CDATA[common_dynamicData]]></dynamicData>
+              <onFilter><![CDATA[faCode4b79c_onFilter]]></onFilter>
+              <label>过滤1000元以下的</label>
+              <suffixLabel>元</suffixLabel>
+            </faCode>
+            <faCode sid="3b34a19ecc6522d57f5a8b4a008a63fe">
+              <id>faCode1729b</id>
+              <dynamicData><![CDATA[common_dynamicData]]></dynamicData>
+              <onFilter><![CDATA[faCode1729b_onFilter]]></onFilter>
+              <label>过滤2000元以上的</label>
+              <suffixLabel>元</suffixLabel>
+            </faCode>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

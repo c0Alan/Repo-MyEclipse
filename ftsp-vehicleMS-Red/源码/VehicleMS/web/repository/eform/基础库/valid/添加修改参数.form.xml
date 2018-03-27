@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3efd8086fbcb16b4029b875e4191dbd6</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.valid.Tjxgcs.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/valid/Tjxgcs.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form9b844">
+      <id>form9b844</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <footer sid="2e80f6193263129b684e5edfde1486f8">
+          <id>footer7f950</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="9229a5d53f30fef231206a47b332e305">
+              <id>insertParamBtn</id>
+              <text>添加</text>
+              <icon>/artery/arteryImage/file/image005.gif</icon>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <button sid="69fc08d66a660998674927b77d841936">
+              <id>updateParamBtn</id>
+              <text>更新</text>
+              <icon>/artery/arteryImage/other/tools.gif</icon>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <simpleButton sid="1f8d2481e204b3d45aa29266a39c37ab">
+              <id>cancleBtn</id>
+              <text>取消</text>
+            </simpleButton>
+          </Items>
+        </footer>
+        <blankPanel sid="d4c59765c1001c63783b8c953f08aa11">
+          <id>blankPanel68e54</id>
+          <height>100%</height>
+          <Items>
+            <formArea sid="46273ca4a37d801d3e5059f0ac5c7561">
+              <id>paramForm</id>
+              <ds>rs1</ds>
+              <colNum>1</colNum>
+              <labelWidth>80</labelWidth>
+              <cellpadding>5</cellpadding>
+              <Items>
+                <faString sid="6bd5264051c875789cd9f0d77674f495">
+                  <id>paramKeyInput</id>
+                  <submitName>param.key</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.key}</dataName>
+                  <validType>title</validType>
+                  <label>参数名称</label>
+                </faString>
+                <faString sid="b9a1f69d7ac80d38ff8f76a3d85d0985">
+                  <id>faString4f753</id>
+                  <submitName>param.value</submitName>
+                  <required>false</required>
+                  <dataName>{rs1.value}</dataName>
+                  <validType>title</validType>
+                  <label>参数值</label>
+                </faString>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="tplId" showName="模板id" value="" pvalue="" />
+    <param name="paramId" showName="参数id" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

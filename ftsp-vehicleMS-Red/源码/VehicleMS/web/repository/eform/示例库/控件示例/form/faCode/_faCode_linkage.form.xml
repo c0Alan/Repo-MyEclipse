@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>74cd6d600ea70d5dc0147febe6624b4f</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.faCode._faCode_linkage.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/faCode/_faCode_linkage.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formaf4e6">
+      <id>formaf4e6</id>
+      <text-align>left</text-align>
+      <Items>
+        <formArea sid="e97e61a7b26e16523adf7d9b357e985d">
+          <id>formAreaff27a</id>
+          <width>1000</width>
+          <colNum>1</colNum>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <Items>
+            <faFieldSet sid="6a5df0ca2e9d653c913e445a8e01bb55">
+              <id>faFieldSet95f3e</id>
+              <fieldSetName>联动下拉列表示例1</fieldSetName>
+              <colNum>3</colNum>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faCode sid="7f25fcbeb981ae8cfd2a54105ac6c568">
+                  <id>corpFld</id>
+                  <dynamicData><![CDATA[corpFld_dynamicData]]></dynamicData>
+                  <onChangeClient><![CDATA[corpFld_onChangeClient]]></onChangeClient>
+                  <label>单位</label>
+                </faCode>
+                <faCode sid="8d876c8c3e5c2cf912d53ccd78773fa2">
+                  <id>deptFld</id>
+                  <dynamicData><![CDATA[deptFld_dynamicData]]></dynamicData>
+                  <onChangeClient><![CDATA[deptFld_onChangeClient]]></onChangeClient>
+                  <label>部门</label>
+                </faCode>
+                <faCode sid="9dea20d2a17bed8bd930a7406c0c8f70">
+                  <id>userFld</id>
+                  <dynamicData><![CDATA[userFld_dynamicData]]></dynamicData>
+                  <label>人员</label>
+                </faCode>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

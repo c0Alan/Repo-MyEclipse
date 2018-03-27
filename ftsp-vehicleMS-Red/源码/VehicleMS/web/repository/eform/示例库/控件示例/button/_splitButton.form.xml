@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>dceec3ab17091a9ddf33e3d4ab2d03e0</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.button._splitButton.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/button/_splitButton.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form16668">
+      <id>form16668</id>
+      <text-align>left</text-align>
+      <Items>
+        <tableLayout sid="7ae1ee4490a4014f0aff59d3c3b2f9cd">
+          <id>tableLayoutf11c1</id>
+          <colSpacing>10</colSpacing>
+          <width>1000</width>
+          <style>padding:10px;</style>
+          <Items>
+            <fieldSet sid="5fcf30b5280fe23cfcf58140571ec287">
+              <id>fieldSet3e7de</id>
+              <fieldSetName>常用主题</fieldSetName>
+              <Items>
+                <buttonArea sid="03c5349d287ab33941c1ee50666e82b9">
+                  <id>buttonArea2ce08</id>
+                  <align>center</align>
+                  <spacing>50</spacing>
+                  <Items>
+                    <splitButton sid="42da63cd68f661c91f8d4c7b4660e513">
+                      <id>splitButtonfd984</id>
+                      <text>bluePlain</text>
+                      <themeStyle>bluePlain</themeStyle>
+                      <Items>
+                        <tbMenuItem sid="b251dbb28872dc6247fe003cdf047355">
+                          <id>tbMenuItem1fe9e</id>
+                          <text>关于</text>
+                          <icon>/artery/arteryImage/symbol/tips_info.gif</icon>
+                        </tbMenuItem>
+                        <tbMenuItem sid="25e366a8fc53168c7177eb31827cc229">
+                          <id>tbMenuItem17888</id>
+                          <text>帮助</text>
+                        </tbMenuItem>
+                        <tbSeparator sid="81331a37a3dfb90bed95c1327bd88b2d">
+                          <id>tbSeparatore377b</id>
+                        </tbSeparator>
+                        <tbMenuItem sid="d0138ed3535221768e3d488ddcada750">
+                          <id>tbMenuItem077fb</id>
+                          <text>退出</text>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                    <splitButton sid="00e49cc73ac906e78d1a7e2acecce600">
+                      <id>splitButtoncf58d</id>
+                      <text>cookie</text>
+                      <themeStyle>cookie</themeStyle>
+                      <Items>
+                        <tbMenuItem sid="7f2365d7a3f6a7520361dd87e3a1660f">
+                          <id>tbMenuItem7d7c0</id>
+                          <text>关于</text>
+                          <icon>/artery/arteryImage/symbol/tips_info.gif</icon>
+                        </tbMenuItem>
+                        <tbMenuItem sid="99fd4452430739c2848c870a3cdab7dc">
+                          <id>tbMenuItem19602</id>
+                          <text>帮助</text>
+                        </tbMenuItem>
+                        <tbSeparator sid="4d59eeee5c47f1605d3caa55843d7e90">
+                          <id>tbSeparator4215f</id>
+                        </tbSeparator>
+                        <tbMenuItem sid="e69fb901348f64e2b3d151fc3c3f8050">
+                          <id>tbMenuItem8c53d</id>
+                          <text>退出</text>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                    <splitButton sid="03aa18dde0e342213b363172c28f2357">
+                      <id>splitButton432f0</id>
+                      <text>inherit</text>
+                      <Items>
+                        <tbMenuItem sid="bc132ec3fcd428c10f51b62700991f94">
+                          <id>tbMenuItemffcbc</id>
+                          <text>关于</text>
+                          <icon>/artery/arteryImage/symbol/tips_info.gif</icon>
+                        </tbMenuItem>
+                        <tbMenuItem sid="eeaf9a00807380ce8313a4196730398d">
+                          <id>tbMenuItem6ce04</id>
+                          <text>帮助</text>
+                        </tbMenuItem>
+                        <tbSeparator sid="dd9d0e8f684481943b87ad4b777aa4e3">
+                          <id>tbSeparator26d6d</id>
+                        </tbSeparator>
+                        <tbMenuItem sid="36cbd5a691c47c9866c2c261cdc46e12">
+                          <id>tbMenuItemb173c</id>
+                          <text>退出</text>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="7511c7baabf00fbd07e081b321e8d86f">
+              <id>fieldSet0842f</id>
+              <fieldSetName>“是否按下”属性</fieldSetName>
+              <Items>
+                <buttonArea sid="4ca009d2f2b5686a6b5d7c3dc137ebce">
+                  <id>buttonAreae4228</id>
+                  <align>center</align>
+                  <spacing>50</spacing>
+                  <Items>
+                    <splitButton sid="4e015328470b5cc9491a3098bd0a088b">
+                      <id>splitButtona6400</id>
+                      <width>80</width>
+                      <text>按下状态</text>
+                      <icon>/artery/arteryImage/other/tools.gif</icon>
+                      <iconAgion>left</iconAgion>
+                      <pressed>true</pressed>
+                      <Items>
+                        <tbMenuItem sid="4372184f32ace4e60b57dc1e66ad5257">
+                          <id>tbMenuItem91de3</id>
+                          <text>菜单项1</text>
+                        </tbMenuItem>
+                        <tbMenuItem sid="048b004966ab838d0ba45fb626b87faf">
+                          <id>tbMenuItemb7bb3</id>
+                          <text>菜单项2</text>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                    <splitButton sid="40c17444090a3514d5f7305206378cd9">
+                      <id>splitButtonb02b6</id>
+                      <width>80</width>
+                      <text>非按下状态</text>
+                      <icon>/artery/arteryImage/other/tools.gif</icon>
+                      <iconAgion>left</iconAgion>
+                      <Items>
+                        <tbMenuItem sid="0f4027ef21c7184ec5f4d8ea2a7993c7">
+                          <id>tbMenuItem27cdf</id>
+                          <text>菜单项1</text>
+                        </tbMenuItem>
+                        <tbMenuItem sid="91ffea3a4ecef74cb499ba638e92fffd">
+                          <id>tbMenuItemb5e78</id>
+                          <text>菜单项2</text>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="100ff2af568b1bc30296eda0b10b47d9">
+              <id>fieldSet3c822</id>
+              <fieldSetName>“允许按钮事件”属性</fieldSetName>
+              <Items>
+                <buttonArea sid="19a98d5f633352f83ee6c7dd7b2086fc">
+                  <id>buttonArea7c875</id>
+                  <align>center</align>
+                  <spacing>50</spacing>
+                  <Items>
+                    <splitButton sid="6f5d3c0de451d29a14dbf684d791bc01">
+                      <id>splitButton97e10</id>
+                      <width>90</width>
+                      <text>不允许按钮事件</text>
+                      <onClickClient><![CDATA[splitButton97e10_onClickClient]]></onClickClient>
+                      <Items>
+                        <tbMenuItem sid="8bf3be3ca2fb0e12eb0328464494e187">
+                          <id>tbMenuItem5b1c2</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="599e082f074e87d81625a9077925aeea">
+                          <id>tbMenuIteme9d71</id>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                    <splitButton sid="ac874ee7c0b27accfbb7f11a63a7b752">
+                      <id>splitButton59e1c</id>
+                      <width>80</width>
+                      <text>允许按钮事件</text>
+                      <allowButton>true</allowButton>
+                      <onClickClient><![CDATA[splitButton59e1c_onClickClient]]></onClickClient>
+                      <Items>
+                        <tbMenuItem sid="ddc9ee413a55c0017ef8a4bdb8e9efef">
+                          <id>tbMenuItem40881</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="ee28d5c158b93e8788f9e9e10aff02de">
+                          <id>tbMenuItem26e06</id>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="fa7c4a2ea0c289bf3ebd63a9b7084adf">
+              <id>fieldSet20010</id>
+              <fieldSetName>“下拉菜单位置”属性</fieldSetName>
+              <Items>
+                <buttonArea sid="160850e3d74d9c8c143c5e9928368e0b">
+                  <id>buttonArea0a2e5</id>
+                  <align>center</align>
+                  <spacing>50</spacing>
+                  <Items>
+                    <splitButton sid="43f52ea0b6b84c89f7c32f3f1ac49959">
+                      <id>splitButtonde7fc</id>
+                      <text>left</text>
+                      <Items>
+                        <tbMenuItem sid="f1f900ad93aa8e5229dfa6c6abdcc5d4">
+                          <id>tbMenuItem29fde</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="f26e33334a5e70fff9c80065588146b8">
+                          <id>tbMenuItema0e26</id>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                    <splitButton sid="9428442289746d822b8eaf51c289173a">
+                      <id>splitButton1d572</id>
+                      <text>center</text>
+                      <menuPosition>center</menuPosition>
+                      <Items>
+                        <tbMenuItem sid="a428211dbabaa62dba04f4d16a678fb3">
+                          <id>tbMenuItemdcf89</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="8f9220199c14076c262ff8adcc48f231">
+                          <id>tbMenuItemf1826</id>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                    <splitButton sid="2fb8a8dda66250c3db75390f9ef29707">
+                      <id>splitButtona87d7</id>
+                      <text>right</text>
+                      <menuPosition>right</menuPosition>
+                      <Items>
+                        <tbMenuItem sid="f6dcbe6072ce91a106d2161278f9d9e8">
+                          <id>tbMenuItem7769f</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="2bc3cb545ef7bac0ad5511b8744385fc">
+                          <id>tbMenuItembe168</id>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="e3d379cd47a2f099a2c370d7863ba5d7">
+              <id>fieldSet44e2b</id>
+              <fieldSetName>“空白容器”属性</fieldSetName>
+              <Items>
+                <buttonArea sid="5369038a060024ee8ad9af385f8ac0e1">
+                  <id>buttonArea95c95</id>
+                  <align>center</align>
+                  <spacing>50</spacing>
+                  <Items>
+                    <splitButton sid="17f49f30fbabdcc5782a4d7d84050587">
+                      <id>splitButtone4123</id>
+                      <width>90</width>
+                      <text>空白容器展现</text>
+                      <plain>true</plain>
+                      <Items>
+                        <tbMenuItem sid="db84f4248781a33bad230aaf29d1810b">
+                          <id>tbMenuItem74529</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="5e98b689180460f61312b2acea5e7c03">
+                          <id>tbMenuItema416d</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="1e872d6abdc9d462bb9e92fef7b3e44b">
+                          <id>tbMenuItem5e7ab</id>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                    <splitButton sid="7e5e2fa418d900843ec1e84ddbaee16e">
+                      <id>splitButton2d257</id>
+                      <width>90</width>
+                      <text>非空白容器展现</text>
+                      <Items>
+                        <tbMenuItem sid="ecc0f237713a750fbd585f0bb75c765c">
+                          <id>tbMenuItemc1d7b</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="b4fd7255a4b4cb3f1093ef49ed11235d">
+                          <id>tbMenuItem59151</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="b650d290b2782e4652d2e0c2037af28c">
+                          <id>tbMenuItem9556b</id>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="337da638c9fda86c2c76608d7b2a0737">
+              <id>fieldSet31659</id>
+              <fieldSetName>展开时脚本与折叠时脚本</fieldSetName>
+              <Items>
+                <buttonArea sid="11a29790e9ffa94489c49dc8396f5014">
+                  <id>buttonAreab9aa6</id>
+                  <align>center</align>
+                  <spacing>50</spacing>
+                  <Items>
+                    <splitButton sid="37a08c9d100cf7f701700e3a732adcc4">
+                      <id>splitButton480f3</id>
+                      <width>80</width>
+                      <text>展开时脚本</text>
+                      <onExpandClient><![CDATA[splitButton480f3_onExpandClient]]></onExpandClient>
+                      <Items>
+                        <tbMenuItem sid="9ff4f8d27d61d53f86593aa5659dcdd8">
+                          <id>tbMenuItem56b31</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="872d38135c580f130e894c63950081a8">
+                          <id>tbMenuItem43f13</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="96f2578d761eac59b427833398e7a02e">
+                          <id>tbMenuItem24efd</id>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                    <splitButton sid="8f54c960343a9f67073a882a33c0bbfc">
+                      <id>splitButtonb8f81</id>
+                      <width>80</width>
+                      <text>折叠时脚本</text>
+                      <onCollapseClient><![CDATA[splitButtonb8f81_onCollapseClient]]></onCollapseClient>
+                      <Items>
+                        <tbMenuItem sid="9434a74a1fc686b36a33123488bbd0dc">
+                          <id>tbMenuItem49ebb</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="4b896cdbb348ebd5f742fe43f52e269d">
+                          <id>tbMenuItemf4cec</id>
+                        </tbMenuItem>
+                        <tbMenuItem sid="2396de54d3744af260039ba9ddead39d">
+                          <id>tbMenuItem739e5</id>
+                        </tbMenuItem>
+                      </Items>
+                    </splitButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="2786f21d2c23c53c0c590e980a39c90c">
+              <id>fieldSet6d8c1</id>
+              <fieldSetName>常用方法</fieldSetName>
+              <colSpan>2</colSpan>
+              <Items>
+                <tableLayout sid="2d7f7acc44e43d98a69514180d95e761">
+                  <id>tableLayout60035</id>
+                  <colNum>1</colNum>
+                  <Items>
+                    <buttonArea sid="7d40475e73daed03b35fb8ed0234ee58">
+                      <id>buttonArea55034</id>
+                      <height>50</height>
+                      <align>center</align>
+                      <Items>
+                        <splitButton sid="95696fa2bcd8926ccf88afb41c636b75">
+                          <id>splitButtonafe92</id>
+                          <width>90</width>
+                          <text>方法预览示例</text>
+                          <icon>/artery/arteryImage/sys/gears.gif</icon>
+                          <onClickClient><![CDATA[splitButtonafe92_onClickClient]]></onClickClient>
+                          <Items>
+                            <tbMenuItem sid="2d68b5ca1fb254387ae67e46c5a14470">
+                              <id>tbMenuIteme59a1</id>
+                            </tbMenuItem>
+                            <tbMenuItem sid="d05d4b93b545eb8c861a398e0999064e">
+                              <id>tbMenuItemc5f1f</id>
+                            </tbMenuItem>
+                            <tbMenuItem sid="45a86dcbeada610ddd389bdb216d0c43">
+                              <id>tbMenuItem666aa</id>
+                            </tbMenuItem>
+                          </Items>
+                        </splitButton>
+                      </Items>
+                    </buttonArea>
+                    <buttonArea sid="f614b0da85b6a7a2ff4d41e6888f0864">
+                      <id>buttonArea11347</id>
+                      <align>center</align>
+                      <spacing>30</spacing>
+                      <Items>
+                        <button sid="0ea3ba8d7034cd3879131605f53919ae">
+                          <id>button8676f</id>
+                          <text>click</text>
+                          <onClickClient><![CDATA[button8676f_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="df4e8d7ee424777893241ec0433086c4">
+                          <id>buttonac8f9</id>
+                          <text>hideIcon</text>
+                          <onClickClient><![CDATA[buttonac8f9_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="bb66c44abdba0fe043978b939f85dc45">
+                          <id>button8e288</id>
+                          <text>showIcon</text>
+                          <onClickClient><![CDATA[button8e288_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="98ce55335973a548a18003d172276605">
+                          <id>button86de8</id>
+                          <text>setIcon</text>
+                          <onClickClient><![CDATA[button86de8_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="4b0695a695db2a9ff515aa36da767bfc">
+                          <id>button72bb9</id>
+                          <text>hide</text>
+                          <onClickClient><![CDATA[button72bb9_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="2d81cafcbd6ab71c670206305552c080">
+                          <id>button9e403</id>
+                          <text>show</text>
+                          <onClickClient><![CDATA[button9e403_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="6c6bb3abf7c1303d82f659cce326536b">
+                          <id>buttonb9a6b</id>
+                          <text>disable</text>
+                          <onClickClient><![CDATA[buttonb9a6b_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="7f550100f1e5e738c2a96a218cd141a0">
+                          <id>button15335</id>
+                          <text>enable</text>
+                          <onClickClient><![CDATA[button15335_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="b86c291b043494c6ab217d62ea7c03ae">
+                          <id>button1c5cf</id>
+                          <width>70</width>
+                          <text>setTooltip</text>
+                          <onClickClient><![CDATA[button1c5cf_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </fieldSet>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

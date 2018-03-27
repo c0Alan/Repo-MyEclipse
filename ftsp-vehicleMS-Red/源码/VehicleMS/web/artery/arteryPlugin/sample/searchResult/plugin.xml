@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="searchResult" cn="搜索结果面板" menu="示例">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-05-05</CreateTime>
+		<Describe>动态数据格式，List+Map，其中map的key的含义为是&lt;br&gt;key:搜索的关键字&lt;br&gt;title:搜索的标题&lt;br&gt;url:搜索的链接地址&lt;br&gt;content:搜索的内容&lt;br&gt;footer:搜索的页脚说明</Describe>
+	<Images>
+  		<File>info1.gif</File>
+  	</Images>
+  </Info>
+
+  <!-- 设置本控件与其它控件的位置关系 -->
+  <Parents>
+    <Parent type="form"></Parent>
+    <Parent type="tableLayout"></Parent>
+  </Parents>
+   <Class>
+  	com.thunisoft.artery.plugin.page.SearchResult
+  </Class>
+  <!-- 设置本控件所需的js文件 -->
+  <JsFile>
+    <File>searchResult.js</File>
+  </JsFile>
+  
+  <!-- 设置本控件的属性 -->
+  <Properties>
+    <Property cn="组件类型" type="1" name="xtype" isHidden="1" export="true" cfg="true">
+      <Value>apSearchResult</Value>
+    </Property>
+    <Property cn="标识" type="1" name="id" export="true">
+      <Value />
+    </Property>
+    <Property cn="宽度" type="1" name="width"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+      <Value />
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value />
+    </Property>
+    <Property cn="动态数据" type="14" name="dynamicData" >
+      <Value />
+    </Property>
+    <Property cn="每页个数" type="1" name="pageCount" export="true" tips="设置数据分页时，每页加载多少数据">
+      <Value>10</Value>
+    </Property>
+    <Property cn="附加参数列表" type="1"  name="extParams"  tips="设置额外的参数，为json格式，如{name:Artery.get('test').getValue()}">
+      <Value></Value>
+    </Property>
+    <Property cn="是否生成" type="11" name="show">
+      <Value>true</Value>
+    </Property>
+    <Property cn="生成时脚本" type="14" name="onShow" >
+      <Value />
+    </Property>
+  </Properties>
+  	<JavaFunctions>
+		<JavaFunction name="dynamicData">
+<![CDATA[
+/**
+ * 动态数据
+ * 
+ * @param item
+ *            控件对象
+ *
+ * 数据格式含义：
+ *
+ * key:搜索的关键字
+ * 
+ * title:搜索的标题
+ * 
+ * url:搜索的链接地址
+ * 
+ * content:搜索的内容
+ * 
+ * footer:搜索的页脚说明
+ */
+public Map {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>

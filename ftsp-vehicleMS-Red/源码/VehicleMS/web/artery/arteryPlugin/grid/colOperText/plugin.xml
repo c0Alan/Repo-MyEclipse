@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="colOperText" cn="文本" jsType="artery-list" nameprop="text"
+	icon="colOperText.gif" iconNew="colOperTextNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe><![CDATA[
+		文本操作列控件用于在列表中定义一列文本操作信息。<br/>
+		通过行脚本处理，可根据每行对应的不同数据，展现不同文字操作列。<br/>
+		操作列通过连接到属性可以连接但其他表单，通过点击时脚本可以定义操作列的功能。
+		]]></Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="column" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.grid.ColOperText</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="文本" type="1" name="text" tips="设置文本字符串，默认的操作列文字有类似超链接的样式">
+			<Value />
+		</Property>
+		<Property cn="提示信息" type="1" name="tip" tips="设置组件的提示信息">
+			<Value />
+		</Property>
+		<Property cn="链接到" type="6" name="linkto" tips="选择当组件点击时连接到的表单">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient"
+			tips="鼠标点击本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer"
+			tips="鼠标点击本组件时触发的服务器端事件">
+			<Value />
+			<Description><![CDATA[
+			鼠标点击本组件时触发的服务器端事件
+			<pre>
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object colOperImg32318_onClickServer(Item item) {
+	//get parameter
+	//handle request
+	return "ok";
+}
+			</pre>
+			]]></Description>
+		</Property>
+		<Property cn="过滤脚本" type="14" name="onFilter"
+			sh="value,rowIndex,cellRow,cellRow.getString(col),dataRow,dataRow.isEmpty(),dataRow.getString(col),dataRow.getInt(col),dataRow.getDouble(col),dataRow.getData(col),dataRow.index()"
+			tips="可写本组件的过滤规则脚本，系统会对结果集中每行数据执行此脚本...">
+			<Value />
+			<Description><![CDATA[
+       可写本组件的过滤规则脚本，系统会对结果集中每行数据执行此脚本，如果此脚本返回true，则进行过滤，即不显示
+       <pre>
+/**
+ * 预订按钮
+ * 
+ * @param item
+ *            控件对象
+ * @param cell
+ *            展现单元格对象
+ * @param cellRow
+ *            展现数据行对象
+ * @param dataRow
+ *            结果数据行对象
+ * @param value
+ *            图片所在的当前列的值
+ * @return 当返回TRUE时此文本不显示
+ */
+public boolean ydOper_onFilter(Item item, Cell cell, CellRow cellRow,
+		Object dataRow, String value) {
+	Map mapRow = (Map)dataRow;
+	Object book_userid = mapRow.get("N_BOOKINGUSERID");
+	Object lend_userid = mapRow.get("N_LENDUSERID");
+	return book_userid!=null || lend_userid!=null;
+}
+       </pre>
+      ]]></Description>
+		</Property>
+		<Property cn="行脚本" type="14" name="rowScript"
+			sh="value,rowIndex,cellRow,cellRow.getString(col),dataRow,dataRow.isEmpty(),dataRow.getString(col),dataRow.getInt(col),dataRow.getDouble(col),dataRow.getData(col),dataRow.index()"
+			tips="可调用：cell,cellRow,dataRow,item,rowIndex,value">
+			<Value />
+		</Property>
+	</Properties>
+	<JavaFunctions>
+		<JavaFunction name="onClickServer">
+<![CDATA[
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onFilter"
+			imports="com.thunisoft.artery.parse.eform.form.cellset.Cell;com.thunisoft.artery.parse.eform.form.cellset.CellRow;">
+<![CDATA[
+/**
+ * 过滤脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param cell
+ *            展现单元格对象
+ * @param cellRow
+ *            展现数据行对象
+ * @param dataRow
+ *            结果数据行对象
+ * @param value
+ *            图片所在的当前列的值
+ * @return 当返回TRUE时此图片不显示
+ */
+public boolean {methodName}(Item item, Cell cell, CellRow cellRow,
+		Object dataRow, String value) {
+	return false;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="rowScript"
+			imports="com.thunisoft.artery.parse.eform.form.cellset.Cell;com.thunisoft.artery.parse.eform.form.cellset.CellRow;">
+<![CDATA[
+/**
+ * 行脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param cell
+ *            展现单元格对象
+ * @param cellRow
+ *            展现数据行对象
+ * @param dataRow
+ *            结果数据行对象
+ * @param value
+ *            图片所在的当前列的值
+ */
+public void {methodName}(Item item, Cell cell, CellRow cellRow,
+		Object dataRow, String value) {
+
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

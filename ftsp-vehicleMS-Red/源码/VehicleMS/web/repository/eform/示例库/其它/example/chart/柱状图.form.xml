@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d55c6238253d2621807f907ab92a7205</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.chart.Zzt.java</javaLocation>
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <tableLayout sid="tableLayout8B1DA">
+          <id>tableLayout8B1DA</id>
+          <colNum>2</colNum>
+          <Items>
+            <chartArea sid="chartArea273EF">
+              <id>chart_Column2D</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaBBD29">
+              <id>chart_Column3D</id>
+              <chartConf>{"chartType":"Column3D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartArea4B079">
+              <id>chart_MSColumn2D</id>
+              <chartConf>{"chartType":"MSColumn2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartArea0E9F1">
+              <id>chart_MSColumn3D</id>
+              <chartConf>{"chartType":"MSColumn3D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaFC1C0">
+              <id>chart_StackedColumn2D</id>
+              <chartConf>{"chartType":"StackedColumn2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartArea5221C">
+              <id>chart_StackedColumn3D</id>
+              <chartConf>{"chartType":"StackedColumn3D"}</chartConf>
+            </chartArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

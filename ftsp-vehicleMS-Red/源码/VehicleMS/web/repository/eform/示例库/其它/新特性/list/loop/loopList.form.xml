@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>969e99b7fd343e28a52b2f28d2a3ac7e</id>
+  <cfgTbl>T_Eg_Library,T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.list.loop.Slist2.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/list/loop/Slist2.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <bodyStyle>padding:30px;</bodyStyle>
+      <Items>
+        <blankPanel sid="69ec162deef7cd669ff3dec76d79b39e">
+          <id>blankPanel69dce</id>
+          <Items>
+            <loopArea sid="05a0d411bfefec9ebcc59c12f2c5d422">
+              <id>loopAreac9951</id>
+              <ds>rs1</ds>
+              <Items>
+                <tableLayout sid="a6a83e344b4e13deac310947c4cd1812">
+                  <id>tableLayout70274</id>
+                  <colNum>2</colNum>
+                  <cellpadding>5</cellpadding>
+                  <style>border-bottom:1px dotted gray;</style>
+                  <Items>
+                    <htmlArea sid="ae847f8ad25f3a33c74c2ccdcfbaecc9">
+                      <id>htmlArea4fae0</id>
+                      <value>{rs1.C_NAME}</value>
+                    </htmlArea>
+                    <listArea sid="374a7badf2b761f1758ab2cf90722ca4">
+                      <id>listArea2bac0</id>
+                      <ds>{rs2,'#C_LIBRARYID'='[rs1.C_ID]'}</ds>
+                      <height />
+                      <showTitle>false</showTitle>
+                      <rowClickSelect>false</rowClickSelect>
+                      <stripeRows>false</stripeRows>
+                      <isPageSplit>false</isPageSplit>
+                      <isShowRowNumber>false</isShowRowNumber>
+                      <themeStyle>noborder</themeStyle>
+                      <Items>
+                        <columnString sid="e55278df19d622db17cb7ee66958b464">
+                          <id>columnStringCNAME</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>C_NAME</inheritfld>
+                          <dataName>{rs2.C_NAME}</dataName>
+                          <title>图书名称</title>
+                        </columnString>
+                        <column sid="b0104b66303abf5c69bbce467c375656">
+                          <id>column948db</id>
+                          <width>30</width>
+                          <Items>
+                            <colOperText sid="7d40c1de4f0cfe011077eec18c5f072e">
+                              <id>colOperText52dbd</id>
+                              <text>详情</text>
+                            </colOperText>
+                          </Items>
+                        </column>
+                      </Items>
+                    </listArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </loopArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Library</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">SELECT *&#xD;
+FROM&#xD;
+    T_Eg_Book</ds>
+  </dslist>
+</form>
+

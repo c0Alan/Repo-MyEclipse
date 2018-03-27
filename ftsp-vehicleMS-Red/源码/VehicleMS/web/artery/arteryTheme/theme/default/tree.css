@@ -1,0 +1,91 @@
+
+/***************************************************************************************
+ * Tree node 
+ ***************************************************************************************/
+.x-tree-node img.CorpIcon {
+	background-image: url(images/treenode_corp.gif) !important;
+}
+
+.x-tree-node img.DeptIcon {
+	background-image: url(images/treenode_dept.gif);
+}
+
+.x-tree-node img.PersonIcon {
+	background-image: url(images/treenode_emp.gif);
+}
+
+.x-tree-node img.CodeIcon {
+	background-image: url(images/code.gif);
+}
+.x-tree-node img.ItemNormal {
+	background-image: url(images/tree/itemNormal.gif);
+}
+.x-tree-node img.ItemSelect {
+	background-image: url(images/tree/itemSelect.gif);
+}
+
+.x-tree-node img.package-icon {
+	background-image: url(../../../arteryImage/sys/comp.gif);
+}
+
+.x-tree-node img.form-icon {
+	background-image: url(../../../arteryImage/sys/form.gif);
+}
+
+.x-tree-node img.report-icon {
+	background-image: url(../../../arteryImage/sys/report.gif);
+}
+
+.x-tree-node img.writ-icon {
+	background-image: url(../../../arteryImage/sys/writ.gif);
+}
+
+/***************************************************************************************
+ * x-theme-dynamicNav-orange
+ ***************************************************************************************/
+.x-theme-dynamicNav-orange .x-tree-node{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.x-theme-dynamicNav-orange .x-tree-node .x-tree-node-el{
+	padding: 1px;
+	border: 0px;
+}
+.x-theme-dynamicNav-orange .x-tree-node .x-tree-selected{
+	border: 1px solid #F1CF82;
+	padding:0px;
+	background-color: transparent;
+	background-image: url("images/tree/itemSelectBg.png");
+}
+.x-theme-dynamicNav-orange .x-tree-node .x-tree-selected .ItemNormal{
+	background-image: url(images/tree/itemSelect.gif);
+}
+
+.x-theme-dynamicNav-orange .x-tree-node-el span{
+	font-size: 13px;
+}
+
+/***************************************************************************************
+ * x-theme-treeNav-orange
+ ***************************************************************************************/
+.x-theme-treeNav-orange .x-tree-node{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.x-theme-treeNav-orange .x-tree-node .x-tree-node-el{
+	padding: 1px;
+	border: 0px;
+}
+.x-theme-treeNav-orange .x-tree-node .x-tree-selected{
+	border: 1px solid #F1CF82;
+	padding:0px;
+	background-color: transparent;
+	background-image: url("images/tree/itemSelectBg.png");
+}
+.x-theme-treeNav-orange .x-tree-node .x-tree-selected .ItemNormal{
+	background-image: url(images/tree/itemSelect.gif);
+}
+
+.x-theme-treeNav-orange .x-tree-node-el span{
+	font-size: 13px;
+}

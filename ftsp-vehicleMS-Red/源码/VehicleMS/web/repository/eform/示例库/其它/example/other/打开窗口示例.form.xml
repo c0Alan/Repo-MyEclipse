@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>c326e4a495c8bbc4fa11cf42768592a7</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation>artery/arteryClient/slk/qt/example/other/Dkcksl.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <importFile>"/artery/pub/css/explain_linkto.css;"</importFile>
+      <Items>
+        <formArea sid="formArea0E873B3941B4F834DF418083572821B0">
+          <id>formArea0E873B3941B4F834DF418083572821B0</id>
+          <width>90%</width>
+          <colNum>1</colNum>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <formTableBorder>false</formTableBorder>
+          <cellpadding>1</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <faFieldSet sid="84E9AC66AB3F7B7E8BF8B8E3ACDDADC9">
+              <id>4A6AA99D017FC8FDE1A45F0D23115795</id>
+              <fieldSetName>链接到(Linkto)</fieldSetName>
+              <formTableBorder />
+              <readOnlyBorder />
+              <displayBorder />
+              <colSpan>2</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="buttonAreaA928CA10388FC2C572863E920BAB2B2D">
+                  <id>buttonAreaA928CA10388FC2C572863E920BAB2B2D</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="button32CBE190151BF67FEF117B02B5527E8C">
+                      <id>button32CBE190151BF67FEF117B02B5527E8C</id>
+                      <text>_window</text>
+                      <linkto>{"formId":"140D01A1AE5728D43D97D79B6DB9B4B0","formName":"2二进制表单","formType":"1","params":{"libraryId":"","bookId":""},"target":"_window","targetWidth":550,"targetHeight":450,"runTimeType":"insert","targetLeft":"","targetTop":"","location":"0","menubar":"0","status":"0","titlebar":"0","toolbar":"0","resizable":"1","title":"","wincfg":""}</linkto>
+                    </button>
+                    <button sid="button3C30482438D63A44CF1258D4C7BF8A62">
+                      <id>button3C30482438D63A44CF1258D4C7BF8A62</id>
+                      <text>_window(自定义标题)</text>
+                      <linkto>{"formId":"140D01A1AE5728D43D97D79B6DB9B4B0","formName":"2二进制表单","formType":"1","params":{"libraryId":"","bookId":""},"target":"_window","targetWidth":550,"targetHeight":450,"runTimeType":"insert","targetLeft":"","targetTop":"","location":"0","menubar":"0","status":"0","titlebar":"0","toolbar":"0","resizable":"1","title":"这是自定义标题啊","wincfg":""}</linkto>
+                    </button>
+                    <button sid="button1066F4FE0B519C6DA70C0515AA026F73">
+                      <id>button1066F4FE0B519C6DA70C0515AA026F73</id>
+                      <text>_blank</text>
+                      <linkto>{"formId":"140D01A1AE5728D43D97D79B6DB9B4B0","formName":"2二进制表单","formType":"1","params":{"bookId":""},"target":"_blank","targetWidth":550,"targetHeight":450,"runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                    </button>
+                    <button sid="button227AD3CDC944E19E6D09F7C561AB6DE3">
+                      <id>button227AD3CDC944E19E6D09F7C561AB6DE3</id>
+                      <text>_blank(一个窗口)</text>
+                      <linkto>{"formId":"140D01A1AE5728D43D97D79B6DB9B4B0","formName":"2二进制表单","formType":"1","params":{"libraryId":"","bookId":""},"target":"test","targetWidth":550,"targetHeight":450,"runTimeType":"insert","targetLeft":"","targetTop":"","location":"0","menubar":"0","status":"0","titlebar":"0","toolbar":"0","resizable":"1","title":"","wincfg":""}</linkto>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="faFieldSetB2F98">
+              <id>faFieldSetB2F98</id>
+              <fieldSetName>脚本打开onClick</fieldSetName>
+              <formTableBorder />
+              <readOnlyBorder />
+              <displayBorder />
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="buttonAreaF526CDC816447F911D4216C9EA33882A">
+                  <id>buttonAreaF526CDC816447F911D4216C9EA33882A</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="button48DA5B17E2250F337B6F64FFEEE207A8">
+                      <id>button_window1</id>
+                      <text>_window</text>
+                      <onClickClient><![CDATA[button_window1_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="buttonCD05CB40A1664113D33AD3CD44484FBA">
+                      <id>button_window2</id>
+                      <text>_window(右下角弹出)</text>
+                      <onClickClient><![CDATA[button_window2_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="button264173205E67EE544AE24C8F9BEB23AD">
+                      <id>button_blank</id>
+                      <text>_blank</text>
+                      <onClickClient><![CDATA[button_blank_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="faFieldSet46E4A">
+              <id>faFieldSet46E4A</id>
+              <fieldSetName>自定义配置</fieldSetName>
+              <formTableBorder />
+              <readOnlyBorder />
+              <displayBorder />
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="buttonAreaE3E11AB321E0BA083447958025094A88">
+                  <id>buttonAreaE3E11AB321E0BA083447958025094A88</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="button9FEB8C2424637E95AB9FD976F89BD429">
+                      <id>button_window3</id>
+                      <text>_window(点击脚本)</text>
+                      <onClickClient><![CDATA[button_window3_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="button2514BB13AA8BE8CE00C5F09273A6B232">
+                      <id>button2514BB13AA8BE8CE00C5F09273A6B232</id>
+                      <text>_window(链接到)</text>
+                      <linkto>{"formId":"140D01A1AE5728D43D97D79B6DB9B4B0","formName":"2二进制表单","formType":"1","params":{"libraryId":"","bookId":""},"target":"_window","targetWidth":550,"targetHeight":450,"runTimeType":"insert","targetLeft":"","targetTop":"","location":"0","menubar":"0","status":"0","titlebar":"0","toolbar":"0","resizable":"1","title":"","wincfg":"\"{\\r\\tcollapsible :true,\\r\\tresizable :false,\\r\\tlisteners:{\\r\\t\\t\\\"close\\\":{\\r\\t\\t\\tfn:function(){\\r\\t\\t\\t\\talert(\\\"触发关闭窗口事件\\\");\\r\\t\\t\\t},\\r\\t\\t\\tscope:this\\r\\t\\t}\\r\\t}\\r}\""}</linkto>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="15BFBFF33D07FC667DAA7F4AE02DA49B">
+              <id>1ECD8FF22D0E08BE75DF1E386DD5E7A0</id>
+              <fieldSetName>模态窗口</fieldSetName>
+              <formTableBorder />
+              <readOnlyBorder />
+              <displayBorder />
+              <colSpan>2</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="buttonArea96BD21248995C7D3986227D50ABB8B76">
+                  <id>buttonArea96BD21248995C7D3986227D50ABB8B76</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="button89BCB6403D001CD675B340144C46925E">
+                      <id>button_window4</id>
+                      <text>_window</text>
+                      <onClickClient><![CDATA[button_window4_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="button900837BC75D4B550206F4BE28F5FD3F8">
+                      <id>button_blank2</id>
+                      <text>_blank</text>
+                      <onClickClient><![CDATA[button_blank2_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="640ccd61bb9bcb89cab65923f182fc6e">
+              <id>faFieldSet17e33</id>
+              <fieldSetName>窗口关闭事件</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="acab36c47b138f2356f64efef5015e0b">
+                  <id>buttonAreae56b3</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="bf9ffbc8ad3e437424a87cf79408ca9c">
+                      <id>button_blankClose</id>
+                      <onClickClient>button_blankClose_onClickClient</onClickClient>
+                    </button>
+                    <button sid="c649cb31dad2c52d4955af379f2003f9">
+                      <id>button_windowClose</id>
+                      <onClickClient>button_windowClose_onClickClient</onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="e1253e983c16c7d15995d2eccbf9d66f">
+              <id>faFieldSetd03fd</id>
+              <fieldSetName>窗口回调函数</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="e5327effc58dca025352cdbe13e787ea">
+                  <id>buttonArea17ac5</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="009ce0ceb7745ef14d9e8553512f0d1f">
+                      <id>button81521</id>
+                      <text>打开窗口</text>
+                      <linkto>{"formId":"ac9fad29240f3d1a747c92772d316d6e","formName":"被打开的窗口","formType":"1","target":"_window","targetWidth":"400","targetHeight":"240","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="8FF7EEED796F1F93EEA5E1CA3900B098">
+              <id>A0ECB44424755159C6FF64B20D3DECE4</id>
+              <fieldSetName>链接到参数说明</fieldSetName>
+              <formTableBorder />
+              <readOnlyBorder />
+              <displayBorder />
+              <colSpan>2</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <htmlArea sid="htmlArea451AAC9C75B056BCD6E353C49A8EF438">
+                  <id>htmlArea451AAC9C75B056BCD6E353C49A8EF438</id>
+                  <value>&lt;DIV class=linkto&gt;&lt;TABLE cellSpacing=0&gt;&lt;TBODY&gt;&lt;TR&gt;&lt;TD class=lt_td width=100&gt;&lt;B&gt;配置&lt;/B&gt;&lt;/TD&gt;&lt;TD class=lt_td width=50&gt;&lt;B&gt;要求&lt;/B&gt;&lt;/TD&gt;&lt;TD class=lt_td&gt;&lt;B&gt;描述&lt;/B&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;formId&lt;/TD&gt;&lt;TD class=lt_td&gt;必需&lt;/TD&gt;&lt;TD class=lt_td&gt;表单id&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;formName&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;表单名称&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;formType&lt;/TD&gt;&lt;TD class=lt_td&gt;必需&lt;/TD&gt;&lt;TD class=lt_td&gt;表单类型，可选值有: &lt;TABLE&gt;&lt;TBODY&gt;&lt;TR&gt;&lt;TD width=110&gt;Artery.FORM(1)&lt;/TD&gt;&lt;TD width=40&gt;:&lt;/TD&gt;&lt;TD&gt;form表单&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;Artery.REPORT(2)&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;报表&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;Artery.WRIT(3)&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;文书&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;Artery.PLUGIN(4)&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;外挂表单&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;Artery.FRAME(5)&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;框架页面&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;params&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;参数传输对象&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;url&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;链接地址，如果没有配置表单，可以配置此属性，链接到指定的页面&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;target&lt;/TD&gt;&lt;TD class=lt_td&gt;必需&lt;/TD&gt;&lt;TD class=lt_td&gt;打开位置，可选值有： &lt;TABLE&gt;&lt;TBODY&gt;&lt;TR&gt;&lt;TD width=110&gt;_window&lt;/TD&gt;&lt;TD width=40&gt;:&lt;/TD&gt;&lt;TD&gt;在Ext.Window中打开&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;_blank&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;在新的浏览器窗口打开&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;_self&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;在本页面窗口打开&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;_parent&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;在父窗口中打开&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;_top&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;在顶层窗口打开&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;自定义字符串&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;在指定的操作区域打开，如果找不到，则在新窗口打开&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;targetWidth&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;打开窗口的宽度&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;targetHeight&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;打开窗口的高度&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;runTimeType&lt;/TD&gt;&lt;TD class=lt_td&gt;必需&lt;/TD&gt;&lt;TD class=lt_td&gt;打开页面的运行时类型，可选值有： &lt;TABLE&gt;&lt;TBODY&gt;&lt;TR&gt;&lt;TD width=110&gt;display&lt;/TD&gt;&lt;TD width=40&gt;:&lt;/TD&gt;&lt;TD&gt;显示界面&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;update&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;更新界面&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;insert&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;插入界面&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD&gt;parent&lt;/TD&gt;&lt;TD&gt;:&lt;/TD&gt;&lt;TD&gt;继承自父窗口&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;targetLeft&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;打开窗口左边距&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;targetTop&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;打开窗口顶边距&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;targetRight&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;打开窗口右边距&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;targetBottom&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;打开窗口底边距&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;modal&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;true，则模态打开窗口&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;resizable&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;true，则可以调整窗口大小&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;title&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;打开窗口的标题&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;wincfg&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;打开窗口时的附加配置，可以编写窗口关闭事件&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;location&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;1，则显示地址栏 在新窗口中打开有效&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;menubar&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;1，则显示菜单栏 在新窗口中打开有效&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;status&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;1，则显示状态栏 在新窗口中打开有效&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;titlebar&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;1，则显示标题栏 在新窗口中打开有效&lt;/TD&gt;&lt;/TR&gt;&lt;TR&gt;&lt;TD class=lt_td&gt;toolbar&lt;/TD&gt;&lt;TD class=lt_td&gt;可选&lt;/TD&gt;&lt;TD class=lt_td&gt;1，则显示工具栏 在新窗口中打开有效&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;</value>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

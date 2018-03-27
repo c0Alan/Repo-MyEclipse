@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <cid>4966871a06db4b05352373e5cbe6b9f2</cid>
+  <name>定期删除借阅历史</name>
+  <cron>0 */1 * * * ?</cron>
+  <jobType>1</jobType>
+  <sql>delete from T_Eg_History&#xD;where D_LEND!=null and&#xD;      D_RETURN!=null and&#xD;      getDate()&gt;DATEADD(hh,720,D_RETURN)</sql>
+  <className />
+  <methodName />
+  <clusterId>2</clusterId>
+  <logInfo>1</logInfo>
+  <deploy>2</deploy>
+  <script />
+  <exceptionStatus>1</exceptionStatus>
+  <exceptionProcess>2</exceptionProcess>
+</plan>
+

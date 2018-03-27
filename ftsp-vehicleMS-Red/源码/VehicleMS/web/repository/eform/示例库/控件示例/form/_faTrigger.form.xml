@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>dd519f1c1ed46c41cb791224b775b4b4</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form._faTrigger.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_faTrigger.js</jsLocation>
+  <descript>faTrigger控件示例</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form882af">
+      <id>form882af</id>
+      <Items>
+        <tableLayout sid="17cd8326fa24af1aa0f9d60ac3302100">
+          <id>tableLayoutfb159</id>
+          <colSpacing>10</colSpacing>
+          <width>80%</width>
+          <Items>
+            <formArea sid="11790636b5b9142d71beb6724387dcf8">
+              <id>formAreaedf80</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="6f9098f65be3992ff0b9fb15c188599d">
+                  <id>faFieldSete4448</id>
+                  <fieldSetName>【是否可输入】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="6f6d206748d9b28a7e821f226dd0f7e0">
+                      <id>faTriggerc16da</id>
+                      <editable>true</editable>
+                      <label>可以输入</label>
+                    </faTrigger>
+                    <faTrigger sid="7b69d21cbfc8e74e8185836cbff26cf0">
+                      <id>faTrigger695ba</id>
+                      <label>不可输入</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="e61750ed4ff9318c80157ccb85a93ff2">
+              <id>formArea542f7</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="74cbfcc588c0b4769b15fca4ca474b8c">
+                  <id>faFieldSetd51dc</id>
+                  <fieldSetName>【是否必填】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="3dde9f6b0e206a6b2e12671d39dbcdf8">
+                      <id>faTrigger291ee</id>
+                      <required>true</required>
+                      <editable>true</editable>
+                      <label>必填项</label>
+                    </faTrigger>
+                    <faTrigger sid="43647be06d68c22f4359de8e11c19c84">
+                      <id>faTrigger880d7</id>
+                      <editable>true</editable>
+                      <label>非必填项</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="1387898e865cfcfe61d65c741683b8b3">
+              <id>formAread8649</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="11b67172dbe779952c52c2cdfd062cda">
+                  <id>faFieldSeta8b7d</id>
+                  <fieldSetName>【display必填标识】属性</fieldSetName>
+                  <labelWidth>85</labelWidth>
+                  <displayType>display</displayType>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="83f7a4a46db43e1c38adc3d80083b84b">
+                      <id>faTrigger9fdbb</id>
+                      <required>true</required>
+                      <displayRequiredStyle>true</displayRequiredStyle>
+                      <value>display时，应用label的必填样式</value>
+                      <label>必填项</label>
+                    </faTrigger>
+                    <faTrigger sid="f24cede269148c1681cdf3d1cc4475c4">
+                      <id>faTrigger52f3f</id>
+                      <required>true</required>
+                      <value>display时，不应用label的必填样式</value>
+                      <label>必填项</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="08cba606f12207a39828970ff48c93ae">
+              <id>formArea8dd64</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="182f468b241f35e9cfae66f352f5b281">
+                  <id>faFieldSete35fd</id>
+                  <fieldSetName>【只读时是否验证】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="5f422095d7b3c85184631466aff2cf15">
+                      <id>faTriggerc7151</id>
+                      <required>true</required>
+                      <validOnReadOnly>true</validOnReadOnly>
+                      <editable>true</editable>
+                      <displayType>readOnly</displayType>
+                      <label>true</label>
+                    </faTrigger>
+                    <faTrigger sid="d7fe41d0835f10c2fed3d69f44b636a2">
+                      <id>faTrigger05384</id>
+                      <required>true</required>
+                      <editable>true</editable>
+                      <displayType>readOnly</displayType>
+                      <label>false</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="3c57aafb1b8614bb3cfe4f92bbbb902d">
+              <id>formArea8097b</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="950baa3c7754a23404ac85ed62993be7">
+                  <id>faFieldSetb27e7</id>
+                  <fieldSetName>【无效时是否提交】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="ef24991ba51794b6e6e5e5b98129010a">
+                      <id>submitDisabled_true</id>
+                      <submitDisabled>true</submitDisabled>
+                      <editable>true</editable>
+                      <value>无效时提交</value>
+                      <displayType>disabled</displayType>
+                      <label>true</label>
+                    </faTrigger>
+                    <faTrigger sid="2d7a19b1ab4ebc01ba4c40eafb36cc94">
+                      <id>submitDisabled_false</id>
+                      <submitDisabled>false</submitDisabled>
+                      <editable>true</editable>
+                      <value>无效时不提交</value>
+                      <displayType>disabled</displayType>
+                      <label>false</label>
+                    </faTrigger>
+                    <buttonArea sid="bad944c8261b19ab0e7c914f7cfeb836">
+                      <id>buttonArea99b17</id>
+                      <align>center</align>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="0bef8652c31fc72180f2aca8728d34d3">
+                          <id>button1e6d1</id>
+                          <text>提交表单</text>
+                          <onClickClient><![CDATA[button1e6d1_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[button1e6d1_onClickServer]]></onClickServer>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="9bf9d94977be3ef7adecfd59a809304c">
+              <id>formArea1bedd</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="d688ce6370daf2ebab6dff9378b911b5">
+                  <id>faFieldSeta819d</id>
+                  <fieldSetName>【是否显示清空按钮】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="d3b503e555cdf06e52669ec63f0d6b4e">
+                      <id>faTrigger81a62</id>
+                      <value>显示清空按钮</value>
+                      <label>true</label>
+                    </faTrigger>
+                    <faTrigger sid="ee378d1d6e3283d944aca617ac337c4f">
+                      <id>faTrigger02d3e</id>
+                      <showClear>false</showClear>
+                      <editable>true</editable>
+                      <value>不显示清空按钮</value>
+                      <label>false</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="20df3dd8da5cc2df1f3069823c545bd9">
+              <id>formArea405d4</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="8fa5560c3dab8379732d8c43c20c3f29">
+                  <id>faFieldSet58d2d</id>
+                  <fieldSetName>【输入最大长度】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="e8dbb111c28e7f230e25cd29b173a50d">
+                      <id>faTrigger8b43a</id>
+                      <editable>true</editable>
+                      <maxLength>5</maxLength>
+                      <label>最大长度为5</label>
+                    </faTrigger>
+                    <faTrigger sid="06f04ce7856dd901ff05ef77a6f1a749">
+                      <id>faTrigger74d3f</id>
+                      <editable>true</editable>
+                      <maxLength>10</maxLength>
+                      <label>最大长度为10</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="be6106f2da17f019b8e4e17e166bb25d">
+              <id>formAreaa921e</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="c4105aac78f453430f517f63f82433e7">
+                  <id>faFieldSetd6af7</id>
+                  <fieldSetName>【显示值提示】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="c9819849aed6d0f7db8911978edc2a3a">
+                      <id>faTriggerd0a2f</id>
+                      <value>请把鼠标移到这里</value>
+                      <showValueTip>true</showValueTip>
+                      <label>true</label>
+                    </faTrigger>
+                    <faTrigger sid="94c3c495245e460a970ff72fc143f2a3">
+                      <id>faTrigger43368</id>
+                      <value>请把鼠标移到这里</value>
+                      <label>false</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="2413b537ea83b2868515f8cb5c0fa4a4">
+              <id>formAreaa14de</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="d804395f7d82c0b919206d7a3f99e59c">
+                  <id>faFieldSet259e4</id>
+                  <fieldSetName>【输入提示】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="6a14b0944aff315bb48b347f89f41e75">
+                      <id>faTrigger789a4</id>
+                      <emptyText>这里显示的是输入提示</emptyText>
+                      <label>输入提示</label>
+                    </faTrigger>
+                    <faTrigger sid="c1aca7cbb914050c55505887f58d57bc">
+                      <id>faTriggerc9341</id>
+                      <emptyText>请输入数值或百分比</emptyText>
+                      <label>输入提示</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="99a1bd9a449ff83630dd3f17e488d9e2">
+              <id>formAread1b3e</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="1ff52b0a78aaebf7f3a6620566da3399">
+                  <id>faFieldSet7fba0</id>
+                  <fieldSetName>【输入框样式】属性和【输入框样式(只读)】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="c570c54f38297c984745c3460f190395">
+                      <id>faTrigger6a54e</id>
+                      <valueStyle>border:solid red 1px;</valueStyle>
+                      <label>输入框样式</label>
+                    </faTrigger>
+                    <faTrigger sid="6ce66babd76ab1a59cb4a0d4fa6b56d3">
+                      <id>faTrigger8b872</id>
+                      <valueStyleRead>border:solid blue 1px;</valueStyleRead>
+                      <displayType>readOnly</displayType>
+                      <label>输入框样式只读</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="917eecb9dbeea3e33d4f61f5e1bdfc62">
+              <id>formArea64d83</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="12247f94009c1b346f6956dbdd55974d">
+                  <id>faFieldSetfd4f7</id>
+                  <fieldSetName>【验证提示方式】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="0aa1be4e5d18bf01bd2da564eb6bed7f">
+                      <id>faTriggerb2b50</id>
+                      <required>true</required>
+                      <label>cooltip</label>
+                    </faTrigger>
+                    <faTrigger sid="0296ea7c4c73c8dbe3b2f8b040ffca57">
+                      <id>faTrigger4640b</id>
+                      <required>true</required>
+                      <validType>title</validType>
+                      <label>title</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="e1906b2885118ee89fc408544ec14997">
+              <id>formArea6ece1</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="040379aebcc6501ae11219a26453eef4">
+                  <id>faFieldSetde5f4</id>
+                  <fieldSetName>【展现类型】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="03a241fa5bea3233f3dab75bec653194">
+                      <id>faTriggeraa19c</id>
+                      <value>控件的值</value>
+                      <displayType>editable</displayType>
+                      <label>editable</label>
+                    </faTrigger>
+                    <faTrigger sid="7e354a6a543f997e8ef4bb5796b2ba71">
+                      <id>faTrigger3763e</id>
+                      <value>控件的值</value>
+                      <displayType>readOnly</displayType>
+                      <label>readOnly</label>
+                    </faTrigger>
+                    <faTrigger sid="00d3499a9dfb2fc35fbd8ae07ca5617c">
+                      <id>faTrigger2ec9b</id>
+                      <value>控件的值</value>
+                      <displayType>display</displayType>
+                      <label>display</label>
+                    </faTrigger>
+                    <faTrigger sid="7c51e93a7b649213477e4e8e30219cce">
+                      <id>faTriggera46c9</id>
+                      <value>控件的值</value>
+                      <displayType>disabled</displayType>
+                      <label>disabled</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="e5dce3dac72d03f6596e642ea6cfd3cb">
+              <id>formAreaa6a5a</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="a4c6d7176912494109076ef52fff7770">
+                  <id>faFieldSet2a335</id>
+                  <fieldSetName>【是否隐藏】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="b4ab218609d36c561f8800ae36cdb9e1">
+                      <id>faTriggerfdb1b</id>
+                      <hidden>true</hidden>
+                      <label>隐藏</label>
+                    </faTrigger>
+                    <faTrigger sid="13e45447ac840ec208743db8aa6734b6">
+                      <id>faTriggerf664e</id>
+                      <label>显示</label>
+                    </faTrigger>
+                    <buttonArea sid="0c7c75d44bd817c8d183743b6c3c159e">
+                      <id>buttonArea84363</id>
+                      <align>center</align>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="9b6184e6903b5b6bbfcddbbb89a38e25">
+                          <id>button18fab</id>
+                          <text>显示控件1</text>
+                          <onClickClient><![CDATA[button18fab_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="f3b3bcaa0986312e10a30d6ebe86c007">
+                          <id>buttona5e6e</id>
+                          <text>隐藏控件1</text>
+                          <onClickClient><![CDATA[buttona5e6e_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="e440d74e76d205a0c843f2edb9cbffd2">
+              <id>formAreaff07e</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="364f096b6078f151a2c0f624ba332219">
+                  <id>faFieldSetb78f4</id>
+                  <fieldSetName>【隐藏方式】属性</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="4bb3f5a94fd46e328524bb78a1baccc4">
+                      <id>faTriggerf4530</id>
+                      <hidden>true</hidden>
+                      <label>display方式隐藏</label>
+                    </faTrigger>
+                    <faTrigger sid="1053067220f7c048b59275716f7478f8">
+                      <id>faTriggerb828e</id>
+                      <label>显示</label>
+                    </faTrigger>
+                    <buttonArea sid="36522bd17635c7f6be619c5ee5d4ffbd">
+                      <id>buttonAreac9526</id>
+                      <align>center</align>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="9548b4185bd55b5b36917d89b813fc4c">
+                          <id>button72cba</id>
+                          <text>显示控件2</text>
+                          <onClickClient><![CDATA[button72cba_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="0d20d86f85b361e2e39a66bc4f6a1ee6">
+                          <id>buttoncfde9</id>
+                          <text>隐藏控件2</text>
+                          <onClickClient><![CDATA[buttoncfde9_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                    <faTrigger sid="163deb896ee543ca262e46ef0ed32369">
+                      <id>faTrigger85ec8</id>
+                      <hidden>true</hidden>
+                      <hideMode>visibility</hideMode>
+                      <label>visibility方式隐藏</label>
+                      <hideMode>visibility</hideMode>
+                    </faTrigger>
+                    <faTrigger sid="5a64aabb7b5d69514e0da0157ab92771">
+                      <id>faTrigger577c0</id>
+                      <label>显示</label>
+                    </faTrigger>
+                    <buttonArea sid="6b20d5fd6d19d627e362f5152f3d98fa">
+                      <id>buttonAreac4c2c</id>
+                      <align>center</align>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="982a23174ee22309d48ee32193da450f">
+                          <id>buttonafc9d</id>
+                          <text>显示控件3</text>
+                          <onClickClient><![CDATA[buttonafc9d_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="215d42723142ce81c7c18bcbd7c35301">
+                          <id>buttonf4be1</id>
+                          <text>隐藏控件3</text>
+                          <onClickClient><![CDATA[buttonf4be1_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="c9c937056abf2e8a17f0e2acd307fbaf">
+              <id>formAreac5cb8</id>
+              <colNum>1</colNum>
+              <colSpan>2</colSpan>
+              <Items>
+                <faFieldSet sid="e1bf7ccdcc248d63b081d6466f5ee042">
+                  <id>faFieldSet2b85c</id>
+                  <fieldSetName>控件的方法</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="588d651a8e5c28a2a827718e8bae35a1">
+                      <id>faTrigger79d00</id>
+                      <width>200</width>
+                      <value>控件初始值</value>
+                      <label>faTrigger控件</label>
+                      <labelCntStyle>padding:5px;</labelCntStyle>
+                    </faTrigger>
+                    <buttonArea sid="d7eb9f6bf91bc47133565db9c72b110d">
+                      <id>buttonAreab8e0f</id>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="4e4d442fedc4438782cf6e8d683898f2">
+                          <id>button3dddd</id>
+                          <width>100</width>
+                          <text>getValue</text>
+                          <onClickClient><![CDATA[button3dddd_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="7b50ec9d119170e08eafa859b84ef110">
+                          <id>buttond954e</id>
+                          <width>100</width>
+                          <text>getValueText</text>
+                          <onClickClient><![CDATA[buttond954e_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="f3491ffe758662bf117dcc71f1e9de2a">
+                          <id>buttonda1c1</id>
+                          <width>100</width>
+                          <text>setValue</text>
+                          <onClickClient><![CDATA[buttonda1c1_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="da96f0a2a7f2c55577a3e71d31170467">
+                          <id>buttona2d9f</id>
+                          <width>100</width>
+                          <text>reset</text>
+                          <onClickClient><![CDATA[buttona2d9f_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="b829eb385bf8d1e712e0c82b6ddb7ea9">
+                          <id>button5f155</id>
+                          <width>100</width>
+                          <text>setOriginalValue</text>
+                          <onClickClient><![CDATA[button5f155_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                    <buttonArea sid="444806a8b647cf73f5287eb79672cd32">
+                      <id>buttonAreaa7ddb</id>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="eee1609e5d9fd6be5b3212f9c7eb41e5">
+                          <id>buttoncd37b</id>
+                          <width>100</width>
+                          <text>setLabel</text>
+                          <onClickClient><![CDATA[buttoncd37b_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="2c676093d30f3f7b603aa01c88c11aa3">
+                          <id>buttonb43cf</id>
+                          <width>100</width>
+                          <text>setLabelColor</text>
+                          <onClickClient><![CDATA[buttonb43cf_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="0a5a99ffd5592d77f579732f12d77582">
+                          <id>button3cbf8</id>
+                          <width>100</width>
+                          <text>setLabelStyle</text>
+                          <onClickClient><![CDATA[button3cbf8_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="eb767fd206dd9a8bcb143d81071f3a2f">
+                          <id>buttonc6030</id>
+                          <width>100</width>
+                          <text>setLabelCntStyle</text>
+                          <onClickClient><![CDATA[buttonc6030_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="006b1c35768dd644e78abf5acee449d7">
+                          <id>button5e466</id>
+                          <width>100</width>
+                          <text>setValueStyle</text>
+                          <onClickClient><![CDATA[button5e466_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="b231a3b2ba0fcd9751985bb28c53029d">
+                          <id>button55e17</id>
+                          <width>100</width>
+                          <text>setRequired</text>
+                          <onClickClient><![CDATA[button55e17_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                    <buttonArea sid="440f9c378ecb557868ea82606da3a6bd">
+                      <id>buttonArea731bc</id>
+                      <colSpan>2</colSpan>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="ecb84a703930202590301aefc21c4901">
+                          <id>button18f1e</id>
+                          <width>100</width>
+                          <text>read</text>
+                          <onClickClient><![CDATA[button18f1e_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="7f20aa05924f1453a766510d47d30507">
+                          <id>buttoneca99</id>
+                          <width>100</width>
+                          <text>edit</text>
+                          <onClickClient><![CDATA[buttoneca99_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="19851f5e667de5355ec7a23215b65de5">
+                          <id>buttonb633c</id>
+                          <width>100</width>
+                          <text>disable</text>
+                          <onClickClient><![CDATA[buttonb633c_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="156d72c8eff0e95f7df61fe1eae2c2e2">
+                          <id>button34f1a</id>
+                          <width>100</width>
+                          <text>enable</text>
+                          <onClickClient><![CDATA[button34f1a_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="5cef56d80db71fc8d8e8ffd0b865b88d">
+                          <id>buttonf9726</id>
+                          <width>100</width>
+                          <text>hide</text>
+                          <onClickClient><![CDATA[buttonf9726_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="ddc40546118ce95b19679ea7bd129b8b">
+                          <id>buttonfd0d3</id>
+                          <width>100</width>
+                          <text>show</text>
+                          <onClickClient><![CDATA[buttonfd0d3_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="f139047c157fbde12ef78dcb3fa8a7bf">
+              <id>formArea6bc54</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="773c0baea8b3ae177952dec01d71a0d0">
+                  <id>faFieldSet3cb7c</id>
+                  <fieldSetName>【点击时脚本】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="5181469ee6ffadc803533866bb32d2df">
+                      <id>faTriggera4ef5</id>
+                      <onTriggerClickClient><![CDATA[faTriggera4ef5_onTriggerClickClient]]></onTriggerClickClient>
+                      <onTriggerClickServer><![CDATA[faTriggera4ef5_onTriggerClickServer]]></onTriggerClickServer>
+                      <label>faTrigger控件</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="60299e98b0101be4216b7ca2a0ff9953">
+              <id>formArea1405f</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="90a0b1cd2a5de5d86dd2cca625d77326">
+                  <id>faFieldSet7ef91</id>
+                  <fieldSetName>【显示值生成脚本】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="1601747006a55ee447b9dc1fa5cd8bcf">
+                      <id>faTriggerbd11d</id>
+                      <value>值</value>
+                      <showValueScript><![CDATA[faTriggerbd11d_showValueScript]]></showValueScript>
+                      <label>faTrigger控件</label>
+                    </faTrigger>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="4c0135f457837b8ba96445490432764e">
+              <id>formArea91446</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="a9e1f94779dfce237d7b6ef4db83aa11">
+                  <id>faFieldSet86789</id>
+                  <fieldSetName>【值改变时脚本】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="c9b6a85a9c7e847ed9e77cf6aa6f5e04">
+                      <id>faTrigger71526</id>
+                      <onChangeClient><![CDATA[faTrigger71526_onChangeClient]]></onChangeClient>
+                      <onChangeServer><![CDATA[faTrigger71526_onChangeServer]]></onChangeServer>
+                      <label>faTrigger控件</label>
+                    </faTrigger>
+                    <buttonArea sid="2f2804d04a72df2622960ef80f589b56">
+                      <id>buttonArea34552</id>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="eb6be9296fa5103b54dc55bb86b9844a">
+                          <id>button4c5d1</id>
+                          <text>setValue1</text>
+                          <onClickClient><![CDATA[button4c5d1_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="50cc020ddc6de705c2204286d805c917">
+              <id>formArea3a386</id>
+              <colNum>1</colNum>
+              <Items>
+                <faFieldSet sid="fdf3990eb3759e1d8cb79d589a8ee7f6">
+                  <id>faFieldSet2ded6</id>
+                  <fieldSetName>【验证脚本】</fieldSetName>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTrigger sid="77fe32c9a031ca6f5e283120bc982dcd">
+                      <id>faTrigger881d9</id>
+                      <emptyText>输入pass验证通过</emptyText>
+                      <onValidClient><![CDATA[faTrigger881d9_onValidClient]]></onValidClient>
+                      <onValidServer><![CDATA[faTrigger881d9_onValidServer]]></onValidServer>
+                      <label>faTrigger控件</label>
+                    </faTrigger>
+                    <buttonArea sid="1a9549a20114ccf1e135be932ae4c87a">
+                      <id>buttonAreaae215</id>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="7af0bf67b534e3acb21234fb5c134708">
+                          <id>buttond6066</id>
+                          <text>setValue:pass</text>
+                          <onClickClient><![CDATA[buttond6066_onClickClient]]></onClickClient>
+                        </button>
+                        <button sid="4af64f7be144c0362bc4d25a3edca9b9">
+                          <id>buttonc6ebc</id>
+                          <text>setValue:other</text>
+                          <onClickClient><![CDATA[buttonc6ebc_onClickClient]]></onClickClient>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

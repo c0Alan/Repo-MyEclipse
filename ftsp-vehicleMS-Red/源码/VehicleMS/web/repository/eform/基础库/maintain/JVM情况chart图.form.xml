@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>457b9d064eae00cf00807cfc6f717324</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.jck.maintain.JVMqkchartt.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/maintain/JVMqkchartt.js</jsLocation>
+  <cssLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form59b97">
+      <id>form59b97</id>
+      <Items>
+        <blankPanel sid="f9755233c9403db246ba2585cf851fd2">
+          <id>blankPanel94248</id>
+          <width>100%</width>
+          <height>100%</height>
+          <frame>true</frame>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <chartArea sid="a01d82b91207e92123d8d010c81193a0">
+              <id>chartArea</id>
+              <width>100%</width>
+              <height>100%</height>
+              <chartConf>{"chartType":"MSLine","xAxisName":"时间(HH:mm:ss)","animation":"0","outCnvbaseFontSize":"14","caption":"JVM使用情况","yAxisName":"JVM值(M)"}</chartConf>
+              <updateTime>5</updateTime>
+              <onLoad><![CDATA[chartArea_onLoad]]></onLoad>
+            </chartArea>
+          </Items>
+        </blankPanel>
+        <synchTimer sid="67bb35e04e4ca03f5415d4c9ad21a5b0">
+          <id>synchTimer45df8</id>
+        </synchTimer>
+      </Items>
+    </form>
+  </Item>
+</form>
+

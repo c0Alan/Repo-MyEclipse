@@ -1,0 +1,16 @@
+{
+    projectName: 'Artery JS',
+    deployDir: 'ArteryJs',
+    licenseText: "Artery JS Library 2.0\nCopyright(c) 2006-2009 ",
+    pkgs: [{
+    	name: 'Artery assistant',
+        file: 'assistant.js',
+		includeDeps: true,
+		fileIncludes: [{
+            text: 'assistant.js',
+            path: ''
+        }]
+    }],
+  	resources:[]
+}
+

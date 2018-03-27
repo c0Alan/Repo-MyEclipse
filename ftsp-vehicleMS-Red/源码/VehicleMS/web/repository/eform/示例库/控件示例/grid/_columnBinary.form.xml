@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1b1a9f2882a2f9ea2a80133c5a082ca6</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._columnBinary.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_columnBinary.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form58d3d">
+      <id>form58d3d</id>
+      <Items>
+        <listArea sid="1430ef94bc57e9c89ed473f732e2d9ee">
+          <id>listAreaa0a35</id>
+          <ds>rs1</ds>
+          <Items>
+            <columnBinary sid="c411b48c5cd0fb94c9606c2f7bda2097">
+              <id>columnBinaryIPHOTO</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>I_PHOTO</inheritfld>
+              <dataName>{rs1.I_PHOTO}</dataName>
+              <title>图书封面</title>
+            </columnBinary>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0f6b734eb674c5733c4a33c2032bdb54</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.image._chartArea_bar.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/image/_chartArea_bar.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form36691">
+      <id>form36691</id>
+      <Items>
+        <tableLayout sid="3964b1c228d1695fa31a0770770c0565">
+          <id>tableLayout3C40F</id>
+          <Items>
+            <chartArea sid="be6c3e4e4cfd4e76f734667fdb7ee98f">
+              <id>chart_Bar2D</id>
+              <chartConf>{"chartType":"Bar2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="4b44f3d35a2a6d0b381532cf7233b791">
+              <id>chart_MSBar2D</id>
+              <chartConf>{"chartType":"MSBar2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="4a5dc28d96651c6c3114be71259d5ebb">
+              <id>chart_MsBar3D</id>
+              <chartConf>{"chartType":"MsBar3D"}</chartConf>
+            </chartArea>
+            <chartArea sid="522eda1920e86cfc64fc57f3259ff9d8">
+              <id>chart_StackedBar2D</id>
+              <chartConf>{"chartType":"StackedBar2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="8303a1f7acd35099ae41999fe79b61b0">
+              <id>chart_StackedBar3D</id>
+              <chartConf>{"chartType":"StackedBar3D"}</chartConf>
+            </chartArea>
+            <htmlArea sid="f2d3f2ff746026b552145f9e04d50664">
+              <id>htmlArea87794</id>
+            </htmlArea>
+            <chartArea sid="707cb68008135038e64dbeeb595e62f0">
+              <id>chart_Area2D</id>
+              <chartConf>{"chartType":"Area2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="23658b1e1555e27aa9d520202e21ceca">
+              <id>chart_MSArea</id>
+              <chartConf>{"chartType":"MSArea"}</chartConf>
+            </chartArea>
+            <chartArea sid="290d6a777a0389a40268f17ca555641a">
+              <id>chart_StackedArea2D</id>
+              <chartConf>{"chartType":"StackedArea2D"}</chartConf>
+            </chartArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

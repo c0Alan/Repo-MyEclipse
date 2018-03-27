@@ -1,0 +1,73 @@
+/***************************************************************************************
+ * inherit style
+ ***************************************************************************************/
+.x-pagingbar2-wrap{
+	padding:0 3px;
+	white-space: nowrap;
+}
+.x-pagingbar2-wrap .x-pagingbar-pageInfo{
+	color: #3C5DA6;
+	padding:2px;
+	vertical-align: bottom;
+	white-space: nowrap;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.x-pagingbar2-wrap .x-pagingbar-pageInfo .x-pagingbar-pageInfo-text{
+	font-weight: 700;
+}
+.x-pagingbar2-num{
+	padding:2px;
+	padding-left: 5x;
+	padding-right: 5px;
+	color:#3F5CA5;
+	cursor: pointer;
+	vertical-align: top;
+	white-space: nowrap;
+	text-decoration: underline;
+}
+.x-pagingbar2-num-current{
+	color: #000000;
+	text-decoration: none;
+	font-weight: 700;
+	cursor: default;
+}
+.x-pagingbar2-ellipsis{
+	padding:2px;
+	padding-left: 5x;
+	padding-right: 5px;
+	color:#3F5CA5;
+	vertical-align: top;
+	white-space: nowrap;
+}
+.x-pagingbar2-btn{
+	padding:2px;
+	padding-left: 5x;
+	padding-right: 5px;
+	color:#3F5CA5;
+	cursor: pointer;
+	vertical-align: top;
+	white-space: nowrap;
+	text-decoration: underline;
+}
+.x-pagingbar2-btnDisabled{
+	padding:2px;
+	padding-left: 5x;
+	padding-right: 5px;
+	color:gray;
+	cursor: default;
+	vertical-align: top;
+	white-space: nowrap;
+	text-decoration: underline;
+}
+.x-pagingbar2-prePage,.x-pagingbar2-nextPage{
+	height: 100%;
+	white-space: nowrap;
+	vertical-align: top;
+}
+.x-pagingbar2-prePage,.x-pagingbar2-num{
+	margin-right: 3px;
+}
+
+.x-pagingbar-disable{
+}

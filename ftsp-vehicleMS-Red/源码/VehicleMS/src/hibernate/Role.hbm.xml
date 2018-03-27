@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.thunisoft.artery.module.role.domain">
+    <class table="T_Aty_Role" name="Role">
+        <id name="id" column="C_ID" type="java.lang.String">
+            <generator class="com.thunisoft.artery.util.uuid.HibernateIDGenerator" />
+        </id>
+        <property name="name" column="C_Name" type="java.lang.String"  not-null="true" />
+        <property name="descript" column="C_Descript" type="java.lang.String" />
+        <property name="xtgy" column="N_XTGY" type="java.lang.Integer" />
+        <property name="valid" column="N_Valid" type="java.lang.Integer" />
+        <property name="order" column="N_Order" type="java.lang.Integer" />
+    </class>
+</hibernate-mapping>

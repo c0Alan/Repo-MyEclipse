@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="tableLayout" cn="表格布局" menu="布局控件" jsType="artery-base"
+	icon="tableLayout.gif" iconNew="tableLayoutNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>此控件可生成页面的table，可用此控件来进行页面的布局
+		</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+	</Parents>
+	<Children>
+		<Child type="htmlArea" />
+		<Child type="treeArea" />
+		<Child type="tabArea" />
+		<Child type="formArea" />
+		<Child type="listArea" />
+		<Child type="buttonArea" />
+		<Child type="activeX" />
+		<Child type="tableLayout" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.lib.TableArea
+	</Class>
+	<JsFile>
+		<File>tableLayout.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>aptablelayout</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="列数" type="2" name="colNum" group="列设置" tips="设置table的列数，即table布局共有几列">
+	      <Value>2</Value>
+	    </Property>
+	    <Property cn="每列宽度" type="1" name="colWidths" group="列设置" tips="设置每列的宽度，如有多列，用“，”号分隔。支持整数值和百分比">
+	      <Value />
+	    </Property>
+	    <Property cn="列间距" type="1" name="colSpacing" group="列设置" tips="设置每列之间的宽度">
+	      <Value />
+	    </Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value />
+    </Property>
+    <Property cn="是否显示边框" inherit="false" type="11" name="border" tips="设置是否显示最外层的边框，true为显示，false为不显示；默认为false">
+      <Value>false</Value>
+		<Description><![CDATA[
+			<p>设置是否显示最外层的边框，true为显示，false为不显示；默认为false</p>
+			<table><tr><td style='text-align:center;font-weight:700'>默认:false</td><td style='text-align:center;font-weight:700'>设置为:true</td></tr><tr><td><img src='../../resources/images/common/form/tableLayout/tableLayout_border1.png'></td><td><img src='../../resources/images/common/form/tableLayout/tableLayout_border2.png'></td></tr></table>
+		]]></Description>
+    </Property>
+    <Property cn="是否显示表格线" type="11" name="tableBorder" tips="设置是否显示表格线，true：显示，false：不显示；默认为false">
+      <Value>false</Value>
+		<Description><![CDATA[
+			<p>设置是否显示表格线，true：显示，false：不显示；默认为false</p>
+			<table><tr><td style='text-align:center;font-weight:700'>默认:false</td><td style='text-align:center;font-weight:700'>设置为:true</td></tr><tr><td><img src='../../resources/images/common/form/tableLayout/tableLayout_border1.png'></td><td><img src='../../resources/images/common/form/tableLayout/tableLayout_tableBorder.png'></td></tr></table>
+		]]></Description>
+    </Property>
+    <Property cn="表格线宽度" type="2" name="borderWidth" tips="设置表格线的宽度；默认为：1">
+      <Value>1</Value>
+		<Description><![CDATA[
+			<p>设置表格线的宽度；默认为1</p>
+			<table><tr><td style='text-align:center;font-weight:700'>默认:1</td><td style='text-align:center;font-weight:700'>设置为:2</td></tr><tr><td><img src='../../resources/images/common/form/tableLayout/tableLayout_tableBorder.png'></td><td><img src='../../resources/images/common/form/tableLayout/tableLayout_borderWidth.png'></td></tr></table>
+		]]></Description>
+		<Conditions>
+			<Condition>只有当“是否显示表格线”属性为true时起作用</Condition>
+		</Conditions>
+    </Property>
+    <Property cn="表格线颜色" type="10" name="borderColor" tips="设置表格线的颜色；默认为：#c0c0c0">
+      <Value>#c0c0c0</Value>
+		<Description><![CDATA[
+			<p>设置表格线的颜色；默认为：#c0c0c0</p>
+			<table><tr><td style='text-align:center;font-weight:700'>默认:#c0c0c0</td><td style='text-align:center;font-weight:700'>设置为:red</td></tr><tr><td><img src='../../resources/images/common/form/tableLayout/tableLayout_tableBorder.png'></td><td><img src='../../resources/images/common/form/tableLayout/tableLayout_borderColor.png'></td></tr></table>
+		]]></Description>
+		<Conditions>
+			<Condition>只有当“是否显示表格线”属性为true时起作用</Condition>
+		</Conditions>
+    </Property>
+    <Property cn="表格线样式" type="3" name="borderStyle" inherit="false" ct="[solid,dotted,dashed]" tips="设置表格线的样式；只有当“是否显示表格线”属性为true时起作用">
+      <Value>solid</Value>
+    </Property>
+    <Property cn="表格间距" type="2" name="cellpadding" tips="设置表格中的单元格间距，决定了各个输入框之间的距离">
+      <Value>1</Value>
+    </Property>
+    <Property cn="组件样式" type="1" name="style" tips="设置div的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+      <Value />
+    </Property>
+    <Property cn="table样式" type="1" name="tableStyle" tips="设置table的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+      <Value />
+    </Property>
+    <Property cn="样式名称" type="1" name="className"  tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+      <Value />
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"
+		tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14"  name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <ExtendProperties>
+  	<Property cn="所占列数" type="2" name="colSpan" group="表格布局" tips="当本组件处于表格布局中时，设置本组件占几列，相当于td的copspan属性">
+      <Value>1</Value>
+    </Property>
+    <Property cn="所占行数" type="2" name="rowSpan" group="表格布局" tips="当本组件处于表格布局中时，设置本组件占几行，相当于td的rowspan属性">
+      <Value>1</Value>
+    </Property>
+    <Property cn="同步表格高度" type="11" name="synTabHeight" group="表格布局" export="true" tips="当本组件的父容器是“表格布局”时，可以通过此属性来设置本组件所在表格容器...">
+      <Value>false</Value>
+    </Property>
+    <Property cn="同步表格样式" type="1" name="synTabStyle" group="表格布局" export="true" tips="本组件设置的样式会应用到表格的td的样式。只有本组件在表格布局内使用时有效">
+      <Value></Value>
+    </Property>
+  </ExtendProperties>
+</Item>
+

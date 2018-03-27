@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="fakindeditor" cn="KindEditor" menu="编辑器" jsType="artery-base"
+	icon="fakindeditor.gif" iconNew="fakindeditorNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2011-6-20</CreateTime>
+		<Describe>
+		<![CDATA[
+			<p>KindEditor控件是集成了kindeditor,作为Artery项目中的新的富文本编辑器</p>
+			<p>kindeditor控件是开源产品，主页为：http://www.kindsoft.net</p>
+			<p>本次集成的kindeditor版本为：3.5.5</p>
+		]]></Describe>
+		<Images>
+			<File>kindeditorinfo.jpg</File>
+		</Images>
+	</Info>
+  <!-- 设置本控件与其它控件的位置关系 -->
+  <Parents>
+		<Parent type="formArea" />
+		<Parent type="faFieldSet" />
+		<Parent type="blankPanel" />
+  </Parents>
+  <Class>com.thunisoft.artery.plugin.form.FaKindEditor</Class>
+  <!-- 设置本控件所需的js文件 -->
+  <JsFile>
+    <File>fakindeditor.js</File>
+    <File>kindeditor-min.js</File>
+  </JsFile>
+  <!-- 设置本控件的属性 -->
+  <Properties>
+    <Property cn="组件类型" type="1" name="xtype" isHidden="1" export="true" cfg="true">
+      <Value>apkindeditor</Value>
+    </Property>
+    <Property cn="标识" type="1" name="id" export="true">
+      <Value />
+    </Property>
+	<Property cn="提交名称" type="1" name="submitName"
+		tips="用于设置form提交时本控件的提交名称，也就是标签的name属性">
+		<Value />
+		<Description><![CDATA[
+		<p>用于设置form提交时本控件的提交名称，也就是标签的name属性。</p>
+		<p>如果不设置提交名称，默认使用控件id作为提交名称。</p>
+		]]></Description>
+	</Property>
+	<Property cn="是否必填" type="11" name="required" tips="设置是否为表单必填项">
+		<Value>false</Value>
+		<Description><![CDATA[
+		设置是否为表单必填项。控件如果设置为必填项，在没有填写内容时，表单验证不能通过。		
+		]]></Description>
+	</Property>
+	<Property cn="必填时允许空格" type="11" name="allowBlankWhenRequired" tips="输入空格，如果属性为ture则通过必填验证，否则不能通过必填验证">
+		<Value>false</Value>
+		<Description><![CDATA[
+			<p>输入空格，如果属性为ture则通过必填验证，否则不能通过必填验证"</p>
+		]]></Description>
+		<Conditions>
+			<Condition>是否必填属性为true时，此属性有效。</Condition>
+		</Conditions>
+	</Property>
+	<Property cn="继承key" type="1" name="inheritkey"
+		tips="继承的数据字典的key，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+		<Value />
+	</Property>
+	<Property cn="继承表" type="1" name="inherittbl"
+		tips="继承的数据字典的表名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+		<Value />
+	</Property>
+	<Property cn="继承字段" type="1" name="inheritfld"
+		tips="继承的数据字典的字段名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+		<Value />
+	</Property>
+	<Property cn="数据源" type="1" name="dataName"
+		tips="根据设置，对应着从数据源中取数据 ，作为控件的值，优先级比值属性高。示例：{rs1.C_NAME}">
+		<Value />
+	</Property>
+	<Property cn="值" type="1" name="value"  export="true" tips="设置本控件的值...">
+      <Value />
+      <Description><![CDATA[
+	     设置本控件的值。如果是html，编辑器会自动解析并显示。
+	  ]]></Description>
+    </Property>
+	<Property cn="输入最大长度" type="1" name="maxLength" mask="^\d{1,}$" tips="限制本控件可输入的最大长度">
+		<Value />
+	</Property>
+	<Property cn="输入最小长度" type="1" name="minLength" mask="^\d{1,}$" tips="限制本控件可输入的最小长度">
+		<Value />
+	</Property>
+	<Property cn="工具栏样式" name="editorStyle" type="3" ct="[default,simple]" tips="设置编辑器工具栏显示内容和样式...">
+		<Value>default</Value>
+		<Description><![CDATA[
+			设置编辑器工具栏显示内容和样式。编辑器样式分为简单和默认两种模式常用模式，对应的工具栏不一样，如果设置了工具栏项，则以工具栏项为准
+		]]></Description>
+		<Conditions>
+			<Condition>自定义工具栏为空时，此属性有效</Condition>
+		</Conditions>
+	</Property>
+	<Property cn="自定义工具栏" type ="7" name="items" tips="配置编辑器的工具栏，其中'-'表示换行，'|'表示分隔符...">
+		<Value/>
+		<Description><![CDATA[
+			<p>配置编辑器的工具栏，其中'-'表示换行，'|'表示分隔符</p>
+			<p>数据类型：Array</p>
+			<p>默认值：</p>
+			<p>[source,|,fullscreen,undo,redo,print,cut,copy,paste,</p>
+			<p>plainpaste,wordpaste,|,justifyleft,justifycenter,justifyright,</p>
+			<p>justifyfull,insertorderedlist,insertunorderedlist,indent,outdent,subscript,</p>
+			<p>superscript,|,selectall,-,</p>
+			<p>title,fontname,fontsize,|,textcolor,bgcolor,bold,</p>
+			<p>italic,underline,strikethrough,removeformat,|,image,</p>
+			<p>flash,media,advtable,hr,emoticons,link,unlink,|,about]</p>
+			<p><b>示例：source,|,fullscreen,|,about（注意不要有空格）</b></p>
+		]]></Description>
+	</Property>
+	<Property cn="宽度" type="1" name="width" tips="编辑器的宽度，可以设置px或%" mask="^\d{1,}%{0,1}$">
+		<Value>100%</Value>
+	</Property>
+	<Property cn="高度" type="1" name="height" tips="编辑器的高度，可以设置px或%" mask="^\d{1,}px$">
+		<Value>100%</Value>
+	</Property>
+	<Property cn="最小宽度" type="1" name="minWidth" tips="指定编辑器最小宽度，单位为px" mask="^\d{1,}px$">
+		<Value>200</Value>
+	</Property>
+	<Property cn="最小高度" type="1" name="minHeight" tips="指定编辑器最小高度，单位为px" mask="^\d{1,}px$">
+		<Value>100</Value>
+	</Property>
+	<Property cn="过滤HTML" type="11" name="filterMode" tips="true时过滤HTML代码，false时允许输入任何代码">
+		<Value>false</Value>
+	</Property>
+	<Property cn="保留HTML" type="7" name="htmlTags" tips="指定要保留的HTML标记和属性...">
+		<Value/>
+		<Description><![CDATA[
+			<p>指定要保留的HTML标记和属性。哈希数组的key为HTML标签名，value为HTML属性数组，</p>
+			<p>'.'开始的属性表示style属性，此属性filterMode为true时有效</p>
+			<p>默认值:</p>
+			<p>{</p>
+			<p> font : ['color', 'size', 'face', '.background-color'],</p>
+			<p> span : ['style'],</p>
+			<p> div : ['class', 'align', 'style'],</p>
+			<p> table: ['class', 'border', 'cellspacing', 'cellpadding', 'width', 'height', 'align', 'style'],</p>
+			<p>  'td,th': ['class', 'align', 'valign', 'width', 'height', 'colspan', 'rowspan', 'bgcolor', 'style'],</p>
+			<p> a : ['class', 'href', 'target', 'name', 'style'],</p>
+			<p> embed : ['src', 'width', 'height', 'type', 'loop', 'autostart', 'quality',</p>
+			<p>  'style', 'align', 'allowscriptaccess', '/'],</p>
+			<p> img : ['src', 'width', 'height', 'border', 'alt', 'title', 'align', 'style', '/'],</p>
+			<p> hr : ['class', '/'],</p>
+			<p> br : ['/'],</p>
+			<p> 'p,ol,ul,li,blockquote,h1,h2,h3,h4,h5,h6' : ['align', 'style'],</p>
+			<p> 'tbody,tr,strong,b,sub,sup,em,i,u,strike' : []</p>
+			<p>}</p>
+		]]></Description>
+		<Conditions>
+			<Condition>filterMode为true时，此属性有效。</Condition>
+		</Conditions>
+	</Property>
+	<Property cn="拖动" type="3" name="resizeMode" ct="[noDrag,heightDrag,sizeDrag]" tips="sizeDrag或heightDrag或noDrag，sizeDrag时可以拖动改变宽度和高度，heightDrag时只能改变高度，noDrag时不能拖动">
+		<Value>noDrag</Value>
+	</Property>
+	<Property cn="风格类型" type="3" name="skinType" ct="[default]" tips="风格类型,目前仅有default">
+		<Value>default</Value>
+	</Property>
+	<Property cn="显示模式" type="11" name="wyswygMode" tips="可视化模式或代码模式">
+		<Value>true</Value>
+	</Property>
+	<Property cn="编辑区域样式" type="7" name="cssPath" tips="编辑器iframe document的CSS...">
+		<Value/>
+		<Description><![CDATA[
+		<p>编辑器iframe document的CSS，用于设置可视化区域的样式,数据类型：String或Array['a.css', 'b.css']</p>
+		<p>编辑器为单独的iframe，如果需要对编辑器的输入区域加上背景色，背景图片之类的功能，可以使用该属性</p>
+		<p>注：可以设置为“/Artery3/1.css”,这样就会使用这个样式了，如果为多个时，用“,”隔开</p>
+		]]></Description>
+	</Property>
+	<Property cn="回退步骤数" type="2" name="minChangeSize" tips="undo/redo文字输入最小变化长度，当输入的文字变化小于这个长度时不会添加到undo堆栈里">
+		<Value>5</Value>
+	</Property>
+	<Property cn="自动加载样式" type="11" name="loadStyleMode" tips="true时自动加载编辑器的CSS">
+		<Value>true</Value>
+	</Property>
+	<Property cn="回车换行标签" type="3" name="newlineTag" ct="[p,br]" tips="设置回车换行标签">
+		<Value>br</Value>
+	</Property>
+	<Property cn="上传图片" type="11" name="allowUpload" tips="true时显示上传图片工具栏标签">
+		<Value>true</Value>
+	</Property>
+	<Property cn="图片最大值" type="2" name="allowImgMaxSize" tips="编辑器上传图片时允许的最大图片，单位bit">
+		<Value>1000000</Value>
+	</Property>
+	<Property cn="图片上传目录" type="1" name="imgUploadPath" tips="上传图片相对于根目录的文件夹位置，不支持“..”">
+		<Value>/attached</Value>
+		<Description><![CDATA[
+			<p>上传图片相对于根目录的文件夹位置，不支持".."</p>
+			<p>默认值为attached，即在使用时会在web根目录创建attached文件夹</p>
+		]]></Description>
+	</Property>
+	<Property cn="浏览服务器图片" type="11" name="allowFileManager" tips="true时显示浏览服务器图片功能">
+		<Value>false</Value>
+	</Property>
+	<Property cn="上传图片程序" type="1" name="imageUploadJson" tips="图片上传的URL，指定上传图片的服务器端程序,为空时使用系统默认程序...">
+		<Value/>
+		<Description><![CDATA[
+			<p>图片上传的URL，指定上传图片的服务器端程序,为空时使用系统默认程序</p>
+			<p>数据类型：String</p>
+			<p>返回值:json</p>
+			<p>成功：{"error":0,"url":"\artery\20110101.jpg"}</p>
+			<p>失败：{"error":1,"message":"没有权限"}</p>
+		]]></Description>
+	</Property>
+	<Property cn="浏览图片程序" type="1" name="fileManagerJson" tips="图片浏览的URL，指定浏览图片的服务器端程序,为空时使用系统默认程序...">
+		<Value/>
+		<Description><![CDATA[
+			<p>图片浏览的URL，指定浏览图片的服务器端程序,为空时使用系统默认程序</p>
+			<p>数据类型：String</p>
+			<p>参数：path：当前路径,order：排序规则（name,size,type）</p>
+			<p>返回值:json</p>
+			<p>成功：{"error":0,"url":"\artery\20110101.jpg"}</p>
+			<p>失败：{"error":1,"message":"没有权限"}</p>
+		]]></Description>
+	</Property>
+	<Property cn="上传图片参数" type="1" name="referMethod" tips="设置referMethod后上传图片的POST参数里有referMethod">
+		<Value/>
+		<Description><![CDATA[
+			<p>设置referMethod后上传图片的POST参数里有referMethod</p>
+			<p>数据类型：String</p>
+			<p>返回值：(例如：当前文件夹为/artery/201101,web地址为:http://localhost:8080/Artery3)</p>
+			<p>{"moveup_dir_path":"/artery","current_dir_path":"/artery/201101","current_url":"http://localhost:8080/Artery3/Artery/201101"</p>
+			<p>"total_count":3,"file_list":[</p>
+			<p>{"is_dir":true,"has_file":false,"filesize":0,"is_photo":false,"filetype":""}</p>
+			<p>{"is_dir":false,"has_file":false,"filesize":12500,"is_photo":true,"filetype":"jpg"}</p>
+			<p>{"is_dir":false,"has_file":false,"filesize":23800,"is_photo":false,"filetype":"txt"}</p>
+			<p>]}</p>
+		]]></Description>
+	</Property>
+	<Property cn="弹出框对齐" type="3" name="dialogAlignType" ct="[editor,page]" tips="设置弹出框(dialog)的对齐类型，可设置page和editor...">
+		<Value>page</Value>
+		<Description><![CDATA[
+		<p>设置弹出框(dialog)的对齐类型，可设置page和editor，指定page时按当前页面居中，指定editor时按编辑器居中</p>
+		<p>注：弹出框(dialog)指点击“粘贴为无文本格式、从Word粘贴、插入图片、插入Flash、插入多媒体等弹出的对话框”</p>
+		]]></Description>
+	</Property>
+	<Property cn="弹出层显示阴影" type="11" name="shadowMode" tips="true时弹出层显示阴影">
+		<Value>true</Value>
+	</Property>
+	<Property cn="预览表情" type="11" name="allowPreviewEmoticons" tips="true时鼠标放在表情上可以预览表情">
+		<Value>true</Value>
+	</Property>
+	<Property cn="自定义右键菜单" type="11" name="useContextmenu" tips="true时使用自定义右键菜单，false时屏蔽自定义右键菜单">
+		<Value>true</Value>
+	</Property>
+	<Property cn="数据同步方式" type="3" ct="[none,auto,form]" name="syncType" tips="同步数据的方式，可设置'none','auto','form'...">
+		<Value>auto</Value>
+        <Description><![CDATA[
+	        <p>同步数据的方式，可设置'none','auto','form'，值为'auto'时每次修改时都会同步，'form'时提交form时同步，'none'时不会自动同步</p>
+	        <p>编辑器由隐藏textArea和可视化编辑器两部分组成，操作的均为隐藏的textArea</p>
+	        <p>同步方式设置为none时，意味着在可视化编辑器修改的值和真正textArea的值不一致，需要时可以调用sync同步数据</p>
+	    ]]></Description>
+	</Property>
+	<Property cn="tabIndex" type="2" name="tabIndex" tips="编辑器的默认tabIndex,注：tabIndex是点击键盘的Tab键时光标在页面上控件切换的顺序">
+		<Value/>
+	</Property>
+	<Property cn="展现类型" type="3" name="displayType" ct="[inherit,editable,display]" export="true" tips="当设置此属性为true时，整个表单组件都会为只读的">
+      <Value>inherit</Value>
+    </Property>
+	<Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"  tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+	<Property cn="编辑器创建后" type="15" name="afterCreate" tips="编辑器创建后执行的回调函数">
+		<Value/>
+	</Property>
+    <Property cn="客户端" type="15" group="值改变时脚本" name="onChangeClient" tips="当本组件的值改变时触发的事件，客户端脚本">
+		<Value/>
+    </Property>
+    <Property cn="服务器端" type="14" group="值改变时脚本" name="onChangeServer" tips="当本组件的值改变时触发的事件，服务器端脚本">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" group="验证脚本" name="onValidClient" tips="表单控件的验证事件(客户端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="验证脚本" name="onValidServer" tips="表单控件的验证事件(服务器端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" group="输入时脚本" name="onKeyupClient" tips="当用户在本控件中输入值的时候触发的事件">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="输入时脚本" name="onKeyupServer" tips="当用户在本控件中输入值的时候触发的事件">
+      <Value />
+    </Property>
+    <Property cn="生成时脚本" type="14" name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <JsFunctions>
+  	<JsFunction name="afterCreate">
+/**
+ * 创建时脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function {methodName}(rc){
+	
+}  	
+  	</JsFunction>
+	<JsFunction name="onChangeClient">
+/**
+* 值改变时脚本({itemid})
+*
+* @param rc 系统提供的AJAX调用对象
+* @param oldValue 控件改变前的旧值
+* @param newValue 控件改变后的新值
+*/
+function {methodName} (rc, oldValue, newValue){
+
+}
+	</JsFunction>
+	<JsFunction name="onValidClient">
+/**
+* 验证脚本({itemid})
+*
+* @param rc 系统提供的AJAX调用对象
+* @param value 控件的值
+*/
+function {methodName} (rc, value){
+
+}
+	</JsFunction>
+	<JsFunction name="onKeyupClient">
+/**
+ * 输入时脚本({itemid})
+ * 
+ * @param  rc           系统提供的AJAX调用对象
+ */
+function {methodName} (rc){
+	
+}
+	</JsFunction>
+  </JsFunctions>
+  <JavaFunctions>
+  	<JavaFunction name="onChangeServer">
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+  	</JavaFunction>
+  	<JavaFunction name="onValidServer">
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+  	</JavaFunction>
+  	<JavaFunction name="onKeyupServer">
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+  	</JavaFunction>
+  	<JavaFunction name="onShow">
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+  	</JavaFunction>
+  </JavaFunctions>
+  <Methods>
+  	<Method name="getHtml" return="string" tips="返回编辑器中的Html内容">
+	  	<Description><![CDATA[
+	  	返回编辑器中的Html内容
+	  	<pre>
+	  		Artery.get("apkindeditord2041").getHtml();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>string</Return>
+  	</Method>
+  	<Method name="setHtml" return="void" tips="设置编辑器中的Html内容">
+  		<Description><![CDATA[
+	  	设置编辑器中的Html内容
+	  	<pre>
+	  		Artery.get("apkindeditord2041").setHtml("<a href='http://www'>www</a>");
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>html:string</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	<Method name="getText" return="string" tips="返回编辑器中的纯文本内容">
+  	  	<Description><![CDATA[
+	  	返回编辑器中的纯文本内容
+	  	<pre>
+	  		Artery.get("apkindeditord2041").getText();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>string</Return>
+  	</Method>
+  	<Method name="setText" return="void" tips="设置编辑器中的纯文本内容">
+  		<Description><![CDATA[
+	  	设置编辑器中的纯文本内容，如果传入html标签也会被进行转化
+	  	<pre>
+	  		Artery.get("apkindeditord2041").setText("文本");
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>text:string</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	<Method name="getSelectHtml" return="string" tips="返回编辑器中当前被选中的内容">
+  	  	<Description><![CDATA[
+	  	返回编辑器中当前被选中的内容
+	  	<pre>
+	  		Artery.get("apkindeditord2041").getSelectHtml();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>string</Return>
+  	</Method>
+  	<Method name="getCount" return="int" tips="获得编辑器内容文字数量">
+  	  	<Description><![CDATA[
+	  	获得编辑器内容文字数量,(参数可选，默认值也"html"，为"html"时取得字数包含HTML代码，为"text"时只包含纯文本、IMG、EMBED)
+	  	<pre>
+	  		Artery.get("apkindeditord2041").getCount();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无,html,text</Param>
+  		</Parameters>
+  		<Return>int</Return>
+  	</Method>
+  	<Method name="isEmpty" return="bool" tips="判断编辑器是否有可见内容，比如文本、图片、视频">
+  	  	<Description><![CDATA[
+	  	判断编辑器是否有可见内容，比如文本、图片、视频
+	  	<pre>
+	  		Artery.get("apkindeditord2041").isEmpty();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>bool</Return>
+  	</Method>
+  	<Method name="insertHtml" return="void" tips="在光标处插入HTML">
+  	  	<Description><![CDATA[
+	  	在光标处插入HTML
+	  	<pre>
+	  		Artery.get("apkindeditord2041").insertHtml("插入的<br>文本");
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>html:string</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	<Method name="appendHtml" return="void" tips="在最后追加HTML">
+  	  	<Description><![CDATA[
+	  	在最后追加HTML
+	  	<pre>
+	  		Artery.get("apkindeditord2041").appendHtml("追加的<br>文本");
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>html:string</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	<Method name="focus" return="void" tips="让编辑器获得焦点">
+  	  	<Description><![CDATA[
+	  	让编辑器获得焦点
+	  	<pre>
+	  		Artery.get("apkindeditord2041").focus();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	<Method name="blur" return="void" tips="让编辑器失去焦点">
+  	  	<Description><![CDATA[
+	  	让编辑器失去焦点
+	  	<pre>
+	  		Artery.get("apkindeditord2041").blur();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	<Method name="sync" return="void" tips="同步数据">
+  	  	<Description><![CDATA[
+	  	同步数据，将可视化编辑器中的值同步到隐藏的textarea中
+	  	<pre>
+	  		Artery.get("apkindeditord2041").sync();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	<Method name="getBrowser" return="string" tips="获得浏览器类型和版本">
+  	  	<Description><![CDATA[
+	  	获得浏览器类型和版本,分别为KE.browser.IE、KE.browser.WEBKIT、KE.browser.GECKO、KE.browser.OPERA、KE.browser.VERSION
+	  	<pre>
+	  		Artery.get("apkindeditord2041").getBrowser();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>string</Return>
+  	</Method>
+  	<Method name="getIframeDoc" return="object" tips="获得编辑区域的iframe对象">
+  	  	<Description><![CDATA[
+	  	获得编辑区域的iframe对象
+	  	<pre>
+	  		Artery.get("apkindeditord2041").getIframeDoc();
+	  	</pre>
+	  	]]></Description>
+  	  	<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>object</Return>
+  	</Method>
+  </Methods>
+</Item>

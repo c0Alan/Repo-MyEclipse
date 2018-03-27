@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>a7a12d46c2e6ad7cfa2d9afc716c5851</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.form.bdys.FlashUpload.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/form/bdys/FlashUpload.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formfd145">
+      <id>formfd145</id>
+      <Items>
+        <upRegion sid="72c21426e6839953ce930c316237b537">
+          <id>upRegion808f0</id>
+        </upRegion>
+        <centerRegion sid="0e20d7a5dcb50617120005d5089244fa">
+          <id>centerRegion7b8c5</id>
+          <Items>
+            <blankPanel sid="b8b1e791fe2dfa9e168ebd91eddd9736">
+              <id>blankPanel3b9db</id>
+              <width>100%</width>
+              <height>50%</height>
+              <Items>
+                <header sid="40752b1e6224312a4ec5c7770c98631a">
+                  <id>header36a14</id>
+                  <text>form外部使用</text>
+                  <Items>
+                    <collapseBtn sid="6f8a74510aa013c4e88886f1bcebbfc1">
+                      <id>collapseBtnedc89</id>
+                    </collapseBtn>
+                  </Items>
+                </header>
+                <buttonArea sid="98979538b06e8935076df805f5729319">
+                  <id>buttonAreace073</id>
+                  <Items>
+                    <button sid="cba911cb216f0482c1d9fe11f5caa965">
+                      <id>button44b37</id>
+                      <text>getStats</text>
+                      <onClickClient><![CDATA[button44b37_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="a4b74a24820d611cb827b932a073f2e0">
+                      <id>button3368d</id>
+                      <text>getFileName</text>
+                      <onClickClient><![CDATA[button3368d_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="827d49175633dc1dd40b98f6b75bbee8">
+                      <id>buttone4003</id>
+                      <text>getFileSize</text>
+                      <onClickClient><![CDATA[buttone4003_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="e92d21d4b43e7e74696ad7dad6931d28">
+                      <id>button0337e</id>
+                      <text>getFileSize("mb")</text>
+                      <onClickClient><![CDATA[button0337e_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="f8d42e140d394080c2695a95a7a63486">
+                      <id>button01972</id>
+                      <text>getFile()</text>
+                      <onClickClient><![CDATA[button01972_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+                <flashUpload sid="1b4c1d3e66d952d6a05741a1c7e73114">
+                  <id>uploadInPanel</id>
+                  <submitName>outside</submitName>
+                  <fileUploadType>mutiFile</fileUploadType>
+                  <value>[{name:'file1',value:'id1',url:'http://www.baidu.com'},{name:'file2',value:'id2',url:'http://www.google.com'}]</value>
+                  <fileSizeLimit>1.5</fileSizeLimit>
+                  <showStatus>true</showStatus>
+                  <showBar>true</showBar>
+                  <onChangeClient><![CDATA[uploadInPanel_onChangeClient]]></onChangeClient>
+                  <onChangeServer><![CDATA[uploadInPanel_onChangeServer]]></onChangeServer>
+                </flashUpload>
+                <footer sid="8c56febe046e9e72b5f6a9c7ebf2a313">
+                  <id>footer9c587</id>
+                  <Items>
+                    <button sid="f7537450dca56a2b6f9a5eeb955f283d">
+                      <id>buttone0ad9</id>
+                      <text>上传</text>
+                      <onClickClient><![CDATA[buttone0ad9_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[buttone0ad9_onClickServer]]></onClickServer>
+                    </button>
+                  </Items>
+                </footer>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="7e2b5ac1094a8502bb995d537661860a">
+              <id>blankPanele820f</id>
+              <width>100%</width>
+              <height>50%</height>
+              <Items>
+                <header sid="be5e09fb4013ab97611674a9fa8eb5d8">
+                  <id>header6b326</id>
+                  <text>form内部使用(单文件)</text>
+                  <Items>
+                    <collapseBtn sid="40c407de5703a18ee918e090c565a8ca">
+                      <id>collapseBtn2323e</id>
+                    </collapseBtn>
+                  </Items>
+                </header>
+                <buttonArea sid="c673c19169fa3257dffb06cc61fb0ab8">
+                  <id>buttonArea5a3f3</id>
+                  <Items>
+                    <button sid="893c1d27ef02099046f50eb64456857b">
+                      <id>button411da</id>
+                      <text>getStats</text>
+                      <onClickClient><![CDATA[button411da_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="5790e93883e252b44bdaea3d0bf12ca3">
+                      <id>button6d33c</id>
+                      <text>getFileName</text>
+                      <onClickClient><![CDATA[button6d33c_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="94427a4c3957109ea9a9d35b042ce7ad">
+                      <id>button8aa4b</id>
+                      <text>getFileSize</text>
+                      <onClickClient><![CDATA[button8aa4b_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="c9441ec95e7135cf87b7a5f1f032ed2c">
+                      <id>buttonfd1bb</id>
+                      <text>getFileSize("kb")</text>
+                      <onClickClient><![CDATA[buttonfd1bb_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="52533d5ae6d9d525d3ae1a77b1bb759c">
+                      <id>buttona3ceb</id>
+                      <text>getFile()</text>
+                      <onClickClient><![CDATA[buttona3ceb_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+                <formArea sid="27df18ac359a2744d4f649148fc373bb">
+                  <id>formAreab818a</id>
+                  <Items>
+                    <faString sid="5d067ba66a262180ed35414db64bb57e">
+                      <id>faStringd3dbe</id>
+                      <submitName>faName</submitName>
+                      <value>1</value>
+                      <label>名称</label>
+                    </faString>
+                    <faDate sid="34032c6975b083ff77342257c18e5fd9">
+                      <id>faDate5e974</id>
+                      <submitName>faDate</submitName>
+                      <value>2011-5-6</value>
+                      <label>日期</label>
+                    </faDate>
+                    <faNumeric sid="05b5c90775f85e0fa809477c0023a7b4">
+                      <id>faNumeric30410</id>
+                      <submitName>faNumber</submitName>
+                      <value>50</value>
+                      <label>数字</label>
+                    </faNumeric>
+                    <flashUpload sid="f2a5d1e56a120d83c9cfafb91028a22f">
+                      <id>uploadInForm</id>
+                      <submitName>inside</submitName>
+                      <value>{name:'file1',value:'id1',url:'http://www.baidu.com'}</value>
+                      <formID>formAreab818a</formID>
+                      <fileSizeLimit>2000</fileSizeLimit>
+                      <showStatus>true</showStatus>
+                      <showBar>true</showBar>
+                      <label>上传文件</label>
+                    </flashUpload>
+                  </Items>
+                </formArea>
+                <footer sid="d3431f2ad02d7c28404bdb41b393e04f">
+                  <id>footer30bf4</id>
+                  <Items>
+                    <button sid="f2ed1301c7c38ac643e0cca054a11721">
+                      <id>buttoneb175</id>
+                      <text>上传</text>
+                      <onClickClient><![CDATA[buttoneb175_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[buttoneb175_onClickServer]]></onClickServer>
+                    </button>
+                  </Items>
+                </footer>
+              </Items>
+            </blankPanel>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

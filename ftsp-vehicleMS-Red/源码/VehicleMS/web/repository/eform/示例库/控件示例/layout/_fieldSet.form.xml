@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>a190697e215429fe64ff9e89784eaa54</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.layout._fieldSet.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/layout/_fieldSet.js</jsLocation>
+  <descript>fieldSet示例表单</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form2f28c">
+      <id>form2f28c</id>
+      <Items>
+        <blankPanel sid="1fe398b05a3c6b3e5fde4702d2e03272">
+          <id>blankPanel5f239</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="5bc812d9e96672e6d6ea7b8badbb9bae">
+              <id>headere8b95</id>
+              <text>【分组名称】属性</text>
+              <Items>
+                <collapseBtn sid="e75c8af13c6e7da8b6552e4e71e97867">
+                  <id>collapseBtn5d486</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="b6e1cae7f3851f8a6428b4a5689e4fd4">
+              <id>blankPanel10be4</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="ddd79d71300db2d51c5942e62e2de9de">
+                  <id>htmlAreaf1dcd</id>
+                  <value>分组名称：默认</value>
+                  <width>25%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="e811ce78da996f6e512df31a07192b38">
+                  <id>htmlAreaa2493</id>
+                  <value>分组名称：分组名称</value>
+                  <width>25%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="7a68a2818746fef9a571d938f8c05e80">
+                  <id>htmlArea2c4b4</id>
+                  <value>分组名称：按钮</value>
+                  <width>25%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="cc3e3754b2db0a961df10a40f5309686">
+                  <id>htmlArea9f823</id>
+                  <value>分组名称：超文本</value>
+                  <width>24%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="d0e688d5e01d1b6ef5f1e16031aaf252">
+                  <id>blankPanel019e1</id>
+                  <width>25%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <fieldSet sid="5fd3dd962d833506bf14cd9e8e92ceb9">
+                      <id>fieldSet8d6de</id>
+                      <width>95%</width>
+                      <height>100</height>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="14cebe8d6aeb6830c56fbbc1f232de3a">
+                  <id>blankPaneld3a52</id>
+                  <width>25%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <fieldSet sid="4e4ee2ae9918be19f91b20d7e45772e3">
+                      <id>fieldSet4d029</id>
+                      <fieldSetName>分组名称</fieldSetName>
+                      <width>95%</width>
+                      <height>100</height>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="bb387d4bf96bb59f71de040b4e9faff5">
+                  <id>blankPanel8f5dd</id>
+                  <width>25%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <fieldSet sid="be64444b39cfa5e8cb72793e52e39456">
+                      <id>fieldSetc6476</id>
+                      <fieldSetName>按钮</fieldSetName>
+                      <width>95%</width>
+                      <height>100</height>
+                      <Items>
+                        <buttonArea sid="d77a6ba503df56d0373ea84d72dfadd3">
+                          <id>buttonAreab2207</id>
+                          <Items>
+                            <button sid="81557b9ee9bd363000f1fb3e4be1fc00">
+                              <id>button450c8</id>
+                            </button>
+                            <button sid="7b5032da1ae02ea930d49fe31b176d6c">
+                              <id>buttoncbe5c</id>
+                            </button>
+                            <button sid="106e782397f708f49d2f64cc50d82095">
+                              <id>button7ad74</id>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="629c6a0e786f866cae7cbd7e951bb31e">
+                  <id>blankPanelbd821</id>
+                  <height>120</height>
+                  <Items>
+                    <fieldSet sid="5acf024158bdd729b7483f7d25b3c660">
+                      <id>fieldSete2ef3</id>
+                      <fieldSetName>超文本</fieldSetName>
+                      <width>95%</width>
+                      <height>100</height>
+                      <Items>
+                        <htmlArea sid="b3f5db2674d473b08797be0edad1e830">
+                          <id>htmlAreadafd7</id>
+                          <value>aaa</value>
+                          <width>30%</width>
+                          <inline>true</inline>
+                        </htmlArea>
+                        <htmlArea sid="29d880a4106a83dd3cf3fcce2ae569ce">
+                          <id>htmlArea7f61d</id>
+                          <value>bbb</value>
+                          <width>30%</width>
+                          <inline>true</inline>
+                        </htmlArea>
+                        <htmlArea sid="31222668685ee83d28b37ba03bac9dde">
+                          <id>htmlAreafe9fe</id>
+                          <value>ccc</value>
+                          <width>30%</width>
+                          <inline>true</inline>
+                        </htmlArea>
+                      </Items>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="d51572fadf7a9185c0f2dd0523450181">
+          <id>blankPanel9e239</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="02182cfa9154eac5be5528d39bed360f">
+              <id>header1629d</id>
+              <text>【是否显示边框】属性</text>
+              <Items>
+                <collapseBtn sid="2d02d8980f3951fb215bcb6ddc82397d">
+                  <id>collapseBtn30e72</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="f93d1849360c33f47a1f9c295bc4598d">
+              <id>blankPanelbb81a</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="7ae114c14a4bc4244abd5f07031d1144">
+                  <id>htmlAreaf68a1</id>
+                  <value>是否显示边框：true</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="c4c716e7ed33df00df1c8f931571856b">
+                  <id>htmlArea1d153</id>
+                  <value>是否显示边框：false</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="9472ef41aa44ef5d7259f8f0298bdf2a">
+                  <id>blankPanel319c7</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <fieldSet sid="2b778d2d16e83af367f357feef4ba6f9">
+                      <id>fieldSetf0070</id>
+                      <width>95%</width>
+                      <height>100</height>
+                      <border>true</border>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="cf4b3a1f6280954e8b4d983f61fe6122">
+                  <id>blankPanelb76d7</id>
+                  <height>120</height>
+                  <Items>
+                    <fieldSet sid="7b60afd5cb96a3d1e6786433d81d7c09">
+                      <id>fieldSet27532</id>
+                      <width>95%</width>
+                      <height>100</height>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="6ee648b1dfdc516b2ad778295b5566c1">
+          <id>blankPanel90184</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="025b6f7e320d427cdaef2f08d80fa768">
+              <id>headerd68c6</id>
+              <text>【主题样式】属性</text>
+              <Items>
+                <collapseBtn sid="d2f553db408d5c80fb2204fc41951cea">
+                  <id>collapseBtn880db</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="73bd6dde6412ee0a954a16d23f4a2413">
+              <id>blankPaneldd0a8</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="d08286935e090a834efd6e9bd441ed77">
+                  <id>htmlArea95f1e</id>
+                  <value>主题样式：inherit</value>
+                  <height>40px</height>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="0827951f52faa6081d2dc187c6157a51">
+                  <id>blankPanel2ddf0</id>
+                  <Items>
+                    <fieldSet sid="aa8e74c87d42ae0b5b20bba14568b2d7">
+                      <id>fieldSet25df5</id>
+                      <height>100</height>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+                <htmlArea sid="7c2d744638252afb446f4a4ea34cd4d7">
+                  <id>htmlAreae0a4f</id>
+                  <value>主题样式：classic</value>
+                  <height>40px</height>
+                  <style>padding-top:20px;</style>
+                </htmlArea>
+                <blankPanel sid="c83c969cfb02bfef776a1c9fe12eb159">
+                  <id>blankPanel63393</id>
+                  <Items>
+                    <fieldSet sid="77d97182d33438166736146948ea29f7">
+                      <id>fieldSetc0e93</id>
+                      <height>100</height>
+                      <style>padding-top:20px;</style>
+                      <themeStyle>classic</themeStyle>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="7f715d8c97089a107308df0ce30902ce">
+          <id>blankPanelfa9af</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="10ae3c69202f07cd40fd83debf13dbf0">
+              <id>headerbf7bc</id>
+              <text>【是否隐藏】属性</text>
+              <Items>
+                <collapseBtn sid="aa826f664af03cb2b8f004eee614b130">
+                  <id>collapseBtndd18b</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="0f8ac823ce6e3f0c830f01e0fe8d9599">
+              <id>blankPanel624e8</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="5f410796bd13a9f38d86d878455db4bb">
+                  <id>htmlAreaca50f</id>
+                  <value>是否隐藏：true</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="17dd59c109e9ef3244523b1b79aa06b2">
+                  <id>htmlArea6f6f2</id>
+                  <value>是否隐藏：false</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="d8a9be66932198ed5e1668b4fcc59bbe">
+                  <id>blankPanel4d3d6</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <fieldSet sid="c87ef090d581194de6798957ed5fb9db">
+                      <id>fieldSet7657c</id>
+                      <width>95%</width>
+                      <height>100</height>
+                      <hidden>true</hidden>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="3cece4ae5bb163ced4507d11b4582e4c">
+                  <id>blankPanelb9bdc</id>
+                  <height>120</height>
+                  <Items>
+                    <fieldSet sid="9bfb0bf8282db2a9830cd5c1b986ddfc">
+                      <id>fieldSetc2b4f</id>
+                      <width>95%</width>
+                      <height>100</height>
+                    </fieldSet>
+                  </Items>
+                </blankPanel>
+                <buttonArea sid="cf0825b4021c9aeb9b5c3051499a5e47">
+                  <id>buttonAreabe90f</id>
+                  <width>50%</width>
+                  <align>center</align>
+                  <Items>
+                    <button sid="7e36b05153c5331f091c836eb2bf6dbe">
+                      <id>buttonc9340</id>
+                      <text>显示fieldSet</text>
+                      <onClickClient><![CDATA[buttonc9340_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="17775bd2f783ac26f7cd96eca278f281">
+                      <id>buttona37a1</id>
+                      <text>隐藏fieldSet</text>
+                      <onClickClient><![CDATA[buttona37a1_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

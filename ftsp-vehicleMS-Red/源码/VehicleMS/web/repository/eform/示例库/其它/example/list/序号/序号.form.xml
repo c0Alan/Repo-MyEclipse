@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>df834c36f1a31c37ec8088a886cd6389</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>ffffff</background-color>
+      <Items>
+        <listArea sid="A7c26715b15ba764a93ba9e444a113d28">
+          <id>A7c26715b15ba764a93ba9e444a113d28</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <width>90%</width>
+          <height>50%</height>
+          <loadMask>false</loadMask>
+          <pageCount>5</pageCount>
+          <isStartNew>true</isStartNew>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <frame>true</frame>
+          <style>padding-top:10px;padding-bottom:10px;</style>
+          <themeStyle>default</themeStyle>
+          <Items>
+            <header sid="A33928da4c1348dde8f8fc6239c9fd26f">
+              <id>A33928da4c1348dde8f8fc6239c9fd26f</id>
+              <text>每页序号从新开始</text>
+            </header>
+            <columnString sid="columnString68CCC3805F81531A795CD797DBD88811">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnStringFF8CCB19E4CCC327511616B91C70CD3F">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnStringB2BF4116850666C178AC7FED96FFDEA7">
+              <id>lstCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isEditor>false</isEditor>
+            </columnString>
+          </Items>
+        </listArea>
+        <listArea sid="A948f132e774183484bfee085d6fad943">
+          <id>A948f132e774183484bfee085d6fad943</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <width>90%</width>
+          <height>50%</height>
+          <loadMask>false</loadMask>
+          <pageCount>5</pageCount>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <frame>true</frame>
+          <style>padding-bottom:10px;</style>
+          <themeStyle>default</themeStyle>
+          <isSumTop>true</isSumTop>
+          <Items>
+            <header sid="Aa301f65467758d163e16822da427cc07">
+              <id>Aa301f65467758d163e16822da427cc07</id>
+              <text>序号连续</text>
+            </header>
+            <columnString sid="columnString7ADB63454FAE696B9FA41CD2AC074575">
+              <id>lstCNAME1</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnString0643843FC0CC1B8EDF7A7AD3DD7FB7C9">
+              <id>lstCAUTH1</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnStringEF26E4873CE8260E3F893C37EB17B422">
+              <id>lstCPUBLISHER1</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isEditor>false</isEditor>
+            </columnString>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_PUBLISHER 
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

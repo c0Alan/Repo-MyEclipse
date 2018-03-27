@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>cc3532ef19ca7887eefa141070e2416f</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tabs.tabPanel._tabHaveRegion.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tabs/tabPanel/_tabHaveRegion.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form5355f">
+      <id>form5355f</id>
+      <Items>
+        <leftRegion sid="8449772d5b6b1dd44cbdeec2121c093d">
+          <id>leftRegion11fb5</id>
+          <border>false</border>
+        </leftRegion>
+        <centerRegion sid="746ad2ebcd743bdd22888c9d4e0e4dea">
+          <id>centerRegionc0d6c</id>
+          <border>false</border>
+          <Items>
+            <tabArea sid="76bfcf5bb79d5c4b730a26c5072a741c">
+              <id>tabArea962A5</id>
+              <height>100%</height>
+              <Items>
+                <tabItem sid="922bed54b8767188c47a891e37b3c936">
+                  <id>tabItemD3178</id>
+                  <title>abc</title>
+                  <Items>
+                    <leftRegion sid="a3201f81e939bfa3bd78f4d2643db56c">
+                      <id>leftRegion9B30B</id>
+                    </leftRegion>
+                    <centerRegion sid="258f82c5d1e9b87e5387b34576e3fdd9">
+                      <id>centerRegionE3291</id>
+                      <Items>
+                        <upRegion sid="4c18e4992e54ee5d310f8dc95412735d">
+                          <id>upRegionD01A8</id>
+                        </upRegion>
+                        <centerRegion sid="92027871cccb192dffe518a48d92435f">
+                          <id>centerRegion862A0</id>
+                        </centerRegion>
+                      </Items>
+                    </centerRegion>
+                    <upRegion sid="c8aba71520f525ab84e05c810de552aa">
+                      <id>upRegion518B7</id>
+                    </upRegion>
+                    <downRegion sid="96e3e700db5871b50dd5b7627538b7b8">
+                      <id>downRegion84C5B</id>
+                    </downRegion>
+                    <rightRegion sid="d1a43804c57067e72f538aad28caeacd">
+                      <id>rightRegion571BD</id>
+                    </rightRegion>
+                  </Items>
+                </tabItem>
+                <tabItem sid="53b9a9d52a78393d5860c487d6a0243b">
+                  <id>tabItemDCD6C</id>
+                  <title>iframe</title>
+                  <url>http://www.google.cn</url>
+                </tabItem>
+              </Items>
+            </tabArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="tbMenuItem" cn="菜单项" jsType="artery-base" nameprop="text"
+	icon="tbMenuItem.gif" iconNew="tbMenuItemNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>工具栏上的菜单组件</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="tbMenu" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.toolbar.TbMenuItem</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="名称" type="1" name="text" tips="设置菜单项的显示名称">
+			<Value>item</Value>
+		</Property>
+		<Property cn="图片" type="5" name="icon" tips="设置组件的显示图标，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value />
+		</Property>
+		<Property cn="展现类型" type="3" name="showType" ct="[normal,checkbox,radio]"
+			tips="设置菜单项的展现类型，当为normal时，即一般的展现，当为checkbox时，会在菜单项的前面出现一个checkbox选择框，当为radio时会在菜单前面出现一个radio的选择项...">
+			<Value>normal</Value>
+			<Description><![CDATA[
+			设置菜单项的展现类型，当为normal时，即一般的展现，当为checkbox时，会在菜单项的前面出现一个checkbox选择框，当为radio时会在菜单前面出现一个radio的选择项
+      		]]></Description>
+            <Conditions>
+                <Condition>展现类型设置为radio时，必须设置Radio分组名称才有效；否则，仍以checkbox形式展现</Condition>
+            </Conditions>
+		</Property>
+		<Property cn="是否选中" type="11" name="checked"
+			tips="当菜单项的展现类型为checkbox或radio时，可根据此属性设置是否选中状态">
+			<Value>false</Value>
+		</Property>
+		<Property cn="Radio分组名称" type="1" name="group"
+			tips="当展现类型为radio时，用来给菜单项分组，相同的组名称的为一组">
+			<Value />
+		</Property>
+		<Property cn="链接到" type="6" name="linkto" tips="选择当组件点击时连接到的表单">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient"
+			tips="鼠标点击本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer"
+			tips="鼠标点击本组件时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="是否无效" type="11" name="disabled" tips="组件是否无效">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" inherit="false"
+			tips="当为true是为隐藏组件，组件还是生成了，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+  	<JavaFunctions>
+		<JavaFunction name="onClickServer">
+<![CDATA[
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

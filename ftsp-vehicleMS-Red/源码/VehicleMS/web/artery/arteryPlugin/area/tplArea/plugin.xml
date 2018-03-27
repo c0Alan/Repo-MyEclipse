@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="tplArea" cn="模板区域" jsType="artery-base"
+	icon="tplArea.gif" iconNew="tplAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2011-11-08</CreateTime>
+		<Describe>
+		<![CDATA[
+			模板占位控件用于配合表单模板功能使用，在模板中设定开发人员可以修改的区域
+		]]>
+		</Describe>
+
+	</Info>
+	<Parents/>
+	<Children/>
+	<Class>com.thunisoft.artery.plugin.area.TplArea
+	</Class>
+	<JsFile/>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apTplArea</Value>
+		</Property>
+		<Property cn="虚拟控件" type="11" name="virtualItem" isHidden="1" export="false" cfg="true">
+			<Value>true</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="引用文件" type="7" name="importFile"
+			tips="设置本表单需要引用的文件，支持js，css，java类，每个是一行，必需以“；”结尾">
+			<Value />
+			<Description>
+      <![CDATA[
+      	设置本表单需要引用的文件，支持js，css，java类，每个是一行，必需以“；”结尾
+      	<pre>
+//java
+import com.thunisoft.artery.xxx;
+import com.thunisoft.test.*;
+
+//js
+/test/test.js;
+
+//css
+/test/test.css;     	
+      	</pre>
+      	 ]]>
+			</Description>
+			<Conditions>
+				<Condition>每个导入的文件为一行，可导入任意多个文件，结尾必须写“；”</Condition>
+				<Condition>导入java必须以import开始，和在类中写法一至</Condition>
+				<Condition>导入js和css不必写ContextPath，直接写web目录下的路径即可</Condition>
+				<Condition>在此处导入的js或类在此表单任何一处脚本均可使用，不用再重复导入</Condition>
+			</Conditions>
+		</Property>
+	</Properties>
+</Item>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>a8a8a2251b1c61610a588275063279f3</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.dict.group.Sjzdfzlb.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/dict/group/Sjzdfzlb.js</jsLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="form99e11">
+      <id>form99e11</id>
+      <onLoadClient><![CDATA[form99e11_onLoadClient]]></onLoadClient>
+      <onShow><![CDATA[form99e11_onShow]]></onShow>
+      <Items>
+        <centerRegion sid="477e1229eafd0f70ed7cabf73bf1d81c">
+          <id>leftRegion215b8</id>
+          <Items>
+            <header sid="2df1d9095a497e31e01a7aa90b234764">
+              <id>header05770</id>
+              <text />
+              <Items>
+                <blankPanel sid="a11242752ac8127b119ebe16c96eb9d5">
+                  <id>blankPanel91b17</id>
+                  <bodyStyle>display:none;</bodyStyle>
+                  <Items>
+                    <topbar sid="9887fb757b0fec9d854df656a1453cba">
+                      <id>topbar98253</id>
+                      <themeStyle>unis</themeStyle>
+                      <Items>
+                        <tbButton sid="fec0a5de7f191f1efe41c493623eacc1">
+                          <id>buttonafde2</id>
+                          <text>新建库</text>
+                          <tooltip>新建库</tooltip>
+                          <icon>/artery/arteryImage/server/gensql.gif</icon>
+                        </tbButton>
+                        <tbFill sid="67c24b345ab760fbe8192a251d1951ed">
+                          <id>tbFill29296</id>
+                        </tbFill>
+                        <tbButton sid="fb0f1ac013428d11f13d47167d14854e">
+                          <id>buttonbbabb</id>
+                          <text>移动</text>
+                          <tooltip>移动到</tooltip>
+                          <icon>/artery/arteryImage/server/reverse.gif</icon>
+                          <onlyShowIcon>true</onlyShowIcon>
+                          <onClickClient><![CDATA[buttonbbabb_onClickClient]]></onClickClient>
+                        </tbButton>
+                        <tbButton sid="63e79e4a27b6c2f771dcb5a7e57f7157">
+                          <id>buttonDel</id>
+                          <text>删除</text>
+                          <tooltip>删除</tooltip>
+                          <icon>/artery/arteryImage/file/delete.gif</icon>
+                          <onlyShowIcon>true</onlyShowIcon>
+                          <onClickClient><![CDATA[buttonDel_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[buttonDel_onClickServer]]></onClickServer>
+                        </tbButton>
+                      </Items>
+                    </topbar>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+            <blankPanel sid="34019504b249ba79e33d44102b03f0e4">
+              <id>blankPanelc7d76</id>
+              <width>100%</width>
+              <height>100%</height>
+              <Items>
+                <treeArea sid="0482650bc86ca1ed4c08c4f94920318b">
+                  <id>treeAreaef1d4</id>
+                  <selType>checkbox</selType>
+                  <expandTree>true</expandTree>
+                  <width>100%</width>
+                  <height>100%</height>
+                  <line>false</line>
+                  <useArrows>true</useArrows>
+                  <onClickClient><![CDATA[treeAreaef1d4_onClickClient]]></onClickClient>
+                  <onShow><![CDATA[treeAreaef1d4_onShow]]></onShow>
+                  <Items>
+                    <treeDynamic sid="3ac47b0ae58fb054057399c0410171d5">
+                      <id>treeDynamic948b4</id>
+                      <onLoadTree><![CDATA[group_onLoadTree]]></onLoadTree>
+                      <onNodeDetail><![CDATA[treeDynamic948b4_onNodeDetail]]></onNodeDetail>
+                      <onShow><![CDATA[treeDynamic948b4_onShow]]></onShow>
+                    </treeDynamic>
+                  </Items>
+                </treeArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

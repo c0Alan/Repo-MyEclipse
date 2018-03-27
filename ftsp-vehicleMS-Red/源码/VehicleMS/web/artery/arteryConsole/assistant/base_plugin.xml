@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Methods>
+   <Method name="setText" return="void" tips="设置控件的显示名称">
+ 		<Description><![CDATA[<p>设置控件的显示名称</p><pre>
+Artery.get("buttonId").setText("abc");
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>text:string</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+   <Method name="click" return="void" tips="触发控件的点击事件">
+ 		<Description><![CDATA[<p>触发控件的点击事件</p><pre>
+Artery.get("buttonId").click();
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+   <Method name="getValue" return="string" tips="得到控件的值">
+ 		<Description><![CDATA[得到控件的值<pre>
+Artery.get("id").getValue();
+  		</pre>]]></Description>
+ 		<Conditions>
+     	  <Condition>对于代码，组织机构等控件得到的是实际的代码值，而不是显示值，多个值用分隔符分隔。默认分隔符为分号，开发人员可以在config.properties或user-config.properties中配置参数artery.multiSelectSeparator的值来改变分隔符。（目前仅支持分号和逗号分隔符）</Condition>
+       </Conditions>	
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>string</Return>
+ 	</Method>
+ 	<Method name="getValueText" return="string" tips="得到控件的显示值">
+ 		<Description><![CDATA[得到控件的显示值<pre>
+Artery.get("id").getValueText();
+  		</pre>]]></Description>
+ 		<Conditions>
+     	  <Condition>此方法对只代码，组织机构等具有代码值和显示值的控件有效，可得到显示值，多个值用分隔符分隔。默认分隔符为分号，开发人员可以在config.properties或user-config.properties中配置参数artery.multiSelectSeparator的值来改变分隔符。（目前仅支持分号和逗号分隔符）</Condition>
+       </Conditions>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>string</Return>
+ 	</Method>
+ 	<Method name="setValue" return="void" tips="设置控件的值">
+ 		<Description><![CDATA[设置控件的值<pre>
+//设置文本框
+Artery.get("id").setValue("abc");
+
+//对于代码，组织机构等控件，设置代码值，系统会自动翻译显示值
+Artery.get("id").setValue(1);
+
+//对于代码，组织机构等可多选的控件，可设置多个值，中间用逗号或分号分隔
+Artery.get("id").setValue("1,3,5");
+Artery.get("id").setValue("1;3;5");
+  		</pre>]]></Description>
+ 		<Conditions>
+     	  <Condition>对于代码，组织机构等控件可直接设置代码值，系统会自动翻译显示值</Condition>
+       </Conditions>
+ 		<Parameters>
+ 			<Param>value:string|number</Param>
+ 		</Parameters>
+ 		<Return>string</Return>
+ 	</Method>
+<Method name="validate" return="boolean" tips="对控件进行验证">
+	<Description><![CDATA[
+			<p>对控件进行验证，验证不通过将显示提示信息；表单提交时对控件进行验证时调用的就是次方法</p>
+<pre>
+var isValid = Artery.get("id").validate();
+</pre>
+		]]></Description>
+	<Parameters>
+		<Param>无</Param>
+	</Parameters>
+	<Return>boolean : true验证通过, false验证不通过</Return>
+</Method>
+ 	<Method name="reset" return="void" tips="恢复控件的值为初始值">
+ 		<Description><![CDATA[恢复控件的值为初始值，初始值即为控件第一次展现时的值<pre>
+Artery.get("id").reset();
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="setOriginalValue" return="void" tips="设置控件的初始值">
+ 		<Description><![CDATA[设置控件的初始值，通过此方法可动态的改变控件的初始值，当调用reset方法时会恢复到此方法设置的值<pre>
+Artery.get("id").setOriginalValue("abc");
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>value:string|number</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="setLabel" return="void" tips="设置控件的label的显示内容">
+ 		<Description><![CDATA[设置控件的label的显示内容<pre>
+Artery.get("id").setLabel("图书名称");
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>value:string|number</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="setLabelColor" return="void" tips="设置控件的label的显示内容的颜色">
+ 		<Description><![CDATA[<p>设置控件的label的显示内容的颜色</p><image src="../../resources/images/common/setLabelColor.gif"><pre>
+
+//英文颜色值
+Artery.get("id").setLabelColor("red");
+
+//RGB
+Artery.get("id").setLabelColor("#c0c0c0");
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>value:string|number</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="setLabelStyle" return="void" tips="设置控件的label的样式">
+ 		<Description><![CDATA[<p>设置控件的label的样式</p><image src="../../resources/images/common/setLabelStyle.gif"><pre>
+//设置CSS样式
+Artery.get("id").setLabelStyle("background-color:#f5f5f5;");
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>value:string|number</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="setLabelCntStyle" return="void" tips="设置控件的label容器的样式">
+ 		<Description><![CDATA[<p>设置控件的label容器的样式</p><image src="../../resources/images/common/setLabelCntStyle.gif"><pre>
+//设置CSS样式
+Artery.get("id").setLabelCntStyle("background-color:#f5f5f5;");
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>value:string|number</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="setValueStyle" return="void" tips="设置控件的内容样式">
+ 		<Description><![CDATA[<p>设置控件的内容样式</p><image src="../../resources/images/common/setValueStyle.gif"><pre>
+//设置CSS样式
+Artery.get("id").setValueStyle("color:red;");
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>value:string|number</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="setRequired" return="void" tips="设置控件是否必填">
+ 		<Description><![CDATA[<p>设置控件是否必填，true为必填，false不必填</p><pre>
+//必填
+Artery.get("id").setRequired(true);
+
+//不必填
+Artery.get("id").setRequired(false);
+  		</pre>]]></Description>
+ 		<Conditions>
+     	  <Condition><![CDATA[当设置必填时，label内容的前面会显示<span style="color:red;">*</span>，且自动进行必填验证]]></Condition>
+     	  <Condition>开发人员也可以通过在config.properties或user-config.properties中设置参数inputLabelRequired和inputLabelNotRequired的值来设置自定义的label必填样式</Condition>
+       </Conditions>
+ 		<Parameters>
+ 			<Param>required:boolean</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="read" return="void" tips="设置控件为只读">
+ 		<Description><![CDATA[<p>设置控件为只读，同时会应用控件的只读时样式设置</p><pre>
+Artery.get("id").read();
+  		</pre>]]></Description>
+ 		<Conditions>
+     	  <Condition>此方法对于控件的展现类型为display时无效</Condition>
+       </Conditions>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="edit" return="void" tips="设置控件为可编辑">
+ 		<Description><![CDATA[<p>设置控件为可编辑，同时会应用控件的编辑时样式设置</p><pre>
+Artery.get("id").edit();
+  		</pre>]]></Description>
+ 		<Conditions>
+     	  <Condition>此方法对于控件的展现类型为display时无效</Condition>
+       </Conditions>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="disable" return="void" tips="设置控件无效">
+ 		<Description><![CDATA[<p>设置控件无效</p><pre>
+Artery.get("id").disable();
+  		</pre>]]></Description>
+ 		<Conditions>
+     	  <Condition>此方法对于控件的展现类型为display时无效</Condition>
+       </Conditions>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="enable" return="void" tips="设置控件有效">
+ 		<Description><![CDATA[<p>设置控件有效</p><pre>
+Artery.get("id").enable();
+  		</pre>]]></Description>
+ 		<Conditions>
+     	  <Condition>此方法对于控件的展现类型为display时无效</Condition>
+       </Conditions>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="hide" return="void" tips="隐藏本控件">
+ 		<Description><![CDATA[<p>隐藏本控件</p><pre>
+Artery.get("id").hide();
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="show" return="void" tips="显示本控件">
+ 		<Description><![CDATA[<p>显示本控件</p><pre>
+Artery.get("id").show();
+  		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="center" return="void" tips="在body中居中显示本控件">
+ 	<Description><![CDATA[<p>在body中居中显示本控件</p><pre>
+ 		Artery.get("id").center();
+ 		</pre>]]></Description>
+ 		<Parameters>
+ 			<Param>无</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="alignTo" return="void" tips="把本element生成到另一个element相对位置">
+	<Description><![CDATA[<p>把本element生成到另一个element相对位置</p>
+		<P>参数解释(参考 Ext.Element.alignTo( Mixed element, String position, [Array offsets], [Boolean/Object animate] ))</P>
+		<p>Artery.get("windowId").alignTo(otherEl,position,relative);</p>
+		<p>otherEl:要生成到的目标对象</p>
+		<p>position:在目标对象的方向</p>
+		
+<p>		Value  Description</p>
+<p>-----  -----------------------------</p>
+<p>tl     The top left corner (default)</p>
+<p>t      The center of the top edge</p>
+<p>tr     The top right corner</p>
+<p>l      The center of the left edge</p>
+<p>c      In the center of the element</p>
+<p>r      The center of the right edge</p>
+<p>bl     The bottom left corner</p>
+<p>b      The center of the bottom edge</p>
+<p>br     The bottom right corner</p>
+		
+		<p>relative:与目标对象的相对的位置[x,y]</p>
+		<pre>
+Artery.get("windowId").alignTo(element,"tl",[x,y]);
+
+
+  		</pre>]]></Description>
+	<Parameters>
+		<Param>otherEl:Mixed</Param>
+		<Param>position:String</Param>
+		<Param>relative:Array</Param>
+	</Parameters>
+	<Return>void</Return>
+</Method>
+<Method name="addItem" return="object" tips="添加控件">
+ 		<Description><![CDATA[
+  		<p>添加控件,即添加一个控件作为自身的子控件。入口参数为要添加的控件的配置信息，返回生成的控件对象。该方法一般与动态解析控件方法一起使用。</p>	
+  		<pre>
+Artery.parseItem({
+	params:{itemid:'addItemId'},   //需要动态解析生成的控件id
+	callback:function(result){
+		Artery.get('objectItemId').addItem(result);   //目标控件
+	},
+	asyn:true,//默认异步加载
+	changeId:true //是否改变新生成控件的id
+},this);
+  		</pre>
+  		]]></Description>
+ 		<Parameters>
+ 			<Param>value:object</Param>
+ 		</Parameters>
+ 		<Return>object</Return>
+ 	</Method>
+ 	<Method name="removeItem" return="void" tips="删除控件">
+ 	<Description><![CDATA[
+  		<p>删除控件,即删除本控件的一个自控件，入口参数为被删除控件的id</p>	
+  		<pre>
+Artery.get('id').removeItem("removedItemId");
+  		</pre>
+  		]]></Description>
+ 		<Parameters>
+ 			<Param>value:string</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="isDisabled" return="boolean" tips="控件是否处于无效状态">
+ 	<Description><![CDATA[
+  		<p>控件是否处于无效状态，返回值为布尔型，true表示无效，false表示有效</p>	
+  		<pre>
+if(Artery.get('id').isDisabled())
+	alert("控件处于无效状态");
+else
+	alert("控件处于有效状态");
+  		</pre>
+  		]]></Description>
+ 		<Return>boolean</Return>
+ 	</Method>
+ 	<Method name="isHidden" return="boolean" tips="控件是否处于隐藏状态">
+ 	<Description><![CDATA[
+  		<p>控件是否处于隐藏状态，返回值为布尔型，true表示隐藏，false表示可见</p>	
+  		<pre>
+if(Artery.get('id').isHidden())
+	alert("控件处于隐藏状态");
+else
+	alert("控件处于可见状态");
+  		</pre>
+  		]]></Description>
+ 		<Return>boolean</Return>
+ 	</Method>
+ 	<Method name="hideIcon" return="void" tips="隐藏按钮图标">
+ 	<Description><![CDATA[
+  		<p>隐藏按钮图标，隐藏后可调用showIcon()方法恢复图标显示</p>	
+  		<pre>
+Artery.get('btnId').hideIcon();
+  		</pre>
+  		]]></Description>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="showIcon" return="void" tips="显示按钮图标">
+ 	<Description><![CDATA[
+  		<p>显示按钮图标，可恢复图标显示，仅在设置了图标时有效。</p>	
+  		<pre>
+Artery.get('btnId').showIcon();
+  		</pre>
+  		]]></Description>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="setIcon" return="void" tips="设置按钮图标">
+ 	<Description><![CDATA[
+  		<p>设置按钮图标，参数是图标相对于web的路径，如：/artery/arteryImage/book/docs.gif</p>	
+  		<pre>
+Artery.get('btnId').setIcon("/artery/arteryImage/book/docs.gif");
+  		</pre>
+  		]]></Description>
+ 		<Parameters>
+ 			<Param>value:string</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="setTooltip" return="void" tips="设置鼠标移动到按钮上显示的提示...">
+ 	<Description><![CDATA[
+  		<p>设置鼠标移动到按钮上显示的提示，代码示例如下：	
+  		<pre>
+Artery.get('id').setTooltip("请点击添加");
+  		</pre>
+  		]]></Description>
+ 		<Parameters>
+ 			<Param>value:string</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="readAllSub" return="void" tips="设置所有子控件为只读">
+ 	<Description><![CDATA[
+  		<p>设置所有子控件为只读</P>
+<pre>
+//仅将直接子控件设置为只读
+Artery.get('id').readAllSub(true);
+
+//将所有子子控件设置为只读
+Artery.get('id').readAllSub();
+Artery.get('id').readAllSub(false);
+</pre>
+  		]]></Description>
+ 		<Parameters>
+ 			<Param>isDirect:Boolean</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="editAllSub" return="void" tips="设置所有子控件为可编辑">
+ 	<Description><![CDATA[
+  		<p>设置所有子控件为可编辑</P>
+<pre>
+//仅将直接子控件设置为可编辑
+Artery.get('id').editAllSub(true);
+
+//将所有子子控件设置为可编辑
+Artery.get('id').editAllSub();
+Artery.get('id').editAllSub(false);
+</pre>
+  		]]></Description>
+ 		<Parameters>
+ 			<Param>isDirect:Boolean</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="disableAllSub" return="void" tips="设置所有子控件为无效">
+ 	<Description><![CDATA[
+  		<p>设置所有子控件为无效</P>
+<pre>
+//仅将直接子控件设置为无效
+Artery.get('id').disableAllSub(true);
+
+//将所有子子控件设置为无效
+Artery.get('id').disableAllSub();
+Artery.get('id').disableAllSub(false);
+</pre>
+  		]]></Description>
+ 		<Parameters>
+ 			<Param>isDirect:Boolean</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ 	<Method name="enableAllSub" return="void" tips="设置所有子控件为有效">
+ 	<Description><![CDATA[
+  		<p>设置所有子控件为有效</P>
+<pre>
+//仅将直接子控件设置为有效
+Artery.get('id').enableAllSub(true);
+
+//将所有子子控件设置为有效
+Artery.get('id').enableAllSub();
+Artery.get('id').enableAllSub(false);
+</pre>
+  		]]></Description>
+ 		<Parameters>
+ 			<Param>isDirect:Boolean</Param>
+ 		</Parameters>
+ 		<Return>void</Return>
+ 	</Method>
+ </Methods>
+

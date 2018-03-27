@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>47126f43ac28aaf736a6a83e0b96bb11</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.schedule.Jhlb.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/schedule/Jhlb.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formb633d">
+      <id>planList_form</id>
+      <Items>
+        <centerRegion sid="2ffd556b97b2dde87aac44b99d995b45">
+          <id>centerRegionc00ad</id>
+          <margins>5 5 5 5</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="a1fa035305ff252a274b2fb568cdf2c3">
+              <id>blankPanelf7be9</id>
+              <width>100%</width>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="fac1fe6862cc002ff566eacaea884c38">
+                  <id>header625fa</id>
+                  <text />
+                  <headerStyle>padding:0;</headerStyle>
+                  <Items>
+                    <blankPanel sid="3c24f8b2bf3fa33e815a71d0c8716b12">
+                      <id>blankPanel0af3a</id>
+                      <bodyStyle>display:none;</bodyStyle>
+                      <Items>
+                        <topbar sid="66e4bb35d8e107e3cf1e891df8e13227">
+                          <id>topbar87b96</id>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbText sid="cdc27513c3e3aa2d8801299155dc7987">
+                              <id>tbText94d7b</id>
+                              <text>&lt;span style="font-size:14px;font-weight:700;color:#15428B;"&gt;计划列表&lt;/span&gt;</text>
+                            </tbText>
+                            <tbSeparator sid="90c643b5e3f87db95cd972286381a362">
+                              <id>tbSeparator10f2f</id>
+                            </tbSeparator>
+                            <tbButton sid="412b24b07a107ea42c47ab15b8687d36">
+                              <id>addPlan_tbButton</id>
+                              <text>增加计划</text>
+                              <icon>/artery/arteryImage/symbol/drop-add.gif</icon>
+                              <linkto>{"formId":"94b7328fc85c93cf74a03917be5e5678","formName":"添加计划","formType":"1","params":{"cid":""},"target":"_window","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"2","title":"增加计划","wincfg":""}</linkto>
+                            </tbButton>
+                            <tbButton sid="5da75dabc210f1fb2f8988ca2b6df394">
+                              <id>deployAll_tbButton</id>
+                              <text>部署所有计划</text>
+                              <icon>/artery/arteryImage/arrow/run.gif</icon>
+                              <onClickClient><![CDATA[deployAll_tbButton_onClickClient]]></onClickClient>
+                              <onClickServer>deployAll_tbButton_onClickServer</onClickServer>
+                            </tbButton>
+                            <tbButton sid="ce7a260a2da7b6f71b90606d2be32933">
+                              <id>undeployAll_tbBtn</id>
+                              <text>取消所有部署</text>
+                              <icon>/artery/arteryImage/symbol/stop.gif</icon>
+                              <onClickClient><![CDATA[undeployAll_tbBtn_onClickClient]]></onClickClient>
+                              <onClickServer>undeployAll_tbBtn_onClickServer</onClickServer>
+                            </tbButton>
+                            <tbButton sid="148dd7c6738540e8fde73a13c09c690f">
+                              <id>reloadCache_tbButton</id>
+                              <text>更新缓存</text>
+                              <icon>/artery/arteryImage/file/refresh.gif</icon>
+                              <onClickClient><![CDATA[reloadCache_tbButton_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[reloadCache_tbButton_onClickServer]]></onClickServer>
+                            </tbButton>
+                            <tbButton sid="4f9f3b75dc57ebb5477acdeaa2134147">
+                              <id>cronHelper_tbButton</id>
+                              <text>CronHelper</text>
+                              <icon>/artery/arteryImage/symbol/help_16.gif</icon>
+                              <linkto>{"formId":"43131fed95c20c6b4c426ba6554fabcb","formName":"CronHelper","formType":"1","target":"_window","targetWidth":"600","targetHeight":"600","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"Cron帮助","wincfg":""}</linkto>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <listArea sid="da8ec069d87d86620b7421d8b46c406a">
+                  <id>plans_listArea</id>
+                  <ds>rs1</ds>
+                  <isInitData>true</isInitData>
+                  <height>100%</height>
+                  <autoRowHeight>false</autoRowHeight>
+                  <stripeRows>false</stripeRows>
+                  <emptyDataTip />
+                  <isPageSplit>false</isPageSplit>
+                  <themeStyle>unis</themeStyle>
+                  <Items>
+                    <columnString sid="889d4cff413c8622637f4af998a2fdfd">
+                      <id>cid_columnString</id>
+                      <dataName>{rs1.cid}</dataName>
+                      <isOnlyData>true</isOnlyData>
+                      <title>Cid</title>
+                    </columnString>
+                    <columnString sid="cefaecd388517de936c4a876e242e7d8">
+                      <id>deploy_columnString</id>
+                      <dataName>{rs1.deploy}</dataName>
+                      <isOnlyData>true</isOnlyData>
+                      <title>Deploy</title>
+                    </columnString>
+                    <columnString sid="f95fe558170ff21aef99d31d9f5376ff">
+                      <id>planName_columnString</id>
+                      <dataName>{rs1.name}</dataName>
+                      <title>计划名称</title>
+                      <width>70</width>
+                    </columnString>
+                    <columnString sid="767c4b6c438fd0f478d93935e9285f62">
+                      <id>triggerTime_columnString</id>
+                      <dataName>{rs1.cronExpression}</dataName>
+                      <title>触发时间</title>
+                      <width>40</width>
+                    </columnString>
+                    <columnString sid="abfb156044143e634ca89c5810b96c38">
+                      <id>jobType_columnString</id>
+                      <title>作业类型</title>
+                      <width>30</width>
+                      <autoRowHeight>inherit</autoRowHeight>
+                      <rowScript><![CDATA[jobType_columnString_rowScript]]></rowScript>
+                    </columnString>
+                    <columnString sid="fefb16632036c8cbf1ba18468940aef4">
+                      <id>jobInfo_columnString</id>
+                      <title>作业信息</title>
+                      <width>150</width>
+                      <autoRowHeight>false</autoRowHeight>
+                      <rowScript><![CDATA[jobInfo_columnString_rowScript]]></rowScript>
+                    </columnString>
+                    <columnString sid="9b1e72eb9ab1ca5c8d516b8eb889362f">
+                      <id>exceptionStatus_columnString</id>
+                      <title>运行时状态</title>
+                      <width>30</width>
+                      <isContentCenter>true</isContentCenter>
+                      <rowScript><![CDATA[exceptionStatus_columnString_rowScript]]></rowScript>
+                    </columnString>
+                    <columnString sid="cec1343fb170eff0ed6716c605031562">
+                      <id>jobStatus_columnString</id>
+                      <title>部署状态</title>
+                      <width>30</width>
+                      <isContentCenter>true</isContentCenter>
+                      <rowScript><![CDATA[jobStatus_columnString_rowScript]]></rowScript>
+                    </columnString>
+                    <column sid="9cbb6ba08f04f1494cb6795d842e919d">
+                      <id>opera_column</id>
+                      <title>操作</title>
+                      <width>30</width>
+                      <isShowHint>true</isShowHint>
+                      <isContentCenter>true</isContentCenter>
+                      <Items>
+                        <colOperImg sid="146a4d470bc85325a792f5fe3eff8d44">
+                          <id>deploy_colOperImg</id>
+                          <tip>部署</tip>
+                          <onClickClient><![CDATA[deploy_colOperImg_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[deploy_colOperImg_onClickServer]]></onClickServer>
+                          <rowScript><![CDATA[deploy_colOperImg_rowScript]]></rowScript>
+                        </colOperImg>
+                        <colOperImg sid="7d3fa717ad50c0662be85001b7834a84">
+                          <id>edit_colOperImg</id>
+                          <icon>/artery/arteryImage/file/edit.gif</icon>
+                          <tip>编辑</tip>
+                          <onClickClient><![CDATA[edit_colOperImg_onClickClient]]></onClickClient>
+                        </colOperImg>
+                        <colOperImg sid="3917a2279d9b16fd18d7b4044f44c6ff">
+                          <id>del_colOperImg</id>
+                          <icon>/artery/arteryImage/symbol/cross.gif</icon>
+                          <tip>删除</tip>
+                          <onClickClient><![CDATA[del_colOperImg_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[del_colOperImg_onClickServer]]></onClickServer>
+                        </colOperImg>
+                        <colOperImg sid="b3ff13a28d0960d51fb42c097510f107">
+                          <id>log_colOperImg</id>
+                          <icon>/artery/arteryImage/file/search.gif</icon>
+                          <tip>查看调度日志</tip>
+                          <linkto>{"formId":"03e6a6c5b7de2053dc5e4e72f80641aa","formName":"查看日志","formType":"1","params":{"cid":"{rs1.cid}"},"target":"_window","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"查看调度日志","wincfg":""}</linkto>
+                        </colOperImg>
+                      </Items>
+                    </column>
+                  </Items>
+                </listArea>
+                <footer sid="13006fedac9cb1aa58f1c90a3c2d1900">
+                  <id>footera273c</id>
+                  <buttonAlign>right</buttonAlign>
+                  <Items>
+                    <blankPanel sid="af0cebed5afaf756755fd3f0e6a68553">
+                      <id>blankPanel0f6d3</id>
+                      <Items>
+                        <pagingbar1 sid="c40e0c78e2126cec348693f6f55d44ed">
+                          <id>pagingbar1e3a20</id>
+                          <ds>rs1</ds>
+                          <align>right</align>
+                          <onSearch><![CDATA[pagingbar1e3a20_onSearch]]></onSearch>
+                        </pagingbar1>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </footer>
+              </Items>
+            </blankPanel>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getPlanList</ds>
+  </dslist>
+</form>
+

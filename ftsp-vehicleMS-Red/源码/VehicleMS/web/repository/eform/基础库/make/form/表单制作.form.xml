@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>c387c6197196a0fa65c63b1a32c7f4bc</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.make.form.Bdzz.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/make/form/Bdzz.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="forme06a0">
+      <id>forme06a0</id>
+      <Items>
+        <blankPanel sid="75efb5bc0ff5cffc15ab14bb913f0300">
+          <id>blankPanelff20e</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <header sid="727588980f2f4b67fea81b48ca346585">
+              <id>headere7d11</id>
+              <text />
+              <Items>
+                <blankPanel sid="c96f960bf51c11e2fd901ca1431cb4bd">
+                  <id>blankPanel6724f</id>
+                  <Items>
+                    <buttonArea sid="327d1d05f15627ecbcb9c7184f436a8f">
+                      <id>buttonAreaab8f1</id>
+                      <themeStyle>simple</themeStyle>
+                      <Items>
+                        <button sid="20de7ecce5a66eaf68c9a2fd27ff14f4">
+                          <id>button5a8a5</id>
+                          <width>50</width>
+                          <text>保存</text>
+                          <icon>/artery/arteryImage/file/image005.gif</icon>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

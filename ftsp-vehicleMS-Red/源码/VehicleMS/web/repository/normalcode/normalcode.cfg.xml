@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Author:徐振鹏
+	Date:2010.8.19
+
+	1.不同source条的name名不能一样，db名可以一样，如果没有设置name名，则使用db名。
+	2.sources的default属性表示默认数据库
+	
+	update：2011.3.10
+	3.在不同数据库下，source中的db有不同意义：
+		在oracle和金仓数据库下，db代表schema名字可以为空，查询时，sql自动拼接成from Table形式
+			如果指定db，sql自动拼接成from schema.Table形式(如果指定此形式，需要有访问schema的权限)
+		在sybase和sqlserver下，db代表database，不能为空，查询时，sql自动拼接成from database..Table形式
+		在mysql下，db代表schema名字不能为空，sql自动拼接成from database.Table形式(如果指定此形式，需要有访问database的权限)
+
+	
+	
+ -->
+<sources default="artery">
+	<source name="artery" db="DB_ATY">
+		<typeTable name="T_Aty_CodeType" class="com.thunisoft.artery.core.normalcode.domain.NormalCodeType">
+			<field name="type">C_ID</field>
+			<field name="name">C_Name</field>
+			<field name="valid">N_Valid</field>
+			<field name="maintain">N_SFKWH</field>
+		</typeTable>
+		<codeTable name="T_Aty_Code" class="com.thunisoft.artery.core.normalcode.domain.NormalCode">
+			<field name="type">C_PID</field>
+			<field name="code">C_Code</field>
+			<field name="name">C_Name</field>
+			<field name="levelInfo">C_LevelInfo</field>
+			<field name="maintain">N_KWH</field>
+			<field name="valid">N_Valid</field>
+			<field name="order">N_Order</field>
+			<field name="dmjp">C_Dmjp</field>
+		</codeTable>
+	</source>
+	<!--
+	<source db="DB_TEST">
+		<typeTable name="T_Test_Type" class="com.thunisoft.artery.core.normalcode.domain.NormalCodeType">
+			<field name="type">C_ID</field>
+			<field name="name">C_Name</field>
+			<field name="valid">N_Valid</field>
+			<field name="maintain">N_SFKWH</field>
+		</typeTable>
+		<codeTable name="T_Test_Code" class="com.thunisoft.artery.core.normalcode.domain.NormalCode">
+			<field name="type">C_PID</field>
+			<field name="code">C_Code</field>
+			<field name="name">C_Name</field>
+			<field name="levelInfo">C_LevelInfo</field>
+			<field name="maintain">N_KWH</field>
+			<field name="valid">N_Valid</field>
+			<field name="order">N_Order</field>
+			<field name="dmjp">C_Dmjp</field>
+		</codeTable>
+	</source>
+	-->
+</sources>

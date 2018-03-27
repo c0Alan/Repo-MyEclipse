@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>f0c223175b48336d39a0583b6452e495</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation>artery/arteryClient/slk/qt/example/form/bdys/Rqkj.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <formArea sid="formArea0B0B1278B906455B3DEED8F93F610B39">
+          <id>formArea0B0B1278B906455B3DEED8F93F610B39</id>
+          <labelWidth>90</labelWidth>
+          <labelBackColor>#dfe8f6</labelBackColor>
+          <formTableBorder />
+          <cellpadding>1</cellpadding>
+          <readOnlyBorder />
+          <Items>
+            <topbar sid="topbarFA705">
+              <id>topbarFA705</id>
+              <Items>
+                <tbButton sid="tbButtonC99BC">
+                  <id>tbButton_1</id>
+                  <text>date1</text>
+                  <onClickClient><![CDATA[tbButton_1_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButton1F199">
+                  <id>tbButton_2</id>
+                  <text>date2</text>
+                  <onClickClient><![CDATA[tbButton_2_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButton1BF0FBB8AB9F623F18BA9CE5B61ACA14">
+                  <id>tbButton_3</id>
+                  <text>date3</text>
+                  <onClickClient><![CDATA[tbButton_3_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButton910B2808079DC61D899B7CBC1902BD32">
+                  <id>tbButton_4</id>
+                  <text>date4</text>
+                  <onClickClient><![CDATA[tbButton_4_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <faDate sid="faDateDEF9A">
+              <id>date1</id>
+              <customFormat>Y年m月d日</customFormat>
+              <value>2009-06-01</value>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">日期</label>
+              <labelColor extend="true" />
+            </faDate>
+            <faDate sid="faDateB7F57">
+              <id>date2</id>
+              <showTime>true</showTime>
+              <customFormat>Y年m月d日H时i分s秒</customFormat>
+              <value>2009-06-01 12:12:12</value>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">时分秒</label>
+              <labelColor extend="true" />
+            </faDate>
+            <faDate sid="faDate00F12">
+              <id>date3</id>
+              <showTime>true</showTime>
+              <timeType>2</timeType>
+              <customFormat>Y年m月d日H时i分</customFormat>
+              <value>2009-06-01 12:12:00</value>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">时分</label>
+              <labelColor extend="true" />
+            </faDate>
+            <faDate sid="faDate86E4E">
+              <id>date4</id>
+              <showTime>true</showTime>
+              <timeType>3</timeType>
+              <customFormat>Y年m月d日H时</customFormat>
+              <value>2009-06-01 12:00:00</value>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">时</label>
+              <labelColor extend="true" />
+            </faDate>
+            <htmlArea sid="htmlArea7E9B9">
+              <id>htmlArea7E9B9</id>
+              <value>此说明摘自Ext文档
+&lt;PRE&gt;Format  Description                                                               Example returned values
+------  -----------------------------------------------------------------------   -----------------------
+  d     Day of the month, 2 digits with leading zeros                             01 to 31
+  D     A short textual representation of the day of the week                     Mon to Sun
+  j     Day of the month without leading zeros                                    1 to 31
+  l     A full textual representation of the day of the week                      Sunday to Saturday
+  N     ISO-8601 numeric representation of the day of the week                    1 (for Monday) through 7 (for Sunday)
+  S     English ordinal suffix for the day of the month, 2 characters             st, nd, rd or th. Works well with j
+  w     Numeric representation of the day of the week                             0 (for Sunday) to 6 (for Saturday)
+  z     The day of the year (starting from 0)                                     0 to 364 (365 in leap years)
+  W     ISO-8601 week number of year, weeks starting on Monday                    01 to 53
+  F     A full textual representation of a month, such as January or March        January to December
+  m     Numeric representation of a month, with leading zeros                     01 to 12
+  M     A short textual representation of a month                                 Jan to Dec
+  n     Numeric representation of a month, without leading zeros                  1 to 12
+  t     Number of days in the given month                                         28 to 31
+  L     Whether it's a leap year                                                  1 if it is a leap year, 0 otherwise.
+  o     ISO-8601 year number (identical to (Y), but if the ISO week number (W)    Examples: 1998 or 2004
+        belongs to the previous or next year, that year is used instead)
+  Y     A full numeric representation of a year, 4 digits                         Examples: 1999 or 2003
+  y     A two digit representation of a year                                      Examples: 99 or 03
+  a     Lowercase Ante meridiem and Post meridiem                                 am or pm
+  A     Uppercase Ante meridiem and Post meridiem                                 AM or PM
+  g     12-hour format of an hour without leading zeros                           1 to 12
+  G     24-hour format of an hour without leading zeros                           0 to 23
+  h     12-hour format of an hour with leading zeros                              01 to 12
+  H     24-hour format of an hour with leading zeros                              00 to 23
+  i     Minutes, with leading zeros                                               00 to 59
+  s     Seconds, with leading zeros                                               00 to 59
+  u     Milliseconds, with leading zeroes (arbitrary number of digits allowed)    Examples:
+                                                                                  001 (i.e. 1ms) or
+                                                                                  100 (i.e. 100ms) or
+                                                                                  999 (i.e. 999ms) or
+                                                                                  999876543210 (i.e. 999.876543210ms)
+  O     Difference to Greenwich time (GMT) in hours and minutes                   Example: +1030
+  P     Difference to Greenwich time (GMT) with colon between hours and minutes   Example: -08:00
+  T     Timezone abbreviation of the machine running the code                     Examples: EST, MDT, PDT ...
+  Z     Timezone offset in seconds (negative if west of UTC, positive if east)    -43200 to 50400
+  c     ISO 8601 date (note: milliseconds, if present, must be specified with     Examples:
+        at least 1 digit. There is no limit to how many digits the millisecond    2007-04-17T15:19:21+08:00 or
+        value may contain. see http://www.w3.org/TR/NOTE-datetime for more info)  2008-03-16T16:18:22Z or
+                                                                                  2009-02-15T17:17:23.9+01:00 or
+                                                                                  2010-01-14T18:16:24,999876543-07:00
+  U     Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)                1193432466 or -2138434463
+&lt;/PRE&gt;</value>
+              <colSpan extend="true">2</colSpan>
+              <labelColor extend="true" />
+              <hideLabel extend="true">true</hideLabel>
+            </htmlArea>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="footer" cn="页脚" jsType="artery-base" icon="footer.gif"
+	iconNew="footerNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>面板的页脚,在最下面位置生成,页脚的生成与顺序无关,在后台页脚,标题栏,工具栏总是在内容解析之前解析</Describe>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="formArea" />
+		<Parent type="listArea" />
+	</Parents>
+	<Children>
+		<Child type="button" />
+		<Child type="blankPanel" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.lib.Footer
+	</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="按钮位置" type="3" name="buttonAlign" ct="[left,center,right]"
+			tips="设置按钮生成的位置，可选为left，center，right，默认为center">
+			<Value>center</Value>
+		</Property>
+		<Property cn="按钮间距" type="2" name="spacing" export="true"
+			tips="设置按钮间的间距">
+			<Value>5</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="footerStyle"
+			tips="设置页角的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+</Item>
+

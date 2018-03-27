@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3bf1301c503148ff67616e6483da746e</id>
+  <configTable>
+    <table table="T_Eg_Library" />
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._columnNumeric.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_columnNumeric.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formb8403">
+      <id>formb8403</id>
+      <Items>
+        <listArea sid="e4c6b549ea193eb0209f01689926db61">
+          <id>listArea1fca3</id>
+          <ds>rs1</ds>
+          <isSum>true</isSum>
+          <isSumTop>true</isSumTop>
+          <Items>
+            <columnNumeric sid="56d7cafa7daa35cb381912757e5cf861">
+              <id>columnNumericbb4c4</id>
+              <dataName>{rs1.a}</dataName>
+              <isSum>true</isSum>
+              <sumFormula>合计：{nf([@],00.00)}</sumFormula>
+              <isFix>true</isFix>
+            </columnNumeric>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select count(*) as a from T_Eg_Book  x,T_Eg_Library y&#xD;
+where x.C_LIBRARYID=y.C_ID&#xD;
+group by y.C_ID</ds>
+  </dslist>
+</form>
+

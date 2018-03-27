@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>	 
+<def>
+	<setup>
+		<delimiters><![CDATA[:;,.={}() ]]></delimiters>
+		<sedelimiters><![CDATA[.~!%^&*()-+=|/{}[]:;"'\<> ,?]]></sedelimiters>
+		<commentseq>//</commentseq>
+		<blockcommenton><![CDATA[<!]]></blockcommenton>
+		<blockcommentoff><![CDATA[->]]></blockcommentoff>
+		<de color="#3F7F7F"/><!-- 标签颜色 -->
+		<comment color="#0099FF"/>
+		<string color="#0000FF"/>
+		<defaultFm color="#000000"/>
+	</setup>
+	<c color="#000000">
+	</c>
+</def>

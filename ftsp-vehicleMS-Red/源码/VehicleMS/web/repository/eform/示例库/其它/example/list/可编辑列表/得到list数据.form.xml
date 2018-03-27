@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>199a205f2f655cc656750481e946a101</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.list.kbjlb.Ddlistsj.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/list/kbjlb/Ddlistsj.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <height>500</height>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <listArea sid="listAreaD2EB0CC3201662E5FF9AA27C1BB6CAA3">
+          <id>bookList</id>
+          <ds>rs1</ds>
+          <type>grid</type>
+          <height>100%</height>
+          <loadMask>false</loadMask>
+          <isPageSplit>false</isPageSplit>
+          <pageCount>8</pageCount>
+          <isStartNew>true</isStartNew>
+          <themeStyle>default</themeStyle>
+          <isEditor>true</isEditor>
+          <Items>
+            <topbar sid="topbar6177550B4F64445AD3EC9917C548C418">
+              <id>topbar6177550B4F64445AD3EC9917C548C418</id>
+              <Items>
+                <tbButton sid="tbButton72656DB1C997CC63071E0DD7533C4A7C">
+                  <id>tbButton_save</id>
+                  <text>保存</text>
+                  <onClickClient><![CDATA[tbButton_save_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButtonF4743DA6F01758542B8839D87C97D66C">
+                  <id>tbButton_insert</id>
+                  <text>新建</text>
+                  <onClickClient><![CDATA[tbButton_insert_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButton4755CB3AF21873FF3B9AD0D75DF376EE">
+                  <id>tbButton_delete</id>
+                  <text>删除</text>
+                  <onClickClient><![CDATA[tbButton_delete_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbSeparator sid="tbSeparator0BE85376C03BC8AA40023EB59CD13184">
+                  <id>tbSeparator0BE85376C03BC8AA40023EB59CD13184</id>
+                </tbSeparator>
+                <tbButton sid="tbButtonED4A52E44C14396462A5A4B10F91C62D">
+                  <id>tbButton_getValues</id>
+                  <text>得到图书名称</text>
+                  <onClickClient><![CDATA[tbButton_getValues_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButtonF2C1C7C3E0501AE3327E7925EB8F8343">
+                  <id>tbButton_getKey</id>
+                  <text>得到主键值</text>
+                  <onClickClient><![CDATA[tbButton_getKey_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbSeparator sid="tbSeparator43E0C0E7981287D8E3E0439E1906E500">
+                  <id>tbSeparator43E0C0E7981287D8E3E0439E1906E500</id>
+                </tbSeparator>
+                <tbButton sid="tbButton616208E53CCEA006A8FCD0F29CE18052">
+                  <id>tbButton_cellValue</id>
+                  <text>getSelectedCellValue</text>
+                  <onClickClient><![CDATA[tbButton_cellValue_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButtonE1AA0902D27E75755AAC078A67754145">
+                  <id>tbButton_rowValue</id>
+                  <text>getSelectedRowValue</text>
+                  <onClickClient><![CDATA[tbButton_rowValue_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbSeparator sid="tbSeparator7464500F01CE495AAB9061ADA6858393">
+                  <id>tbSeparator7464500F01CE495AAB9061ADA6858393</id>
+                </tbSeparator>
+                <tbButton sid="tbButton2D9E9CC8FA3453C528DF4684D8C6CAC8">
+                  <id>tbButton_checkbox</id>
+                  <text>得到checkbox选中值</text>
+                  <onClickClient><![CDATA[tbButton_checkbox_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButtonA6900F8F681F350FEADF7760DBA188D4">
+                  <id>tbButton_checkRowValue</id>
+                  <text>getCheckedRowValue</text>
+                  <onClickClient><![CDATA[tbButton_checkRowValue_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbSeparator sid="tbSeparator62AC3028C137667553846A5DA12847A6">
+                  <id>tbSeparator62AC3028C137667553846A5DA12847A6</id>
+                </tbSeparator>
+                <tbButton sid="tbButton8CEFCA447DC8A3E8020F1AF15133871C">
+                  <id>tbButton_allValues</id>
+                  <text>getAllValues</text>
+                  <onClickClient><![CDATA[tbButton_allValues_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <columnIdentity sid="columnIdentity22B908FE8BC5B1B3709CFDC5F51EDF6D">
+              <id>lstCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>图书编号</title>
+              <isEditor>false</isEditor>
+            </columnIdentity>
+            <column sid="columnDA7647B28707993569A3453DB76BE07F">
+              <id>checkboxCol</id>
+              <dataName>{rs1.C_ID}</dataName>
+              <editor>checkbox</editor>
+              <title>选择</title>
+              <width>10</width>
+              <htmlEncode>false</htmlEncode>
+              <onClickClient><![CDATA[checkboxCol_onClickClient]]></onClickClient>
+            </column>
+            <columnString sid="columnDCAC1A00105A94DC0E0B955DB64764B0">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <defValue>请输入图书名称</defValue>
+              <isOrderBy>true</isOrderBy>
+            </columnString>
+            <columnOrgan sid="columnOrgan7D59D1C694CD314257A8D423BAD62521">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <defValue>100000000000002</defValue>
+            </columnOrgan>
+            <columnDate sid="columnDate1FA0258FE4C868F3952E94A1E35AAC73">
+              <id>lstDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{rs1.D_BUY}</dataName>
+              <title>购买日期</title>
+              <defValue>{calendar(y.m.d)}</defValue>
+              <isOrderBy>true</isOrderBy>
+            </columnDate>
+            <columnCode sid="columnCode55256632F4B68EA02DB1BE37EA3600F5">
+              <id>booktype</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{rs1.N_TYPE}</dataName>
+              <title>图书类型</title>
+              <defValue>1</defValue>
+              <codeType>-600</codeType>
+              <ajaxLoad>true</ajaxLoad>
+              <isOrderBy>true</isOrderBy>
+            </columnCode>
+            <columnCode sid="columnCode6C79262295EE0677C658AF75A92ACC0C">
+              <id>lstCLIBRARYID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{rs1.C_LIBRARYID}</dataName>
+              <title>图书室id</title>
+              <defValue>B31E784BD0C115FF2FF7157007843A75</defValue>
+              <dynamicData><![CDATA[lstCLIBRARYID_dynamicData]]></dynamicData>
+              <dynamicDataFilter><![CDATA[lstCLIBRARYID_dynamicDataFilter]]></dynamicDataFilter>
+              <isOrderBy>true</isOrderBy>
+            </columnCode>
+            <columnString sid="columnStringA647CAC72609629408E1D47B1BB92931">
+              <id>lstTABSTRACT</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>T_ABSTRACT</inheritfld>
+              <dataName>{rs1.T_ABSTRACT}</dataName>
+              <title>摘要</title>
+              <isEditor>false</isEditor>
+              <editor>textarea</editor>
+              <htmlEncode>false</htmlEncode>
+            </columnString>
+            <column sid="column6EE1769131743BFA3E3EDE7871845FA5">
+              <id>column6EE1769131743BFA3E3EDE7871845FA5</id>
+              <Items>
+                <colOperText sid="colOperText3264EF5B90F98C05DE0138D55CF29C97">
+                  <id>colOperText_name</id>
+                  <text>得到图书名称</text>
+                  <onClickClient><![CDATA[colOperText_name_onClickClient]]></onClickClient>
+                </colOperText>
+                <colOperText sid="colOperTextE5D95BE94DA468812F082EF5D9904EB5">
+                  <id>colOperText_rowValue</id>
+                  <text>得到本行值</text>
+                  <onClickClient><![CDATA[colOperText_rowValue_onClickClient]]></onClickClient>
+                </colOperText>
+              </Items>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_ID , 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_PUBLISHER, 
+T_Eg_Book.N_TYPE,
+T_Eg_Book.C_LIBRARYID,
+T_Eg_Book.T_ABSTRACT,
+T_Eg_Book.D_BUY,
+T_Eg_Book.C_ISBN,
+T_Eg_Book.I_PHOTO
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

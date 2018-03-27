@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>546615230686b4fbefed7b97a0818957</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid.Cxsl.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/Cxsl.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>A32983d23599f48b774b7ab366362d4e4</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <blankPanel sid="70110d859a980bc6148302153269bec5">
+          <id>blankPanel281d5</id>
+          <height>400</height>
+          <Items>
+            <topbar sid="A6588bf1fd109b305e5b44b20b487ec43">
+              <id>A6588bf1fd109b305e5b44b20b487ec43</id>
+              <Items>
+                <tbButton sid="A4f089b20e0edf67052f9dcceedecf530">
+                  <id>tbButton_search</id>
+                  <text>查询</text>
+                  <onClickClient><![CDATA[tbButton_search_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButton4FD01">
+                  <id>tbButton_name</id>
+                  <text>查询_名称</text>
+                  <onClickClient><![CDATA[tbButton_name_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButton1ECE1">
+                  <id>tbButton_auth</id>
+                  <text>查询_作者</text>
+                  <onClickClient><![CDATA[tbButton_auth_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButtonED5B865D1C50E52D3B9FDAE62F766238">
+                  <id>tbButton_name1</id>
+                  <text>查询_名称1</text>
+                  <onClickClient><![CDATA[tbButton_name1_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButton7FEBD549937C505543A7FFE0CF01AA49">
+                  <id>tbButton_auth1</id>
+                  <text>查询_作者1</text>
+                  <onClickClient><![CDATA[tbButton_auth1_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <tableLayout sid="Af67d2d743c44fa74b6899adc50c6e2f1">
+              <id>Af67d2d743c44fa74b6899adc50c6e2f1</id>
+              <colNum>1</colNum>
+              <height>100%</height>
+              <cellpadding>0</cellpadding>
+              <Items>
+                <formArea sid="A437370e2bbb688a102ee61db7aea15b8">
+                  <id>condForm</id>
+                  <height>130</height>
+                  <onEnter><![CDATA[condForm_onEnter]]></onEnter>
+                  <formTableBorder>false</formTableBorder>
+                  <cellpadding>5</cellpadding>
+                  <borderStyle>solid</borderStyle>
+                  <readOnlyBorder>true</readOnlyBorder>
+                  <synTabHeight>true</synTabHeight>
+                  <Items>
+                    <faString sid="Adfaf13e8ca616f5ea5743b5ee64be648">
+                      <id>name</id>
+                      <height>0</height>
+                      <label>图书名称</label>
+                    </faString>
+                    <faString sid="A2a98b9ee3349c249f50129c178e2ace8">
+                      <id>author</id>
+                      <height>0</height>
+                      <label>作者</label>
+                    </faString>
+                    <faString sid="A40f18e257e414f495bdf2869d4666774">
+                      <id>isbn</id>
+                      <height>0</height>
+                      <label>ISBN</label>
+                    </faString>
+                    <faString sid="A1c2c861148d8ccd643d494a116cae4b1">
+                      <id>publisher</id>
+                      <height>0</height>
+                      <label>出版社</label>
+                    </faString>
+                    <faCode sid="Af918f248447cf05aca0bd2ebd168ca2b">
+                      <id>booktype</id>
+                      <editor>mCheckbox</editor>
+                      <width />
+                      <height>0</height>
+                      <codeType>-600</codeType>
+                      <ajaxLoad>false</ajaxLoad>
+                      <editable>true</editable>
+                      <label>类别</label>
+                    </faCode>
+                    <faCode sid="A441e354702e3b8e0d4d5e6541a89e8fb">
+                      <id>library</id>
+                      <editor>mCheckbox</editor>
+                      <width />
+                      <height>0</height>
+                      <dynamicData><![CDATA[library_dynamicData]]></dynamicData>
+                      <ajaxLoad>false</ajaxLoad>
+                      <editable>true</editable>
+                      <label>图书室</label>
+                    </faCode>
+                  </Items>
+                </formArea>
+                <listArea sid="Ad867d622dcac269ff60e93ba2f0977ef">
+                  <id>bookList</id>
+                  <ds>rs1</ds>
+                  <type>grid</type>
+                  <isInitData>false</isInitData>
+                  <height>100%</height>
+                  <pageCount>5</pageCount>
+                  <isStartNew>true</isStartNew>
+                  <isExpExcel>true</isExpExcel>
+                  <isExpPdf>true</isExpPdf>
+                  <style>padding-top:10px;</style>
+                  <themeStyle>default</themeStyle>
+                  <Items>
+                    <column sid="A3d0bccdb986d260acb185176404891df">
+                      <id>lstCNAME</id>
+                      <title>名称</title>
+                      <inherittbl>T_Eg_Book</inherittbl>
+                      <inheritfld>C_NAME</inheritfld>
+                      <dataName>{rs1.C_NAME}</dataName>
+                      <isOrderBy>true</isOrderBy>
+                    </column>
+                    <column sid="A42f4c94cf60048fee40bd7db6757e986">
+                      <id>lstCAUTH</id>
+                      <title>作者</title>
+                      <inherittbl>T_Eg_Book</inherittbl>
+                      <inheritfld>C_AUTH</inheritfld>
+                      <dataName>{rs1.C_AUTH}</dataName>
+                      <isOrderBy>true</isOrderBy>
+                    </column>
+                    <column sid="A81fa79822d01c1f08cd91b12b44760f5">
+                      <id>lstCPUBLISHER</id>
+                      <title>出版社</title>
+                      <inherittbl>T_Eg_Book</inherittbl>
+                      <inheritfld>C_PUBLISHER</inheritfld>
+                      <dataName>{rs1.C_PUBLISHER}</dataName>
+                      <isOrderBy>true</isOrderBy>
+                    </column>
+                    <column sid="Ad3261dc658f4925083de14b7d927f129">
+                      <id>lstCISBN</id>
+                      <title>ISBN</title>
+                      <inherittbl>T_Eg_Book</inherittbl>
+                      <inheritfld>C_ISBN</inheritfld>
+                      <dataName>{rs1.C_ISBN}</dataName>
+                    </column>
+                    <column sid="A3b6c83df8fe2af06b512629d7b275005">
+                      <id>lstDPUBLISHER</id>
+                      <title>出版时间</title>
+                      <inherittbl>T_Eg_Book</inherittbl>
+                      <inheritfld>D_PUBLISHER</inheritfld>
+                      <dataName>{df([rs1.D_PUBLISHER],yyyy-MM-dd)}</dataName>
+                      <isOrderBy>true</isOrderBy>
+                    </column>
+                    <column sid="A9c800f6d804249ce1ebde496444cb3c9">
+                      <id>lstDBUY</id>
+                      <title>购买日期</title>
+                      <inherittbl>T_Eg_Book</inherittbl>
+                      <inheritfld>D_BUY</inheritfld>
+                      <dataName>{df([rs1.D_BUY],yyyy-MM-dd)}</dataName>
+                      <isOrderBy>true</isOrderBy>
+                    </column>
+                    <columnCode sid="columnCode3FE1DF175BCD1FB8E312A59AF9A082A7">
+                      <id>lstNTYPE</id>
+                      <inherittbl>T_Eg_Book</inherittbl>
+                      <inheritfld>N_TYPE</inheritfld>
+                      <dataName>{rs1.N_TYPE}</dataName>
+                      <title>图书类型</title>
+                      <isEditor>false</isEditor>
+                      <dynamicDataFilter><![CDATA[lstNTYPE_dynamicDataFilter]]></dynamicDataFilter>
+                    </columnCode>
+                    <column sid="A619065c1c9cacb2826f4309087fe96b5">
+                      <id>lstCLIBRARYID</id>
+                      <title>所属图书室</title>
+                      <inherittbl>T_Eg_Book</inherittbl>
+                      <inheritfld>C_LIBRARYID</inheritfld>
+                      <dataName>{list(rs2,C_NAME,C_ID=[rs1.C_LIBRARYID],',')}</dataName>
+                      <dynamicDataFilter><![CDATA[lstCLIBRARYID_dynamicDataFilter]]></dynamicDataFilter>
+                      <isOrderBy>true</isOrderBy>
+                    </column>
+                  </Items>
+                </listArea>
+              </Items>
+            </tableLayout>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Library where N_VALID=1</ds>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

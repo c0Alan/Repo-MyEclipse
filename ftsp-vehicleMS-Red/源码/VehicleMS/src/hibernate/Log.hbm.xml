@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.thunisoft.artery.module.maintain.domain">
+    <class name="BaseLog">
+        <id name="id" type="java.lang.String">
+            <column name="C_ID" length="32" />
+            <generator class="com.thunisoft.artery.util.uuid.HibernateIDGenerator" />
+        </id>
+        <property name="time" type="java.sql.Timestamp">
+            <column name="D_Time" length="23" not-null="true" />
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="C_UserName" length="100" />
+        </property>
+        <property name="userId" type="java.lang.String">
+            <column name="C_UserID" length="50" />
+        </property>
+        <property name="corpId" type="java.lang.String">
+            <column name="C_CORPID" precision="16" scale="0" />
+        </property>
+        <property name="corpName" type="java.lang.String">
+            <column name="C_CorpName" length="100" />
+        </property>
+        <property name="deptId" type="java.lang.String">
+            <column name="C_DEPTID" precision="16" scale="0" />
+        </property>
+        <property name="deptName" type="java.lang.String">
+            <column name="C_DeptName" length="100" />
+        </property>
+        <property name="ip" type="java.lang.String">
+            <column name="C_IP" length="50" />
+        </property>
+        <property name="host" type="java.lang.String">
+            <column name="C_Host" length="100" />
+        </property>
+        <property name="os" type="java.lang.String">
+            <column name="C_OS" length="100" />
+        </property>
+        <property name="browser" type="java.lang.String">
+            <column name="C_Browser" length="100" />
+        </property>
+        <property name="resolution" type="java.lang.String">
+            <column name="C_FBL" length="20" />
+        </property>
+        <property name="cost" type="java.lang.Long">
+            <column name="N_Cost" precision="16" scale="0" />
+        </property>
+        <property name="error" type="java.lang.String">
+            <column name="C_Error" />
+        </property>        
+    </class>
+    
+    <union-subclass name="BusinessLog" table="T_Aty_LogBusiness" extends="BaseLog">    
+        <property name="operations" type="java.lang.String">
+            <column name="T_Operations" />
+        </property>
+    </union-subclass>
+    
+    <union-subclass name="FormLoginLog" table="T_Aty_LogFormLogin" extends="BaseLog">
+        <property name="formId" type="java.lang.String">
+            <column name="C_FormID" length="32" not-null="true" />
+        </property>
+        <property name="formName" type="java.lang.String">
+            <column name="C_FormName" length="100"/>
+        </property>
+        <property name="type" type="java.lang.Integer">
+            <column name="N_Type"/>
+        </property>
+    </union-subclass>
+    
+    <union-subclass name="MaintainLog" table="T_Aty_LogMaintain" extends="BaseLog">      
+        <property name="operations" type="java.lang.String">
+            <column name="T_Operations" />
+        </property>
+    </union-subclass>
+    
+    <union-subclass name="SubsysLoginLog" table="T_Aty_LogSubsysLogin" extends="BaseLog">
+        <property name="sysId" type="java.lang.String">
+            <column name="C_SysID" length="32" not-null="true" />
+        </property>
+        <property name="sysName" type="java.lang.String">
+            <column name="C_SysName" length="100"/>
+        </property>
+    </union-subclass>
+    
+    <union-subclass name="SysLoginLog" table="T_Aty_LogSysLogin"  extends="BaseLog">
+    </union-subclass>
+</hibernate-mapping>

@@ -1,0 +1,652 @@
+/***************************************************************************************
+ * x-theme-blankPanel-appleNormal
+ ***************************************************************************************/
+.x-theme-blankPanel-appleNormal .x-panel-tc-appleNormal {
+	background-image: url(images/appleNormal/top-bottom.gif);
+}
+
+.x-theme-blankPanel-appleNormal .x-panel-noHeader .x-panel-tc-appleNormal {
+	height: 5px;
+}
+
+.x-theme-blankPanel-appleNormal .x-panel-tl-appleNormal {
+	background-image: url(images/appleNormal/left-corners.gif);
+	border-bottom: 0px;
+}
+
+.x-theme-blankPanel-appleNormal .x-panel-tr-appleNormal {
+	background-image: url(images/appleNormal/right-corners.gif);
+}
+
+.x-theme-blankPanel-appleNormal .x-panel-bc-appleNormal {
+	background-image: url(images/appleNormal/top-bottom.gif);
+}
+
+.x-theme-blankPanel-appleNormal .x-panel-bl-appleNormal {
+	background-image: url(images/appleNormal/left-corners.gif);
+}
+
+.x-theme-blankPanel-appleNormal .x-panel-br-appleNormal {
+	background-image: url(images/appleNormal/right-corners.gif);
+}
+
+.x-theme-blankPanel-appleNormal .x-panel-mc-appleNormal {
+    border-color:#99bbe8;
+    font: normal 11px tahoma,arial,helvetica,sans-serif;
+    background-color:#fff;
+}
+
+.x-theme-blankPanel-appleNormal .x-panel-ml-appleNormal {
+	background-image: url(images/appleNormal/left-right.gif);
+	padding-left: 1px;
+}
+
+.x-theme-blankPanel-appleNormal .x-panel-mr-appleNormal {
+	background-image: url(images/appleNormal/left-right.gif);
+	padding-right:1px;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-appleSelect
+ ***************************************************************************************/
+.x-theme-blankPanel-appleSelect .x-panel-tc-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-tc-appleNormal {
+	background-image: url(images/appleSelect/top-bottom.gif);
+}
+
+.x-theme-blankPanel-appleSelect .x-panel-noHeader .x-panel-tc-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-noHeader .x-panel-tc-appleNormal {
+	height: 5px;
+}
+
+.x-theme-blankPanel-appleSelect .x-panel-tl-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-tl-appleNormal {
+	background-image: url(images/appleSelect/left-corners.gif);
+	border-bottom: 0px;
+}
+
+.x-theme-blankPanel-appleSelect .x-panel-tr-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-tr-appleNormal {
+	background-image: url(images/appleSelect/right-corners.gif);
+}
+
+.x-theme-blankPanel-appleSelect .x-panel-bc-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-bc-appleNormal {
+	background-image: url(images/appleSelect/top-bottom.gif);
+}
+
+.x-theme-blankPanel-appleSelect .x-panel-bl-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-bl-appleNormal {
+	background-image: url(images/appleSelect/left-corners.gif);
+}
+
+.x-theme-blankPanel-appleSelect .x-panel-br-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-br-appleNormal {
+	background-image: url(images/appleSelect/right-corners.gif);
+}
+
+.x-theme-blankPanel-appleSelect .x-panel-mc-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-mc-appleNormal {
+    border-color:#99bbe8;
+    font: normal 11px tahoma,arial,helvetica,sans-serif;
+    background-color:#fff;
+}
+
+.x-theme-blankPanel-appleSelect .x-panel-ml-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-ml-appleNormal {
+	background-image: url(images/appleSelect/left-right.gif);
+	padding-left: 1px;
+}
+
+.x-theme-blankPanel-appleSelect .x-panel-mr-appleSelect,.x-theme-blankPanel-appleSelect .x-panel-mr-appleNormal  {
+	background-image: url(images/appleSelect/left-right.gif);
+	padding-right:1px;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-cherry
+ ***************************************************************************************/
+.x-theme-blankPanel-cherry .x-panel-tc-cherry {
+	background-image: url(images/cherry/top-bottom.gif);
+}
+
+.x-theme-blankPanel-cherry .x-panel-tl-cherry {
+	background-image: url(images/cherry/left-corners.gif);
+	border-bottom: 1px solid #7BA9EA !important;
+}
+
+.x-theme-blankPanel-cherry .x-panel-tr-cherry {
+	background-image: url(images/cherry/right-corners.gif);
+}
+
+.x-theme-blankPanel-cherry .x-panel-noHeader .x-panel-tc-cherry {
+	height: 5px;
+	border-bottom: 0px !important;
+}
+
+.x-theme-blankPanel-cherry .x-panel-noHeader .x-panel-tl-cherry {
+	border-bottom: 0px !important;
+}
+
+.x-theme-blankPanel-cherry .x-panel-hasHeader .x-panel-tc-cherry {
+	background-image: url(images/cherry/top-bottom-header.gif);
+	height: 32px;
+}
+
+.x-theme-blankPanel-cherry .x-panel-hasHeader .x-panel-tl-cherry {
+	background-image: url(images/cherry/left-corners-header.gif);
+	border-bottom: 0px;
+}
+
+.x-theme-blankPanel-cherry .x-panel-hasHeader .x-panel-tr-cherry {
+	background-image: url(images/cherry/right-corners-header.gif);
+}
+
+.x-theme-blankPanel-cherry .x-panel-bc-cherry {
+	background-image: url(images/cherry/top-bottom.gif);
+}
+
+.x-theme-blankPanel-cherry .x-panel-bl-cherry {
+	background-image: url(images/cherry/left-corners.gif);
+}
+
+.x-theme-blankPanel-cherry .x-panel-br-cherry {
+	background-image: url(images/cherry/right-corners.gif);
+}
+
+.x-theme-blankPanel-cherry .x-panel-mc-cherry {
+    border-color:#99bbe8;
+    font: normal 11px tahoma,arial,helvetica,sans-serif;
+    background-color:#fff;
+    padding-top: 0px;
+}
+
+.x-theme-blankPanel-cherry .x-panel-ml-cherry {
+	background-image: url(images/cherry/left-right.gif);
+	padding-left: 1px;
+}
+
+.x-theme-blankPanel-cherry .x-panel-mr-cherry {
+	background-image: url(images/cherry/left-right.gif);
+	padding-right:1px;
+}
+/***************************************************************************************
+ * x-theme-blankPanel-cooltip
+ ***************************************************************************************/
+.x-theme-blankPanel-cooltip .x-panel-tc-cooltip {
+	background-image: url(images/cooltip/top-bottom.png);
+}
+
+.x-theme-blankPanel-cooltip .x-panel-tl-cooltip {
+	background-image: url(images/cooltip/left-corners.png);
+	border-bottom: 0px !important;
+	padding-left: 24px;
+}
+
+.x-theme-blankPanel-cooltip .x-panel-tr-cooltip {
+	background-image: url(images/cooltip/right-corners.png);
+}
+
+.x-theme-blankPanel-cooltip .x-panel-noHeader .x-panel-tc-cooltip {
+	height: 10px;
+	border-bottom: 0px !important;
+}
+
+.x-theme-blankPanel-cooltip .x-panel-noHeader .x-panel-tl-cooltip {
+	border-bottom: 0px !important;
+}
+
+.x-theme-blankPanel-cooltip .x-panel-bc-cooltip {
+	background-image: url(images/cooltip/top-bottom.png);
+	height: 7px;
+}
+
+.x-theme-blankPanel-cooltip .x-panel-bl-cooltip {
+	background-image: url(images/cooltip/left-corners.png);
+	padding-left: 37px;
+}
+
+.x-theme-blankPanel-cooltip .x-panel-br-cooltip {
+	background-image: url(images/cooltip/right-corners.png);
+	padding-right: 24px;
+}
+
+.x-theme-blankPanel-cooltip .x-panel-mc-cooltip {
+    border-color:#99bbe8;
+    font: normal 11px tahoma,arial,helvetica,sans-serif;
+    background-color:transparent;
+    background-image: url(images/cooltip/middle.png);
+    padding-top: 0px;
+}
+
+.x-theme-blankPanel-cooltip .x-panel-ml-cooltip {
+	background-image: url(images/cooltip/left-right.png);
+	padding-left: 24px;
+	background-color: transparent;
+}
+
+.x-theme-blankPanel-cooltip .x-panel-mr-cooltip {
+	background-image: url(images/cooltip/left-right.png);
+	padding-right:20px;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-blankWhite
+ ***************************************************************************************/
+.x-theme-blankPanel-blankWhite .x-panel-tc-blankWhite {
+	background-image: url(images/blankWhite/top-bottom.png);
+	height: 10px;
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-tl-blankWhite {
+	background-image: url(images/blankWhite/left-corners.png);
+	border-bottom: 0px !important;
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-tr-blankWhite {
+	background-image: url(images/blankWhite/right-corners.png);
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-noHeader .x-panel-tc-blankWhite {
+	height: 8px;
+	border-bottom: 0px !important;
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-noHeader .x-panel-tl-blankWhite {
+	border-bottom: 0px !important;
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-bc-blankWhite {
+	background-image: url(images/blankWhite/top-bottom.png);
+	height: 7px;
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-bl-blankWhite {
+	background-image: url(images/blankWhite/left-corners.png);
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-br-blankWhite {
+	background-image: url(images/blankWhite/right-corners.png);
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-mc-blankWhite {
+    font: normal 11px tahoma,arial,helvetica,sans-serif;
+    background-color:transparent;
+    background-image: none;
+    padding-top: 0px;
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-ml-blankWhite {
+	background-image: url(images/blankWhite/left.png);
+	background-color: transparent;
+}
+
+.x-theme-blankPanel-blankWhite .x-panel-mr-blankWhite {
+	background-image: url(images/blankWhite/right.png);
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-orange
+ ***************************************************************************************/
+.x-theme-blankPanel-orangeBottom {
+	background-image: url(images/orangeBottom/orangeBottom.png);
+	background-position: 0 bottom;
+}
+.x-theme-blankPanel-orangeTop {
+	background-image: url(images/orangeTop/orangeTop.png);
+	background-position: 0 0;
+	background-repeat: repeat-x;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-unis
+ ***************************************************************************************/
+.x-theme-blankPanel-unis .x-panel-tc-unis {
+	background-image: url(images/unis/top.png);
+}
+
+.x-theme-blankPanel-unis .x-panel-tl-unis {
+	background-image: url(images/unis/left-top-corners.png);
+	border-bottom: 1px solid #B0BDDD;
+}
+.x-theme-blankPanel-unis .x-panel-header-unis{
+	border-bottom: 0px;
+}
+
+.x-theme-blankPanel-unis .x-panel-tr-unis {
+	background-image: url(images/unis/right-top-corners.png);
+}
+
+.x-theme-blankPanel-unis .x-panel-noHeader .x-panel-tc-unis {
+	height: 5px;
+	background-image: url(images/unis/noheader.png);
+	background-position: 0 -63px;
+}
+
+.x-theme-blankPanel-unis .x-panel-noHeader .x-panel-tl-unis {
+	background-image: url(images/unis/noheader.png);
+	border-bottom: 0px solid #B0BDDD;
+}
+.x-theme-blankPanel-unis .x-panel-noHeader .x-panel-tr-unis {
+	background-image: url(images/unis/noheader.png);
+	background-position: right -28px;
+}
+
+.x-theme-blankPanel-unis .x-panel-bc-unis {
+	background-image: url(images/unis/bottom.png);
+	background-position: 0 bottom;
+}
+
+.x-theme-blankPanel-unis .x-panel-bl-unis {
+	background-image: url(images/unis/left-bottom-corners.png);
+	background-position: 0 bottom;
+	border-top: 1px solid #B0BDDD;
+}
+.x-theme-blankPanel-unis .x-panel-nofooter .x-panel-bl-unis {
+	border-top: 0px solid #B0BDDD;
+}
+.x-theme-blankPanel-unis .x-panel-nofooter .x-panel-bc-unis {
+	height:4px;
+}
+
+.x-theme-blankPanel-unis .x-panel-br-unis {
+	background-image: url(images/unis/right-bottom-corners.png);
+	background-position: right bottom;
+}
+
+.x-theme-blankPanel-unis .x-panel-mc-unis {
+    background-color:#F4F7FE;
+    padding-top: 0px;
+}
+
+.x-theme-blankPanel-unis .x-panel-ml-unis {
+	background-image: url(images/unis/left-right.png);
+	padding-left: 1px;
+}
+
+.x-theme-blankPanel-unis .x-panel-mr-unis {
+	background-image: url(images/unis/left-right.png);
+	padding-right:1px;
+}
+
+.x-theme-blankPanel-unis .x-panel-tbar .x-toolbar{
+	border: 0px;
+	background-image: url(images/unis/tbar.png);
+	background-position: 0 0;
+	background-repeat: repeat-x;
+}
+
+/*noframe*/
+.x-theme-blankPanel-noframe-unis .x-panel-header-unis {
+	background-image: url(images/unis/top.png);
+	border-bottom: 1px solid #B0BDDD;
+}
+.x-theme-blankPanel-noframe-unis .x-panel-body-unis {
+	background-color: #F4F7FE;
+	border: 0px;
+}
+
+.x-theme-blankPanel-noframe-unis .x-panel-footer-unis {
+	background-image: url(images/unis/bottom.png);
+	background-position: 0 bottom;
+	border-top: 1px solid #B0BDDD;
+}
+/***************************************************************************************
+ * x-panel-buttonFrame
+ ***************************************************************************************/
+.x-panel-bfl{
+	height: 33px;
+	padding-left:6px;
+	background-image: url(images/bftopTitle/buttonFrame.png);
+	background-repeat: no-repeat;
+}
+.x-panel-bfr{
+	padding-right: 6px;
+	background-image: url(images/bftopTitle/buttonFrame.png);
+	background-position: right -43px;
+	background-repeat: no-repeat;
+}
+.x-panel-bfc{
+	background-image: url(images/bftopTitle/buttonFrame.png);
+	background-position: 0 -87px;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-bfunis
+ ***************************************************************************************/
+.x-theme-blankPanel-bfunis .x-panel-bfl{
+	height: 27px;
+	padding-left:6px;
+	background-image: url(images/bfunis/bfunis.png);
+	background-repeat: no-repeat;
+}
+.x-theme-blankPanel-bfunis .x-panel-bfr{
+	padding-right: 6px;
+	background-image: url(images/bfunis/bfunis.png);
+	background-position: right -69px;
+	background-repeat: no-repeat;
+}
+.x-theme-blankPanel-bfunis .x-panel-bfc{
+	background-image: url(images/bfunis/bfunis.png);
+	background-position: 0 -33px;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-bftopTitle
+ ***************************************************************************************/
+.x-theme-blankPanel-bftopTitle .x-panel-bfl{
+	height: 26px;
+	padding-left:37px;
+	background-image: url(images/bftopTitle/bftopTitle.png);
+	background-repeat: no-repeat;
+}
+.x-theme-blankPanel-bftopTitle .x-panel-bfr{
+	padding-right: 37px;
+	background-image: url(images/bftopTitle/bftopTitle.png);
+	background-position: right -32px;
+	background-repeat: no-repeat;
+}
+.x-theme-blankPanel-bftopTitle .x-panel-bfc{
+	background-image: url(images/bftopTitle/bftopTitle.png);
+	background-position: 0 -68px;
+	background-repeat:repeat-x;
+	white-space:nowrap;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-pear
+ ***************************************************************************************/
+.x-theme-blankPanel-pear .x-panel-tc-pear {
+	background-image: url(images/pear/top-bottom.png);
+}
+
+.x-theme-blankPanel-pear .x-panel-tl-pear {
+	background-image: url(images/pear/left-corners.png);
+	border-bottom: 1px solid #B0BDDD;
+}
+
+.x-theme-blankPanel-pear .x-panel-tr-pear {
+	background-image: url(images/pear/right-corners.png);
+}
+
+.x-theme-blankPanel-pear .x-panel-noHeader .x-panel-tc-pear {
+	height: 5px;
+}
+
+.x-theme-blankPanel-pear .x-panel-noHeader .x-panel-tc-pear {
+	background-image: url(images/pear/noheader.png);
+	background-position: 0 -63px;
+}
+
+.x-theme-blankPanel-pear .x-panel-noHeader .x-panel-tl-pear {
+	background-image: url(images/pear/noheader.png);
+	border-bottom: 0px solid #B0BDDD;
+}
+
+.x-theme-blankPanel-pear .x-panel-noHeader .x-panel-tr-pear {
+	background-image: url(images/pear/noheader.png);
+	background-position: right -28px;
+}
+
+
+.x-theme-blankPanel-pear .x-panel-bc-pear {
+	background-image: url(images/pear/top-bottom.png);
+}
+
+.x-theme-blankPanel-pear .x-panel-bl-pear {
+	background-image: url(images/pear/left-corners.png);
+}
+
+.x-theme-blankPanel-pear .x-panel-br-pear {
+	background-image: url(images/pear/right-corners.png);
+}
+
+.x-theme-blankPanel-pear .x-panel-mc-pear {
+	background-image: url(images/pear/middle.png);
+	background-position: 0 bottom;
+	background-color: #fff;
+	background-repeat: repeat-x;
+	padding-top: 0px;
+}
+
+.x-theme-blankPanel-pear .x-panel-ml-pear {
+	background-image: url(images/pear/left-right.png);
+	padding-left: 1px;
+	background-position: 0 bottom;
+	background-color: #fff;
+	background-repeat: repeat-x;
+}
+
+.x-theme-blankPanel-pear .x-panel-mr-pear {
+	background-image: url(images/pear/left-right.png);
+	background-position: right bottom;
+	background-color: #fff;
+	background-repeat: repeat-x;
+	padding-right:1px;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-plain
+ ***************************************************************************************/
+.x-theme-blankPanel-plain .x-panel-header-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+.x-theme-blankPanel-plain .x-panel-tc-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+
+.x-theme-blankPanel-plain .x-panel-noHeader .x-panel-tc-plain {
+	height: 5px;
+}
+
+.x-theme-blankPanel-plain .x-panel-tl-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+
+.x-theme-blankPanel-plain .x-panel-tr-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+
+.x-theme-blankPanel-plain .x-panel-bc-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+
+.x-theme-blankPanel-plain .x-panel-bl-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+
+.x-theme-blankPanel-plain .x-panel-br-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+
+.x-theme-blankPanel-plain .x-panel-mc-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+
+.x-theme-blankPanel-plain .x-panel-ml-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+
+.x-theme-blankPanel-plain .x-panel-mr-plain {
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+.x-theme-blankPanel-plain .x-panel-body-plain {
+	background-color: transparent;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-bluePlain
+ ***************************************************************************************/
+.x-theme-blankPanel-bluePlain .x-panel-tc-bluePlain {
+	background-image: url(images/bluePlain/top-bottom.png);
+}
+
+.x-theme-blankPanel-bluePlain .x-panel-noHeader .x-panel-tc-bluePlain {
+	height: 2px;
+}
+
+.x-theme-blankPanel-bluePlain .x-panel-tl-bluePlain {
+	background-image: url(images/bluePlain/left-corners.png);
+	border-bottom: 0px;
+}
+
+.x-theme-blankPanel-bluePlain .x-panel-tr-bluePlain {
+	background-image: url(images/bluePlain/right-corners.png);
+}
+
+.x-theme-blankPanel-bluePlain .x-panel-bc-bluePlain {
+	background-image: url(images/bluePlain/top-bottom.png);
+}
+
+.x-theme-blankPanel-bluePlain .x-panel-bl-bluePlain {
+	background-image: url(images/bluePlain/left-corners.png);
+}
+
+.x-theme-blankPanel-bluePlain .x-panel-br-bluePlain {
+	background-image: url(images/bluePlain/right-corners.png);
+}
+
+.x-theme-blankPanel-bluePlain .x-panel-mc-bluePlain {
+    background-image: none;
+    background-color: #D9E2EF;
+}
+
+.x-theme-blankPanel-bluePlain .x-panel-ml-bluePlain {
+	background-image: url(images/bluePlain/left-right.png);
+	padding-left: 2px;
+}
+
+.x-theme-blankPanel-bluePlain .x-panel-mr-bluePlain {
+	background-image: url(images/bluePlain/left-right.png);
+	padding-right:2px;
+}
+
+/***************************************************************************************
+ * x-theme-blankPanel-collapseUnis
+ ***************************************************************************************/
+.x-theme-blankPanel-collapseUnis .x-panel-header-collapseUnis{
+	background-image: none;
+	border-bottom: 2px solid #B9CCDD;
+}
+.x-theme-blankPanel-collapseUnis .x-panel-header-collapseUnis .x-panel-header-text {
+	font-weight: 700;
+}
+.x-theme-blankPanel-collapseUnis .x-panel-header-collapseUnis .x-tool-toggle {
+	background-image: url(images/collapseUnis/collapse.png);
+	background-position: 0 -16px;
+}
+.x-panel-collapsed .x-panel-header-collapseUnis .x-tool-toggle {
+	background-image: url(images/collapseUnis/collapse.png);
+	background-position: 0 0px;
+}

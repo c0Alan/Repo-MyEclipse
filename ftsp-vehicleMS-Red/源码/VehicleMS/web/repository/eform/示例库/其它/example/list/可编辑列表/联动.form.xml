@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e55974672adbd567cbcc9f06315e8b67</id>
+  <cfgTbl>T_Aty_Code</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.list.kbjlb.Ld.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/list/kbjlb/Ld.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>ffffff</background-color>
+      <Items>
+        <listArea sid="A7c26715b15ba764a93ba9e444a113d28">
+          <id>list</id>
+          <ds>rs1</ds>
+          <type>grid</type>
+          <isInitData>false</isInitData>
+          <width>90%</width>
+          <height>50%</height>
+          <loadMask>false</loadMask>
+          <isPageSplit>false</isPageSplit>
+          <pageCount>10</pageCount>
+          <frame>true</frame>
+          <style>padding-top:10px;padding-bottom:10px;</style>
+          <themeStyle>default</themeStyle>
+          <isEditor>true</isEditor>
+          <dynamicData><![CDATA[list_dynamicData]]></dynamicData>
+          <Items>
+            <columnNumeric sid="columnNumericBAB902E2960A403937FA18DA00541A07">
+              <id>colNumber</id>
+              <dataName>{rs1.N_Number}</dataName>
+              <title>数量</title>
+              <onChangeClient><![CDATA[colNumber_onChangeClient]]></onChangeClient>
+            </columnNumeric>
+            <columnNumeric sid="columnNumericAC66A6CBD61A2B0762EE5B44828D1D9C">
+              <id>colPrice</id>
+              <dataName>{rs1.N_Price}</dataName>
+              <title>单价</title>
+              <onChangeClient><![CDATA[colPrice_onChangeClient]]></onChangeClient>
+            </columnNumeric>
+            <column sid="A772d196668c880f091a8cfaeb4872038">
+              <id>colsum</id>
+              <dataName>{exp([rs1.N_Number]*[rs1.N_Price])}</dataName>
+              <title>合计</title>
+              <isOrderBy>true</isOrderBy>
+              <isSum>true</isSum>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

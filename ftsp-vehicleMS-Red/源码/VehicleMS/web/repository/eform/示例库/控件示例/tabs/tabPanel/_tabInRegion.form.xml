@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1dcda79544f6bcf84a86d539b2638a43</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tabs.tabPanel._tabInRegion.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tabs/tabPanel/_tabInRegion.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form590f5">
+      <id>form590f5</id>
+      <Items>
+        <centerRegion sid="5971103ed76ab8f15f46b64f01d002ac">
+          <id>centerRegionb7ece</id>
+          <Items>
+            <topbar sid="ee95c89de068f4d91da4fce41866b2da">
+              <id>topbar9B742F9B4D683A2E1DB2AD4F321A7783</id>
+              <Items>
+                <tbButton sid="6cd460ee2ecadc11e1ae773e3067e459">
+                  <id>tbAddItem</id>
+                  <text>添加页签</text>
+                  <onClickClient><![CDATA[tbAddItem_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <leftRegion sid="d42b42869e91ef39269fa33f04963901">
+              <id>leftRegion983FEB49C39329D00DEA637AA38EEC60</id>
+              <width>600</width>
+              <Items>
+                <tabArea sid="daddefb7f6fec49c3b94ee6eff61d14e">
+                  <id>tabArea1</id>
+                  <height>100%</height>
+                  <activeTab>1</activeTab>
+                  <Items>
+                    <tabItem sid="e1c1f4f451216ea18f47bcd095030c78">
+                      <id>tabItemA9089</id>
+                      <title>abc</title>
+                      <url>http://www.google.cn</url>
+                    </tabItem>
+                    <tabItem sid="984c7bbed96e74837e17e3932ed0b76f">
+                      <xtype>apRelForm</xtype>
+                      <id>sheetItemD9E05575FECF76543676B37220281353</id>
+                      <title>abcd</title>
+                      <Items>
+                        <buttonArea sid="e650f427fc41c5e95843d19dc213d26c">
+                          <id>buttonArea51E9E</id>
+                          <width>50%</width>
+                          <height>30</height>
+                          <Items>
+                            <button sid="7228337de6ebe4d77f9d07d56af31e98">
+                              <id>button097E2</id>
+                              <text>按钮1</text>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </tabItem>
+                    <tabItem sid="53fd4f231a7bd7072558b775b210563e">
+                      <id>tabItem5972F</id>
+                      <title>abcde</title>
+                      <Items>
+                        <buttonArea sid="c8906c147a9f951a48c8f5f20ebe73df">
+                          <id>buttonAreaE9FDD</id>
+                          <height>30</height>
+                          <Items>
+                            <button sid="c0be0e87ff04ef433fa6f5b5064e9e65">
+                              <id>button56992</id>
+                              <text>按钮2</text>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </tabItem>
+                  </Items>
+                </tabArea>
+              </Items>
+            </leftRegion>
+            <centerRegion sid="021db769c5ebca67bfbc7f71f907ff16">
+              <id>centerRegion0235557BD56E681CA1F61B8D726BE715</id>
+              <Items>
+                <operArea sid="7052327358178a43b2ecfad177765840">
+                  <id>operArea1</id>
+                </operArea>
+              </Items>
+            </centerRegion>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

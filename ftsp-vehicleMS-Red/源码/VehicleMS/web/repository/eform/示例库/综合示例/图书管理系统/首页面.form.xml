@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>E59B8F2F756AB1B27A08D4DD8099C8E2</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.book.SymLogic.java</javaLocation>
+  <jsLocation>artery/arteryClient/book/mainPage.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <importFile>"/artery/sample/book/book.css;"</importFile>
+      <Items>
+        <upRegion sid="A85879e626221c77776cc6aede5e62399">
+          <id>topArea</id>
+          <height>112</height>
+          <split>false</split>
+          <border>false</border>
+          <onShow><![CDATA[topArea_onShow]]></onShow>
+          <Items>
+            <htmlArea sid="A2e3d558408d5569afe7370fe5c0e3bf0">
+              <id>bannerExt</id>
+              <value>&lt;TABLE class=banner-container cellSpacing=0 cellPadding=0&gt;&lt;TBODY&gt;&lt;TR&gt;&lt;TD class=left-banner-ext&gt;&lt;/TD&gt;&lt;TD class=center-banner-ext&gt;&lt;/TD&gt;&lt;TD class=right-banner-ext&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;</value>
+              <height>100%</height>
+              <onShow><![CDATA[bannerExt_onShow]]></onShow>
+            </htmlArea>
+            <htmlArea sid="htmlAreaC8D6E63A5F08CF342EBC4971A646700F">
+              <id>bannerClassic</id>
+              <value>&lt;TABLE class=banner-container cellSpacing=0 cellPadding=0 &gt;
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD class=left-banner-classic&gt;&lt;/TD&gt;
+&lt;TD class=center-banner-classic&gt;&lt;/TD&gt;
+&lt;TD class=right-banner-classic&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;</value>
+              <height>100%</height>
+              <onShow><![CDATA[bannerClassic_onShow]]></onShow>
+            </htmlArea>
+            <htmlArea sid="htmlAreaFDB6FA14B8B3EBA0CB12EA83B6611198">
+              <id>bannerNice</id>
+              <value>&lt;TABLE class=banner-container cellSpacing=0 cellPadding=0 &gt;
+&lt;TBODY&gt;
+&lt;TR&gt;
+&lt;TD class=left-banner-nice&gt;&lt;/TD&gt;
+&lt;TD class=center-banner-nice&gt;&lt;/TD&gt;
+&lt;TD class=right-banner-nice&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;</value>
+              <height>100%</height>
+              <onShow><![CDATA[bannerNice_onShow]]></onShow>
+            </htmlArea>
+            <bottomBar sid="A99be89ff8e4b402e363c40ffd1d656b9">
+              <id>TopAreaNavigation</id>
+              <frame>true</frame>
+              <onShow><![CDATA[TopAreaNavigation_onShow]]></onShow>
+              <Items>
+                <formArea sid="Ad9c617b501aee64f35cbf7e3c5482a2c">
+                  <id>loginForm</id>
+                  <width>320</width>
+                  <labelWidth>50</labelWidth>
+                  <bodyStyle>padding:0;</bodyStyle>
+                  <onShow><![CDATA[loginForm_onShow]]></onShow>
+                  <labelBackColor>#dfe8f6</labelBackColor>
+                  <formTableBorder />
+                  <cellpadding>0</cellpadding>
+                  <readOnlyBorder />
+                  <Items>
+                    <faString sid="Ab40b8b0f8c818f4ca2968d4279e710f6">
+                      <id>j_username</id>
+                      <width>100</width>
+                      <height>0</height>
+                      <label>用户名</label>
+                    </faString>
+                    <faString sid="Abc5d4a20f3898183d626b7779827a2bd">
+                      <id>j_password</id>
+                      <editor>password</editor>
+                      <width>100</width>
+                      <height>0</height>
+                      <label>密码</label>
+                    </faString>
+                  </Items>
+                </formArea>
+                <tbButton sid="A188fc77f9e66232d69c9c0df664771f5">
+                  <id>loginBtn</id>
+                  <text>登录</text>
+                  <frame>true</frame>
+                  <onClickClient><![CDATA[loginBtn_onClickClient]]></onClickClient>
+                  <onShow><![CDATA[loginBtn_onShow]]></onShow>
+                </tbButton>
+                <tbText sid="Aadaa7cf9b8245c62b6a6906b7a67237b">
+                  <id>welcomArea</id>
+                  <text>&lt;span id="welcomSpan" style="padding-right:10px;"&gt;欢迎你：&lt;span id="welcomName"&gt;{ses.username}，今天是：{calendar(y.m.d,yyyy年MM月dd日)}&lt;/span&gt;&lt;/span&gt;</text>
+                  <onShow><![CDATA[welcomArea_onShow]]></onShow>
+                </tbText>
+                <tbFill sid="A98f72afbf839ac8854353976ba95e037">
+                  <id>A98f72afbf839ac8854353976ba95e037</id>
+                </tbFill>
+                <tbSpacer sid="A4074783667248eb3921f3b7a8f3b48e9">
+                  <id>A4074783667248eb3921f3b7a8f3b48e9</id>
+                </tbSpacer>
+                <tbButton sid="Af36011109bdcf3d879636d4b24ec47f5">
+                  <id>searchBtn</id>
+                  <text>查询图书</text>
+                  <icon>/artery/arteryImage/book/album.gif</icon>
+                  <enableToggle>true</enableToggle>
+                  <toggleGroup>btn</toggleGroup>
+                  <pressed>true</pressed>
+                  <onClickClient><![CDATA[searchBtn_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbSpacer sid="A23f9b43e3948a2b9f59d8b661791bdad">
+                  <id>A23f9b43e3948a2b9f59d8b661791bdad</id>
+                </tbSpacer>
+                <tbSpacer sid="A9ffeb8f0225f0be63fcaeaba887d17e5">
+                  <id>A9ffeb8f0225f0be63fcaeaba887d17e5</id>
+                </tbSpacer>
+                <tbButton sid="A8f507e078f9bb7c156bbf8b41f2c2b10">
+                  <id>userBtn</id>
+                  <text>个人借阅</text>
+                  <icon>/artery/arteryImage/book/user_suit.gif</icon>
+                  <enableToggle>true</enableToggle>
+                  <toggleGroup>btn</toggleGroup>
+                  <onClickClient><![CDATA[userBtn_onClickClient]]></onClickClient>
+                  <onShow><![CDATA[userBtn_onShow]]></onShow>
+                </tbButton>
+                <tbSpacer sid="A1a72517c558afe7320d9482b853467a0">
+                  <id>A1a72517c558afe7320d9482b853467a0</id>
+                </tbSpacer>
+                <tbButton sid="Af002ada564f252c9cf80ffcd17faf910">
+                  <id>bookBtn</id>
+                  <text>图书管理</text>
+                  <icon>/artery/arteryImage/book/docs.gif</icon>
+                  <enableToggle>true</enableToggle>
+                  <toggleGroup>btn</toggleGroup>
+                  <onClickClient><![CDATA[bookBtn_onClickClient]]></onClickClient>
+                  <onShow><![CDATA[bookBtn_onShow]]></onShow>
+                </tbButton>
+                <tbSpacer sid="A1edf9eb0633e868803be6632d9d9dbdc">
+                  <id>A1edf9eb0633e868803be6632d9d9dbdc</id>
+                </tbSpacer>
+                <tbButton sid="A75fe6e6ae039e43a8508079f3af36f3d">
+                  <id>libBtn</id>
+                  <text>图书室管理</text>
+                  <icon>/artery/arteryImage/book/accordian.gif</icon>
+                  <enableToggle>true</enableToggle>
+                  <toggleGroup>btn</toggleGroup>
+                  <onClickClient><![CDATA[libBtn_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbMenu sid="tbMenu675CD">
+                  <id>tbMenu675CD</id>
+                  <text>主题样式</text>
+                  <Items>
+                    <tbMenuItem sid="tbMenuItem1C379">
+                      <id>themeExt</id>
+                      <text>ext</text>
+                      <icon>/artery/arteryTheme/theme/default/images/flag.gif</icon>
+                      <onClickClient><![CDATA[themeExt_onClickClient]]></onClickClient>
+                    </tbMenuItem>
+                    <tbMenuItem sid="tbMenuItem620DB">
+                      <id>themeClassic</id>
+                      <text>classic</text>
+                      <icon>/artery/arteryTheme/theme/classic/images/flag.gif</icon>
+                      <onClickClient><![CDATA[themeClassic_onClickClient]]></onClickClient>
+                    </tbMenuItem>
+                    <tbMenuItem sid="tbMenuItem28CB1">
+                      <id>themeNice</id>
+                      <text>nice</text>
+                      <icon>/artery/arteryTheme/theme/nice/images/flag.gif</icon>
+                      <onClickClient><![CDATA[themeNice_onClickClient]]></onClickClient>
+                    </tbMenuItem>
+                  </Items>
+                </tbMenu>
+                <tbSysChange sid="tbSysChange68DB2FA6887A6E218ADF866B9D81B7A2">
+                  <id>tbSysChange68DB2FA6887A6E218ADF866B9D81B7A2</id>
+                  <showType>window</showType>
+                </tbSysChange>
+                <tbButton sid="A02158d79fbf3d0a04a96b779887275e9">
+                  <id>logoutBtn</id>
+                  <text>退出</text>
+                  <tooltip>退出</tooltip>
+                  <icon>/artery/arteryConsole/console/images/quit.gif</icon>
+                  <onlyShowIcon>true</onlyShowIcon>
+                  <onClickClient><![CDATA[logoutBtn_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </bottomBar>
+          </Items>
+        </upRegion>
+        <centerRegion sid="Aa0237d3d7a1383f0a4ca0b9c8bee85d4">
+          <id>Aa0237d3d7a1383f0a4ca0b9c8bee85d4</id>
+          <border>false</border>
+          <Items>
+            <tabArea sid="tabAreaAEC2D35B58294130A4777761FEC582B4">
+              <id>tabAreaAEC2D35B58294130A4777761FEC582B4</id>
+              <height>100%</height>
+              <Items>
+                <tabItem sid="tabItem72E1A7DE172EAECBB3CD42E4E2081A48">
+                  <id>cxtstab</id>
+                  <title>查询图书</title>
+                  <Items>
+                    <listArea sid="A47e5e588a456b9596bf54ca8af6f0256">
+                      <id>bookList</id>
+                      <ds>rs1</ds>
+                      <isInitData>true</isInitData>
+                      <height>100%</height>
+                      <pageCount>8</pageCount>
+                      <isStartNew>true</isStartNew>
+                      <isExpExcel>true</isExpExcel>
+                      <isExpPdf>true</isExpPdf>
+                      <Items>
+                        <columnIdentity sid="columnIdentityD713C6463A5A5CED2346C4CE83411E1A">
+                          <id>lstCID</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>C_ID</inheritfld>
+                          <dataName>{rs1.C_ID}</dataName>
+                          <title>图书编号</title>
+                          <isEditor>false</isEditor>
+                        </columnIdentity>
+                        <columnString sid="columnStringC8D1E8C316363CD5E29E7FC9066DC021">
+                          <id>lstCNAME</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>C_NAME</inheritfld>
+                          <dataName>{rs1.C_NAME}</dataName>
+                          <title>图书名称</title>
+                          <isEditor>false</isEditor>
+                          <isFilter>true</isFilter>
+                          <isOrderBy>true</isOrderBy>
+                        </columnString>
+                        <columnString sid="columnString2783775CF6032D8CC80379EAAB24F222">
+                          <id>lstCAUTH</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>C_AUTH</inheritfld>
+                          <dataName>{rs1.C_AUTH}</dataName>
+                          <title>作者</title>
+                          <isEditor>false</isEditor>
+                          <isFilter>true</isFilter>
+                        </columnString>
+                        <columnString sid="columnString47D4AFA007423F6289D2C978CFBB8DDE">
+                          <id>lstCPUBLISHER</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>C_PUBLISHER</inheritfld>
+                          <dataName>{rs1.C_PUBLISHER}</dataName>
+                          <title>出版社</title>
+                          <isEditor>false</isEditor>
+                          <isFilter>true</isFilter>
+                        </columnString>
+                        <columnDate sid="columnDateBC46E2748414A69E8B8B26C8BA9CB856">
+                          <id>lstDBOOKING</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>D_BOOKING</inheritfld>
+                          <dataName>{df([rs1.D_BOOKING],yyyy-MM-dd)}</dataName>
+                          <title>预定时间</title>
+                          <isEditor>false</isEditor>
+                          <isFilter>true</isFilter>
+                        </columnDate>
+                        <columnOrgan sid="columnOrganBE29EA2C172A73EF7DA4952075F76CD1">
+                          <id>bookingUser</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>N_BOOKINGUSERID</inheritfld>
+                          <dataName>{rs1.N_BOOKINGUSERID}</dataName>
+                          <title>预定人</title>
+                          <isFilter>true</isFilter>
+                        </columnOrgan>
+                        <columnDate sid="columnDate304A5E055507A32F6F3796FB2D57CB6F">
+                          <id>lstDLEND</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>D_LEND</inheritfld>
+                          <dataName>{df([rs1.D_LEND],yyyy-MM-dd)}</dataName>
+                          <title>借阅时间</title>
+                          <isEditor>false</isEditor>
+                          <isFilter>true</isFilter>
+                        </columnDate>
+                        <columnOrgan sid="columnOrganFF2ED8B26DA551031943822ED389CDCA">
+                          <id>lendUser</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>N_LENDUSERID</inheritfld>
+                          <dataName>{rs1.N_LENDUSERID}</dataName>
+                          <title>借阅人</title>
+                          <isFilter>true</isFilter>
+                        </columnOrgan>
+                        <columnCode sid="columnCodeF629765DF36DD008DF0A8F5BD7D7884E">
+                          <id>lstNTYPE</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>N_TYPE</inheritfld>
+                          <dataName>{rs1.N_TYPE}</dataName>
+                          <title>图书类型</title>
+                          <isEditor>false</isEditor>
+                          <codeType>-600</codeType>
+                          <isFilter>true</isFilter>
+                          <dynamicDataFilter><![CDATA[lstNTYPE_dynamicDataFilter]]></dynamicDataFilter>
+                        </columnCode>
+                        <column sid="A42eec2d54735a36d8f1550e786ccd9cf">
+                          <id>lstCLIBRARYID</id>
+                          <inherittbl>T_Eg_Book</inherittbl>
+                          <inheritfld>C_LIBRARYID</inheritfld>
+                          <dataName>{list(rs2,C_NAME,C_ID=[rs1.C_LIBRARYID],',')}</dataName>
+                          <title>所属图书室</title>
+                          <isFilter>true</isFilter>
+                          <isOrderBy>true</isOrderBy>
+                        </column>
+                        <column sid="Abe866a318fa6fde54e9fc64306e120b6">
+                          <id>bookListOperCol</id>
+                          <title>操作</title>
+                          <width>100</width>
+                          <Items>
+                            <colOperText sid="A685c884a2476f2627ef3896f3c6d02be">
+                              <id>ydOper</id>
+                              <text>预定</text>
+                              <onClickClient><![CDATA[ydOper_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[ydOper_onClickServer]]></onClickServer>
+                            </colOperText>
+                            <colOperText sid="A551105328fdf6cbdf7e4ff2bd006f891">
+                              <id>jyOper</id>
+                              <text>借阅</text>
+                              <linkto>{"formId":"A3A144CFB32A7900A868CEFB8A34CDC5","formName":"借阅用户列表","formType":"1","params":{"lendUserId":"{rs1.N_BOOKINGUSERID}","bookId":"{rs1.C_ID}"},"target":"_window","targetWidth":600,"targetHeight":300,"runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </colOperText>
+                            <colOperText sid="A659d6ee23ed48e5065a0cf3533197619">
+                              <id>ghOper</id>
+                              <text>归还</text>
+                              <onClickClient><![CDATA[ghOper_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[ghOper_onClickServer]]></onClickServer>
+                            </colOperText>
+                            <colOperText sid="Aa86b421f175a2a814e892149654cdb56">
+                              <id>Aa86b421f175a2a814e892149654cdb56</id>
+                              <text>借书历史</text>
+                              <linkto>{"formId":"977A82D382996E86455A8347B876873A","formName":"借书历史列表","formType":"1","params":{"bookId2":"{rs1.C_ID}"},"target":"_window","targetWidth":600,"targetHeight":350,"runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </colOperText>
+                          </Items>
+                        </column>
+                      </Items>
+                    </listArea>
+                  </Items>
+                </tabItem>
+                <tabItem sid="tabItem713B1708F059A1BA7670E0DA7E825121">
+                  <id>gytab</id>
+                  <title>公用</title>
+                </tabItem>
+              </Items>
+            </tabArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs3" type="sql">select C_LIBRARYID 
+from T_Eg_LibAdmin  
+where N_USERID={ses.userid}</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">select C_NAME,C_ID from T_Eg_Library where N_VALID=1</ds>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_ID , 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_PUBLISHER , 
+T_Eg_Book.D_BOOKING , 
+T_Eg_Book.N_BOOKINGUSERID , 
+T_Eg_Book.D_LEND , 
+T_Eg_Book.N_LENDUSERID , 
+T_Eg_Book.N_TYPE , 
+T_Eg_Book.C_LIBRARYID 
+FROM T_Eg_Book
+where N_VALID=1</ds>
+  </dslist>
+</form>
+

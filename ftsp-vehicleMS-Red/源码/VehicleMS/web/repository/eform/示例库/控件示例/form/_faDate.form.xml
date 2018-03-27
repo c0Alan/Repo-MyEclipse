@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9e74c9b77072612eb411b8333c006319</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.slk.kjsl.form._faDate.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_faDate.js</jsLocation>
+  <cssLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form946ff">
+      <id>form946ff</id>
+      <Items>
+        <formArea sid="dcd7aeb8a6c77803da09dc1a54b0febc">
+          <id>formArea4c398</id>
+          <labelWidth>150</labelWidth>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <faDate sid="500be8eeb075974f2405ecc1d5a6d30b">
+              <id>faDatedbe3d</id>
+              <label>日期</label>
+            </faDate>
+            <faDate sid="69c37ac935e9f73a076da35bb0f3dd4a">
+              <id>faDate53efb</id>
+              <showTime>true</showTime>
+              <label>时间</label>
+            </faDate>
+            <faDate sid="9beb0e9197630015d563f27a25c2b080">
+              <id>faDatea4eb5</id>
+              <value>2011-01-20</value>
+              <displayType>readOnly</displayType>
+              <label>默认值</label>
+            </faDate>
+            <faDate sid="a8ee1b9788a699f07291845fcde24273">
+              <id>faDate66777</id>
+              <required>true</required>
+              <label>必填</label>
+            </faDate>
+            <faDate sid="e5c52155ac7de29d66fd9479d6286cbf">
+              <id>faDate671e6</id>
+              <maxValue>2012-2-3</maxValue>
+              <minValue>2010-1-2</minValue>
+              <label>2010/1/2至2012/2/3</label>
+            </faDate>
+          </Items>
+        </formArea>
+        <bottomBar sid="9b31294814fecbbf8dcffc3b0c719c29">
+          <id>bottomBar29e53</id>
+          <Items>
+            <tbButton sid="54f0cda43364749c0eee81ceddf62197">
+              <id>tbSetValue</id>
+              <text>设置值</text>
+              <onClickClient><![CDATA[tbSetValue_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="6db6fe3e97d0790ec354d36cc5e98d3b">
+              <id>tbSetNullValue</id>
+              <text>设置空值</text>
+              <onClickClient><![CDATA[tbSetNullValue_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="a43b799dbde23f2592602879ee72bf96">
+              <id>tbHide</id>
+              <text>隐藏控件</text>
+              <onClickClient><![CDATA[tbHide_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="a65f75c345f52d15ec39c0af1fbce6ce">
+              <id>tbShow</id>
+              <text>显示控件</text>
+              <onClickClient><![CDATA[tbShow_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="a2189fe270af75d9c87fb75e7f9d07ec">
+              <id>tbDisabled</id>
+              <text>无效控件</text>
+              <onClickClient><![CDATA[tbDisabled_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="e8c7907134357f70e29947d47587f26d">
+              <id>tbEnable</id>
+              <text>有效控件</text>
+              <onClickClient><![CDATA[tbEnable_onClickClient]]></onClickClient>
+            </tbButton>
+          </Items>
+        </bottomBar>
+      </Items>
+    </form>
+  </Item>
+</form>
+

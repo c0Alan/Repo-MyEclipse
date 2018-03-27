@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>c4f873564fd6d82c0615591e0517860c</id>
+  <configTable />
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>com.thunisoft.vehicle.logic.Carapplyform.java</javaLocation>
+  <jsLocation>car/js/carapply.js</jsLocation>
+  <cssLocation />
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="form299ea">
+      <id>form299ea</id>
+      <width />
+      <height />
+      <Items>
+        <blankPanel sid="2232280554c5880f16b0acd76c7ab646">
+          <id>blankPanela60c2</id>
+          <Items>
+            <formArea sid="f5007a458898c309a44b5d9750e59b70">
+              <id>formAread46ab</id>
+              <ds>rs1</ds>
+              <width>370</width>
+              <height>400</height>
+              <colNum>1</colNum>
+              <labelWidth>66</labelWidth>
+              <cellpadding>4</cellpadding>
+              <Items>
+                <faCode sid="e839095e32a718de6a971bdaa64380b8">
+                  <id>faCodedb0f8</id>
+                  <submitName>cllx</submitName>
+                  <required>true</required>
+                  <codeType>-700</codeType>
+                  <onChangeClient><![CDATA[faCodedb0f8_onChangeClient]]></onChangeClient>
+                  <label>车辆类型</label>
+                </faCode>
+                <faCode sid="4145c98533744e0bb244c2ff2a67a9be">
+                  <id>sCl</id>
+                  <submitName>cl</submitName>
+                  <required>true</required>
+                  <dynamicData><![CDATA[sCl_dynamicData]]></dynamicData>
+                  <onChangeClient><![CDATA[sCl_onChangeClient]]></onChangeClient>
+                  <onChangeServer><![CDATA[sCl_onChangeServer]]></onChangeServer>
+                  <label>车辆</label>
+                </faCode>
+                <faString sid="7242156477f0eb81db59990d43a666de">
+                  <id>sPp</id>
+                  <submitName>pp</submitName>
+                  <required>true</required>
+                  <onChangeServer><![CDATA[sPp_onChangeServer]]></onChangeServer>
+                  <onShow><![CDATA[onShowReadOnly]]></onShow>
+                  <label>品牌</label>
+                </faString>
+                <faString sid="018151aa55c46df8395173a889460a61">
+                  <id>nZcs</id>
+                  <submitName>czs</submitName>
+                  <required>true</required>
+                  <onShow><![CDATA[onShowReadOnly]]></onShow>
+                  <label>车座数</label>
+                </faString>
+                <faOrgan sid="24054274822f210e342e2d0b23c9f6f8">
+                  <id>faOrgan1b449</id>
+                  <submitName>sqr</submitName>
+                  <required>true</required>
+                  <label>申请人</label>
+                </faOrgan>
+                <faBlankLayout sid="a92feb4855def0b8eaa578cc7adef02a">
+                  <id>faBlankLayout523c8</id>
+                  <colWidths>1%</colWidths>
+                  <displaySuffixPosition>follow</displaySuffixPosition>
+                  <label>用车时间</label>
+                  <contentCtStyle>margin:100px;</contentCtStyle>
+                  <Items>
+                    <faDate sid="8376cae39fac969bb9d4bd37539faaee">
+                      <id>faDate3b0a9</id>
+                      <submitName>kssj</submitName>
+                      <required>true</required>
+                      <showTime>true</showTime>
+                      <onChangeClient><![CDATA[faDate3b0a9_onChangeClient]]></onChangeClient>
+                      <onValidClient><![CDATA[faDate3b0a9_onValidClient]]></onValidClient>
+                      <colSpan>0.5</colSpan>
+                      <label>用车开始时间</label>
+                      <hideLabel>true</hideLabel>
+                      <suffixLabel>至</suffixLabel>
+                    </faDate>
+                    <faDate sid="23618f9e463d3e3fc706b99e254f7d61">
+                      <id>faDate5dde6</id>
+                      <submitName>jssj</submitName>
+                      <required>true</required>
+                      <showTime>true</showTime>
+                      <timeType>2</timeType>
+                      <onValidClient><![CDATA[faDate5dde6_onValidClient]]></onValidClient>
+                      <colSpan />
+                      <label>用车结束时间</label>
+                      <hideLabel>true</hideLabel>
+                    </faDate>
+                  </Items>
+                </faBlankLayout>
+                <faString sid="0646a8e5ae6c7d18fe4735994a0fd534">
+                  <id>faString622ef</id>
+                  <submitName>mmd</submitName>
+                  <required>true</required>
+                  <label>目的地</label>
+                </faString>
+                <faString sid="89483980f6ced779aae1a38afa11a6ac">
+                  <id>faString34711</id>
+                  <submitName>sy</submitName>
+                  <required>true</required>
+                  <editor>textarea</editor>
+                  <label>事由</label>
+                </faString>
+                <faString sid="a35a275d5fa3f6f39a076071e4b9ce82">
+                  <id>faString74ae8</id>
+                  <submitName>bz</submitName>
+                  <editor>textarea</editor>
+                  <label>备注</label>
+                </faString>
+                <buttonArea sid="c6ab1c21ca9726e7e2eca8373cf5dabc">
+                  <id>buttonArea3840b</id>
+                  <width />
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="818f4f9a782e2588c3fb00fce65823a2">
+                      <id>button48977</id>
+                      <width />
+                      <text>返回</text>
+                      <onClickClient><![CDATA[button48977_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="7d44103474fbbacab84ab806b948d65f">
+                      <id>buttonfde75</id>
+                      <width />
+                      <text>申请</text>
+                      <onClickClient><![CDATA[buttonfde75_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[buttonfde75_onClickServer]]></onClickServer>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+    <ds dsName="dataSource" name="rs2" type="logic">getVType</ds>
+  </dslist>
+</form>
+

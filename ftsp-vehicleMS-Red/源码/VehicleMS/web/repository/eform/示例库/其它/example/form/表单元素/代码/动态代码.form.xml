@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d2e06827b2938f6dc0c28b97dd6087e2</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.form.bdys.dm.Dtdm.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/form/bdys/dm/Dtdm.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>Ac5add9e63e9ae26b676956dd09572c8d</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <formArea sid="A8d7255ed9a3d8d0f3b6b6d2a5313c947">
+          <id>formArea</id>
+          <width>90%</width>
+          <border>true</border>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <cellpadding>5</cellpadding>
+          <borderStyle>dotted</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <faCode sid="A7e7932dd504d5f4ea7f5e60d194d5c66">
+              <id>faCode_1</id>
+              <height>0</height>
+              <dynamicData><![CDATA[faCode_1_dynamicData]]></dynamicData>
+              <ajaxLoad>false</ajaxLoad>
+              <enablePinyin>false</enablePinyin>
+              <editable>true</editable>
+              <label extend="true">测试代码</label>
+            </faCode>
+            <faCode sid="Ae5604592cf2e29a03eb5823fb012ef25">
+              <id>faCode_2</id>
+              <height>0</height>
+              <dynamicData><![CDATA[faCode_2_dynamicData]]></dynamicData>
+              <ajaxLoad>false</ajaxLoad>
+              <editable>true</editable>
+              <value>3</value>
+              <label extend="true">sql</label>
+            </faCode>
+          </Items>
+        </formArea>
+        <formArea sid="formArea2A10D72930EE27757617C62306F8A7A3">
+          <id>formArea2A10D72930EE27757617C62306F8A7A3</id>
+          <width>90%</width>
+          <colNum>3</colNum>
+          <style>padding-top:30px;</style>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <cellpadding>5</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <topbar sid="topbarE0205CC8E3014E0B0A9CC98B66CF7D69">
+              <id>topbarE0205CC8E3014E0B0A9CC98B66CF7D69</id>
+              <Items>
+                <tbButton sid="tbButtonFFA85A25B5B8BA62856F2F00312AE12E">
+                  <id>tbButtonFFA85A25B5B8BA62856F2F00312AE12E</id>
+                  <text>人员多选</text>
+                </tbButton>
+              </Items>
+            </topbar>
+            <faCode sid="faCode812C55CAFAFC702E0D704D8DD3007A0E">
+              <id>corpFld</id>
+              <height>0</height>
+              <dynamicData><![CDATA[corpFld_dynamicData]]></dynamicData>
+              <ajaxLoad>false</ajaxLoad>
+              <onChangeClient><![CDATA[corpFld_onChangeClient]]></onChangeClient>
+              <label extend="true">单位</label>
+            </faCode>
+            <faCode sid="faCode4CC2CD6991DEBA3610AA6E3F412F23F4">
+              <id>deptFld</id>
+              <height>0</height>
+              <dynamicData><![CDATA[deptFld_dynamicData]]></dynamicData>
+              <onChangeClient><![CDATA[deptFld_onChangeClient]]></onChangeClient>
+              <label extend="true">部门</label>
+            </faCode>
+            <faCode sid="faCode7FD58CCA28E9758784A0C7B287A82B7B">
+              <id>userFld</id>
+              <height>0</height>
+              <dynamicData><![CDATA[userFld_dynamicData]]></dynamicData>
+              <label extend="true">人员</label>
+            </faCode>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

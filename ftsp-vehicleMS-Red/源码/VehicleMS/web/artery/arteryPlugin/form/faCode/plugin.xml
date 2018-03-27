@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="faCode" cn="代码类型" menu="输入控件" nameprop="label" icon="faCode.gif"
+	iconNew="faCodeNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>代码控件</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="formArea" />
+		<Parent type="faFieldSet" />
+		<Parent type="faBlankLayout" />
+	</Parents>
+	<Children />
+	<Class more="editor">com.thunisoft.artery.plugin.form.FaCode
+	</Class>
+	<JsFile>
+		<File>plugin/Select.js</File>
+		<File>faCode.js</File>
+        <File>faCodeTree.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="提交名称" type="1" name="submitName"
+			tips="用于设置form提交时本控件的提交名称，也就是input标签的name属性">
+			<Value />
+		</Property>
+				<Property cn="控件提示" type="1" name="comment" tips="用于产生控件的提示信息">
+			<Value />
+			<Description><![CDATA[
+			用于产生控件的提示信息,如果控件指定了继承表，继承字段，此项默认会显示数据字典中相应字段的描述信息。
+			如果填写此属性，则会覆盖数据字典中的描述信息。
+			]]></Description>
+		</Property>
+		<Property cn="是否必填" type="11" name="required" tips="是否是必填项">
+			<Value>false</Value>
+		</Property>
+		<Property cn="display必填标识" type="11" name="displayRequiredStyle" tips="当运行时类型为display时是否应用label的必填样式，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="只读时是否验证" type="11" name="validOnReadOnly" export="true" tips="当设置为true时，调用表单的submit方法时 会对展现类型（displayType）属性为ReadOnly的控件进行验证，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="无效时是否提交" type="3" name="submitDisabled" ct="[inherit,true,false]"
+			 tips="设置表单提交的时候，当displayType属性为disabled时是否提交，默认为inherit">
+			<Value>inherit</Value>
+		</Property>
+        <Property cn="继承key" type="1" name="inheritkey"
+            tips="继承的数据字典的key，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+            <Value />
+        </Property>
+		<Property cn="继承表" type="1" name="inherittbl"
+			tips="继承的数据字典的表名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="继承字段" type="1" name="inheritfld"
+			tips="继承的数据字典的字段名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="dataName" tips="对应着从数据源中取数据">
+			<Value />
+		</Property>
+		<Property cn="控件类型" type="3" name="editor" ct="[sSelect,sRadio,mSelect,mCheckbox,checkbox,sTree,mTree]"
+			tips="选择代码控件的子类型，可选sSelect，sRadio，mSelect，mCheckbox，checkbox，sTree，mTree">
+			<Value>sSelect</Value>
+			<Description><![CDATA[
+<p>选择代码控件的子类型，可选sSelect，sRadio，mSelect，mCheckbox，checkbox，sTree，mTree。</p>
+<p>选择不同的子类型，其用法也一些差异：</p>
+<style type="text/css">
+ .borderTd{border:1px solid gray;}
+  </style>
+<table border="0" style="border-collapse:collapse;">
+	<tr><td class="borderTd">子类型</td><td class="borderTd">预览图</td><td class="borderTd">数据来源</td><td class="borderTd">说明</td><tr>
+	<tr>
+		<td class="borderTd">sSelect</td>
+		<td class="borderTd"><img src='../../resources/images/common/form/facode/facode_sSelect.png'></td>
+		<td class="borderTd">在“代码类型”属性中设置单值代码类型，或者在“动态数据”响应方法中以Map或List的结构返回数据。其中，前者优先级更高，会覆盖后者。</td>
+		<td class="borderTd">以下拉列表形式呈现的单选控件</td>
+	<tr>
+	<tr>
+		<td class="borderTd">sRadio</td>
+		<td class="borderTd"><img src='../../resources/images/common/form/facode/facode_sRadio.png'></td>
+		<td class="borderTd">同上</td>
+		<td class="borderTd">以radio形式呈现的单选控件</td>
+	<tr>
+	<tr>
+		<td class="borderTd">mSelect</td>
+		<td class="borderTd"><img src='../../resources/images/common/form/facode/facode_mSelect.png'></td>
+		<td class="borderTd">同上</td>
+		<td class="borderTd">以下拉列表形式呈现的多选控件</td>
+	<tr>
+	<tr>
+		<td class="borderTd">mCheckbox</td>
+		<td class="borderTd"><img src='../../resources/images/common/form/facode/facode_mCheckbox.png'></td>
+		<td class="borderTd">同上</td>
+		<td class="borderTd">以checkbox形式呈现的多选控件</td>
+	<tr>
+	<tr>
+		<td class="borderTd">sTree</td>
+		<td class="borderTd"><img src='../../resources/images/common/form/facode/facode_sTree.png'></td>
+		<td class="borderTd">同上</td>
+		<td class="borderTd">以树的形式呈现的单选控件。以单值代码为数据来源时，若配置了分级信息，则根据分级信息的层级关系以多级树的形式展现；使用动态数据，则仅以一级树的形式展现。
+		关于单值代码分级信息的使用请参考<a href="http://172.16.1.3/bbs/viewthread.php?tid=43036&extra=page%3D1" target="_blank">【每日一贴】如何使用Artery单值代码的分级信息属性</a>。
+		</td>
+	<tr>
+	<tr>
+		<td class="borderTd">mTree</td>
+		<td class="borderTd"><img src='../../resources/images/common/form/facode/facode_mTree.png'></td>
+		<td class="borderTd">同上</td>
+		<td class="borderTd">以树的形式呈现的多选控件。以单值代码为数据来源时，若配置了分级信息，则根据分级信息的层级关系以多级树的形式展现；使用动态数据，则仅以一级树的形式展现。</td>
+	<tr>
+	<tr>
+		<td class="borderTd">checkbox</td>
+		<td class="borderTd"><img src='../../resources/images/common/form/facode/facode_checkbox.png'></td>
+		<td class="borderTd">无需添加数据来源，选中则值为1，否则为0或空字符串（初次加载时，默认为空字符串）</td>
+		<td class="borderTd">以没有文本的checkbox形式呈现的控件。checkbox后面的文本需要手动添加，Artery3.0.15之前，需要通过在一个“空布局”控件里放置“代码控件”和“超文本”控件来实现。
+			Artery3.0.15或更高级的版本，可以通过设置代码控件的“后缀”相关属性来实现。
+		</td>
+	<tr>
+</table>
+
+      ]]></Description>
+	</Property>
+	<Property cn="选择类型" type="3" name="selType" ct="[1,2]" tips="1为只能选择叶子节点，2为可选择全部，对于sTree和mTree有效">
+    	<Value>1</Value>
+        <Description><![CDATA[
+        <p>1为只能选择叶子节点，2为可选择全部，对于sTree和mTree有效。以sTree控件类型为例：</p>
+        <table>
+        	<tr><td>选择类型为1<td><td>选择类型为2<td><tr>
+        	<tr>
+        		<td><img src='../../resources/images/common/form/facode/facode_sTree.png'><td>
+        		<td><img src='../../resources/images/common/form/facode/facode_sTree_selType2.png'><td>
+        	<tr>
+        </table>
+        ]]></Description>
+    </Property>
+	<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+		<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value />
+    </Property>
+    <Property cn="弹出层最小宽度" type="2" name="minLayerWidth" group="弹出设置" export="true"
+			tips="设置弹出层的最小宽度，可输入数值，默认为150。">
+			<Value>150</Value>
+			<Description><![CDATA[
+				<p>设置弹出层的最小宽度，可输入数值，默认为150。</p>
+			]]></Description>
+	</Property>
+    <Property cn="弹出层最小高度" type="1" name="minLayerHeight" group="弹出设置"  mask="^\d{1,}%{0,1}$" et="正确输入为：n" tips="当控件类型为mTree或sTree时，设置弹出层最小高度，不设置的话默认为0。可输入数值">
+      <Value />
+      <Description><![CDATA[
+      <p> 当控件类型为mTree或sTree时，设置弹出层最小高度，不设置的话默认为0。可输入数值。</p>
+      <p>弹出层的高度与弹出层中的树展开的高度一致的，但如果设置了弹出层最小高度，则弹出层高度不能小于此高度。如：</p>
+      <table>
+      	<tr><td>弹出层最小高度不设置或者设为0</td><td>弹出层最小高度设置为150</td></tr>
+      	<tr>
+      		<td><img src='../../resources/images/common/form/facode/facode_sTree_minLayerHeight0.png'></td>
+      		<td><img src='../../resources/images/common/form/facode/facode_sTree_minLayerHeight150.png'></td>
+      	</tr>
+      </table>
+      ]]></Description>
+    </Property>
+    <Property cn="弹出层最大高度" type="1" name="maxLayerHeight" group="弹出设置"  mask="^\d{1,}%{0,1}$" et="正确输入为：n" tips="当控件类型为mTree或sTree时，设置弹出层最大高度，若控件内数据项过多，则出现纵向滚动条，不设置的话默认为300。可输入数值">
+      <Value />
+      <Description><![CDATA[
+      <p> 当控件类型为mTree或sTree时，设置弹出层最大高度，若控件内数据项过多，则出现纵向滚动条，不设置的话默认为300。可输入数值。</p>
+      <p>弹出层的高度与弹出层中的树展开的高度一致的，但如果设置了弹出层最大高度，则弹出层高度不能大于于此高度，会出现纵向滚动条。如：</p>
+      <table>
+      	<tr>
+      		<td>弹出层最大高度不设置则默认为300，树的展开高度小于300，则弹出层高度与树 的展开高度一致</td>’
+      		<td>弹出层最大高度设置为150，树的展开高度大于150，则弹出层高度取弹出层最大高度，出现纵向滚动条</td>
+      	</tr>
+      	<tr>
+      		<td><img src='../../resources/images/common/form/facode/facode_sTree_maxLayerHeight300.png'></td>
+      		<td><img src='../../resources/images/common/form/facode/facode_sTree_maxLayerHeight150.png'></td>
+      	</tr>
+      </table>
+      ]]></Description>
+    </Property>
+    <Property cn="展开首节点" type="11" name="isExpandNode">
+      <Value>false</Value>
+      <Description>选择true，数控件中的第一个节点将在首次展现时展开</Description>
+    </Property>
+    <Property cn="单击节点时选中" type="11" name="singleClickCheck" export="true" tips="当为true时，单击树上的节点则选中，为false时，则需要双击才会选中，默认为false">
+        <Value>false</Value>
+        <Conditions>
+            <Condition>此属性，仅当控件类型是sTree或mTree时有效。</Condition>
+        </Conditions>
+    </Property>
+    <Property cn="双击节点时确定" type="11" name="dblClickReturn" export="true" tips="当为true时，双击树上的节点则返回，为false时，则需要点击确定按钮才会返回，默认为false">
+        <Value>false</Value>
+        <Conditions>
+            <Condition>当控件类型是sTree时支持此属性。</Condition>
+        </Conditions>
+    </Property>
+    <Property cn="是否显示清空按钮" type="11" name="showClear" export="true"
+		tips="设置是否显示控件的清空按钮，点击后可清空所选项，默认为true...">
+		<Value>true</Value>
+		<Description><![CDATA[
+      <p>设置是否显示控件的清空按钮，点击后可清空所选项，默认为true，效果如下图</p>
+      <table>
+      	<tr>
+      		<td>显示清空按钮</td>
+      		<td>不显示情况按钮</td>
+      	</tr>
+      	<tr>
+      		<td><img src='../../resources/images/common/form/facode/facode_clearbtn1.png'></td>
+      		<td><img src='../../resources/images/common/form/facode/facode_clearbtn2.png'></td>
+      	</tr>
+      </table>
+      ]]></Description>
+	</Property>
+    <Property cn="代码类型" type="17" name="codeType" ct="normalcode" export="true" tips="对应单值代码维护中的代码类型">
+      <Value />
+      <Description><![CDATA[
+      对应系统代码维护中的代码类型。设置代码类型表示使用该代码类型下的所有有效代码项作为代码控件中供选择的数据项。其中，代码名称为数据项的文本，代码标识为数据项的值。
+      ]]></Description>
+    </Property>
+    <Property cn="动态数据" type="14" name="dynamicData" tips="动态加载代码，可书写服务器端脚本，生成Map或者list＋Object[]的形式">
+      <Value />
+      <Description><![CDATA[
+动态加载代码，可书写服务器端脚本，生成Map或者list＋Object[]的形式。
+<p>若使用Map的形式，则key为代码值，value为代码的名称，示例代码如下：</p>
+<pre>
+public Map code1_dynamicData(Item item) {
+    Map codeMap = new HashMap();
+    codeMap.put("1", "代码1");
+    codeMap.put("2", "代码2");
+    codeMap.put("3", "代码3");
+    return codeMap;
+}
+</pre>
+<p>若使用list＋Object[]的形式，则数组中第一列为代码的名称，第二列为代码值，示例代码如下：</p>
+<pre>
+public List code2_dynamicData(Item item) {
+    List codeList = new ArrayList();
+    codeList.add(new Object[]{"代码1","1"});
+    codeList.add(new Object[]{"代码2","2"});
+    codeList.add(new Object[]{"代码3","3"});
+    return codeList;
+}
+</pre>
+      ]]></Description>
+      <Conditions>
+      	<Condition>使用list＋Object[]的形式，优势在于控件的数据项会按照加入list的顺序显示</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="异步加载" type="11" name="ajaxLoad" export="true" tips="当为false时，加载页面时会同时加载代码数据，否则再点击下拉框图标时再加载">
+      <Value>true</Value>
+    </Property>
+    <Property cn="是否启用拼音控件" type="11" name="enablePinyin" tips="是否启用拼音查询 ">
+      <Value>true</Value>
+      <Description><![CDATA[
+      <p>是否启用拼音查询。</p>
+      <p>当控件子类型为sSelect或mSelect时，启用拼音查询，就可以通过输入拼音过滤下拉列表中的数据项，如下图：</p>
+      <img src='../../resources/images/common/form/facode/facode_sSelect_pinyin.png'>
+      <p>当控件子类型为sTree或mTree时，启用拼音查询，就可以在弹出层的底部工具栏输入拼音，点击“查找”按钮查找符合条件的数据项，如下图：</p>
+      <img src='../../resources/images/common/form/facode/facode_sTree_pinyin.png'>
+      ]]></Description>
+      <Conditions>
+      	<Condition>需要在代码维护中设置单值代码项的拼音简拼</Condition>
+      	<Condition>当控件子类型为sSelect或mSelect时，必须要设置控件可输入</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="是否选中" type="11" name="isChecked" tips="当控件类型为checkbox时，设置是否选中 注意：此属性只有在控件类型为checkbox时有效">
+      <Value>false</Value>
+    </Property>
+    <Property cn="布局列数" type="2" name="colNum" inherit="false" tips="当控件类型为sRadio，mCheckbox时，控制数据项分几列排布">
+      <Value>3</Value>
+      <Description><![CDATA[
+当控件类型为sRadio，mCheckbox时，控制数据项分几列排布，布局效果如图：
+<table width=1><tr><td><img src='../../resources/images/common/form/facode/facode_colNum.jpg'></td></tr></table>
+      ]]></Description>
+    </Property>
+    <Property cn="布局列等宽" type="11" name="equalColWidth" inherit="false" tips="当控件类型为sRadio，mCheckbox时，控制数据项各列等宽">
+      <Value>false</Value>
+      <Description><![CDATA[
+当控件类型为sRadio，mCheckbox时，控制数据项各列等宽，布局效果如图：
+<table width=1><tr><td>false</td><td>true</td></tr><tr><td><img src='../../resources/images/common/form/facode/facode_equalColWidth_false.jpg'></td><td><img src='../../resources/images/common/form/facode/facode_equalColWidth_true.jpg'></td></tr></table>
+      ]]></Description>
+    </Property>
+    <Property cn="是否可输入" type="11" name="editable" export="true" tips="当此属性为false时，选择框不能输入，只能进行选择操作，反之既能输入也能选择">
+      <Value>false</Value>
+    </Property>
+    <Property cn="输入必须为可选项" type="11" name="freeData" tips="当此属性为false时，可以输入任意内容，否则智能出入可选范围内的内容">
+      <Value>false</Value>
+      <Conditions>
+      	<Condition>仅当控件类型为sSelect,sTree,mTree时有效</Condition>
+      </Conditions>
+    </Property>
+	<Property cn="输入最大长度" type="1" name="maxLength" mask="^\d{1,}$" tips="限制控件可输入的最大长度，仅当“是否可输入（editable）”属性为true时有效">
+		<Value />
+	</Property>
+    <Property cn="每次输入加载" type="11" name="editReload" export="true" tips="当此属性为true时，每次输入内容时都会重新加载...">
+      <Value>false</Value>
+      <Description><![CDATA[
+                当此属性为true时，每次输入内容时都会重新加载。
+      ]]></Description>
+      <Conditions>
+      	<Condition>仅当控件类型为sSelect或mSelect且可输入时起作用</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="显示值" type="1" name="valueText" export="true" tips="手动设置代码的显示名称，如果不设置，则系统自动根据控件的“值”进行翻译">
+      <Value />
+    </Property>
+    <Property cn="值" type="1" name="value" inherit="false" export="true" tips="设置本控件的值...">
+      <Value />
+      <Description><![CDATA[
+			<p>设置本控件的值</p>
+			<table style='border-collapse:collapse;' border='1px' borderColor='gray'><tr><td style='text-align:center;font-weight:700' colspan='2'>注意数据源属性和值属性的优先级，具体如下</td></tr><tr><td style='font-weight:700'>displayType为insert时：</td><td>数据源设置无效，控件的默认值为值属性</td></tr><tr><td style='font-weight:700'>displayType为update时：</td><td>必填项：如果设置了数据源，以且数据源不为空；否则以值属性为准<br>非必填项：如果设置了数据源，以数据源的设置为准；如果没有设置数据源，以值属性为准</td></tr><tr><td style='font-weight:700'>displayType为display时：</td><td>如果设置了数据源，数据源的设置为准<br>如果没有设置数据源，以值属性为准</td></tr></table>
+		]]></Description>
+      <Conditions>
+      	<Condition>当控件类型为checkbox时，只有值属性设置1或者true时，会选中</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="显示值提示" type="11" name="showValueTip"  export="true" tips="鼠标移动到控件上，显示控件的值...">
+      <Value>false</Value>
+    </Property>
+    <Property cn="输入提示" type="1" name="emptyText" export="true" tips="设置本控件的输入提示值，相当于ext的emptyText属性">
+      <Value />
+      <Description><![CDATA[
+	<p>设置本控件的输入提示值，相当于ext的emptyText属性，效果如图：</p>
+	<img src='../../resources/images/common/form/facode/facode_emptyText.png'>
+      ]]></Description>
+    </Property>
+    <Property cn="选择框样式" type="1" name="valueStyle" export="true" tips="设置选择框的样式">
+      <Value />
+    </Property>
+    <Property cn="选择框样式(只读)" type="1" name="valueStyleRead" export="true" tips="设置选择框(只读)的样式">
+      <Value />
+    </Property>
+    <Property cn="验证提示方式" type="3" name="validType" ct="[cooltip,title]" tips="设置验证的提示方式，默认为tip提示的方式，选择title则以html的title样式展现">
+      <Value>cooltip</Value>
+    </Property>
+    <Property cn="展现类型" type="3" name="displayType" ct="[inherit,editable,readOnly,display,disabled]" export="true" tips="设置表单的展现类型，此属性默认为inherit，即继承自表单表单区域的展现时类型...">
+      <Value>inherit</Value>
+    </Property>
+    <Property cn="是否隐藏" type="11" name="hidden" export="true"  tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="隐藏方式" type="3" name="hideMode" export="true" ct="[display,visibility]" tips="设置组件的隐藏方式，相当于css的样式，可选display和visibility">
+      <Value>display</Value>
+    </Property>
+    <Property cn="客户端" type="15" group="值改变前脚本" name="onBeforeChangeClient" tips="当本组件的值改变前触发的事件，返回false则不改变值，客户端脚本">
+      <Value />
+      <Description><![CDATA[
+	<p>当本组件的值改变前触发的事件，返回false则不改变值，客户端脚本。开发人员可以在值改变前在此方法中做一些操作来决定是否触发值改变事件(onChange)，代码示例如下：</p>
+	<pre>
+/**
+ * 值改变前脚本(faCodeefea1) 如果返回false则不改变控件的值
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  oldValue 控件改变前的旧值
+ * @param  newValue 控件要改变的新值
+ * @param  newValueText 控件要改变的新值对应的文本
+ */
+function faCodeefea1_onBeforeChangeClient (rc, oldValue, newValue, newValueText){
+	var success;
+	rc.sync = false;	// 同步执行调用
+	rc.put("newValue", newValue);
+	rc.send(function(result){
+		success = result.success;
+	});
+	//如果服务器端方法result.success为true，则弹出提示；否则，不改变值
+	if(success == true){
+		//弹出确认对话框，用户选择“是”则改变值，否则，不做改变
+		if(window.confirm("确定选择"+newValueText+"吗？")){
+		    return true;
+		}else{
+		    return false;
+		}
+	}else{
+		return false;
+	}
+}
+	</pre>
+      ]]></Description>
+    </Property>
+    <Property cn="服务器端" type="14" group="值改变前脚本" name="onBeforeChangeServer" tips="当本组件的值改变前触发的事件，服务器端脚本...">
+      <Value />
+      <Description><![CDATA[
+	<p>当本组件的值改变前触发的事件，服务器端脚本。开发人员在值改变前客户端脚本中通过rc.send()调用此服务器端方法，可返回数据给客户端，开发人员可以在客户端方法中做一些操作来决定是否触发值改变事件(onChange)，代码示例如下：</p>
+	<pre>
+/**
+ * 值改变前脚本
+ * 
+ * @param item
+ *           控件对象
+ */
+public Object faCodeefea1_onBeforeChangeServer(Item item) {
+	String newValue = ParamUtil.getString("newValue");
+	boolean change = canItChange(newValue);
+	Map<String, Object> result = new HashMap<String, Object>();
+	//判断是否可以改变
+	if(change){
+		result.put("success", Boolean.TRUE);
+	}
+	return result;
+}
+	</pre>
+      ]]></Description>
+    </Property>
+    <Property cn="客户端" type="15" group="值改变时脚本" name="onChangeClient" tips="当本组件的值改变时触发的事件，客户端脚本">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="值改变时脚本" name="onChangeServer" tips="当本组件的值改变时触发的事件，服务器端脚本">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" group="验证脚本" name="onValidClient" tips="表单控件的验证事件(客户端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="验证脚本" name="onValidServer" tips="表单控件的验证事件(服务器端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="过滤规则" type="14" name="onFilter" tips="加载代码数据项时进行的过滤规则，输入服务器端脚本，当返回true时过滤，即不加载当前代码...">
+      <Value />
+      <Description><![CDATA[
+	<p>加载代码数据项时进行的过滤规则，输入服务器端脚本，当返回true时过滤，即不加载当前代码，代码示例如下：</p>
+	<pre>
+/**
+ * 过滤规则 此方法用于回调
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            代码的节点对象
+ * @return 当返回值为true时，则表明本node节点会过滤掉
+ */
+public boolean faCodeefea1_onFilter(Item item, INormalCode node) {
+	//所有文本内容以“私有”开头的代码都会被过滤
+	if(node.getName().startsWith("私有")){
+		return true;
+	}else{
+		return false;
+	}
+}
+	</pre>
+      ]]></Description>
+    </Property>
+    <Property cn="选中规则" type="14" name="onCheckedRule" tips="返回true则选中checkbox,只有当类型为checkbox时起作用...">
+      <Value />
+            <Description><![CDATA[
+	<p>返回true则选中checkbox,只有当类型为checkbox时起作用，代码示例如下：</p>
+	<pre>
+/**
+ * 选中规则  此方法用于回调，仅当控件为checkbox时调用
+ * 
+ * @param item
+ *            控件对象
+ * @return 当返回值为true时，则控件会被选中
+ */
+public boolean faCode56b24_onCheckedRule(Item item) {
+	String defaultCheckStatus = ParamUtil.getString("defaultCheckStatus");
+	//当request中参数defaultCheckStatus值为checked时，设置控件选中
+	if(defaultCheckStatus.equals("checked")){
+		return true;
+	}else{
+		return false;
+	}
+}
+	</pre>
+      ]]></Description>
+    </Property>
+    <Property cn="节点规则" type="14" name="onNodeRule" tips="通过此事件，可以在生成代码树时，设置树上节点的属性，对于sTree和mTree有效...">
+      <Value />
+      <Description><![CDATA[
+	<p>通过此事件，可以在生成代码树时，设置树上节点的属性，对于sTree和mTree有效，代码示例如下：</p>
+	<pre>
+/**
+ * 节点规则， 此方法用于回调
+ * 
+ * @param node
+ *            代码树节点对象
+ * @param item
+ *            控件对象
+ * @param code
+ *            组织机构对象
+ */
+public void faCodecf79d_onNodeRule(TreeNode node, Item item, INormalCode code) {
+	if(code.getName().equals("北京"))
+		node.setIcon("/artery/arteryImage/symbol/star_red.gif");
+}
+	</pre>
+	<p>效果如下：</p>
+       <img src='../../resources/images/common/form/facode/facode_noderule.png'>
+      ]]></Description>
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"
+		tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14" name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+    <Methods>
+  	<Method name="getValue" return="string" tips="得到控件的值">
+  	</Method>
+  	<Method name="getValueText" return="string" tips="得到控件的显示值">
+  	</Method>
+  	<Method name="setValue" return="void" tips="设置控件的值">
+  	</Method>
+  	<Method name="reset" return="void" tips="恢复控件的初始值">
+  	</Method>
+  	<Method name="setOriginalValue" return="void" tips="设置控件的初始值">
+  	</Method>
+  	<Method name="setLabel" return="void" tips="设置控件的label的显示内容">
+  	</Method>
+  	<Method name="setLabelColor" return="void" tips="设置控件的label的显示内容的颜色">
+  	</Method>
+  	<Method name="setLabelStyle" return="void" tips="设置控件的label的样式">
+  	</Method>
+  	<Method name="setLabelCntStyle" return="void" tips="设置控件的label容器的样式">
+  	</Method>
+  	<Method name="setValueStyle" return="void" tips="设置控件的内容样式">
+  	</Method>
+  	<Method name="setRequired" return="void" tips="设置控件是否必填">
+  	</Method>
+  	<Method name="setEmptyText" return="void" tips="设置控件的输入提示">
+  	</Method>
+  	<Method name="read" return="void" tips="设置控件为只读">
+  	</Method>
+  	<Method name="edit" return="void" tips="设置控件为可编辑">
+  	</Method>
+  	<Method name="disable" return="void" tips="设置控件无效">
+  	</Method>
+  	<Method name="enable" return="void" tips="设置控件有效">
+  	</Method>
+  	<Method name="hide"></Method>
+  	<Method name="show"></Method>
+    <Method name="setCodeType" return="void" tips="动态设置代码类型，适用于sSelect，sRadio，mSelect，mCheckbox">
+      <Description><![CDATA[动态设置代码类型，适用于sSelect，sRadio，mSelect，mCheckbox，示例如下：
+<pre>
+Artery.get("faCode").setCodeType("123");
+</pre>]]>
+      </Description>
+      <Parameters>
+        <Param>codeType:string 代码类型</Param>
+      </Parameters>
+      <Return>void</Return>
+    </Method>
+    <Method name="reload" return="void" tips="重载代码数据，适用于sSelect，sRadio，mSelect，mCheckbox，sTree，mTree">
+      <Description><![CDATA[重载代码数据，适用于sSelect，sRadio，mSelect，mCheckbox，sTree，mTree，示例如下：
+<pre>
+Artery.get("faCode").reload({
+	codeType: "2000",
+    params: {
+        p1: "param1"
+    },
+    callback: function(){
+        alert("加载成功");
+    }
+});
+</pre>]]>
+      </Description>
+      <Parameters>
+        <Param>o:json 重载配置信息，codeType用于改变代码控件的代码类型，params中的参数在“动态数据”、“过滤规则”、“节点规则”方法中均可通过ParamUtil.get("...")获得，callback为回调函数</Param>
+      </Parameters>
+      <Return>void</Return>
+    </Method>
+  </Methods>
+  <JsFunctions>
+  	<JsFunction name="onBeforeChangeClient">
+/**
+ * 值改变前脚本({itemid}) 如果返回false则不改变控件的值
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  oldValue 控件改变前的旧值
+ * @param  newValue 控件要改变的新值
+ * @param  newValueText 控件要改变的新值对应的文本
+ */
+function {methodName} (rc, oldValue, newValue, newValueText){
+	
+}
+  	</JsFunction>
+  	<JsFunction name="onChangeClient">
+/**
+ * 值改变时脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  oldValue 控件改变前的旧值
+ * @param  newValue 控件改变后的新值
+ */
+function {methodName} (rc, oldValue, newValue){
+	
+}
+  	</JsFunction>
+  	<JsFunction name="onValidClient">
+/**
+ * 验证脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ */
+function {methodName} (rc, value){
+	
+}
+  	</JsFunction>
+  </JsFunctions>
+  <JavaFunctions>
+		<JavaFunction name="dynamicData">
+<![CDATA[
+/**
+ * 动态数据
+ * 
+ * @param item
+ *            控件对象
+ * @return 可返回Map或List + Object数组，如果是Map则key代表代码值，value代表代码名称，
+ *         如果是数组，则第一列为代码名称，第二列为代码值，第三列为代码简拼，第四列为分级信息。
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onBeforeChangeServer">
+<![CDATA[
+/**
+ * 值改变前脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onChangeServer">
+<![CDATA[
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onValidServer">
+<![CDATA[
+/**
+ * 验证时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onFilter" imports="com.thunisoft.artery.core.normalcode.INormalCode;">
+<![CDATA[
+/**
+ * 过滤规则 此方法用于回调
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            代码的节点对象
+ * @return 当返回值为true时，则表明本node节点会过滤掉
+ */
+public boolean {methodName}(Item item, INormalCode node) {
+	return false;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onCheckedRule">
+<![CDATA[
+/**
+ * 选中规则  此方法用于回调，仅当控件为checkbox时调用
+ * 
+ * @param item
+ *            控件对象
+ * @return 当返回值为true时，则控件会被选中
+ */
+public boolean {methodName}(Item item) {
+	return false;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onNodeRule" imports="com.thunisoft.artery.plugin.tree.TreeNode;com.thunisoft.artery.core.normalcode.INormalCode">
+<![CDATA[
+/**
+ * 节点规则， 此方法用于回调
+ * 
+ * @param node
+ *            代码树节点对象
+ * @param item
+ *            控件对象
+ * @param code
+ *            组织机构对象
+ */
+public void {methodName}(TreeNode node, Item item, INormalCode code) {
+	
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

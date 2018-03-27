@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>f05d07fb876d23216a51d181817ee258</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.organ.Yhxx.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/organ/Yhxx.js</jsLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form9da19">
+      <id>form9da19</id>
+      <Items>
+        <leftRegion sid="7af0e9e5089fb40148c941c23a182e2b">
+          <id>leftRegionac348</id>
+          <width>200</width>
+          <collapsible>true</collapsible>
+          <margins>4 0 4 4</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="9e5784c86f6fb27ef214c3f71bbb97df">
+              <id>blankPanel7c368</id>
+              <width>100%</width>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="de61346a0d16ccf398496009bde366b8">
+                  <id>header2fed1</id>
+                  <text>&lt;span style="font-size:14px;padding:3px;"&gt;用户信息&lt;/span&gt;</text>
+                </header>
+                <buttonArea sid="f76a5a84948261615ab031e3831d9529">
+                  <id>buttonArea92fb9</id>
+                  <direction>ver</direction>
+                  <align>fill</align>
+                  <toggle>true</toggle>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <button sid="20572ff255c877e25363ffe89039af29">
+                      <id>buttonb9759</id>
+                      <width>100%</width>
+                      <text>个人信息</text>
+                      <pressed>true</pressed>
+                      <onClickClient><![CDATA[buttonb9759_onClickClient]]></onClickClient>
+                      <themeStyle>cookie</themeStyle>
+                    </button>
+                    <button sid="60bb5b0c1b0472ca217b744fe71e5cbb">
+                      <id>button2c77b</id>
+                      <width>100%</width>
+                      <text>修改密码</text>
+                      <onClickClient><![CDATA[button2c77b_onClickClient]]></onClickClient>
+                      <themeStyle>cookie</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="bd049cd7bda1c59ac18e2d73312210b3">
+          <id>centerRegiona56d6</id>
+          <margins>4 4 4 0</margins>
+          <border>false</border>
+          <Items>
+            <operArea sid="7f2d6ab0409623078373b0bb21a4f9d2">
+              <id>operArea</id>
+              <linkto>{"formId":"7b857b9491d6824c2faa278c6d1a8265","formName":"个人信息维护","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+              <style>background-color:transparent;</style>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

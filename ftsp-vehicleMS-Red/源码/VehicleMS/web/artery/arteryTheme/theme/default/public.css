@@ -1,0 +1,280 @@
+/***************************************************************************************
+ * public
+ ***************************************************************************************/
+body,div,td,span {
+	font: normal 12px tahoma, arial, helvetica, sans-serif;	
+}
+
+body{
+	overflow:hidden;
+}
+.x-tab-strip span.x-tab-strip-text,.x-btn button{
+	font: normal 12px tahoma, arial, helvetica, sans-serif;
+}
+
+.ext-el-mask {
+	z-index: 20000;;
+	position: absolute;;
+	top: 0;;
+	left: 0;;
+	-moz-opacity: 0.5;;
+	opacity: 0;;
+	filter: alpha(opacity =   0);;
+	background-color:#fff;
+	width: 100%;;
+	height: 100%;;
+	zoom: 1;
+}
+
+.x-btn-wrap {
+	/*display: inline;*/
+}
+
+/*fix footer button right align*/
+.x-panel-btns-right .x-panel-fbar .x-toolbar-ct {
+	width: auto;
+}
+/*
+.x-panel .x-panel-body{
+	background-color: transparent;
+}
+*/
+.artery-tip{
+	overflow:visible;
+	display:inline;
+	z-index: 10000;
+	width: 150px;
+	text-align: center;
+	background-image:url("images/tip/tip_bg.png");
+	background-repeat: no-repeat;
+	background-position: 0 -4px;
+	padding-left: 16px;
+	position: relative;
+}
+.artery-tip .artery-tip-right{
+	padding-right: 16px;
+	background-image:url("images/tip/tip_bg.png");
+	background-position: right -36px;
+	background-repeat: no-repeat;
+}
+.artery-tip .artery-tip-text{
+	padding: 3px;
+	padding-bottom: 11px;
+	padding-right:6px;
+	background-image:url("images/tip/tip_bg.png");
+	background-position: 0 -71px;
+	overflow: visible;
+	white-space: nowrap;
+}
+
+.artery-tip-error{
+	background-position: 0 -108px;
+}
+
+.artery-tip-error .artery-tip-right{
+	background-position: right -143px;
+}
+.artery-tip-error .artery-tip-text{
+	background-position: 0 -175px;
+}
+
+.artery-tip-warning{
+	background-position: 0 -215px;
+}
+
+.artery-tip-warning .artery-tip-right{
+	background-position: right -250px;
+}
+.artery-tip-warning .artery-tip-text{
+	background-position: 0 -282px;
+}
+.artery-tip-close{
+	background-image:url("images/closepage.gif");
+	width: 16px;
+	height: 16px;	
+	position: absolute;
+	top:0;
+	right:4;
+	cursor: pointer;
+}
+
+
+.artery-loading{
+	width: 16px;
+	height: 16px;
+	background-image: url("images/wait.gif");
+}
+
+.a-display-show{
+	display: "";
+}
+
+.a-display-hide{
+	display: none;
+}
+
+/***************************************************************************************
+ * ff compatible��center��
+ ***************************************************************************************/
+ .x-tab-panel{
+	margin-left: auto;
+	margin-right: auto;
+ }
+ 
+.x-panel{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/***************************************************************************************
+ * TableLayout
+ ***************************************************************************************/
+.x-tblayout-table-cust {
+	height: auto;
+	text-align: center;
+}
+.x-table-layout-fixed{
+	table-layout: fixed;
+}
+
+/***************************************************************************************
+ * container
+ ***************************************************************************************/
+.x-container-border-cust{
+	border:1px solid #99bbe8;
+}
+.x-panel-body{
+	text-align: left;
+}
+
+.x-panel-noHeader .x-panel-tl{
+	border-bottom: 0px;
+}
+.x-panel-noHeader .x-panel-tc{
+	height: 5px;
+}
+
+
+/***************************************************************************************
+ * ImageItem
+ ***************************************************************************************/
+.imageItem-body-cust{
+	padding: 5px;
+	border: 1px solid #fff;
+	float: left;
+	
+}
+.imageItem-img-cust{
+}
+.imageItem-title-cust{
+	text-align: center;
+}
+
+.imageItem-img-click-cust{
+	background-color: #EFF5FB;
+	border: 1px solid #99BBE8;
+}
+.imageItem-img-over-cust{
+	background-color: #EFEFEF;
+	border: 1px solid #DDDDDD;
+}
+
+
+/***************************************************************************************
+ * sys style
+ ***************************************************************************************/
+.x-tip-blue{
+	width: 75px;
+	height: 45px;
+	padding-right:5px;
+	background-image: url("../../../arteryImage/sample/pop_blue.png");
+	background-repeat: no-repeat;
+}
+.x-tip-yellow{
+	width: 75px;
+	height: 45px;
+	padding-right:5px;
+	background-image: url("../../../arteryImage/sample/pop_yellow.png");
+	background-repeat: no-repeat;
+}
+
+.bg-blue{
+	background-image: url("../../../arteryImage/sample/bg-blue.png");
+	background-color: #E6EBFB;
+	background-repeat: repeat-x;
+}
+
+.bg-blue-arrow{
+	background-image: url("../../../arteryImage/sample/bg-blue-arrow.png");
+	background-color: #E3E9FB;
+	background-repeat:no-repeat;
+	background-position: center 0;
+}
+
+.bg-light-blue{
+	background-image: url("../../../arteryImage/sample/bg-light-blue.png");
+	background-repeat: no-repeat;
+	width: 188px;
+	height: 56px;
+}
+.bg-process-green{
+	background-image: url("../../../arteryImage/sample/bg-process.png");
+	color:white;
+	height: 20px;
+	text-align: center;
+}
+.bg-process-red{
+	background-image: url("../../../arteryImage/sample/bg-process.png");
+	background-position:0 -25px;
+	color:white;
+	height: 20px;
+	text-align: center;
+}
+
+.bg-logo-top{
+	background-image: url("../../../arteryImage/sys/logo-top.png");
+	background-repeat: no-repeat;
+}
+
+.bg-logo-bottom{
+	background-image: url("../../../arteryImage/sys/logo-bottom.png");
+	background-repeat: no-repeat;
+}
+
+.bg-li{
+	background-image: url("../../../arteryImage/sys/li.gif");
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	color:#15428b;
+	padding: 3px;
+	padding-left: 16px;
+}
+.x-phase-valid-container{
+	background-color: #F4F7FE;
+	height: 100%;
+	overflow: auto;
+}
+.x-valid-phase-wrap{
+	
+}
+.x-valid-phase-point{
+	padding: 5px;
+	color:#15428B;
+	border-bottom: 1px solid #B0BDDD;
+	cursor: pointer;
+}
+
+.x-valid-phase-point-over{
+	background-color: #D3DCf4;
+}
+
+.x-valid-phase-point-selected{
+	background-color: #D3DCf9
+}
+
+.x-ellipsis{
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}

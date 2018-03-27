@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2952202e7c204ea6a2ba90c90dfba36a</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.organ.Tjxgbm.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/organ/Tjxgbm.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formfa71d">
+      <id>formfa71d</id>
+      <Items>
+        <blankPanel sid="4deb1c70d2c804886d0ebef5f523790a">
+          <id>blankPanel9dc18</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <bodyStyle>padding-top:10px;</bodyStyle>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="6660bdffa406d4434281568bd51d69fa">
+              <id>header36ec4</id>
+              <text>&lt;span style="font-size:14px;padding:3px;"&gt;{req.headString}&lt;/span&gt;</text>
+            </header>
+            <formArea sid="c9ad7025839987c70ed4411781aba9e7">
+              <id>formArea</id>
+              <ds>rs1</ds>
+              <width>400</width>
+              <colNum>1</colNum>
+              <style>margin-top:20px;</style>
+              <cellpadding>5</cellpadding>
+              <Items>
+                <faString sid="77f778c48bdf2c81ce597025f38dbf6c">
+                  <id>deptName</id>
+                  <submitName>dept.name</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.name}</dataName>
+                  <maxLength>150</maxLength>
+                  <onValidClient><![CDATA[deptName_onValidClient]]></onValidClient>
+                  <onValidServer><![CDATA[deptName_onValidServer]]></onValidServer>
+                  <label>部门名称</label>
+                </faString>
+                <faString sid="e9377e69b787c5d28bcdddb210120f07">
+                  <id>deptAlias</id>
+                  <submitName>dept.alias</submitName>
+                  <dataName>{rs1.alias}</dataName>
+                  <maxLength>100</maxLength>
+                  <label>简称</label>
+                </faString>
+                <faCode sid="e62dfd64e4de5fea1865c34890f903ef">
+                  <id>deptValid</id>
+                  <submitName>dept.nValid</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.nValid}</dataName>
+                  <editor>sRadio</editor>
+                  <width />
+                  <dynamicData><![CDATA[faValid_dynamicData]]></dynamicData>
+                  <ajaxLoad>false</ajaxLoad>
+                  <label>是否有效</label>
+                </faCode>
+                <faHidden sid="9e296bae971d9bb7db65cf5c0b4b2b5a">
+                  <id>faHiddenb1ea3</id>
+                  <submitName>dept.id</submitName>
+                  <value>{rs1.id}</value>
+                  <label>部门编号</label>
+                </faHidden>
+                <faHidden sid="739844d174fd08d5edafd79c43623296">
+                  <id>u_pdeptId</id>
+                  <submitName>dept.pdeptId</submitName>
+                  <dataName>{rs1.pdeptId}</dataName>
+                  <onShow><![CDATA[u_pdeptId_onShow]]></onShow>
+                  <label>父部门编号</label>
+                </faHidden>
+                <faHidden sid="ec79b19d07e0a482a39915779bca2e61">
+                  <id>u_corpId</id>
+                  <submitName>dept.corpId</submitName>
+                  <dataName>{rs1.corpId}</dataName>
+                  <label>所属单位</label>
+                </faHidden>
+                <faHidden sid="d8d06a7b3b4a94cfb1304718cb4866f0">
+                  <id>faHiddendc1c1</id>
+                  <submitName>dept.order</submitName>
+                  <dataName>{rs1.order}</dataName>
+                  <label>显示顺序</label>
+                </faHidden>
+                <buttonArea sid="3d2ac53288c572e1231672feefeaf232">
+                  <id>buttonAreac29b6</id>
+                  <spacing>10</spacing>
+                  <style>padding-left:100px;padding-top:10px;</style>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="cef7725ad7fac02d761f047e60ae9d66">
+                      <id>addDeptBtn</id>
+                      <width>100</width>
+                      <text>添加部门</text>
+                      <onClickClient><![CDATA[addDeptBtn_onClickClient]]></onClickClient>
+                      <themeStyle>apple</themeStyle>
+                    </button>
+                    <button sid="bcb3e0aa065619d4eed323d7529c6134">
+                      <id>updateDeptBtn</id>
+                      <width>100</width>
+                      <text>更新部门</text>
+                      <onClickClient><![CDATA[updateDeptBtn_onClickClient]]></onClickClient>
+                      <themeStyle>apple</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="parentId" showName="父节点编号" value="" pvalue="-1" />
+    <param name="parentType" showName="父节点类型" value="" pvalue="-1" />
+    <param name="deptId" showName="部门编号" value="" pvalue="-1" />
+    <param name="headString" showName="标题行文字" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getDeptInfo</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="columnOrgan" cn="组织机构列" menu="类型列" jsType="artery-list"
+	nameprop="title" icon="columnOrgan.gif" iconNew="columnOrganNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>		
+		<Describe><![CDATA[
+		组织机构列控件用于在列表中展现系统中定义的组织机构类型的数据。<br/>
+		在可grid列表可编辑情况下，提供树状编辑方式。<br/>
+		可通过脚本指定树状编辑器的根节点，以及过滤规则。
+		]]></Describe>
+		<Images>
+			<File>info.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="listArea" />
+	</Parents>
+	<Children />
+	<Class more="editor">com.thunisoft.artery.plugin.grid.ColumnOrgan
+	</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="继承key" type="1" name="inheritkey">
+			<Value />
+		</Property>
+		<Property cn="继承表" type="1" name="inherittbl">
+			<Value />
+		</Property>
+		<Property cn="继承字段" type="1" name="inheritfld">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="dataName">
+			<Value />
+		</Property>
+		<Property cn="作为数据项" type="11" name="isOnlyData">
+			<Value>false</Value>
+		</Property>
+		<Property cn="参与导出" type="11" name="export" tips="设置此列是否参与导出excel或pdf">
+			<Value>true</Value>
+		</Property>
+		<Property cn="标题" type="1" name="title" tips="设置本列的标题">
+			<Value>Title</Value>
+		</Property>
+		<Property cn="省略过长列标题" type="11" name="isTitleEllipsis" ct="[true,false]"
+			tips="当标题过长时，是否省略列标题">
+			<Value>false</Value>
+			<Description><![CDATA[
+    			当标题过长时，是否省略列标题
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性目前只支持在list类型下使用</Condition>
+			</Conditions>
+		</Property>
+<Property cn="宽度" type="1" name="width"
+			tips="设置本组件的宽度，目前各列的宽度不支持填写百分比，如果要使用比例宽度，请配合自动宽度属性">
+			<Value>50</Value>
+		</Property>
+		<Property cn="自动宽度" type="11" name="autoWidth"
+			tips="如果为true，则本列的宽度将自动展开，在列表的适应宽度属性为true时有效">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否可编辑" type="11" name="isEditor">
+			<Value>true</Value>
+		</Property>
+		<Property cn="编辑器类型" type="3" name="editor" ct="[sTree,mTree]" tips="选择编辑器类型,sTree为单选树状编辑器，mTree为多选编辑器...">
+			<Value>sTree</Value>
+						<Description>			
+			<![CDATA[
+选择编辑器类型,sTree为单选树状编辑器，mTree为多选编辑器
+<table >
+  <tr>   
+    <td><p>sTree编辑器</p></td>
+    <td><p>mTree选编辑器</p></td>
+  </tr>
+  <tr>  
+   <td><img src='../../resources/images/common/list/sselect1.png'></td>
+   <td><img src='../../resources/images/common/list/mselect1.png'></td>
+  </tr>
+</table>]]></Description>
+		</Property>
+		<Property cn="新建默认值" type="1" name="defValue">
+			<Value />
+		</Property>
+		<Property cn="是否必填" type="11" name="required" tips="设置是否为必填项"
+			inherit="false">
+			<Value>false</Value>
+			<Description><![CDATA[			
+			设置是否为必填项,如果为true则不能编辑为空值</br><img src="../../resources/images/common/list/required.png">
+			]]></Description>
+		</Property>
+			
+		<Property cn="选择类型" type="3" name="organType"
+			ct="[user,dept,corp,corp_dept,all]" tips="设置允许选择组织机构的层级">
+			<Value>user</Value>
+			<Description>			
+			<![CDATA[
+设置允许选择组织机构的层级
+<table>
+  <tr>   
+    <td><p>user</p></td>
+    <td><p>dept</p></td>
+    <td><p>corp</p></td>
+    <td><p>corp_dept</p></td>       
+    <td><p>all</p></td>
+  </tr>
+  <tr>  
+   <td><img src='../../resources/images/common/list/user.png'></td>
+   <td><img src='../../resources/images/common/list/dept.png'></td>
+   <td><img src='../../resources/images/common/list/corp.png'></td>
+   <td><img src='../../resources/images/common/list/deptCorp.png'></td>
+   <td><img src='../../resources/images/common/list/all.png'></td>
+  </tr>
+</table>]]></Description>
+		</Property>
+		<Property cn="显示值" type="1" name="valueText"
+			tips="当页面首次加载时，可以设置对应值的显示名称，若不设置，系统会自动发送ajax请求来设置。">
+			<Value />
+		</Property>
+		<Property cn="显示路径" type="1" name="valuePath"
+			tips="若选择类型为user时，页面展现时可设置显示路径，系统会在第一次弹出人员选择窗口时自动定位到此人员，若不设置，系统会自动发送ajax请求来设置。">
+			<Value />
+		</Property>
+		<Property cn="拼音控件" type="11" name="enablePinyin"
+			tips="是否启用拼音查询 注意：目前只有人员可查询拼音，需要人员表的拼音字段数据">
+			<Value>true</Value>
+		</Property>
+		
+		
+		<Property cn="是否显示Hint提示" type="11" name="isShowHint" tips="设置本列是否显示Hint提示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="Hint提示内容" type="1" name="hintText"
+			tips="设置本列的Hint提示内容，可写数据源标签 示例：{rs1.C_NAME}">
+			<Value />
+		</Property>
+		<Property cn="提示是否过滤html标签" type="11" name="isHintFilterHtml"
+			tips="Hint提示是否过滤html标签，设置为true则过滤html标签；否则，html标签会作为文本输出">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否折行" type="3" name="autoRowHeight" ct="[inherit,true,false]"
+			tips="当设置为true时，单元格的内容如果过多时会折行显示">
+			<Value />
+		</Property>
+		<Property cn="内容位置" type="3" name="contentAlign" ct="[left,center,right]" tips="设置本列内容的位置，默认为left">
+			<Value>left</Value>
+		</Property>
+		<Property cn="内容是否编码" type="11" name="htmlEncode"
+			tips="设置本列内容是否编码显示，编码后，内容中的html标签将做为文本输出">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否过滤" type="11" name="isFilter">
+			<Value>false</Value>
+		</Property>
+		<Property cn="过滤提示" type="1" name="filterEmptyText"
+			tips="设置本列的过滤提示值，会在过滤框没有输入的情况下显示在过滤框中">
+			<Value />
+		</Property>
+		<Property cn="过滤默认值" type="1" name="filterDefault" tips="设置本列的过滤默认值，在开启过滤功能时有效">
+			<Value/>
+		</Property>
+		<Property cn="是否排序" type="11" name="isOrderBy">
+			<Value>false</Value>
+		</Property>
+		<Property cn="排序方向" type="3" name="sortDir" ct="[ASC,DESC]"
+			tips="设置初始排序方向，默认为ASC（升序）">
+			<Value>ASC</Value>
+		</Property>
+		<Property cn="显示排序图标" type="11" name="showOrderIcon"
+			tips="如果设置为true，则在列标题上显示排序图标，方向由排序方向属性指定">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否合计" type="11" name="isSum">
+			<Value>false</Value>
+		</Property>
+		<Property cn="合计处理" type="1" name="sumFormula">
+			<Value />
+		</Property>
+		<Property cn="是否固定" type="11" name="isFix">
+			<Value>false</Value>
+		</Property>
+		<Property cn="链接到" type="6" name="linkto" tips="选择当组件点击时连接到的表单">
+			<Value />
+		</Property><Property cn="是否隐藏" type="11" name="hidden" tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property><Property cn="是否生成" type="11" name="show" tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property><Property cn="生成时权限" type="1" name="showRight" tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property><Property cn="单击节点时展开" type="11" name="singleClickExpand" tips="当为true时，单击树上的节点则展开，为false时，则需要双击才会展开，默认为false">
+			<Value>false</Value>
+		</Property><Property cn="过滤动态代码" type="14" name="dynamicDataFilter">
+			<Value />
+		</Property><Property cn="客户端" type="15" group="验证脚本" name="onValidClient" tips="组件的验证脚本(客户端),会传递value变量作为本组件的当前值">
+			<Value />
+		</Property><Property cn="服务器端" type="14" group="验证脚本" name="onValidServer" tips="组件的验证脚本(服务器端),会传递value变量作为本组件的当前值">
+			<Value />
+		</Property>	<Property cn="根节点规则" type="14" name="onRootFilter" sh="node,node.id,node.name"
+			tips="用于指定树状编辑器的根节点...">
+			<Value />
+			<Description><![CDATA[
+			 用于指定树状编辑器的根节点			 
+			 <pre>
+/**
+ * 根节点规则 此方法用于回调
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            组织机构的节点对象
+ * @return 当返回值为true时，则表明本node节点为根节点
+ */
+public boolean lstCAUTH_onRootFilter(Item item, IBaseOrgan node) {
+	if(node.getName().equals("北京法院")){
+		return true;
+	}
+	return false;
+}
+</pre>
+]]></Description>
+		</Property><Property cn="过滤规则" type="14" name="onFilter" tips="加载组织机构数据项时进行的过滤规则...">
+			<Value />
+				<Description><![CDATA[	
+		加载组织机构数据项时进行的过滤规则。当返回true时过滤，即不加载当前组织机构。
+		<pre>
+/**
+ * 过滤规则 此方法用于回调
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            组织机构的节点对象
+ * @return 当返回值为true时，则表明本node节点会过滤掉
+ */
+public boolean lstCAUTH_onFilter(Item item, IBaseOrgan node) {
+	if(node.getName().equals("李四")){
+		return true;
+	}
+	return false;
+}
+</pre>
+	]]></Description>
+		</Property><Property cn="客户端" type="15" group="值改变时脚本" name="onChangeClient" tips="当本组件的值改变时触发的事件，客户端脚本">
+			<Value />
+		</Property><Property cn="服务器端" type="14" group="值改变时脚本" name="onChangeServer" tips="当本组件的值改变时触发的事件，服务器端脚本">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient"
+			tips="鼠标点击本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer"
+			tips="鼠标点击本组件时触发的服务器端事件...">
+			<Value />
+			<Description><![CDATA[
+			鼠标点击本组件时触发的服务器端事件
+			<pre>
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object column6bae6_onClickServer(Item item) {
+	//数据操作
+	
+	return “操作成功”;
+}
+			</pre>
+			]]></Description>
+		</Property>
+		<Property cn="行脚本" type="14" name="rowScript"
+			sh="value,rowIndex,cellRow,cellRow.getString(col),dataRow,dataRow.isEmpty(),dataRow.getString(col),dataRow.getInt(col),dataRow.getDouble(col),dataRow.getData(col),dataRow.index()"
+			tips="可调用：cell,cellRow,dataRow,item,rowIndex,value">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="编辑前脚本" type="15"  name="beforeEdit" tips="当本组件的值被编辑前触发的事件，客户端脚本如果返回false阻止编辑，返回true则允许继续编辑">
+			<Value />
+		</Property>
+	</Properties>
+	<JsFunctions>
+		<JsFunction name="onValidClient"><![CDATA[
+/**
+ * 验证脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ */
+function {methodName} (rc, value){
+	
+}]]>
+		</JsFunction>
+		<JsFunction name="onChangeClient">
+/**
+* 值改变时脚本({itemid})
+*
+* @param rc 系统提供的AJAX调用对象
+* @param oldValue 控件改变前的旧值
+* @param newValue 控件改变后的新值
+*/
+function {methodName} (rc, oldValue, newValue){
+
+}
+  	</JsFunction>
+  	 <JsFunction name="beforeEdit">
+/**
+ * 编辑前脚本,根据返回值判断是否可编辑({itemid})
+ * 
+ * @param  record 当前行记录
+ * @param  value  当前值
+ */
+function {methodName} (record, value){
+	return true;
+}
+  	</JsFunction>
+	</JsFunctions>
+	<JavaFunctions>
+		<JavaFunction name="onRootFilter"
+			imports="com.thunisoft.artery.module.organ.IBaseOrgan">
+<![CDATA[
+/**
+ * 根节点规则 此方法用于回调
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            组织机构的节点对象
+ * @return 当返回值为true时，则表明本node节点为根节点
+ */
+public boolean {methodName}(Item item, IBaseOrgan node) {
+	return true;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onFilter"
+			imports="com.thunisoft.artery.module.organ.IBaseOrgan">
+<![CDATA[
+/**
+ * 过滤规则 此方法用于回调
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            组织机构的节点对象
+ * @return 当返回值为true时，则表明本node节点会过滤掉
+ */
+public boolean {methodName}(Item item, IBaseOrgan node) {
+	return false;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onChangeServer">
+<![CDATA[
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onValidServer">
+<![CDATA[
+/**
+ * 验证脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="dynamicDataFilter">
+<![CDATA[
+/**
+ * 过滤动态代码
+ * 
+ * @param item
+ *            控件对象
+ */
+public List {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onClickServer">
+<![CDATA[
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="rowScript"
+			imports="com.thunisoft.artery.parse.eform.form.cellset.Cell;com.thunisoft.artery.parse.eform.form.cellset.CellRow;">
+<![CDATA[
+/**
+ * 行脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param cell
+ *            展现单元格对象
+ * @param cellRow
+ *            展现数据行对象
+ * @param dataRow
+ *            结果数据行对象
+ * @param value
+ *            当前单元格的值
+ */
+public void {methodName}(Item item, Cell cell, CellRow cellRow,
+		Object dataRow, String value) {
+
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

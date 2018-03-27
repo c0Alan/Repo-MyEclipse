@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>bdc21678e2081234f680f89ae251633e</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form._faClassCode.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_faClassCode.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form6525d">
+      <id>form6525d</id>
+      <text-align>left</text-align>
+      <Items>
+        <formArea sid="dcaedac5c59fff4b928cd4ede501bde4">
+          <id>formAread777f</id>
+          <width>1000</width>
+          <colSpacing>10</colSpacing>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <Items>
+            <faFieldSet sid="58d5ab7a292fbd969eceb55c8fc78bb2">
+              <id>faFieldSetee75b</id>
+              <fieldSetName>控件类型</fieldSetName>
+              <colSpan>2</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faClassCode sid="7e16b3be947bb6d905d2df4f71c38846">
+                  <id>faClassCodef55f9</id>
+                  <codeType>T_Eg_ClassCode</codeType>
+                  <label>sTree</label>
+                </faClassCode>
+                <faClassCode sid="ed6b09077aaabc235de195a5c55f2b50">
+                  <id>faClassCode929eb</id>
+                  <editor>mTree</editor>
+                  <codeType>T_Eg_ClassCode</codeType>
+                  <label>mTree</label>
+                </faClassCode>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="001fedeff385e70a2f5066be5739efe6">
+              <id>faFieldSet61289</id>
+              <fieldSetName>“选择类型”属性</fieldSetName>
+              <colSpan>2</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faClassCode sid="e9e2f5e8e62fc8ac666767fa2557d644">
+                  <id>faClassCode12d1b</id>
+                  <codeType>T_Eg_ClassCode</codeType>
+                  <label>选择类型1</label>
+                </faClassCode>
+                <faClassCode sid="04f517d08cace80332a5118166be7e08">
+                  <id>faClassCode0ae20</id>
+                  <codeType>T_Eg_ClassCode</codeType>
+                  <selType>2</selType>
+                  <label>选择类型2</label>
+                </faClassCode>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

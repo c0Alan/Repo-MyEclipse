@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="ribbonArea" cn="ribbon区域" menu="页签面板" jsType="artery-base"
+	icon="ribbonArea.gif" iconNew="ribbonAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2010-05-12</CreateTime>
+		<Describe>
+			Ribbon容器控件,一般是在容器中加入页签,然后在页签中进行分组,最基本单位是RibbonCell,可以用RibbonMenu实现下拉菜单功能
+		          如果不设置默认激活页签将默认激活第一个页签
+		</Describe>
+		<Images>
+			<File>info2.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+		<Parent type="blankPanel" />
+		<Parent type="upRegion" />
+		<Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" />
+	</Parents>
+	<Children>
+		<Child type="tbFill" />
+		<Child type="blankPanel" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.tabs.ribbon.RibbonArea
+	</Class>
+	<JsFile>
+		<File>ribbonArea.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apRibbonArea</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="操作区域编号" type="1" name="operAreaId" export="true"
+			tips="设置操作区域的编号，子页签点击时会在此操作区域中打开链接">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value />
+    </Property>
+    <Property cn="是否显示边框" type="11" name="border" export="true" tips="设置为true时，显示最外层的边框，否则不显示">
+      <Value>false</Value>
+    </Property>
+    <Property cn="显示折叠按钮" group="折叠按钮" type="11" name="showCollapseBar" tips="设置是否显示折叠按钮">
+		<Value>false</Value>
+		<Description><![CDATA[
+		 <p>设置是否显示折叠按钮</p>
+		 <p>折叠按钮折叠与展开对比图</p>
+<table width=1><tr><td>展开</td><td><img src='../../resources/images/common/ribbonExpand.png'></td></tr>
+               <tr><td>折叠</td><td><img src='../../resources/images/common/ribbonCollapse.png'></td></tr></table>
+      ]]></Description>	
+	</Property>
+	<Property  cn="折叠按钮样式" group="折叠按钮" type="1" name="collapseBarStyle"
+		tips="折叠按钮的背景样式，可以定义为css代码。示例：padding:5px;border:1px solid red">
+		<Value />
+	</Property>
+	<Property cn="箭头样式" group="折叠按钮" type="3" ct="[inherit]" name="collapseBarTheme" tips="设置折叠按钮的样式，可填写css代码.">
+     	<Value></Value>
+   	</Property>
+    <Property cn="组件容器样式" type="1" name="style"  tips="设置本组件的样式，可填写css代码">
+      <Value>background-color: #D2D2D2;</Value>
+    </Property>
+    <Property cn="主题样式" type="21" name="themeStyle" tips="设置控件的风格样式">
+		<Value>inherit</Value>
+	</Property>
+	<Property cn="样式名称" type="1" name="className" group="样式"
+		tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+		<Value />
+	</Property>
+    <Property cn="是否隐藏" type="11" name="hidden" export="true"  tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"
+		tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14"  name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <Methods>
+    <Method name="getActivePanel" return="object" tips="得到激活状态的页签对象">
+  		<Description><![CDATA[<p>得到激活状态的页签对象</p><pre>
+Artery.get("id").getActivePanel();
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>object</Return>
+  	</Method>
+    <Method name="toggle" return="void" tips="切换Ribbon折叠展开,只有在showCollapseBar为true时候可以用">
+  		<Description><![CDATA[<p>切换Ribbon折叠展开,只有在showCollapseBar为true时候可以用</p><pre>
+Artery.get("id").toggle();
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+    <Method name="collpase" return="void" tips="折叠ribbon,只有在showCollapseBar为true时候可以用">
+  		<Description><![CDATA[<p>折叠ribbon,只有在showCollapseBar为true时候可以用</p><pre>
+Artery.get("id").collpase();
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+    <Method name="expand" return="void" tips="展开ribbon,只有在showCollapseBar为true时候可以用">
+  		<Description><![CDATA[<p>展开ribbon,只有在showCollapseBar为true时候可以用</p><pre>
+Artery.get("id").expand();
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	<Method name="getActiveCell" return="object" tips="得到激活状态的ribbonCell">
+  		<Description><![CDATA[<p>得到激活状态的ribbonCell</p><pre>
+Artery.get("id").getActiveCell();
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>object</Return>
+  	</Method>
+  </Methods>
+</Item>
+

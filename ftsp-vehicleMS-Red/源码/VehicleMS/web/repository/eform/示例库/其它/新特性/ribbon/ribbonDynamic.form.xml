@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>5be092f985a3fbe8de192bbaec0ef86c</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.ribbon.RibbonDynamic.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/ribbon/RibbonDynamic.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <Items>
+        <htmlArea sid="2f5e4dd7840325f373c10d8d4084f7b9">
+          <id>htmlArea339b4</id>
+          <value>此Ribbon为动态数据结构生成，使用循环控件很简单</value>
+          <align>center</align>
+          <style>color:#fff;font-size:16px;background-color:#000;</style>
+        </htmlArea>
+        <ribbonArea sid="ffc2181a37c665e346f088920bee9d01">
+          <id>ribbonArea4d839</id>
+          <style>background-color: #000;</style>
+          <Items>
+            <ribbonItem sid="f1607e042867f4e096c346b725235913">
+              <id>ribbonItem8f836</id>
+              <title>审查</title>
+              <active>true</active>
+              <Items>
+                <loopArea sid="3a55c32dd99edc579590361559eeb7cf">
+                  <id>loopAreae30f7</id>
+                  <ds>rs1</ds>
+                  <Items>
+                    <ribbonGroup sid="5acd50df201bfa3e24083b1a7f82c134">
+                      <id>ribbonGroup3136b</id>
+                      <title>{rs1.title}</title>
+                      <Items>
+                        <loopArea sid="8eeda4ab7d8204f9f78fbdd022f61c2c">
+                          <id>loopArea7db67</id>
+                          <ds>{rs1.cells}</ds>
+                          <Items>
+                            <ribbonCell sid="0c5424b416eba60f6ad448104ed890ff">
+                              <id>ribbonCelld5886</id>
+                              <title>{rs1.title}</title>
+                              <tip>{rs1.tip}</tip>
+                              <tipInfo>{rs1.tipInfo}</tipInfo>
+                            </ribbonCell>
+                          </Items>
+                        </loopArea>
+                      </Items>
+                    </ribbonGroup>
+                  </Items>
+                </loopArea>
+              </Items>
+            </ribbonItem>
+            <ribbonItem sid="0877e397ffd7d662e9c78de6228917d7">
+              <id>ribbonItemb7f68</id>
+              <title>后续</title>
+              <Items>
+                <ribbonGroup sid="a543eff8ab164a706b52d4a39afb4f63">
+                  <id>ribbonGroupa1185</id>
+                  <title>变更</title>
+                  <Items>
+                    <ribbonCell sid="854c2b59c4b299102e0415990ccea1cc">
+                      <id>ribbonCelld86ce</id>
+                      <title>追捕</title>
+                    </ribbonCell>
+                    <ribbonCell sid="aee564e42d7965148ff9fd90de8c2353">
+                      <id>ribbonCell290c9</id>
+                      <title>执行及变更</title>
+                    </ribbonCell>
+                    <ribbonCell sid="0849e42a5e5bfd1d99fffc62cd4d4288">
+                      <id>ribbonCell4cd21</id>
+                      <title>变更逮捕措施</title>
+                    </ribbonCell>
+                  </Items>
+                </ribbonGroup>
+                <ribbonGroup sid="d6ba1e7b308851858ed6f71b47ba3248">
+                  <id>ribbonGroupb1560</id>
+                  <title>审查后续</title>
+                  <Items>
+                    <ribbonCell sid="bf8cf9a1832962d6e0cc0c167cab432a">
+                      <id>ribbonCell0df11</id>
+                      <title>延长羁押</title>
+                    </ribbonCell>
+                    <ribbonCell sid="2d82f2798861255e23f4bd8cbb4c0da8">
+                      <id>ribbonCellab9c2</id>
+                      <title>重新计算羁押期限</title>
+                    </ribbonCell>
+                  </Items>
+                </ribbonGroup>
+                <ribbonGroup sid="c82bcf0c043bbcb91255d731403bb120">
+                  <id>ribbonGroupae196</id>
+                  <title>归档管理</title>
+                  <Items>
+                    <ribbonCell sid="426e56555dd8c35a6e3e4a4e0b4f9372">
+                      <id>ribbonCelle6871</id>
+                      <title>归档</title>
+                    </ribbonCell>
+                    <ribbonCell sid="f0728fc8a121aceb56cd38a3df440e53">
+                      <id>ribbonCelleb7d8</id>
+                      <title>卷宗模板</title>
+                    </ribbonCell>
+                  </Items>
+                </ribbonGroup>
+              </Items>
+            </ribbonItem>
+            <tbFill sid="448143916a11aa2ebad82c5deb34f4bf">
+              <id>tbFill6bcf5</id>
+            </tbFill>
+            <blankPanel sid="fc430c9e725bf5c20e65ce01332de438">
+              <id>blankPanel485cb</id>
+              <Items>
+                <buttonArea sid="aaed31d5575b5fe08c1c48270262b96d">
+                  <id>buttonAreab2ac0</id>
+                  <Items>
+                    <button sid="8456ed1db98b3962f8915f9539e52783">
+                      <id>buttonb86e9</id>
+                    </button>
+                    <button sid="db3d5ce95ad7ae3fb957207bacd5b67b">
+                      <id>button10bb9</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </ribbonArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

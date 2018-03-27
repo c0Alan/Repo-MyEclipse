@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1b8690f22b5113f6d9b8d1bc7d65285e</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._dynamicColumn.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_dynamicColumn.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form1b430">
+      <id>form1b430</id>
+      <Items>
+        <listArea sid="7ad1c6d5892fcac6dc1434f8e5acfd98">
+          <id>listArea91f02</id>
+          <ds>rs1</ds>
+          <Items>
+            <dynamicColumn sid="3dc87a106180c5ca6e6fa2dfcde9ac84">
+              <id>dynamicColumn7a049</id>
+              <createColumn><![CDATA[dynamicColumn7a049_createColumn]]></createColumn>
+            </dynamicColumn>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

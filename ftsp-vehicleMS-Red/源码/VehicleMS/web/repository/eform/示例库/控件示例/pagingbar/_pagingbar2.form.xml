@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1792864cbdf74fc95b55e468b20821cd</id>
+  <configTable>
+    <table table="t_eg_book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.pagingbar._pagingbar2.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/pagingbar/_pagingbar2.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form05df9">
+      <id>form05df9</id>
+      <Items>
+        <fieldSet sid="a8ba4562abf8a07f59a4dbb4c955b6a5">
+          <id>fieldSet32424</id>
+          <fieldSetName>不显示分页信息</fieldSetName>
+          <Items>
+            <blankPanel sid="c6abb44f1af5b10989c80a9129c0dd69">
+              <id>blankPanel62e51</id>
+              <Items>
+                <listArea sid="0e6419b44ca4ff12cfd16acdd9203693">
+                  <id>listArea1</id>
+                  <ds>rs1</ds>
+                  <height />
+                  <isPageSplit>false</isPageSplit>
+                  <Items>
+                    <columnIdentity sid="f652c083efec2fc97eacd57142a52134">
+                      <id>columnIdentityCID1</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_ID</inheritfld>
+                      <dataName>{rs1.C_ID}</dataName>
+                      <title>图书编号</title>
+                    </columnIdentity>
+                    <columnString sid="498fbb713735f6038937d4682d719d8e">
+                      <id>columnStringCNAME1</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_NAME</inheritfld>
+                      <dataName>{rs1.C_NAME}</dataName>
+                      <title>图书名称</title>
+                    </columnString>
+                    <columnString sid="e2374ab30567939d3d7740d0a4495ebc">
+                      <id>columnStringCAUTH1</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_AUTH</inheritfld>
+                      <dataName>{rs1.C_AUTH}</dataName>
+                      <title>作者</title>
+                    </columnString>
+                    <columnString sid="5f207199741a3f8fb6a376ce30b454c0">
+                      <id>columnStringCPUBLISHER1</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_PUBLISHER</inheritfld>
+                      <dataName>{rs1.C_PUBLISHER}</dataName>
+                      <title>出版社</title>
+                    </columnString>
+                    <columnCode sid="47d52463e07b74e6744f722b883ee3b5">
+                      <id>columnCodeNTYPE1</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>N_TYPE</inheritfld>
+                      <dataName>{rs1.N_TYPE}</dataName>
+                      <title>图书类型</title>
+                    </columnCode>
+                  </Items>
+                </listArea>
+                <pagingbar2 sid="ad1bada5afbf5fd18d00e738b1e68b09">
+                  <id>pagingbar1caa94</id>
+                  <ds>rs1</ds>
+                  <pageCount>2</pageCount>
+                  <pagePerNext>2</pagePerNext>
+                  <onSearch><![CDATA[pagingbar1caa94_onSearch]]></onSearch>
+                </pagingbar2>
+              </Items>
+            </blankPanel>
+          </Items>
+        </fieldSet>
+        <fieldSet sid="7b0cf13984d7c5a4e2c760e5b0379071">
+          <id>fieldSet7677</id>
+          <fieldSetName>显示分页信息</fieldSetName>
+          <Items>
+            <blankPanel sid="20f314e4d301e717dadfc2e7e05cf75a">
+              <id>blankPaneldd7f1</id>
+              <Items>
+                <listArea sid="9f1dbaa225c47852e160deae3794c89f">
+                  <id>listArea2</id>
+                  <ds>rs2</ds>
+                  <height />
+                  <isPageSplit>false</isPageSplit>
+                  <Items>
+                    <columnIdentity sid="37f397ebcbae015aee81323bb54a4bb5">
+                      <id>columnIdentityCID2</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_ID</inheritfld>
+                      <dataName>{rs2.C_ID}</dataName>
+                      <title>图书编号</title>
+                    </columnIdentity>
+                    <columnString sid="789d22e01fe2538f7f24bd8ed04c3c65">
+                      <id>columnStringCNAME2</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_NAME</inheritfld>
+                      <dataName>{rs2.C_NAME}</dataName>
+                      <title>图书名称</title>
+                    </columnString>
+                    <columnString sid="f19001a5af789d237caf50fa393eb7fe">
+                      <id>columnStringCAUTH2</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_AUTH</inheritfld>
+                      <dataName>{rs2.C_AUTH}</dataName>
+                      <title>作者</title>
+                    </columnString>
+                    <columnString sid="275a34dca213063869e28ec5e4c23f4c">
+                      <id>columnStringCPUBLISHER2</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_PUBLISHER</inheritfld>
+                      <dataName>{rs2.C_PUBLISHER}</dataName>
+                      <title>出版社</title>
+                    </columnString>
+                    <columnCode sid="d4db6042906379c98564e9788f143128">
+                      <id>columnCodeNTYPE2</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>N_TYPE</inheritfld>
+                      <dataName>{rs2.N_TYPE}</dataName>
+                      <title>图书类型</title>
+                    </columnCode>
+                  </Items>
+                </listArea>
+                <pagingbar2 sid="ba464590435450c8b8eddc74bf0f0a19">
+                  <id>pagingbar136629</id>
+                  <ds>rs2</ds>
+                  <pageCount>2</pageCount>
+                  <pagePerNext>2</pagePerNext>
+                  <isShowPageInfo>true</isShowPageInfo>
+                  <onSearch><![CDATA[pagingbar136629_onSearch]]></onSearch>
+                </pagingbar2>
+              </Items>
+            </blankPanel>
+          </Items>
+        </fieldSet>
+        <fieldSet sid="352bd1e84e56b55714ea2a47926ca8af">
+          <id>fieldSet41715</id>
+          <fieldSetName>分页信息居左显示</fieldSetName>
+          <Items>
+            <blankPanel sid="1a7ea12358a9e88975f59482c406ab3b">
+              <id>blankPanelc494e</id>
+              <Items>
+                <listArea sid="44733f7780d8d7cdcd2275646ad9bb82">
+                  <id>listArea3</id>
+                  <ds>rs3</ds>
+                  <height />
+                  <isPageSplit>false</isPageSplit>
+                  <Items>
+                    <columnIdentity sid="498e6ab9a93fa385c9f3dbf2c15812e0">
+                      <id>columnIdentityf89c6</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_ID</inheritfld>
+                      <dataName>{rs3.C_ID}</dataName>
+                      <title>图书编号</title>
+                    </columnIdentity>
+                    <columnString sid="c7d4aeb351c505a336d06383210ea2ee">
+                      <id>columnStringCNAME3</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_NAME</inheritfld>
+                      <dataName>{rs3.C_NAME}</dataName>
+                      <title>图书名称</title>
+                    </columnString>
+                    <columnString sid="fb37f18ab5fe5510a5db4e9421319328">
+                      <id>columnString30483</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_AUTH</inheritfld>
+                      <dataName>{rs3.C_AUTH}</dataName>
+                      <title>作者</title>
+                    </columnString>
+                    <columnString sid="8dfb322ef2acb9fab769d2c48cf06055">
+                      <id>columnStringd2c62</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_PUBLISHER</inheritfld>
+                      <dataName>{rs3.C_PUBLISHER}</dataName>
+                      <title>出版社</title>
+                    </columnString>
+                    <columnCode sid="4913c2061e12a265c7d508b088593717">
+                      <id>columnCodeae311</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>N_TYPE</inheritfld>
+                      <dataName>{rs3.N_TYPE}</dataName>
+                      <title>图书类型</title>
+                    </columnCode>
+                  </Items>
+                </listArea>
+                <pagingbar2 sid="3ac8bc33a20ffd8f20883cf6e1e00476">
+                  <id>pagingbar10f699</id>
+                  <ds>rs3</ds>
+                  <pageCount>2</pageCount>
+                  <pagePerNext>2</pagePerNext>
+                  <isShowPageInfo>true</isShowPageInfo>
+                  <pageInfoAlign>left</pageInfoAlign>
+                  <onSearch><![CDATA[pagingbar10f699_onSearch]]></onSearch>
+                </pagingbar2>
+              </Items>
+            </blankPanel>
+          </Items>
+        </fieldSet>
+        <fieldSet sid="5239705d716f805295a47ce1e87df0e9">
+          <id>fieldSetb63fe</id>
+          <fieldSetName>自定义分页信息模板</fieldSetName>
+          <Items>
+            <blankPanel sid="aca44c2fdccb3d2f05a310b8c8742cfd">
+              <id>blankPanel2faf1</id>
+              <Items>
+                <listArea sid="6192cb75b65ada857b8bf0bc33a8c127">
+                  <id>listArea4</id>
+                  <ds>rs4</ds>
+                  <height />
+                  <isPageSplit>false</isPageSplit>
+                  <Items>
+                    <columnIdentity sid="e858e69645c2bc304a0ca13fa388aff8">
+                      <id>columnIdentityCID</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_ID</inheritfld>
+                      <dataName>{rs4.C_ID}</dataName>
+                      <title>图书编号</title>
+                    </columnIdentity>
+                    <columnString sid="f996ff01b30056aaf44895d2c130fc63">
+                      <id>columnStringCNAME</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_NAME</inheritfld>
+                      <dataName>{rs4.C_NAME}</dataName>
+                      <title>图书名称</title>
+                    </columnString>
+                    <columnString sid="c6578066997997b8581251e9fd14bfd5">
+                      <id>columnStringCAUTH</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_AUTH</inheritfld>
+                      <dataName>{rs4.C_AUTH}</dataName>
+                      <title>作者</title>
+                    </columnString>
+                    <columnString sid="65f2c08815d7226ec8bbc75ab31726b6">
+                      <id>columnStringCPUBLISHER</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_PUBLISHER</inheritfld>
+                      <dataName>{rs4.C_PUBLISHER}</dataName>
+                      <title>出版社</title>
+                    </columnString>
+                    <columnCode sid="4d5873eb305ced39b8e5c806ea6c420f">
+                      <id>columnCodeNTYPE</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>N_TYPE</inheritfld>
+                      <dataName>{rs4.N_TYPE}</dataName>
+                      <title>图书类型</title>
+                    </columnCode>
+                  </Items>
+                </listArea>
+                <pagingbar2 sid="022d1735d39c6b7f8b3b1230f3f59195">
+                  <id>pagingbar10eff4</id>
+                  <ds>rs4</ds>
+                  <pageCount>2</pageCount>
+                  <pagePerNext>2</pagePerNext>
+                  <isShowPageInfo>true</isShowPageInfo>
+                  <pageInfoTplContent>&lt;span class="x-pagingbar-pageInfo" style="color:red;"&gt;共有&lt;span class="x-pagingbar-pageInfo-text"&gt;{rowCount}&lt;/span&gt;条记录，当前显示&lt;span class="x-pagingbar-pageInfo-text"&gt;{currentRowCount}&lt;/span&gt;条记录，共有{totalPageNo}页&lt;/span&gt;</pageInfoTplContent>
+                  <onSearch><![CDATA[pagingbar10eff4_onSearch]]></onSearch>
+                </pagingbar2>
+              </Items>
+            </blankPanel>
+          </Items>
+        </fieldSet>
+        <fieldSet sid="6f56aac2a5b393c988697592fe1e34c3">
+          <id>fieldSet29c6e</id>
+          <fieldSetName>不清空checkbox列选中状态</fieldSetName>
+          <Items>
+            <blankPanel sid="ce97b8480019ccb880644f5847885626">
+              <id>blankPanel44f13</id>
+              <Items>
+                <listArea sid="45ad45d7c865f275bdc7990b54eee6d9">
+                  <id>listArea5</id>
+                  <ds>rs5</ds>
+                  <height />
+                  <isPageSplit>false</isPageSplit>
+                  <Items>
+                    <column sid="30ecea6a4b8bd59918145aeab055d2e8">
+                      <id>columnIdentityCID5</id>
+                      <title>选择</title>
+                      <editor>checkbox</editor>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_ID</inheritfld>
+                      <dataName>{rs5.C_ID}</dataName>
+                      <width>20</width>
+                    </column>
+                    <columnString sid="4642e02cb9a1df81bb229053f63d81ec">
+                      <id>columnStringCNAME5</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_NAME</inheritfld>
+                      <dataName>{rs5.C_NAME}</dataName>
+                      <title>图书名称</title>
+                    </columnString>
+                    <columnString sid="66cbebaff023e8c8b77699ca719838bb">
+                      <id>columnStringCAUTH5</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_AUTH</inheritfld>
+                      <dataName>{rs5.C_AUTH}</dataName>
+                      <title>作者</title>
+                    </columnString>
+                    <columnString sid="bff84d510d4117f32072c216cd4d52b9">
+                      <id>columnStringCPUBLISHER5</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>C_PUBLISHER</inheritfld>
+                      <dataName>{rs5.C_PUBLISHER}</dataName>
+                      <title>出版社</title>
+                    </columnString>
+                    <columnCode sid="606ecc33a4e989cf0343794343daea50">
+                      <id>columnCodeNTYPE5</id>
+                      <inherittbl>t_eg_book</inherittbl>
+                      <inheritfld>N_TYPE</inheritfld>
+                      <dataName>{rs5.N_TYPE}</dataName>
+                      <title>图书类型</title>
+                    </columnCode>
+                  </Items>
+                </listArea>
+                <pagingbar2 sid="bd6a2a2c3344b71d2a3246d1ab8815bf">
+                  <id>pagingbar116ab8</id>
+                  <ds>rs5</ds>
+                  <pageCount>2</pageCount>
+                  <pagePerNext>2</pagePerNext>
+                  <onSearch><![CDATA[pagingbar116ab8_onSearch]]></onSearch>
+                </pagingbar2>
+              </Items>
+            </blankPanel>
+          </Items>
+        </fieldSet>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    t_eg_book.C_ID,&#xD;
+    t_eg_book.C_NAME,&#xD;
+    t_eg_book.C_AUTH,&#xD;
+    t_eg_book.C_PUBLISHER,&#xD;
+    t_eg_book.N_TYPE&#xD;
+FROM&#xD;
+    t_eg_book</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">SELECT&#xD;
+    t_eg_book.C_ID,&#xD;
+    t_eg_book.C_NAME,&#xD;
+    t_eg_book.C_AUTH,&#xD;
+    t_eg_book.C_PUBLISHER,&#xD;
+    t_eg_book.N_TYPE&#xD;
+FROM&#xD;
+    t_eg_book</ds>
+    <ds dsName="dataSource" name="rs3" type="sql">SELECT&#xD;
+    t_eg_book.C_ID,&#xD;
+    t_eg_book.C_NAME,&#xD;
+    t_eg_book.C_AUTH,&#xD;
+    t_eg_book.C_PUBLISHER,&#xD;
+    t_eg_book.N_TYPE&#xD;
+FROM&#xD;
+    t_eg_book</ds>
+    <ds dsName="dataSource" name="rs4" type="sql">SELECT&#xD;
+    t_eg_book.C_ID,&#xD;
+    t_eg_book.C_NAME,&#xD;
+    t_eg_book.C_AUTH,&#xD;
+    t_eg_book.C_PUBLISHER,&#xD;
+    t_eg_book.N_TYPE&#xD;
+FROM&#xD;
+    t_eg_book</ds>
+    <ds dsName="dataSource" name="rs5" type="sql">SELECT&#xD;
+    t_eg_book.C_ID,&#xD;
+    t_eg_book.C_NAME,&#xD;
+    t_eg_book.C_AUTH,&#xD;
+    t_eg_book.C_PUBLISHER,&#xD;
+    t_eg_book.N_TYPE&#xD;
+FROM&#xD;
+    t_eg_book</ds>
+  </dslist>
+</form>
+

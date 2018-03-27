@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="columnDate" cn="日期列" menu="类型列" jsType="artery-list"
+	nameprop="title" icon="columnDate.gif" iconNew="columnDateNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>日期列控件，可以在列表中展现日期类型数据</Describe>
+		<Images>
+			<File>info.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="listArea" />
+	</Parents>
+	<Children />
+	<Class more="editor">com.thunisoft.artery.plugin.grid.ColumnDate
+	</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+        <Property cn="继承key" type="1" name="inheritkey">
+            <Value />
+        </Property>
+		<Property cn="继承表" type="1" name="inherittbl">
+			<Value />
+		</Property>
+		<Property cn="继承字段" type="1" name="inheritfld">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="dataName">
+			<Value />
+		</Property>
+		<Property cn="作为数据项" type="11" name="isOnlyData">
+			<Value>false</Value>
+		</Property>
+		<Property cn="参与导出" type="11" name="export" >
+			<Value>true</Value>
+		</Property>
+	<Property cn="标题" type="1" name="title" tips="设置本列的标题">
+		<Value>Title</Value>
+	</Property>
+	<Property cn="省略过长列标题" type="11" name="isTitleEllipsis" ct="[true,false]"
+			tips="当标题过长时，是否省略列标题">
+			<Value>false</Value>
+			<Description><![CDATA[
+    			当标题过长时，是否省略列标题
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性目前只支持在list类型下使用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="宽度" type="1" name="width" tips="设置本组件的宽度，目前各列的宽度不支持填写百分比，如果要使用比例宽度，请配合自动宽度属性">
+			<Value>50</Value>
+		</Property>
+		<Property cn="自动宽度" type="11" name="autoWidth" tips="如果为true，则本列的宽度将自动展开，在列表的适应宽度属性为true时有效">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否可编辑" type="11" name="isEditor">
+			<Value>true</Value>
+		</Property>
+		<Property cn="编辑器类型" type="3" name="editor" ct="[date]"
+			tips="选择日期控件展现的子类型，只有date类型">
+			<Value>date</Value>
+						<Description><![CDATA[	
+				选择日期控件展现的子类型，只有date类型</br><img src="../../resources/images/common/list/dateEdit.png">
+			]]></Description>
+		</Property>
+		<Property cn="是否显示Time" type="11" name="showTime" tips="日期控件是否显示时，分，秒的选择">
+			<Value>false</Value>
+		</Property>
+		<Property cn="新建默认值" type="1" name="defValue">
+			<Value />
+		</Property>
+		<Property cn="是否必填" type="11" name="required" tips="设置是否为必填项" inherit="false">
+			<Value>false</Value>
+			<Description><![CDATA[			
+				设置是否为必填项,如果为true则不能编辑为空值</br><img src="../../resources/images/common/list/required.png">
+				]]></Description>
+		</Property>
+		<Property cn="最大值" type="9" name="maxValue" tips="日期的最大值，不指定则以数据字典为准">
+			<Value />
+		</Property>
+		<Property cn="最小值" type="9" name="minValue" tips="日期的最小值，不指定则以数据字典为准">
+			<Value />
+		</Property>
+		<Property cn="显示格式" type="1" name="customFormat" tips="用于设置日期的显示格式...">
+			<Value />
+			<Description><![CDATA[
+				用于设置日期的显示格式:
+				<table width=1><tr><td style='text-align:center;font-weight:700'>customFormat：Y年m月d日</td><td style='text-align:center;font-weight:700'>customFormat：Y年m月d日H时i分s秒</td></tr><tr><td><img src='../../resources/images/common/form/date/date_cf1.png'></td><td><img src='../../resources/images/common/form/date/date_cf2.png'></td></tr><tr><td style='text-align:center;font-weight:700'>customFormat：Y年m月d日H时i分</td><td style='text-align:center;font-weight:700'>customFormat：Y年m月d日H时</td></tr><tr><td><img src='../../resources/images/common/form/date/date_cf3.png'></td><td><img src='../../resources/images/common/form/date/date_cf4.png'></td></tr></table>
+				
+				<PRE>
+此说明引用Ext.Date文档
+Format  Description                                                               Example returned values
+------  -----------------------------------------------------------------------   -----------------------
+  d     Day of the month, 2 digits with leading zeros                             01 to 31
+  D     A short textual representation of the day of the week                     Mon to Sun
+  j     Day of the month without leading zeros                                    1 to 31
+  l     A full textual representation of the day of the week                      Sunday to Saturday
+  N     ISO-8601 numeric representation of the day of the week                    1 (for Monday) through 7 (for Sunday)
+  S     English ordinal suffix for the day of the month, 2 characters             st, nd, rd or th. Works well with j
+  w     Numeric representation of the day of the week                             0 (for Sunday) to 6 (for Saturday)
+  z     The day of the year (starting from 0)                                     0 to 364 (365 in leap years)
+  W     ISO-8601 week number of year, weeks starting on Monday                    01 to 53
+  F     A full textual representation of a month, such as January or March        January to December
+  m     Numeric representation of a month, with leading zeros                     01 to 12
+  M     A short textual representation of a month                                 Jan to Dec
+  n     Numeric representation of a month, without leading zeros                  1 to 12
+  t     Number of days in the given month                                         28 to 31
+  L     Whether it's a leap year                                                  1 if it is a leap year, 0 otherwise.
+  o     ISO-8601 year number (identical to (Y), but if the ISO week number (W)    Examples: 1998 or 2004
+        belongs to the previous or next year, that year is used instead)
+  Y     A full numeric representation of a year, 4 digits                         Examples: 1999 or 2003
+  y     A two digit representation of a year                                      Examples: 99 or 03
+  a     Lowercase Ante meridiem and Post meridiem                                 am or pm
+  A     Uppercase Ante meridiem and Post meridiem                                 AM or PM
+  g     12-hour format of an hour without leading zeros                           1 to 12
+  G     24-hour format of an hour without leading zeros                           0 to 23
+  h     12-hour format of an hour with leading zeros                              01 to 12
+  H     24-hour format of an hour with leading zeros                              00 to 23
+  i     Minutes, with leading zeros                                               00 to 59
+  s     Seconds, with leading zeros                                               00 to 59
+  u     Milliseconds, with leading zeroes (arbitrary number of digits allowed)    Examples:
+                                                                                  001 (i.e. 1ms) or
+                                                                                  100 (i.e. 100ms) or
+                                                                                  999 (i.e. 999ms) or
+                                                                                  999876543210 (i.e. 999.876543210ms)
+  O     Difference to Greenwich time (GMT) in hours and minutes                   Example: +1030
+  P     Difference to Greenwich time (GMT) with colon between hours and minutes   Example: -08:00
+  T     Timezone abbreviation of the machine running the code                     Examples: EST, MDT, PDT ...
+  Z     Timezone offset in seconds (negative if west of UTC, positive if east)    -43200 to 50400
+  c     ISO 8601 date (note: milliseconds, if present, must be specified with     Examples:
+        at least 1 digit. There is no limit to how many digits the millisecond    2007-04-17T15:19:21+08:00 or
+        value may contain. see http://www.w3.org/TR/NOTE-datetime for more info)  2008-03-16T16:18:22Z or
+                                                                                  2009-02-15T17:17:23.9+01:00 or
+                                                                                  2010-01-14T18:16:24,999876543-07:00
+  U     Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)                1193432466 or -2138434463
+</PRE>
+			]]></Description>
+		</Property>
+		<Property cn="客户端" type="15" group="验证脚本" name="onValidClient"
+			tips="组件的验证脚本(客户端),会传递value变量作为本组件的当前值">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="验证脚本" name="onValidServer"
+			tips="组件的验证脚本(服务器端),会传递value变量作为本组件的当前值">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="值改变时脚本" name="onChangeClient"
+			tips="当本组件的值改变时触发的事件，客户端脚本">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="值改变时脚本" name="onChangeServer"
+			tips="当本组件的值改变时触发的事件，服务器端脚本">
+			<Value />
+		</Property>
+		<Property cn="是否显示Hint提示" type="11" name="isShowHint" tips="设置本列是否显示Hint提示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="Hint提示内容" type="1" name="hintText"
+			tips="设置本列的Hint提示内容，可写数据源标签 示例：{rs1.C_NAME}">
+			<Value />
+		</Property>
+		<Property cn="提示是否过滤html标签" type="11" name="isHintFilterHtml"
+			tips="Hint提示是否过滤html标签，设置为true则过滤html标签；否则，html标签会作为文本输出">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否折行" type="3" name="autoRowHeight" ct="[inherit,true,false]" tips="当设置为true时，单元格的内容如果过多时会折行显示">
+			<Value />
+		</Property>
+		<Property cn="内容位置" type="3" name="contentAlign" ct="[left,center,right]" tips="设置本列内容的位置，默认为left">
+			<Value>left</Value>
+		</Property>
+		<Property cn="内容是否编码" type="11" name="htmlEncode"
+			tips="设置本列内容是否编码显示，编码后，内容中的html标签将做为文本输出">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否过滤" type="11" name="isFilter">
+			<Value>false</Value>
+		</Property>
+		<Property cn="过滤提示" type="1" name="filterEmptyText"
+			tips="设置本列的过滤提示值，会在过滤框没有输入的情况下显示在过滤框中">
+			<Value />
+		</Property>
+		<Property cn="过滤默认值" type="1" name="filterDefault" tips="设置本列的过滤默认值，在开启过滤功能时有效">
+			<Value/>
+		</Property>
+		<Property cn="过滤动态代码" type="14" name="dynamicDataFilter">
+			<Value />
+		</Property>
+		<Property cn="是否排序" type="11" name="isOrderBy">
+			<Value>false</Value>
+		</Property>
+		<Property cn="排序方向" type="3" name="sortDir" ct="[ASC,DESC]"
+			tips="设置初始排序方向，默认为ASC（升序）">
+			<Value>ASC</Value>
+		</Property>
+		<Property cn="显示排序图标" type="11" name="showOrderIcon" tips="如果设置为true，则在列标题上显示排序图标，方向由排序方向属性指定">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否合计" type="11" name="isSum">
+			<Value>false</Value>
+		</Property>
+		<Property cn="合计处理" type="1" name="sumFormula">
+			<Value />
+		</Property>
+		<Property cn="是否固定" type="11" name="isFix">
+			<Value>false</Value>
+		</Property>
+		<Property cn="链接到" type="6" name="linkto" tips="选择当组件点击时连接到的表单">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient"
+			tips="鼠标点击本组件时触发的客户端事件">
+			<Value />
+		</Property>
+	<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer" tips="鼠标点击本组件时触发的服务器端事件...">
+		<Value/>
+		<Description><![CDATA[
+			鼠标点击本组件时触发的服务器端事件
+			<pre>
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object column6bae6_onClickServer(Item item) {
+	//数据操作
+	
+	return “操作成功”;
+}
+			</pre>
+			]]></Description>
+	</Property>
+		<Property cn="行脚本" type="14" name="rowScript"
+			sh="value,rowIndex,cellRow,cellRow.getString(col),dataRow,dataRow.isEmpty(),dataRow.getString(col),dataRow.getInt(col),dataRow.getDouble(col),dataRow.getData(col),dataRow.index()"
+			tips="可调用：cell,cellRow,dataRow,item,rowIndex,value">
+			<Value />
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="编辑前脚本" type="15"  name="beforeEdit" tips="当本组件的值被编辑前触发的事件，客户端脚本如果返回false阻止编辑，返回true则允许继续编辑">
+			<Value />
+		</Property>
+	</Properties>
+  <JsFunctions>
+		<JsFunction name="onValidClient"><![CDATA[
+/**
+ * 验证脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ */
+function {methodName} (rc, value){
+	
+}]]>
+		</JsFunction>
+  	<JsFunction name="onChangeClient">
+/**
+ * 值改变时脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  oldValue 控件改变前的旧值
+ * @param  newValue 控件改变后的新值
+ */
+function {methodName} (rc, oldValue, newValue){
+	
+}
+  	</JsFunction>
+  	 <JsFunction name="beforeEdit">
+/**
+ * 编辑前脚本,根据返回值判断是否可编辑({itemid})
+ * 
+ * @param  record 当前行记录
+ * @param  value  当前值
+ */
+function {methodName} (record, value){
+	return true;
+}
+  	</JsFunction>
+  </JsFunctions>
+	<JavaFunctions>
+		<JavaFunction name="onChangeServer">
+<![CDATA[
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onValidServer">
+<![CDATA[
+/**
+ * 验证脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="dynamicDataFilter">
+<![CDATA[
+/**
+ * 过滤动态代码
+ * 
+ * @param item
+ *            控件对象
+ */
+public List {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onClickServer">
+<![CDATA[
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="rowScript"
+			imports="com.thunisoft.artery.parse.eform.form.cellset.Cell;com.thunisoft.artery.parse.eform.form.cellset.CellRow;">
+<![CDATA[
+/**
+ * 行脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param cell
+ *            展现单元格对象
+ * @param cellRow
+ *            展现数据行对象
+ * @param dataRow
+ *            结果数据行对象
+ * @param value
+ *            当前单元格的值
+ */
+public void {methodName}(Item item, Cell cell, CellRow cellRow,
+		Object dataRow, String value) {
+
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

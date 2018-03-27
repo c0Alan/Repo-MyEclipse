@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>b15ee6955d8cd6d5daebc5ac0d6f94e9</cid>
+  <key />
+  <tableName>T_Aty_User</tableName>
+  <showName>用户表</showName>
+  <desc />
+  <fields>
+    <field cid="d6c393b431255a87c6426d03d886a5db" fieldName="C_ID" fieldType="text" dbmsType="varchar" pk="true" defaultValue="" unique="true" desc="">
+      <extend required="true" label="用户编号" maxLength="50" />
+    </field>
+    <field cid="06749a720f61f7b76816b8b557369a5f" fieldName="C_LoginID" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="true" label="登陆标识" maxLength="100" />
+    </field>
+    <field cid="cee32cdda37e8e651e2985a44fda4231" fieldName="C_Name" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="true" label="姓名" maxLength="100" />
+    </field>
+    <field cid="fdc110724d83964746ef1c8d2ee02796" fieldName="C_Password" fieldType="text" dbmsType="varchar" pk="false" defaultValue="'D41D8CD98F00B204E9800998ECF8427E' " unique="false" desc="">
+      <extend required="true" label="密码" maxLength="32" />
+    </field>
+    <field cid="bf2e5bfa1c5c42e6dbef28b44e3e4180" fieldName="C_Mail" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="电子邮件" maxLength="100" />
+    </field>
+    <field cid="dafb9ad8b2f8d1ddc43df78d8db80cac" fieldName="C_IP" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="IP地址" maxLength="100" />
+    </field>
+    <field cid="8d3b0d5dbfb2a60c2e0e2559c9dcc7ba" fieldName="C_XMJP" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="姓名简拼" maxLength="50" />
+    </field>
+    <field cid="5a300a370bf5b60b3d069f19dc105265" fieldName="C_CORP" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="所在单位" maxLength="50" />
+    </field>
+    <field cid="a308953fa6fe9cab320b6c926e8f442f" fieldName="C_DEPT" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="所在部门" maxLength="50" />
+    </field>
+    <field cid="53a62e821e1cd3bbeb633a86ded33f2d" fieldName="N_Valid" fieldType="number" dbmsType="number" pk="false" defaultValue="1 " unique="false" desc="">
+      <extend required="true" label="是否有效" maxLength="3" maxPrecision="0" maxValue="255" minValue="0" />
+    </field>
+    <field cid="905c4653e087df5a3cf2d80058df8682" fieldName="N_Order" fieldType="number" dbmsType="number" pk="false" defaultValue="1 " unique="false" desc="">
+      <extend required="true" label="显示顺序" maxLength="5" maxPrecision="0" maxValue="65535" minValue="-65536" />
+    </field>
+  </fields>
+</table>
+

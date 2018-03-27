@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>89afa1b226aabe18065ed01838e00ecd</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.normalcode.Dmlb.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/normalcode/Dmlb.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form8212b">
+      <id>form8212b</id>
+      <Items>
+        <blankPanel sid="53c34dc9677b44635076ef64d38323dd">
+          <id>blankPanel72fa1</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="79bd531c1cbd0fb0c4ffef3a2e85f53c">
+              <id>headerb73b5</id>
+              <text />
+              <Items>
+                <blankPanel sid="beefa317ebab70d35976cc1799d5863f">
+                  <id>blankPanel81475</id>
+                  <bodyStyle>display:none;</bodyStyle>
+                  <Items>
+                    <topbar sid="17bcefd80a7e1dc2bb7ad259cfd2257c">
+                      <id>topbard8b3e</id>
+                      <themeStyle>unis</themeStyle>
+                      <Items>
+                        <tbText sid="cdc27513c3e3aa2d8801299155dc7987">
+                          <id>tbText94d7b</id>
+                          <text>&lt;span style="font-size:14px;font-weight:700;color:#15428B;"&gt;代码值&lt;/span&gt;</text>
+                        </tbText>
+                        <tbSeparator sid="90c643b5e3f87db95cd972286381a362">
+                          <id>tbSeparator10f2f</id>
+                        </tbSeparator>
+                        <tbButton sid="f62c7ff084df4b69e164bd511f2e3aef">
+                          <id>addBtn</id>
+                          <text>添加代码项</text>
+                          <icon>/artery/arteryImage/symbol/drop-add.gif</icon>
+                          <linkto>{"formId":"07b0dabc3a955cdd6ac61b60110d6162","formName":"添加代码项","formType":"1","params":{"type":"{req.type}","code":"","dbBelongsTo":"{req.dbBelongsTo}"},"runTimeType":"insert","target":"_window","targetWidth":"400","targetHeight":"370","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"添加代码项","wincfg":""}</linkto>
+                        </tbButton>
+                        <tbButton sid="802a4b210e69a7dca975e56c099e67b8">
+                          <id>sortBtn</id>
+                          <text>自动编排顺序</text>
+                          <icon>/artery/arteryImage/arrow/bottom2.gif</icon>
+                          <onClickClient><![CDATA[sortBtn_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[sortBtn_onClickServer]]></onClickServer>
+                        </tbButton>
+                        <tbButton sid="3d0388526a925cd666baf2d27bfe10c0">
+                          <id>dmjpBtn</id>
+                          <text>拼音简拼</text>
+                          <icon>/artery/arteryImage/file/tbmenu.gif</icon>
+                          <onClickClient><![CDATA[dmjpBtn_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[dmjpBtn_onClickServer]]></onClickServer>
+                        </tbButton>
+                      </Items>
+                    </topbar>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+            <listArea sid="8f3812cfe067bb0310eee547114378a9">
+              <id>codeListArea</id>
+              <ds>rs1</ds>
+              <isInitData>true</isInitData>
+              <height>100%</height>
+              <emptyDataTip />
+              <isPageSplit>false</isPageSplit>
+              <pageCount />
+              <displayInfo>false</displayInfo>
+              <isShowRowNumber>false</isShowRowNumber>
+              <themeStyle>unis</themeStyle>
+              <highLightRule><![CDATA[codeListArea_highLightRule]]></highLightRule>
+              <onLoad><![CDATA[codeListArea_onLoad]]></onLoad>
+              <Items>
+                <columnString sid="51b586bb634d33de8cf4b57c27664523">
+                  <id>columnStringe5cee</id>
+                  <dataName>{rs1.order}</dataName>
+                  <title>排序</title>
+                  <width>40</width>
+                </columnString>
+                <columnString sid="45e75f22c466206f84891b0a9b2ff3b4">
+                  <id>codeColumnNumeric</id>
+                  <inheritfld>code</inheritfld>
+                  <dataName>{rs1.code}</dataName>
+                  <title>代码标识</title>
+                  <isFilter>true</isFilter>
+                </columnString>
+                <columnString sid="11115cb1798b7b240701df3e72bbeda5">
+                  <id>columnString645dc</id>
+                  <inheritfld>name</inheritfld>
+                  <dataName>{rs1.name}</dataName>
+                  <title>代码名称</title>
+                  <width>100</width>
+                  <isFilter>true</isFilter>
+                </columnString>
+                <columnString sid="095f8e56fa0a1233e05ba744b5fbafe9">
+                  <id>columnString4920d</id>
+                  <inheritfld>levelInfo</inheritfld>
+                  <dataName>{rs1.levelInfo}</dataName>
+                  <title>分级信息</title>
+                  <isFilter>true</isFilter>
+                </columnString>
+                <columnString sid="0425dc8c2404811e3cb4e85c3c2e0f2d">
+                  <id>columnString52dcf</id>
+                  <inheritfld>dmjp</inheritfld>
+                  <dataName>{rs1.dmjp}</dataName>
+                  <title>拼音简拼</title>
+                  <isFilter>true</isFilter>
+                </columnString>
+                <column sid="9cbb6ba08f04f1494cb6795d842e919d">
+                  <id>column48184</id>
+                  <title>操作</title>
+                  <width>80</width>
+                  <Items>
+                    <colOperText sid="f085daf13cce6073c377a85043132f71">
+                      <id>upColOperText</id>
+                      <text>向上</text>
+                      <onClickClient><![CDATA[upColOperText_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[upColOperText_onClickServer]]></onClickServer>
+                    </colOperText>
+                    <colOperText sid="b6be419dfc94253c6971060d98b64166">
+                      <id>downColOperText</id>
+                      <text>向下</text>
+                      <onClickClient><![CDATA[downColOperText_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[downColOperText_onClickServer]]></onClickServer>
+                    </colOperText>
+                    <colOperText sid="2faada35c54d32e77d4a0364dc2f6e66">
+                      <id>delColOperText</id>
+                      <text>删除</text>
+                      <onClickClient><![CDATA[delColOperText_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[delColOperText_onClickServer]]></onClickServer>
+                      <onFilter><![CDATA[delColOperText_onFilter]]></onFilter>
+                    </colOperText>
+                    <colOperText sid="7c3c59d3fbf0f2c71d6e40f44d9c5ccd">
+                      <id>editColOperText</id>
+                      <text>编辑</text>
+                      <onClickClient><![CDATA[editColOperText_onClickClient]]></onClickClient>
+                    </colOperText>
+                    <colOperText sid="f63a9ce8e9ead8151fdb2701dc6cf1c3">
+                      <id>validColOperText</id>
+                      <text>置成无效</text>
+                      <onClickClient><![CDATA[validColOperText_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[validColOperText_onClickServer]]></onClickServer>
+                      <onFilter><![CDATA[validColOperText_onFilter]]></onFilter>
+                      <rowScript><![CDATA[validColOperText_rowScript]]></rowScript>
+                    </colOperText>
+                  </Items>
+                </column>
+              </Items>
+            </listArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="type" showName="" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getCodeTypeList</ds>
+  </dslist>
+</form>
+

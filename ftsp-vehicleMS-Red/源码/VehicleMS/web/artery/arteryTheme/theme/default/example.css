@@ -1,0 +1,247 @@
+/***************************************************************************************
+ * notices
+ ***************************************************************************************/
+#notice {
+	WIDTH: 280px;
+	BACKGROUND-COLOR: #e4f3fa
+}
+
+.title_notice {
+	BACKGROUND: url(images/news/title_notice_main.gif);
+	HEIGHT: 33px
+}
+
+.title_notice IMG {
+	MARGIN: 7px 0px 0px 20px
+}
+
+.content_bg {
+	PADDING-RIGHT: 13px;
+	PADDING-LEFT: 15px;
+	PADDING-BOTTOM: 5px;
+	PADDING-TOP: 5px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+.bg_notice {
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	BACKGROUND: url(images/news/bg_notice_main.gif) #e4f3fa repeat-x 50% top;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px
+}
+
+.bg_left_notice {
+	BACKGROUND: url(images/news/shadow_left_notice.gif) #e4f3fa repeat-y left
+		50%;
+	VERTICAL-ALIGN: top;
+	WIDTH: 18px;
+	HEIGHT: 145px
+}
+
+.bg_right_notice {
+	BACKGROUND: url(images/news/shadow_right_notice.gif) #e4f3fa repeat-y left
+		50%;
+	VERTICAL-ALIGN: top;
+	WIDTH: 18px
+}
+
+.bg_top_notice {
+	BACKGROUND: url(images/news/bg_top_notice.gif) repeat-x 50% top
+}
+
+.bg_bottom_notice {
+	BACKGROUND: url(images/news/bg_bottom_notice.gif) repeat-x 50% bottom
+}
+
+.tb_notice {
+	BACKGROUND: #ffffff
+}
+
+.tb_notice UL {
+	LIST-STYLE-TYPE: none
+}
+
+.tb_notice A {
+	PADDING-RIGHT: 0px;
+	DISPLAY: block;
+	PADDING-LEFT: 14px;
+	BACKGROUND: url(images/news/arrow_blue_2.gif) no-repeat left 5px;
+	PADDING-BOTTOM: 0px;
+	LINE-HEIGHT: 20px;
+	PADDING-TOP: 0px
+}
+
+.tb_notice LI {
+	MARGIN: 5px 0px;
+	BORDER-BOTTOM: #dbeffa 1px solid
+}
+
+.tb_notice H5 {
+	DISPLAY: inline;
+	FONT-WEIGHT: normal;
+	MARGIN: 0px 3px 0px 0px;
+	COLOR: #076abf
+}
+
+.img_pic_left {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	PADDING-BOTTOM: 5px;
+	PADDING-TOP: 5px;
+	TEXT-ALIGN: center
+}
+
+.title_pic {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 5px;
+	TEXT-ALIGN: center
+}
+
+.img_pic_right {
+	BORDER-RIGHT: #e0e0e0 1px solid;
+	PADDING-RIGHT: 5px;
+	BORDER-TOP: #e0e0e0 1px solid;
+	PADDING-LEFT: 5px;
+	FLOAT: left;
+	PADDING-BOTTOM: 5px;
+	MARGIN: 5px 0px 3px 10px;
+	BORDER-LEFT: #e0e0e0 1px solid;
+	PADDING-TOP: 5px;
+	BORDER-BOTTOM: #e0e0e0 1px solid
+}
+
+#spirit {
+	FLOAT: right;
+	MARGIN: 0px 0px 0px 2px
+}
+
+/***************************************************************************************
+ * news
+ ***************************************************************************************/
+.fl_left {
+	float: left
+}
+
+.fl_right {
+	float: right
+}
+
+.title_picnew {
+	BACKGROUND: url(images/news/title_news_main.gif) no-repeat
+		left top;
+	WIDTH: 352px;
+	HEIGHT: 38px
+}
+
+.title_text {
+	float: left !important;
+	word-break: keep-all;
+	padding-top: 13px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #1357A0;
+}
+
+.title_picnew IMG {
+	MARGIN: 13px 10px 0px
+}
+
+#topnews {
+	WIDTH: 352px
+}
+
+#topnews UL {
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	LIST-STYLE-TYPE: none
+}
+
+#topnews LI {
+	CLEAR: both;
+	BACKGROUND: url(images/news/bg_line_dotted.gif) repeat-x
+		50% bottom;
+	LINE-HEIGHT: 21px
+}
+
+#topnews .link_div {
+	text-align: left; float : left;
+	overflow: hidden;
+	width: 280px;
+	height: 16px;;
+	float: left;
+}
+
+#topnews A {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 16px;
+	BACKGROUND: url(images/news/arrow_grey.gif) no-repeat 4px
+		8px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+}
+
+#topnews SPAN {
+	FLOAT: right;
+	WIDTH: 40px
+}
+
+#topnews IMG {
+	MARGIN-LEFT: 4px
+}
+
+#topnews a {
+	color: #07519a;
+	text-decoration: none;
+}
+
+#topnews a:visited {
+	color: #333333;
+}
+
+#topnews a:hover {
+	color: #FF6600;
+}
+
+#topnews a:active {
+	color: #FF0000;
+}
+
+/***************************************************************************************
+ * notices
+ ***************************************************************************************/
+ .x-searchresult-title,.x-searchresult-title span{
+	font-size: 16px;
+}
+
+.x-searchresult-content{
+	line-height: 18px;	
+}
+.x-searchresult-content,x-searchresult-content span{
+	font-size: 13px;
+}
+
+.x-searchresult-footer,x-searchresult-foote span{
+	color: #008000;
+	padding-top: 3px;
+}
+
+.searchResult-page-div{
+	padding-left: 7px;
+	padding-top: 25px;
+}
+.searchResult-page-span {
+	padding: 4px;
+}
+.searchResult-next-page,.searchResult-prev-page{
+	padding: 3px;
+	font-size: 16px;
+}
+
+ 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="centerRegion" cn="中心布局" menu="布局控件" jsType="artery-base"
+	nameprop="title" icon="centerRegion.gif" iconNew="centerRegionNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>布局控件中的中心布局控件，此控件是必须的，布局界面中必须包含此控件。
+		</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="upRegion" />
+		<Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" />
+	</Parents>
+	<Children>
+		<Child type="upRegion" />
+		<Child type="leftRegion" />
+		<Child type="downRegion" />
+		<Child type="rightRegion" />
+		<Child type="centerRegion" />
+		<Child type="htmlArea" />
+		<Child type="treeArea" />
+		<Child type="tabArea" />
+		<Child type="buttonArea" />
+		<Child type="formArea" />
+		<Child type="listArea" />
+		<Child type="header" />
+		<Child type="topbar" />
+		<Child type="bottomBar" />
+		<Child type="footer" />
+		<Child type="dynamicNav" />
+		<Child type="operArea" />
+		<Child type="tableLayout" />
+		<Child type="window" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.region.CenterRegion
+	</Class>
+	<JsFile>
+		<File>baseRegion.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="边距" type="1" name="margins" group="特性" tips="设置本组件的边距" export="true">
+			<Value></Value>
+		</Property>
+		<Property cn="是否显示边框" inherit="false" type="11" name="border" group="样式" export="true"
+			tips="设置是否显示布局最外层的边框，默认为true">
+			<Value>true</Value>
+			<Description><![CDATA[
+				<p>设置是否显示布局最外层的边框，默认为true</p>
+				<p>true：显示布局最外层的边框</P>
+				<p>false：不显示布局最外层的边框</P>
+			]]></Description>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle" group="样式"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" group="样式" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className" group="样式"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+</Item>
+

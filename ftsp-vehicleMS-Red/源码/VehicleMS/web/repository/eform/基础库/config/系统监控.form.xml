@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>bce9c516221612736a17de83fbfecc34</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.config.Xtjk.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/config/Xtjk.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form6cf78">
+      <id>form6cf78</id>
+      <Items>
+        <centerRegion sid="3d2030bf286925c6c15999679c41b2d2">
+          <id>centerRegionbc0d5</id>
+          <Items>
+            <blankPanel sid="bd5b3d64c335ab4838923ec5e5b9fc24">
+              <id>blankPanel08a76</id>
+              <height>100%</height>
+              <Items>
+                <listArea sid="2a0d95a23ac31ac9f3d03400fa772fec">
+                  <id>listAreadfa1f</id>
+                  <ds>{rs1.rows}</ds>
+                  <height>100%</height>
+                  <isPageSplit>false</isPageSplit>
+                  <displayInfo>false</displayInfo>
+                  <showUpdate>false</showUpdate>
+                  <isTip>true</isTip>
+                  <tipTpl>单击显示监控详情</tipTpl>
+                  <onClickDoubleClient><![CDATA[listAreadfa1f_onClickDoubleClient]]></onClickDoubleClient>
+                  <onClickDoubleServer><![CDATA[listAreadfa1f_onClickSingleServer]]></onClickDoubleServer>
+                  <Items>
+                    <columnString sid="90bbdb7364bdd0df97336fcd71d475d2">
+                      <id>id</id>
+                      <dataName>{rs1.id}</dataName>
+                      <isOnlyData>true</isOnlyData>
+                      <title>id</title>
+                    </columnString>
+                    <columnString sid="cf24141689ec9dc11dc88eeafda19157">
+                      <id>formName</id>
+                      <dataName>{rs1.formName}</dataName>
+                      <title>表单名称</title>
+                    </columnString>
+                    <columnString sid="f19ba52e45c55e78504fc4239be5e5ca">
+                      <id>startTime</id>
+                      <dataName>{rs1.startTime}</dataName>
+                      <title>开始时间</title>
+                    </columnString>
+                    <columnString sid="4c0fdd239c8c46e637be5ccbec9944be">
+                      <id>endTime</id>
+                      <dataName>{rs1.endTime}</dataName>
+                      <title>结束时间</title>
+                    </columnString>
+                    <columnNumeric sid="984db0a72a6d9b725cb8618ce912ae54">
+                      <id>costTime</id>
+                      <dataName>{rs1.costTime}</dataName>
+                      <title>花费时间(ms)</title>
+                      <isOrderBy>true</isOrderBy>
+                    </columnNumeric>
+                    <columnNumeric sid="9a61898a5863ead96a0ee2d7353b5a3c">
+                      <id>recordSize</id>
+                      <dataName>{rs1.recordSize}</dataName>
+                      <title>详情记录数</title>
+                      <isOrderBy>true</isOrderBy>
+                    </columnNumeric>
+                  </Items>
+                </listArea>
+              </Items>
+            </blankPanel>
+            <header sid="b754faa2275e50fb5880f485d4874711">
+              <id>header36de0</id>
+              <text>表单解析记录，平均解析时间：&lt;font color="red"&gt;{rs1.avgTime}ms&lt;/font&gt;</text>
+            </header>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

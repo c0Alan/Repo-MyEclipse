@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>c6423df0afc735a54804e0201685e13e</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.xtx.bdts.Form3R.java</javaLocation>
+  <jsLocation>arteryClient/slk/xtx/bdts/Form3R.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formABCD</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <footer sid="1cbfa5794c97b86293b836964184e5d3">
+          <id>footer261b8</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>8</spacing>
+          <Items>
+            <button sid="36c123a42184ff2eeaf28dec6d599c0a">
+              <id>button8975b</id>
+              <text>保存</text>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <button sid="f9577890c44a06163bce67aa99a9e856">
+              <id>button61310</id>
+              <text>保存失败</text>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <simpleButton sid="a8c6150ff942b8623673f3ed5f855be3">
+              <id>simpleButton4a65d</id>
+              <text>取消</text>
+              <underline>false</underline>
+            </simpleButton>
+          </Items>
+        </footer>
+        <blankPanel sid="3ae464f731f12989d0a02ae9b09c0938">
+          <id>blankPanelba0a8</id>
+          <height>100%</height>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <topbar sid="548a79559f9f909a9b5b84c7203ba549">
+              <id>topbarea11a</id>
+              <Items>
+                <tbText sid="1736375baaa2e762c74be5b0c13d5dd8">
+                  <id>tbText79642</id>
+                  <text>&lt;span style='color:gray;height:25px;padding:5px;'&gt;带（&lt;span style="color:red;"&gt;*&lt;/span&gt;）号的为必填项&lt;/span&gt;</text>
+                </tbText>
+              </Items>
+            </topbar>
+            <formArea sid="f7617baf562f2a1f2a8ded9f0490c8a8">
+              <id>formArea01f87</id>
+              <ds>rs1</ds>
+              <labelWidth>80</labelWidth>
+              <Items>
+                <faIdentity sid="f7601d478575f3a63a01a752314da455">
+                  <id>faIdentityCID</id>
+                  <required>true</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_ID</inheritfld>
+                  <dataName>{rs1.C_ID}</dataName>
+                  <label>图书编号</label>
+                </faIdentity>
+                <faString sid="87533ed59d0b009491e88473ebf2ceb7">
+                  <id>faStringCNAME</id>
+                  <required>true</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs1.C_NAME}</dataName>
+                  <label>图书名称</label>
+                </faString>
+                <faString sid="a9c135b8fb5450e693e23581a7817b3c">
+                  <id>faStringCAUTH</id>
+                  <required>false</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_AUTH</inheritfld>
+                  <dataName>{rs1.C_AUTH}</dataName>
+                  <label>作者</label>
+                </faString>
+                <faString sid="4ef3790f4567f293a0957312188b4e2e">
+                  <id>faStringCPUBLISHER</id>
+                  <required>false</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_PUBLISHER</inheritfld>
+                  <dataName>{rs1.C_PUBLISHER}</dataName>
+                  <label>出版社</label>
+                </faString>
+                <faDate sid="7693d63f81c5d2cef70bdc457992421e">
+                  <id>faDateDPUBLISHER</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>D_PUBLISHER</inheritfld>
+                  <dataName>{rs1.D_PUBLISHER}</dataName>
+                  <label>出版日期</label>
+                </faDate>
+                <faDate sid="c640c8c63ad7a913f739265569468177">
+                  <id>faDateDBUY</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>D_BUY</inheritfld>
+                  <dataName>{rs1.D_BUY}</dataName>
+                  <editable>false</editable>
+                  <label>购买日期</label>
+                </faDate>
+                <faString sid="446f20ec2663b81ae9feec8c366a97a2">
+                  <id>faStringCISBN</id>
+                  <required>false</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_ISBN</inheritfld>
+                  <dataName>{rs1.C_ISBN}</dataName>
+                  <label>ISBN号</label>
+                </faString>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="bookId" />
+    <param name="listAreaId" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    T_Eg_Book.C_ID,&#xD;
+    T_Eg_Book.C_NAME,&#xD;
+    T_Eg_Book.C_AUTH,&#xD;
+    T_Eg_Book.C_PUBLISHER,&#xD;
+    T_Eg_Book.D_PUBLISHER,&#xD;
+    T_Eg_Book.D_BUY,&#xD;
+    T_Eg_Book.C_ISBN&#xD;
+FROM&#xD;
+    T_Eg_Book&#xD;
+where C_ID='{req.bookId}'</ds>
+  </dslist>
+</form>
+

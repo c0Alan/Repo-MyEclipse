@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="rptResult" cn="报表结果区域" nameprop="Caption" order="1000" libType="" icon="rptResult.gif" iconNew="rptResultNew.gif">
+  <Info>
+    <Author>Artery开发小组</Author>
+    <CreateTime>2008-08-05</CreateTime>
+    <Describe><![CDATA[报表结果控件，表示一个报表布局中的报表显示区域。此控件可独立控制打印参数，缓存等功能，功能与报表区域上的属性一致。
+		当报表区域设置了以原配置为准时，此控件属性有效。]]></Describe>
+  </Info>
+  <Parents>
+    <Parent type="rptLayout" />
+  </Parents>
+  <Class>com.thunisoft.artery.plugin.report.RptResult</Class>
+  <JsFile>
+    <File>rptResult.js</File>
+  </JsFile>
+  <Properties>
+    <Property cn="组件类型" type="1" name="xtype" export="true" isHidden="true" cfg="true">
+      <Value>aprptresult</Value>
+    </Property>
+    <Property cn="标识" type="1" name="id" tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+      <Value />
+    </Property>
+    <Property cn="自动调整行宽列高" type="3" name="autoCellType" tips="用来控制报表展现格式的，在报表生成的同时按照报表大小自动调整" ct="[no,col,row]">
+      <Description><![CDATA[用来控制报表展现格式的，在报表生成的同时按照报表大小自动调整,
+			no不改变原配置，col改变列宽不改变行高自适应，row改变行高不改变列宽自适应]]></Description>
+      <Value>no</Value>
+    </Property>
+    <Property cn="是否显示分页栏" type="11" name="showPageNum" tips="用来控制在展现页面报表的下面是否显示分页信息">
+      <Value>true</Value>
+    </Property>
+    <Property cn="分页对应结果集 " type="1" name="pageRs" tips="设置分页对应的结果集">
+      <Value>rs1</Value>
+    </Property>
+    <Property cn="定时刷新(以秒为单位,0为不刷新)" type="2" name="timeRefresh" export="true" tips="设置定时刷新的时间">
+      <Value>0</Value>
+    </Property>
+    <Property cn="是否全屏显示" type="11" name="fullScreen" export="true" tips="设置显示全屏显示，将跳过条件区域的解析">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否缓存模板" type="11" name="cacheTmp" tips="设置是否缓存模板，以提高Excel和pdf等的响应速度">
+      <Value>false</Value>
+    </Property>
+    <Property cn="文件导出名称" type="1" name="exportName" export="true" tips="文件导出时的名称">
+      <Value />
+    </Property>
+    <Property cn="打印方向" type="3" name="portrait" export="true" tips="用于设置打印方向" group="打印设置" ct="[纵向,横向]">
+      <Value>纵向</Value>
+    </Property>
+    <Property cn="页眉" type="1" name="printHeader" export="true" tips="用于设置打印页眉" group="打印设置">
+      <Value>第&amp;p页/共&amp;P页</Value>
+    </Property>
+    <Property cn="页脚" type="1" name="printFooter" export="true" tips="用于设置打印页脚" group="打印设置">
+      <Value />
+    </Property>
+    <Property cn="左边距" type="2" name="printLeftMargin" export="true" tips="用于设置打印时的左边距" group="打印设置">
+      <Value>19.05</Value>
+    </Property>
+    <Property cn="上边距" type="2" name="printTopMargin" export="true" tips="用于设置打印时的上边距" group="打印设置">
+      <Value>19.05</Value>
+    </Property>
+    <Property cn="右边距" type="2" name="printRightMargin" export="true" tips="用于设置打印时的右边距" group="打印设置">
+      <Value>19.05</Value>
+    </Property>
+    <Property cn="下边距" type="2" name="printBottomMargin" export="true" tips="用于设置打印时的下边距" group="打印设置">
+      <Value>19.05</Value>
+    </Property>
+    <Property cn="客户端" type="15" name="onCallBackClient" tips="数据加载完成后调用" group="回调脚本">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" name="onCallBackServer" tips="数据加载完成后调用" group="回调脚本">
+      <Value />
+    </Property>
+    <Property cn="是否生成" type="11" name="show" tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别" isHidden="true">
+      <Value>true</Value>
+    </Property>
+    <Property cn="生成时脚本" type="14" name="onShow" tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+    <Property cn="是否默认判断表头" type="11" name="autoParseDataTag" export="true" tips="导入excel类型为csv时，是否默认预解析行，判断那行是表头">
+      <Value>true</Value>
+    </Property>
+  </Properties>
+</Item>
+

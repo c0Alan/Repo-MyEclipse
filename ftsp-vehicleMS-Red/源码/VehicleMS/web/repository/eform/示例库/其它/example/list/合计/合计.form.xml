@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>76c5f6eda0bb8359ad2f538b61f9e0c2</id>
+  <cfgTbl>T_Aty_Code</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.list.hj.Hj.java</javaLocation>
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>ffffff</background-color>
+      <Items>
+        <listArea sid="A7c26715b15ba764a93ba9e444a113d28">
+          <id>A7c26715b15ba764a93ba9e444a113d28</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <width>90%</width>
+          <height>50%</height>
+          <forceFit>false</forceFit>
+          <loadMask>false</loadMask>
+          <pageCount>10</pageCount>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <frame>true</frame>
+          <style>padding-top:10px;padding-bottom:10px;</style>
+          <themeStyle>default</themeStyle>
+          <isSum>true</isSum>
+          <Items>
+            <header sid="A33928da4c1348dde8f8fc6239c9fd26f">
+              <id>A33928da4c1348dde8f8fc6239c9fd26f</id>
+              <text>合计行在底部，默认粗体显示</text>
+            </header>
+            <column sid="A974892a4a159d318d040aeed68615691">
+              <id>A974892a4a159d318d040aeed68615691</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <width>300</width>
+              <isOrderBy>true</isOrderBy>
+              <sumFormula>合计</sumFormula>
+              <isFix>true</isFix>
+            </column>
+            <column sid="A6e820adbaaa336c916fc378eea8bea10">
+              <id>A6e820adbaaa336c916fc378eea8bea10</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>F_PRICE</inheritfld>
+              <dataName>{rs1.F_PRICE}</dataName>
+              <title>价格</title>
+              <width>300</width>
+              <isOrderBy>true</isOrderBy>
+              <isSum>true</isSum>
+              <sumFormula>用标签格式化的值：{nf([@],00.00)}</sumFormula>
+            </column>
+            <column sid="A3b24ccd6ae0f72bf88cf2444d9e76c49">
+              <id>A3b24ccd6ae0f72bf88cf2444d9e76c49</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>F_PRICE</inheritfld>
+              <dataName>{rs1.F_PRICE}</dataName>
+              <title>价格</title>
+              <width>500</width>
+              <isOrderBy>true</isOrderBy>
+              <isSum>true</isSum>
+              <sumFormula>{nf([@],00)}</sumFormula>
+            </column>
+            <column sid="A772d196668c880f091a8cfaeb4872038">
+              <id>A772d196668c880f091a8cfaeb4872038</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>F_PRICE</inheritfld>
+              <dataName>{rs1.F_PRICE}</dataName>
+              <title>价格</title>
+              <width>404</width>
+              <isOrderBy>true</isOrderBy>
+            </column>
+          </Items>
+        </listArea>
+        <listArea sid="A948f132e774183484bfee085d6fad943">
+          <id>listArea2</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <width>90%</width>
+          <height>50%</height>
+          <loadMask>false</loadMask>
+          <pageCount>10</pageCount>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <frame>true</frame>
+          <style>padding-bottom:10px;</style>
+          <themeStyle>default</themeStyle>
+          <isSum>true</isSum>
+          <isSumTop>true</isSumTop>
+          <highLightRule><![CDATA[listArea2_highLightRule]]></highLightRule>
+          <Items>
+            <header sid="Aa301f65467758d163e16822da427cc07">
+              <id>Aa301f65467758d163e16822da427cc07</id>
+              <text>合计行在顶部，应用了亮显规则</text>
+            </header>
+            <column sid="A5ae9cf8a08d3ebff0cc5ee0e0f755b56">
+              <id>A5ae9cf8a08d3ebff0cc5ee0e0f755b56</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <isOrderBy>true</isOrderBy>
+              <sumFormula>合计</sumFormula>
+            </column>
+            <column sid="A3acbd7d7297a6c3b5a0fd9ee862f2644">
+              <id>A3acbd7d7297a6c3b5a0fd9ee862f2644</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>F_PRICE</inheritfld>
+              <dataName>{rs1.F_PRICE}</dataName>
+              <title>价格</title>
+              <isOrderBy>true</isOrderBy>
+              <isSum>true</isSum>
+              <sumFormula>用标签格式化的值：{nf([@],00.00)}</sumFormula>
+            </column>
+            <column sid="A4e77232ebaa1f3c9af28c17c0015b98b">
+              <id>A4e77232ebaa1f3c9af28c17c0015b98b</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>F_PRICE</inheritfld>
+              <dataName>{rs1.F_PRICE}</dataName>
+              <title>价格</title>
+              <width>100</width>
+              <isOrderBy>true</isOrderBy>
+              <isSum>true</isSum>
+              <sumFormula>这是合计：{nf([@],00)}</sumFormula>
+            </column>
+            <column sid="A42639221dc680955eab9252f99f1733e">
+              <id>A42639221dc680955eab9252f99f1733e</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>F_PRICE</inheritfld>
+              <dataName>{rs1.F_PRICE}</dataName>
+              <title>价格</title>
+              <isOrderBy>true</isOrderBy>
+              <isSum>true</isSum>
+              <sumFormula>{nf([@],00.00)}</sumFormula>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.F_PRICE 
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

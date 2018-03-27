@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>cb2991cca8de995e13a2e5a7359edf3b</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tabs.navTab._navTabLeft.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tabs/navTab/_navTabLeft.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form19827">
+      <id>form19827</id>
+      <Items>
+        <leftRegion sid="0b1b2fe7f1e4257d617fc7d2ca97d997">
+          <id>leftRegion80a82</id>
+          <split>false</split>
+          <border>false</border>
+          <Items>
+            <navTabArea sid="9ed5f2fddfb6db8b146b5236b8982a48">
+              <id>navTabArea2a53b</id>
+              <height>100%</height>
+              <activeTab>2</activeTab>
+              <Items>
+                <navTabItem sid="321123e95c62d7cf6f314abdb36ff532">
+                  <id>navTabItem03606</id>
+                  <title />
+                  <Items>
+                    <blankPanel sid="f3cc0fb480d3287f1ae724a484ef9f6c">
+                      <id>blankPanele38bf</id>
+                      <Items>
+                        <imageArea sid="b532febc92363b44b089d2f84abe1e02">
+                          <id>imageArea87a41</id>
+                          <icon>/artery/arteryImage/arrow/up.gif</icon>
+                        </imageArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </navTabItem>
+                <navTabItem sid="5c133af4aaee9f936483f650e9083a47">
+                  <id>navTabItemd9442</id>
+                  <title>第二个选项卡</title>
+                </navTabItem>
+                <navTabItem sid="4f3472269044f5bf0b0657890fd31fa0">
+                  <id>navTabItemfa452</id>
+                  <title>第三个选项卡</title>
+                  <onClickClient><![CDATA[navTabItemfa452_onClickClient]]></onClickClient>
+                </navTabItem>
+                <apNavTabGroup sid="6df78f7ddf60aab1b4ad6a93c4e65506">
+                  <id>apNavTabGroup92082</id>
+                  <text>分组1</text>
+                  <activeTabItem>true</activeTabItem>
+                  <Items>
+                    <navTabItem sid="08ca13ac3b629effd1bc17a3ec0f9b1b">
+                      <id>navTabItem6e830</id>
+                      <title>Google</title>
+                      <active>true</active>
+                      <onClickClient><![CDATA[navTabItem6e830_onClickClient]]></onClickClient>
+                    </navTabItem>
+                    <navTabItem sid="48f3f0c6c0406805cd5f207b00fa0907">
+                      <id>navTabItem042fa</id>
+                      <title>_window</title>
+                      <onClickClient><![CDATA[navTabItem042fa_onClickClient]]></onClickClient>
+                    </navTabItem>
+                  </Items>
+                </apNavTabGroup>
+              </Items>
+            </navTabArea>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="e2ac73b98782c7afe32668c26e4b4166">
+          <id>centerRegion50331</id>
+          <border>false</border>
+          <Items>
+            <operArea sid="493dc4d0c50e3c4a2d8ee7e1de1880c2">
+              <id>operAreacdea0</id>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

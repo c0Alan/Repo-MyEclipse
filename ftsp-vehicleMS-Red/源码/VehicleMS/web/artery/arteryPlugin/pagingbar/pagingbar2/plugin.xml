@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="pagingbar2" cn="分页栏2" menu="分页栏" jsType="artery-base"
+	icon="pagingbar2.gif" iconNew="pagingbar2New.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2010-12-2</CreateTime>
+		<Describe>
+		<![CDATA[
+		“分页栏2”是常用的分页栏控件，一般和列表区域一起使用，用于显示列表的分页按钮和分页信息。其特点是：显示第一页与最后一页，显示当前页所在范围内的n页（n为用户设置的每页页数属性），不连续的页码用"..."相隔。<br><br>
+			使用基本方法：<br>
+		1.列表区域控件的设置<br>
+			使用分页栏控件，则不使用列表区域自带的分页栏。将列表区域的“是否分页”和“分页提示信息”属性设为false。<br>
+		2.分页栏控件的设置<br>
+			将分页栏的“数据源”属性设置为列表区域的一样的数据源。<br>
+			为分页栏添加“分页查询脚本”，代码示例如下：
+		<pre>
+/**
+ * 分页查询脚本(pagingbar2d6ba9)
+ * 
+ * @param  params 分页传递的参数，如:{start:2,limit:20}
+ */
+function pagingbar2d6ba9_onSearch (params){
+	//listArea为列表区域的标识(id)
+	Artery.get('listArea').reload({params:params});
+}
+		</pre>
+		
+		效果图如下：<br>
+		<img src="pagingbar2/info1.png"></img><br>
+		<img src="pagingbar2/info2.png"></img><br>
+		<img src="pagingbar2/info3.png"></img>
+		]]>
+		</Describe>
+		<Images>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="blankPanel" />
+		<Parent type="tableLayout" />
+		<Parent type="window" />
+		<Parent type="tabItem" />
+		<Parent type="upRegion" />
+		<Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" />
+	</Parents>
+	<Children>
+	</Children>
+	<Class>com.thunisoft.artery.plugin.pagingbar.Pagingbar2
+	</Class>
+	<JsFile>
+		<File>pagingbar2.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apPagingbar2</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="ds"
+			tips="设置关联到的数据源名称,系统会根据此数据源生成控件的分页按钮和分页信息">
+			<Value />
+		</Property>
+		<Property cn="是否分页" type="11" name="isPageSplit" export="true"
+			tips="列表数据是否分页，设置为true时，列表底部会出现分页栏">
+			<Value>true</Value>
+		</Property>
+		<Property cn="每页个数" type="1" name="pageCount" export="true"
+			tips="设置数据分页时，每页加载多少数据">
+			<Value>20</Value>
+		</Property>
+		<Property cn="每页页数" type="1" name="pagePerNext" export="true"
+			tips="设置每页显示的分页数，如显示多少页就使用“下一页”来分页">
+			<Value>5</Value>
+		</Property>
+		<Property cn="少于一页隐藏分页栏" type="11" name="isOnePageHideBar"
+			export="true" tips="设置为true时，如果结果集小于等于1页的数据，则不显示分页栏">
+			<Value>false</Value>
+			<Description><![CDATA[
+      设置为true时，如果结果集小于等于1页的数据，则不显示分页栏
+      ]]></Description>
+		</Property>
+		<Property cn="是否显示分页信息" type="11" name="isShowPageInfo" group="分页信息" export="true"
+			tips="设置为true时，会显示分页信息，默认为false...">
+			<Value>false</Value>
+			<Description><![CDATA[
+			<p>设置为true时，会显示分页信息，默认为false。效果如图：</p>
+			<table>
+				<tr>
+					<td>不显示分页信息</td>
+					<td><img src="pagingbar2/info1.png"></img></td>
+				</tr>
+				<tr>
+					<td>显示分页信息</td>
+					<td><img src="../../resources/images/common/pagingbar/pagingbar2/pagingbar2_showPageInfo.png"></img></td>
+				</tr>
+			</table>
+			]]></Description>
+		</Property>
+		<Property cn="分页信息模板" type="1" name="pageInfoTplContent" group="分页信息" export="true"
+			tips="自定义分页信息模板...">
+			<Value></Value>
+			<Description><![CDATA[
+			<p>自定义分页信息模板，模板中需要包含用于占位的参数：</p>
+			<table>
+			  <tr><td>rowCount：</td><td>总记录数</td></tr>
+			  <tr><td>currentRowCount：</td><td>当前页记录数，如：1-20,21-30</td></tr>
+			  <tr><td>totalPageNo：</td><td>总页数</td></tr>
+			</table>
+			<p>例如：Artery中默认的分页信息模板为：</p>
+			<p>&lt;span class="x-pagingbar-pageInfo"&gt;共有&lt;span class="x-pagingbar-pageInfo-text"&gt;{rowCount}&lt;/span&gt;条记录，当前显示&lt;span class="x-pagingbar-pageInfo-text"&gt;{currentRowCount}&lt;/span&gt;条记录&lt;/span&gt;</p>
+			]]>
+			</Description>
+		</Property>
+		<Property cn="分页信息位置" type="3" name="pageInfoAlign" ct="[left,right]" group="分页信息" export="true"
+			tips="设置分页信息位置，默认在分页栏的右侧...">
+			<Value>right</Value>
+			<Description><![CDATA[
+			<p>设置分页信息位置，默认在分页栏的右侧。效果如图：</p>
+			<table>
+				<tr>
+					<td>分页信息在分页栏右侧</td>
+					<td><img src="../../resources/images/common/pagingbar/pagingbar2/pagingbar2_showPageInfo.png"></img></td>
+				</tr>
+				<tr>
+					<td>分页信息在分页栏左侧</td>
+					<td><img src="../../resources/images/common/pagingbar/pagingbar2/pagingbar2_leftPageInfo.png"></img></td>
+				</tr>
+			</table>
+			]]></Description>
+		</Property>
+		<Property cn="对齐方式" type="3" name="align" ct="[left,center,right]" group="风格"
+			tips="设置对齐方式，默认为左对齐...">
+			<Value>left</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="style" group="风格"  tips="设置本组件的样式，可填写css代码">
+	      <Value />
+	    </Property>
+	    <Property cn="主题样式" type="21" name="themeStyle" tips="设置控件的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="分页查询脚本" type="15" name="onSearch" tips="当点击分页操作时触发的事件，客户端脚本">
+			<Value />
+			<Description><![CDATA[
+			<p>当点击分页操作时触发的事件，客户端脚本。代码示例如下：</p>
+			<pre>
+/**
+ * 分页查询脚本(pagingbar2d6ba9)
+ * 
+ * @param  params 分页传递的参数，如:{start:2,limit:20}
+ */
+function pagingbar2d6ba9_onSearch (params){
+	Artery.get('listArea').reload({params:params});
+}
+			</pre>
+			]]></Description>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<JsFunctions>
+		<JsFunction name="onSearch">
+<![CDATA[
+/**
+ * 分页查询脚本({itemid})
+ * 
+ * @param  params 分页传递的参数，如:{start:2,limit:20}
+ */
+function {methodName} (params){
+	
+}
+]]>
+		</JsFunction>
+	</JsFunctions>
+</Item>
+

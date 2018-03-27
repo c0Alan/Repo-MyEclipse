@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>61dd97188b0adb321bfcfbc0c7984809</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.valid.Yzmbwhym.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/valid/Yzmbwhym.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formd5ca4">
+      <id>formd5ca4</id>
+      <Items>
+        <tableLayout sid="e4f494145f3b90ef5fc31341810451b3">
+          <id>tableLayout657b3</id>
+          <colWidths>*,210</colWidths>
+          <colSpacing>3</colSpacing>
+          <height>100%</height>
+          <cellpadding>0</cellpadding>
+          <Items>
+            <blankPanel sid="e76738ecd2d7e29c0f0da8ece1bed941">
+              <id>blankPanel2e064</id>
+              <height>100%</height>
+              <Items>
+                <blankPanel sid="822ae96255d1bcc5508b5f1eb762f0eb">
+                  <id>scriptListCnt</id>
+                  <height>100%</height>
+                  <frame>true</frame>
+                  <themeStyle>pear</themeStyle>
+                  <Items>
+                    <header sid="79bd531c1cbd0fb0c4ffef3a2e85f53c">
+                      <id>headerb73b5</id>
+                      <text />
+                      <headerStyle>padding:0px;</headerStyle>
+                      <Items>
+                        <blankPanel sid="beefa317ebab70d35976cc1799d5863f">
+                          <id>blankPanele351f</id>
+                          <bodyStyle>display:none;</bodyStyle>
+                          <Items>
+                            <topbar sid="17bcefd80a7e1dc2bb7ad259cfd2257c">
+                              <id>topbar81372</id>
+                              <themeStyle>unis</themeStyle>
+                              <Items>
+                                <tbText sid="cdc27513c3e3aa2d8801299155dc7987">
+                                  <id>tbText0eb7b</id>
+                                  <text>&lt;span style="font-size:14px;font-weight:700;color:#15428B;"&gt;定位脚本列表&lt;/span&gt;</text>
+                                </tbText>
+                                <tbSeparator sid="90c643b5e3f87db95cd972286381a362">
+                                  <id>tbSeparatora9d1e</id>
+                                </tbSeparator>
+                                <tbButton sid="f62c7ff084df4b69e164bd511f2e3aef">
+                                  <id>createScriptBtn</id>
+                                  <text>新建脚本</text>
+                                  <icon>/artery/arteryImage/symbol/drop-add.gif</icon>
+                                </tbButton>
+                                <tbFill sid="db6f52b22c5eabeadd626ee2a71f265f">
+                                  <id>tbFillf64e6</id>
+                                </tbFill>
+                                <tbButton sid="504ac9e33fa7ad6dc23354e0142e412e">
+                                  <id>expandAllScriptBtn</id>
+                                  <text>展开</text>
+                                  <tooltip>展开全部</tooltip>
+                                  <icon>/artery/arteryImage/file/expandall.gif</icon>
+                                  <onlyShowIcon>true</onlyShowIcon>
+                                </tbButton>
+                              </Items>
+                            </topbar>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </header>
+                    <listArea sid="bc9be36e6b2216a95b93fed5494bc22f">
+                      <id>templateList</id>
+                      <ds>rs1</ds>
+                      <height>100%</height>
+                      <rowClickSelect>false</rowClickSelect>
+                      <stripeRows>false</stripeRows>
+                      <emptyDataTip />
+                      <isPageSplit>false</isPageSplit>
+                      <isShowRowNumber>false</isShowRowNumber>
+                      <style>padding:0 1 0 0;</style>
+                      <themeStyle>unis</themeStyle>
+                      <Items>
+                        <columnIdentity sid="901a4f5e2695730b2e3c694d3f158d21">
+                          <id>columnIdentityfcb91</id>
+                          <dataName>{rs1.id}</dataName>
+                          <highlightCol>true</highlightCol>
+                        </columnIdentity>
+                        <column sid="6c8f300b9a89321a9290cb8fc15f92c5">
+                          <id>column6169a</id>
+                          <title>序号</title>
+                          <width>1</width>
+                          <mustColStyle>true</mustColStyle>
+                          <Items>
+                            <blankPanel sid="024a957c71f5d1524b9c97b21c712658">
+                              <id>blankPanela8084</id>
+                              <Items>
+                                <tableLayout sid="d8b4901952c4b7b0d4e4c0b8989713bd">
+                                  <id>tableLayouta48b9</id>
+                                  <colWidths>10</colWidths>
+                                  <Items>
+                                    <imageArea sid="1aaac31e3d02ea448e173b686c557239">
+                                      <id>scriptExpandBtn</id>
+                                      <icon>/artery/arteryImage/other/plus.gif</icon>
+                                      <className>x-scirpt-expand</className>
+                                    </imageArea>
+                                    <htmlArea sid="c230c0317c4d352616f5e9c0d01d1897">
+                                      <id>htmlAreaScriptLineNumber</id>
+                                    </htmlArea>
+                                  </Items>
+                                </tableLayout>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </column>
+                        <column sid="db9c1dbcc8e305ea17d9d805f5eda49a">
+                          <id>columne5606</id>
+                          <dataName>{rs1.desc}</dataName>
+                          <title>说明</title>
+                        </column>
+                        <column sid="9331db3e1b93139adff7e8204d519186">
+                          <id>columnf6f81</id>
+                          <dataName>{rs1.formId}</dataName>
+                          <title>表单id</title>
+                          <width>20</width>
+                        </column>
+                        <column sid="0616bea2e49d199b97ebdc3198fd5897">
+                          <id>columnfcc32</id>
+                          <title>操作</title>
+                          <width>18</width>
+                          <mustColStyle>true</mustColStyle>
+                          <Items>
+                            <blankPanel sid="a32f793f4d9d09b9b3617c608319d631">
+                              <id>blankPanelfd07f</id>
+                              <Items>
+                                <buttonArea sid="8ea4f8302048529cebb238098adae15c">
+                                  <id>buttonArea97113</id>
+                                  <spacing>10</spacing>
+                                  <Items>
+                                    <button sid="7df6b0d76d65305b93dbb44511fd0e2e">
+                                      <id>modifyScriptBtn</id>
+                                      <width>40</width>
+                                      <text>修改</text>
+                                      <themeStyle>cookie</themeStyle>
+                                    </button>
+                                    <simpleButton sid="0bd3d09d11acefdd30b20946b08539d6">
+                                      <id>deleteScriptBtn</id>
+                                      <text>删除</text>
+                                    </simpleButton>
+                                  </Items>
+                                </buttonArea>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </column>
+                        <blankPanel sid="6c25d94b101a775856fab049a612cc65">
+                          <id>scriptContainer</id>
+                          <style>padding:10px;padding-left:20px;</style>
+                          <className>bg-blue-arrow</className>
+                          <hidden>true</hidden>
+                          <Items>
+                            <htmlArea sid="5c70c3284eb981237dd2c38a87ae98b0">
+                              <id>htmlArea33dde</id>
+                              <value>{rs1.script}</value>
+                              <convert2html>true</convert2html>
+                            </htmlArea>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </listArea>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="cd4719d842548b02655153d5b3170ecb">
+                  <id>scriptCreateCnt</id>
+                  <height>100%</height>
+                  <hidden>true</hidden>
+                  <Items>
+                    <linkItem sid="3204f8108c65d7e45cd7366e02847a11">
+                      <id>linkItem2f033</id>
+                      <linkItem>{"formId":"25fe3f97f19e6df408fa58966ee95c45","formName":"添加修改脚本","itemId":"scriptContainer","params":{}}</linkItem>
+                    </linkItem>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+            <navTabArea sid="a187fd154716c1f7e5b00986232c1265">
+              <id>navTabArea0f8af</id>
+              <height>100%</height>
+              <tabPosition>top</tabPosition>
+              <tabItemFill>true</tabItemFill>
+              <themeStyle>cookie</themeStyle>
+              <Items>
+                <navTabItem sid="bee64feef0a06cca2b1bfc1061ce4b7d">
+                  <id>navTabItemcf982</id>
+                  <title>参数列表</title>
+                  <active>true</active>
+                  <Items>
+                    <blankPanel sid="d999eedfb67f9f3118db870369b90b29">
+                      <id>blankPanelf751e</id>
+                      <height>100%</height>
+                      <frame>true</frame>
+                      <themeStyle>pear</themeStyle>
+                      <bodyContainer>true</bodyContainer>
+                      <Items>
+                        <listArea sid="e89e3f0c8c94d170c5233f0b7caeff70">
+                          <id>paramsList</id>
+                          <ds>rs2</ds>
+                          <height>100%</height>
+                          <autoRowHeight>false</autoRowHeight>
+                          <stripeRows>false</stripeRows>
+                          <emptyDataTip />
+                          <isPageSplit>false</isPageSplit>
+                          <isShowRowNumber>false</isShowRowNumber>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <column sid="539d0bd848a887ebbcc590c2aee87f2b">
+                              <id>paramKeyCol</id>
+                              <dataName>{rs2.key}</dataName>
+                              <title>参数名称</title>
+                              <rowScript><![CDATA[paramKeyCol_rowScript]]></rowScript>
+                              <highlightCol>true</highlightCol>
+                            </column>
+                            <column sid="dacab32db62ced84a4f51cfe6875fe14">
+                              <id>columna0ab4</id>
+                              <dataName>{rs2.value}</dataName>
+                              <title>参数值</title>
+                              <isShowHint>true</isShowHint>
+                            </column>
+                          </Items>
+                        </listArea>
+                        <topbar sid="1b5206afe0230e385f9fcb18312c9352">
+                          <id>topbarf529f</id>
+                          <bodyStyle>border:0px;</bodyStyle>
+                          <style>background-color:#D9E3EF;</style>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbText sid="3cfa11f2ba857c8ac9176734d7fe5779">
+                              <id>tbTextee060</id>
+                              <text>参数列表</text>
+                              <style>font-size:14px;font-weight:700;color:#15428B;</style>
+                              <show>false</show>
+                            </tbText>
+                            <tbSeparator sid="62164a71da22b0cc82dc4aa69229f83d">
+                              <id>tbSeparator440c4</id>
+                              <show>false</show>
+                            </tbSeparator>
+                            <tbButton sid="fc6e39ca7e525a26be43fe4be2626c67">
+                              <id>createParamBtn</id>
+                              <text>新建</text>
+                              <tooltip>新建模板</tooltip>
+                              <icon>/artery/arteryImage/symbol/drop-add.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <linkto>{"formId":"3efd8086fbcb16b4029b875e4191dbd6","formName":"添加修改参数","formType":"1","params":{"tplId":"{req.tplId}"},"target":"_window","targetWidth":"300","targetHeight":"150","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </tbButton>
+                            <tbButton sid="4be98bd4e16d20832cd2221e78e30d30">
+                              <id>modifyParamBtn</id>
+                              <text>修改</text>
+                              <tooltip>修改模板</tooltip>
+                              <icon>/artery/arteryImage/file/icon-mark-complete.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="f00de8833a0fcc822931f6771d3ad686">
+                              <id>deleteParamBtn</id>
+                              <text>删除</text>
+                              <tooltip>删除模板</tooltip>
+                              <icon>/artery/arteryImage/symbol/cross.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <disabled>true</disabled>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </navTabItem>
+                <navTabItem sid="231e762e54d738855ebac63062e03abe">
+                  <id>navTabItemba3a5</id>
+                  <title>表单列表</title>
+                  <Items>
+                    <blankPanel sid="cff0bd60ea59f4e1ae5972c405115628">
+                      <id>blankPanelf751e1</id>
+                      <height>100%</height>
+                      <frame>true</frame>
+                      <themeStyle>pear</themeStyle>
+                      <bodyContainer>true</bodyContainer>
+                      <Items>
+                        <listArea sid="ec55e74a54e0328c35567fc13e94e784">
+                          <id>formsList</id>
+                          <ds>rs3</ds>
+                          <height>100%</height>
+                          <autoRowHeight>false</autoRowHeight>
+                          <emptyDataTip />
+                          <isPageSplit>false</isPageSplit>
+                          <isShowRowNumber>false</isShowRowNumber>
+                          <themeStyle>unis</themeStyle>
+                          <onClickSingleClient><![CDATA[formsList_onClickSingleClient]]></onClickSingleClient>
+                          <Items>
+                            <column sid="a6991f4b54ad8998f01d7f8c87103579">
+                              <id>formIdCol</id>
+                              <dataName>{rs3.key}</dataName>
+                              <title>表单id</title>
+                            </column>
+                            <column sid="0c02ed71b8452afb3bf453946d712f09">
+                              <id>formNameCol</id>
+                              <title>表单名称</title>
+                              <rowScript><![CDATA[formNameCol_rowScript]]></rowScript>
+                            </column>
+                          </Items>
+                        </listArea>
+                        <topbar sid="059b695a875ed4be2d1d203a666e89dc">
+                          <id>topbarf529f1</id>
+                          <bodyStyle>border:0px;</bodyStyle>
+                          <style>background-color:#D9E3EF;</style>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbText sid="fc4b3e234241c3a2e46cef6287161f14">
+                              <id>tbTextee0601</id>
+                              <text>表单列表</text>
+                              <style>font-size:14px;font-weight:700;color:#15428B;</style>
+                              <show>false</show>
+                            </tbText>
+                            <tbSeparator sid="c97b2bb4d5b24341cb447093d368dbc8">
+                              <id>tbSeparator440c14</id>
+                              <show>false</show>
+                            </tbSeparator>
+                            <tbButton sid="bef00e03841e8c71d20638dcde38da98">
+                              <id>createParamBtn1</id>
+                              <text>新建</text>
+                              <tooltip>新建模板</tooltip>
+                              <icon>/artery/arteryImage/symbol/drop-add.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <linkto>{"formId":"16f34c39f2d52c178ba69fc743a28328","formName":"添加表单页面","formType":"1","target":"_window","targetWidth":"300","targetHeight":"400","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </tbButton>
+                            <tbButton sid="c26b2388531d5a9b6315b6ecac532f31">
+                              <id>deleteFormBtn</id>
+                              <text>删除</text>
+                              <tooltip>删除模板</tooltip>
+                              <icon>/artery/arteryImage/symbol/cross.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[deleteFormBtn_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[deleteFormBtn_onClickServer]]></onClickServer>
+                              <disabled>true</disabled>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </navTabItem>
+              </Items>
+            </navTabArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="tplId" showName="tplId" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+    <ds dsName="dataSource" name="rs2" type="logic">ds_rs2</ds>
+    <ds dsName="dataSource" name="rs3" type="logic">ds_rs3</ds>
+  </dslist>
+</form>
+

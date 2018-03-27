@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0d1177c33f3cc41e30940ccdc194c272</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.list.dtsj.Dtsj.java</javaLocation>
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <listArea sid="Ab62cbde60cca6b758dea1dd012f1993e">
+          <id>listArea</id>
+          <stripeRows>false</stripeRows>
+          <loadMask>false</loadMask>
+          <pageCount>5</pageCount>
+          <isStartNew>true</isStartNew>
+          <themeStyle>default</themeStyle>
+          <dynamicData><![CDATA[listArea_dynamicData]]></dynamicData>
+          <Items>
+            <column sid="A028cebebfe282d56de3e2efa38eed276">
+              <id>A028cebebfe282d56de3e2efa38eed276</id>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>id</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A5e5affe8737dea8f56de548b5495c519">
+              <id>A5e5affe8737dea8f56de548b5495c519</id>
+              <dataName>{rs1.C_Name}</dataName>
+              <title>name</title>
+              <isFilter>true</isFilter>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

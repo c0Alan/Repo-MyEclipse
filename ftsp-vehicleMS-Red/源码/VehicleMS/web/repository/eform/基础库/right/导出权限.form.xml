@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>b350e33d306a78430b03a67730cefd6d</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.right.Dcqx.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/right/Dcqx.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form44438">
+      <id>form44438</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <formArea sid="d32dedcfd5541abd423b58291919036c">
+          <id>formArea02c6f</id>
+          <colNum>1</colNum>
+          <labelAlign>left</labelAlign>
+          <labelWidth>80</labelWidth>
+          <Items>
+            <faCode sid="0a4cebfde016e3aec4d6195ef3f87cc7">
+              <id>exportType</id>
+              <editor>sRadio</editor>
+              <dynamicData><![CDATA[exportType_dynamicData]]></dynamicData>
+              <colNum>1</colNum>
+              <value>1</value>
+              <onChangeClient><![CDATA[exportType_onChangeClient]]></onChangeClient>
+              <label>导出类型</label>
+              <hideLabel>true</hideLabel>
+            </faCode>
+            <faString sid="c965eb39e23c70b3eae79895772a28d3">
+              <id>exportExpression</id>
+              <displayType>disabled</displayType>
+              <label>导出表达式</label>
+            </faString>
+            <htmlArea sid="6c62c5d294db25ae399b635e25d85dfa">
+              <id>htmlArea32151</id>
+              <value>指定导出权限，如“artery.organ,artery.right.*”</value>
+              <style>color:red; padding:3px</style>
+              <hideLabel>true</hideLabel>
+            </htmlArea>
+          </Items>
+        </formArea>
+        <footer sid="ac2f42627399fe14f10e1b8145f8997b">
+          <id>footer1b7bd</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="c8fab1165878661a7165cb29e805d6ab">
+              <id>exportRightBtn</id>
+              <width>75</width>
+              <text>导出</text>
+              <onClickClient><![CDATA[exportRightBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[exportRightBtn_onClickServer]]></onClickServer>
+            </button>
+            <simpleButton sid="2a81d4eb0d71400a3b1cce61ac46d803">
+              <id>closeBtn</id>
+              <text>关闭</text>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+</form>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <cid>5d05d64b7b3633b98d9cf9d1907bc7cc</cid>
+  <name>定期加载数据字典缓存</name>
+  <cron>0 */1 * * * ?</cron>
+  <jobType>2</jobType>
+  <sql />
+  <className>com.thunisoft.test.sample.ScheTest</className>
+  <methodName>reloadDict</methodName>
+  <clusterId>2</clusterId>
+  <logInfo>1</logInfo>
+  <deploy>2</deploy>
+  <script />
+  <exceptionStatus>2</exceptionStatus>
+  <exceptionProcess>1</exceptionProcess>
+</plan>
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>07b0dabc3a955cdd6ac61b60110d6162</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.normalcode.Tjdm.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/normalcode/Tjdm.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formeef74">
+      <id>formeef74</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <blankPanel sid="e08afcc13bb882ac91bcd11a81003fdc">
+          <id>blankPanel648fa</id>
+          <height>100%</height>
+          <bodyStyle>padding;3px;</bodyStyle>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <topbar sid="59eabfdac3b70dd2f0ba2349321346de">
+              <id>topbar2fc5e</id>
+              <Items>
+                <tbText sid="09b22c1fc4a70cae45503d364c895704">
+                  <id>tbText721b0</id>
+                  <text>&lt;span style="font-size:14px;color:gray;"&gt;带&lt;span style="color:red;"&gt;*&lt;/span&gt;号的为必填项&lt;/span&gt;</text>
+                </tbText>
+              </Items>
+            </topbar>
+            <formArea sid="6d6abc95a163068d8e90cd90e0723582">
+              <id>codeFormArea</id>
+              <height>100%</height>
+              <colNum>1</colNum>
+              <colSpacing>10</colSpacing>
+              <onShow><![CDATA[codeFormArea_onShow]]></onShow>
+              <cellpadding>5</cellpadding>
+              <Items>
+                <faHidden sid="39d597737bb548fa5a62721add0496b7">
+                  <id>typeFaHidden</id>
+                  <submitName>code.type</submitName>
+                  <value>{req.type}</value>
+                  <label>类型</label>
+                </faHidden>
+                <faHidden sid="b9bbf8f9d9b6f3651b448f8958d072ea">
+                  <id>belongToFaHidden</id>
+                  <submitName>code.dbBelongsTo</submitName>
+                  <value>{req.dbBelongsTo}</value>
+                  <label>所属库名</label>
+                </faHidden>
+                <faString sid="7878e9af2e6b7a4206732e4da161100f">
+                  <id>codeFaString</id>
+                  <submitName>code.code</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.code}</dataName>
+                  <displayType>editable</displayType>
+                  <onValidClient><![CDATA[codeFaString_onValidClient]]></onValidClient>
+                  <onValidServer><![CDATA[codeFaString_onValidServer]]></onValidServer>
+                  <onShow><![CDATA[codeFaString_onShow]]></onShow>
+                  <label>代码标识</label>
+                </faString>
+                <faString sid="a18c78f1ae1f49a2c09ffbbe275e3d13">
+                  <id>nameFaString</id>
+                  <submitName>code.name</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.name}</dataName>
+                  <displayType>editable</displayType>
+                  <onShow><![CDATA[nameFaString_onShow]]></onShow>
+                  <label>代码名称</label>
+                </faString>
+                <faCode sid="8171fec1ea4766b92c9d88444dc82a7b">
+                  <id>maintainFaCode</id>
+                  <submitName>code.maintain</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.maintain}</dataName>
+                  <editor>sRadio</editor>
+                  <width />
+                  <dynamicData><![CDATA[maintainFaCode_dynamicData]]></dynamicData>
+                  <colNum>2</colNum>
+                  <value>true</value>
+                  <displayType>disabled</displayType>
+                  <label>是否可维护</label>
+                </faCode>
+                <faCode sid="02208ec48956858fe8267effe5510241">
+                  <id>validFaCode</id>
+                  <submitName>code.valid</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.valid}</dataName>
+                  <editor>sRadio</editor>
+                  <width />
+                  <dynamicData><![CDATA[validFaCode_dynamicData]]></dynamicData>
+                  <colNum>2</colNum>
+                  <value>true</value>
+                  <displayType>editable</displayType>
+                  <onShow><![CDATA[validFaCode_onShow]]></onShow>
+                  <label>是否有效</label>
+                </faCode>
+                <faNumeric sid="6be8fadd61362f6acfa44b8bc3052a72">
+                  <id>orderFaNumeric</id>
+                  <submitName>code.order</submitName>
+                  <required>false</required>
+                  <dataName>{rs1.order}</dataName>
+                  <maxLength>4</maxLength>
+                  <displayType>editable</displayType>
+                  <onShow><![CDATA[orderFaNumeric_onShow]]></onShow>
+                  <label>显示顺序</label>
+                </faNumeric>
+                <faString sid="c73d32f13b3d1878c516f945b8ec46e8">
+                  <id>faString29f1a</id>
+                  <submitName>code.dmjp</submitName>
+                  <dataName>{rs1.dmjp}</dataName>
+                  <displayType>editable</displayType>
+                  <label>代码简拼</label>
+                </faString>
+                <faString sid="c5b85e4d45de8ea78284188af2a3362f">
+                  <id>faString03d7a</id>
+                  <submitName>code.levelInfo</submitName>
+                  <dataName>{rs1.levelInfo}</dataName>
+                  <displayType>editable</displayType>
+                  <label>分级信息</label>
+                </faString>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+        <footer sid="833ba6a75db2829d0d91549d03428bc6">
+          <id>footer525a6</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="53eb4eedd237c457afdd09c8d3452088">
+              <id>addBtn</id>
+              <text>添加</text>
+              <icon>/artery/arteryImage/file/image005.gif</icon>
+              <onClickClient><![CDATA[addBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[addBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[addBtn_onShow]]></onShow>
+            </button>
+            <button sid="c7c54584826a80e869b6eda74d54a606">
+              <id>modifyBtn</id>
+              <text>更新</text>
+              <onClickClient><![CDATA[modifyBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[modifyBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[modifyBtn_onShow]]></onShow>
+            </button>
+            <simpleButton sid="2a81d4eb0d71400a3b1cce61ac46d803">
+              <id>shutdownBtn</id>
+              <text>取消</text>
+              <onClickClient><![CDATA[shutdownBtn_onClickClient]]></onClickClient>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="type" showName="" value="" pvalue="" />
+    <param name="code" showName="" value="" pvalue="" />
+    <param name="dbBelongsTo" showName="代码源名称" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getNormalCode</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>95af4e9e11d6c799ae3ec40af50a9f62</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.comm.LeftArrow.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/comm/LeftArrow.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form90c64">
+      <id>form90c64</id>
+      <bodyStyle>padding-top:20px;</bodyStyle>
+      <Items>
+        <tableLayout sid="57e2d013a8372d6cd5e9af3f6fa55b7d">
+          <id>tableLayout877a1</id>
+          <colNum>1</colNum>
+          <height>100%</height>
+          <Items>
+            <imageArea sid="94b08dc680935967b1b3bfdecca8b391">
+              <id>imageArea62941</id>
+              <icon>/artery/arteryImage/arrow/back.png</icon>
+              <style>text-align:left;</style>
+            </imageArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3841caaebeabf9c8b87f91c4a3e3770b</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.dict.Bgxhwh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/dict/Bgxhwh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form5eb30">
+      <id>form_main</id>
+      <onShow><![CDATA[form_main_onShow]]></onShow>
+      <Items>
+        <blankPanel sid="32cf290b3c6b16e8e954641234d939b1">
+          <id>blankPanelf6039</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="8ce189a51fa426f02e7b700550992314">
+              <id>headerd89d9</id>
+              <text />
+              <Items>
+                <blankPanel sid="a99c868dabc415b8559fd2cb222ac56f">
+                  <id>blankPanel8f6f3</id>
+                  <bodyStyle>display:none;</bodyStyle>
+                  <Items>
+                    <topbar sid="16e7658fc14a07fa764ada6022cd4ca4">
+                      <id>topbar8442f</id>
+                      <themeStyle>unis</themeStyle>
+                      <Items>
+                        <tbText sid="cc86d9a75884f58c89830829b677556d">
+                          <id>tbText_info</id>
+                          <onShow><![CDATA[tbText_info_onShow]]></onShow>
+                        </tbText>
+                      </Items>
+                    </topbar>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+            <listArea sid="a1811927cf1e2165edcb306c6b5ce78b">
+              <id>listArea_field</id>
+              <ds>rs1</ds>
+              <height>100%</height>
+              <isPageSplit>false</isPageSplit>
+              <themeStyle>unis</themeStyle>
+              <highLightRule><![CDATA[listArea_field_highLightRule]]></highLightRule>
+              <Items>
+                <column sid="853de17f2f4c0ed73d8cba034da49533">
+                  <id>columnf4ae7</id>
+                  <dataName>{rs1.pk}</dataName>
+                  <title>主键</title>
+                  <width>12</width>
+                  <htmlEncode>false</htmlEncode>
+                </column>
+                <column sid="82c8b98cad45717c15af3a5a583e4c95">
+                  <id>column7fae6</id>
+                  <dataName>{rs1.fieldName}</dataName>
+                  <title>字段名称</title>
+                  <width>100</width>
+                </column>
+                <column sid="7d5a09af2b0fb4b60120022f00aa7997">
+                  <id>columnfdc6b</id>
+                  <dataName>{rs1.showName}</dataName>
+                  <title>显示名称</title>
+                  <width>100</width>
+                </column>
+                <column sid="2560a12cbaa24b8a525dc7a6e41f2206">
+                  <id>column9becc</id>
+                  <dataName>{rs1.fieldType}</dataName>
+                  <title>数据库类型</title>
+                  <width>80</width>
+                </column>
+                <column sid="b4bc3ce25ab2dee6ca60772166e793df">
+                  <id>column54915</id>
+                  <title>操作</title>
+                  <width>30</width>
+                  <Items>
+                    <colOperText sid="eee25f1ec786e210300c4279584e8110">
+                      <id>colOperTexta1c96</id>
+                      <text>编辑</text>
+                      <linkto>{"formId":"78b9c29f89be46de74019ebc74af188c","formName":"编辑字段","formType":"1","params":{"groupId":"{req.groupId}","tableId":"{req.tableId}","fieldName":"{rs1.fieldName}"},"target":"_self","targetWidth":"400","targetHeight":"300","runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"2","title":"","wincfg":""}</linkto>
+                    </colOperText>
+                    <colOperText sid="b54c4cb705b359c60c6738c6e8d8ed07">
+                      <id>oper_clear</id>
+                      <text>清除</text>
+                      <onClickClient><![CDATA[oper_clear_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[oper_clear_onClickServer]]></onClickServer>
+                      <onFilter><![CDATA[oper_clear_onFilter]]></onFilter>
+                    </colOperText>
+                  </Items>
+                </column>
+              </Items>
+            </listArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="groupId" showName="院id" value="" pvalue="" />
+    <param name="tableId" showName="表id" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

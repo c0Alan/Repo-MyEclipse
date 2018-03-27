@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="chartArea" cn="图表区域" menu="图形控件" icon="chartArea.gif"
+	iconNew="chartAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-07-02</CreateTime>
+		<Describe><![CDATA[基于flash的图表控件,可以生成饼图，折线图，柱状图等各种统计图表。控件通过后台加载脚本进行数据加载，数据可以一次性加载，也可以加载多次。
+		一组线性数据加载脚本示例：（适用于具有相似属性的多个数据横向比较）
+		<pre>		
+		public void chart_Bar2D_onLoad(Item item, ChartModel model) {
+    		model.setCaption("平面棒图");
+	    	for(int i=0;i<6;i++){
+	    		Record rec = model.createRecord();
+	    		rec.setLabel("label"+i);
+	    		rec.setValue(String.valueOf((i+1)*100));
+	    	}
+    	}
+		</pre>
+		
+		多组数据横向纵向对比时，脚本示例如下：
+		<pre>	
+	  	 /**
+	     * 复合平面棒图
+	     * 
+	     * @param item
+	     *            控件对象
+	     * @param model
+	     *            数据模型
+	     */
+   		 public void chart_MSBar2D_onLoad(Item item, ChartModel model) {
+		 	model.setCaption("复合平面棒图");
+	    	for(int i=0;i<6;i++){
+	    		Category cate = model.createCategory();
+	    		cate.setLabel("cate"+i);
+	    	}
+	    	RecordSet rs = model.createRecordSet();
+	    	rs.setSeriesName("数据1");
+	    	for(int i=0;i<6;i++){
+	    		Record rec = rs.createRecord();
+	    		rec.setValue(String.valueOf((i+1)*100));
+	    	}
+	    	rs = model.createRecordSet();
+	    	rs.setSeriesName("数据2");
+	    	for(int i=6;i>0;i--){
+	    		Record rec = rs.createRecord();
+	    		rec.setValue(String.valueOf(i*100));
+	    	}
+    	}
+		</pre>	
+		]]></Describe>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.chart.ChartArea
+	</Class>
+	<JsFile>
+		<File>FusionCharts.js</File>
+		<File>FusionChartsExportComponent.js</File>
+		<File>chartArea.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>400</Value>
+		</Property><Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value>300</Value>
+		</Property><Property cn="图表配置" type="18" name="chartConf" tips="用于设置chart的配置信息...">
+			<Value />
+			<Description><![CDATA[用于设置chart的配置信息，编辑此属性时，将弹出chart配置窗口，可以配置chart图表类型和界面元素的显示属性，属性配置内容有很多，包括：边框、背景色、标题、文字等。]]></Description>
+		</Property>
+		<Property cn="加载方式" type="3" name="loadType" ct="[ajax,once]"
+			tips="加载方式，可以选择ajax加载，或者once方式加载..." inherit="false">
+			<Value>once</Value>
+			<Description><![CDATA[
+			加载方式，可以选择ajax加载，或者once方式加载。
+			<p>如果选择ajax加载，则图表数据在页面加载完成后，由ajax方式异步加载。此种加载方式适用于图表数据量较大的情况。</p>
+			<p>如果选择once加载，则图表数据首先加载完成，在页面显示时，展现出来。此种加载方式适用于图表数据量较小的情况。</p>
+			]]></Description>
+		</Property>		
+		<Property cn="更新时间" type="2" name="updateTime"
+			tips="用于设置定时更新时间，大于0时会启用定时更新功能，为其它值则不起作用，如果需要启动定时更新，定时加载时最好设置加载方式为ajax">
+			<Value>0</Value>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"	>
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"	>
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight">
+			<Value />
+		</Property>
+		<Property cn="空数据图片" type="5" name="noDataImg"
+		    export="true" inherit="false"
+			tips="当图表数据为空时，使用该图片替换图表区域">
+			<Value />
+	        <Description>
+	                     当图表数据为空时，使用该图片替换图表区域,数据为相对web根目录的图片路径。
+	        </Description>
+	    </Property>
+		<Property cn="加载脚本" type="14" name="onLoad" tips="用于生成图表的数据">
+			<Value />
+			<Description><![CDATA[
+		用于生成图表的数据，在此方法中，会传入一个ChartModel类型的对象，通过此对象可以设置图表的显示属性，可以创建数据记录等。
+		<pre>
+		public void chart_confProp1_onLoad(Item item, ChartModel model) {
+		    // 设置标题
+		    model.setCaption("背景(颜色：777777，透明度：30)");
+		    // 设置背景色
+		    model.setBgColor("777777");
+		    // 设置背景色透明度
+		    model.setBgAlpha("30");
+		    // 创建数据记录
+		    for(int i=0;i<6;i++){
+		        Record rec = model.createRecord();
+		        rec.setLabel("label"+i);
+		        rec.setValue(String.valueOf((i+1)*100));
+		    }
+		}
+		</pre>]]></Description>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="reload" inherit="false" return="void" tips="重载chart显示的xml数据">
+			<Description>
+        <![CDATA[
+       		<p> 重载chart显示的xml数据，会执行服务器端的加载脚本，如：</p>
+	        <pre>
+			Artery.get("chart").reload({
+			  type : "corp",
+			  year : "2009"
+			});
+			</pre>
+		]]>
+			</Description>
+			<Parameters>
+				<Param>params:json 需要传回服务器的参数</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="stopAutoUpdate" inherit="false" return="void"
+			tips="停止自动更新定时器，如果没有启用定时更新功能，则什么也不做">
+			<Description>
+        <![CDATA[
+        	<p>停止自动更新定时器，如果没有启用定时更新功能，则什么也不做，示例如下：</p>
+        	<pre>
+				Artery.get("chart").stopAutoUpdate();
+			</pre>
+		]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="initAutoUpdate" inherit="false" return="void"
+			tips="初始化自动更新定时器，如果更新时间小于0或已经启动定时器了，则什么也不做">
+			<Description>
+        <![CDATA[
+        	<p>初始化自动更新定时器，如果更新时间小于0或已经启动定时器了，则什么也不做，示例如下：</p>
+	        <pre>
+				Artery.get("chart").initAutoUpdate();
+			</pre>
+		]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+	<JavaFunctions>
+		<JavaFunction name="onLoad" imports="com.thunisoft.artery.plugin.chart.ChartModel;">
+<![CDATA[
+/**
+ * 加载脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param model
+ *            数据模型
+ */
+public void {methodName}(Item item, ChartModel model) {
+
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

@@ -1,0 +1,42 @@
+.buttonMidOut {
+	background: url(images/bt_out.gif);
+	height: 19px;
+}
+.buttonLeftOut {
+	background: url(images/bt.gif);
+	width: 3px;
+	height: 19px;
+}
+.buttonRightOut {
+	background: url(images/bt.gif) -3px 0;
+	width: 3px;
+	height: 19px;
+}
+.buttonMidOver {
+	background: url(images/bt_over.gif);
+	height: 19px;
+}
+.buttonLeftOver {
+	background: url(images/bt.gif) -6px 0;
+	width: 3px;
+	height: 19px;
+}
+.buttonRightOver {
+	background: url(images/bt.gif) -9px 0;
+	width: 3px;
+	height: 19px;
+}
+.buttonMidDown {
+	background: url(images/bt_down.gif);
+	height: 19px;
+}
+.buttonLeftDown {
+	background: url(images/bt.gif) -12px 0;
+	width: 3px;
+	height: 19px;
+}
+.buttonRightDown {
+	background: url(images/bt.gif) -15px 0;
+	width: 3px;
+	height: 19px;
+}

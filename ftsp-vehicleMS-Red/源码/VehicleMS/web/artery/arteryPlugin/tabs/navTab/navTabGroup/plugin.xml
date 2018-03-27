@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="apNavTabGroup" cn="tab导航分组" menu="页签面板" jsType="artery-base"
+	icon="tabGroup.gif" iconNew="tabGroupNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2010-4-06</CreateTime>
+		<Describe>
+			页签样式的导航分组
+		</Describe>
+		<Images>
+			<File>info2.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<!-- Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+		<Parent type="blankPanel" />
+		<Parent type="upRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" /-->
+		<Parent type="navTabArea" />
+	</Parents>
+	<Children>
+		<Child type="navTabItem" />
+		<Child type="tbFill" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.tabs.navtab.NavTabGroup
+	</Class>
+	<JsFile>
+		<File>navTabGroup.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apNavTabGroup</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="说明" type="1" name="text"
+			tips="显示的名称">
+			<Value />
+		</Property>
+		<Property cn="当前标签页" type="1" name="activeTab" tips="数字或控件id,初始激活的标签页,可以用数字,表示激活第几个标签页,或者标签页的id,触发点击事件,默认激活第一个标签页">
+			<Description><![CDATA[
+               <p>数字或控件id,初始激活的标签页,可以用数字,表示激活第几个标签页,或者标签页的id,触发点击事件,默认激活第一个标签页</p>
+               ]]>
+			</Description>
+			<Value>0</Value>
+		</Property>
+		<Property cn="标签页位置" type="3" name="tabPosition" ct="[left,top,right,bottom]"
+			tips="选择标签页方向，默认为left">
+			<Value>left</Value>
+		</Property>
+		<Property cn="默认激活页签" type="11" name="activeTabItem" export="true"
+			tips="设置为true时，当页面展现时会自动触发激活页签的点击事件,这个需要与tab导航组件的默认激活属性配合只有这个将不会起作用,而只有tab导航默认激活将只激活标签不显示面板内容">
+			<Value>false</Value>
+		</Property>
+		<Property cn="操作区域编号" type="1" name="operAreaId" export="true"
+			tips="设置操作区域的编号，子页签点击时会在此操作区域中打开链接">
+			<Value />
+		</Property>
+		<Property cn="默认收起" type="11" name="collapsed" export="true"
+			tips="当为true是该组件列表时收起的，反之则是展开的。另外如果本控件没有子组件，则该设置无效">
+			<Value>false</Value>
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value />
+    </Property>
+    <Property cn="使用Frame样式" type="11" name="frame" export="true" tips="当设置为true时，本组件会显示Ext的边框">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否显示边框" type="11" name="border" export="true" tips="设置为true时，显示最外层的边框，否则不显示">
+      <Value>false</Value>
+    </Property>
+    <Property cn="组件容器样式" type="1" name="style"  tips="设置本组件的样式，可填写css代码">
+      <Value />
+    </Property>
+    <Property cn="是否隐藏" type="11" name="hidden" export="true"  tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"
+		tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14"  name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <Methods>
+    <Method name="getActivePanel" return="object" tips="得到激活状态的页签对象">
+  		<Description><![CDATA[<p>得到激活状态的页签对象</p><pre>
+Artery.get("id").getActivePanel();
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>object</Return>
+  	</Method>
+    <Method name="getActiveValue" return="string" tips="得到激活状态的页签对象的值">
+  		<Description><![CDATA[<p>得到激活状态的页签对象的值</p><pre>
+Artery.get("id").getActiveValue();
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>string</Return>
+  	</Method>
+  </Methods>
+</Item>
+

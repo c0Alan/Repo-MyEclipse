@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ea9c2375e9e6d516561629510756b286</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.nav._dynamicNav.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/nav/_dynamicNav.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form8a8a6">
+      <id>form8a8a6</id>
+      <Items>
+        <upRegion sid="d80b21103a94f7883f144882b8e3bbd1">
+          <id>upRegion46752</id>
+        </upRegion>
+        <leftRegion sid="98153a05ce14c4a32f264f2bbc5c00c5">
+          <id>leftRegionad15e</id>
+          <width>200</width>
+          <Items>
+            <topbar sid="9ef99b8a8d3c7663ef9aceb07dd1cad9">
+              <id>topbarF0441DACF2D049D6D769ED07D80167AB</id>
+              <Items>
+                <tbButton sid="b12b22f73d0d4d9d4da072e759187531">
+                  <id>tbReload</id>
+                  <text>重载节点</text>
+                  <tooltip>重载最后单击节点</tooltip>
+                  <onClickClient><![CDATA[tbReload_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="5f13e861478ce5b03234f3ebef69bd71">
+                  <id>tbButton53998</id>
+                  <text>重载根节点</text>
+                  <onClickClient><![CDATA[tbButton53998_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <dynamicNav sid="ec19caf2c9159b0b59ce74794b30bed1">
+              <id>daynmic_tree</id>
+              <operAreaId>operarea1</operAreaId>
+              <expandTree>true</expandTree>
+              <expandLevel>2</expandLevel>
+              <onLoad><![CDATA[daynmic_tree_onLoad]]></onLoad>
+            </dynamicNav>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="2ba555f5e4d9aaf70da5b6367cbf9723">
+          <id>centerRegion4078a</id>
+        </centerRegion>
+        <downRegion sid="fa24681a796370a537518a56f2e4b799">
+          <id>downRegion1a766</id>
+          <Items>
+            <formArea sid="edb7573ece019d7dc92670e2044825fe">
+              <id>sqlFormArea</id>
+              <colWidths>*,100</colWidths>
+              <Items>
+                <faString sid="9c943891e0501d5a71d4018f12b074d0">
+                  <id>execSQL</id>
+                  <required>true</required>
+                  <inheritkey />
+                  <inherittbl />
+                  <inheritfld />
+                  <label>需要执行的SQL</label>
+                </faString>
+                <buttonArea sid="631fa82647e205c3a5eea4a7649a13cb">
+                  <id>buttonAreacc996</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="89c711ae6a978dfcf17c1990d89908f0">
+                      <id>execSQLBtn</id>
+                      <text>执行</text>
+                      <onClickClient><![CDATA[execSQLBtn_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </downRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

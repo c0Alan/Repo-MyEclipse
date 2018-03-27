@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>61D9CFF1C5DC784893698CFF83D8D8EA</id>
+  <cfgTbl>T_Eg_Library</cfgTbl>
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.book.EditLibrary.java</javaLocation>
+  <jsLocation>artery/arteryClient/book/editLibrary.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <formArea sid="A61ad677bf1c53a9c05f97bab60677ee1">
+          <id>formArea</id>
+          <ds>rs1</ds>
+          <height>100%</height>
+          <bodyStyle>padding:5px;</bodyStyle>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <faIdentity sid="Ab1511973da80c084643cabc3fa67522d">
+              <id>frmCID</id>
+              <inherittbl>T_Eg_Library</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <height>0</height>
+              <displayType>readOnly</displayType>
+              <label>CID</label>
+            </faIdentity>
+            <faString sid="A9cc093093b3df4e3c36fda8393c6a87b">
+              <id>frmCNAME</id>
+              <inherittbl>T_Eg_Library</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <height>0</height>
+              <label>图书室名称</label>
+            </faString>
+            <faOrgan sid="A6396cd3489812181293ffb6b2856ad8e">
+              <id>frmAdmins</id>
+              <editor>mTree</editor>
+              <height>0</height>
+              <value>{req.admins}</value>
+              <label>管理员</label>
+            </faOrgan>
+            <footer sid="A7dbbfafbbf9116571870eba83f0e9ad6">
+              <id>A7dbbfafbbf9116571870eba83f0e9ad6</id>
+              <buttonAlign>right</buttonAlign>
+              <Items>
+                <button sid="A69485e7abf513b5ebb3f597d505e8da3">
+                  <id>addButton</id>
+                  <text>添加</text>
+                  <onClickClient><![CDATA[addButton_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[addButton_onClickServer]]></onClickServer>
+                  <onShow><![CDATA[addButton_onShow]]></onShow>
+                </button>
+                <button sid="A5804fee9f0781ba6cf13de4a0971276e">
+                  <id>updateButton</id>
+                  <text>更新</text>
+                  <onClickClient><![CDATA[updateButton_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[updateButton_onClickServer]]></onClickServer>
+                  <onShow><![CDATA[updateButton_onShow]]></onShow>
+                </button>
+                <button sid="A1c535c57a868ec96402ba18a0cead0a0">
+                  <id>cancelButton</id>
+                  <text>取消</text>
+                  <onClickClient><![CDATA[cancelButton_onClickClient]]></onClickClient>
+                </button>
+              </Items>
+            </footer>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="admins" showName="" value="" pvalue="" />
+    <param name="cid" showName="" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT * FROM T_Eg_Library WHERE C_ID = '{req.cid}'</ds>
+  </dslist>
+</form>
+

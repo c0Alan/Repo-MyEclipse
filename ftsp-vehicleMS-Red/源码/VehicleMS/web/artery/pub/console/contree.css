@@ -1,0 +1,48 @@
+.prop-tip{
+	font-size: 12px;
+}
+
+.validate .x-btn-text{
+  background-image: url(images/validate.gif);
+}
+
+.del{
+    background-image: url(images/del.gif) !important;
+}
+/* triggerField图标，编辑文本属性时用到 */
+.trigger_sel{
+    background-image: url(images/trigger_sel.gif) !important;
+}
+.dataSourceNew{
+    background-image: url(images/dataSourceNew.gif) !important;
+}
+.faFieldNew{
+    background-image: url(images/faFieldNew.gif) !important;
+}
+.resultSetNew{
+    background-image: url(images/resultSetNew.gif) !important;
+}
+.rptConditionNew{
+    background-image: url(images/rptConditionNew.gif) !important;
+}
+.rptResultNew{
+    background-image: url(images/rptResultNew.gif) !important;
+}
+.dataSource{
+    background-image: url(images/dataSource.gif) !important;
+}
+.faField{
+    background-image: url(images/faField.gif) !important;
+}
+.resultSet{
+    background-image: url(images/resultSet.gif) !important;
+}
+.rptLayout{
+    background-image: url(images/rptLayout.gif) !important;
+}
+.rptCondition{
+    background-image: url(images/rptCondition.gif) !important;
+}
+.rptResult{
+    background-image: url(images/rptResult.gif) !important;
+}

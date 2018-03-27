@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1247b8eb66e0b61b6922f349392b2f65</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.toolbar._topbar.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/toolbar/_topbar.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formff7c5">
+      <id>formff7c5</id>
+      <Items>
+        <blankPanel sid="0de1462b8a011474a80eb2d58a29751f">
+          <id>blankPanel15020</id>
+          <Items>
+            <topbar sid="a4996ece7ec3ffbd72cc980634e3a482">
+              <id>topbar56cee</id>
+              <Items>
+                <tbText sid="698065d03255951d684b2cc41e4b91c9">
+                  <id>tbText24ac0</id>
+                  <text>&lt;span style="color:red;"&gt;子系统切换控件：&lt;/span&gt;</text>
+                </tbText>
+                <tbText sid="0378cca690b55f36eb0b44b69aae9a2e">
+                  <id>tbText7fd58</id>
+                  <text>显示方式：combobox</text>
+                </tbText>
+                <tbSysChange sid="e82402c0a45d4b00260f0b6cb5601e22">
+                  <id>tbSysChangef7169</id>
+                </tbSysChange>
+                <tbSpacer sid="0014a0b5760bbe8b971940123ff57fb0">
+                  <id>tbSpacerbde46</id>
+                </tbSpacer>
+                <tbSeparator sid="2ebb28d24b57fbd896d0eae32a18da3f">
+                  <id>tbSeparator116ce</id>
+                </tbSeparator>
+                <tbSpacer sid="fe24418e392805472310c927e909bb85">
+                  <id>tbSpacer63944</id>
+                </tbSpacer>
+                <tbText sid="723fa8f69418bc5ee5ee53ddefb19254">
+                  <id>tbTextaddae</id>
+                  <text>显示方式：window</text>
+                </tbText>
+                <tbSysChange sid="9f2ce5493dfbfbda921427b102bf80cf">
+                  <id>tbSysChange496d1</id>
+                  <tooltip>这是一个子系统切换控件</tooltip>
+                  <showType>window</showType>
+                </tbSysChange>
+                <tbFill sid="94f148eb5bcf0725550be4b78bb7d10b">
+                  <id>tbFill06cb7</id>
+                </tbFill>
+                <tbButton sid="0ede4263aff89c575cf607fa9f27d427">
+                  <id>tbButton46ab5</id>
+                  <text>点击调用js方法window切换</text>
+                  <onClickClient><![CDATA[tbButton46ab5_onClickClient]]></onClickClient>
+                  <themeStyle>cat</themeStyle>
+                </tbButton>
+              </Items>
+            </topbar>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="6ba52e7b89ae5ffa2fca8e2628dd49d1">
+          <id>blankPanelad5e1</id>
+          <Items>
+            <topbar sid="2c27fde0533727ef345b0bd40ea245b9">
+              <id>topbar170b4</id>
+              <Items>
+                <tbText sid="d2b8025b72250b752db902ff8a17dab3">
+                  <id>tbTextddc37</id>
+                  <text>&lt;span style="color:red;"&gt;注销按钮：&lt;/span&gt;</text>
+                </tbText>
+                <tbLogout sid="538088b14b805219c7e3eb56e4418f53">
+                  <id>tbLogout2620b</id>
+                  <tooltip>这是一个注销按钮</tooltip>
+                </tbLogout>
+                <tbLogout sid="89bf7aeb51c82a0b485da28342f7758d">
+                  <id>tbLogout1435e</id>
+                  <text>注销1</text>
+                  <onlyShowIcon>false</onlyShowIcon>
+                </tbLogout>
+                <tbLogout sid="88795523fe2f40deacfef209c74aa927">
+                  <id>tbLogout09766</id>
+                  <text>注销2</text>
+                  <icon>/artery/arteryImage/file/close_disabled.gif</icon>
+                  <onlyShowIcon>false</onlyShowIcon>
+                </tbLogout>
+                <tbLogout sid="817920e38803511e5901b0190d43048b">
+                  <id>tbLogout9d5a7</id>
+                  <text>注销3</text>
+                  <icon />
+                  <onlyShowIcon>false</onlyShowIcon>
+                </tbLogout>
+                <tbFill sid="b2aec772855e49947fcee4a4b4ce7b32">
+                  <id>tbFilld5b5c</id>
+                </tbFill>
+                <tbButton sid="2e0e5034bbb275477d22efa25e6168b7">
+                  <id>tbButton8485c</id>
+                  <text>点击调用js方法注销</text>
+                  <onClickClient><![CDATA[tbButton8485c_onClickClient]]></onClickClient>
+                  <themeStyle>cat</themeStyle>
+                </tbButton>
+              </Items>
+            </topbar>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="95071cb3d7077a8d570c443097630eec">
+          <id>blankPanel9d09f</id>
+          <Items>
+            <topbar sid="07b485d3af58d27636ea163caf2d0614">
+              <id>topbara2cad</id>
+              <Items>
+                <tbText sid="fce38a0f98fea895dc2407e846b02697">
+                  <id>tbText509a7</id>
+                  <text>&lt;span style="color:red;"&gt;修改密码控件：&lt;/span&gt;</text>
+                </tbText>
+                <tbChangePassword sid="014a8ef28c515daaaab31c7dcc6380ab">
+                  <id>tbChangePassword9e68c</id>
+                </tbChangePassword>
+                <tbChangePassword sid="465d484ccb22ffa45f0828100ee02c3d">
+                  <id>tbChangePassword01915</id>
+                  <text>修改密码1</text>
+                  <onlyShowIcon>false</onlyShowIcon>
+                </tbChangePassword>
+                <tbChangePassword sid="e70eca51ab14f3876173fc8d3cfe68d9">
+                  <id>tbChangePassword42fd5</id>
+                  <text>修改密码2</text>
+                  <icon>/artery/arteryImage/symbol/star_blue.gif</icon>
+                  <onlyShowIcon>false</onlyShowIcon>
+                </tbChangePassword>
+                <tbChangePassword sid="af1c705c225a1eb25eebc3304eff4673">
+                  <id>tbChangePasswordd5331</id>
+                  <text>修改密码3</text>
+                  <icon />
+                  <onlyShowIcon>false</onlyShowIcon>
+                </tbChangePassword>
+                <tbFill sid="3bf1a8770a17f768ae1777b82f82bc18">
+                  <id>tbFilld588c</id>
+                </tbFill>
+                <tbButton sid="81463f46b70a615314190e10982d22f4">
+                  <id>tbButtonb0ec3</id>
+                  <text>点击调用js方法修改密码</text>
+                  <onClickClient><![CDATA[tbButtonb0ec3_onClickClient]]></onClickClient>
+                  <themeStyle>cat</themeStyle>
+                </tbButton>
+                <tbLogout sid="bdbc9768e5d94d352d17a0b5a09c4ba8">
+                  <id>tbLogout5c73b</id>
+                </tbLogout>
+              </Items>
+            </topbar>
+            <htmlArea sid="ac850fe536b2f3856eda4da383772e96">
+              <id>htmlArea2fb8a</id>
+              <value>修改密码控件示例必须作为子系统的表单，登录系统后访问才可正常修改密码。</value>
+              <style>padding:10px;</style>
+            </htmlArea>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="6bd4bd60a2988f2946d03a0e92b4098f">
+          <id>blankPanelfcc75</id>
+          <Items>
+            <topbar sid="f9ffa0adc0654d110ff740e2800c439f">
+              <id>topbar540b1</id>
+              <Items>
+                <tbText sid="52ae8cfd672df0cbdd6f97be9b34afff">
+                  <id>tbTexte1802</id>
+                  <text>&lt;span style="color:red;"&gt;其他工具栏控件：&lt;/span&gt;</text>
+                </tbText>
+                <tbButton sid="777fa8461fb135b22ceee15b1edb1202">
+                  <id>tbButton52a51</id>
+                  <text>按钮1</text>
+                </tbButton>
+                <tbSeparator sid="38cefdadb348a6564afc9b3a0ba67dae">
+                  <id>tbSeparator28aff</id>
+                </tbSeparator>
+                <tbButton sid="124acdfc133bcce60c7cefa4c59ebf59">
+                  <id>tbButtonf6290</id>
+                  <text>按钮2</text>
+                  <themeStyle>blank</themeStyle>
+                </tbButton>
+                <tbSeparator sid="95d5ced06afe60629c5a5451dad4a358">
+                  <id>tbSeparatora286e</id>
+                </tbSeparator>
+                <tbButton sid="8d3cd66359b7f170a17d75fc7b7ebc45">
+                  <id>tbButton940e5</id>
+                  <text>按钮3</text>
+                  <themeStyle>cat</themeStyle>
+                </tbButton>
+                <tbSeparator sid="d60579c339afa02ef48baecac5682884">
+                  <id>tbSeparator8222e</id>
+                </tbSeparator>
+                <tbMenu sid="1cc949e98aa658fd83953ca6ebb566c9">
+                  <id>tbMenuf7373</id>
+                  <text>菜单</text>
+                  <Items>
+                    <tbMenuItem sid="f9d8c73237fd986ac267939c4d9ddc5f">
+                      <id>tbMenuItem34352</id>
+                      <text>菜单项1</text>
+                    </tbMenuItem>
+                    <tbMenu sid="a3b5c56f843479e4e940603800c46d43">
+                      <id>tbMenu521c8</id>
+                      <text>子菜单</text>
+                      <Items>
+                        <tbMenuItem sid="e8f75e6f93007b2682e827e336bdb4cf">
+                          <id>tbMenuItem0a314</id>
+                          <text>子菜单项1</text>
+                        </tbMenuItem>
+                        <tbMenuItem sid="bd4e592baf670403b841878bbf313ad7">
+                          <id>tbMenuItemd083b</id>
+                          <text>子菜单项2</text>
+                        </tbMenuItem>
+                      </Items>
+                    </tbMenu>
+                    <tbSeparator sid="54a7ab6afd18b1b239994c3dbc04c573">
+                      <id>tbSeparator38386</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="d5d3011e515db7383a4479c6eeaa3772">
+                      <id>tbMenuItema8f54</id>
+                      <text>菜单项2</text>
+                    </tbMenuItem>
+                    <tbMenuItem sid="8e63f47db1b9de7e350d3fe7f7c31ce4">
+                      <id>tbMenuItemfb6fb</id>
+                      <text>菜单项3</text>
+                    </tbMenuItem>
+                  </Items>
+                </tbMenu>
+                <tbSeparator sid="f35f77417556035c1a2ebd2494c7745b">
+                  <id>tbSeparator8775c</id>
+                </tbSeparator>
+                <splitButton sid="ee9f865839dd7d15c10cf87cc501cf2b">
+                  <id>splitButtonaa1f6</id>
+                  <width>60</width>
+                  <text>分割按钮1</text>
+                  <Items>
+                    <tbMenuItem sid="0f19790c50d9bd8f7e4b8d7ff206b908">
+                      <id>tbMenuItem978d4</id>
+                      <text>菜单项1</text>
+                    </tbMenuItem>
+                    <tbMenuItem sid="c6286950f2058ed8cebeb53147333818">
+                      <id>tbMenuItemdc8b3</id>
+                      <text>菜单项2</text>
+                    </tbMenuItem>
+                    <tbSeparator sid="c81be8313d1b5d337926a6c391d0ca59">
+                      <id>tbSeparator63b27</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="77ad5edd73b6c594977454ad55f32488">
+                      <id>tbMenuItem2b3f2</id>
+                      <text>菜单项3</text>
+                    </tbMenuItem>
+                  </Items>
+                </splitButton>
+                <splitButton sid="2c8bb1825c3a8f06e1baf73d15b62610">
+                  <id>splitButtonef974</id>
+                  <width>60</width>
+                  <text>分割按钮2</text>
+                  <themeStyle>cookie</themeStyle>
+                  <Items>
+                    <tbMenuItem sid="875e9749943113da53eff751fbf9b16a">
+                      <id>tbMenuItem8e443</id>
+                      <text>菜单项1</text>
+                    </tbMenuItem>
+                    <tbMenuItem sid="5e8d7428ea41e59085a5d95269b64ed9">
+                      <id>tbMenuItemfddbc</id>
+                      <text>菜单项2</text>
+                    </tbMenuItem>
+                    <tbSeparator sid="c8c07fdeadfe70a4ec911f4fcae771e0">
+                      <id>tbSeparatorb9033</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="7d035ea596ce8b4e8740c25ad4c3b1f2">
+                      <id>tbMenuItem435e0</id>
+                      <text>菜单项3</text>
+                    </tbMenuItem>
+                  </Items>
+                </splitButton>
+                <splitButton sid="93f46b9f5ab8a5239cc1250e6a62511e">
+                  <id>splitButton765c4</id>
+                  <width>60</width>
+                  <text>分割按钮3</text>
+                  <themeStyle>bluePlain</themeStyle>
+                  <Items>
+                    <tbMenuItem sid="d234b2ca6ca19d42049f9dd22d3c8ea7">
+                      <id>tbMenuIteme82b3</id>
+                      <text>菜单项1</text>
+                    </tbMenuItem>
+                    <tbMenuItem sid="c2313fe77c5ed5f8c9e433cb04a81216">
+                      <id>tbMenuItem8db25</id>
+                      <text>菜单项2</text>
+                    </tbMenuItem>
+                    <tbSeparator sid="1256ab3afb3bd277ece3a231c936161e">
+                      <id>tbSeparator5c57f</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="de3cf5cbbd1e64932801d713267ff601">
+                      <id>tbMenuItem22994</id>
+                      <text>菜单项3</text>
+                    </tbMenuItem>
+                  </Items>
+                </splitButton>
+                <tbFill sid="56d8b989b3abe7c186306a5673ce097e">
+                  <id>tbFill1055a</id>
+                </tbFill>
+                <tbText sid="c274c3c4ef3c51c307c7e8f8d07330b3">
+                  <id>tbTextb97d2</id>
+                  <text>&lt;span style="color:red;"&gt;这是一个超文本控件，可以在此显示超文本内容&lt;/span&gt;</text>
+                </tbText>
+              </Items>
+            </topbar>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

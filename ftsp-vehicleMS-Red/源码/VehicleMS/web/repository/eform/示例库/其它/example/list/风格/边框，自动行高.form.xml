@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>96ba9b9d7dd120ae0e17cdda05cc43ca</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>A32983d23599f48b774b7ab366362d4e4</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <listArea sid="Ad867d622dcac269ff60e93ba2f0977ef">
+          <id>bookList</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <width>90%</width>
+          <height>400</height>
+          <autoRowHeight>true</autoRowHeight>
+          <isStartNew>true</isStartNew>
+          <style>padding-top:10px;</style>
+          <themeStyle>default</themeStyle>
+          <Items>
+            <column sid="A3d0bccdb986d260acb185176404891df">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>名称</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A42f4c94cf60048fee40bd7db6757e986">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A81fa79822d01c1f08cd91b12b44760f5">
+              <id>lstCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A3b6c83df8fe2af06b512629d7b275005">
+              <id>lstDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{df([rs1.D_PUBLISHER],yyyy-MM-dd)}</dataName>
+              <title>出版时间</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A9c800f6d804249ce1ebde496444cb3c9">
+              <id>lstDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{df([rs1.D_BUY],yyyy-MM-dd)}</dataName>
+              <title>购买日期</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <columnString sid="columnString812B2B95CD23938B3DBEA6BF900D347D">
+              <id>lstCISBN</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ISBN</inheritfld>
+              <dataName>{rs1.C_ISBN}</dataName>
+              <title>ISBN号</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnString228C9F718E57B45045DB81E92A95BE8B">
+              <id>lstTABSTRACT</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>T_ABSTRACT</inheritfld>
+              <dataName>{rs1.T_ABSTRACT}</dataName>
+              <title>摘要</title>
+              <isEditor>false</isEditor>
+              <htmlEncode>false</htmlEncode>
+            </columnString>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_PUBLISHER , 
+T_Eg_Book.D_PUBLISHER , 
+T_Eg_Book.D_BUY , 
+T_Eg_Book.C_ISBN , 
+T_Eg_Book.T_ABSTRACT 
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="star" cn="星星评价" menu="工具" jsType="artery-base"
+	icon="star.gif" iconNew="starNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2011-08-05</CreateTime>
+		<Describe>生成星状的评价控件</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="blankPanel" />
+	</Parents>
+	<Class>com.thunisoft.artery.plugin.tool.Star
+	</Class>
+	<JsFile>
+		<File>star.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apstar</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="星星总个数" type="2" name="starAllNum" export="true" tips="生成的星星评价的个数">
+			<Value>5</Value>
+		</Property>
+		<Property cn="星星选中个数" type="2" name="starSelNum" export="true" tips="生成的星星评价的默认选中个数">
+			<Value />
+		</Property>
+		<Property cn="星星类型" type="3" name="starType" ct="[big,small]"
+			export="true" tips="设置展现类型">
+			<Value>big</Value>
+		</Property>
+		<Property cn="是否可选择" type="11" name="canSel" export="true"
+			tips="当为false时星星不可选择，只能展现">
+			<Value>true</Value>
+		</Property>
+		<Property cn="额外信息" type="1" name="extInfo" export="true" tips="生成额外信息，默认在右侧显示">
+			<Value></Value>
+		</Property>
+		<Property cn="对齐方式" type="3" name="align" export="true" ct="[left,center,right]" tips="设置星星的对齐方式，默认为左对齐">
+      <Value>left</Value>
+      </Property>
+      <Property cn="组件容器样式" type="1" name="style" group="样式" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className" group="样式"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" group="样式"	tips="设置控件的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="hide" />
+		<Method name="show" />
+		<Method name="setStarSelNum" return="void" tips="设置当前星星点亮个数">
+	  	  	<Description><![CDATA[
+		  	设置当前星星点亮个数
+		  	<pre>
+		  		Artery.get("star2321").setStarSelNum(2);
+		  	</pre>
+		  	]]></Description>
+	  	  	<Parameters>
+	  			<Param>num:int</Param>
+	  		</Parameters>
+	  		<Return>void</Return>
+  		</Method>
+  		<Method name="getValue" return="int" tips="获取当前星星点亮个数">
+	  	  	<Description><![CDATA[
+		  	获取当前星星点亮个数
+		  	<pre>
+		  		Artery.get("star2321").getValue();
+		  	</pre>
+		  	]]></Description>
+	  	  	<Parameters>
+	  			<Param>无</Param>
+	  		</Parameters>
+	  		<Return>int</Return>
+  		</Method>
+  		<Method name="setExtInfo" return="void" tips="设置额外信息显示内容">
+	  	  	<Description><![CDATA[
+		  	设置额外信息显示内容
+		  	<pre>
+		  		Artery.get("star2321").setExtInfo(str);
+		  	</pre>
+		  	]]></Description>
+	  	  	<Parameters>
+	  			<Param>str:string</Param>
+	  		</Parameters>
+	  		<Return>void</Return>
+  		</Method>
+	</Methods>
+</Item>
+

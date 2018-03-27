@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>b2eba28069111f677327fc0f29215d0e</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.valid.Yzmbzym.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/valid/Yzmbzym.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form4ebe2">
+      <id>form4ebe2</id>
+      <Items>
+        <leftRegion sid="5245ebaa0e8f460896b1ff023211bd53">
+          <id>leftRegiond448e</id>
+          <width>200</width>
+          <collapsible>true</collapsible>
+          <margins>5 0 5 5</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="209f021c23b0e8d72c80c2b2de6fbbe7">
+              <id>blankPanel3f859</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="dea229cc43d49ceeb16cd21aa0560729">
+                  <id>header94447</id>
+                  <text />
+                  <headerStyle>padding:0;</headerStyle>
+                  <Items>
+                    <blankPanel sid="85e98f003e8769cf6e6a3f05b1b28557">
+                      <id>blankPanel0b148</id>
+                      <bodyStyle>display:none;</bodyStyle>
+                      <Items>
+                        <topbar sid="1b5206afe0230e385f9fcb18312c9352">
+                          <id>topbar6759c</id>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbText sid="3cfa11f2ba857c8ac9176734d7fe5779">
+                              <id>tbTextd8d2e</id>
+                              <text>模板列表</text>
+                              <style>font-size:14px;font-weight:700;color:#15428B;</style>
+                            </tbText>
+                            <tbSeparator sid="62164a71da22b0cc82dc4aa69229f83d">
+                              <id>tbSeparator7c1b5</id>
+                            </tbSeparator>
+                            <tbButton sid="fc6e39ca7e525a26be43fe4be2626c67">
+                              <id>createTplBtn</id>
+                              <text>新建</text>
+                              <tooltip>新建模板</tooltip>
+                              <icon>/artery/arteryImage/symbol/drop-add.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <linkto>{"formId":"3cc25f7b34f6eabf26b9eec886c280b6","formName":"添加修改模板","formType":"1","params":{},"target":"_window","targetWidth":"330","targetHeight":"150","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"新建模板","wincfg":""}</linkto>
+                            </tbButton>
+                            <tbButton sid="4be98bd4e16d20832cd2221e78e30d30">
+                              <id>modifyTplBtn</id>
+                              <text>修改</text>
+                              <tooltip>修改模板</tooltip>
+                              <icon>/artery/arteryImage/file/icon-mark-complete.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="f00de8833a0fcc822931f6771d3ad686">
+                              <id>deleteTplBtn</id>
+                              <text>删除</text>
+                              <tooltip>删除模板</tooltip>
+                              <icon>/artery/arteryImage/symbol/cross.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbFill sid="aabc2f8c4d96a63e75f3fb60967c182a">
+                              <id>tbFilld3616</id>
+                            </tbFill>
+                            <tbButton sid="f79aaec94cc4bccbe00948e311065e33">
+                              <id>reloadTplBtn</id>
+                              <text>刷新</text>
+                              <tooltip>刷新模板缓存</tooltip>
+                              <icon>/artery/arteryImage/file/refresh.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[refreshBtn_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[refreshBtn_onClickServer]]></onClickServer>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <listArea sid="5c2dceb674b40bfd3b73e35646236079">
+                  <id>listAreaTemplates</id>
+                  <ds>rs1</ds>
+                  <height>100%</height>
+                  <stripeRows>false</stripeRows>
+                  <isPageSplit>false</isPageSplit>
+                  <isShowRowNumber>false</isShowRowNumber>
+                  <themeStyle>unis</themeStyle>
+                  <Items>
+                    <column sid="3b4f665ac4d554447d87d1a8c4503e0d">
+                      <id>templateIdCol</id>
+                      <inheritfld>id</inheritfld>
+                      <dataName>{rs1.id}</dataName>
+                      <title>标识</title>
+                      <width>30</width>
+                      <isFilter>true</isFilter>
+                      <highlightCol>true</highlightCol>
+                    </column>
+                    <column sid="087b74b007a66d41563f2870526ae40e">
+                      <id>column34c83</id>
+                      <inheritfld>name</inheritfld>
+                      <dataName>{rs1.name}</dataName>
+                      <title>名称</title>
+                      <isFilter>true</isFilter>
+                    </column>
+                  </Items>
+                </listArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="af7735ff66c0ef53f99a3e5d6932e280">
+          <id>centerRegion0ff72</id>
+          <margins>5 5 5 0</margins>
+          <border>false</border>
+          <Items>
+            <operArea sid="4c4a99886ac374739cdc7a220e338da1">
+              <id>operArea11f19</id>
+              <linkto>{"formId":"95af4e9e11d6c799ae3ec40af50a9f62","formName":"leftArrow","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

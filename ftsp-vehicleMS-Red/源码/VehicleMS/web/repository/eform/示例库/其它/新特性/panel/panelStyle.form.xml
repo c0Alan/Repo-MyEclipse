@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d92d05a779b37dbd189ce79ed64ead7d</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.panel.PanelStyle.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/panel/PanelStyle.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formca850">
+      <id>formca850</id>
+      <bodyStyle>padding:30px;</bodyStyle>
+      <Items>
+        <tableLayout sid="85585854c5102832ca48b6531284772c">
+          <id>tableLayout5104f</id>
+          <colWidths>100</colWidths>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <htmlArea sid="f1ecc25868af0c9558af52d66434011d">
+              <id>htmlAreac7e61</id>
+              <value>cherry</value>
+            </htmlArea>
+            <blankPanel sid="5a0f7f26dc107479df81826063df6cd2">
+              <id>blankPanel01393</id>
+              <width>100%</width>
+              <height>80</height>
+              <frame>true</frame>
+              <themeStyle>cherry</themeStyle>
+            </blankPanel>
+            <htmlArea sid="e1b0e5da6bacc6d3db8072e74d94e4cc">
+              <id>htmlAreaac78b</id>
+              <value>bluePlain</value>
+            </htmlArea>
+            <blankPanel sid="8ab4acda6b08b113961f11c4ed6c7e2b">
+              <id>blankPanele47a0</id>
+              <height>100</height>
+              <frame>true</frame>
+              <themeStyle>bluePlain</themeStyle>
+            </blankPanel>
+            <htmlArea sid="bef2392d4b51ca794924bbce631ba0f7">
+              <id>htmlAreaaff39</id>
+              <value>没有“标题栏”、“工具栏”等的unis样式</value>
+            </htmlArea>
+            <blankPanel sid="04c2966825c486b2ceedfc0bc09c0740">
+              <id>blankPanele5e3e</id>
+              <height>100</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+            </blankPanel>
+            <htmlArea sid="92593323aa650dd858ed34bf4780b42b">
+              <id>htmlArea92fd4</id>
+              <value>带“标题栏”的unis样式</value>
+            </htmlArea>
+            <blankPanel sid="a46b30d163b8e18c2596a4e258b99ef7">
+              <id>blankPanelb981c</id>
+              <height>100</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="728406cdc0c19296f285004a51a28463">
+                  <id>headerd565f</id>
+                  <text />
+                  <Items>
+                    <blankPanel sid="31f172af0572d88472b3573b62aef8b9">
+                      <id>blankPanel00397</id>
+                      <Items>
+                        <buttonArea sid="2d8b134aa890de90573f5b29a7addc0a">
+                          <id>buttonArea27437</id>
+                          <toggle>true</toggle>
+                          <themeStyle>simple</themeStyle>
+                          <Items>
+                            <button sid="65ce39984d67c836f5469aed586a370a">
+                              <id>button65236</id>
+                              <text>保存</text>
+                              <icon>/artery/arteryImage/file/save.png</icon>
+                            </button>
+                            <button sid="c4c751933e87110c591b0036ea9176a1">
+                              <id>button79274</id>
+                              <text>另存为</text>
+                              <icon>/artery/arteryImage/file/saveAs.png</icon>
+                            </button>
+                            <button sid="5d57bb24ecd6ff32db497130fd2552ff">
+                              <id>button0ddb6</id>
+                              <text>打印</text>
+                              <icon>/artery/arteryImage/file/print.png</icon>
+                            </button>
+                            <blankPanel sid="9dbc2ecae40e6f3ffeb4b0c598b77f85">
+                              <id>blankPanel772f0</id>
+                              <bodyStyle>height;100%;width:2px;border-left:1px solid #BFCBFF;border-right:1px solid #EDF3FF;</bodyStyle>
+                            </blankPanel>
+                            <button sid="c4109b7cbb5a793d9dabb285ab9b864b">
+                              <id>buttondc9ec</id>
+                              <text>撤回提请</text>
+                              <icon>/artery/arteryImage/file/back.png</icon>
+                            </button>
+                            <button sid="a745ca00d06dc2fb8c58cce3405299e7">
+                              <id>button8e471</id>
+                              <text>审批</text>
+                              <icon>/artery/arteryImage/sample/exit.gif</icon>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+              </Items>
+            </blankPanel>
+            <htmlArea sid="d3c3df24184b9130628b35f2db1a0b96">
+              <id>htmlArea8ab2e</id>
+              <value>unis</value>
+            </htmlArea>
+            <blankPanel sid="32801624057586935e7b4fc78e1a2fae">
+              <id>blankPanelb31eb</id>
+              <height>150</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="7964fb40e4b78af10b6b2b36ed2175bb">
+                  <id>header2732a</id>
+                  <text>&lt;span style="height:20px;"&gt;&lt;/span&gt;</text>
+                </header>
+                <topbar sid="846109c46784db7639b908492b94e59b">
+                  <id>topbar173e8</id>
+                  <Items>
+                    <tbText sid="fda4eb5573a8bccae266cc10c40c5ac8">
+                      <id>tbText19557</id>
+                      <text>&lt;span style="color:gray;height:30px;"&gt;&lt;/span&gt;</text>
+                    </tbText>
+                  </Items>
+                </topbar>
+                <footer sid="9f4c89bb11537317e45966b63c5fc168">
+                  <id>footer1daea</id>
+                  <buttonAlign>left</buttonAlign>
+                  <Items>
+                    <blankPanel sid="29e4c406a79dc15fd78b691be9fcec61">
+                      <id>blankPaneldfa35</id>
+                      <height>25</height>
+                    </blankPanel>
+                  </Items>
+                </footer>
+              </Items>
+            </blankPanel>
+            <htmlArea sid="cfaa0ae667771c761f4cc8e43901329d">
+              <id>htmlArea198a6</id>
+              <value>peer</value>
+            </htmlArea>
+            <blankPanel sid="17cbe021de0ecb6cb46f182a454c7f9f">
+              <id>blankPanel8ff73</id>
+              <height>150</height>
+              <frame>true</frame>
+              <themeStyle>pear</themeStyle>
+            </blankPanel>
+            <htmlArea sid="04ac351795f91531c17ce4a6e032c8e2">
+              <id>htmlArea841a5</id>
+              <value>带标题栏的pear样式</value>
+            </htmlArea>
+            <blankPanel sid="1dd50da3a389de1c871680583fde2ba0">
+              <id>blankPanelb88f5</id>
+              <height>200</height>
+              <frame>true</frame>
+              <themeStyle>pear</themeStyle>
+              <Items>
+                <header sid="11473d74c0944fe3d7628fff86ef4131">
+                  <id>header6069e</id>
+                  <text>&lt;span style="height:20px;"&gt;&lt;/span&gt;</text>
+                </header>
+              </Items>
+            </blankPanel>
+            <htmlArea sid="f56f2d5a93a3e45f76bc5c447c9212d6">
+              <id>htmlAreab1156</id>
+              <value>collapseUnis样式</value>
+            </htmlArea>
+            <blankPanel sid="b2c2fe183db6b1572d020cfb4ab5481f">
+              <id>blankPanelecb28</id>
+              <height>50</height>
+              <themeStyle>collapseUnis</themeStyle>
+              <Items>
+                <header sid="47410166008dadb7b5e08317dbdacd28">
+                  <id>header7ee58</id>
+                  <Items>
+                    <collapseBtn sid="357f5b0455c73423815b800d87a264ef">
+                      <id>collapseBtnf35c4</id>
+                    </collapseBtn>
+                  </Items>
+                </header>
+              </Items>
+            </blankPanel>
+            <htmlArea sid="2234d467cfda312421dc453e3f0d1d19">
+              <id>htmlArea27423</id>
+              <value>cooltip</value>
+            </htmlArea>
+            <blankPanel sid="2ed817d5e7b78fb51e297e85d38c8129">
+              <id>blankPanel4b1bd</id>
+              <width>200</width>
+              <height>80</height>
+              <frame>true</frame>
+              <themeStyle>cooltip</themeStyle>
+            </blankPanel>
+            <htmlArea sid="4ffdde38c9ff48dee0c119fbcb8c7b77">
+              <id>htmlArea23196</id>
+              <value>button样式</value>
+            </htmlArea>
+            <blankPanel sid="02a7224a9aef436612507541aeb8f4cb">
+              <id>blankPanel8e483</id>
+              <buttonFrame>true</buttonFrame>
+            </blankPanel>
+            <htmlArea sid="74db421683f3e8bfb6c1c5f608bc6f9f">
+              <id>htmlAreaf6e47</id>
+              <value>bfunis</value>
+            </htmlArea>
+            <blankPanel sid="2289997cb787dc1a11db2cb3b744f7d1">
+              <id>blankPanel9513c</id>
+              <themeStyle>bfunis</themeStyle>
+              <buttonFrame>true</buttonFrame>
+            </blankPanel>
+            <htmlArea sid="ca13fb6b036e333a3be6c35db98a3e76">
+              <id>htmlAreaf904a</id>
+              <value>bftopTitle</value>
+            </htmlArea>
+            <blankPanel sid="2d0ba869c5f3dc701d4422279538fc56">
+              <id>blankPanel6f839</id>
+              <themeStyle>bftopTitle</themeStyle>
+              <buttonFrame>true</buttonFrame>
+            </blankPanel>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

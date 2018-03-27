@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2beb8d1e75d63ed8ab3b7aadc8716bb9</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.base._form.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/base/_form.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form00696">
+      <id>form00696</id>
+      <background-color>#c0c0c0</background-color>
+      <importFile>abc.js;&#xD;
+def.css;</importFile>
+      <Items>
+        <blankPanel sid="c1ceaf999f646eb8d8c64a5d833ef334">
+          <id>blankPanel36a1a</id>
+          <Items>
+            <htmlArea sid="8afd2fb3ff56de05a576ffd1ee988b82">
+              <id>htmlArea606e2</id>
+              <value>&lt;h1&gt;说明&lt;/h1&gt;&#xD;
+&lt;li&gt;form是表单的基础&lt;/li&gt;&#xD;
+&lt;li&gt;这个表单只测试了背景色和引入文件功能&lt;/li&gt;</value>
+            </htmlArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

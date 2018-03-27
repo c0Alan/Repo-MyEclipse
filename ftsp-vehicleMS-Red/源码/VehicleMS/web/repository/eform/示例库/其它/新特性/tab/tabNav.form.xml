@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e40cff82c854d7bd99a01da2d75c28ac</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.tab.TabNav.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/tab/TabNav.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <bodyStyle>padding:30px;</bodyStyle>
+      <Items>
+        <navTabArea sid="44a5e9dcb105b022dc1c59552a079d82">
+          <id>navTabArea62562</id>
+          <height>100%</height>
+          <tabPosition>top</tabPosition>
+          <lastFile>false</lastFile>
+          <themeStyle>lightBlue</themeStyle>
+          <Items>
+            <navTabItem sid="b5ba37df99b192c8621c7ea34b5b98e4">
+              <id>navTabItem3215e</id>
+              <active>true</active>
+              <Items>
+                <blankPanel sid="ce1db6417b7b1fcf3da342330e3aabe0">
+                  <id>blankPanel591f4</id>
+                  <height>100%</height>
+                  <bodyContainer extend="true">true</bodyContainer>
+                  <Items>
+                    <topbar sid="9498d7e8893f51d8d5721243f1a23bbf">
+                      <id>topbar24990</id>
+                      <Items>
+                        <tbButton sid="5b6f7b2b6202f95f6dc80d719bdfa04b">
+                          <id>tbButtond1865</id>
+                        </tbButton>
+                      </Items>
+                    </topbar>
+                    <bottomBar sid="8fe7323db449d92751609a854554bde0">
+                      <id>bottomBarc3ba3</id>
+                      <Items>
+                        <tbButton sid="8d619411db5cdb092278de1b9b26faad">
+                          <id>tbButton419cd</id>
+                        </tbButton>
+                      </Items>
+                    </bottomBar>
+                    <formArea sid="2700163ec1f34318a24aef7dc7708365">
+                      <id>formArea48be6</id>
+                      <Items>
+                        <faString sid="eef31d9ac1e28d586b9c117777525740">
+                          <id>faString39e62</id>
+                        </faString>
+                        <faString sid="67c969e2f7dc582bfb44c36bfe5fae4c">
+                          <id>faString717a9</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabItem>
+            <navTabItem sid="3509544367fe78f3ccaaa5dd4b4d0218">
+              <id>navTabItem860d4</id>
+              <Items>
+                <blankPanel sid="8f9ce0d3584343a8986c5132cb3b02e6">
+                  <id>blankPanel00539</id>
+                  <bodyContainer extend="true">true</bodyContainer>
+                  <Items>
+                    <buttonArea sid="7121fe3bb4b695d85e8d44fb3ea3320f">
+                      <id>buttonArea9549c</id>
+                      <Items>
+                        <button sid="d8917d72b302225208d32f0e448bab4a">
+                          <id>button93ee5</id>
+                          <text>item2</text>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabItem>
+            <navTabItem sid="4294f813f99067d7484f2f6b162434b3">
+              <id>navTabItem16f49</id>
+            </navTabItem>
+          </Items>
+        </navTabArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

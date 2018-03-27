@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="rptCondition" cn="报表条件区域" icon="rptCondition.gif"
+	iconNew="rptConditionNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>
+		报表的条件，用于定义报表中用来获取数据所传递的参数。
+		可以向条件中加入不同类型控件，控件名称必须以con开头，
+		在数据访问的sql中可以通过“where xxx={con1}”访问条件
+		</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="rptLayout" />
+		<Parent type="rptArea" />
+	</Parents>
+	<Children>
+		<Child type="faString" />
+		<Child type="faDate" />
+		<Child type="faNumeric" />
+		<Child type="faCode" />
+		<Child type="faClassCode" />
+		<Child type="faOrgan" />
+		<Child type="faHidden" />
+		<Child type="faTrigger" />
+		<Child type="faTree" />
+		<Child type="faBlankLayout" />
+		<Child type="buttonArea" />
+		<Child type="htmlArea" />
+		<Child type="header" />
+		<Child type="topbar" />
+		<Child type="bottomBar" />
+		<Child type="footer" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.report.RptCondition
+	</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="控件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apformarea</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="列数" type="2" name="colNum" tips="设置区域的列数">
+			<Value>3</Value>
+		</Property>
+		<Property cn="每列宽度" type="1" name="colWidths"
+			tips="设置每列的宽度，如有多列，用“，”号分隔。支持整数值和百分比">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置区域的宽度，可以输入数值或者百分比">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height" tips="设置区域的高度">
+      <Value />
+    </Property>
+    <Property cn="标签分隔符" type="1" name="labelSeparator" tips="文字与输入框之间的分隔符">
+      <Value>:</Value>
+    </Property>
+    <Property cn="子标签位置" type="3" name="labelAlign" export="true" ct="[left,top,right]" tips="设置表单控件的label的位置，可设置为left，right，top">
+      <Value>left</Value>
+    </Property>
+    <Property cn="子标签宽度" type="2" name="labelWidth" export="true" tips="设置表单控件的label的宽度">
+      <Value>70</Value>
+    </Property>
+    <Property cn="编辑时子标签背景色" type="10" name="labelBackColor" tips="设置label的背景色 只有当“是否显示表格线”属性为true时起作用">
+      <Value></Value>
+    </Property>
+    <Property cn="编辑时子标签样式" type="10" name="labelSubStyle" tips="设置label的背景色 只有当“是否显示表格线”属性为true时起作用">
+      <Value></Value>
+    </Property>
+    <Property cn="是否默认查询" type="11" name="defaultSearch" tips="如为true时，则根据是否关心条件来判断是否查询，如果为false，则第一次展现不会查询">
+      <Value>true</Value>
+    </Property>
+    <Property cn="是否关心条件" type="11" name="careCon" tips="如为true时，则条件没有值时不进行查询，否则会进行查询">
+      <Value>true</Value>
+    </Property>
+    <Property cn="是否显示边框" type="11" name="border" export="true" tips="设置为true时，显示最外层的边框，否则不显示">
+      <Value>false</Value>
+    </Property>
+    <Property cn="编辑时显示表格线" type="3" name="formTableBorder" ct="[,true,false]" tips="设置当表单为编辑状态时，是否显示表格线">
+      <Value></Value>
+    </Property>
+    <Property cn="编辑时间距" type="1" name="cellpadding"  tips="设置编辑时的表格间距">
+      <Value />
+    </Property>
+    <Property cn="编辑时表格线样式" type="1" name="borderStyle">
+      <Value />
+    </Property>
+    <Property cn="控件样式" type="1" name="bodyStyle"  tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+      <Value />
+    </Property>
+    <Property cn="控件容器样式" type="1" name="style"  tips="设置本控件的样式，可填写css代码">
+      <Value />
+    </Property>
+    <Property cn="是否隐藏" type="11" name="hidden" export="true" tips="控件是否隐藏 当为true是为隐藏控件，控件还是生成了，可以用控件对应的show()方法来显示控件，要注意与show属性的区别">
+      <Value>true</Value>
+    </Property>
+    <Property cn="是否只读" type="11" name="readOnly" isHidden="1" tips="设置本控件是否只读">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否生成" type="11" name="show" tips="当为false时在页面不会生成本控件，即本控件不存在，而不是隐藏本控件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+    <Property cn="回车时脚本" type="15" name="onEnter" tips="在报表条件区域控件中点击回车时触发的事件，可写js脚本">
+	  <Value />
+	  <Description><![CDATA[
+      	<p>在报表条件区域中点击回车时触发的事件，可写js脚本</p>
+<pre>
+/**
+ * 回车时脚本(rptCondition79ec9)
+ * 
+ */
+function rptCondition79ec9_onEnter (){
+	//回车时调用保存按钮的点击方法
+	Artery.get('saveBtn').click();	
+}
+</pre>
+      ]]></Description>
+	  <Conditions>
+		<Condition>所有表单中的input和trigger控件回车时都会调用此事件</Condition>
+		<Condition>在此脚本中不应直接操作表单，可调用对应按钮的事件，如回车保存</Condition>
+		<Condition>此验证脚本执行时不会自动调用表单的验证，不能实时验证；只有在调用表单的提交方法（submit()）或者调用表单的验证方发（isValid()）时才会验证
+		</Condition>
+	  </Conditions>
+    </Property>
+    <Property cn="生成时脚本" type="14"  name="onShow" tips="可写服务器端脚本，每个控件都会有此属性，会在系统解析此控件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <ExtendProperties>
+  	<Property cn="所占列数" type="2" name="colSpan" tips="当本控件处于表格布局中时，设置本控件占几列，相当于td的copspan属性">
+      <Value>1</Value>
+    </Property>
+    <Property cn="所占行数" type="2" name="rowSpan" tips="当本控件处于表格布局中时，设置本控件占几行，相当于td的rowspan属性">
+      <Value>1</Value>
+    </Property>
+    <Property cn="同步表格高度" type="11" name="synTabHeight" export="true" tips="当本控件的父容器是“表格布局”时，可以通过此属性来设置本控件所在表格容器...">
+      <Value>false</Value>
+    </Property>
+    <Property cn="同步表格样式" type="1" name="synTabStyle" export="true" tips="本控件设置的样式会应用到表格的td的样式。只有本控件在表格布局内使用时有效">
+      <Value></Value>
+    </Property>
+    <Property cn="标签文字" type="1" name="label" tips="设置标签文字">
+      <Value>label</Value>
+    </Property>
+    <Property cn="标签颜色" type="10" name="labelColor" tips="设置标签的颜色">
+      <Value></Value>
+    </Property>
+    <Property cn="标签样式" type="1" name="labelStyle" tips="设置标签的样式">
+      <Value />
+    </Property>
+    <Property cn="隐藏标签" type="11" name="hideLabel" tips="设置标签是否隐藏">
+      <Value>false</Value>
+    </Property>
+    <Property cn="生成时容器" type="3" name="showInContainer" ct="[normal,more]" tips="设置控件的显示的容器，默认继承自数据字典的设置，如未对应数据宝典，则显示在基础容器中">
+      <Value>normal</Value>
+    </Property>
+    <Property cn="样式名称" type="1" name="className" tips="设置本控件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+      <Value />
+    </Property>
+  </ExtendProperties>
+  <JsFunctions>
+  <JsFunction name="onEnter">
+/**
+* 回车时脚本({itemid})
+*
+*/
+function {methodName} (){
+
+}
+	</JsFunction>
+  </JsFunctions>
+</Item>
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="htmlArea" cn="超文本" menu="文本控件" jsType="artery-base" nameprop="filterHtml(value)"
+	icon="htmlArea.gif" iconNew="htmlAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>可在此控件中写Html代码，也可链接到表单</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+		<Parent type="formArea" />
+		<Parent type="faBlankLayout" />
+		<Parent type="upRegion" />
+		<Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" />
+	</Parents>
+	<Class>com.thunisoft.artery.plugin.text.HtmlArea
+	</Class>
+	<JsFile>
+		<File>htmlArea.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>aphtmlarea</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="内容" type="8" name="value" export="true" tips="输写html代码或文本">
+			<Value />
+		</Property>
+		<Property cn="不解析html标签" type="11" name="convert2html"
+			export="true" tips="设置是否不解析内容中的HTML标签；默认为false，将对html标签进行解析。 ">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>设置是否不解析内容中的HTML标签，默认为false。</p>
+				<p>设置为true时，会把内容中的html标签原样显示出来，不会进行解析</p>
+				<p>设置为false时，会把内容中的html标签进行解析</p>
+			]]></Description>
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			group="大小" et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$"
+			group="大小" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="对齐方式" type="3" name="align" export="true"
+			group="样式" ct="[left,center,right]" tips="设置内容的位置，可选left,center,right，默认为left">
+			<Value>left</Value>
+			<Description><![CDATA[
+				<p>设置内容的位置，可选left,center,right，默认为left</p>
+				<table><tr><td style='text-align:center;font-weight:700'>left</td><td style='text-align:center;font-weight:700'>center</td><td style='text-align:center;font-weight:700'>right</td></tr><tr><td><img src='../../resources/images/common/form/htmlArea/htmlArea_align1.png'></td><td><img src='../../resources/images/common/form/htmlArea/htmlArea_align2.png'></td><td><img src='../../resources/images/common/form/htmlArea/htmlArea_align3.png'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="是否显示边框" type="11" name="border" export="true"
+			group="样式" tips="设置为true时，显示最外层的边框，否则不显示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="行内元素" type="11" name="inline" group="样式"
+			tips="设置多个超文本控件是否会在一行显示，相当于display:inline；默认为false">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>设置多个超文本控件是否会在一行显示，相当于display:inline；默认为false</p>
+				<p>设置为true时，多个超文本控件是否会在一行显示</p>
+				<p>设置为false时，多个超文本控件每个占一行</p>
+				<table><tr><td style='text-align:center;font-weight:700'>默认：false</td><td style='text-align:center;font-weight:700'>设置为：true</td></tr><tr><td><img src='../../resources/images/common/form/htmlArea/htmlArea-inline1.png'></td><td><img src='../../resources/images/common/form/htmlArea/htmlArea-inline2.png'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="超出以省略号显示" type="11" name="ellipsis" group="样式"
+			tips="设置当内容超出宽度时，是否以省略号显示；默认为false">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>设置当内容超出宽度时，是否以省略号显示；默认为false</p>
+				<p>设置为true时，当超出宽度时，以省略号显示</p>
+				<p>设置为false时，当超出宽度时，自动回行</p>
+				<table><tr><td style='text-align:center;font-weight:700'>默认：false</td><td style='text-align:center;font-weight:700'>设置为：true</td></tr><tr><td><img src='../../resources/images/common/form/htmlArea/htmlArea-ellipsis1.png'></td><td><img src='../../resources/images/common/form/htmlArea/htmlArea-ellipsis2.png'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="组件样式" type="1" name="style" group="样式"
+			tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className" group="样式"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="图片" type="5" name="icon" group="图形" tips="设置组件的显示图标，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value />
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="是否输出js对象" type="11" name="exportJs"
+			tips="当此属性为false时，不会输出控件的js对象，可减少页面js的创建">
+			<Value>true</Value>
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="hide" />
+		<Method name="setHtml" return="void" tips="设置要显示的html内容">
+			<Description><![CDATA[设置要显示的html内容，输入的内容会做为html串解析，并会覆盖原内容,同事还会对当前控件的value属性进行修改<pre>
+//动态设置显示html
+Artery.get("xxx").setHtml('<b>test</b>');
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>value:String</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="getText" return="String" tips="获得当前组件的value值">
+			<Description><![CDATA[获得当前的组件的value值<pre>
+//动态获得当前的组件的value值
+Artery.get("xxx").getText();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>String</Return>
+			<Conditions>
+				<Condition>当“内容”(value)属性为null或空字符串时，此方法返回undefined</Condition>
+			</Conditions>
+		</Method>
+		<Method name="show" />
+	</Methods>
+</Item>
+

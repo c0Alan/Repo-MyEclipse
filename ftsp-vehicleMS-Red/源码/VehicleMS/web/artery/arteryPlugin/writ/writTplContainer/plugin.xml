@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="writTplContainer" cn="文书模板容器" nameprop="Caption"
+	icon="writTplContainer.gif" iconNew="writTplContainerNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe></Describe>
+	</Info>
+	<Parents>
+		<Parent type="writLayout"></Parent>
+	</Parents>
+	<Children />
+	<Class>
+		com.thunisoft.artery.plugin.writ.WritTplContainer
+  </Class>
+	<JsFile>
+		<File>NTKOPanel.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value>ntkoeditor</Value>
+		</Property>
+		<Property cn="标题" type="1" name="Caption"
+			tips="运行时，word文档控件上部显示的标题。如果不填，则不显示此标题栏">
+			<Value />
+		</Property>
+		<Property cn="是否显示菜单" type="11" name="Menubar"
+			tips="设置运行时word文档控件是否显示菜单栏，默认为显示（true）">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否显示工具栏" type="11" name="ToolBars"
+			tips="设置运行时word文档控件是否显示工具栏，默认为显示（true）">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否显示状态栏" type="11" name="Statusbar"
+			tips="设置运行时word文档控件是否显示状态栏，默认为显示（true）">
+			<Value>true</Value>
+		</Property>
+		<Property cn="边框类型" type="3" name="BorderStyle" ct="[none,flat,3D,3Dthin]"
+			tips="设置运行时word文档控件边框样式：none/flat/3D/3Dthin，默认值为：none">
+			<Value>none</Value>
+		</Property>
+		<Property cn="使能新建菜单" type="11" name="FileNew"
+			tips="此属性设置true，则“文件＝>新建”菜单项可用，否则不可用">
+			<Value>true</Value>
+		</Property>
+		<Property cn="使能打开菜单" type="11" name="FileOpen"
+			tips="此属性设置true，则“文件＝>打开”菜单项可用，否则不可用">
+			<Value>true</Value>
+		</Property>
+		<Property cn="使能关闭菜单" type="11" name="FileClose"
+			tips="此属性设置true，则“文件＝>关闭”菜单项可用，否则不可用">
+			<Value>false</Value>
+		</Property>
+		<Property cn="使能保存菜单" type="11" name="FileSave"
+			tips="此属性设置true，则“文件＝>保存”菜单项可用，否则不可用">
+			<Value>false</Value>
+		</Property>
+		<Property cn="使能另存菜单" type="11" name="FileSaveAs"
+			tips="此属性设置true，则“文件＝>另存为”菜单项可用，否则不可用">
+			<Value>true</Value>
+		</Property>
+		<Property cn="使能打印菜单" type="11" name="FilePrint"
+			tips="此属性设置true，则“文件＝>打印”菜单项可用，否则不可用">
+			<Value>true</Value>
+		</Property>
+		<Property cn="使能打印预览菜单" type="11" name="FilePrintPreview"
+			tips="此属性设置true，则“文件＝>打印预览”菜单项可用，否则不可用">
+			<Value>true</Value>
+		</Property>
+		<Property cn="使能页面设置菜单" type="11" name="FilePageSetup"
+			tips="此属性设置true，则“文件＝>页面设置”菜单项可用，否则不可用">
+			<Value>true</Value>
+		</Property>
+		<Property cn="使能文件属性菜单" type="11" name="FileProperties"
+			tips="此属性设置true，则“文件＝>属性”菜单项可用，否则不可用">
+			<Value>true</Value>
+		</Property>
+		<Property cn="禁止复制" type="11" name="IsStrictNoCopy"
+			tips="在运行时，word文档控件根据此属性来决定展示的文档是否可以被复制">
+			<Value>false</Value>
+		</Property>
+	</Properties>
+	
+	<Methods>
+		<Method name="loadDoc" inherit="false" return="void" tips="加载文书,如果参数url为空,则加载一个空的doc文件">
+			<Description><![CDATA[<p>加载文书,如果参数url为空,则加载一个空的doc文件</p><pre>
+Artery.get("NTKOPanelId").loadDoc(url);
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>url</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="openDoc" inherit="false" return="void" tips="弹出打开文书的对话框">
+			<Description><![CDATA[<p>弹出打开文书的对话框</p><pre>
+Artery.get("NTKOPanelId").openDoc();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		
+		<Method name="saveAs" inherit="false" return="void" tips="弹出文书另存为对话框">
+			<Description><![CDATA[<p>弹出文书另存为对话框</p><pre>
+Artery.get("NTKOPanelId").saveAs();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="printSetup" inherit="false" return="void" tips="弹出打印设置对话框">
+			<Description><![CDATA[<p>弹出打印设置对话框</p><pre>
+Artery.get("NTKOPanelId").printSetup();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="preview" inherit="false" return="void" tips="显示打印预览">
+			<Description><![CDATA[<p>显示打印预览</p><pre>
+Artery.get("NTKOPanelId").preview();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="print" inherit="false" return="void" tips="打印文书">
+			<Description><![CDATA[<p>打印文书</p><pre>
+Artery.get("NTKOPanelId").print();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="save" inherit="false" return="void" tips="保存文书">
+			<Description><![CDATA[<p>保存文书</p><pre>
+Artery.get("NTKOPanelId").save();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="showHistory" inherit="false" return="void" tips="显示历史记录">
+			<Description><![CDATA[<p>显示历史记录</p><pre>
+Artery.get("NTKOPanelId").showHistory();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		
+		
+		
+		
+	</Methods>
+</Item>

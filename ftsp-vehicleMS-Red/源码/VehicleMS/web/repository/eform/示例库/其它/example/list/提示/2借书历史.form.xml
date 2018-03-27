@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>7f7c4d56ab08629c059d4ece94b69574</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>A32983d23599f48b774b7ab366362d4e4</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <listArea sid="Ad867d622dcac269ff60e93ba2f0977ef">
+          <id>bookList</id>
+          <ds>rs1</ds>
+          <type>grid</type>
+          <width>90%</width>
+          <pageCount>8</pageCount>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <frame>true</frame>
+          <style>padding-top:5px;</style>
+          <themeStyle>default</themeStyle>
+          <isTip>true</isTip>
+          <tipTpl>&lt;table  width="442" border="0" cellspacing="0" cellpadding="0" class="default-table"&gt;
+  &lt;tr style="background-color:lightblue"&gt;
+    &lt;td width="103" align="center" class="default-td" style="font-weight:900"&gt;借阅人&lt;/td&gt;
+    &lt;td width="154" align="center" class="default-td" style="font-weight:900"&gt;借阅时间&lt;/td&gt;
+    &lt;td width="167" align="center" class="default-td" style="font-weight:900"&gt;归还时间&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tpl for="atydata"&gt;
+  &lt;tr style=" background-color:#{[xindex % 2 === 0 ?"ffffff":"DFE8F6"]}"&gt;
+    &lt;td class="default-td"&gt;{lenduser}&lt;/td&gt;
+    &lt;td class="default-td"&gt;{lendtime}&lt;/td&gt;
+    &lt;td class="default-td"&gt;{returntime}&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tpl&gt;
+&lt;/table&gt;</tipTpl>
+          <Items>
+            <header sid="A62407b50ef60883f00bd3f7ff3a888ad">
+              <id>A62407b50ef60883f00bd3f7ff3a888ad</id>
+              <text>图书借阅历史提示</text>
+            </header>
+            <columnIdentity sid="columnIdentity45868C907AA76DF90E218509D7E8C7D3">
+              <id>lstCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>图书编号</title>
+              <isEditor>false</isEditor>
+            </columnIdentity>
+            <column sid="A3d0bccdb986d260acb185176404891df">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>名称</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A42f4c94cf60048fee40bd7db6757e986">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A81fa79822d01c1f08cd91b12b44760f5">
+              <id>lstCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A3b6c83df8fe2af06b512629d7b275005">
+              <id>lstDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{df([rs1.D_PUBLISHER],yyyy-MM-dd)}</dataName>
+              <title>出版时间</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A9c800f6d804249ce1ebde496444cb3c9">
+              <id>lstDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{df([rs1.D_BUY],yyyy-MM-dd)}</dataName>
+              <title>购买日期</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A426a12173890acfb56ca8dc0bf879b56">
+              <id>lstNTYPE</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{ncode([rs1.N_TYPE],600)}</dataName>
+              <title>分类</title>
+              <dynamicDataFilter><![CDATA[import com.thunisoft.book.*;
+return BookUtil.getBookTypes();]]></dynamicDataFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A619065c1c9cacb2826f4309087fe96b5">
+              <id>lstCLIBRARYID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{list(rs2,C_NAME,C_ID=[rs1.C_LIBRARYID],',')}</dataName>
+              <title>所属图书室</title>
+              <dynamicDataFilter><![CDATA[import com.thunisoft.book.*;
+return BookUtil.getLibs();]]></dynamicDataFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Ae5655f520457f04f8289d97e8eb286e8">
+              <id>lenduser</id>
+              <dataName>{list(rs3,N_USER,C_BOOKID=[rs1.C_ID],',')}</dataName>
+              <isOnlyData>true</isOnlyData>
+              <title>借阅人</title>
+            </column>
+            <column sid="Aa40b81e3737736bfd6e212f29deb7bdf">
+              <id>lendtime</id>
+              <dataName>{list(rs3,D_LEND,C_BOOKID=[rs1.C_ID],',')}</dataName>
+              <isOnlyData>true</isOnlyData>
+              <title>借阅时间</title>
+            </column>
+            <column sid="Aa6f391d5fe74d3ca09636a5e597c32fe">
+              <id>returntime</id>
+              <dataName>{list(rs3,D_RETURN,C_BOOKID=[rs1.C_ID],',')}</dataName>
+              <isOnlyData>true</isOnlyData>
+              <title>归还时间</title>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs3" type="sql">select * from T_Eg_History</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Library where N_VALID=1</ds>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_ID , 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_PUBLISHER , 
+T_Eg_Book.D_PUBLISHER , 
+T_Eg_Book.D_BUY , 
+T_Eg_Book.N_TYPE , 
+T_Eg_Book.C_LIBRARYID 
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

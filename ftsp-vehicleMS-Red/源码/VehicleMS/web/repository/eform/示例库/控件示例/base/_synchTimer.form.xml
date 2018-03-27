@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>11806a7ce31dfa22ece3c1c172155a01</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.base._synchTimer.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/base/_synchTimer.js</jsLocation>
+  <descript>同步定时器（synchTimer）控件示例表单</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formea6e0">
+      <id>formea6e0</id>
+      <Items>
+        <synchTimer sid="2170a383e43742c3d3926cc32fd7d669">
+          <id>autoStar_true</id>
+          <interval>1</interval>
+          <onRunClient><![CDATA[autoStar_true_onRunClient]]></onRunClient>
+        </synchTimer>
+        <synchTimer sid="27fc083e430770b26057e62f2d1878ed">
+          <id>autoStar_false</id>
+          <interval>1</interval>
+          <isStart>false</isStart>
+          <onRunClient><![CDATA[autoStar_false_onRunClient]]></onRunClient>
+        </synchTimer>
+        <synchTimer sid="6ca11c99bd6ccea7037cc0251ff6bc6a">
+          <id>runOnStart_true</id>
+          <interval>1</interval>
+          <runOnStart>true</runOnStart>
+          <onRunClient><![CDATA[runOnStart_true_onRunClient]]></onRunClient>
+        </synchTimer>
+        <synchTimer sid="b0a5ebf35a5a8ffc6753c272c8081ecd">
+          <id>runOnStart_false</id>
+          <interval>1</interval>
+          <onRunClient><![CDATA[runOnStart_false_onRunClient]]></onRunClient>
+        </synchTimer>
+        <synchTimer sid="1784df4d229ea0dc91e32beabf5b1bd2">
+          <id>runOnStop_true</id>
+          <interval>1</interval>
+          <runOnStop>true</runOnStop>
+          <onRunClient><![CDATA[runOnStop_true_onRunClient]]></onRunClient>
+        </synchTimer>
+        <synchTimer sid="c2ac34fa797816c3089a15c8ea1544b0">
+          <id>runOnStop_false</id>
+          <interval>1</interval>
+        </synchTimer>
+        <synchTimer sid="2344556d80efa050b07c37f032fe1af7">
+          <id>method</id>
+          <interval>1</interval>
+          <isStart>false</isStart>
+          <onRunClient><![CDATA[method_onRunClient]]></onRunClient>
+        </synchTimer>
+        <tableLayout sid="daed3d27c47c87a6f511c8c2a2ffc7a3">
+          <id>tableLayout7b7b0</id>
+          <colNum>1</colNum>
+          <width>60%</width>
+          <style>padding-top:20px;</style>
+          <Items>
+            <blankPanel sid="4279c50526597d28cedd801102e710b9">
+              <id>blankPanel1dfa5</id>
+              <width>90%</width>
+              <themeStyle>collapseUnis</themeStyle>
+              <Items>
+                <header sid="ac6cd4649d9a0da7bb623673c8705225">
+                  <id>header76f45</id>
+                  <text>【自动启动】属性</text>
+                  <Items>
+                    <collapseBtn sid="feb056a0801ac138fb6eb0102d359c31">
+                      <id>collapseBtna25a4</id>
+                    </collapseBtn>
+                  </Items>
+                </header>
+                <htmlArea sid="7a34dea77aa053997bb5194a2bf6cbf2">
+                  <id>autoStarHA_true</id>
+                  <value>【自动启动（isStar）】属性为true，定时器执行次数：&lt;span style='color: red;font-size &#xD;
+:16px;'&gt;0&lt;/span&gt;</value>
+                </htmlArea>
+                <htmlArea sid="d521ba6d4ad1bc63097dbda0d879eab6">
+                  <id>autoStarHA_false</id>
+                  <value>【自动启动（isStar）】属性为false，定时器执行次数：&lt;span style='color: red;font-size &#xD;
+:16px;'&gt;0&lt;/span&gt;</value>
+                </htmlArea>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="52b7e76094bfda81b0ae1715caa3971b">
+              <id>blankPanel94a71</id>
+              <width>90%</width>
+              <style>padding-top:20px;</style>
+              <themeStyle>collapseUnis</themeStyle>
+              <Items>
+                <header sid="0a75d2923811b534cabf99c67c65896e">
+                  <id>header868d0</id>
+                  <text>【启动时执行】属性</text>
+                  <Items>
+                    <collapseBtn sid="75b1029f52356e3b7862c9c58c8ff8f5">
+                      <id>collapseBtn43fa7</id>
+                    </collapseBtn>
+                  </Items>
+                </header>
+                <htmlArea sid="1891a39e18cda04f94bc9f1d03467000">
+                  <id>runOnStartHA_true</id>
+                  <value>【启动时执行（runOnStart）】属性为true，定时器执行次数：&lt;span style='color: red;font-size &#xD;
+:16px;'&gt;0&lt;/span&gt;</value>
+                </htmlArea>
+                <htmlArea sid="3f9456ee14aa94c1cdb842d91fc38a95">
+                  <id>runOnStartHA_false</id>
+                  <value>【启动时执行（runOnStart）】属性为false，定时器执行次数：&lt;span style='color: red;font-size &#xD;
+:16px;'&gt;0&lt;/span&gt;</value>
+                </htmlArea>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="7d0fa7bff16981e1d24e20ef54cc0563">
+              <id>blankPaneldf1ed</id>
+              <width>90%</width>
+              <style>padding-top:20px;</style>
+              <themeStyle>collapseUnis</themeStyle>
+              <Items>
+                <header sid="dc8d6f4173bf7388df1c57a77e76ce9f">
+                  <id>header3f0e8</id>
+                  <text>【关闭时执行】属性</text>
+                  <Items>
+                    <collapseBtn sid="53f88388d95ea67e09d209d78fac46a8">
+                      <id>collapseBtnb48a5</id>
+                    </collapseBtn>
+                  </Items>
+                </header>
+                <htmlArea sid="779940b633b0c9804a178bdc32bd8aab">
+                  <id>runOnStopHA_true</id>
+                  <value>【关闭时执行（runOnStop）】属性为true，定时器执行次数：&lt;span style='color: red;font-size &#xD;
+:16px;'&gt;0&lt;/span&gt;</value>
+                </htmlArea>
+                <htmlArea sid="fb9910e22b57cb4ed03857259638b765">
+                  <id>runOnStopHA_false</id>
+                  <value>【关闭时执行（runOnStop）】属性为false，定时器执行次数：&lt;span style='color: red;font-size &#xD;
+:16px;'&gt;0&lt;/span&gt;</value>
+                </htmlArea>
+                <buttonArea sid="5f5a5f3bfbc808231f4addd06b218063">
+                  <id>buttonArea3c689</id>
+                  <style>padding-top:10px;</style>
+                  <Items>
+                    <button sid="a83cd1ab26a1efa88877c543e094c109">
+                      <id>runOnStopBtn_stop</id>
+                      <text>关闭定时器1</text>
+                      <onClickClient><![CDATA[runOnStopBtn_stop_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="65a5556abf54e9098dc4119884276d61">
+              <id>blankPanelec577</id>
+              <width>90%</width>
+              <style>padding-top:20px;</style>
+              <themeStyle>collapseUnis</themeStyle>
+              <Items>
+                <header sid="921ec9a8bc96c31bba72e80d5d8352cc">
+                  <id>header4c8b3</id>
+                  <text>控件的方法</text>
+                  <Items>
+                    <collapseBtn sid="af8925733ff3e3a1d03ba97efbafa185">
+                      <id>collapseBtn354b7</id>
+                    </collapseBtn>
+                  </Items>
+                </header>
+                <htmlArea sid="b28cfeb6eda3c8af61719bff202e4404">
+                  <id>metherHA</id>
+                  <value>定时器执行次数：&lt;span style='color: red;font-size:16px;'&gt;0&lt;/span&gt;</value>
+                </htmlArea>
+                <buttonArea sid="605835320e5b235837966303d3d69085">
+                  <id>buttonArea9458b</id>
+                  <style>padding-top:10px;</style>
+                  <Items>
+                    <button sid="cc727d8b5c66b9234044ef42e1506e87">
+                      <id>methodBtn_star</id>
+                      <text>启动定时器</text>
+                      <onClickClient><![CDATA[methodBtn_star_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="82069cca6b1c18243293e947b929ae27">
+                      <id>methodBtn_stop</id>
+                      <text>关闭定时器</text>
+                      <onClickClient><![CDATA[methodBtn_stop_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="54e07920972c0951f93c60d0972687a0">
+                      <id>methodBtn_doWork</id>
+                      <text>执行定时脚本</text>
+                      <onClickClient><![CDATA[methodBtn_doWork_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

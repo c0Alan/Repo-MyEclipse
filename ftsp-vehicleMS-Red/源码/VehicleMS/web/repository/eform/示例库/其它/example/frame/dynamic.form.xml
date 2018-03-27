@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ae76df6d3c7f18a21d1f36d17ec29928</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.frame.Dynamic.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/frame/Dynamic.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formb9405">
+      <id>formb9405</id>
+      <Items>
+        <topbar sid="024565e2cf8cce60b6391bee35630ca5">
+          <id>topbar62058</id>
+          <Items>
+            <tbButton sid="a740d4fef62a35a83b1b5d76cc73e2e1">
+              <id>tbButtona2c82</id>
+            </tbButton>
+          </Items>
+        </topbar>
+        <leftRegion sid="123f805e90878d0420ff0194729e7792">
+          <id>leftRegion29bb1</id>
+          <Items>
+            <blankPanel sid="74df4c7f256a2efc3646e301760ef53a">
+              <id>blankPanelbf786</id>
+              <height>100%</height>
+              <Items>
+                <dynamicNav sid="07f129cb2499897e78fa362b8c59180c">
+                  <id>dynamicNav386a4</id>
+                  <ds>rs1</ds>
+                  <operAreaId>operArea9b117</operAreaId>
+                </dynamicNav>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="bea99569d0e2951173c9ff4c75d5d1e8">
+          <id>centerRegion00e85</id>
+          <Items>
+            <operArea sid="d35768022164588d64eb2d29087b4da4">
+              <id>operArea9b117</id>
+              <style>border:1px solid red;</style>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

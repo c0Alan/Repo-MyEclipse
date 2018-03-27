@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>b3920e1a9f7c47c7e76b0039edc79cbe</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.ribbon.Ribbon.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/ribbon/Ribbon.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <background-color>#0976BE</background-color>
+      <bodyStyle>overflow:hidden;padding:2px;</bodyStyle>
+      <Items>
+        <tableLayout sid="26530b159d5c262084f92717e1149142">
+          <id>tableLayout8b1aa</id>
+          <colNum>1</colNum>
+          <height>100%</height>
+          <cellpadding>0</cellpadding>
+          <Items>
+            <blankPanel sid="d27cb137c826db914097b8b8111e96f9">
+              <id>blankPanela46c6</id>
+              <bodyStyle>text-align:center;</bodyStyle>
+              <synTabStyle extend="true">height:10px;vertical-align:top;</synTabStyle>
+              <Items>
+                <blankPanel sid="9c93e0489791f6dc3ccdd1ede98a9b18">
+                  <id>blankPanel96e8c</id>
+                  <width>0</width>
+                  <style>white-space:nowrap;</style>
+                  <themeStyle>bftopTitle</themeStyle>
+                  <buttonFrame>true</buttonFrame>
+                  <Items>
+                    <htmlArea sid="1c7ba6d29a466c6e16305c575bb67362">
+                      <id>htmlAreac451f</id>
+                      <value>王刚过失投放危险物质罪、过失以危险方法危害公共安全罪一案（吉检侦监审[2010]第0009号）</value>
+                      <align>center</align>
+                      <style>padding:3px;font-size:13px;color:#fff;</style>
+                    </htmlArea>
+                  </Items>
+                </blankPanel>
+                <ribbonArea sid="ef5dabc7a034ff1e93ff643df1d71c5d">
+                  <id>ribbonArea55866</id>
+                  <operAreaId>operArea22b1c</operAreaId>
+                  <showCollapseBar>true</showCollapseBar>
+                  <style>padding-top:5px;</style>
+                  <themeStyle>blue</themeStyle>
+                  <Items>
+                    <ribbonItem sid="cf7a832822c8d50dc68ade5303c317e4">
+                      <id>ribbonItem3b20d</id>
+                      <title>审查</title>
+                      <active>true</active>
+                      <Items>
+                        <ribbonGroup sid="be9b46ad14bfc95b1a0a7d11229ce371">
+                          <id>ribbonGroup88ac3</id>
+                          <title>信息</title>
+                          <Items>
+                            <ribbonCell sid="94c2fa4b8ae3a82984dcf17e1815d22b">
+                              <id>ribbonCell3579c</id>
+                              <title>基本信息</title>
+                              <tip>ok</tip>
+                              <tipInfo>基本信息填写完毕</tipInfo>
+                              <linkto>{"formId":"7ef8129b22e094c7f53c46d63092eec0","formName":"loop","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </ribbonCell>
+                            <ribbonCell sid="c4ea1b31955ab5a12edf17d0acbcdf85">
+                              <id>ribbonCell878f0</id>
+                              <title>嫌疑人</title>
+                              <tip>2</tip>
+                              <tipInfo>当前案件的嫌疑人个数</tipInfo>
+                              <linkto>{"formId":"ba1a9b3666ab671b0e85b7f6a0f4b2bf","formName":"listXYR","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </ribbonCell>
+                            <ribbonCell sid="b2604b8057292f0521b6c3e66bfa6a85">
+                              <id>ribbonCell0b99e</id>
+                              <width>50</width>
+                              <title>证据</title>
+                              <linkto>{"formId":"392bea4b2cbaf630eabd3a43543f18fe","formName":"blankPanel","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </ribbonCell>
+                            <ribbonCell sid="a402b4bcad32b5263ba7fb301368f801">
+                              <id>ribbonCell8de7c</id>
+                              <title>事实认定</title>
+                              <tip>23</tip>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="160cc19fe25243dac04e0222588e6421">
+                          <id>ribbonGroup738ec</id>
+                          <title>审查办理</title>
+                          <Items>
+                            <ribbonCell sid="44eaff4864773845547c966cb3a699bc">
+                              <id>ribbonCellbda66</id>
+                              <title>强制措施</title>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="d1754eb8e930b5b86e8fdc340aaef9ee">
+                          <id>ribbonGroup5c6a9</id>
+                          <title>审结</title>
+                          <Items>
+                            <ribbonCell sid="080fa5a893074a14d6b4b21c29ce7a6b">
+                              <id>ribbonCell67a09</id>
+                              <title>审结意见</title>
+                              <tip>2</tip>
+                            </ribbonCell>
+                            <ribbonCell sid="d4ae68d22e6203e242df7fc7657e4cd8">
+                              <id>ribbonCell77513</id>
+                              <title>案件审结结论</title>
+                              <tip>12</tip>
+                            </ribbonCell>
+                            <ribbonCell sid="6729993cbaa55d4708d69dc7b08943c7">
+                              <id>ribbonCell542be</id>
+                              <title>逮捕</title>
+                            </ribbonCell>
+                            <ribbonCell sid="727d60bad5fb9a690bdcdf57dfb78724">
+                              <id>ribbonCell7afce</id>
+                              <title>不逮捕</title>
+                            </ribbonCell>
+                            <ribbonCell sid="85be07fa933fee18ddb65fbdc2f3c3b9">
+                              <id>ribbonCell53e04</id>
+                              <title>审结确认</title>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="16448a247959b6fd5891d3bc3e7365d3">
+                          <id>ribbonGroupdfeae</id>
+                          <title>请示提请</title>
+                          <Items>
+                            <ribbonCell sid="422e56b66ce24a0cd449cc7b56e51a3c">
+                              <id>ribbonCell83896</id>
+                              <title>请示批复</title>
+                              <tip>warn</tip>
+                            </ribbonCell>
+                            <ribbonCell sid="6c6c587dfcb50ff1d24e00a40753223f">
+                              <id>ribbonCell0f9dd</id>
+                              <title>提请检委会</title>
+                              <tip>warn</tip>
+                            </ribbonCell>
+                            <ribbonCell sid="948e8f2062b5c04be0f3a8c458202e3a">
+                              <id>ribbonCellf1770</id>
+                              <title>提请技术鉴定</title>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="3126b10d4892c99270eafe5dd6824b8b">
+                          <id>ribbonGroup9c280</id>
+                          <title>侦查监督</title>
+                          <Items>
+                            <ribbonCell sid="7014ddda8e0319e68bde6be15d36de5b">
+                              <id>ribbonCella38d1</id>
+                              <title>纠正违法</title>
+                            </ribbonCell>
+                            <ribbonCell sid="bb4254bc360ffdffb7b456459d38946d">
+                              <id>ribbonCellf5923</id>
+                              <title>检查建议</title>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="df91d86a12e2773d68abf5fe60c2926f">
+                          <id>ribbonGroup4399d</id>
+                          <title>其他</title>
+                          <Items>
+                            <ribbonCell sid="f268de6a6a6642db292f8ad7651bf46a">
+                              <id>ribbonCell4c516</id>
+                              <title>介入侦查</title>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                      </Items>
+                    </ribbonItem>
+                    <ribbonItem sid="0877e397ffd7d662e9c78de6228917d7">
+                      <id>ribbonItemb7f68</id>
+                      <title>后续</title>
+                      <Items>
+                        <ribbonGroup sid="a543eff8ab164a706b52d4a39afb4f63">
+                          <id>ribbonGroupa1185</id>
+                          <title>变更</title>
+                          <Items>
+                            <ribbonCell sid="854c2b59c4b299102e0415990ccea1cc">
+                              <id>ribbonCelld86ce</id>
+                              <title>追捕</title>
+                            </ribbonCell>
+                            <ribbonCell sid="aee564e42d7965148ff9fd90de8c2353">
+                              <id>ribbonCell290c9</id>
+                              <title>执行及变更</title>
+                            </ribbonCell>
+                            <ribbonCell sid="0849e42a5e5bfd1d99fffc62cd4d4288">
+                              <id>ribbonCell4cd21</id>
+                              <title>变更逮捕措施</title>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="d6ba1e7b308851858ed6f71b47ba3248">
+                          <id>ribbonGroupb1560</id>
+                          <title>审查后续</title>
+                          <Items>
+                            <ribbonCell sid="bf8cf9a1832962d6e0cc0c167cab432a">
+                              <id>ribbonCell0df11</id>
+                              <title>延长羁押</title>
+                            </ribbonCell>
+                            <ribbonCell sid="2d82f2798861255e23f4bd8cbb4c0da8">
+                              <id>ribbonCellab9c2</id>
+                              <title>重新计算羁押期限</title>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="c82bcf0c043bbcb91255d731403bb120">
+                          <id>ribbonGroupae196</id>
+                          <title>归档管理</title>
+                          <Items>
+                            <ribbonCell sid="426e56555dd8c35a6e3e4a4e0b4f9372">
+                              <id>ribbonCelle6871</id>
+                              <title>归档</title>
+                            </ribbonCell>
+                            <ribbonCell sid="f0728fc8a121aceb56cd38a3df440e53">
+                              <id>ribbonCelleb7d8</id>
+                              <title>卷宗模板</title>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="606dc32bf71680460f8075b96614f289">
+                          <id>ribbonGroup13e9a</id>
+                          <title>阶段验证</title>
+                          <Items>
+                            <ribbonCell sid="c7975e7949d5da2bd077a125d410343a">
+                              <id>ribbonCell96f8f</id>
+                              <title>验证</title>
+                            </ribbonCell>
+                            <ribbonCell sid="01162a094b0e6ce14e9c4c7ade2d5377">
+                              <id>ribbonCelld3cf2</id>
+                              <title>刷新缓存</title>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                      </Items>
+                    </ribbonItem>
+                    <tbFill sid="b94c722e6e1303cd5ddc568568474eb2">
+                      <id>tbFillbb834</id>
+                    </tbFill>
+                    <blankPanel sid="f0f0afdb17dd3746e9123397c5f355ad">
+                      <id>blankPanel909c7</id>
+                      <bodyStyle>padding-bottom:3px;</bodyStyle>
+                      <Items>
+                        <buttonArea sid="5baa83621e30415cace26ddb8f7fc6a9">
+                          <id>buttonArea4abac</id>
+                          <Items>
+                            <button sid="52651f957e99549b5840ca7312f11e5d">
+                              <id>buttond3c33</id>
+                              <text>文书模板</text>
+                              <themeStyle>darkblue</themeStyle>
+                            </button>
+                            <button sid="411f4120f4352fc11e8c4214c48d500d">
+                              <id>buttonead82</id>
+                              <text>写备忘</text>
+                              <themeStyle>darkblue</themeStyle>
+                            </button>
+                            <button sid="d3b53732fedd32c294025c0fdbca6d86">
+                              <id>buttone53b9</id>
+                              <text>全流程</text>
+                              <themeStyle>darkblue</themeStyle>
+                            </button>
+                            <button sid="5a6abfb29f1400b21291289da1b505c3">
+                              <id>buttonf38ee</id>
+                              <text>案件详情</text>
+                              <themeStyle>darkblue</themeStyle>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </ribbonArea>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="cd79cd3c4711cd7980bc86358f1a781f">
+              <id>blankPanel3bebd</id>
+              <height>100%</height>
+              <style>background-color:#D3DCF9;</style>
+              <Items>
+                <leftRegion sid="abafe9ea38c908a5a819f0675406f6c6">
+                  <id>leftRegion4fd2a</id>
+                  <collapsible>true</collapsible>
+                  <margins>0 0 6 6</margins>
+                  <border>false</border>
+                  <arrowStyle>unis</arrowStyle>
+                  <Items>
+                    <blankPanel sid="7ae0c324d2b36a136c8a50e7263332a2">
+                      <id>blankPanel89ebc</id>
+                      <height>100%</height>
+                      <frame>true</frame>
+                      <themeStyle>bluePlain</themeStyle>
+                    </blankPanel>
+                  </Items>
+                </leftRegion>
+                <centerRegion sid="1edf6de243526070134cfe2472011ca2">
+                  <id>centerRegion7a296</id>
+                  <margins>0 6 6 0</margins>
+                  <border>false</border>
+                  <Items>
+                    <operArea sid="c46c54ee13289914ec0550bdf33e0dec">
+                      <id>operArea22b1c</id>
+                      <linkto>{"formId":"ba1a9b3666ab671b0e85b7f6a0f4b2bf","formName":"listXYR","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                    </operArea>
+                  </Items>
+                </centerRegion>
+              </Items>
+            </blankPanel>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

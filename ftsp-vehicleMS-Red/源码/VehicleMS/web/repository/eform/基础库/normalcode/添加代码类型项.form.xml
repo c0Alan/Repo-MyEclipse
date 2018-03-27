@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9cb46f46b33f6daa3d88728e8b0ef926</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.normalcode.Tjdmlxx.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/normalcode/Tjdmlxx.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form4077a">
+      <id>form4077a</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <blankPanel sid="f86ba0af6e939aeb800b8db0e68d9853">
+          <id>blankPanelc57cd</id>
+          <height>100%</height>
+          <bodyStyle>padding;3px;</bodyStyle>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <topbar sid="ca44df8b67ec7377cf913a4b1a40d2b3">
+              <id>topbarb9cb8</id>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <tbText sid="31e581c4fbf7ccead94d5db7b9378a44">
+                  <id>tbText721b0</id>
+                  <text>&lt;span style="font-size:14px;color:gray;"&gt;带&lt;span style="color:red;"&gt;*&lt;/span&gt;号的为必填项&lt;/span&gt;</text>
+                </tbText>
+              </Items>
+            </topbar>
+            <formArea sid="145fb6c8f3cd737289b11d7696f01215">
+              <id>dmlxFormArea</id>
+              <height>100%</height>
+              <colNum>1</colNum>
+              <colSpacing>5</colSpacing>
+              <onShow><![CDATA[dmlxFormArea_onShow]]></onShow>
+              <cellpadding>5</cellpadding>
+              <Items>
+                <faHidden sid="e16453b27e67a26f5377d70622bb1e66">
+                  <id>dbFaHidden</id>
+                  <submitName>type.dbBelongsTo</submitName>
+                  <value>{req.dbBelongsTo}</value>
+                </faHidden>
+                <faString sid="997d34bb634e5c5ba11ce865e3c75402">
+                  <id>faStringbe572</id>
+                  <submitName>type.type</submitName>
+                  <required>true</required>
+                  <value>{rs1.type}</value>
+                  <displayType>editable</displayType>
+                  <onValidClient>faStringbe572_onValidClient</onValidClient>
+                  <onValidServer>faStringbe572_onValidServer</onValidServer>
+                  <onShow><![CDATA[faStringbe572_onShow]]></onShow>
+                  <label>代码类型标识</label>
+                </faString>
+                <faString sid="f28d84bc2f1c8fd803f8cb349d3432ee">
+                  <id>faStringd2419</id>
+                  <submitName>type.name</submitName>
+                  <required>true</required>
+                  <value>{rs1.name}</value>
+                  <displayType>editable</displayType>
+                  <label>代码类型名称</label>
+                </faString>
+                <faCode sid="53fc3916027f4c01f6b7cc1071869e2f">
+                  <id>validFaCode</id>
+                  <submitName>type.valid</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.valid}</dataName>
+                  <editor>sRadio</editor>
+                  <width />
+                  <dynamicData><![CDATA[validFaCode_dynamicData]]></dynamicData>
+                  <value>true</value>
+                  <displayType>editable</displayType>
+                  <label>是否有效</label>
+                </faCode>
+                <faCode sid="fa11d1ea50da9d0c380581b1ac117318">
+                  <id>maintainFaCode</id>
+                  <submitName>type.maintain</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.maintain}</dataName>
+                  <editor>sRadio</editor>
+                  <width />
+                  <dynamicData><![CDATA[maintainFaCode_dynamicData]]></dynamicData>
+                  <value>true</value>
+                  <displayType>disabled</displayType>
+                  <label>是否可维护</label>
+                </faCode>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+        <footer sid="2e80f6193263129b684e5edfde1486f8">
+          <id>footer7f950</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="9229a5d53f30fef231206a47b332e305">
+              <id>addBtn</id>
+              <text>添加</text>
+              <icon>/artery/arteryImage/file/image005.gif</icon>
+              <onClickClient><![CDATA[addBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[addBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[addBtn_onShow]]></onShow>
+            </button>
+            <button sid="69fc08d66a660998674927b77d841936">
+              <id>modifyBtn</id>
+              <text>更新</text>
+              <icon>/artery/arteryImage/other/tools.gif</icon>
+              <onClickClient><![CDATA[modifyBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[modifyBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[modifyBtn_onShow]]></onShow>
+            </button>
+            <simpleButton sid="1f8d2481e204b3d45aa29266a39c37ab">
+              <id>cancelBtn</id>
+              <text>取消</text>
+              <onClickClient><![CDATA[cancelBtn_onClickClient]]></onClickClient>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="type" showName="" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getNormalCodeType</ds>
+  </dslist>
+</form>
+

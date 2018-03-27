@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.thunisoft.artery.module.organ.domain">
+  <class table="T_Aty_Corp" name="Corp">
+    <id name="id" column="C_ID" type="string">
+      <generator class="com.thunisoft.artery.util.uuid.HibernateIDGenerator" />
+    </id>
+    <property name="name" column="C_Name" type="string" />
+    <property name="pcorpId" column="C_PID" type="string" />
+    <property name="alias" column="C_Alias" type="string" />
+    <property name="nValid" column="N_Valid" type="int" />
+    <property name="order" column="N_Order" type="int" />
+    <property name="level" column="N_Level" type="int" />
+  </class>
+  <class table="T_Aty_Dept" name="Dept">
+    <id name="id" column="C_ID" type="string">
+      <generator class="com.thunisoft.artery.util.uuid.HibernateIDGenerator" />
+    </id>
+    <property name="name" column="C_Name" type="string" />
+    <property name="pdeptId" column="C_PID" type="string" />
+    <property name="corpId" column="C_CORP" type="string" />
+    <property name="alias" column="C_Alias" type="string" />
+    <property name="nValid" column="N_Valid" type="int" />
+    <property name="order" column="N_Order" type="int" />
+  </class>
+  <class table="T_Aty_User" name="User">
+    <id name="id" column="C_ID" type="string">
+      <generator class="com.thunisoft.artery.util.uuid.HibernateIDGenerator" />
+    </id>
+    <property name="loginId" column="C_LoginID" type="string" />
+    <property name="name" column="C_Name" type="string" />
+    <property name="password" column="C_Password" type="string" />
+    <property name="email" column="C_Mail" type="string" />
+    <property name="xmjp" column="C_XMJP" type="string" />
+    <property name="corpId" column="C_CORP" type="string" />
+    <property name="deptId" column="C_DEPT" type="string" />
+    <property name="nValid" column="N_Valid" type="int" />
+    <property name="order" column="N_Order" type="int" />
+  </class>
+</hibernate-mapping>

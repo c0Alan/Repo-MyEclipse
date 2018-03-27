@@ -1,0 +1,60 @@
+.dictroot{
+    background-image: url(../images/datadict/root.gif) !important;
+}
+.dicttable{
+    background-image: url(../images/datadict/table.gif) !important;
+}
+.dictfield{
+    background-image: url(../images/datadict/field.gif) !important;
+}
+.dictfieldkey{
+    background-image: url(../images/datadict/fieldkey.gif) !important;
+}
+.dictnumeric{
+    background-image: url(../images/datadict/numeric.gif) !important;
+}
+.dictnumerickey{
+    background-image: url(../images/datadict/numerickey.gif) !important;
+}
+.dictstring{
+    background-image: url(../images/datadict/string.gif) !important;
+}
+.dictstringkey{
+    background-image: url(../images/datadict/stringkey.gif) !important;
+}
+.dictdate{
+    background-image: url(../images/datadict/date.gif) !important;
+}
+.dictdatekey{
+    background-image: url(../images/datadict/datekey.gif) !important;
+}
+.dictbinary{
+    background-image: url(../images/datadict/binary.gif) !important;
+}
+.dictbinarykey{
+    background-image: url(../images/datadict/binarykey.gif) !important;
+}
+.dictcode{
+    background-image: url(../images/datadict/code.gif) !important;
+}
+.dictcodekey{
+    background-image: url(../images/datadict/codekey.gif) !important;
+}
+.dictclasscode{
+    background-image: url(../images/datadict/classcode.gif) !important;
+}
+.dictclasscodekey{
+    background-image: url(../images/datadict/classcodekey.gif) !important;
+}
+.dictorgan{
+    background-image: url(../images/datadict/organ.gif) !important;
+}
+.dictorgankey{
+    background-image: url(../images/datadict/organkey.gif) !important;
+}
+.dictidentity{
+    background-image: url(../images/datadict/identity.gif) !important;
+}
+.dictidentitykey{
+    background-image: url(../images/datadict/identitykey.gif) !important;
+}

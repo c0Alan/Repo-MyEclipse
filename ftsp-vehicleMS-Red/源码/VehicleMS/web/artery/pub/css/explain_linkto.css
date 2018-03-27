@@ -1,0 +1,13 @@
+.linkto{
+  width: 100%;
+}
+.linkto table{
+  font-size: 10pt;
+  width: 100%;
+  border-collapse: collapse;
+}
+.lt_td{
+  vertical-align: top;
+  padding: 2px;
+  border: 1px solid blue;
+}

@@ -1,0 +1,10 @@
+.crs_table {
+	border-collapse: collapse;
+}
+.crs_table_fixed {
+	position : relative;
+}
+.crs_tr_fixed {
+	top: expression(this.offsetParent.offsetParent.scrollTop); z-index : 10;
+	position : relative;
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>8141029ce58b16d20fab8a44b71a52a8</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.list.Menu.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/list/Menu.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <bodyStyle>padding:30px;</bodyStyle>
+      <Items>
+        <listArea sid="49b1994bc5da041583b333e0546ae700">
+          <id>listArea01964</id>
+          <ds>rs1</ds>
+          <Items>
+            <columnIdentity sid="69064588c0dec04239cae9dc3647c8c6">
+              <id>columnIdentityCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>图书编号</title>
+            </columnIdentity>
+            <columnString sid="6626661f5e421f2e3123f72cb6411e6e">
+              <id>columnStringCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>类别 / 来源</title>
+              <width>30</width>
+              <Items>
+                <columnMenu sid="5ca299d6fd4a5c3796328cbe692b113b">
+                  <id>columnMenueccb9</id>
+                  <plain>true</plain>
+                  <Items>
+                    <blankPanel sid="a94d22ca6ea46b38718cf3799cfe493b">
+                      <id>blankPanelc3b94</id>
+                      <width>115</width>
+                      <Items>
+                        <tableLayout sid="cb51c2b990031cde7fcb8392c9816d14">
+                          <id>tableLayout2e36f</id>
+                          <colNum>2</colNum>
+                          <colWidths>*,20</colWidths>
+                          <cellpadding>2</cellpadding>
+                          <style>padding:3px;</style>
+                          <Items>
+                            <linkArea sid="c50e48f2cf53360960fd41bc4d4ef3ef">
+                              <id>linkAreabd034</id>
+                              <value>案件类别正序</value>
+                            </linkArea>
+                            <imageArea sid="fa4f2ea0d520ed1dd5a1a511eec4f7b6">
+                              <id>imageAreaba976</id>
+                              <icon>/artery/arteryImage/arrow/up1.gif</icon>
+                            </imageArea>
+                            <htmlArea sid="39f810ad4c96590a9557454f3b7e1c1c">
+                              <id>htmlAreacab7d</id>
+                              <value>&lt;div style="height:1px;border-bottom:1px solid #c5c5c5;overflow:hidden;"&gt;&lt;/div&gt;</value>
+                              <style>padding-left:3px;padding-right:3px;</style>
+                              <colSpan extend="true">2</colSpan>
+                            </htmlArea>
+                            <linkArea sid="fe9ff5edb12d0adef758c2b174f0329b">
+                              <id>linkArea12c46</id>
+                              <value>案件类别倒序</value>
+                            </linkArea>
+                            <imageArea sid="0aa1c50e251e91dd0285668cf6609188">
+                              <id>imageAreac8c8f</id>
+                              <icon>/artery/arteryImage/arrow/down1.gif</icon>
+                            </imageArea>
+                          </Items>
+                        </tableLayout>
+                        <htmlArea sid="852a5de5ebee5b811a03b3042734bffc">
+                          <id>htmlArea77dae</id>
+                          <height>1</height>
+                          <style>border-bottom:1px solid #909090;</style>
+                        </htmlArea>
+                        <tableLayout sid="c7c01c8c58849a7807d798b5831d1943">
+                          <id>tableLayoutb9718</id>
+                          <colNum>2</colNum>
+                          <colWidths>*,20</colWidths>
+                          <cellpadding>2</cellpadding>
+                          <style>padding:3px;</style>
+                          <Items>
+                            <linkArea sid="0930a67d2af004b51425743e90a605c3">
+                              <id>linkArea758f3</id>
+                              <value>案件来源正序</value>
+                            </linkArea>
+                            <imageArea sid="c2037772b9ae68a702b6095b20c01cae">
+                              <id>imageAreacad2c</id>
+                              <icon>/artery/arteryImage/arrow/up1.gif</icon>
+                            </imageArea>
+                            <htmlArea sid="df6143ecb75e3e5eb8d31c8b59ff75e8">
+                              <id>htmlArea21fe8</id>
+                              <value>&lt;div style="height:1px;border-bottom:1px solid #c5c5c5;overflow:hidden;"&gt;&lt;/div&gt;</value>
+                              <style>padding-left:3px;padding-right:3px;</style>
+                              <colSpan extend="true">2</colSpan>
+                            </htmlArea>
+                            <linkArea sid="a11440d9ddadc800a97cfeed8a10200b">
+                              <id>linkArea79f2e</id>
+                              <value>案件来源倒序</value>
+                            </linkArea>
+                            <imageArea sid="47be14cba6f7160ea5b75ac13d106072">
+                              <id>imageArea92e1a</id>
+                              <icon>/artery/arteryImage/arrow/down1.gif</icon>
+                            </imageArea>
+                          </Items>
+                        </tableLayout>
+                        <htmlArea sid="5a6a1653b28f0779d3b1389ae25f2fde">
+                          <id>htmlArea8e83c</id>
+                          <height>1</height>
+                          <style>border-bottom:1px solid #909090;</style>
+                        </htmlArea>
+                        <linkArea sid="52ae71ebe8f86b9681b6c9e1aac928c7">
+                          <id>linkArea1b4b1</id>
+                          <value>只显示交(督)办案件</value>
+                          <style>padding:2px;</style>
+                        </linkArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </columnMenu>
+              </Items>
+            </columnString>
+            <columnString sid="50fa1c94f3bc8e550d8df6496ce27a33">
+              <id>columnStringCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+            </columnString>
+            <column sid="e0e1e67887b7eb128b10cbe8184e90d3">
+              <id>column0c8f5</id>
+              <dataName>{rs1.C_NAME}</dataName>
+              <Items>
+                <columnMenu sid="adc7ecd59e17d6781eaee5cc578e2ce7">
+                  <id>columnMenucfb9d</id>
+                  <Items>
+                    <tbMenuItem sid="1623b5dbed22893f45d3f83d0ef86c01">
+                      <id>tbMenuItemfefc7</id>
+                      <text>案件类别正序</text>
+                      <icon>/artery/arteryImage/arrow/up1.gif</icon>
+                    </tbMenuItem>
+                    <tbMenuItem sid="f30dc2fc2699f332cc620baef5689705">
+                      <id>tbMenuItemf60e2</id>
+                      <text>案件类别倒序</text>
+                      <icon>/artery/arteryImage/arrow/down1.gif</icon>
+                    </tbMenuItem>
+                    <tbSeparator sid="b9195412f551578992913587e3d3604b">
+                      <id>tbSeparator9cb00</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="34b09e66288c4d8df0b07127b53cc5e7">
+                      <id>tbMenuItem9c088</id>
+                      <text>案件来源正序</text>
+                      <icon>/artery/arteryImage/arrow/up1.gif</icon>
+                    </tbMenuItem>
+                    <tbMenuItem sid="1b0e3b44771e656ae1a0cde73ea970ca">
+                      <id>tbMenuItem64850</id>
+                      <text>案件来源倒序</text>
+                      <icon>/artery/arteryImage/arrow/down1.gif</icon>
+                    </tbMenuItem>
+                    <tbSeparator sid="7751155c10c4ae21ca66392c270643af">
+                      <id>tbSeparator969c6</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="6c6300f712aac7f8a88c9f7e6f92f91a">
+                      <id>tbMenuItem5d2d2</id>
+                      <text>只显示交(督)办案件</text>
+                    </tbMenuItem>
+                  </Items>
+                </columnMenu>
+              </Items>
+            </column>
+            <column sid="c3aac3fadee912bab0844ad2867c2caf">
+              <id>column1c714</id>
+              <dataName>{rs1.C_NAME}</dataName>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

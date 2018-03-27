@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>4abc5dffb7246782feb6470992903f5d</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.formArea._formArea_Readonly.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/formArea/_formarea_readonly.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="forma02ae">
+      <id>forma02ae</id>
+      <Items>
+        <tableLayout sid="710ce59b7675f804d3d9a06b3d366bbe">
+          <id>tableLayoutb87a7</id>
+          <width>90%</width>
+          <cellpadding>7</cellpadding>
+          <Items>
+            <blankPanel sid="482a8afff7003c826276069c6a6c9cc3">
+              <id>formAreafb9f9</id>
+              <border>true</border>
+              <Items>
+                <header sid="6ce95c0ad83f337f1f9ef4f5b53efe94">
+                  <id>header68c76</id>
+                  <text>【只读时子标签背景色】属性</text>
+                </header>
+                <tableLayout sid="bf79d0cb94e30484b953741e57d7c426">
+                  <id>tableLayoutf78de</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <htmlArea sid="561b79b8b2484d51a620f6ed84acc1d6">
+                      <id>htmlArea068a7</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时子标签背景色：blue&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <htmlArea sid="e8c96cf3a0016275f17772f9849bd119">
+                      <id>htmlArea00854</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时子标签背景色：red&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <formArea sid="5ab098505ac30707f63b63cd35f3ee7c">
+                      <id>faFieldSetea435</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <labelBackColorRead>blue</labelBackColorRead>
+                      <Items>
+                        <faString sid="6b04df100d3c9b49cdbd9af8f07f7473">
+                          <id>faString52617</id>
+                        </faString>
+                        <faString sid="9d242ab2d19f15ec2f94deddff99e4f9">
+                          <id>faString83f13</id>
+                        </faString>
+                        <faString sid="34389a8822c2f7b875810b1c7899e042">
+                          <id>faString673c8</id>
+                        </faString>
+                        <faString sid="fb7c14f1d49c46826fedf465f8c2a04d">
+                          <id>faStringfe24c</id>
+                        </faString>
+                        <faString sid="09c17f9ebc57f204b62b2e3422f4b4c6">
+                          <id>faStringb401e</id>
+                        </faString>
+                        <faString sid="6f7bf2d20669207ae58f3545799f827b">
+                          <id>faStringb1c67</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="bc1576174ba6966288e58054c354fc8c">
+                      <id>faFieldSetcc949</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <labelBackColorRead>red</labelBackColorRead>
+                      <Items>
+                        <faString sid="0abc61f87a56426aabef8c355988ad81">
+                          <id>faString1a268</id>
+                        </faString>
+                        <faString sid="62f9a7e7bb114bbb299baea474cd508f">
+                          <id>faString2ca74</id>
+                        </faString>
+                        <faString sid="c280dc9f2116a49e48a6bf7b39314fb5">
+                          <id>faStringeb132</id>
+                        </faString>
+                        <faString sid="7050fb001a89be018c5a3af490f5b059">
+                          <id>faString99ab1</id>
+                        </faString>
+                        <faString sid="3075bdf075e1108cdb3acf9ee29ab0c4">
+                          <id>faStringc393a</id>
+                        </faString>
+                        <faString sid="10ffcb84967e24a0e5e43102dc0f788f">
+                          <id>faString78e2f</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="b7a48c4990b293de23087308adafdf06">
+              <id>formArea21390</id>
+              <border>true</border>
+              <Items>
+                <header sid="e826fe1fadb630b59d6bf6d297e80d65">
+                  <id>headerf55cf</id>
+                  <text>【只读时子标签容器背景色】属性</text>
+                </header>
+                <tableLayout sid="c47df4c1de8986fda3e1b4e292f4708c">
+                  <id>tableLayout6e2ef</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <htmlArea sid="5be9729bffd80cccd2105d12c374daed">
+                      <id>htmlArea413bc</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时子标签容器背景色：blue&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <htmlArea sid="a3178fd717ae2ffa1f39edd8e4ecd4b3">
+                      <id>htmlArea75a35</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时子标签容器背景色：red&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <formArea sid="2ffc5ff43ddbe77a4b6ed7e2789c0b78">
+                      <id>faFieldSetbff07</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <labelCtBackColorRead>blue</labelCtBackColorRead>
+                      <Items>
+                        <faString sid="49b57f67d1078912c3c59db0572c69bc">
+                          <id>faString163c4</id>
+                        </faString>
+                        <faString sid="925495f064eb4ff4c7ceb9136162039f">
+                          <id>faString3109d</id>
+                        </faString>
+                        <faString sid="0e147d00882d1be638ffcb3a426ccc96">
+                          <id>faStringe6f62</id>
+                        </faString>
+                        <faString sid="406bf7cd108a0641902b1887191c2fda">
+                          <id>faStringd94e2</id>
+                        </faString>
+                        <faString sid="465c11c3492aa368072f98b33a661696">
+                          <id>faStringcf202</id>
+                        </faString>
+                        <faString sid="334da40df245a93947cc10257df85626">
+                          <id>faStringbf9f6</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="fed1b3cdfe33f9543f49b9b35d62d8d1">
+                      <id>faFieldSet30719</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <labelCtBackColorRead>red</labelCtBackColorRead>
+                      <Items>
+                        <faString sid="9976a92d0765b255a5c0bb48c518eac7">
+                          <id>faString62aeb</id>
+                        </faString>
+                        <faString sid="d279fd56df1482a52bb69c12c4ca6f79">
+                          <id>faString8db3b</id>
+                        </faString>
+                        <faString sid="994ecbdb7a48c24bda529b8c1d7cbd70">
+                          <id>faStringff895</id>
+                        </faString>
+                        <faString sid="8a2fc695f290b37814d1fdccfbf8ae68">
+                          <id>faString460e1</id>
+                        </faString>
+                        <faString sid="c8124fcc1171f24fc6b3a3e807b29ded">
+                          <id>faString864cd</id>
+                        </faString>
+                        <faString sid="d8894a6dc04b2e16f9e54077ef51ead9">
+                          <id>faString1e59d</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="9ac1a7691ceb0c1029b490f0e16f9556">
+              <id>formArea074d6</id>
+              <border>true</border>
+              <Items>
+                <header sid="2caa9f61196055af0cbc2bc4d5130220">
+                  <id>headerfca84</id>
+                  <text>【只读时子标签样式】属性</text>
+                </header>
+                <tableLayout sid="fd23f6b7ca9f2a9b21ea090fb8a735ce">
+                  <id>tableLayouta7aa6</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <htmlArea sid="a5382397ceaba251b050c3c1672a393e">
+                      <id>htmlAreaa7ed4</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时子标签样式：border:1px solid blue;&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <htmlArea sid="ba798aa0d333c516143aa3a8c3828e91">
+                      <id>htmlArea44f37</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时子标签样式：border:1px solid red;&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <formArea sid="fcba16c322d0b8beb6074f2b975c33bb">
+                      <id>faFieldSet922a7</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <labelSubStyleRead>border:1px solid blue;</labelSubStyleRead>
+                      <Items>
+                        <faString sid="025cbbd902c9bbb7dbfa2f78554cf2e9">
+                          <id>faString31367</id>
+                        </faString>
+                        <faString sid="b3ea4ae01ed8c4ffb8bad19b49ee7e70">
+                          <id>faString9b52a</id>
+                        </faString>
+                        <faString sid="ad2886fbac71497ec203376100a7c017">
+                          <id>faString63c86</id>
+                        </faString>
+                        <faString sid="bfd1aeb739e0dca5982dc9065c7e5036">
+                          <id>faString71173</id>
+                        </faString>
+                        <faString sid="51cb5a1865b033c88aae9d6d1e505ced">
+                          <id>faStringad4ac</id>
+                        </faString>
+                        <faString sid="1f046ae989d94accc234bbe477496a76">
+                          <id>faString9e103</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="83b0b4c498a32b827127f51520481978">
+                      <id>faFieldSet5880b</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <labelSubStyleRead>border:1px solid red;</labelSubStyleRead>
+                      <Items>
+                        <faString sid="36f760d908bf661edc7687e80e9d17db">
+                          <id>faStringe8b1e</id>
+                        </faString>
+                        <faString sid="45bcdd40d89c21758221db5d0afa1377">
+                          <id>faString7c97d</id>
+                        </faString>
+                        <faString sid="dd0d0b8e1d7aeb8e48b2b570e88d75fd">
+                          <id>faString8d8b9</id>
+                        </faString>
+                        <faString sid="f2cce312f075f1d30e9969c1463f5999">
+                          <id>faString98902</id>
+                        </faString>
+                        <faString sid="b05bc0e6ce9dd643d5f430328eb2f3bf">
+                          <id>faString761ca</id>
+                        </faString>
+                        <faString sid="c92d39766c5c12661bba1475d3e22523">
+                          <id>faString2fde6</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="1d5f60953f41936acd54bd301fccc5bc">
+              <id>formArea4f11a</id>
+              <border>true</border>
+              <Items>
+                <header sid="cf7851d22bb421305aed638b512b4f89">
+                  <id>header1c1f8</id>
+                  <text>【只读时内容容器样式】属性</text>
+                </header>
+                <tableLayout sid="9c518baee86d8ee836e7d173b9757f92">
+                  <id>tableLayoutb1de4</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <htmlArea sid="fe28ded1bb862752517b78f52ba2325e">
+                      <id>htmlArea3d158</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时内容容器样式：border:1px solid blue;&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <htmlArea sid="eb5626729d736ee68879765cc3768274">
+                      <id>htmlArea1b2b6</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时内容容器样式：border:1px solid red;&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <formArea sid="a067621c4276f2b3162346aace0f2dbb">
+                      <id>faFieldSeta985c</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <contentCtStyleRead>border:1px solid blue;</contentCtStyleRead>
+                      <Items>
+                        <faString sid="a9b8f0afa6dadb500471248f72e3c344">
+                          <id>faStringa9756</id>
+                        </faString>
+                        <faString sid="9274ecb89c4c7a2f04b28911c79f9cd5">
+                          <id>faStringe370d</id>
+                        </faString>
+                        <faString sid="89c8705df656b6946ca571875a0b23e1">
+                          <id>faStringaa6b5</id>
+                        </faString>
+                        <faString sid="b6b035936f9fd62ee6808ee1fbbde88b">
+                          <id>faStringe1a28</id>
+                        </faString>
+                        <faString sid="6b0033e11266bf3fdfe3d36c6b52953e">
+                          <id>faString4a595</id>
+                        </faString>
+                        <faString sid="f2a30faee932c109c280b6b3f6c226a3">
+                          <id>faString71842</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="366921f44bcb1ab84c6a0dd27ebf201b">
+                      <id>faFieldSeta34e2</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <contentCtStyleRead>border:1px solid red;</contentCtStyleRead>
+                      <Items>
+                        <faString sid="f4c5fdf66eddf9391ab1be494f575079">
+                          <id>faStringb63b5</id>
+                        </faString>
+                        <faString sid="1c5c422f641f7d9b11d183810bb1e13b">
+                          <id>faString9ff09</id>
+                        </faString>
+                        <faString sid="0e5f7e034cf8daa879be6a5779017bdf">
+                          <id>faString44a0f</id>
+                        </faString>
+                        <faString sid="c0a3878c11ba8204a478b844dfa7b4a9">
+                          <id>faStringf12aa</id>
+                        </faString>
+                        <faString sid="9840b39011f93a2d73feab95956ffd5e">
+                          <id>faString8c9c1</id>
+                        </faString>
+                        <faString sid="fa0577896377d106c672aaa6595252e0">
+                          <id>faStringa9232</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="e3dd8cfbd53548e83edf8903db252a08">
+              <id>formArea27cb2</id>
+              <border>true</border>
+              <Items>
+                <header sid="0f314e6f713f9f5e6850cc6f283da05c">
+                  <id>header39988</id>
+                  <text>【只读时是否显示表格线】属性</text>
+                </header>
+                <tableLayout sid="4fd82bf416246663d8fd10d020cc7593">
+                  <id>tableLayoutd2201</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <htmlArea sid="bb3405f5d11b40cd7a66a7ad02e61306">
+                      <id>htmlAreab100b</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时是否显示表格线：true&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <htmlArea sid="84b59b93cb7b4ca4e6560cda181a400d">
+                      <id>htmlArea44202</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时是否显示表格线：false&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <formArea sid="963b999c2ee754ce0303507e6cd938fb">
+                      <id>faFieldSeta031e</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <readOnlyBorder>true</readOnlyBorder>
+                      <borderStyleRead>border:1px solid gray;</borderStyleRead>
+                      <Items>
+                        <faString sid="5feef62aab477883b8c6911b875e17fb">
+                          <id>faString63142</id>
+                        </faString>
+                        <faString sid="ac398ae4b5a5e92d356415de4446a410">
+                          <id>faStringaec8e</id>
+                        </faString>
+                        <faString sid="053e9d388864077c247fcc5d7343b152">
+                          <id>faString6248b</id>
+                        </faString>
+                        <faString sid="57afbfed840f2ccfa441fcfe699ef6e6">
+                          <id>faString71200</id>
+                        </faString>
+                        <faString sid="d0abcfa588e37a1dd6d53d2ac15ade3b">
+                          <id>faString06c41</id>
+                        </faString>
+                        <faString sid="2637954658075e28297212edfea6aced">
+                          <id>faStringd5e1d</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="1448be0272288a89fb9131754b4cc894">
+                      <id>faFieldSet91b4e</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <borderStyleRead>border:1px solid gray;</borderStyleRead>
+                      <Items>
+                        <faString sid="2d237e2fb68496f68f0e65d79491cc54">
+                          <id>faString5851c</id>
+                        </faString>
+                        <faString sid="6b911712fa0e75b918caec6e285ed8df">
+                          <id>faString03e3b</id>
+                        </faString>
+                        <faString sid="cac234933814810bb1877d41d1839dc2">
+                          <id>faString57560</id>
+                        </faString>
+                        <faString sid="701139a57a4fbdcf6a008146e163757d">
+                          <id>faStringe04e0</id>
+                        </faString>
+                        <faString sid="1a695fd595e68cc4d13dfe85f3adab8b">
+                          <id>faStringfd8eb</id>
+                        </faString>
+                        <faString sid="475da60ceba1dcbe12e30b3c2f07afbe">
+                          <id>faString9fb96</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="1c9c9b5a56f8a5f9ce71de45df02eaf6">
+              <id>formArea663d4</id>
+              <border>true</border>
+              <Items>
+                <header sid="a4be625113848fd0fe236f6a3810c8be">
+                  <id>header34327</id>
+                  <text>【只读时间距】属性</text>
+                </header>
+                <tableLayout sid="d044fd02ac89ae74a907731063501838">
+                  <id>tableLayoutabf00</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <htmlArea sid="1d3ef68afdb5856b44b125e66938e60a">
+                      <id>htmlArea62dfc</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时间距：2&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <htmlArea sid="c4950381480107c97838e7d53f62aa05">
+                      <id>htmlAread2133</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时间距：5&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <formArea sid="b5b19b024d188c3a52994d91b8d6cb16">
+                      <id>faFieldSet38358</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <cellpaddingRead>2</cellpaddingRead>
+                      <Items>
+                        <faString sid="6daa65d2bf52b4b58aad0abe584a5d05">
+                          <id>faString725af</id>
+                        </faString>
+                        <faString sid="732c69e3cd33bfd8bd320481d98899a5">
+                          <id>faStringb4845</id>
+                        </faString>
+                        <faString sid="e04abd0cf16fc3168d328f43b3af62c1">
+                          <id>faString57e6e</id>
+                        </faString>
+                        <faString sid="64b50ce2367eabe260685eeb2a85c0f6">
+                          <id>faString384a4</id>
+                        </faString>
+                        <faString sid="ffcfa12f4eda14c202e9d64f1970bfca">
+                          <id>faString26f23</id>
+                        </faString>
+                        <faString sid="4f8a8db38702654ef0164c87046f344c">
+                          <id>faString901c3</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="312ce62c1ec5e732d5a493073ac36967">
+                      <id>faFieldSet51765</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <cellpaddingRead>5</cellpaddingRead>
+                      <Items>
+                        <faString sid="12742be56ba3f1ef28ccb56484fb22fe">
+                          <id>faString395cb</id>
+                        </faString>
+                        <faString sid="5762560de72e50a485fd421d9c4a5823">
+                          <id>faStringb386d</id>
+                        </faString>
+                        <faString sid="8764b05c3dfa4d789fe7faf71557295e">
+                          <id>faStringfd7e1</id>
+                        </faString>
+                        <faString sid="c9aa9d2b8595c1cac56c434fbc411bff">
+                          <id>faString7b736</id>
+                        </faString>
+                        <faString sid="baf1b2ee96251f66f3d0858f5d3a8744">
+                          <id>faStringce538</id>
+                        </faString>
+                        <faString sid="8568c670b72b5568543df57a796f2f45">
+                          <id>faStringef8c6</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="c940ab209b9f114aecb88ceb25cd1e20">
+              <id>formArea30fcb</id>
+              <border>true</border>
+              <Items>
+                <header sid="d2a12f03ac23de3f7866ff1fd0afd2ad">
+                  <id>headera4d0d</id>
+                  <text>【只读时表格线样式】属性</text>
+                </header>
+                <tableLayout sid="7d21517861688e3c87a451e13a362278">
+                  <id>tableLayoutc42a2</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <htmlArea sid="0fcfa18089ff1f36b6f4e9be520c758e">
+                      <id>htmlArea65acc</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时表格线样式：border:1px solid blue;&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <htmlArea sid="7339a33d0f6dc368374f1e3a07a1b7fc">
+                      <id>htmlAreaadac7</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;只读时表格线样式：border:1px solid red;&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <formArea sid="944660553c572f252f7e3c1270905595">
+                      <id>faFieldSetff0f9</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <readOnlyBorder>true</readOnlyBorder>
+                      <borderStyleRead>border:1px solid blue;</borderStyleRead>
+                      <Items>
+                        <faString sid="f47dc9ae6147f8cecc945344479b6027">
+                          <id>faString43751</id>
+                        </faString>
+                        <faString sid="a0921204c58d25055a5221e3e8359898">
+                          <id>faString66dc5</id>
+                        </faString>
+                        <faString sid="116d73999db847ef5181615895264ffa">
+                          <id>faString5682d</id>
+                        </faString>
+                        <faString sid="660be49859baf44167846f75575a5ad1">
+                          <id>faStringa517d</id>
+                        </faString>
+                        <faString sid="77f2bdbc004c2bc857703d89408a8041">
+                          <id>faStringc10b2</id>
+                        </faString>
+                        <faString sid="fa7bf202fff8baf254431a421a0cedba">
+                          <id>faString84e21</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="cc7b3a19b0c1580a74c8eab36de20350">
+                      <id>faFieldSete7d86</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>readOnly</displayType>
+                      <readOnlyBorder>true</readOnlyBorder>
+                      <borderStyleRead>border:1px solid red;</borderStyleRead>
+                      <Items>
+                        <faString sid="2c295d94b5b4ff2958a0b5ca0088cf91">
+                          <id>faStringda571</id>
+                        </faString>
+                        <faString sid="ddc6cbd0a06ff3767f95195e9d117cec">
+                          <id>faString0a2f9</id>
+                        </faString>
+                        <faString sid="529b9ac7da2977732c4198769a3fc979">
+                          <id>faString3ff48</id>
+                        </faString>
+                        <faString sid="c24cc3901f633922f08ca6ff1c48738a">
+                          <id>faString472ff</id>
+                        </faString>
+                        <faString sid="6610acca11e6287d200b00466709f4c9">
+                          <id>faString185b4</id>
+                        </faString>
+                        <faString sid="0ece2a352e0ca250408bf6009082ee7d">
+                          <id>faString8fe78</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

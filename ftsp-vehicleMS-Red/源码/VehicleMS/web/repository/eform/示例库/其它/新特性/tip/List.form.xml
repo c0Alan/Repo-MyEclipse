@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0cd4bfd38e2db8148771fc5a0a113261</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.tip.List.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/tip/List.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <Items>
+        <blankPanel sid="7a396ce5274ad4b5d5b4f31697026e1a">
+          <id>blankPanelccb4b</id>
+          <width>80%</width>
+          <bodyStyle>padding:20px;</bodyStyle>
+          <Items>
+            <tableLayout sid="b24172d15920508792de8bd2a0d671d1">
+              <id>tableLayout09c10</id>
+              <colNum>2</colNum>
+              <Items>
+                <buttonArea sid="e0b1121252bd7a1e74434db780b57ca2">
+                  <id>buttonArea5ced6</id>
+                  <Items>
+                    <button sid="6b9a788a8e705b642edfb6051448089d">
+                      <id>button9c54c</id>
+                      <text>导出Excel</text>
+                      <icon>/artery/arteryImage/file/excel.gif</icon>
+                    </button>
+                  </Items>
+                </buttonArea>
+                <blankPanel sid="69be6b31e887be92388514d0a8a1c72a">
+                  <id>blankPanel78687</id>
+                  <Items>
+                    <pagingbar1 sid="5ffd6cd24aff4ef59f04966eef1fae4b">
+                      <id>pagingbar149bfd</id>
+                      <ds>rs1</ds>
+                      <pageCount>4</pageCount>
+                      <align>right</align>
+                    </pagingbar1>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </tableLayout>
+            <listArea sid="9e25c985e13798b5876edb38664e6b98">
+              <id>listArea89fa0</id>
+              <ds>rs1</ds>
+              <height />
+              <loadMask>false</loadMask>
+              <isPageSplit>false</isPageSplit>
+              <Items>
+                <columnIdentity sid="2494092d651aad147b3f9fc702ce75c5">
+                  <id>columnIdentityCID</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_ID</inheritfld>
+                  <dataName>{rs1.C_ID}</dataName>
+                  <title>图书编号</title>
+                </columnIdentity>
+                <column sid="63fca9d063ca291da04f9258836757ff">
+                  <id>column504bc</id>
+                  <title>图书名称</title>
+                  <Items>
+                    <blankPanel sid="bbfb9af30ec3bae6a0fc83dee21f6982">
+                      <id>blankPanel01638</id>
+                      <Items>
+                        <htmlArea sid="99b1f91a550ec89b97741810be199208">
+                          <id>htmlAreafbf45</id>
+                          <value>{rs1.C_NAME}</value>
+                        </htmlArea>
+                        <blankPanel sid="64ee9fd747eb155f3f16a8ac41de757b">
+                          <id>blankPanel4028d</id>
+                          <width>200</width>
+                          <height>100</height>
+                          <frame>true</frame>
+                          <themeStyle>cooltip</themeStyle>
+                          <hidden>true</hidden>
+                          <Items>
+                            <htmlArea sid="d4bb6c00ef1b6a8e8c7d11f2a159b2a2">
+                              <id>htmlAreafaad4</id>
+                              <value>《{rs1.C_NAME}》由&lt;b&gt;{rs1.C_AUTH}&lt;/b&gt;于&lt;b&gt;2010年03月15日&lt;/b&gt;借出，距归还日期还有&lt;b&gt;3&lt;/b&gt;天。&lt;br&gt;&lt;br&gt;&lt;span style="color:#3A6BB6;font-weight:700;"&gt;查看借阅详情&gt;&gt;&lt;/span&gt;</value>
+                            </htmlArea>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </column>
+                <columnString sid="e9c0d04cabea45f4bcf43948e70dc872">
+                  <id>columnStringCAUTH</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_AUTH</inheritfld>
+                  <dataName>{rs1.C_AUTH}</dataName>
+                  <title>作者</title>
+                  <isFilter>true</isFilter>
+                  <isOrderBy>true</isOrderBy>
+                </columnString>
+                <columnString sid="ed5f41450d19d7ecf855d7aa7e92d774">
+                  <id>columnStringCPUBLISHER</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_PUBLISHER</inheritfld>
+                  <dataName>{rs1.C_PUBLISHER}</dataName>
+                  <title>出版社</title>
+                </columnString>
+                <columnDate sid="6e8fcd9d133ab461e1bd3d265758bed9">
+                  <id>columnDateDPUBLISHER</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>D_PUBLISHER</inheritfld>
+                  <dataName>{rs1.D_PUBLISHER}</dataName>
+                  <title>出版日期</title>
+                </columnDate>
+                <column sid="1323dedc9adcffebc93009aaf0b6dd1a">
+                  <id>column3d629</id>
+                  <Items>
+                    <blankPanel sid="dbf901dd092deda7d9c5b172becdc54d">
+                      <id>blankPanel0c984</id>
+                      <Items>
+                        <buttonArea sid="6cfc58f30fce0fa778a36bdfdd479e97">
+                          <id>buttonArea6c724</id>
+                          <Items>
+                            <button sid="d2b86db893a7aaa9d69e7f878f81296f">
+                              <id>button30b5c</id>
+                              <text>{rs1.C_NAME}</text>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </column>
+              </Items>
+            </listArea>
+            <pagingbar1 sid="d81629adab009d51e16aab5bd3080587">
+              <id>pagingbar19dbdc</id>
+              <ds>rs1</ds>
+              <pageCount>4</pageCount>
+              <align>right</align>
+              <style>padding-top:5px;</style>
+            </pagingbar1>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    T_Eg_Book.C_ID,&#xD;
+    T_Eg_Book.C_NAME,&#xD;
+    T_Eg_Book.C_AUTH,&#xD;
+    T_Eg_Book.C_PUBLISHER,&#xD;
+    T_Eg_Book.D_PUBLISHER&#xD;
+FROM&#xD;
+    T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>adc3b73b212129d0aba40cadfef65990</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.maintain.JVMpzbd.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/maintain/JVMpzbd.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form9afa9">
+      <id>form9afa9</id>
+      <Items>
+        <blankPanel sid="26a56d6e3e39f9fc739aa768e13fec55">
+          <id>blankPanel95d08</id>
+          <width>100%</width>
+          <height>100%</height>
+          <frame>true</frame>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="87e19d253251b8d99df8bf65a53399cf">
+              <id>headerdc829</id>
+              <text>&lt;span style="font-size:14px;font-weight:700;color:#15428B;"&gt;JVM配置&lt;/span&gt;</text>
+            </header>
+            <listArea sid="9fe69c75fde145329f9a3b1e15d83830">
+              <id>listArea42e85</id>
+              <ds>rs1</ds>
+              <height>100%</height>
+              <emptyDataTip />
+              <isPageSplit>false</isPageSplit>
+              <isShowRowNumber>false</isShowRowNumber>
+              <Items>
+                <columnString sid="a1fdcd1faae8e32dec88857a0d49fac3">
+                  <id>columnString949d8</id>
+                  <dataName>{rs1.key}</dataName>
+                  <title>&lt;h1&gt;key&lt;/h1&gt;</title>
+                  <width>100</width>
+                </columnString>
+                <columnString sid="bad04a74b706d06f6d499a328142f442">
+                  <id>columnString59ea0</id>
+                  <dataName>{rs1.value}</dataName>
+                  <title>&lt;h1&gt;value&lt;/h1&gt;</title>
+                  <width>300</width>
+                </columnString>
+              </Items>
+            </listArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getJvmConfigList</ds>
+  </dslist>
+</form>
+

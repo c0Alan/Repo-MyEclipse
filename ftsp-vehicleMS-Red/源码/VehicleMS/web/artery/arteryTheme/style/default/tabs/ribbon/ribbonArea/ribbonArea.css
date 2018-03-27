@@ -1,0 +1,609 @@
+.x-ribbon-panel {
+	
+}
+/*******************************************************
+*	header
+********************************************************/
+.x-ribbon-header {
+	
+}
+
+.x-ribbon-header-td {
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+
+/*******************************************************
+*	item
+********************************************************/
+.x-ribbon-item {
+	padding-left: 3px;
+}
+
+.x-ribbon-item .x-ribbon-text {
+	width: 100px;
+	overflow: visible;
+	text-align: center;
+	height: 29px;
+	padding-top: 7px;
+	display: inline;
+	vertical-align: bottom;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.x-ribbon-item .x-ribbon-corner-header,.x-ribbon-item .x-ribbon-corner-footer
+	{
+	width: 6px;
+	height: 29px;
+	display: inline;
+}
+
+.x-ribbon-item-over .x-ribbon-corner-header {
+	background-image: url("images/gray/ribbonItem.png");
+	background-position: 0 -110px;
+}
+
+.x-ribbon-item-over .x-ribbon-text {
+	background-image: url("images/gray/ribbonItem.png");
+	background-position: 0 -143px;
+}
+
+.x-ribbon-item-over .x-ribbon-corner-footer {
+	background-image: url("images/gray/ribbonItem.png");
+	background-position: right -183px;
+}
+
+.x-ribbon-item-active .x-ribbon-corner-header {
+	background-image: url("images/gray/ribbonItem.png");
+	background-position: 0 0;
+}
+
+.x-ribbon-item-active .x-ribbon-text {
+	background-image: url("images/gray/ribbonItem.png");
+	background-position: 0 -35px;
+}
+
+.x-ribbon-item-active .x-ribbon-corner-footer {
+	background-image: url("images/gray/ribbonItem.png");
+	background-position: right -71px;
+}
+
+.x-ribbon-item-body{
+	overflow:hidden; 
+	height: 90px;
+	position: relative;
+	background-color: transparent;
+}
+/*******************************************************
+*	group
+********************************************************/
+.x-ribbon-body{
+	text-align: left;
+	background-color: transparent;
+	background-image: url("images/gray/ribbonBody.png");
+	background-position: 0 bottom;
+	vertical-align: bottom;
+}
+
+.x-ribbon-group{
+	display: inline;
+	vertical-align: bottom;
+	background-color: transparent;
+}
+
+.x-ribbon-group-left{
+	width: 1px;
+	height: 88px;
+	display: inline;
+	background-image: url("images/gray/groupSplit.gif");
+	background-position: right bottom;
+	vertical-align: bottom;
+}
+.x-ribbon-group-table{
+	display: inline;
+}
+
+.x-ribbon-group-body{
+	height: 88px;
+	display: inline;
+	overflow: visible;
+	white-space: nowrap;
+}
+.x-ribbon-group-right{
+	width: 2px;
+	height: 88px;
+	display: inline;
+	background-image: url("images/gray/groupSplit.gif");
+	background-position: 0 bottom;
+	vertical-align: bottom;
+}
+
+.x-ribbon-group-first .x-ribbon-group-left{
+	background:none;
+}
+
+.x-ribbon-group-last .x-ribbon-group-right{
+	width: 3px;
+}
+
+.x-ribbon-group-body-cells{
+	height: 63px;
+	padding: 5px;
+}
+
+.x-ribbon-group-body-title{
+	text-align: center;
+	font-size: 14px;
+	padding:2px;
+	padding-top:4px;
+	width: 100%;
+}
+/*******************************************************
+*	cell
+********************************************************/
+.x-ribbon-cell{
+	display: inline;
+	vertical-align: bottom;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.x-ribbon-cell-left{
+	width: 4px;
+	height: 53px;
+	display: inline;
+	background-image: url("images/gray/ribbonCell.gif");
+	background-position: 0 0;
+	vertical-align: bottom;
+}
+.x-ribbon-cell-body{
+	height: 53px;
+	display: inline;
+	background-image: url("images/gray/ribbonCell.gif");
+	background-position: 0 -67;
+	vertical-align: bottom;
+	white-space: normal;
+	padding:3px;
+	cursor: pointer;
+	position: relative;
+}
+.x-ribbon-cell-table{
+	height: 100%;
+	width: 100%;
+}
+.x-ribbon-cell-text{
+	font-size: 12px;
+	text-align: center;
+}
+.x-ribbon-cell-right{
+	width: 4px;
+	height: 53px;
+	display: inline;
+	background-image: url("images/gray/ribbonCell.gif");
+	background-position: right -132;
+	vertical-align: bottom;
+}
+
+.x-ribbon-cell-active .x-ribbon-cell-left{
+	background-position: 0 -203px;
+}
+.x-ribbon-cell-active .x-ribbon-cell-body{
+	background-position: 0 -281px;
+}
+.x-ribbon-cell-active .x-ribbon-cell-right{
+	background-position: 0 -351px;
+}
+
+.x-ribbon-cell-over .x-ribbon-cell-left{
+	background-position: 0 -425px;
+}
+.x-ribbon-cell-over .x-ribbon-cell-body{
+	background-position: 0 -491px;
+}
+.x-ribbon-cell-over .x-ribbon-cell-right{
+	background-position: 0 -557px;
+}
+/*******************************************************
+*	more
+********************************************************/
+.x-group-more .x-ribbon-group-right{
+	background-image: none;
+}
+
+/*******************************************************
+*	cellTip
+********************************************************/
+.x-ribbon-cell-tip{
+	height: 16px;
+	position: absolute;
+	bottom:-5px;
+	right:-7px;
+	vertical-align: bottom;
+}
+
+.x-ribbon-cell-tip-left{
+	width:4px;
+	height:16px;
+	display: inline;
+	vertical-align: bottom;
+	background-image: url("images/gray/ribbonCellTip.png");
+	background-position: 0 -66px;
+}
+
+.x-ribbon-cell-tip-body{
+	height:16px;
+	display: inline;
+	background-image: url("images/gray/ribbonCellTip.png");
+	background-position: 0 -110px;
+	color: #fff;
+}
+
+.x-ribbon-cell-tip-right{
+	width:4px;
+	height:16px;
+	display: inline;
+	vertical-align: bottom;
+	background-image: url("images/gray/ribbonCellTip.png");
+	background-position: right -88px;
+}
+
+.x-ribbon-cell-tip-norequired .x-ribbon-cell-tip-left{
+	background-position: 0 0;
+}
+
+.x-ribbon-cell-tip-norequired .x-ribbon-cell-tip-body{
+	background-position: 0 -43px;
+}
+
+.x-ribbon-cell-tip-norequired .x-ribbon-cell-tip-right{
+	background-position: right -21px;
+}
+
+.x-ribbon-cell-tip-sys .x-ribbon-cell-tip-left,.x-ribbon-cell-tip-sys .x-ribbon-cell-tip-body,.x-ribbon-cell-tip-sys .x-ribbon-cell-tip-right{
+	display: none;
+}
+
+.x-ribbon-cell-tip-ok{
+	height: 16px;
+	width: 21px;
+	background-image: url("images/gray/ribbonCellTipOk.png");
+}
+
+.x-ribbon-cell-tip-warn{
+	height: 16px;
+	width: 21px;
+	background-image: url("images/gray/ribbonCellTipWarn.png");
+}
+
+/*******************************************************
+*	collapsebar
+********************************************************/
+.x-ribbon-collapsebar{
+	cursor: pointer;
+}
+
+.x-ribbon-collapsebar-wrap{
+	height: 8px;
+	text-align: center;
+	background-image: url("images/gray/ribbonArrowBack.png");
+}
+
+.x-ribbon-collapsebar-arrow{
+	background-image: url("images/gray/ribbonArrowCollapse.png");
+	width: 201px;
+	height: 7px;
+	overflow: hidden;
+}
+
+.x-ribbon-collapsebar-arrow-expand{
+	background-image: url("images/gray/ribbonArrowExpand.png");
+}
+
+.x-ribbon-collapsebar-over .x-ribbon-collapsebar-arrow{
+	background-image: url("images/gray/ribbonArrowCollapseOver.png");
+}
+
+.x-ribbon-collapsebar-over .x-ribbon-collapsebar-arrow-expand{
+	background-image: url("images/gray/ribbonArrowExpandOver.png");
+}
+/*******************************************************
+*	ribbonMenu
+********************************************************/
+.x-ribbon-menu .x-ribbon-cell-table{
+	width: 100%;
+	height: 100%;
+}
+.x-ribbon-menu .x-ribbon-cell-text{
+	background-image: url("images/gray/ribbonMenu.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/***************************************************************************************
+ * x-theme-ribbonArea-blue 
+ ***************************************************************************************/
+/*******************************************************
+*	item
+********************************************************/
+.x-theme-ribbonArea-blue{
+	background-color: #0976BE;
+}
+.x-theme-ribbonArea-blue .x-ribbon-item {
+	padding-left: 0px;
+}
+.x-theme-ribbonArea-blue .x-ribbon-header-holder {
+	padding-left: 15px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-item .x-ribbon-text {
+	color: #fff;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-item-over .x-ribbon-corner-header {
+	background-image: none;
+	background-position: 0 -110px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-item-over .x-ribbon-text {
+	background-image: none;
+	background-position: 0 -143px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-item-over .x-ribbon-corner-footer {
+	background-image: none;
+	background-position: right -183px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-item-active .x-ribbon-corner-header {
+	background-image: url("images/blue/ribbonItem.png");
+	background-position: 0 0;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-item-active .x-ribbon-text {
+	background-image: url("images/blue/ribbonItem.png");
+	background-position: 0 -71px;
+	color: #3C5CA7;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-item-active .x-ribbon-corner-footer {
+	background-image: url("images/blue/ribbonItem.png");
+	background-position: right -36px;
+}
+
+
+.x-theme-ribbonArea-blue .x-ribbon-item-body{
+	height: 82px;
+}
+
+
+/*******************************************************
+*	group
+********************************************************/
+.x-theme-ribbonArea-blue .x-ribbon-body{
+	height: 82px;
+	background-image: url("images/blue/ribbonBody.png");
+	background-position:0 0;
+	background-color: transparent;
+}
+.x-theme-ribbonArea-blue .x-ribbon-item-body-left{
+	height: 82px;
+	width:6px;
+	position:absolute;
+	background-image: url("images/blue/ribbonBody.png");
+	background-position: 0 -94px;
+}
+.x-theme-ribbonArea-blue .x-ribbon-item-body-right{
+	height: 82px;
+	width:6px;
+	position:absolute;
+	right:0px;
+	background-image: url("images/blue/ribbonBody.png");
+	background-position: right -178px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-group-left{
+	width: 6px;
+	height: 82px;
+	background-image: url("images/blue/groupSplit.png");
+	background-position: right 0;
+	vertical-align: top;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-group-right{
+	width: 6px;
+	height: 82px;
+	background-image: url("images/blue/groupSplit.png");
+	background-position: 0 0;
+	vertical-align: top;
+}
+.x-theme-ribbonArea-blue .x-ribbon-group-first .x-ribbon-group-left{
+	background:none;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-group-last .x-ribbon-group-right{
+	width:6px;
+	background:none;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-group-body{
+	height: 82px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-group-body-cells{
+	height: 57px;
+	padding: 5px;
+	padding-top: 4px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-group-body-title{
+	color: #4C64A2;
+}
+/*******************************************************
+*	cell
+********************************************************/
+.x-theme-ribbonArea-blue .x-ribbon-cell{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-left{
+	width: 4px;
+	height: 45px;
+	display: inline;
+	background-image: url("images/blue/ribbonCell.png");
+	background-position: 0 0;
+	vertical-align: bottom;
+}
+.x-theme-ribbonArea-blue .x-ribbon-cell-body{
+	height: 45px;
+	display: inline;
+	background-image: url("images/blue/ribbonCell.png");
+	background-position: 0 -100;
+	vertical-align: bottom;
+	white-space: normal;
+	padding:3px;
+	cursor: pointer;
+	position: relative;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-right{
+	width: 4px;
+	height: 45px;
+	display: inline;
+	background-image: url("images/blue/ribbonCell.png");
+	background-position: right -49;
+	vertical-align: bottom;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-over .x-ribbon-cell-left{
+	background-position: 0 -152px;
+}
+.x-theme-ribbonArea-blue .x-ribbon-cell-over .x-ribbon-cell-body{
+	background-position: 0 -254px;
+}
+.x-theme-ribbonArea-blue .x-ribbon-cell-over .x-ribbon-cell-right{
+	background-position: 0 -204px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-active .x-ribbon-cell-left{
+	background-position: 0 -302px;
+}
+.x-theme-ribbonArea-blue .x-ribbon-cell-active .x-ribbon-cell-body{
+	background-position: 0 -401px;
+}
+.x-theme-ribbonArea-blue .x-ribbon-cell-active .x-ribbon-cell-right{
+	background-position: 0 -350px;
+}
+
+/*******************************************************
+*	cellTip
+********************************************************/
+.x-theme-ribbonArea-blue .x-ribbon-cell-tip{
+	height: 16px;
+	position: absolute;
+	bottom:-5px;
+	right:-10px;
+	vertical-align: bottom;
+}
+.x-theme-ribbonArea-blue .x-ribbon-cell-tip-left{
+	width:4px;
+	height:19px;
+	background-image: url("images/blue/ribbonCellTip.png");
+	background-position: 0 -66px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-tip-body{
+	height:19px;
+	background-image: url("images/blue/ribbonCellTip.png");
+	background-position: 0 -110px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-tip-right{
+	width:4px;
+	height:19px;
+	background-image: url("images/blue/ribbonCellTip.png");
+	background-position: right -88px;
+}
+
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-tip-norequired .x-ribbon-cell-tip-left{
+	background-position: 0 0;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-tip-norequired .x-ribbon-cell-tip-body{
+	background-position: 0 -43px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-tip-norequired .x-ribbon-cell-tip-right{
+	background-position: right -21px;
+}
+
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-tip-ok{
+	height: 19px;
+	width: 20px;
+	background-image: url("images/blue/ribbonCellTipOk.png");
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-cell-tip-warn{
+	height: 19px;
+	width: 20px;
+	background-image: url("images/blue/ribbonCellTipWarn.png");
+}
+
+/*******************************************************
+*	collapsebar
+********************************************************/
+.x-theme-ribbonArea-blue .x-ribbon-collapsebar-wrap{
+	height: 6px;
+	text-align: center;
+	background-image: none;
+	background-color: #D3DCF9;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-collapsebar-arrow{
+	background-image: url("images/blue/mini-top.gif");
+	width: 126px;
+	height: 6px;
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-collapsebar-arrow-expand{
+	background-image: url("images/blue/mini-down.gif");
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-collapsebar-over .x-ribbon-collapsebar-arrow{
+	background-image: url("images/blue/mini-top.gif");
+}
+
+.x-theme-ribbonArea-blue .x-ribbon-collapsebar-over .x-ribbon-collapsebar-arrow-expand{
+	background-image: url("images/blue/mini-down.gif");
+}
+/*******************************************************
+*	ribbonMenu
+********************************************************/
+.x-menu-ribbon-blue {
+	height: 82px;
+	background-image: url("images/blue/ribbonBody.png");
+	border:1px solid #7B99BF;
+}
+/*******************************************************
+*	more
+********************************************************/
+.x-group-more-blue .x-ribbon-group-right{
+	background-image: none;
+}
+.x-group-more-blue .x-ribbon-cell-right{
+	background-image: url("images/blue/ribbonMore.png");
+	width: 12px;
+	background-position: right 0;
+}
+.x-group-more-blue .x-ribbon-cell-over .x-ribbon-cell-right{
+	background-position: right 0;
+}
+.x-group-more-blue .x-ribbon-cell-active .x-ribbon-cell-right{
+	background-position: right -50px;
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="tbChangePassword" cn="修改密码" menu="系统按钮" jsType="artery-base"
+	icon="tbChangePassword.gif" iconNew="tbChangePasswordNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>修改密码按钮,点击弹出修改用户密码的窗口。</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="topbar" />
+		<Parent type="bottomBar" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.toolbar.TbChangePassword
+	</Class>
+	<JsFile>
+		<File>tbChangePassword.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apTbChangePassword</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="名称" type="1" name="text" tips="设置本按钮的显示名称">
+			<Value />
+		</Property>
+		<Property cn="提示信息" type="1" name="tooltip" tips="设置鼠标移动到按钮上的提示">
+			<Value />
+		</Property>
+		<Property cn="图片" type="5" name="icon" tips="设置组件的显示图标，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value>/artery/arteryImage/symbol/changepw.gif</Value>
+		</Property>
+		<Property cn="只显示图片" type="11" name="onlyShowIcon" tips="为true，则只显示图片">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="修改密码后" name="onPassModiClient"
+			tips="在此可根据修改密码的结果做一些后续处理">
+			<Value />
+      <Description><![CDATA[
+在此可根据修改密码的结果做一些后续处理，示例代码如下：
+<pre>
+function tbChangePassword2dde4_onPassModiClient (rc, msg){
+	if(msg == "ok"){
+		alert("密码修改成功！请重新登录！");
+		//调用隐藏的注销按钮的click方法退出系统
+		Artery.get("tbLogout44335").click();
+	}
+}
+</pre>
+      ]]></Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="修改密码后" name="onPassModiServer"
+			tips="可写服务器端脚本，返回数据给客户端，在此可根据修改密码的结果做一些后续处理">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="click"></Method>
+		<Method name="hide"></Method>
+		<Method name="show"></Method>
+		<Method name="disable" inherit="false" return="void" tips="设置控件无效">
+			<Description><![CDATA[<p>设置控件无效</p><pre>
+Artery.get("buttonId").disable();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="enable" inherit="false" return="void" tips="设置控件有效">
+			<Description><![CDATA[<p>设置控件有效</p><pre>
+Artery.get("buttonId").enable();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+	<JsFunctions>
+  		<JsFunction name="onPassModiClient">
+/**
+ * 修改密码后脚本({itemid}) 
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  msg 修改密码后返回的信息，若修改成功，返回"ok";否则，返回错误信息
+ */
+function {methodName} (rc, msg){
+	
+}
+  		</JsFunction>
+  	</JsFunctions>
+  	<JavaFunctions>
+		<JavaFunction name="onPassModiServer">
+<![CDATA[
+/**
+ * 修改密码后脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

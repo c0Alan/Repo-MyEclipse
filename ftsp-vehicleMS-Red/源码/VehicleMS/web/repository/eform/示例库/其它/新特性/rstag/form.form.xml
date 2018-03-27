@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>6da74c5e663188240f70f467a60d917b</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.rstag.Form.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/rstag/Form.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <Items>
+        <topbar sid="61e6a1e258f8760781a509cdbc4270db">
+          <id>topbar3df34</id>
+          <Items>
+            <tbButton sid="a668b456c05a9cee01364b3707f0196a">
+              <id>tbButtoncc1d7</id>
+            </tbButton>
+          </Items>
+        </topbar>
+        <formArea sid="d16ddc52b5e335f399fdce594b6fad1e">
+          <id>formArea16d11</id>
+          <Items>
+            <faString sid="0c9030399cbc2220b3055fb6a7281924">
+              <id>faString1e342</id>
+              <value>{rs1.id}</value>
+            </faString>
+            <faString sid="3a504eb4fa748cb176889c7c07f2b389">
+              <id>faString87016</id>
+              <value>{rs1.col2}</value>
+            </faString>
+            <faString sid="88f4f647264e97f587030f50d97a2343">
+              <id>faString7a601</id>
+              <value>{rs1.id}</value>
+            </faString>
+            <faString sid="e2a1504c431b424f7981b9dcecf14037">
+              <id>faString84704</id>
+              <value>{rs2.name,#id=[rs1.id]}</value>
+            </faString>
+            <faString sid="bec98b3bdd22da88dde95df0f9935371">
+              <id>faString6f5c4</id>
+              <value>{rs1.id}</value>
+            </faString>
+            <faString sid="cbe3ec4bec0bffaad79dcc3b65210308">
+              <id>faStringed407</id>
+              <value>{rs3[1],#[0]=[rs1.id]}</value>
+            </faString>
+          </Items>
+        </formArea>
+        <blankPanel sid="6367303d8d7b773ad8de9bd18dcfd1fc">
+          <id>blankPanela4333</id>
+          <Items>
+            <loopArea sid="237110138bb6a7e56db86c8c9ec03737">
+              <id>loopAreaa5dab</id>
+              <ds>rs1</ds>
+              <Items>
+                <blankPanel sid="7b8ffa15121279d5e03ac88e93195147">
+                  <id>blankPanelf35d6</id>
+                  <style>padding:20px;</style>
+                  <Items>
+                    <topbar sid="700109fb996a927bb98ba02e2854896f">
+                      <id>topbar8acf5</id>
+                      <Items>
+                        <tbButton sid="f46ee3f4ada96b898be9e63240e8b23e">
+                          <id>tbButton121e6</id>
+                          <text>{rs1.id}</text>
+                        </tbButton>
+                        <tbMenu sid="d64a3e871af4773d808daff14b285869">
+                          <id>tbMenu39cce</id>
+                          <Items>
+                            <loopArea sid="a1afab1f86ca3bf579e12baf59996d29">
+                              <id>loopArea11467</id>
+                              <ds>{rs4,#id=[rs1.id]}</ds>
+                              <Items>
+                                <tbMenuItem sid="218235b2beb60cdec88ed66dadc48d36">
+                                  <id>tbMenuItemb737a</id>
+                                  <text>{rs4.type}</text>
+                                </tbMenuItem>
+                              </Items>
+                            </loopArea>
+                          </Items>
+                        </tbMenu>
+                      </Items>
+                    </topbar>
+                    <buttonArea sid="d55f71799c5c9bcf39c5b2e4c849b637">
+                      <id>buttonArea9f822</id>
+                      <Items>
+                        <loopArea sid="feb3e30afba7b711741bf61ee37bf0ac">
+                          <id>loopArea33e8f</id>
+                          <ds>{rs4,#id=[rs1.id]}</ds>
+                          <Items>
+                            <button sid="b33ccaa49cfbdb5686439328a04908f8">
+                              <id>buttonbde43</id>
+                              <text>{rs4.type}</text>
+                            </button>
+                          </Items>
+                        </loopArea>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </loopArea>
+            <buttonArea sid="760c5fc5df89c22aa9cd9655daee7f18">
+              <id>buttonArea4a460</id>
+              <Items>
+                <button sid="5ed802d4decd0ff8ddaf86c91e9336a0">
+                  <id>button2f952</id>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs3" type="logic">ds_rs3</ds>
+    <ds dsName="dataSource" name="rs4" type="logic">ds_rs4</ds>
+    <ds dsName="dataSource" name="rs2" type="logic">ds_rs2</ds>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

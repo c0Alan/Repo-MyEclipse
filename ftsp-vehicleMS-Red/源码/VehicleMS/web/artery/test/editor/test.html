@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TextEDTor</title>
+<script type="text/javascript" src="swfobject.js"></script>
+    <style>
+      body{
+        font-size:9pt;
+      }
+      td{
+        font-size:9pt;
+        padding:4px;
+        vertical-align:top;
+      }
+    </style>
+<script>
+var code = "int i=0;\ri+=1;\rString a=\"1% & 2.05% \\/+-)(*&^%$#@!|~`{}[] \";\r//?????";
+code = code.replace(/%/g,"%25");
+code = code.replace(/&/g,"%26");
+code = code.replace(/\+/g,"%2B");
+code = code.replace(/\"/g,"%22");
+var tips = "Aty1.app,Aty1.session,Aty1.request,remoteCaller.put";
+function initflash(){
+    var obj = document.getElementById("textEDTor");
+	//obj.setCode(code);
+    //obj.setTips(tips);
+    //obj.clearNSetTips("aty.set,aty.get");
+}
+
+function readscript(){
+	var textGetted = textEDTor.getCode();
+	alert(textGetted);
+    //取出文本后，发送到服务器端格式化后再传回来，通过setCode设置回去
+    textEDTor.setCode("public class A{private final static a=null;}");
+}
+
+function resize(){
+    textEDTor.reSize();
+}
+
+function fmtCode(){
+  readscript();
+}
+</script>
+</head>
+<body onload="initflash()" onresize="resize()">
+<a href="/Arter2.5/artery/test/index.jsp">后退</a>
+	<div id="flashcontent" style="width:100%;height:100%">
+		<strong>You need to upgrade your Flash Player</strong>
+	</div>
+	<script type="text/javascript">
+		// <![CDATA[
+		var so = new SWFObject("editor.swf", "textEDTor", "100%", "100%", "9", "#FFFFFF");
+		//so.useExpressInstall('expressinstall.swf');
+		so.addVariable("Fonts", "宋体");
+        so.setAttribute("style","width:100%;height:100%");
+		so.addVariable("fontsSize", "14");
+		so.addVariable("cTips",tips);
+		so.addVariable("cType", "JAVA");//支持JAVA/SQL/XML/JSP/CSS,默认为JAVA，对于js配置成JAVA，对于html配置成JSP,大小写敏感
+		so.addVariable("cPath", "config/java.xml");
+		so.addVariable("cHelpPath", "config/help.txt");
+		so.addVariable("cCode",code);
+        so.addVariable("funName","fmtCode");
+		so.write("flashcontent");
+		// ]]>
+	</script>
+	<div id="btn">
+	<input type="button" value="测试flash对象读方法" onclick="readscript()"/><br>
+    快捷键支持：<br/>ctrl+"+/-"改变字体大小
+    <br/>ctrl+alt+d:删除行
+    <br/>ctrl+alt+f:查找/替换
+    <br/>ctrl+f3:查找下一个
+    <br/>tab/shift+tab
+    <br/>ctrl+a/c/x/v
+    <br/>ctrl+alt+up/down,alt+up/down,ctrl+z,ctrl+y正在完善中
+	</div>
+</body>
+</html>

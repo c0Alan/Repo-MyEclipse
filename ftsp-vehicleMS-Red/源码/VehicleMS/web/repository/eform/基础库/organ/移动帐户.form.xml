@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e3ffa782cb626e50e808e722ffeb8ee4</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.organ.Ydzh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/organ/Ydzh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form14083">
+      <id>form14083</id>
+      <title>移动账户</title>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <treeArea sid="a7edd727b01c8d2013724a237ee8161b">
+          <id>organTreeArea</id>
+          <selType>radio</selType>
+          <width>100%</width>
+          <height>100%</height>
+          <line>false</line>
+          <useArrows>true</useArrows>
+          <Items>
+            <treeDynamic sid="2519991abb8093babf4c87fdf38b8cbd">
+              <id>organTreeDynamic</id>
+              <onLoadTree><![CDATA[organTreeDynamic_onLoadTree]]></onLoadTree>
+            </treeDynamic>
+          </Items>
+        </treeArea>
+        <footer sid="94ace8b44a2547e0fe99dd1c53a61da0">
+          <id>footerdab8a</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="ba338586cc2867fc8bd807a034d1ff96">
+              <id>moveBtn</id>
+              <text>确定</text>
+              <onClickClient><![CDATA[moveBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[moveBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <simpleButton sid="2a81d4eb0d71400a3b1cce61ac46d803">
+              <id>closeBtn</id>
+              <text>关闭</text>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="userId" showName="用户编号" value="" pvalue="" />
+    <param name="pOrganId" showName="父组织编号" value="" pvalue="" />
+  </params>
+</form>
+

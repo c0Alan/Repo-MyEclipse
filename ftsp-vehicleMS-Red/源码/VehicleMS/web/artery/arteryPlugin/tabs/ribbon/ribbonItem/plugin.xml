@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="ribbonItem" cn="ribbon页签" jsType="artery-base" nameprop="title"
+	icon="ribbonItem.gif" iconNew="ribbonItemNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2010-05-12</CreateTime>
+		<Describe>Ribbon页签控件,一般用于放ribbonGroup控件,没有链接到功能,可以写点击时脚本来实现</Describe>
+		<Images>
+			<File>info2.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="ribbonArea" />
+	</Parents>
+	<Class>com.thunisoft.artery.plugin.tabs.ribbon.RibbonItem</Class>
+	<JsFile>
+		<File>ribbonItem.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apRibbonItem</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="标题" type="1" name="title" export="true"
+			tips="设置tab面板标题，支持html">
+			<Value>title</Value>
+		</Property>
+		 <Property cn="样式名称" type="1" name="className"  tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+	      <Value />
+	    </Property>
+		<Property cn="默认激活" type="11" name="active" export="true"
+			tips="设置ribbonItem在ribbon生成时默认激活">
+			<Value>false</Value>
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient"
+			tips="鼠标点击本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer"
+			tips="鼠标点击本组件时触发的服务器端事件">
+			<Value />
+        <Description>
+        
+        <![CDATA[
+        <p>鼠标点击本组件时触发的服务器端事件</p>     
+
+        <pre>
+/**
+	 *  ribbon页签
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public void ribbonItem1ac19_onClickServer(Item item) {
+	
+	}
+</pre>]]>
+      </Description>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+	 		tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+	<Method name="select" return="void" tips="选择此ribbon页签">
+  		<Description><![CDATA[<p>选择此ribbon页签</p><pre>
+Artery.get("ribbonItemId").select();
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+      <Method name="deselect" return="void" tips="取消当前ribbon页签的选择">
+  		<Description><![CDATA[<p>取消当前ribbon页签的选择</p><pre>
+Artery.get("ribbonItemId").deselect();
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>无</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	</Methods>
+</Item>

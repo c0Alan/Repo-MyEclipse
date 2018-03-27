@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0cc50844137300953aa66fd4cae0077f</id>
+  <cfgTbl>T_SCGL_SCHD</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.form.bdys.trigger.Trigger.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/form/bdys/trigger/Trigger.js</jsLocation>
+  <descript>​</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <background-color>#ffffff</background-color>
+      <text-align>left</text-align>
+      <Items>
+        <formArea sid="Abac6f2c12b4714697ea19c4a33631c54">
+          <id>form1</id>
+          <width>500</width>
+          <labelWidth>100</labelWidth>
+          <bodyStyle>padding:5px;</bodyStyle>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <formTableBorder>false</formTableBorder>
+          <cellpadding>5</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <faTrigger sid="Ac3dd2548ce6b84b64ff49621653454e2">
+              <id>trigger_1</id>
+              <onTriggerClickClient><![CDATA[trigger_1_onTriggerClickClient]]></onTriggerClickClient>
+              <height>0</height>
+              <value>2</value>
+              <showValueScript><![CDATA[trigger_1_showValueScript]]></showValueScript>
+              <label extend="true">Trigger控件1</label>
+            </faTrigger>
+            <buttonArea sid="Aecfd014af41850027850f5f7039b122f">
+              <id>Aecfd014af41850027850f5f7039b122f</id>
+              <hideLabel extend="true">true</hideLabel>
+              <Items>
+                <button sid="Abbb32c2f8d485f7b2e45b17636491024">
+                  <id>button_submit</id>
+                  <text>提交</text>
+                  <onClickClient><![CDATA[button_submit_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[button_submit_onClickServer]]></onClickServer>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

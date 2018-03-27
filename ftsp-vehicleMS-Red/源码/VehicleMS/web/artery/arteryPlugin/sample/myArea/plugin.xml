@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="myArea" cn="我的区域" menu="示例" icon="myArea.gif" iconNew="myAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe></Describe>
+	</Info>
+	<Parents>
+		<Parent type="topbar"></Parent>
+	</Parents>
+	<Children>
+		<Child type="formArea"></Child>
+	</Children>
+	<Class>
+		com.thunisoft.artery.plugin.sample.MyArea
+  </Class>
+	<JsFile>
+		<File>myArea.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id" tips="">
+			<Value />
+		</Property>
+		<Property cn="名称" type="1" name="text" export="true">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" export="true"
+			mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>200</Value>
+		</Property>
+		<Property cn="高度" type="1" name="height" export="true"
+			mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value>200</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show" tips="">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="">
+			<Value />
+		</Property>
+	</Properties>
+</Item>

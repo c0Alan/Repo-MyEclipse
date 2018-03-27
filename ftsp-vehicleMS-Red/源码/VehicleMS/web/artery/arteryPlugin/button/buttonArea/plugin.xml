@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="buttonArea" menu="面板区域" jsType="artery-base" cn="按钮区域"
+	icon="buttonArea.gif" iconNew="buttonAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>按钮控件的容器</Describe>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+		<Parent type="faBlankLayout" />
+		<Parent type="formArea" />
+	</Parents>
+	<Children>
+		<Child type="button" />
+		<Child type="blankPanel" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.button.ButtonArea
+	</Class>
+	<JsFile>
+		<File>buttonArea.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apButtonArea</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value></Value>
+    </Property>
+    <Property cn="排列方向" type="3" name="direction" export="true" ct="[[水平,hor],[垂直,ver],[浮动,float]]" tips="设置按钮的排列方向，默认为水平排列...">
+      <Value>hor</Value>
+      <Description><![CDATA[
+      设置按钮的排列方向，默认为水平排列
+      <table>
+      	<tr><td>水平排列</td><td>垂直排列</td><td>浮动排列</td></tr>
+      	<tr><td><img src="../../resources/images/common/button/direction1.gif"></td><td><img src="../../resources/images/common/button/direction2.gif"></td><td><img src="../../resources/images/common/button/direction3.png"></td></tr>
+      </table>
+      ]]></Description>
+      <Conditions>
+      	<Condition>浮动排列与水平排列的区别是：如果是水平排列，即使按钮区域宽度过短，按钮也会把按钮区域撑宽，保持在同一行；而如果是浮动排列，按钮会根据按钮区域的实际宽度，做换行处理</Condition>
+      	<Condition>浮动排列默认为靠左浮动。排列方向设置为“浮动”后，对齐方式设置为“center”或“right”是不会生效</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="对齐方式" type="3" name="align" export="true" ct="[left,center,right,fill]" tips="设置按钮的对齐方式，默认为左对齐">
+      <Value>left</Value>
+      <Description><![CDATA[
+      对齐方式有left,center,right,fill四个选项。其中,fill为填充对齐方式，按钮会忽略所设置的宽度属性，根据按钮区域的实际宽度进行填充
+      <table>
+      	<tr><td>垂直排列的填充方式</td></tr>
+      	<tr><td><img src="../../resources/images/common/button/align_fill.png"></td></tr>
+      </table>
+      ]]></Description>
+    </Property>
+    <Property cn="按钮间距" type="2" name="spacing" export="true" tips="设置按钮间的间距">
+      <Value>5</Value>
+    </Property>
+    <Property cn="开关模式" type="11" name="toggle" export="true" tips="当设置为true时，本控件下的所有button控件只会有一个处于选中状态...">
+      <Value>false</Value>
+      <Description><![CDATA[
+      当设置为true时，本控件下的所有button控件只会有一个处于选中状态，即按钮按下时的状态<br><img src="../../resources/images/common/button/toggle.gif">
+      ]]></Description>
+    </Property>
+    <Property cn="是否显示边框" type="11" name="border" export="true" tips="设置为true时，显示按钮区域的边框，否则不显示" inherit="false">
+      <Value>false</Value>
+    </Property>
+    <Property cn="组件容器样式" type="1" name="style"  tips="设置本组件的样式，可填写css代码">
+      <Value />
+    </Property>
+    <Property cn="样式名称" type="1" name="className"  tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+      <Value />
+    </Property>
+    <Property cn="主题样式" type="21" name="themeStyle" tips="设置列表的风格样式">
+	  <Value>inherit</Value>
+	</Property>
+    <Property cn="是否隐藏" type="11" name="hidden" export="true"  tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight" tips="设置后，拥有该权限的用户访问才会生成此控件...">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14" name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <Methods>
+  	<Method name="addItem" return="object" tips="添加控件">
+  	</Method>
+  	<Method name="hide" return="void" tips="隐藏本控件">
+  	</Method>
+  	<Method name="isHidden" return="boolean" tips="控件是否处于隐藏状态">
+  	</Method>
+  	<Method name="removeItem" return="void" tips="删除控件">
+  	</Method>
+  	<Method name="show" return="void" tips="显示本控件">
+  	</Method>
+  </Methods>
+</Item>
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>5d0e102e82bafa2b25a955f50d8c1659</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.dev.form.XjbySql.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/dev/form/XjbySql.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form05312">
+      <id>form05312</id>
+      <bodyStyle>padding:30px;</bodyStyle>
+      <Items>
+        <formArea sid="0015ce04403d97750b086145ff27ec26">
+          <id>formAreae6958</id>
+          <ds>rs1</ds>
+          <Items>
+            <faString sid="4ba3af5196ba2bab9faf47fdf246a497">
+              <id>faStringCNAME</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+            </faString>
+            <faString sid="5bffb50a648f7206927d1e5d61f88c47">
+              <id>faStringCAUTH</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+            </faString>
+            <faString sid="6535809cd1640f2388bbd89c07157dd7">
+              <id>faStringCPUBLISHER</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+            </faString>
+            <faString sid="6b4adacd450eb14572ef6be1868f7e7a">
+              <id>faStringCISBN</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ISBN</inheritfld>
+              <dataName>{rs1.C_ISBN}</dataName>
+            </faString>
+            <faDate sid="7b2fcd06601cf531855d8818b16a7be9">
+              <id>faDateDPUBLISHER</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs1.D_PUBLISHER}</dataName>
+            </faDate>
+            <faDate sid="9a603aa36c170abb57ccad2f26bbf333">
+              <id>faDateDBUY</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{rs1.D_BUY}</dataName>
+            </faDate>
+            <faCode sid="cef1a31fc4ecc651c33c8cf7c120502f">
+              <id>faStringCLIBRARYID</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{rs1.C_LIBRARYID}</dataName>
+              <dynamicData><![CDATA[faStringCLIBRARYID_dynamicData]]></dynamicData>
+            </faCode>
+            <footer sid="70be87f92c5cedbffc5875e689b74898">
+              <id>footerb46f4</id>
+              <Items>
+                <button sid="8f5ea882065231fdd7f01bbdcd8f4477">
+                  <id>submitBtn</id>
+                  <text>提交</text>
+                  <onClickClient><![CDATA[submitBtn_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[submitBtn_onClickServer]]></onClickServer>
+                </button>
+              </Items>
+            </footer>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

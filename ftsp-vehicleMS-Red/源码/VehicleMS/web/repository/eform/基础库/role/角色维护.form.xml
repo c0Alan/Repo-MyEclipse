@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1b3b408e9d3d76daa4fcfc96facbb538</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.role.Jswh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/role/Jswh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form9195f">
+      <id>form9195f</id>
+      <themeStyle />
+      <Items>
+        <navTabArea sid="79e25cd86f98269d78e9b51d361e272c">
+          <id>navTabArea9ee4f</id>
+          <height>100%</height>
+          <tabPosition>top</tabPosition>
+          <style>padding-top:10px</style>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <navTabItem sid="24432cbc9158cc4fe2b82fef6bf133aa">
+              <id>navTabItem9c982</id>
+              <title>系统角色</title>
+              <active>true</active>
+              <Items>
+                <blankPanel sid="7e7276fe699eafd771254d21c7033851">
+                  <id>blankPanel8cd1f</id>
+                  <height>100%</height>
+                  <bodyStyle>padding:5 5 0 5;</bodyStyle>
+                  <themeStyle />
+                  <bodyContainer>true</bodyContainer>
+                  <Items>
+                    <tableLayout sid="67a5cee59d4accdb292902ebccdc6339">
+                      <id>tableLayoutd2a72</id>
+                      <colWidths>25%,75%</colWidths>
+                      <colSpacing>4</colSpacing>
+                      <height>100%</height>
+                      <Items>
+                        <blankPanel sid="37a39c3985bf08197c9a6ea3acb24537">
+                          <id>blankPanel23495</id>
+                          <height>100%</height>
+                          <frame>true</frame>
+                          <border>true</border>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <header sid="d4c7a5589b274ba2bbcf1102ef0e7596">
+                              <id>header64d3b</id>
+                              <text>系统角色</text>
+                              <bodyStyle>font-size:14px;padding:3px;</bodyStyle>
+                            </header>
+                            <dynamicNav sid="df534e9e3e5b402505dfbc2e5092618f">
+                              <id>sysRoleList</id>
+                              <line>false</line>
+                              <themeStyle>orange</themeStyle>
+                              <useArrows>true</useArrows>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                        <operArea sid="7426a605d078cd47fa592036fa214386">
+                          <id>sysOperArea</id>
+                        </operArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabItem>
+            <navTabItem sid="8d7233e1e9815acae220957df865ac8e">
+              <id>navTabItemf5b9e</id>
+              <title>自定义角色</title>
+              <Items>
+                <blankPanel sid="641e2fa250e7b4d2d287c029978df65a">
+                  <id>blankPanelf34d9</id>
+                  <height>100%</height>
+                  <bodyStyle>padding:5 5 0 5;</bodyStyle>
+                  <themeStyle />
+                  <bodyContainer>true</bodyContainer>
+                  <Items>
+                    <tableLayout sid="b0c97000217efda497a40d127eedc7ec">
+                      <id>tableLayout3a9eb</id>
+                      <colWidths>25%,75%</colWidths>
+                      <colSpacing>4</colSpacing>
+                      <height>100%</height>
+                      <Items>
+                        <blankPanel sid="aafa3f292d3e3f7c2a152cc3e5d0981c">
+                          <id>blankPanel906ce</id>
+                          <height>100%</height>
+                          <frame>true</frame>
+                          <border>true</border>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <header sid="956317a49d00f7e7f0292c9cc439b352">
+                              <id>header0b68d</id>
+                              <text />
+                              <headerStyle>padding:0;</headerStyle>
+                              <Items>
+                                <blankPanel sid="c8739ba73544dbacd2cf161ff8b39f52">
+                                  <id>blankPanel8ff02</id>
+                                  <bodyStyle>overflow:hidden;</bodyStyle>
+                                  <Items>
+                                    <topbar sid="cca04f6660a55690f16d79ffc4ff8456">
+                                      <id>topbar15c6a</id>
+                                      <themeStyle>unis</themeStyle>
+                                      <Items>
+                                        <tbText sid="5887aa170aa3655fe751f2bb26d667b9">
+                                          <id>tbTextc7959</id>
+                                          <text>&lt;span style="font-size:14px;padding:3px;color:#15428B;"&gt;自定义角色&lt;/span&gt;</text>
+                                        </tbText>
+                                        <tbSeparator sid="bb35c9fde6d68fd64302ef9319c771df">
+                                          <id>tbSeparator97f1d</id>
+                                        </tbSeparator>
+                                        <tbButton sid="2e0a5f12b23f50eb81ee7a48e46154c4">
+                                          <id>addRoleBtn</id>
+                                          <text>新建</text>
+                                          <icon>/artery/arteryImage/symbol/add.gif</icon>
+                                          <onlyShowIcon>true</onlyShowIcon>
+                                          <linkto>{"formId":"ba646ede9e99a1c0326e84bb05bc00ac","formName":"新建角色","formType":"1","params":{},"target":"_window","targetWidth":"300","targetHeight":"190","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"2","title":"新建权限","wincfg":""}</linkto>
+                                        </tbButton>
+                                        <tbButton sid="5b0b6dc7aacb8d76901266b3a9f4c014">
+                                          <id>delRoleBtn</id>
+                                          <text>删除</text>
+                                          <icon>/artery/arteryImage/sys/del.gif</icon>
+                                          <onlyShowIcon>true</onlyShowIcon>
+                                          <onClickClient><![CDATA[delRoleBtn_onClickClient]]></onClickClient>
+                                          <onClickServer><![CDATA[delRoleBtn_onClickServer]]></onClickServer>
+                                        </tbButton>
+                                      </Items>
+                                    </topbar>
+                                  </Items>
+                                </blankPanel>
+                              </Items>
+                            </header>
+                            <footer sid="5c373ee88e83478538faf21135f97809">
+                              <id>footer754c5</id>
+                              <spacing>0</spacing>
+                              <Items>
+                                <blankPanel sid="9423105c1ff7b55cba261826b9ece9f2">
+                                  <id>blankPanelde00c</id>
+                                  <bodyStyle>padding-top:3px;</bodyStyle>
+                                  <Items>
+                                    <formArea sid="72e10c9e23bae56eecf0ad95215287a4">
+                                      <id>formAreaf1cd6</id>
+                                      <colWidths>80% 20%</colWidths>
+                                      <colSpacing>5</colSpacing>
+                                      <runTimeDisplay>false</runTimeDisplay>
+                                      <onEnter><![CDATA[formAreaf1cd6_onEnter]]></onEnter>
+                                      <cellpadding>0</cellpadding>
+                                      <cellpaddingRead>0</cellpaddingRead>
+                                      <cellpaddingDisplay>0</cellpaddingDisplay>
+                                      <Items>
+                                        <faString sid="8ab1ae4217b679d3b06e4f5aa3ccda30">
+                                          <id>searchString</id>
+                                          <height>100%</height>
+                                          <emptyText>请输入角色名称</emptyText>
+                                          <displayType>editable</displayType>
+                                          <hideLabel>true</hideLabel>
+                                        </faString>
+                                        <buttonArea sid="069acb511c8a9117834d75a96955e203">
+                                          <id>buttonArea93bd8</id>
+                                          <label>查询</label>
+                                          <hideLabel>true</hideLabel>
+                                          <Items>
+                                            <button sid="0e79706c7177e5a22379ccd77f48083e">
+                                              <id>searchBtn</id>
+                                              <width>30</width>
+                                              <text>查询</text>
+                                              <onClickClient><![CDATA[searchBtn_onClickClient]]></onClickClient>
+                                              <onClickServer><![CDATA[searchBtn_onClickServer]]></onClickServer>
+                                              <themeStyle>cookie</themeStyle>
+                                            </button>
+                                          </Items>
+                                        </buttonArea>
+                                      </Items>
+                                    </formArea>
+                                  </Items>
+                                </blankPanel>
+                              </Items>
+                            </footer>
+                            <dynamicNav sid="7f1fdba1d43fc108e9057154e99747c4">
+                              <id>customRoleList</id>
+                              <line>false</line>
+                              <themeStyle>orange</themeStyle>
+                              <useArrows>true</useArrows>
+                              <onLoad><![CDATA[customRoleList_onLoad]]></onLoad>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                        <operArea sid="0e1747d70e82a49570d8777f0b276dbb">
+                          <id>customOperArea</id>
+                        </operArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabItem>
+          </Items>
+        </navTabArea>
+        <blankPanel sid="78728cd3b699f3620a9d13fe543a3f02">
+          <id>blankPanel8768f</id>
+          <width>300</width>
+          <height>100</height>
+          <border>true</border>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <style>background-color:#FFFFC6;border:1px solid #FF9000;</style>
+          <hidden>true</hidden>
+          <Items>
+            <tableLayout sid="3104a086887fa569561238c7dfb53004">
+              <id>tableLayoutae89d</id>
+              <height>100%</height>
+              <Items>
+                <htmlArea sid="03870a16f141cd54ef7d935cb3b6bfdb">
+                  <id>htmlArea969b0</id>
+                </htmlArea>
+                <buttonArea sid="74ec148186136bf590ce826291c806ec">
+                  <id>buttonAreafc129</id>
+                  <align>right</align>
+                  <Items>
+                    <simpleButton sid="50f2d943ef61633fa87fa4b1dab71bdb">
+                      <id>simpleButtona2fc0</id>
+                      <text>关闭</text>
+                      <style>font-size:14px;color:#006699;</style>
+                      <onClickClient><![CDATA[closeSBtn_onClickClient]]></onClickClient>
+                    </simpleButton>
+                  </Items>
+                </buttonArea>
+                <htmlArea sid="c86fba39f370a6ca1b2f0981c2a01da2">
+                  <id>htmlArea50489</id>
+                  <style>font-size:14px;</style>
+                  <colSpan>2</colSpan>
+                  <synTabStyle>height:100%;</synTabStyle>
+                </htmlArea>
+              </Items>
+            </tableLayout>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

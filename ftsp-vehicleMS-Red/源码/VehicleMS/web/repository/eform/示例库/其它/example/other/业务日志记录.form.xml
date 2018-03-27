@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d1c65e3c39e51733627b37ea81075bac</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.other.Ywrzjl.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/other/Ywrzjl.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <formArea sid="A20b28209ce6185da6b2cb7c4998cc5e5">
+          <id>formArea</id>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <formTableBorder>false</formTableBorder>
+          <cellpadding>5</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <faString sid="ddb5158f1113058c43ddd96c9d37bb55">
+              <id>faString_log</id>
+              <editor>textarea</editor>
+              <label extend="true">日志内容</label>
+            </faString>
+          </Items>
+        </formArea>
+        <buttonArea sid="Ab62ac9befec2edd12b0ec12d0278ed27">
+          <Items>
+            <button sid="Ac95bf906b4ae7213de2a6a090c4590c2">
+              <id>button_send</id>
+              <text>点击按钮，记录业务日志</text>
+              <onClickClient><![CDATA[button_send_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[button_send_onClickServer]]></onClickServer>
+            </button>
+          </Items>
+        </buttonArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

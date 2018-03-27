@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <cid>FE0FABAC451D13AF08E0D202648D6C2B</cid>
+  <name>定期清空临时文件</name>
+  <cron>0 0 0 * * ?</cron>
+  <jobType>3</jobType>
+  <sql />
+  <className />
+  <methodName />
+  <clusterId>2</clusterId>
+  <logInfo>1</logInfo>
+  <deploy>1</deploy>
+  <script>import java.io.File;&#xD;import java.io.IOException;&#xD;import org.apache.commons.io.FileUtils;&#xD;import com.thunisoft.artery.util.ResourceUtil;&#xD;&#xD;try {&#xD;	System.out.println("【清空/artery/downloads下的临时文件开始...】");&#xD;	File tempFolder = ResourceUtil.getResource("/artery/downloads").getFile();&#xD;	if (tempFolder.exists()) {&#xD;		FileUtils.cleanDirectory(tempFolder);&#xD;	}&#xD;	System.out.println("【清空/artery/downloads下的临时文件结束】");&#xD;} catch (IOException e) {&#xD;	&#xD;	e.printStackTrace();&#xD;}</script>
+  <exceptionStatus>1</exceptionStatus>
+  <exceptionProcess>2</exceptionProcess>
+</plan>
+

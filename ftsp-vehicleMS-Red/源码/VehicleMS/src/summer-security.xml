@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<access-control xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://172.16.16.123:8081/nexus/summer2/summer-security.xsd">
+  <access-cfg-types>
+    <typedef class="com.thunisoft.summer.security.access.uri.URIAccessCfgType"
+      loaderClass="com.thunisoft.summer.security.access.uri.URIAccessCfgLoader">
+      <!-- required:type name -->
+      <property name="name" value="artery-plugin" />
+      <!-- struts action -->
+      <property name="uriPattern" value="(/artery/(?:plugin|test)/).+" />
+      <property name="accessKeyPattern" value="$1" />
+    </typedef>
+    <!-- struts action 访问类型 -->
+    <typedef class="com.thunisoft.summer.security.access.uri.URIAccessCfgType"
+      loaderClass="com.thunisoft.summer.security.access.uri.RouteAccessCfgLoader">
+      <!-- required:type name -->
+      <property name="name" value="uri" />
+      <!-- struts action -->
+      <property name="uriPattern" value="(/.+?)\.do" />
+      <property name="accessKeyPattern" value="$1" />
+    </typedef>
+    <!-- jsp 访问类型:控制jsp页面的登录访问 -->
+    <typedef class="com.thunisoft.summer.security.access.uri.URIAccessCfgType"
+      loaderClass="com.thunisoft.summer.security.access.uri.URIAccessCfgLoader">
+      <!-- required:type name -->
+      <property name="name" value="jsp" />
+      <!-- struts action -->
+      <property name="uriPattern"
+        value="(/.+?)\.jsp" />
+      <property name="accessKeyPattern" value="$1.jsp" />
+    </typedef>
+    <!-- ajax 访问类型 -->
+    <typedef class="com.thunisoft.summer.security.access.ajax.AjaxAccessCfgType"
+      loaderClass="com.thunisoft.summer.security.access.ajax.AjaxAccessCfgLoader">
+      <!-- required:type name -->
+      <property name="name" value="ajax" />
+      <property name="ajaxServletPath" value="/ajaxServlet" />
+    </typedef>
+  </access-cfg-types>
+  <handler-chain>
+    <handler
+      class="com.thunisoft.summer.security.access.hanlder.LogonHandler">
+      <property name="id" value="logonHandler" />
+      <property name="defNotLogonForward" value="/artery/pub/login/login.jsp" />
+      <property name="defRequireLogin" value="true" />
+      <property name="redirect" value="false" />
+    </handler>
+    <handler
+      class="com.thunisoft.summer.security.access.hanlder.RightHandler">
+      <property name="id" value="rightHandler" />
+      <property name="noRightForward" value="/summer/jsp/error/apperror.jsp" />
+      <property name="noRightCfgAccessible" value="true" />
+    </handler>
+    <handler
+      class="com.thunisoft.summer.security.access.hanlder.CacheAccessHandler">
+      <property name="id" value="cacheAccessHandler" />
+    </handler>
+    <handler
+      class="com.thunisoft.artery.support.handler.CheckFormRightHandler">
+      <property name="filterUrl" value="/artery/form/dealParse.do;/artery/report/dealParse.do;/artery/writparse.do;/artery/preview.do;/artery/script.do" />
+      <property name="defNotLogonForward" value="/artery/pub/login/login.jsp" />
+      <property name="noFormRightForward" value="/artery/pub/jsp/error/noformrighterror.jsp" />
+    </handler>
+  </handler-chain>
+  <!-- 配置不需要登录访问的资源 -->
+  <access-cfg type="uri" requireLogin="false">
+    <access key="/summer/common/login" />
+    <access key="/artery/refresh" />
+    <access key="/artery/preview" />
+    <access key="/artery/form/dealParse" />
+    <access key="/artery/report/dealParse" />
+    <access key="/artery/writparse" />
+    <access key="/artery/script" />
+    <access key="/artery/subsys" route="${action}" requireLogin="true">
+      <route key="enterSystem" requireLogin="false" />
+    </access>
+	<access key="/GetExampleTree" />
+	<access key="/GetExampleFormFile" />
+  </access-cfg>
+  <access-cfg type="jsp" requireLogin="false">
+    <access key="/summer/jsp/error/apperror.jsp" />
+    <access key="/summer/jsp/error/syserror.jsp" />
+    <access key="/summer/jsp/error/noright.jsp" />
+    <access key="/summer/jsp/login/login.jsp" />
+    <access key="/artery/pub/login/login.jsp" />
+    <access key="/artery/pub/login/consoleLogin.jsp" />
+    <access key="/artery/form/parse/parse.jsp" />
+    <access key="/artery/report/parse/parse.jsp" />
+    <access key="/artery/writ/parse/parse.jsp" />
+  </access-cfg>
+  <access-cfg type="artery-plugin" requireLogin="false"  >
+    <!-- 排除文件夹 -->
+    <access key="/artery/test/" />
+    <access key="/artery/plugin/" />
+  </access-cfg>
+  <!-- import: access-cfg -->
+  <import resource="com/thunisoft/artery/module/dict/access-dict.xml" />
+  <import resource="com/thunisoft/artery/module/classcode/impl/access-classCode.xml" />
+  <import resource="com/thunisoft/artery/module/complib/access-complib.xml" />
+  <import resource="com/thunisoft/artery/module/search/access-search.xml" />
+  <import resource="com/thunisoft/artery/parse/eform/form/access-form.xml" />
+  <import resource="com/thunisoft/artery/module/formmake/form/access-formmake.xml" />
+  <import resource="com/thunisoft/artery/module/formmake/report/access-report.xml" />
+  <import resource="com/thunisoft/artery/parse/eform/report/access-report.xml" />
+  <import resource="com/thunisoft/artery/module/formmake/writ/access-writmake.xml" />
+  <import resource="com/thunisoft/artery/parse/eform/writ/access-writparse.xml" />
+  <!-- summer -->
+  <import resource="accesscfg/access-code.xml" />
+</access-control>

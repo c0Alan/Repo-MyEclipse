@@ -1,0 +1,7 @@
+rc.put('key','value');//增加一个参数
+rc.putJson({name:'zhang',id:'2323'});//增加json格式的参数列表
+
+//发送请求，在回调函数中处理返回结果
+rc.send(function(result){
+	
+});

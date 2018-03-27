@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="formArea" cn="表单区域" icon="formArea.gif" iconNew="formAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>
+			此控件可生成页面的form元素，可添加表单控件，如文本框，下拉框等表单控件。
+			所有的表单控件都只能添加到本控件或本控件的布局控件（空布局，Fieldset）中，而不能直接添加到其它控件中。
+		</Describe>
+		<Images>
+			<File>info1.gif</File>
+			<File>info2.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+		<Parent type="topbar" />
+		<Parent type="bottomBar" />
+	</Parents>
+	<Children>
+		<Child type="faString" />
+		<Child type="faDate" />
+		<Child type="faTime" />
+		<Child type="faNumeric" />
+		<Child type="faBinary" />
+		<Child type="faCode" />
+		<Child type="faClassCode" />
+		<Child type="faOrgan" />
+		<Child type="faIdentity" />
+		<Child type="faHidden" />
+		<Child type="faTrigger" />
+		<Child type="faTree" />
+		<Child type="faBlankLayout" />
+		<Child type="buttonArea" />
+		<Child type="htmlArea" />
+		<Child type="blankPanel" />
+		<Child type="header" />
+		<Child type="topbar" />
+		<Child type="bottomBar" />
+		<Child type="footer" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.form.FormArea
+	</Class>
+	<JsFile>
+		<File>formArea.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apformarea</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="ds"
+			tips="设置关联到的数据源名称（数据源名称在表单的数据源页面设置的），系统会根据此属性执行加载数据...">
+			<Value />
+			<Description>
+				设置关联到的数据源名称（数据源名称在表单的数据源页面设置的，如：rs1），系统会根据此属性执行加载数据等操作
+			</Description>
+			<Conditions>
+				<Condition>在制作表单时控件如果是从数据字典中拖放的形式生成的话是需要此属性来生成“数据源”属性的值的，所以需要先设置此值
+				</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="宽度" type="1" name="width" group="大小"
+			mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+		</Property>
+		<Property cn="高度" type="1" name="height" group="大小"
+			mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="列数" type="2" name="colNum" group="列设置"
+			tips="设置table的列数，即table布局共有几列">
+			<Value>2</Value>
+		</Property>
+		<Property cn="每列宽度" type="1" name="colWidths" group="列设置"
+			tips="设置每列的宽度，如有多列，用“，”号分隔。支持整数值和百分比">
+			<Value />
+		</Property>
+		<Property cn="列间距" type="1" name="colSpacing" group="列设置"
+			tips="设置每列之间的宽度">
+			<Value />
+		</Property>
+		<Property cn="业务提示" type="11" name="comment"
+			tips="设置为true时，会在控件的label后面显示“业务提示”图标，点击的话可以...">
+			<Value>true</Value>
+			<Description><![CDATA[
+				<p>设置为true时，会在控件的label后面自动显示“业务提示”图标</p>
+				<p>点击的话可以把本控件“描述信息(comment)”属性的值通过系统提示显示出来</p>
+				<img src='formArea/comment.gif'>
+			]]></Description>
+		</Property>
+		<Property cn="提交时自动验证" type="11" name="submitAutoValid"
+			export="true" tips="设置表单提交的时候，是否自动进行验证，默认为true">
+			<Value>true</Value>
+			<Description><![CDATA[
+				<p>设置表单提交的时候，是否自动进行验证，默认为true</p>
+				<p>true ：调用表单的submit方法进行提交的时，自动进行验证</p>
+				<p>false：调用表单的submit方法进行提交的时，可调用isValid()方法来手动验证</p>
+				]]></Description>
+		</Property>
+		<Property cn="提交无效节点" inherit="false" type="11" name="submitDisabled" 
+			export="true" tips="设置表单提交的时候，是否提交displayType属性为disabled的节点，默认为false">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>设置表单提交的时候，是否提交displayType属性为disabled的节点，默认为false</p>
+				<p>true ：调用表单的submit方法进行提交的时，无效节点的值也将被提交到服务器端</p>
+				<p>false：调用表单的submit方法进行提交的时，无效节点的值不会被提交到服务器端</p>
+			]]></Description>
+		</Property>
+		<Property cn="自动隐藏TR" type="11" name="autoHideTr" export="true"
+			tips="属性值为true时，当同行的控件都以display方式隐藏时，此行的TR也自动隐藏。">
+			<Value>false</Value>
+		</Property>
+		<Property cn="标签分隔符" type="1" name="labelSeparator" group="标签"
+			tips="设置表单区域的标签后面的分隔符，默认为“:”">
+			<Value>:</Value>
+			<Description><![CDATA[
+        <p>设置表单区域的标签后面的分隔符，默认为“:”</p>
+        <table width=1><tr><td style='text-align:center;font-weight:700'>标签的分隔符为“:”</td><td style='text-align:center;font-weight:700'>标签的分隔符为“-”</td></tr><tr><td><img src='../../resources/images/common/form/formArea/formArea_labelSeparator1.png'></td><td><img src='../../resources/images/common/form/formArea/formArea_labelSeparator2.png'></td></tr></table>
+      ]]></Description>
+		</Property>
+		<Property cn="子标签位置" type="3" name="labelAlign" group="标签"
+			export="true" ct="[left,top,right]" tips="设置表单控件的label的位置，可设置为left，right，top">
+			<Value>right</Value>
+		</Property>
+		<Property cn="子标签宽度" type="2" name="labelWidth" group="标签"
+			export="true" tips="设置表单控件的label的宽度，默认为100">
+			<Value>100</Value>
+			<Description><![CDATA[
+        <p>设置表单控件的label的宽度，默认为100</p>
+        <table width=1><tr><td style='text-align:center;font-weight:700'>子标签宽度为：100 </td><td style='text-align:center;font-weight:700'>子标签宽度为：40 </td></tr><tr><td><img src='../../resources/images/common/form/formArea/formArea_labelWidth1.png'></td><td><img src='../../resources/images/common/form/formArea/formArea_labelWidth2.png'></td></tr></table>
+      ]]></Description>
+		</Property>
+		<Property cn="子后缀宽度" type="2" name="subSuffixWidth" group="后缀"
+			export="true" tips="设置表单控件的子控件后缀的宽度">
+			<Value />
+			<Description><![CDATA[
+        <p>设置表单控件的label的宽度，默认为100</p>
+        <table width=1><tr><td style='text-align:center;font-weight:700'>子后缀宽度为：100 </td><td style='text-align:center;font-weight:700'>子后缀宽度为：40 </td></tr><tr><td><img src='../../resources/images/common/form/formArea/formArea_suffixWidth1.png'></td><td><img src='../../resources/images/common/form/formArea/formArea_suffixWidth2.png'></td></tr></table>
+      ]]></Description>
+		</Property>
+		<Property cn="展现时子后缀位置" type="3" name="displaySuffixPosition"
+			group="后缀" ct="[right,follow]" tips="设置控件的后缀位置，可选right、follow；默认为right">
+			<Value>right</Value>
+			<Description><![CDATA[
+        <p>设置控件的后缀位置，可选right、follow；默认为right</p>
+        <p>right：后缀将显示在控件的右侧</p>
+        <p>follow：后缀将紧跟着控件的值进行显示</p>
+        <table width=1><tr><td style='text-align:center;font-weight:700'>展现时子后缀位置：right</td><td style='text-align:center;font-weight:700'>展现时子后缀位置：follow</td></tr><tr><td><img src='../../resources/images/common/form/formArea/formArea_displaySuffixPosition1.png'></td><td><img src='../../resources/images/common/form/formArea/formArea_displaySuffixPosition2.png'></td></tr></table>
+      ]]></Description>
+			<Conditions>
+				<Condition>当表单的展现类型为display时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="使用Frame样式" type="11" name="frame" group="样式"
+			export="true" tips="当设置为true时，本组件会显示Ext的边框">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否显示边框" inherit='false' type="11" name="border"
+			group="样式" export="true" tips="设置是否显示最外层的边框，true：显示，false：不显示；默认为false">
+			<Value>false</Value>
+			<Description><![CDATA[
+        <p>设置是否显示最外层的边框，true：显示，false：不显示；默认为false</p>
+        <table width=1><tr><td style='text-align:center;font-weight:700'>是否显示边框：true</td><td style='text-align:center;font-weight:700'>是否显示边框：false</td></tr><tr><td><img src='../../resources/images/common/form/formArea/formArea_border1.png'></td><td><img src='../../resources/images/common/form/formArea/formArea_border2.png'></td></tr></table>
+      ]]></Description>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle" group="样式"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" group="样式"
+			tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="table容器样式" type="1" name="tableStyle" group="样式"
+			tips="设置table布局容器的样式，可填写css代码，本样式直接作用到table标签上">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className" group="样式"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="强制display" type="11" name="runTimeDisplay"
+			export="true"
+			tips="仅当表单的打开方式为display时有效，此属性为true，则将忽略表单区域中的控件的展现类型属性的设置，全部以display的方式进行展示。">
+			<Value>true</Value>
+		</Property>
+		<!--
+			<Property cn="展现显示必填项标识" type="11" name="displayShowRequired"
+			export="true" tips="仅当表单的打开方式为display时有效，此属性为true，则显示表单中必填项的必填标识">
+			<Value>true</Value> </Property>
+		-->
+		<Property cn="展现类型" type="3" name="displayType" inherit="false"
+			ct="[inherit,editable,readOnly,display]" tips="设置表单的展现类型，此属性默认为inherit，即继承自表单的运行时状态...">
+			<Value>inherit</Value>
+			<Description><![CDATA[
+      	<p>设置表单的展现类型，此属性默认为inherit，即继承自表单的运行时状态，如果表单<span style="color:red;">运行时状态</span>为“insert”和“update”，则展现为editable（可编辑），如果表单<span style="color:red;">运行时状态</span>为“display”，则展现为display（展现状态）</p>
+      	<table width=1><tr><td style='text-align:center;font-weight:700'>editable类型</td><td style='text-align:center;font-weight:700'>readOnly类型</td><td style='text-align:center;font-weight:700'>display类型</td></tr><tr><td><img src='formArea/displayType1.gif'></td><td><img src='formArea/displayType2.gif'></td><td><img src='formArea/displayType3.gif'></td></tr></table>
+      ]]></Description>
+			<Conditions>
+				<Condition>如果子控件的“展现类型”属性为inherit时，则子控件会继承此属性显示</Condition>
+				<Condition>如果子控件的“展现类型”属性不为inherit时，则子控件会按自己设置的值显示</Condition>
+				<Condition>每种展现类型展示时都可以自定义输入框的样式</Condition>
+				<Condition>每种展现类型的样式如果不自定义输入框的样式，默认都继承自“主题设置”模块中配置的样式</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="客户端" type="15" group="验证脚本" inherit="false"
+			name="onValidClient" tips="表单控件的验证事件，可在此事件中对表单中的控件进行自定义的验证，支持向后台发送请求的验证">
+			<Value />
+			<Description><![CDATA[
+      <p>表单控件的验证事件，可在此事件中对表单中的控件进行自定义的验证，支持向后台发送请求的验证</p>
+      <br>
+      <b>客户端脚本</b>
+<pre>
+/**
+ * onValidClient(formArea79ec9)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function formArea79ec9_onValidClient (rc){
+	// 验证图书名称不为空
+	if(Artery.get("frmCNAME").value == ""){
+		return {errorText:"图书名称不能为空",errorId:"frmCNAME"};
+	}
+
+	// 服务器端验证
+	rc.put("frmCNAME",Artery.get("frmCNAME").value);
+	rc.send();
+	if(rc.result.errorText){
+		return rc.result;
+	}
+
+	// 多控件逻辑验证
+	if(Artery.get("frmDPUBLISHER").value > Artery.get("frmDBUY").value){
+		return {errorText:"购买日期不能在出版日期之前",errorId:"frmDBUY"};
+	}
+}
+</pre>
+      ]]></Description>
+			<Conditions>
+				<Condition>上面示例客户端脚本返回的errorText代表着错误信息，errorId代表着需要定位的控件的id
+				</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="服务器端" type="14" group="验证脚本" inherit="false"
+			name="onValidServer" tips="表单控件的验证事件，可在此事件中对表单中的控件进行自定义的验证，支持向后台发送请求的验证">
+			<Value />
+			<Description><![CDATA[
+      <p>表单控件的验证事件，可在此事件中对表单中的控件进行自定义的验证，支持向后台发送请求的验证</p>
+      <br>
+      <b>服务器端脚本</b>
+<pre>
+	/**
+	 * 验证时脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public Object formArea79ec9_onValidServer(Item item) {
+		Map<String, String> result = new HashMap<String, String>();
+		//图书名称不能为test
+		if(ParamUtil.getString("frmCNAME").equals("test")){
+			result.put("errorText","图书名称不能为test,这是服务器端返回的错误信息啊");
+			result.put("errorId","frmCNAME");
+		}
+		return result;
+	}
+</pre>
+      ]]></Description>
+		</Property>
+		<Property cn="回车时脚本" type="15" name="onEnter" tips="在表单控件中点击回车时触发的事件，可写js脚本">
+			<Value />
+			<Description><![CDATA[
+      	<p>在表单控件中点击回车时触发的事件，可写js脚本</p>
+<pre>
+/**
+ * 回车时脚本(formArea79ec9)
+ * 
+ */
+function formArea79ec9_onEnter (){
+	//回车时调用保存按钮的点击方法
+	Artery.get('saveBtn').click();	
+}
+</pre>
+      ]]></Description>
+			<Conditions>
+				<Condition>所有表单中的input和trigger控件回车时都会调用此事件</Condition>
+				<Condition>在此脚本中不应直接操作表单，可调用对应按钮的事件，如回车保存</Condition>
+				<Condition>此验证脚本执行时不会自动调用表单的验证，不能实时验证；只有在调用表单的提交方法（submit()）或者调用表单的验证方发（isValid()）时才会验证
+				</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1" name="showRight" tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="子标签背景色" type="10" name="labelBackColor" group="编辑时"
+			tips="设置label的背景色">
+			<Value></Value>
+		</Property>
+		<Property cn="子标签容器背景色" type="10" name="labelCtBackColor"
+			group="编辑时" tips="设置label容器td的背景色">
+			<Value></Value>
+		</Property>
+		<Property cn="子标签样式" type="1" name="labelSubStyle" group="编辑时"
+			tips="设置label的样式">
+			<Value></Value>
+		</Property>
+		<Property cn="内容容器样式" type="1" name="contentCtStyleEdit" group="编辑时"
+			tips="设置内容td的样式">
+			<Value></Value>
+		</Property>
+		<Property cn=" 是否显示表格线" type="3" name="formTableBorder" ct="[inherit,true,false]"
+			group="编辑时" tips="设置当表单为编辑状态时，是否显示表格线">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="间距" type="1" name="cellpadding" group="编辑时"
+			tips="设置编辑时的表格间距">
+			<Value />
+		</Property>
+		<Property cn="表格线样式" type="1" name="borderStyle" group="编辑时"
+			tips="设置表格线的样式，如：border:1px solid gray;">
+			<Value />
+		</Property>
+		<Property cn="子标签背景色" type="10" name="labelBackColorRead"
+			group="只读时" tips="设置label的背景色">
+			<Value></Value>
+		</Property>
+		<Property cn="子标签容器背景色" type="10" name="labelCtBackColorRead"
+			group="只读时" tips="设置label容器td的背景色">
+			<Value></Value>
+		</Property>
+		<Property cn="子标签样式" type="1" name="labelSubStyleRead" group="只读时"
+			tips="设置label的样式">
+			<Value></Value>
+		</Property>
+		<Property cn="内容容器样式" type="1" name="contentCtStyleRead"
+			group="只读时" tips="设置内容td的样式">
+			<Value></Value>
+		</Property>
+		<Property cn="是否显示表格线" type="3" name="readOnlyBorder" ct="[inherit,true,false]"
+			group="只读时" tips="设置当表单为只读状态时，是否显示表格线">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="间距" type="1" name="cellpaddingRead" group="只读时"
+			tips="设置只读时的表格间距">
+			<Value />
+		</Property>
+		<Property cn="表格线样式" type="1" name="borderStyleRead" group="只读时"
+			tips="设置表格线的样式，如：border:1px solid gray;">
+			<Value />
+		</Property>
+		<Property cn="子标签背景色" type="10" name="labelBackColorDisplay"
+			group="展现时" tips="设置label的背景色">
+			<Value></Value>
+		</Property>
+		<Property cn="子标签容器背景色" type="10" name="labelCtBackColorDisplay"
+			group="展现时" tips="设置label容器td的背景色">
+			<Value></Value>
+		</Property>
+		<Property cn="子标签样式" type="1" name="labelSubStyleDisplay"
+			group="展现时" tips="设置label的样式">
+			<Value></Value>
+		</Property>
+		<Property cn="内容容器样式" type="1" name="contentCtStyleDisplay"
+			group="展现时" tips="设置内容td的样式">
+			<Value></Value>
+		</Property>
+		<Property cn="是否显示表格线" type="3" name="displayBorder" ct="[inherit,true,false]"
+			group="展现时" tips="设置当表单为只读状态时，是否显示表格线">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="间距" type="1" name="cellpaddingDisplay" group="展现时"
+			tips="设置只读时的表格间距">
+			<Value />
+		</Property>
+		<Property cn="表格线样式" type="1" name="borderStyleDisplay"
+			group="展现时" tips="设置表格线的样式，如：border:1px solid gray;">
+			<Value />
+		</Property>
+		<Property cn="加载时脚本" type="15" name="onLoad" tips="控件加载时和reload方法会执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="折叠状态名称" type="1" name="collapseStateName" group="容器"
+			tips="设置控件的更多区域处于折叠状态时的名称">
+			<Value>>>填写更多信息</Value>
+			<Description><![CDATA[
+			设置控件的更多区域处于折叠状态时的名称，默认为：“>>填写更多信息”。<br>
+			当子控件设置属性“生成时容器”为normal或more时，表单区域会生成上下两个区域；<br>
+			上面的为基本区域，所有子控件的“生成时容器”设置为normal的在此区域显示出来；<br>
+			下面的为更多区域，即所设置为more的子控件在此显示，更多区域默认不显示出来<br>
+			<table class="x-table"><thead><td>收起状态</td><td>展开状态</td></thead><tr><td><img src='../../resources/images/common/form/collapseState.gif'></td><td><img src='../../resources/images/common/form/expandState.gif'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="折叠状态名称(展现)" type="1" name="collapseStateNameDisplay" group="容器"
+			tips="设置控件的更多区域处于折叠状态时的名称">
+			<Value>>>展开更多信息</Value>
+			<Description><![CDATA[
+			设置控件的更多区域处于折叠状态时的名称，默认为：“>>展开更多信息”。<br>
+			当子控件设置属性“生成时容器”为normal或more时，表单区域会生成上下两个区域；<br>
+			上面的为基本区域，所有子控件的“生成时容器”设置为normal的在此区域显示出来；<br>
+			下面的为更多区域，即所设置为more的子控件在此显示，更多区域默认不显示出来<br>
+			<table class="x-table"><thead><td>收起状态</td><td>展开状态</td></thead><tr><td><img src='../../resources/images/common/form/collapseStateDisplay.gif'></td><td><img src='../../resources/images/common/form/expandStateDisplay.gif'></td></tr></table>
+			]]></Description>
+			<Conditions>表单展现方式为display时有效。</Conditions>
+		</Property>
+		<Property cn="展开状态名称" type="1" name="expandStateName" group="容器"
+			tips="设置控件更多区域处于展开状态时的名称">
+			<Value>>>收起更多信息</Value>
+			<Description><![CDATA[
+			设置控件更多区域处于展开状态时的名称，默认为：“>>收起更多信息”。<br>
+			当子控件设置属性“生成时容器”为normal或more时，表单区域会生成上下两个区域；<br>
+			上面的为“基本”区域，所有子控件的“生成时容器”设置为normal的在此区域显示出来；<br>
+			下面的为“更多”区域，即所设置为more的子控件在此显示，更多区域默认不显示出来<br>
+			<table class="x-table"><thead><td>收起状态</td><td>展开状态</td></thead><tr><td><img src='../../resources/images/common/form/collapseState.gif'></td><td><img src='../../resources/images/common/form/expandState.gif'></td></tr></table>
+			]]></Description>
+		</Property>
+	</Properties>
+	<ExtendProperties>
+		<Property cn="所占列数" type="2" name="colSpan" group="表格布局"
+			tips="当本组件处于表格布局中时，设置本组件占几列，相当于td的copspan属性">
+			<Value>1</Value>
+		</Property>
+		<Property cn="所占行数" type="2" name="rowSpan" group="表格布局"
+			tips="当本组件处于表格布局中时，设置本组件占几行，相当于td的rowspan属性">
+			<Value>1</Value>
+		</Property>
+		<Property cn="同步表格高度" type="11" name="synTabHeight" group="表格布局"
+			export="true" tips="当本组件的父容器是“表格布局”时，可以通过此属性来设置本组件所在表格容器...">
+			<Value>false</Value>
+		</Property>
+		<Property cn="同步表格样式" type="1" name="synTabStyle" group="表格布局"
+			export="true" tips="本组件设置的样式会应用到表格的td的样式。只有本组件在表格布局内使用时有效">
+			<Value></Value>
+		</Property>
+		<Property cn="标签文字" type="1" name="label" group="标签" tips="设置标签文字">
+			<Value>label</Value>
+		</Property>
+		<Property cn="标签颜色" type="10" name="labelColor" group="标签"
+			tips="设置标签的颜色">
+			<Value></Value>
+		</Property>
+		<Property cn="标签样式" type="1" name="labelStyle" group="标签"
+			tips="设置标签的样式">
+			<Value />
+		</Property>
+		<Property cn="标签容器样式" type="1" name="labelCntStyle" group="标签"
+			tips="设置标签容器td的样式">
+			<Value />
+		</Property>
+		<Property cn="控件容器样式" type="1" inherit="false" name="contentCtStyle" tips="设置内容td的样式">
+			<Value></Value>
+		</Property>
+		<Property cn="隐藏标签" type="11" name="hideLabel" group="标签"
+			tips="设置标签是否隐藏">
+			<Value>false</Value>
+		</Property>
+		<Property cn="生成时容器" type="3" name="showInContainer" ct="[normal,more]"
+			tips="设置控件的显示的容器，默认继承自数据字典的设置，如未对应数据宝典，则显示在基础容器中">
+			<Value>normal</Value>
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="后缀文字" type="1" name="suffixLabel" group="后缀"
+			tips="设置后缀文字">
+			<Value />
+			<Description><![CDATA[
+			设置后缀文字，支持HTML标签，如：<pre><font color=red>设置后缀文字为红色</font></pre>
+			]]></Description>
+		</Property>
+		<Property cn="后缀宽度" type="2" name="suffixWidth" group="后缀"
+			tips="设置控件的后缀的宽度">
+			<Value />
+		</Property>
+		<Property cn="后缀样式" type="1" name="suffixStyle" group="后缀"
+			tips="设置后缀的样式">
+			<Value />
+			<Conditions>
+				<Condition>注意：数值控件的“缩写单位/valueUnit”属性，会被当作后缀来处理，因此会受到此样式的影响</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="隐藏后缀" type="11" name="hideSuffix" group="后缀"
+			tips="设置后缀是否隐藏">
+			<Value>false</Value>
+		</Property>
+		<Property cn="隐藏方式" type="3" name="hideMode" export="true"
+			ct="[display,visibility]" tips="设置组件的隐藏方式，相当于css的样式，可选display和visibility">
+			<Value>display</Value>
+		</Property>
+	</ExtendProperties>
+	<Methods>
+		<Method name="getValues" return="json|string" tips="得到表单区域中控件的键值...">
+			<Description><![CDATA[得到表单区域中控件的键值
+  		<pre>
+//得到json数据，如：{"frmCNAME":"国学拾遗","frmCAUTH":"林语堂","frmDBUYText":"2008-07-07"}
+Artery.get("formArea7F69E").getValues();
+
+//得到字符串url数据，如：frmCNAME=国学拾遗&frmCAUTH=林语堂&frmDBUYText=2008-07-07
+Artery.get("formArea7F69E").getValues(true);
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>asString:boolean 可选的 设置为true时返回字符串，否则返回json</Param>
+			</Parameters>
+			<Return>json|string</Return>
+		</Method>
+		<Method name="submit" return="void" tips="表单提交方法...">
+			<Description><![CDATA[表单提交方法
+  		<pre>
+//提交表单
+Artery.get("formArea7F69E").submit(function(result){
+	//回调处理
+});
+
+//提交表单,传递额外参数
+var params={name:'test'};
+Artery.get("formArea7F69E").submit(function(result){
+	//回调处理
+},params);
+  		</pre>]]></Description>
+			<Parameters>
+				<Param value="function(result){\r\n//回调处理\r\n}">callbak:function 提交事件的回调函数</Param>
+				<Param>params:json 可选的 表单提交时额外传递的参数，参数的类型须为json类型</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="isValid" return="boolean" tips="表单验证方法">
+			<Description><![CDATA[表单验证方法，当返回true时验证通过，否则验证不通过]]></Description>
+			<Conditions>
+				<Condition>当调用表单的submit方法时，此方法会首先被调用，当验证通过时才会提交</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>boolean</Return>
+		</Method>
+		<Method name="reset" return="void" tips="此方法可使表单的数据恢复初始值">
+			<Description><![CDATA[此方法可使表单的数据恢复初始值，即重置所有控件为初始值]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="isChange" return="boolean" tips="判断表单的数据是否被修改">
+			<Description><![CDATA[判断表单的数据是否被修改，比较的依据是控件的初始值]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>boolean</Return>
+		</Method>
+		<Method name="hide" />
+		<Method name="show" />
+
+		<Method name="reload" return="void" tips="刷新表单区域，重新加载表单区域">
+			<Description><![CDATA[
+  		<p>刷新表单区域，重新加载表单区域；支持自定义参数和回调函数</p>
+<pre>
+	Artery.get("formArea79ec9").reload({
+		params : {	//重新加载时的参数
+			userId: "-1"
+		},
+		callback : function(){	//重新加载之后的回调函数
+			
+		}
+	});
+</pre>
+  		]]></Description>
+			<Parameters>
+				<Param>options|{params :{},callbak :new function(){}}</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="readAllSub" return="void" tips="设置所有子控件为只读" />
+		<Method name="editAllSub" return="void" tips="设置所有子控件为可编辑" />
+		<Method name="disableAllSub" return="void" tips="设置所有子控件为无效" />
+		<Method name="enableAllSub" return="void" tips="设置所有子控件为有效" />
+		<Method name="clearAllSub" return="void" tips="清空所有子控件的值" >
+			<Description><![CDATA[
+				<p>清空所有子控件的值</P>
+				<pre>
+				//清空所有子控件的值
+				Artery.get('id').clearAllSub();
+				</pre>
+			]]></Description>
+			<Conditions>
+				<Condition>调用此方法后，表单区域所有子控件的值都将清空，控件是否为必填项，是否有默认值都不能够影响此方法</Condition>
+			</Conditions>
+			<Return>void</Return>
+	</Method>
+	</Methods>
+	<JsFunctions>
+		<JsFunction name="onEnter">
+/**
+* 回车时脚本({itemid})
+*
+*/
+function {methodName} (){
+
+}
+	</JsFunction>
+		<JsFunction name="onLoad">
+/**
+* 加载时脚本({itemid})
+*
+*/
+function {methodName} (){
+
+}
+	</JsFunction>
+	</JsFunctions>
+	<JavaFunctions>
+		<JavaFunction name="onValidServer">
+<![CDATA[
+/**
+ * 验证时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>52bd4a8b9b3ee6e16d566a2d65533f25</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._listArea_Export.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_listArea_Export.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form8c9b1">
+      <id>form8c9b1</id>
+      <Items>
+        <listArea sid="73955ee99db697dbbe4ca524fee536d4">
+          <id>listArea4408d</id>
+          <ds>rs1</ds>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <exportName>图书信息</exportName>
+          <exportStyle>{ headColor:'ffffff',&#xD;
+ headFontColor:'000000', &#xD;
+titleSize:3, &#xD;
+titleColor:'aaaaaa', &#xD;
+titleFontColor:'550000',&#xD;
+titleFontBold:true,&#xD;
+ dataSize:2, &#xD;
+dataColor:'dddddd', &#xD;
+dataFontColor:'330000', &#xD;
+dataFontBold:true }</exportStyle>
+          <exportTitle>export</exportTitle>
+          <Items>
+            <columnIdentity sid="4e90c8a8fa84f34f6e09588aae1d7428">
+              <id>columnIdentityCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <isOnlyData>false</isOnlyData>
+              <title>图书编号</title>
+            </columnIdentity>
+            <columnString sid="7e9dc2036d3d506b6819000fafc31d1b">
+              <id>columnStringCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+            </columnString>
+            <columnString sid="d51a248b2049dc5b55736834a7387626">
+              <id>columnStringCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+            </columnString>
+            <columnString sid="7a866ee2771b4f270753db98b37157e9">
+              <id>columnStringCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+            </columnString>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="flashUpload" cn="上传控件" menu="上传控件" jsType="artery-base"
+	icon="flashUpload.jpg" iconNew="flashUpload.jpg">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2011-4-14</CreateTime>
+		<Describe>
+		<![CDATA[
+<p>文件上传控件，使用flash进行文件上传控制，支持多文件，文件类型，大小过滤等功能。</p>
+<p>文件上传主要分为单文件和多文件两个类型。</p>
+<p>单文件上传时，只能选择一个文件上传，上传时可以通过设置表单id属性同时提交表单数据。</p>
+<p>多文件上传时，可以选择多个文件上传。点击上传时，一次提交一个文件，直到传完为止。（同一个后台方法会被执行多次）</p>
+<p>多文件不支持提交表单数据（因为会提交多次）。</p>					
+<p>数据提交：可以通过按钮的客户端脚本提交数据,提交时可传递参数和回调函数。</p>
+<p>单文件正常传递参数，上传完毕调用回调函数。<p>
+<p>多文件时，每个文件调用服务器端事件都会附带参数，文件全部上传完毕调用一次回调函数。</p>
+<p>例如：客户端脚本</p>
+<pre>	
+Artery.get("flashUploadbe589").startUpload({
+	params:{sendMessage:'Ajaxmessage'},
+	callback:function(result){							
+		alert(result);
+	}
+	});
+</pre>
+	<p>在服务器端，可以获得文件内容信息和额外的参数。例如：</p>
+<pre>	
+//通过以下代码可以在单文件上传时，获得附带的表单内容信息，以及客户端传递的参数。
+ParamUtil.getString("faStringb7eff");
+//通过以下代码可以得到客户端删除的文件json对象的value值。
+ParamUtil.getString(控件id+Clear);
+//读取文件与从前的二进制控件类型，所不同的是由于控件每次只能提交一个文件，多文件会调用多次后台方法，因此，服务器端文件处理每次只需处理一个文件。
+//示例如下：
+File folder = new File("d:\\1");
+if (!folder.isDirectory() || !folder.exists()) {
+	folder.mkdirs();
+}
+FormFile ff = null;
+File file = null;
+String wjmc = null;
+FileOutputStream fos = null;		
+ff = ParamUtil.getFileObject("ddd");	
+file = new File(folder, "文件名");
+try {
+	fos = new FileOutputStream(file);
+	fos.write(ff.getFileData());
+	fos.flush();
+} catch (FileNotFoundException e) {
+	e.printStackTrace();
+} catch (IOException e) {
+	e.printStackTrace();
+} finally {
+	if (fos != null)
+		try {
+			fos.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+}
+//处理返回值
+Map<String, Object> returnMap = new HashMap<String, Object>();
+returnMap.put("ServerMessage", "ServerMessage");
+return returnMap;
+</pre>					
+			]]>
+
+		</Describe>
+		<Images>
+			<File>info.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="formArea" />
+		<Parent type="blankPanel" />
+		<Parent type="faFieldSet" />
+		<Parent type="faBlankLayout" />
+	</Parents>
+	<Class>com.thunisoft.artery.plugin.tool.FlashUpload
+	</Class>
+	<JsFile>
+		<File>flashUpload.js</File>
+		<File>swfupload.js</File>
+		<File>fileprogress.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apFlashUpload</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="提交名称" type="1" name="submitName" inherit="false"
+			tips="用于设置本控件的提交名称,后台可以通过提交名称获取上传文件...">
+			<Value />
+			<Description><![CDATA[
+			用于设置本控件的提交名称,后台可以通过提交名称获取上传文件。
+			如果不设置提交名称，默认使用控件id作为提交名称。			
+			]]></Description>
+		</Property>
+		<Property cn="控件提示" type="1" name="comment" tips="表单中标签后产生控件的提示信息。">
+			<Value />
+		</Property>
+		<Property cn="是否必填" type="11" name="required" inherit="false"
+			tips="设置是否为表单必填项...">
+			<Value>false</Value>
+			<Description><![CDATA[
+			设置是否为表单必填项。控件如果设置为必填项，则没有选择文件值属性也没有设置的情况下不会启动上传。		
+			]]></Description>
+		</Property>
+		<Property cn="验证提示方式" type="3" name="validType" ct="[cooltip,title]"
+			tips="设置验证的提示方式，默认为cooltip提示的方式，选择title则以html的title样式展现">
+			<Value>cooltip</Value>
+		</Property>
+		<Property cn="上传方式" type="3" name="fileUploadType" ct="[singleFile,mutiFile]"
+			tips="控件上传文件的方式...">
+			<Value>singleFile</Value>
+			<Description><![CDATA[
+				<p>控件上传文件的方式，singleFile只允许上传单个文件，multiFile允许多个文件以队列方式上传。</p>
+			]]></Description>
+		</Property>
+		<Property cn="值" type="1" name="value" tips="设置本控件的值,用于显示已经提交的文件...">
+			<Value />
+			<Description><![CDATA[
+				<p>设置本控件的值，用于显示已经提交的文件，内容可以为json如{name:xxx,value:xxx,url:xxxx}或json数组[{name:xxx,value:xxx,url:xxxx},{name:xxx,value:xxx,url:xxxx}]</p>
+				<p>json代表控件的属性内容包括{name:xxx,value:xxx,url:xxxx}，name代表文件名，url代表下载地址，value值会在文件删除时被提交，提交名称为： 控件id+Clear，提交内容为一组value字符串，如"value,value,value" </p>
+			]]></Description>
+		</Property>
+		<Property cn="展现类型" type="3" name="displayType"
+			ct="[inherit,editable,readOnly,display,disabled]" export="true"
+			tips="设置表单的展现类型，此属性默认为inherit。">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="所属表单ID" type="2" name="formID" tips="与文件同时提交的表单的ID值">
+			<Value>0</Value>
+			<Description><![CDATA[
+				<p>与文件同时提交的表单的ID值，控件提交文件时会自动提交表单中的内容。</p>
+				<p>此属性只在单文件上传是有效。</p>
+			]]></Description>
+		</Property>
+		<Property cn="文件允许类型" type="1" name="fileTypes" group="文件设置"
+			tips="设置允许上传文件的类型...">
+			<Value />
+			<Description><![CDATA[
+				<p>设置允许上传文件的类型,不填写默认为*.*,可设置为多种类型，用逗号分割,例如：jpg,png</p>
+			]]></Description>
+		</Property>
+		<Property cn="文件类型别名" type="1" name="fileTypeDescription"
+			group="文件设置" tips="可上传文件类型的别名...">
+			<Value>所有文件</Value>
+			<Description><![CDATA[
+				<p>可上传文件类型的别名，例如可以为文件类型为jpg,png的类型集合起名为图片，此别名会在文件选择窗口的文件类型过滤框中显示。</p>
+			]]></Description>
+		</Property>
+		<Property cn="单个文件大小上限(MB)" type="1" name="fileSizeLimit" group="文件设置"
+			tips="设置可上传文件的大小上限值，单位为MB...">
+			<Value>20</Value>
+			<Description><![CDATA[
+				<p>设置可上传文件的大小上限值，单位为MB</p>	
+				<p>本属性支持小数</p>						
+			]]></Description>
+		</Property>
+		<Property cn="总文件大小上限(MB)" type="1" name="totalFileSizeLimit" group="文件设置"
+			tips="设置可上传文件总共上传文件的大小上限值，单位为MB...">
+			<Value>100</Value>
+			<Description><![CDATA[
+				<p>设置可上传文件的大小上限值，单位为MB</p>	
+				<p>本属性支持小数</p>						
+			]]></Description>
+		</Property>
+		<!-- 暂时不支持属性 -->
+		<!--
+			<Property cn="文件队列上限" type="2" name="fileQueueLimit" group="文件设置"
+			tips="设置等待上传文件的最大个数"> <Value>0</Value> <Description><![CDATA[
+			<p>设置等待上传文件的最大个数，这个数字不包括已经上传完毕的文件、上传错误的文件已经取消的文件。</p>
+			<p>默认值0代表无限制。</p> ]]></Description> </Property>
+		-->
+		<Property cn="控件宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			group="控件大小" et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+		</Property>
+		<Property cn="控件高度" type="1" name="height" mask="^\d{1,}%{0,1}$"
+			group="控件大小" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value>100%</Value>
+		</Property>
+		<Property cn="按钮图片" type="5" name="buttonImageURL" group="浏览按钮外观"
+			tips="浏览文件按钮的背景图片">
+			<Value>/artery/arteryPlugin/tool/flashUpload/chooseButton.png</Value>
+			<Description><![CDATA[
+				<p>浏览文件按钮的背景图片,图片从上至下由四个小图片组成，代表按钮的四个状态：正常，鼠标移上，鼠标按下，禁用</p>
+			]]></Description>
+		</Property>
+		<Property cn="按钮宽度" type="2" name="buttonWidth" group="浏览按钮外观"
+			tips="浏览文件按钮的宽度">
+			<Value>62</Value>
+			<Description><![CDATA[
+				<p>浏览文件按钮的宽度，应与背景图片大小一致。</p>
+			]]></Description>
+		</Property>
+		<Property cn="按钮高度" type="2" name="buttonHeight" group="浏览按钮外观"
+			tips="浏览文件按钮的高度">
+			<Value>22</Value>
+			<Description><![CDATA[
+				<p>浏览文件按钮的高度，应与背景图片大小一致。</p>
+			]]></Description>
+		</Property>
+		<Property cn="按钮标题" type="1" name="buttonText" group="浏览按钮外观"
+			tips="浏览文件按钮的标题文字">
+			<Value>浏览..</Value>
+			<Description><![CDATA[
+				<p>浏览文件按钮的标题文字，不应超过按钮大小。</p>
+			]]></Description>
+		</Property>
+		<Property cn="按钮标题样式" type="1" name="buttonTextStyle" group="浏览按钮外观"
+			tips="浏览文件按钮的标题文字样式">
+			<Value></Value>
+			<Description><![CDATA[
+				<p>浏览文件按钮的标题文字样式</p>
+				<p>例如：按钮标题为"&lt;span class=&quot;redText&quot;&gt;Click here&lt;/span&gt;",可设置本属性为".redText { color: #FF0000; }",用于改变flash按钮样式。</p>
+			]]></Description>
+		</Property>
+		<Property cn="按钮文字垂直偏移量" type="2" name="buttoTextTopPadding"
+			group="浏览按钮外观" tips="按钮文字垂直偏移量...">
+			<Value>0</Value>
+			<Description><![CDATA[
+				<p>按钮文字垂直偏移量，0为位置不变，可以为负数。</p>
+			]]></Description>
+		</Property>
+		<Property cn="按钮文字水平偏移量" type="2" name="buttonTextLeftPadding"
+			group="浏览按钮外观" tips="按钮文字水平偏移量...">
+			<Value>0</Value>
+			<Description><![CDATA[
+				<p>按钮文字水平偏移量，0为位置不变，可以为负数。</p>
+			]]></Description>
+		</Property>
+		<Property cn="禁用浏览按钮" type="11" name="buttonDisabled" group="浏览按钮外观"
+			tips="设为true则禁用浏览按钮，不可点击...">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>设为true则禁用浏览按钮，不可点击</p>
+			]]></Description>
+		</Property>
+		<Property cn="使用鼠标手型样式" type="11" name="handCursor" group="浏览按钮外观"
+			tips="使用鼠标手型样式...">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>使用鼠标手型样式，当鼠标移上按钮式，鼠标由箭头变为手型</p>
+			]]></Description>
+		</Property>
+		<Property cn="显示状态信息" type="11" name="showStatus" group="文件队列外观"
+			tips="控制是否显示状态信息">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>控制是否显示状态信息</p>
+			]]></Description>
+		</Property>
+		<Property cn="显示进度条" type="11" name="showBar" group="文件队列外观"
+			tips="控制是否显示进度条">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>控制是否显示进度条</p>
+			]]></Description>
+		</Property>
+		<Property cn="显示文件大小" type="11" name="showFileSize" group="文件队列外观"
+			tips="控制是否显示每个文件的大小" export="true">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>控制是否显示每个文件的大小</p>
+			]]></Description>
+		</Property>
+		<Property cn="错误提示时间(毫秒)" type="1" name="showErrorTime" group="文件队列外观"
+			tips="控制错误文件提示信息显示在界面中的时间长短" export="true">
+			<Value>2000</Value>
+			<Description><![CDATA[
+				<p>控制错误文件提示信息显示在界面中的时间长短，0为无限制，单位毫秒</p>
+			]]></Description>
+		</Property>
+		<Property cn="取消提示时间(毫秒)" type="1" name="showCancelTime" group="文件队列外观"
+			tips="控制取消的文件提示信息显示在界面中的时间长短" export="true">
+			<Value>2000</Value>
+			<Description><![CDATA[
+				<p>控制取消文件提示信息显示在界面中的时间长短，0为无限制，单位毫秒</p>
+			]]></Description>
+		</Property>
+
+		<!-- 控件的主题 -->
+		<Property cn="主题样式" type="21" name="themeStyle" tips="设置控件的风格样式"
+			group="主题">
+			<Value>default</Value>
+		</Property>
+
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="隐藏方式" type="3" name="hideMode" export="true"
+			ct="[display,visibility]" tips="设置组件的隐藏方式，相当于css的样式，可选display和visibility">
+			<Value>display</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1" name="showRight" tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+
+		<!-- 控件支持的事件 -->
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="值改变时脚本" name="onChangeClient"
+			tips="当本组件的值改变时触发的事件，客户端脚本">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="值改变时脚本" name="onChangeServer"
+			tips="当本组件的值改变时触发的事件，服务器端脚本">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="验证脚本" name="onValidClient"
+			tips="表单控件的验证事件(客户端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="验证脚本" name="onValidServer"
+			tips="表单控件的验证事件(服务器端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+			<Value />
+		</Property>
+	</Properties>
+	<!-- 控件支持的客户端事件 -->
+	<JsFunctions>
+		<JsFunction name="onChangeClient">
+			/**
+			* 值改变时脚本({itemid})
+			*
+			* @param rc 系统提供的AJAX调用对象
+			* @param oldValue 控件改变前的旧值
+			* @param newValue 控件改变后的新值
+			*/
+			function {methodName} (rc, oldValue, newValue){
+
+			}
+  		</JsFunction>
+		<JsFunction name="onValidClient">
+			/**
+			* 验证脚本({itemid})
+			*
+			* @param rc 系统提供的AJAX调用对象
+			* @param value 控件的值
+			*/
+			function {methodName} (rc, value){
+
+			}
+  		</JsFunction>
+	</JsFunctions>
+	<!-- 控件支持的服务器端事件 -->
+	<JavaFunctions>
+		<JavaFunction name="onChangeServer">
+<![CDATA[
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onValidServer">
+<![CDATA[
+/**
+ * 验证时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+	<Methods>
+		<Method name="startUpload" return="void" tips="开始上传文件，多文件时会长传全部文件">
+			<Description><![CDATA[开始上传文件，多文件时会上传全部文件,可以附带参数和回调函数，例如：
+  		<pre>
+Artery.get("flashUpload3b748").startUpload({
+       params:{x:5},
+       callback:function(result){
+           alert(result);
+       }
+})
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>object</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="getStats" return="statusObject" tips="得到控件当前的状态对象">
+			<Description><![CDATA[得到控件当前的状态对象,对象内容如下：
+  		<pre> 
+//    in_progress : number        // 1 或 0 代表文件是否正在上传
+//    files_queued : number       // 队列中的文件数
+//    successful_uploads : number // 成功上传的队列
+//    upload_errors : number      // 出错的文件数量
+//    upload_cancelled : number   // 取消的文件数量
+//    queue_errors : number       // 出错导致未加入队列的文件数量
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>statusObject</Return>
+		</Method>
+		<Method name="getFile" return="fileObject" tips="得到控件上传文件队列中的文件描述信息file对象">
+			<Description><![CDATA[得到控件上传文件队列中的文件描述信息file对象，对象内容如下：
+  		<pre>
+//    id : string,            // 文件id
+//    index : number,         // 文件序号
+//    name : string,          // 文件名（不含路径）
+//    size : number,          // 文件大小（字节）
+//    type : string,          // 文件类型 （由操作返回）
+//    creationdate : Date,        // 文件创建时间
+//    modificationdate : Date,    // 文件修改时间
+//    filestatus : number,        // 文件状态可使用 SWFUpload.FILE_STATUS解析状态   
+单文件上传时getFile()返回一个对象。
+多文件上传时，getFile()返回全部文件对象。 
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>int</Param>
+			</Parameters>
+			<Return>fileObject</Return>
+		</Method>
+		<Method name="getFileName" return="string" tips="得到控件的文件名列表，用逗分割">
+			<Description><![CDATA[
+  	  得到控件上传文件队列中的文件名列表，用逗分割。 
+  	  文件名不包括已上传的文件。  	 
+  	  ]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>statusObject</Return>
+		</Method>
+		<Method name="getFileSize" return="string" tips="得到控件的文件大小列表，用逗分割">
+			<Description><![CDATA[
+  	  得到等待上传的文件大小列表，用逗分割。(不包含已上传文件)
+  	  可以通过参数指定返回值的单位，默认为字节，可以输入“kb”或“mb”作为参数。  	 
+  	  ]]></Description>
+			<Parameters>
+				<Param>"无，kb,mb"</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+		<Method name="getAllValues" return="string" tips="得到控件的value属性">
+			<Description><![CDATA[
+  	 	得到控件的value属性，value为所有文件名的列表，包括已上传的文件名。 
+  	  ]]></Description>
+			<Return>string</Return>
+		</Method>
+		<Method name="setFileSizeLimit" return="void" tips="动态改变文件大小过滤的设置">
+			<Description><![CDATA[
+  	  动态改变文件大小过滤的设置，size参数的单位为mb  	 
+  	  ]]></Description>
+			<Parameters>
+				<Param>"size"</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="setFileTypes" return="void" tips="动态改变文件类型过滤，types为文件类型">
+			<Description><![CDATA[
+  	 动态改变文件类型过滤，types为文件类型例如:"jpg,png"    description为类型描述，例如 "图片"。  	 
+  	  ]]></Description>
+			<Parameters>
+				<Param>"types"</Param>
+				<Param>"description"</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+</Item>
+

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d98015464ef0cfab944b50384618166a</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.frame.Jtdh.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/frame/Jtdh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <centerRegion sid="Ab8b93586bc4128a6a97fd0e60bfb5d2d">
+          <id>Ab8b93586bc4128a6a97fd0e60bfb5d2d</id>
+          <border>false</border>
+          <Items>
+            <topbar sid="topbar3F1AD3F3451A5405F17B6F5ADC7F15BA">
+              <id>topbar3F1AD3F3451A5405F17B6F5ADC7F15BA</id>
+              <Items>
+                <tbButton sid="tbButton3CA45E2D17B57EEA2793A44BCAD93939">
+                  <id>tbButton_reloadAll</id>
+                  <text>刷新计数节点（全部）</text>
+                  <onClickClient><![CDATA[tbButton_reloadAll_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="tbButtonA6EA091A049C1B6162B002588006BDE3">
+                  <id>tbButton_reloadPart</id>
+                  <text>刷新计数节点（指定）</text>
+                  <onClickClient><![CDATA[tbButton_reloadPart_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <leftRegion sid="A5179626cd63a27abbd89c7ba0e7c4b6b">
+              <id>A5179626cd63a27abbd89c7ba0e7c4b6b</id>
+              <collapsible>true</collapsible>
+              <width>220</width>
+              <Items>
+                <treeNav sid="A00690200fc7e2c2bc74c5e67b31bb6fc">
+                  <id>static_tree</id>
+                  <operAreaId>myoper</operAreaId>
+                  <Items>
+                    <treeCatalog sid="A95e91ef9496b35f581fa1a6c1a78bd09">
+                      <id>A95e91ef9496b35f581fa1a6c1a78bd09</id>
+                      <caption>目录</caption>
+                      <icon>/artery/dict/images/gensql.gif</icon>
+                      <Items>
+                        <treeItem sid="A70ca13e8b97bf1a9b386b24a5d290b64">
+                          <id>A70ca13e8b97bf1a9b386b24a5d290b64</id>
+                          <caption>sheet1节点</caption>
+                          <icon>/artery/dict/images/gensql.gif</icon>
+                          <linkto>{"formId":"621AC9FB8BCA9CFB24BF18774FE249FF","formName":"发送消息","formType":"1","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"display"}</linkto>
+                        </treeItem>
+                        <treeItem sid="Acee416c8447612aa7a366b2e5ff077ee">
+                          <id>Acee416c8447612aa7a366b2e5ff077ee</id>
+                          <caption>sheet2节点</caption>
+                          <linkto>{"formId":"621AC9FB8BCA9CFB24BF18774FE249FF","formName":"发送消息","formType":"1","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"display"}</linkto>
+                        </treeItem>
+                      </Items>
+                    </treeCatalog>
+                    <treeItem sid="A045384db01c2f4c4b8baf89cb27a5691">
+                      <id>A045384db01c2f4c4b8baf89cb27a5691</id>
+                      <caption>节点链接到</caption>
+                      <linkto>{"formId":"621AC9FB8BCA9CFB24BF18774FE249FF","formName":"发送消息","formType":"1","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"display"}</linkto>
+                    </treeItem>
+                    <treeItem sid="snItem5A46A023B6892216487DEEE9D3CDF579">
+                      <id>snItem_click</id>
+                      <caption>节点单击事件</caption>
+                      <onClickClient><![CDATA[snItem_click_onClickClient]]></onClickClient>
+                    </treeItem>
+                    <treeCatalog sid="A2724b0c1cff7e7b630ec27f755085b62">
+                      <id>A2724b0c1cff7e7b630ec27f755085b62</id>
+                      <caption>目录链接到</caption>
+                      <linkto>{"formId":"1A10E601D4B3CE26719E4831864E0F0F","formName":"业务提示","formType":"1","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","location":"0","menubar":"0","status":"0","titlebar":"0","toolbar":"0","resizable":"1"}</linkto>
+                      <Items>
+                        <treeItem sid="Ad713c585cbbdb275d4e7521607dcb6c6">
+                          <id>Ad713c585cbbdb275d4e7521607dcb6c6</id>
+                          <caption>子节点1</caption>
+                        </treeItem>
+                      </Items>
+                    </treeCatalog>
+                    <treeCatalog sid="Abbd93f83f9a5cc046d8650a61754c520">
+                      <id>catalog_click</id>
+                      <caption>目录单击事件</caption>
+                      <onClickClient><![CDATA[catalog_click_onClickClient]]></onClickClient>
+                      <Items>
+                        <treeItem sid="Aebcd0fdba8fe64dbfa67d4fefcfb713d">
+                          <id>Aebcd0fdba8fe64dbfa67d4fefcfb713d</id>
+                          <caption>子节点2</caption>
+                        </treeItem>
+                      </Items>
+                    </treeCatalog>
+                    <treeCatalog sid="catalog53167D07633BBC013141C014B84FE751">
+                      <id>catalog53167D07633BBC013141C014B84FE751</id>
+                      <caption>计数统计</caption>
+                      <Items>
+                        <treeItem sid="snItem96966E9E2EB66EBBDEC46EE8486FD35C">
+                          <id>sn_book</id>
+                          <caption>图书列表</caption>
+                          <onCount><![CDATA[sn_book_onCount]]></onCount>
+                        </treeItem>
+                        <treeItem sid="snItem62CEA20D891E1E6C836A7DF9F1D2C43B">
+                          <id>sn_library</id>
+                          <caption>图书室个数</caption>
+                          <onCount><![CDATA[sn_library_onCount]]></onCount>
+                        </treeItem>
+                        <treeItem sid="snItemC9ABD436B3872FB013244A6E054D64A8">
+                          <id>sn_history</id>
+                          <caption>借阅历史数</caption>
+                          <onCount><![CDATA[sn_history_onCount]]></onCount>
+                        </treeItem>
+                      </Items>
+                    </treeCatalog>
+                  </Items>
+                </treeNav>
+              </Items>
+            </leftRegion>
+            <centerRegion sid="A8e068c5a5ca0a52bd56eaec28dc55e69">
+              <id>A8e068c5a5ca0a52bd56eaec28dc55e69</id>
+              <Items>
+                <operArea sid="Ae473abb8fd900f936eecfa65224733e9">
+                  <id>myoper</id>
+                </operArea>
+              </Items>
+            </centerRegion>
+            <rightRegion sid="rightRegionDD32A">
+              <id>rightRegionDD32A</id>
+              <width>220</width>
+              <Items>
+                <listNav sid="staticNav1BAE5">
+                  <id>staticNav1BAE5</id>
+                  <expandMode>multeExpand</expandMode>
+                  <Items>
+                    <listCatalog sid="catalog0DDD7">
+                      <id>catalog0DDD7</id>
+                      <caption>操作项集合</caption>
+                      <Items>
+                        <listItem sid="snItem5D001">
+                          <id>snItem5D001</id>
+                          <caption>操作项（链接到）</caption>
+                          <linkto>{"formId":"C2C1D368AD7106377EB34B882AEC07A7","formName":"打开窗口示例","formType":"1","params":{},"target":"myoper","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"0","title":"","wincfg":""}</linkto>
+                        </listItem>
+                        <listItem sid="snItemDC399">
+                          <id>listItem_click</id>
+                          <caption>操作项（单击）</caption>
+                          <onClickClient><![CDATA[listItem_click_onClickClient]]></onClickClient>
+                        </listItem>
+                      </Items>
+                    </listCatalog>
+                    <listCatalog sid="catalog58C3D">
+                      <id>catalog58C3D</id>
+                      <caption>navPanel2</caption>
+                      <Items>
+                        <listItem sid="snItem6B854">
+                          <id>snItem6B854</id>
+                          <caption>navItem3</caption>
+                        </listItem>
+                        <listItem sid="snItem2B36E">
+                          <id>snItem2B36E</id>
+                          <caption>navItem4</caption>
+                        </listItem>
+                      </Items>
+                    </listCatalog>
+                    <listCatalog sid="catalog6FC31">
+                      <id>catalog6FC31</id>
+                      <caption>navPanel3</caption>
+                      <Items>
+                        <listItem sid="snItem5D2C4">
+                          <id>snItem5D2C4</id>
+                          <caption>navItem5</caption>
+                        </listItem>
+                        <listItem sid="snItem3AE0A">
+                          <id>snItem3AE0A</id>
+                          <caption>navItem6</caption>
+                        </listItem>
+                      </Items>
+                    </listCatalog>
+                  </Items>
+                </listNav>
+              </Items>
+            </rightRegion>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

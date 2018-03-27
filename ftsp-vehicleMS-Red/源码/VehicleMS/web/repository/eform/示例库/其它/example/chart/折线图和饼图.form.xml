@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0f07f5f7e6115b0783aa0c63788cf9d3</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.chart.Zxthbt.java</javaLocation>
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <tableLayout sid="tableLayout133B0">
+          <id>tableLayout133B0</id>
+          <colNum>2</colNum>
+          <Items>
+            <chartArea sid="chartArea20DFA">
+              <id>chart_Line</id>
+              <chartConf>{"chartType":"Line"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaEE6E3">
+              <id>chart_MSLine</id>
+              <chartConf>{"chartType":"MSLine"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaCFDFC">
+              <id>chart_Pie2D</id>
+              <chartConf>{"chartType":"Pie2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaD4A13">
+              <id>chart_Pie3D</id>
+              <chartConf>{"chartType":"Pie3D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaE6452">
+              <id>chart_Doughnut2D</id>
+              <chartConf>{"chartType":"Doughnut2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaB3AA8">
+              <id>chart_Doughnut3D</id>
+              <chartConf>{"chartType":"Doughnut3D"}</chartConf>
+            </chartArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

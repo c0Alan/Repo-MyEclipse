@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0cf95c9b29efd1518314cf3b0a7c0dfd</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tool._star.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tool/_star.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form1c382">
+      <id>form1c382</id>
+      <Items>
+        <blankPanel sid="d1373a3d9e08e328185a84db1af9b4aa">
+          <id>blankPanel37123</id>
+          <Items>
+            <htmlArea sid="0aca6898e44e5267ae621caca1609d34">
+              <id>htmlArea7bf92</id>
+              <value>&lt;br&gt;&#xD;
+&lt;h1&gt;大星星&lt;/h1&gt;</value>
+            </htmlArea>
+            <star sid="3423fa3f717148b203c44ea55d651e5e">
+              <id>starf7dde</id>
+              <starSelNum>2</starSelNum>
+              <extInfo>等级哦</extInfo>
+            </star>
+            <htmlArea sid="716010d56c569243f08616e900d093e6">
+              <id>htmlAreafed89</id>
+              <value>&lt;br&gt;&#xD;
+&lt;h1&gt;小星星&lt;/h1&gt;</value>
+            </htmlArea>
+            <star sid="3efc34e44a20a8e7fd63c1d16c328376">
+              <id>star3d7b4</id>
+              <starSelNum>1</starSelNum>
+              <starType>small</starType>
+            </star>
+          </Items>
+        </blankPanel>
+        <htmlArea sid="1d1081f28d987ab0f1f200e1706f041c">
+          <id>htmlArea8ef03</id>
+          <value>&lt;br&gt;&#xD;
+&lt;br&gt;&#xD;
+&lt;h1&gt;下面是操作Star控件&lt;/h1&gt;</value>
+        </htmlArea>
+        <blankPanel sid="758d10e720f7d9cf2659afe6dd9ff0f0">
+          <id>blankPanel5eba8</id>
+          <Items>
+            <star sid="d1b98d637257087af89ac8ad8b5963a5">
+              <id>starShow</id>
+            </star>
+            <topbar sid="e4bd2b613caec5167cd7f7becbceaa5d">
+              <id>topbareb056</id>
+              <Items>
+                <tbButton sid="8cc034b4bc12d030d47d337954120cf2">
+                  <id>tbSetStarNum</id>
+                  <text>setStarNum</text>
+                  <onClickClient><![CDATA[tbSetStarNum_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="d7dec49aab8c424d2b8486b77723b058">
+                  <id>tbGetStarNum</id>
+                  <text>getStarNum</text>
+                  <onClickClient><![CDATA[tbGetStarNum_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

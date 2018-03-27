@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="writLayout" cn="文书布局" nameprop="title" icon="writLayout.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>文书的顶层模板</Describe>
+	</Info>
+	<Parents />
+	<Children>
+		<Child type="topbar" />
+		<Child type="writTplContainer" />
+		<Child type="bottomBar" />
+		<Child type="synchTimer" />
+		<Child type="blankPanel" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.writ.WritLayout</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apBasePanel</Value>
+		</Property>
+		<Property cn="布局" type="1" name="layout" isHidden="1" export="true"
+			cfg="true">
+			<Value>anchor</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="标题" type="1" name="title" tip="文书的标题">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value>100%</Value>
+    </Property>
+    <Property cn="组件样式" type="1" name="bodyStyle"  tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+      <Value />
+    </Property>
+    <Property cn="组件容器样式" type="1" name="style"  tips="设置本组件的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+      <Value />
+    </Property>
+    <Property cn="引用文件" type="7" name="importFile" tips="设置本组件需要引用的文件，支持js，css，java类，每个是一行，必需以“；”结尾">
+      <Value />
+    </Property>
+	<Property cn="是否修复ocx" type="11" name="ocxFix"
+		tips="当设置为true时，弹窗、提示、下拉框等将不会被按钮、flash等控件遮挡">
+		<Value>false</Value>
+		<Description>
+			当设置为true时，弹窗、提示、下拉框等将不会被按钮、flash等控件遮挡
+		</Description>
+	</Property>
+    <Property cn="客户端" type="15" group="加载时脚本" name="onLoadClient" tips="相当于页面的onload事件，在此脚本中可以得到任何页面对象，此方法只在页面生成时执行一次">
+      <Value />
+      <Description>
+    
+      	<![CDATA[
+      	<p>相当于页面的onload事件，在此脚本中可以得到任何页面对象，此方法只在页面生成时执行一次</p>
+<pre>
+/**
+ * onLoadClient(formC9BCC)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function formC9BCC_onLoadClient (rc){
+	
+}
+
+</pre>
+      		
+      ]]>
+
+      </Description>
+    </Property>
+    <Property cn="服务器端" type="14" group="加载时脚本" name="onLoadServer" tips="当客户端加载时脚本向后台发送请求时可以执行">
+           <Description>
+    
+      	<![CDATA[
+      	<p>当客户端加载时脚本向后台发送请求时可以执行</p>
+<pre>
+/**
+	 *  文书布局
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public void formC9BCC_onLoadServer(Item item) {
+	
+	}
+
+}
+
+</pre>
+      		
+      ]]>
+
+      </Description>
+      <Value />
+    </Property>
+    <Property cn="宿主脚本" type="14"  name="pubScript" tips="可写服务器端的脚本，跟随着组件的生成而执行。不管是正常请求还是Ajax请求，此属性的脚本都会在得到组件时执行，注意与控件的生成时脚本的区别">
+      <Value />
+      <Description>
+      <![CDATA[
+      <p>可写服务器端的脚本，跟随着组件的生成而执行。不管是正常请求还是Ajax请求，此属性的脚本都会在得到组件时执行，注意与控件的生成时脚本的区别</p>
+      <pre>
+/**
+	 *  文书布局
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public void formC9BCC_pubScript(Item item) {
+	
+	}
+	</pre>
+       ]]>
+      </Description>
+      <Conditions>
+      	<Condition>宿主脚本（pubScript）：宿主脚本只存在于表单的顶层节点“表单模板”中，并且会和系统的得到表单的方法一起执行，即系统在后台只要调用得到表单的方法，就会执行宿主脚本。因为不管是第一次http请求，还是ajax请求，后台都会调用得到请求的表单的方法，所以宿主脚本永远都会执行。</Condition>
+      	<Condition>	生成时脚本（onShow）：每个控件都有生成时脚本，只在页面第一次加载时执行，如上图所示，系统会调用每个控件的onShow脚本执行。当页面再有ajax请求时，onShow脚本不会执行。</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+    <Property cn="生成时脚本" type="14"  name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <Template><![CDATA[// {cn}writLayout ({id})
+	/**
+	 * 加载时脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public Object {methodName}(Item item) {
+		return null;
+	}
+
+	/**
+	 * 宿主脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public void {methodName}(Item item) {
+
+	}
+
+	/**
+	 * 生成时脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public void {methodName}(Item item) {
+
+	}]]></Template>
+</Item>
+

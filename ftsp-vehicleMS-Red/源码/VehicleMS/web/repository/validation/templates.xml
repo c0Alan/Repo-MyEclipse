@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template id="ribbonTest" name="ribbonTest">
+    <params>
+      <param key="focusItemId" />
+      <param key="validMessage" />
+      <param key="ribbonCellId" />
+      <param key="id" />
+    </params>
+    <scripts>
+      <script id="aaa"><![CDATA[var pvm = Artery.valid.findPhaseValidManager();
+				Artery.get(ribbonCellId).click();]]></script>
+      <script id="bbb"><![CDATA[var tr = Artery.getListTrByKeyWord(id);
+				var btn = Artery.get(Ext.fly(tr).child('.x-btn-detail',true).id);
+				btn.click();
+				var qzcs = Artery.get(Ext.fly(tr).next().child('.x-btn-modify',true).id);
+				qzcs.click();]]></script>
+      <script id="cccc"><![CDATA[Artery.get(focusItemId).showInvalid(validMessage);]]></script>
+    </scripts>
+    <forms>
+      <form id="2256f97e1d33958569ddd059c9e2115a" />
+    </forms>
+  </template>
+  <template id="ajjbxx" name="权限基本信息">
+    <params>
+      <param key="focusItemId" />
+      <param key="validMessage" />
+      <param key="ribbonCellId" />
+      <param key="rightKey" />
+    </params>
+    <scripts>
+      <script id="aaa" desc="点击顶层的ribbon"><![CDATA[Artery.get(ribbonCellId).click();]]></script>
+      <script id="bbb" desc="定位到权限列表的指定行，打开修改页面"><![CDATA[
+      var tr = Artery.getListTrByKeyWord(rightKey);
+				var btn = Ext.fly(tr).child('.x-modify',true);
+				btn.click();
+				]]></script>
+      <script id="ccc" desc="定位指定的控件"><![CDATA[Artery.get(focusItemId).showInvalid(validMessage);]]></script>
+    </scripts>
+    <forms>
+      <form id="96f47aa3ddb495844a3c1cb6132f791b" />
+    </forms>
+  </template>
+  <template id="test" name="test33d">
+    <params>
+      <param key="focusItemId" />
+      <param key="validMessage" />
+      <param key="ribbonCellId" />
+      <param key="dd">dd</param>
+      <param key="dddd">ddd</param>
+    </params>
+    <scripts>
+      <script id="aaa" formId="root"><![CDATA[Artery.get(ribbonCellId).click();]]></script>
+      <script id="bbb" formId="08f85fe6890c8827dfdfd46cd6056db8c552"><![CDATA[//第三种方式：如果是通过脚本打开的页面，则也需要写脚本打开
+				Artery.openForm({
+					formId:'16ac909043836cf23702cd75a0a1c4b6',
+					params:{
+						dsrId:dsrId
+					},
+					targetWidth:500,
+					targetHeight:400
+				});]]></script>
+      <script id="abcd" formId="08f85fe6890c8827d46cd6056db8c552"><![CDATA[Artery.get(focusItemId).showInvalid(validMessage);]]></script>
+      <script id="f4065492eb5170774ac61d608708e0c3" desc="ddd"><![CDATA[sdfsdf]]></script>
+    </scripts>
+  </template>
+</templates>
+

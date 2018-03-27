@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>00f148434070a4fbe80fbd0c65c169e5</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.organ.Xgmm.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/organ/Xgmm.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form8e743">
+      <id>form8e743</id>
+      <Items>
+        <blankPanel sid="063fc9f597895855ad27dfc77bd3b2f8">
+          <id>blankPanel0e57f</id>
+          <width>100%</width>
+          <height>100%</height>
+          <frame>true</frame>
+          <bodyStyle>padding-top:10px;</bodyStyle>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="8f104bdd1abf2abdf5409083d0b64c46">
+              <id>headerc3237</id>
+              <text>&lt;span style="font-size:14px;padding:3px;"&gt;修改密码&lt;/span&gt;</text>
+            </header>
+            <formArea sid="51dcca42c752809db1a0a8787fdb3f08">
+              <id>formArea</id>
+              <width>350</width>
+              <colNum>1</colNum>
+              <labelSeparator>：</labelSeparator>
+              <bodyStyle>padding-top:20px</bodyStyle>
+              <cellpadding>5</cellpadding>
+              <Items>
+                <faString sid="6647c4c5fffa0717c48a565d74447f87">
+                  <id>faOldPass</id>
+                  <editor>password</editor>
+                  <label>旧密码</label>
+                </faString>
+                <faString sid="4c6c78404a589fc39376cb72540d3393">
+                  <id>faNewPass</id>
+                  <required>true</required>
+                  <editor>password</editor>
+                  <label>新密码</label>
+                </faString>
+                <faString sid="d786b77068c36ac3f196e2182e4865be">
+                  <id>faCfmNewPass</id>
+                  <required>true</required>
+                  <editor>password</editor>
+                  <label>确认新密码</label>
+                </faString>
+                <buttonArea sid="daaf802f4d90aa48a0f2026349d5e792">
+                  <id>buttonArea8c59a</id>
+                  <style>padding-left:100px;padding-top:10px;</style>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="480ce0e36f072940394b456fc9358a64">
+                      <id>button1d0d8</id>
+                      <width>100</width>
+                      <text>修改密码</text>
+                      <onClickClient><![CDATA[button1d0d8_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[button1d0d8_onClickServer]]></onClickServer>
+                      <themeStyle>apple</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getCurrentUserInfo</ds>
+  </dslist>
+</form>
+

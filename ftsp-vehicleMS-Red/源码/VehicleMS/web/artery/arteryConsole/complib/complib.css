@@ -1,0 +1,78 @@
+/* invalid fields */
+.x-form-invalid, textarea.x-form-invalid{
+	background:#ffeeee !important;
+	border: 1px solid #dd7870 !important;
+}
+.menu-addcomp{
+    background-image: url(images/addcomp.gif)
+}
+.menu-addform{
+    background-image: url(images/addform.gif)
+}
+.menu-delete{
+    background-image: url(images/del.gif)
+}
+.menu-copy{
+    background-image: url(images/copy.gif)
+}
+.menu-paste{
+    background-image: url(images/paste.gif)
+}
+.menu-import{
+    background-image: url(images/import.gif)
+}
+.menu-export{
+    background-image: url(images/export.gif)
+}
+
+.addcomp .x-btn-text{
+    background-image: url(images/addcomp.gif)  
+}
+.addform .x-btn-text{
+    background-image: url(images/addform.gif)
+}
+.copy .x-btn-text{
+    background-image: url(images/copy.gif)  
+}
+.paste .x-btn-text{
+    background-image: url(images/paste.gif)
+}
+
+.ft-compRoot{
+    background-image: url(images/complibRoot.gif) !important;
+}
+
+.formicon1{
+    background-image: url(images/form.gif) !important;
+}
+.formicon2{
+    background-image: url(images/report.gif) !important;
+}
+.formicon3{
+    background-image: url(images/writ.gif) !important;
+}
+.formicon4{
+    background-image: url(images/plugin.gif) !important;
+}
+.comp{
+    background-image: url(images/comp.gif) !important;
+}
+.complib{
+    background-image: url(images/complib.gif) !important;
+}
+
+.helpRoot{
+	background-image: url(../businesshelp/images/helproot.gif) !important;
+}
+.helpItem1{
+	background-image: url(../businesshelp/images/helpfolder.gif) !important;
+}
+.helpItem2{
+	background-image: url(../businesshelp/images/dochelp.gif) !important;
+}
+.helpItem3{
+	background-image: url(../businesshelp/images/texthelp.gif) !important;
+}
+.helpItem4{
+	background-image: url(../businesshelp/images/htmlhelp.gif) !important;
+}

@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="listArea" cn="列表区域" jsType="artery-list" icon="listArea.gif"
+	iconNew="listAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>
+			列表区域控件，用于以列表方式展现数据，是最常用的数据展现控件之一。列表主要支持一下几个功能：
+			<![CDATA[
+			<p>1.数据源绑定:通过与数据源绑定，自动获取数据，并可与循环控件嵌套使用，展现复杂数据结构。</p>
+			<p>2.控件可以对数据进行过滤、排序、分页、选取、格式化等操作处理。</p>
+			<p>3.可编辑类型的控件可以对数据进行增删改查等操作。</p>
+			<p>4.可以针对控件的数据内容改变单元格、行、列的颜色。</p>
+			<p>5.支持鼠标点击，双击，划过等事件的处理。</p>
+			]]>
+		</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+		<Parent type="tabItem" />
+	</Parents>
+	<Children>
+		<Child type="column" />
+		<Child type="dynamicColumn" />
+		<Child type="columnString" />
+		<Child type="columnNumeric" />
+		<Child type="columnBinary" />
+		<Child type="columnDate" />
+		<Child type="columnCode" />
+		<Child type="columnOrgan" />
+		<Child type="columnClassCode" />
+		<Child type="columnTree" />
+		<Child type="columnIdentity" />
+		<Child type="header" />
+		<Child type="topbar" />
+		<Child type="bottomBar" />
+		<Child type="footer" />
+		<Child type="blankPanel" />
+	</Children>
+	<Class more="type">
+		com.thunisoft.artery.plugin.grid.ListArea</Class>
+	<JsFile>
+		<File jsType="artery-all">plugin/GridDragSelector.js
+		</File>
+		<File jsType="artery-all">plugin/GridFilterPlugin.js
+		</File>
+		<File jsType="artery-all">listArea.js</File>
+		<File jsType="artery-list">sampleList.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>aplistarea</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="ds"
+			tips="指定列表关联的数据源名称（数据源名称在表单的数据源页面添加），相应的数据内容会通过数据源传递到列表中。" inherit="false">
+			<Value />
+		</Property>
+		<Property cn="列表类型" type="3" name="type" ct="[grid,list]"
+			tips="设置列表的展现类型，list代表使用平台自定义的简单列表方式，此类型有着不错的性能和功能...">
+			<Value>list</Value>
+			<Description><![CDATA[
+      设置列表的展现类型，list代表使用平台自定义的简单列表方式，此类型有着不错的性能和功能，一般应用推荐使用此类；grid使用ext的grid样式展现，此类型主要用于可编辑列表。系统默认为list类型。
+      ]]></Description>
+		</Property>
+		<Property cn="初次加载数据" type="3" name="isInitData" ct="[default,true,false]"
+			tips="此属性设置控件展示时，是否需要先加载数据，再展现控件">
+			<Value>default</Value>
+			<Description><![CDATA[   
+      此属性设置控件展示时，是否需要先加载数据，再展现控件。
+      属性设为true会首先加载数据，之后返回给客户端进行展现。当列表类型为list时，推荐属性设为true，可有效提高页面的展现效率。
+      属性设为false，则会首先展现控件，再通过ajax请求获取数据。
+      当属性设置为default时，系统会根据“列表类型”自动判断，当为list时，此属性为true，当为grid时，此属性为false。
+      ]]></Description>
+		</Property>
+		<Property cn="清空选中状态" type="11" name="clearStatus"  export="true"
+			tips="列表在翻页或者过滤时是否清空之前的状态，即checkbox列的状态。默认为不清空false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			group="大小" et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比" inherit="false">
+			<Value>100%</Value>
+		</Property>
+		<Property cn="高度" type="1" name="height" group="大小"
+			tips="设置本组件的高度，可输入数值、百分比或auto" inherit="false">
+			<Value>300</Value>
+			<Description><![CDATA[
+      当设置为auto时，列表高度会根据内容的高度而变化，列表不会出现滚动条
+      <table><tr><td style="text-align:center;font-weight:700;">设置为固定高度时</td><td style="text-align:center;font-weight:700;">设置为auto时</td></tr><tr><td><img src="listArea/autoHeight1.gif"></td><td><img src="listArea/autoHeight2.gif"></td></tr></table>
+      ]]></Description>
+			<Conditions>
+				<Condition>当“列表类型”为list时，不设置高度也就相当于“自动高度”</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="适应宽度" type="11" name="forceFit" group="风格"
+			tips="当设置为true时，列的宽度会根据列表的宽度重新计算...">
+			<Value>true</Value>
+			<Description><![CDATA[
+      当设置为true时，列的宽度会根据列表的宽度重新计算，自动适应列表的宽度，即正好占满整个列表容器的宽度，当设置为false时，则每列的宽度就是列组件设置的宽度
+      ]]></Description>
+		</Property>
+		<Property cn="折行显示" type="11" name="autoRowHeight" group="风格"
+			export="true" tips="当设置为true时，单元格的内容如果过多时会折行显示...">
+			<Value>true</Value>
+			<Description><![CDATA[
+      当设置为true时，单元格的内容如果过多时会折行显示，否则会显示省略号<table><tr><td style="text-align:center;font-weight:700;">设置为false时</td><td style="text-align:center;font-weight:700;">设置为true时</td></tr><tr><td><img src="listArea/autoRowHeight1.gif"></td><td><img src="listArea/autoRowHeight2.gif"></td></tr></table>
+      ]]></Description>
+		</Property>
+		<Property cn="显示列标题" type="11" name="showTitle" group="风格"
+			export="true" tips="当设置为false时，不显示列表的标题">
+			<Value>true</Value>
+			<Description><![CDATA[
+     当设置为false时，不显示列表的标题
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性目前只支持在list类型下使用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="行点击选中" type="11" name="rowClickSelect" group="风格"
+			export="true" tips="当设置为true时，点击行时会选中当前行">
+			<Value>true</Value>
+			<Description><![CDATA[
+      当设置为true时，点击行时会选中当前行
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性目前只支持在list类型下使用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="隔行颜色显示" type="11" name="stripeRows" group="风格" export="true"
+			tips="设置为true时，数据会隔行以不同的颜色显示...">
+			<Value>true</Value>
+			<Description><![CDATA[
+      设置为true时，数据会隔行以不同的颜色显示，此颜色值可在“隔行颜色”属性中进行设置
+      ]]></Description>
+			<Conditions>
+				<Condition>亮显的设置会覆盖此设置</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="隔行颜色" type="10" name="stripeColor" group="风格"
+			tips="设置隔行显示的颜色...">
+			<Value />
+			<Description><![CDATA[
+      设置隔行显示的颜色，如：red或#DFE8F6<br><img src="listArea/stripeColor.gif">
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性只有在“隔行颜色显示”属性设置为true时有效</Condition>
+				<Condition>亮显的设置会覆盖此设置</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="行移上颜色显示" type="11" name="overRows" group="风格"
+			tips="设置为true时，鼠标移动到行上时会显示背景颜色">
+			<Value>false</Value>
+			<Description><![CDATA[
+      设置为true时，鼠标移动到行上时会显示背景颜色，此颜色值可在“行移上颜色”属性中进行设置
+      ]]></Description>
+			<Conditions>
+				<Condition>亮显的设置会覆盖此设置</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="行移上颜色" type="10" name="overRowsColor" group="风格"
+			tips="设置行移上时显示的颜色...">
+			<Value>#E6EBFB</Value>
+			<Description><![CDATA[
+      设置行移上时显示的颜色，如：red或#DFE8F6
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性只有在“行移上颜色显示”属性设置为true时有效</Condition>
+				<Condition>亮显的设置会覆盖此设置</Condition>
+				<Condition>目前只支持list类型下使用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="忙时阴影遮罩" type="11" name="loadMask" group="风格"
+			export="true" tips="设置为true时，加载数据时会生成提示信息...">
+			<Value>false</Value>
+			<Description><![CDATA[
+      设置为true时，加载数据时会生成提示信息<br><img src="listArea/loadMask.gif">
+      ]]></Description>
+		</Property>
+		<Property cn="排序默认值" type="1" name="defaultOrder" group="风格"
+			tips="当“是否sql分页”设置为true时，可在此属性中设置排序的默认值...">
+			<Value />
+			<Description><![CDATA[当“是否sql分页”设置为true时，可在此属性中设置排序的默认值，系统查询sql时会自动把此属性拼到sql的后面，格式为：字段名 方向，如：C_Name desc]]></Description>
+			<Conditions>
+				<Condition>只有当“是否sql分页”属性设置为true时，此属性才起作用
+				</Condition>
+				<Condition>目前不支持grid类型
+				</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="空数据提示信息" type="1" export="true" name="emptyDataTip" group="风格"
+			tips="当列表的数据为空时，显示在中间的提示信息">
+			<Value>没有数据，点击“&lt;b&gt;添加&lt;/b&gt;”按钮进行添加</Value>
+			<Conditions>				
+				<Condition>目前不支持grid类型
+				</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="隐藏过滤栏" type="11" name="hiddenFilter" group="风格"
+			export="true" tips="当列表有过滤栏时，设置此属性为true时则默认不显示过滤栏">
+			<Value>false</Value>
+			<Conditions>				
+				<Condition>目前不支持grid类型
+				</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否分页" type="11" name="isPageSplit" group="分页"
+			export="true" tips="列表数据是否分页，设置为true时，列表底部会出现分页栏">
+			<Value>true</Value>
+		</Property>
+		<Property cn="每页个数" type="1" name="pageCount" group="分页"
+			export="true" tips="设置数据分页时，每页加载多少条数据">
+			<Value>20</Value>
+		</Property>
+		<Property cn="分页提示信息" type="11" name="displayInfo" group="分页"
+			tips="设置为true时，则在分页栏显示分页提示信息...">
+			<Value>true</Value>
+			<Description><![CDATA[
+      设置为true时，则在分页栏显示分页提示信息，否则不显示，默认为true<br><img src="listArea/displayInfo.gif">
+      ]]></Description>
+		</Property>
+		<Property cn="少于一页隐藏分页栏" type="11" name="isOnePageHideBar"
+			group="分页" export="true" tips="设置为true时，如果结果集小于等于1页的数据，则不显示分页栏">
+			<Value>false</Value>
+			<Description><![CDATA[
+      设置为true时，如果结果集小于等于1页的数据，则不显示分页栏
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性只有在“列表类型”为list时才起作用</Condition>
+				<Condition>此属性只有在“初始加载数据”设置为true时才起作用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否显示行号" type="11" name="isShowRowNumber" group="行号"
+			export="true" tips="是否在列表的最前面显示数据行号">
+			<Value>true</Value>
+		</Property>
+		<Property cn="每页行号重新生成" type="11" name="isStartNew" group="行号"
+			tips="设置为true时，当翻页时每页的行号都从1开始，当为false时，行号会跟着上页的最后的行号生成">
+			<Value>false</Value>
+		</Property>
+		<Property cn="行号标题" type="1" name="rowNumberTitle" group="行号"
+			tips="用于设置行号列上面的标题">
+			<Value />
+		</Property>
+		<Property cn="行号宽度" type="1" name="rowNumberWidth" group="行号"
+			tips="用于设置行号列的宽度">
+			<Value />
+		</Property>
+		<Property cn="是否导出Excel" type="11" name="isExpExcel" export="true"
+			group="导出" tips="当设置为true时，会分页栏生成把当前列表导出为excel的按钮">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否导出Pdf" type="11" name="isExpPdf" export="true"
+			group="导出" tips="当设置为true时，会在分页栏生成把当前列表导出为pdf的按钮">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否导出隐藏列" type="11" name="isExpHideColumn" export="true"
+			group="导出" tips="当设置为true时，在导出Excel或者PDF时会将隐藏的列也导出">
+			<Value>false</Value>
+		</Property>
+		<Property cn="导出方式" type="3" name="exportType" ct="[stream,tempFile]"
+			group="导出" tips="导出文件的方式，可以通过流(stream)的形式返回文件，也可以生成临时文件下载，默认为stream方式">
+			<Value>stream</Value>
+		</Property>
+		<Property cn="导出名称" type="1" name="exportName" group="导出"
+			tips="导出文件的名称，文件的扩展名可以省略" export="true">
+			<Value />
+		</Property>
+		<Property cn="导出时是否打开新页面" type="11" name="exportNewPage" group="导出"
+			tips="导出文件是否在新页面打开" export="true">
+			<Value>false</Value>
+		</Property>
+		<Property cn="导出格式" type="7" name="exportStyle" group="导出"
+			tips="设置导出文件的格式">
+			<Value />
+			<Description><![CDATA[
+     可以填写一个json对象设置导出文件样式，内容如下：
+{
+	headColor:'111111',
+	headFontColor:'222222',
+	titleSize:3,
+	titleColor:'444444',
+	titleFontColor:'555555',
+	titleFontBold:true,
+	dataSize:2,
+	dataColor:'888888',
+	dataFontColor:'AAAAAA',
+	dataFontBold:true,
+	columnWidths:[3,10,10]				
+}
+说明如下：
+{
+	headColor标题颜色
+	headFontColor:标题文字颜色
+	titleSize:列头文字大小,
+	titleColor:列头颜色,
+	titleFontColor:列头文字颜色
+	titleFontBold:列头加粗
+	dataSize:内容大小,
+	dataColor:内容背景颜色,
+	dataFontColor:内容字体颜色,
+	dataFontBold:是否加粗,
+	columnWidths:每列宽度(单位为字符,最大为255)				
+}
+      ]]></Description>			
+		</Property>
+		<Property cn="导出标题" type="1" name="exportTitle" group="导出"
+			tips="设置导出文件的标题信息">
+			<Value />
+		</Property>
+		<Property cn="使用Frame样式" type="11" name="frame" group="样式"
+			export="true" tips="当设置为true时，本组件会显示Ext的边框">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否显示边框" type="11" name="border" group="样式"
+			tips="设置为true时，显示最外层的边框，否则不显示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle" group="样式"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" group="样式"
+			tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className" group="样式"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" group="样式"
+			tips="设置列表的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="高亮值" type="1" name="highlightValue" group="高亮"
+			tips="设置列表高亮的值，指定高亮列符合此值的一行记录会高亮显示">
+			<Value>{req.highlightValue}</Value>
+		</Property>
+		<Property cn="高亮颜色" type="10" name="highlightColor" group="高亮"
+			tips="设置列表高亮的颜色，指定高亮列符合此值的一行记录会以此颜色高亮显示">
+			<Value>#EFF5CC</Value>
+		</Property>
+		<Property cn="行单击链接到" type="6" name="linktoSingle" group="链接到"
+			tips="单击列表的数据行时触发的事件，连接到系统的表单或url，同其它组件的“链接到”">
+			<Value />
+		</Property>
+		<Property cn="行双击链接到" type="6" name="linktoDouble" group="链接到"
+			inherit="false" tips="双击列表的数据行时触发的事件，连接到系统的表单或url，同其它组件的“链接到”">
+			<Value />
+		</Property>
+		<Property cn="是否可编辑" type="11" name="isEditor" group="可编辑"
+			tips="设置列表是否可编辑，此属性只对“列表类型”为grid是起作用...">
+			<Value>false</Value>
+			<Description><![CDATA[
+      设置列表是否可编辑，此属性只对“列表类型”为grid是起作用
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为grid时起作用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="触发滚动控件id" type="1" name="scrollPid" export="true"
+			tips="设置触发滚动的控件的id，比如设置上某一個空面板的id，这个空面板滚动的時候会触发滾动事件将列表的编辑框隐藏，支持填写多个控件的id，已“;”间隔">
+			<Value />
+			<Description><![CDATA[
+     设置触发滚动的控件的id，比如设置上某一個空面板的id，这个空面板滚动的時候会触发滾动事件将列表的编辑框隐藏，支持填写多个控件的id，已“;”间隔
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为grid时起作用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="标识修改数据" type="11" name="showUpdate" group="可编辑"
+			tips="当设置为true时，可编辑的单元进行修改后会以红色标识出来...">
+			<Value>true</Value>
+			<Description><![CDATA[
+      当设置为true时，可编辑的单元进行修改后会以红色标识出来
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为grid时起作用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="编辑点击次数" type="1" name="clicksToEdit" group="可编辑"
+			tips="当列表可编辑时，鼠标点几次单元格才可编辑...">
+			<Value>1</Value>
+			<Description><![CDATA[
+      当列表可编辑时，鼠标点几次单元格才可编辑
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为grid时起作用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否合计" type="11" name="isSum" export="true"
+			group="合计" tips="列表是否显示合计行，合计行的字体默认会加粗显示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="合计行为首行" type="11" name="isSumTop" export="true"
+			group="合计" tips="设置是否将合计行放在首行，默认在底部">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否显示行提示" type="11" name="isTip" group="提示"
+			tips="当鼠标移动到每行时，是否显示提示信息 注意：提示显示的内容来自tip模板中的内容">
+			<Value>false</Value>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为grid时起作用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="行提示模板" type="16" name="tipTpl" group="提示"
+			sh="可调用：values,parent,xindex,xcount,fm" tips="输写tip的显示模板，规则同Ext的xTemplate">
+			<Value />
+			<Conditions>
+				<Condition>此属性只对“列表类型”为grid时起作用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1" name="showRight" tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="插入后自动编辑" type="11" name="isAutoEditor" export="true"
+			group="可编辑" tips="在客户端调用insertRecord方法插入数据后，设置是否将新插入数据的第一列设置为编辑状态">
+			<Value>true</Value>
+			<Description><![CDATA[
+				<p>在客户端调用insertRecord方法插入数据后，设置是否将新插入数据的第一列设置为编辑状态</p>
+			]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为grid且可编辑时起作用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="插入时验证必填数据列数据" type="11" name="isCheckEmpty" export="true"
+			group="可编辑" tips="在客户端调用insertRecord方法插入数据时，设置是否验证必填数据列的数据">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>在客户端调用insertRecord方法插入数据时，设置是否验证必填数据列的数据</p>
+			]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为grid且可编辑时起作用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="客户端" type="15" group="行单击脚本" name="onClickSingleClient"
+			tips="单击列表的数据行时触发的事件，同其它组件的“点击时脚本”...">
+			<Value />
+			<Description><![CDATA[
+      单击列表的数据行时触发的事件，同其它组件的“点击时脚本”，以点击删除为例：
+      <p>客户端脚本</p>
+      <pre>
+//进行提示，点击确定后再删除
+Artery.confirmMsg("删除","此操作不可恢复，确定要删除吗？",function(btn){
+	if(btn == "yes"){
+		rc.put("bookid","{rs1.C_ID}");
+		rc.send(function(result){
+			if(result.success){
+				//提示成功
+				Artery.showMessage("删除成功，请继续！");
+				//刷新列表
+				Artery.get("bookList").reload();
+			} 
+		})
+    }
+})
+      </pre> 
+      ]]></Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="行单击脚本" name="onClickSingleServer"
+			tips="单击列表的数据行时触发的事件，同其它组件的“点击时脚本”...">
+			<Value />
+			<Description><![CDATA[
+			单击列表的数据行时触发的事件，同其它组件的“点击时脚本”
+			<pre>
+public Object listArea2e85e_onClickSingleServer(Item item) {
+		String sql = "delete from T_Eg_Book where C_ID='" + ParamUtil.getString("bookid") + "'";
+		Artery.dba.execUpdate(sql);
+		return null;
+}
+	</pre>
+			]]></Description>
+		</Property>
+		<Property cn="客户端" type="15" group="行双击脚本" name="onClickDoubleClient"
+			inherit="false" tips="双击列表的数据行时触发的事件，同其它组件的“点击时脚本”...">
+			<Value />
+			<Description><![CDATA[
+      双击列表的数据行时触发的事件，同其它组件的“点击时脚本”，以双击删除为例：
+      <p>客户端脚本</p>
+      <pre>
+//进行提示，点击确定后再删除
+Artery.confirmMsg("删除","此操作不可恢复，确定要删除吗？",function(btn){
+	if(btn == "yes"){
+		rc.put("bookid","{rs1.C_ID}");
+		rc.send(function(result){
+			if(result.success){
+				//提示成功
+				Artery.showMessage("删除成功，请继续！");
+				//刷新列表
+				Artery.get("bookList").reload();
+			} 
+		})
+    }
+})
+      </pre>
+      ]]></Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="行双击脚本" name="onClickDoubleServer"
+			inherit="false" tips="双击列表的数据行时触发的事件，同其它组件的“点击时脚本”...">
+			<Value />
+			<Description><![CDATA[
+			双击列表的数据行时触发的事件，同其它组件的“点击时脚本”
+			<pre>
+public Object listArea2e85e_onClickDoubleServer(Item item) {
+		String sql = "delete from T_Eg_Book where C_ID='" + ParamUtil.getString("bookid") + "'";
+		Artery.dba.execUpdate(sql);
+		return null;
+}	
+			</pre>
+			]]></Description>
+		</Property>
+		<Property cn="客户端" type="15" group="行鼠标移上时脚本" name="onMouseOverClient"
+			tips="鼠标移到列表的行上时触发的客户端事件">
+			<Value />
+			<Description><![CDATA[
+			鼠标移到列表的行上时触发的客户端事件
+			<pre>
+/**
+ * onMouseOverClient(listArea2e85e)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function listArea2e85e_onMouseOverClient (rc){
+	
+}
+			</pre>
+			]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为list下有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="服务器端" type="14" group="行鼠标移上时脚本" name="onMouseOverServer"
+			tips="鼠标移到列表的行上时触发的服务器端事件">
+			<Value />
+			<Description><![CDATA[
+			鼠标移到列表的行上时触发的服务器端事件
+			<pre>
+/**
+ *  列表区域
+ * 
+ * @param item
+ *            控件对象
+ */
+public void listArea2e85e_onMouseOverServer(Item item) {
+
+}
+			</pre>
+			]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为list下有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="客户端" type="15" group="行鼠标移出时脚本" name="onMouseOutClient"
+			tips="鼠标移出列表的行上时触发的客户端事件">
+			<Value />
+			<Description><![CDATA[
+			鼠标移出列表的行上时触发的客户端事件
+			<pre>
+/**
+ * onMouseOutClient(listArea2e85e)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function listArea2e85e_onMouseOutClient (rc){
+	
+}
+			</pre>
+			]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为list下有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="服务器端" type="14" group="行鼠标移出时脚本" name="onMouseOutServer"
+			tips="鼠标移出列表的行上时触发的服务器端事件">
+			<Value />
+			<Description><![CDATA[
+			鼠标移出列表的行上时触发的服务器端事件
+			<pre>
+/**
+ *  列表区域
+ * 
+ * @param item
+ *            控件对象
+ */
+public void listArea2e85e_onMouseOutServer(Item item) {
+
+}
+			</pre>]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为list下有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="客户端" type="15" group="选中时脚本" name="onSelectClient"
+			tips="点击选中本组件时触发的客户端事件">
+			<Value />
+			点击选中本组件时触发的客户端事件
+			<Description><![CDATA[<pre>
+/**
+ * onSelectClient(listArea2e85e)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function listArea2e85e_onSelectClient (rc){
+	
+}		
+			</pre>]]></Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="选中时脚本" name="onSelectServer"
+			tips="点击选中本组件时触发的服务器端事件">
+			<Value />
+			<Description><![CDATA[
+			点击选中本组件时触发的服务器端事件
+			<pre>
+/**
+ *  列表区域
+ * 
+ * @param item
+ *            控件对象
+ */
+public void listArea2e85e_onSelectServer(Item item) {
+
+}
+			</pre>]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为list下有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="客户端" type="15" group="取消选中时脚本" name="onDeselectClient"
+			tips="取消选中本组件时触发的客户端事件">
+			<Value />
+			<Description><![CDATA[
+			取消选中本组件时触发的客户端事件
+			<pre>
+/**
+ * onDeselectClient(listArea2e85e)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function listArea2e85e_onDeselectClient (rc){
+	
+}		
+			</pre>]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为list下有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="服务器端" type="14" group="取消选中时脚本" name="onDeselectServer"
+			tips="取消选中本组件件时触发的服务器端事件">
+			<Value />
+			<Description><![CDATA[
+			取消选中本组件件时触发的服务器端事件
+			<pre>
+/**
+ *  列表区域
+ * 
+ * @param item
+ *            控件对象
+ */
+public void listArea2e85e_onDeselectServer(Item item) {
+
+}			
+			</pre>]]></Description>
+			<Conditions>
+				<Condition>此属性只对“列表类型”为list下有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="行脚本" type="14" name="rowScript" inherit="false"
+			sh="value,rowIndex,cellRow,cellRow.getString(col),dataRow,dataRow.isEmpty(),dataRow.getString(col),dataRow.getInt(col),dataRow.getDouble(col),dataRow.getData(col),dataRow.index()"
+			tips="列表解析时会对要展现的每行数据执行此脚本，在此脚本中可以对一行的数据进行操作...">
+			<Value />
+			<Description><![CDATA[
+      列表解析时会对要展现的每行数据执行此脚本，在此脚本中可以对一行的数据进行操作，由于每列都可以设置自己的行脚本，所以此属性并不常用
+      <pre>
+	/**
+	 * 行脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 * @param cellRow
+	 *            展现数据行对象
+	 * @param dataRow
+	 *            结果数据行对象
+	 */
+	public void jobStatus_columnString_rowScript(Item item, CellRow cellRow,
+			Object dataRow) {
+	}
+      </pre>
+      ]]></Description>
+		</Property>
+		<Property cn="动态数据" type="14" name="dynamicData"
+			tips="列表加载的数据可以由此脚本生成，如果写了此脚本，并且返回需要的数据...">
+			<Value />
+			<Description><![CDATA[
+      列表加载的数据可以由此脚本生成，如果写了此脚本，并且返回需要的数据，则列表就会用此数据展现，不会再去加载数据源中的数据。此脚本要求数据格式为List + String[]的形式，并且列表的第一个数组不代表着实际的数据，相当于sql查询结果集中的列名称数组，如下所示：
+      <pre>
+/**
+ * 动态数据
+ * 
+ * @param item
+ *            控件对象
+ */
+public Map {methodName}(Item item) {
+	//分页参数
+	String start = ParamUtil.getString("start");
+	String limit = ParamUtil.getString("limit");
+	//排序参数
+	String sort = ParamUtil.getString("sort");
+	String dir = ParamUtil.getString("dir");
+	//过滤参数
+	String filter = ParamUtil.getString("filter");
+	
+	//todo:可根据上面得到的分页参数来处理数据
+	
+	Map data = new HashMap();
+	List rows = new ArrayList();
+	//第一行的数据为列名称，不做为实际的数据存在，对应控件取值时的标签的内容，如{rs1.C_Name}
+	rows.add(new Object[]{"C_ID","C_Name"});
+	rows.add(new Object[]{"11","king"});
+	rows.add(new Object[]{"22","wang"});
+	rows.add(new Object[]{"33","king"});
+	rows.add(new Object[]{"44","wang"});
+	rows.add(new Object[]{"1sd1","king"});
+	rows.add(new Object[]{"2as2","wang"});
+	rows.add(new Object[]{"1a1","king"});
+	data.put("rows",rows);
+	//如果需要分页，则需要设置上总记录数
+	data.put("totalCount","20");
+	
+	return data;
+}
+      </pre>
+      ]]></Description>
+			<Conditions>
+				<Condition>如果列表即设置的“数据源”属性，又设置了动态脚本，系统会解析动态脚本的数据返回，不会再解析数据源对应的sql了
+				</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="亮显规则" type="14" name="highLightRule"
+			sh="value,rowIndex,colIndex,cell,cell.foreColor,cell.backColor,cell.getValue(name),cellRow,cellRow.getString(col),dataRow,dataRow.isEmpty(),dataRow.getString(col),dataRow.getInt(col),dataRow.getDouble(col),dataRow.getData(col),dataRow.index()"
+			tips="设置列表单元格的亮显规则，可对每个单元进行设置背景色，前景色...">
+			<Value />
+			<Description><![CDATA[
+      设置列表单元格的亮显规则，可对每个单元进行设置背景色，前景色，如下：
+      <pre>
+/**
+ * 亮显规则
+ * 
+ * @param item
+ *            控件对象
+ * @param cell
+ *            展现单元格对象
+ * @param cellRow
+ *            展现数据行对象
+ * @param dataRow
+ *            结果数据行对象
+ * @param rowIndex
+ *            当前行位置
+ * @param colIndex
+ *            当前列位置
+ * @param colId
+ *            当前列id
+ * @param value
+ *            当前值
+ */
+public void {methodName}(Item item, Cell cell, CellRow cellRow,
+		Object dataRow, int rowIndex, int colIndex, String colId,
+		String value) {
+	if(rowIndex %2 == 0){
+		cell.setBackColor("lightblue");
+	}
+	
+	if(colId.equals("lstCISBN")){
+		if(!StringUtils.isEmpty(value) && value.startsWith("9787")){
+			cell.setForeColor("red");
+			cell.setBackColor("#D6E3F2");			
+		}
+	}
+	
+	Map rec = (Map)dataRow;
+		if(rec.get("custom").equals("true")){
+			cell.setForeColor("red");
+	}
+}
+      </pre>
+      ]]></Description>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="查询前脚本" type="14" name="onBeforeQuery" tips="可写服务器端脚本，当列表请求数据（如：刷新，翻页，调用reload方法等）之前，会先调用此脚本">
+			<Value />
+			<Description><![CDATA[
+				<p>可写服务器端脚本，当列表请求数据（如：刷新，翻页，调用reload方法等）之前，会先调用此脚本</p>
+				<p>在此脚本中，可以对IQueryInfo对象的内容进行修改，包括分页信息、排序信息、过滤信息等</p>
+<pre>
+	/**
+	 * 设置“分页信息”
+	 */
+	if (qp.getCurrPageNo() == 1) {
+		qp.setCurrPageNo(2);     //设置当前页号
+		qp.setRowCount(3);      //设置记录总行数
+		qp.setRowsPerPage(3);    //设置每页行数
+		qp.setSplitPage(true);   //设置是否分页
+	}
+</pre>
+<pre>
+	/**
+	 * 设置排序信息
+	 */
+	ISortInfo delSortInfo = null;
+	List<ISortInfo> sortList = qp.getSortList();
+	if (null != sortList && !sortList.isEmpty()) {
+		for (ISortInfo sortInfo : sortList) {
+			//修改排序信息
+			if (sortInfo.getColumn().equals("C_Name")) {
+				sortInfo.setColumn("C_XMJP");
+				sortInfo.setDir("desc");
+			}
+			if (sortInfo.getColumn().equals("C_LoginID")) {
+				delSortInfo = sortInfo;
+			}
+		}
+	}
+	//增加排序信息
+	ISortInfo sortInfo = new DefaultSortInfo();
+	sortInfo.setColumn("C_ID"); //设置列名称，用于sql语句的字段名称
+	sortInfo.setDir("asc");     //设置排序方向，desc或者asc
+	sortList.add(sortInfo);
+	//增加默认排序信息，等同于列表的defaultOrder属性
+	ISortInfo defaultSortInfo = new DefaultSortInfo();
+	defaultSortInfo.setDefaultSort(true);
+	defaultSortInfo.setDefaultSortValue("C_Name desc");
+	
+	//删除排序信息
+	sortList.remove(0);
+	sortList.remove(delSortInfo);
+</pre>
+<pre>
+	/**
+	 * 设置过滤信息
+	 */
+	List<IFilterInfo> filterList = qp.getFilterList();
+	IFilterInfo delFilterInfo = null;
+	for (IFilterInfo filterInfo : filterList) {
+		//字符串过滤信息
+		if (filterInfo instanceof StringFilterInfo) {
+			StringFilterInfo stringFI = (StringFilterInfo) filterInfo;
+			stringFI.setColumn("C_LoginID");                       //设置过滤列名，用于sql语句的字段名称
+			stringFI.setCompareType(IFilterInfo.COMP_LIKE_RIGHT);  //设置比较类型
+			stringFI.setFilterStr("a");                            //设置过滤字符串
+		}
+		//期过滤信息
+		if (filterInfo instanceof DateFilterInfo) {
+			DateFilterInfo dateFI = (DateFilterInfo) filterInfo;
+			
+			dateFI.setColumn("D_Date");                            //设置过滤列名，用于sql语句的字段名称
+			dateFI.setCompareType(IFilterInfo.COMP_SMALL);         //设置比较类型
+			
+			Calendar cal = Calendar.getInstance();
+			cal.set(2011, 03, 05, 0, 0, 0);
+			cal.set(Calendar.MILLISECOND, 0);
+			dateFI.setLeftCalendar(cal);                          //设置左侧日期
+			//dateFI.setRightCalendar(cal);                         //设置右侧日期
+		}
+		//数字过滤信息
+		if (filterInfo instanceof NumberFilterInfo) {
+			NumberFilterInfo numberFI = (NumberFilterInfo) filterInfo;
+			numberFI.setColumn("N_Num");                          //设置过滤列名，用于sql语句的字段名称
+			numberFI.setCompareType(IFilterInfo.COMP_BIG);        //设置比较类型
+			numberFI.setLeftValue("4");                           //设置左侧值（数字值）
+			//numberFI.setRightValue("8");                          //设置左侧值（数字值）
+		}
+		
+		if (filterInfo.getColumn().equals("C_Name")) {
+			delFilterInfo = filterInfo;
+		}
+	}
+	//增加过滤信息
+	StringFilterInfo filterInfo = new StringFilterInfo();
+	filterInfo.setColumn("C_Name");
+	filterInfo.setCompareType(IFilterInfo.COMP_LIKE_BOTH);
+	filterInfo.setFilterStr("a");
+	filterList.add(filterInfo);
+	//删除过滤信息
+	sortList.remove(0);
+	sortList.remove(delFilterInfo);
+</pre>
+			]]></Description>
+		</Property>
+		<Property cn="加载时脚本" type="15" name="onLoad"
+			tips="列表加载完后执行的脚本，包括分页，过滤，排序，reload方法都会执行此脚本">
+			<Value />
+			<Description>
+				列表加载完后执行的脚本，包括分页，过滤，排序，reload方法都会执行此脚本
+				<pre>
+					Artery.showMessage(Ext.encode(options.params));  	
+
+      	</pre>
+			</Description>
+			<Conditions>
+				<Condition>此属性默认会传递3个参数，依次为：store,records,options，其中records对于list无效
+				</Condition>
+			</Conditions>
+		</Property>
+	</Properties>
+	<ExtendProperties>
+		<Property cn="高亮比较列" type="11" name="highlightCol" group="高亮"
+			tips="当此列设置为true时，列表会把此列的值和列表的高亮值比较，相等的话则此行数据高亮显示">
+			<Value>false</Value>
+		</Property>
+	</ExtendProperties>
+	<Methods>
+		<Method name="exportExcel" return="void" tips="导出列表为excel...">
+			<Description><![CDATA[导出列表为excel
+  		<pre>
+//导出当前页
+Artery.get("listArea7F69E").exportExcel();
+//导出全部数据
+Artery.get("listArea7F69E").exportExcel(true);
+//导出当前页，并指定文件名
+Artery.get("listArea7F69E").exportExcel(false,"测试文件名");
+//导出全部数据，并指定文件名
+Artery.get("listArea7F69E").exportExcel(true,"测试文件名");
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>total:boolean 可选的 是否导出全部数据，默认为false，只导出当前页</Param>
+				<Param>name:String 可选的 导出文件的名称（不包含后缀）</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="exportPdf" return="void" tips="导出列表为pdf...">
+			<Description><![CDATA[导出列表为pdf
+  		<pre>
+//导出当前页
+Artery.get("listArea7F69E").exportPdf();
+//导出全部数据
+Artery.get("listArea7F69E").exportPdf(true);
+//导出当前页，并指定文件名
+Artery.get("listArea7F69E").exportExcel(false,"测试文件名");
+//导出全部数据，并指定文件名
+Artery.get("listArea7F69E").exportExcel(true,"测试文件名");
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>total:boolean 可选的 是否导出全部数据，默认为false，只导出当前页</Param>
+				<Param>name:String 可选的 导出文件的名称（不包含后缀）</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="reload" return="void" tips="调用此方法可使列表重新加载数据...">
+			<Description><![CDATA[调用此方法可使列表重新加载数据
+  		<pre>
+//重载当前页面的数据，系统默认会传递之前列表的所有参数到后台，包括分页参数，过滤参数等等
+Artery.get("listArea7F69E").reload();
+
+//自定义参数
+Artery.get("listArea7F69E").reload({
+	params:{
+		start:0,//重新加载并显示第一页的数据
+		name:'test'//传递名称做为参数
+	},
+	// 为true，则清空上次查询时的自定义参数，否则，上次查询时的参数也会传回服务器，默认为false
+	clearParam: true,
+	// 为true，则清空列表选中状态（checkbox列的状态），否则，不清空选中状态，默认为true
+	clearStatus: true,
+	//callback回调函数
+	//如果是List，则回调函数为Ext.Ajax.request中的callback,其三个参数依次为：options,success,resopnse;
+	//如果是Grid，则回调函数为Ext.data.Stroe.load中的callback,其三个参数依次为：r,options,success;
+	//通过options.params.customData可获得数据源中用户自定义的数据。如:
+	//public Object ds_rs1(IQueryInfo qp) {
+	//		... ....
+	//		IPagableData returndata=myData;
+	//		Map customDataMap=returndata.getCustomData();
+	//		customDataMap.put("a", "a");
+	//		customDataMap.put("date", new Date());
+	//		return returndata;
+	//	}
+	//则通过options.params.customData.a和options.params.customData.date可分别得到相应值
+	callback: myCallBackFn
+});
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法默认会传递之前列表的所有参数到后台，除非通过自定义参数进行覆盖</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>options:json 可选的 重载的选项，一般在此对象中添加自定义的参数信息，如上示例</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="clearDataStatus" return="void"
+			tips="调用此方法可清空列表的选中状态，当前只影响checkbox列...">
+			<Description><![CDATA[调用此方法可清空列表的选中状态，当前只影响checkbox列
+      <pre>
+// 清除所有checkBox选中的数据
+Artery.get("listArea7F69E").clearDataStatus();
+      </pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="getValues" return="string" tips="得到列表指定列名称的一列的数据字符串...">
+			<Description><![CDATA[得到列表指定列名称的一列的数据字符串
+  		<pre>
+//得到字符串控件数据："论语别裁,国学拾遗,读库08021"
+Artery.get("listArea7F69E").getValues("bookName");
+
+//对于代码等具有代码值和显示值的控件，得到的数据格式为代码值："1,1,2"
+Artery.get("listArea7F69E").getValues("bookType");
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+		<Method name="getValuesQuote" return="string"
+			tips="得到列表指定列名称的一列的数据字符串，每个字符串...">
+			<Description><![CDATA[得到列表指定列名称的一列的数据字符串，每个字符串两边都会加引号
+  		<pre>
+//得到数据字符串：'论语别裁','国学拾遗','读库08021'
+Artery.get("listArea7F69E").getValuesQuote("bookName");
+
+//对于代码等具有代码值和显示值的控件，得到的数据格式为代码值：'1','1','2'
+Artery.get("listArea7F69E").getValuesQuote("bookType");
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+		<Method name="getValuesArray" return="array" tips="得到列表指定列名称的一列的数据数组...">
+			<Description><![CDATA[得到列表指定列名称的一列的数据数组
+  		<pre>
+//得到数据数组：[论语别裁,国学拾遗,读库08021]
+Artery.get("listArea7F69E").getValuesArray("bookName");
+
+//对于代码等具有代码值和显示值的控件，得到的数据格式为代码值：[1,1,2]
+Artery.get("listArea7F69E").getValuesArray("bookType");
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+			</Parameters>
+			<Return>array</Return>
+		</Method>
+		<Method name="getSelectedCellValue" return="string" tips="得到选择单元格的值...">
+			<Description><![CDATA[得到选择单元格的值
+  		<pre>
+//得到选择单元格的值：'论语别裁'
+Artery.get("listArea7F69E").getSelectedCellValue();
+
+//对于代码等具有代码值和显示值的控件单元格，得到的数据格式为代码值：'2'
+Artery.get("listArea7F69E").getSelectedCellValue();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+		<Method name="getSelectedRowValue" return="string" tips="得到选择的列表的一行的值...">
+			<Description><![CDATA[得到选择的列表的一行的值，此字符串是json格式的
+  		<pre>
+//格式为：{"lstCID":"1000000000004127 ","lstCNAME":"论语别裁","booktype":{"value":"1","valueText":"科技"}}
+Artery.get("listArea7F69E").getSelectedRowValue();
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>对于代码等具有代码值和显示值的控件单元格，得到的数据包含value和valueText</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+		<Method name="getSelectedRowJson" return="json" tips="得到选择的列表的一行的json对象...">
+			<Description><![CDATA[得到选择的列表的一行的json对象
+  		<pre>
+//格式为：{"lstCID":"1000000000004127 ","lstCNAME":"论语别裁","booktype":{"value":"1","valueText":"科技"}}
+Artery.get("listArea7F69E").getSelectedRowJson();
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>对于代码等具有代码值和显示值的控件单元格，得到的数据包含value和valueText</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>json</Return>
+		</Method>
+		<Method name="getCheckedRowValue" return="string"
+			tips="得到指定列的checkbox选中行的值...">
+			<Description><![CDATA[得到指定列的checkbox选中行的值，其值为json格式的字符串
+  		<pre>
+//格式为：[{"lstCID":"1000000000004127 ","lstCNAME":"论语别裁","booktype":{"value":"1","valueText":"科技"}}]
+Artery.get("listArea7F69E").getCheckedRowValue("bookChk");
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只适用于checkbox列</Condition>
+				<Condition>对于选中多个checkbox会返回多行的值</Condition>
+				<Condition>对于代码等具有代码值和显示值的控件单元格，得到的数据包含value和valueText</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+		<Method name="getCheckedRowJson" return="json"
+			tips="得到指定列的checkbox选中行的json对象...">
+			<Description><![CDATA[得到指定列的checkbox选中行的json对象
+  		<pre>
+//格式为：[{"lstCID":"1000000000004127 ","lstCNAME":"论语别裁","booktype":{"value":"1","valueText":"科技"}}]
+Artery.get("listArea7F69E").getCheckedRowJson("bookChk");
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只适用于checkbox列</Condition>
+				<Condition>对于选中多个checkbox会返回多行的值</Condition>
+				<Condition>对于代码等具有代码值和显示值的控件单元格，得到的数据包含value和valueText</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+			</Parameters>
+			<Return>json</Return>
+		</Method>
+		<Method name="getDeselectValues" return="string"
+			tips="得到指定checkbox列的所有取消选中的值...">
+			<Description><![CDATA[得到指定checkbox列的所有取消选中的值
+  		<pre>
+//返回的格式为："论语别裁,国学拾遗,读库08021"
+Artery.get("listArea7F69E").getDeselectValues("bookChk");
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只适用于checkbox列</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+		<Method name="getDeselectValuesQuote" return="string"
+			tips="得到指定checkbox列的所有取消选中的值...">
+			<Description><![CDATA[得到指定checkbox列的所有取消选中的值，每个两边都加引号
+  		<pre>
+//返回的格式为：'论语别裁','国学拾遗','读库08021'
+Artery.get("listArea7F69E").getDeselectValuesQuote("bookChk");
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只适用于checkbox列</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+		<Method name="getDeselectValuesArray" return="array"
+			tips="得到指定checkbox列的所有取消选中的值数组...">
+			<Description><![CDATA[得到指定checkbox列的所有取消选中的值数组
+  		<pre>
+//返回的格式为：[论语别裁,国学拾遗,读库08021]
+Artery.get("listArea7F69E").getDeselectValuesArray("bookChk");
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只适用于checkbox列</Condition>
+				<Condition>此方法只适用于简单列表list</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+
+
+		<Method name="getAllValues" return="string" tips="得到列表全部行的字符串数据...">
+			<Description><![CDATA[得到列表全部行的字符串数据
+  		<pre>
+//格式为：[{"lstCID":"1000000000004127 ","lstCNAME":"论语别裁","booktype":{"value":"1","valueText":"科技"}}]
+Artery.get("listArea7F69E").getAllValues();
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>对于代码等具有代码值和显示值的控件单元格，得到的数据包含value和valueText</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>列</Param>
+			</Parameters>
+			<Return>string</Return>
+		</Method>
+		<Method name="getAllValuesJson" return="json" tips="得到列表全部行的json对象...">
+			<Description><![CDATA[得到列表全部行的json对象
+  		<pre>
+//格式为：[{"lstCID":"1000000000004127 ","lstCNAME":"论语别裁","booktype":{"value":"1","valueText":"科技"}}]
+Artery.get("listArea7F69E").getAllValuesJson();
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>对于代码等具有代码值和显示值的控件单元格，得到的数据包含value和valueText</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>json</Return>
+		</Method>
+		<Method name="selectAllCheckbox" return="void" tips="选中指定列的所有checkbox...">
+			<Description><![CDATA[选中指定列的所有checkbox
+  		<pre>
+//选中列checkbox，包括表头全选
+Artery.get("listArea7F69E").selectAllCheckbox("bookChk");
+
+//选中列checkbox，不包括表头全选
+Artery.get("listArea7F69E").selectAllCheckbox("bookChk",false);
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只适用于checkbox列</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+				<Param>head:boolean 可选的 默认为true，设置为false时不选中表头上的全选checkbox</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="deselectAllCheckbox" return="void"
+			tips="取消选中指定列的所有checkbox...">
+			<Description><![CDATA[取消选中指定列的所有checkbox
+  		<pre>
+//取消列选中checkbox，包括表头全选
+Artery.get("listArea7F69E").deselectAllCheckbox("bookChk",true);
+
+//取消列选中checkbox，不包括表头全选
+Artery.get("listArea7F69E").deselectAllCheckbox("bookChk",false);
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只适用于checkbox列</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colId:string 指定列的id（控件的id）</Param>
+				<Param>head:boolean 可选的 默认为true，设置为false时不取消选中表头上的全选checkbox</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="submit" return="void" tips="可编辑列表的提交方法...">
+			<Description><![CDATA[可编辑列表的提交方法，此方法会传递可编辑列表的新建，更新和删除的数据到后台，如果没有指定服务器端脚本，则系统会根据控件的数据字典信息自动更新<br><b>客户端脚本</b>
+  		<pre>
+Artery.get("bookList").submit(function(result){
+	if(result.success){
+		Artery.showMessage("保存成功，请继续");
+	} 
+});
+  		</pre>
+  		<b>传递的格式</b>
+  		<pre>
+{
+   "update":{
+       rows:{
+           rownumber1:{
+               keys:{name:value},
+               values:{name2:value1,name2:value2}
+           },
+           rownumber2:{
+               keys:{name:value},
+               values:{name2:value1,name2:value2}
+           }
+       }
+   },
+   
+   "insert":{
+       rows:{
+           rownumber1:{
+               values:{name2:value1,name2:value2}
+           },
+           rownumber2:{
+               values:{name2:value1,name2:value2}
+           }
+       }
+   },
+   
+   "delete":{
+       rows:{
+           rownumber1:{
+               keys:{name:value}
+           },
+           rownumber2:{
+               keys:{name:value}
+           }
+       }
+   }
+}  		
+  		</pre>
+  		如果需要自己处理，则在服务器端可通过ParamUtil.getString("data")来得到此字符串，然后通过JSONObject.fromObject(data)来转换成map对象
+  		<pre>
+String data = ParamUtil.getString("data");
+Map m = JSONObject.fromObject(data);  		
+  		</pre>
+  		]]></Description>
+			<Conditions>
+				<Condition>此方法只对可编辑列表起作用</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>callback:function 提交后的回调函数</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="insertRecord" return="void" tips="在可编辑列表中新建一条记录...">
+			<Description><![CDATA[在可编辑列表中新建一条记录
+  		<pre>
+//以默认值新建一条记录
+Artery.get("bookList").insertRecord();
+
+//以指定默认值新建一条记录
+Artery.get("bookList").insertRecord({
+      lstCNAME:"新建数据",
+      booktype:{
+             value:"1",
+             valueText:"科技"
+      }
+});
+
+//以指定默认值数组新建多个记录
+Artery.get("bookList").insertRecord([{
+      lstCNAME:"新建数据",
+      booktype:{
+             value:"1",
+             valueText:"科技"
+      }
+},{
+      lstCNAME:"新建数据1"
+}]);
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只对可编辑列表起作用</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>record:json 可选的 新建的记录对象</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="deleteRecord" return="void" tips="在可编辑列表中删除选中的记录...">
+			<Description><![CDATA[在可编辑列表中删除选中的记录
+  		<pre>
+//删除选中行
+Artery.get("bookList").deleteRecord();
+  		</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只对可编辑列表起作用</Condition>
+				<Condition>若选中多行，则会删除最先选中的行</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="changeCheck" return="void" tips="改变checkbox或radio列选中还是不选中">
+			<Description><![CDATA[改变checkbox或radio列选中还是不选中
+      <pre>
+//选中一行值
+Artery.get("bookList").changeCheck("checkCol","123",true);
+//选中多行值
+Artery.get("bookList").changeCheck("checkCol",["123","333"],true);
+</pre>]]></Description>
+			<Parameters>
+				<Param>colName:string 列标识</Param>
+				<Param>values:string|array 要选中列的对应的数据值，一般为“数据源”属性的值</Param>
+				<Param>check:boolean 是否选中，设置为true为选中，否则为取消选中</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="setTitle" return="void" tips="设置指定列的标题">
+			<Description><![CDATA[设置指定列id的标题
+      <pre>
+Artery.get("bookList").setTitle("col1","newTitle");
+</pre>]]></Description>
+			<Parameters>
+				<Param>colName:string 列标识</Param>
+				<Param>title:string 标题</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="setValue" return="void" tips="设置选中行的指定列的值">
+			<Description><![CDATA[设置选中行的指定列的值
+      <pre>
+//只设置值
+Artery.get("bookList").setValue("col1","newVal");
+//同时设置值和显示值
+Artery.get("bookList").setValue("col2","newVal","newValText");
+</pre>]]></Description>
+			<Parameters>
+				<Param>colName:string 列标识</Param>
+				<Param>value:string 值</Param>
+				<Param>valueText:string 显示值</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="getCells" return="array" tips="得到指定列的td对象">
+			<Description><![CDATA[得到指定列的td对象
+      <pre>
+var cells = Artery.get("bookList").getCells('columnStringCNAME');
+</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只对简单list列表起作用</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colName:string 列标识</Param>
+			</Parameters>
+			<Return>array</Return>
+		</Method>
+		<Method name="getCellByValue" return="td" tips="得到指定列,指定值的td对象">
+			<Description><![CDATA[得到指定列，指定值的td对象
+      <pre>
+var td = Artery.get("bookList").getCellByValue('columnStringCNAME','abc');
+</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只对简单list列表起作用</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colName:string 列标识</Param>
+				<Param>value: 值</Param>
+			</Parameters>
+			<Return>td:dom 对象</Return>
+		</Method>
+		<Method name="setColHidden" return="void" tips="隐藏或显示指定的列">
+			<Description><![CDATA[隐藏或显示指定的列
+      <pre>
+//隐藏列
+Artery.get("bookList").setColHidden('columnStringCNAME',true);
+//显示列
+Artery.get("bookList").setColHidden('columnStringCNAME',false);
+</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只对简单list列表起作用</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>colName:string 列标识</Param>
+				<Param>hidden:boolean 是否隐藏</Param>
+			</Parameters>
+			<Return>无</Return>
+		</Method>
+		<Method name="clear" return="void" tips="清除列表所有的数据">
+			<Description><![CDATA[清除列表所有的数据
+      <pre>
+Artery.get("bookList").clear();
+</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只对简单list列表起作用</Condition>
+			</Conditions>
+			<Return>无</Return>
+		</Method>
+		<Method name="setSortInfo" return="void" tips="设置列表的排序字段及方向">
+			<Description><![CDATA[设置列表的排序字段及方向
+      <pre>
+//field指要排序的列（数据库中列名），direction代表着方向，此两个值会传递到后台的QueryInfo中
+Artery.get("bookList").setSortInfo({
+	field:'C_NAME',
+	direction:'asc'
+});	
+</pre>]]></Description>
+			<Conditions>
+				<Condition>此方法只对简单list列表起作用</Condition>
+			</Conditions>
+			<Parameters>
+				<Param>cfg:json 其中field代表着要过滤的列，direction代表着方向</Param>
+			</Parameters>
+			<Return>无</Return>
+		</Method>
+	</Methods>
+	<JsFunctions>
+		<JsFunction name="onLoad">
+			/**
+			* 加载时脚本({itemid})
+			*
+			* @param store 数据存储对象
+			* @param records 加载回来的数据
+			* @param options 加载参数配置
+			*/
+			function
+			{methodName} (store, records, options){
+
+			}
+  	</JsFunction>
+	</JsFunctions>
+	<JavaFunctions>
+		<JavaFunction name="dynamicData">
+<![CDATA[
+/**
+ * 动态数据
+ * 
+ * @param item
+ *            控件对象
+ */
+public Map {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onClickSingleServer">
+<![CDATA[
+/**
+ * 行单击脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onClickDoubleServer">
+<![CDATA[
+/**
+ * 行双击脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="rowScript"
+			imports="com.thunisoft.artery.parse.eform.form.cellset.Cell;com.thunisoft.artery.parse.eform.form.cellset.CellRow;">
+<![CDATA[
+/**
+ * 行生成脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param cellRow
+ *            展现数据行对象
+ * @param dataRow
+ *            结果数据行对象
+ */
+public void {methodName}(Item item, CellRow cellRow,
+		Object dataRow) {
+
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="highLightRule"
+			imports="com.thunisoft.artery.parse.eform.form.cellset.Cell;com.thunisoft.artery.parse.eform.form.cellset.CellRow;">
+<![CDATA[
+/**
+ * 亮显规则
+ * 
+ * @param item
+ *            控件对象
+ * @param cell
+ *            展现单元格对象
+ * @param cellRow
+ *            展现数据行对象
+ * @param dataRow
+ *            结果数据行对象
+ * @param rowIndex
+ *            当前行位置
+ * @param colIndex
+ *            当前列位置
+ * @param colId
+ *            当前列id
+ * @param value
+ *            当前值
+ */
+public void {methodName}(Item item, Cell cell, CellRow cellRow,
+		Object dataRow, int rowIndex, int colIndex, String colId,
+		String value) {
+
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onBeforeQuery"
+			imports="com.thunisoft.artery.parse.dataset.domain.IQueryInfo;">
+<![CDATA[
+/**
+ * 请求前脚本
+ */
+public void {methodName}(Item item, IQueryInfo qp) {
+
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

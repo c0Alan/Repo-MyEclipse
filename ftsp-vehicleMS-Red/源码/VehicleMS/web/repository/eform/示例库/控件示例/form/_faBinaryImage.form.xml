@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>79670639276e16150df4f8b1e46fa977</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form._faBinaryImage.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_faBinaryImage.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form09853">
+      <id>form09853</id>
+      <bodyStyle>padding:10px;</bodyStyle>
+      <Items>
+        <blankPanel sid="b0895b941ae2a4ac8acd4b543ad72dde">
+          <id>blankPaneld14cd</id>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="ced4d2cebaadae83797ef752961ea023">
+              <id>header98716</id>
+              <text>图片上传控件</text>
+              <Items>
+                <collapseBtn sid="ff27dc968eba24db587578e5458c6319">
+                  <id>collapseBtn53ff4</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <formArea sid="65eb8eb5e8bb3d6e95610ba916127c87">
+              <id>formAreacd580</id>
+              <cellpadding>5</cellpadding>
+              <cellpaddingDisplay>5</cellpaddingDisplay>
+              <Items>
+                <faBinary sid="dc2149663ad9195e426c10d3e0633987">
+                  <id>faBinary2154e</id>
+                  <label>图片上传控件</label>
+                </faBinary>
+                <faBinary sid="dbc84ced5fefd3dc8e6181230de762d9">
+                  <id>faBinaryd53f3</id>
+                  <width>120</width>
+                  <height>140</height>
+                  <label>固定宽高</label>
+                </faBinary>
+                <faBinary sid="2ecdd62f575d6ca1cbb1826d3e3bd485">
+                  <id>faBinary9e11b</id>
+                  <required>true</required>
+                  <label>必填</label>
+                </faBinary>
+                <faBinary sid="6e378382d49f3f735b8407bbd3e88ce2">
+                  <id>faBinary76be8</id>
+                  <displayType>readOnly</displayType>
+                  <label>只读</label>
+                </faBinary>
+                <faBinary sid="891badabce5ac519fdedf35964db0fda">
+                  <id>faBinary43abd</id>
+                  <displayType>disabled</displayType>
+                  <label>无效</label>
+                </faBinary>
+                <faBinary sid="d1e2a3a861d9be7314e32a855a23983b">
+                  <id>faBinarybe9c1</id>
+                  <value>/artery/arteryImage/arrow/back.png</value>
+                  <label>展现</label>
+                </faBinary>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

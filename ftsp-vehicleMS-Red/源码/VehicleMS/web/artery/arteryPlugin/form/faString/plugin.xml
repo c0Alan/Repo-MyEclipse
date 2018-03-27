@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="faString" cn="字符串类型" menu="输入控件" nameprop="label"
+	icon="faString.gif" iconNew="faStringNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>
+			字符串控件，支持简单的“input”，文本区域“textarea”，密码输入框“password”，以及“richedit”等类型，主要用于表单中的文本的输入。
+		</Describe>
+		<Images>
+			<File>info1.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="formArea" />
+		<Parent type="faFieldSet" />
+		<Parent type="faBlankLayout" />
+	</Parents>
+	<Children />
+	<Class more="editor">com.thunisoft.artery.plugin.form.FaString
+	</Class>
+	<JsFile>
+		<File>faString.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="提交名称" type="1" name="submitName"
+			tips="用于设置form提交时本控件的提交名称，也就是input标签的name属性">
+			<Value />
+		</Property>
+		<Property cn="控件提示" type="1" name="comment" tips="用于产生控件的提示信息">
+			<Value />
+			<Description><![CDATA[
+			用于产生控件的提示信息,如果控件指定了继承表，继承字段，此项默认会显示数据字典中相应字段的描述信息。
+			如果填写此属性，则会覆盖数据字典中的描述信息。
+			]]></Description>
+		</Property>
+		<Property cn="是否必填" type="11" name="required" tips="设置是否为必填项">
+			<Value>false</Value>
+		</Property>
+		<Property cn="display必填标识" type="11" name="displayRequiredStyle" tips="当运行时类型为display时是否应用label的必填样式，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="必填时允许空格" type="11" name="allowBlankWhenRequired" tips="输入空格，如果属性为ture则通过必填验证，否则不能通过必填验证">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>输入空格，如果属性为ture则通过必填验证，否则不能通过必填验证"</p>
+			]]></Description>
+			<Conditions>
+				<Condition>是否必填属性为true时，此属性有效。</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="只读时是否验证" type="11" name="validOnReadOnly" export="true" tips="当设置为true时，会对展现类型(displayType)属性为ReadOnly的控件进行验证">
+			<Value>false</Value>
+		</Property>
+		<Property cn="无效时是否提交" type="3" name="submitDisabled" ct="[inherit,true,false]"
+			 tips="设置表单提交的时候，当displayType属性为disabled时是否提交，默认为inherit">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="继承key" type="1" name="inheritkey"
+			tips="继承的数据字典的key，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="继承表" type="1" name="inherittbl"
+			tips="继承的数据字典的表名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="继承字段" type="1" name="inheritfld"
+			tips="继承的数据字典的字段名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="dataName"
+			tips="根据设置，对应着从数据源中取数据 ，作为控件的值，优先级比值属性高。示例：{rs1.C_NAME}">
+			<Value />
+		</Property>
+		<Property cn="控件类型" type="3" name="editor" ct="[input,textarea,richedit,password]"
+			tips="选择字符串展现的子类型，可选input，password，textarea，richedit">
+			<Value>input</Value>
+			<Description><![CDATA[
+				<p>选择字符串展现的子类型，可选input，password，textarea，richedit</p>
+				<table><tr><td style='text-align:center;font-weight:700'>input</td><td><img src='../../resources/images/common/form/faString/faString_input.png'></td></tr><tr><td style='text-align:center;font-weight:700'>textarea</td><td><img src='../../resources/images/common/form/faString/faString_textarea.png'></td></tr><tr><td style='text-align:center;font-weight:700'>password</td><td><img src='../../resources/images/common/form/faString/faString_password.png'></td></tr><tr><td style='text-align:center;font-weight:700'>richedit</td><td><img src='../../resources/images/common/form/faString/faString_richedit.png'></td></tr></table>
+			]]></Description>
+			<Conditions>
+				<Condition>Artery对richeidt类型支持较差，很多属性（如是否必填）以及事件（如值改变，验证）都是不支持的</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="输入最大长度" type="1" name="maxLength" mask="^\d{1,}$" tips="限制本控件可输入的最大长度">
+			<Value />
+		</Property>
+		<Property cn="输入最小长度" type="1" name="minLength" mask="^\d{1,}$" tips="限制本控件可输入的最小长度">
+			<Value />
+		</Property>
+		<Property cn="掩码" type="1" name="regex"
+			tips="此属性用于设置控件的输入值应该符合的正则表达式，如果本属性为空，则参考数据字典中的配置">
+			<Value />
+			<Description><![CDATA[
+				<p>此属性用于设置控件的输入值应该符合的正则表达式，如果本属性为空，则参考数据字典中的配置</p>
+				<p>根据掩码属性设置的正则表达式对控件的输入进行验证，当输入不符合掩码时，将根据掩码提示属性进行提示</p>
+				<p>例如：</p>
+				<table style='border-collapse:collapse;' border='1px' borderColor='gray'><tr><td style='text-align:center;font-weight:700'>掩码</td><td  style='text-align:center;font-weight:700'>掩码提示</td></tr><tr><td style='font-weight:700'>^[\u4E00-\u9FA5]+$</td><td>只能包含中文</td></tr><tr><td style='font-weight:700'>/^\d+(%)?$/i</td><td>输入数值或百分比</td></tr><tr><td style='font-weight:700'>/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/</td><td>电子邮箱</td></tr><tr><td style='font-weight:700'>/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/</td><td>URL</td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="掩码提示" type="1" name="regexText" tips="当输入不符合掩码时，将显示本提示信息">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value />
+    </Property>
+    <Property cn="值" type="1" name="value" export="true" tips="设置本控件的值">
+      <Value />
+    </Property>
+    <Property cn="显示值提示" type="11" name="showValueTip"  export="true" tips="鼠标移动到控件上，显示控件的值...">
+      <Value>false</Value>
+    </Property>
+    <Property cn="输入提示" type="1" inherit="false" name="emptyText" export="true" tips="设置本控件的输入提示值，相当于ext的emptyText属性">
+      <Value />
+		<Description><![CDATA[
+			<p>设置本控件的输入提示值，相当于ext的emptyText属性</p>
+			<p>设置输入提示为“请输入正确的数据”，显示如下：</p>
+			<img src='../../resources/images/common/form/emptyText.png'>
+		]]></Description>
+      <Conditions>
+          <Condition>当“控件类型（editor）”属性值为richedit时，不支持此属性</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="输入框样式" type="1" name="valueStyle" export="true" tips="设置输入框的样式">
+      <Value />
+    </Property>
+    <Property cn="输入框样式(只读)" type="1" name="valueStyleRead" export="true" tips="设置输入框(只读)的样式">
+      <Value />
+    </Property>
+    <Property cn="验证提示方式" type="3" name="validType" ct="[cooltip,title]" tips="设置验证的提示方式，默认为tip提示的方式，选择title则以html的title样式展现">
+      <Value>cooltip</Value>
+    </Property>
+    <Property cn="展现类型" type="3" name="displayType" ct="[inherit,editable,readOnly,display,disabled]" export="true" tips="当设置此属性为true时，整个表单组件都会为只读的">
+      <Value>inherit</Value>
+    </Property>
+    <Property cn="是否隐藏" type="11" name="hidden" export="true"  tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="隐藏方式" type="3" name="hideMode" export="true" ct="[display,visibility]" tips="设置组件的隐藏方式，相当于css的样式，可选display和visibility">
+      <Value>display</Value>
+    </Property>
+    <Property cn="客户端" type="15" group="值改变时脚本" name="onChangeClient" tips="当本组件的值改变时触发的事件，客户端脚本">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="值改变时脚本" name="onChangeServer" tips="当本组件的值改变时触发的事件，服务器端脚本">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" group="验证脚本" name="onValidClient" tips="表单控件的验证事件(客户端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="验证脚本" name="onValidServer" tips="表单控件的验证事件(服务器端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" group="输入时脚本" name="onKeyupClient" tips="当用户在本控件中输入值的时候触发的事件，也就是input标签的onKeyup事件">
+      <Value />
+      <Description><![CDATA[
+        <p>当用户在本控件中输入值的时候触发的事件，也就是input标签的onKeyup事件</p>
+<pre>
+/**
+ * 输入时脚本(faStringe3c96)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ * @param  eventObject     触发事件的对象，Ext.EventObject类型
+ */
+function faStringe3c96_onKeyupClient (rc, value, eventObject){
+	alert(value + "___" + eventObject.getKey());
+}
+</pre>
+      ]]></Description>
+    </Property>
+    <Property cn="服务器端" type="14" group="输入时脚本" name="onKeyupServer" tips="当用户在本控件中输入值的时候触发的事件，也就是input标签的onKeyup事件">
+      <Value />
+      <Description><![CDATA[
+        <p>当用户在本控件中输入值的时候触发的事件，也就是input标签的onKeyup事件</P>
+<pre>
+	/**
+	 * 输入时时脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public Object faString78411_onKeyupServer(Item item) {
+		return null;
+	}
+</pre>
+      ]]></Description>
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"
+		tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14" name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <Methods>
+  	<Method name="getValue" return="string" tips="得到控件的值">
+  	</Method>
+  	<Method name="getValueText" return="string" tips="得到控件的显示值">
+  	</Method>
+  	<Method name="setValue" return="void" tips="设置控件的值">
+  	</Method>
+  	<Method name="reset" return="void" tips="恢复控件的初始值">
+  	</Method>
+  	<Method name="setOriginalValue" return="void" tips="设置控件的初始值">
+  	</Method>
+  	<Method name="setLabel" return="void" tips="设置控件的label的显示内容">
+  	</Method>
+  	<Method name="setLabelColor" return="void" tips="设置控件的label的显示内容的颜色">
+  	</Method>
+  	<Method name="setLabelStyle" return="void" tips="设置控件的label的样式">
+  	</Method>
+  	<Method name="setLabelCntStyle" return="void" tips="设置控件的label容器的样式">
+  	</Method>
+  	<Method name="setValueStyle" return="void" tips="设置控件的内容样式">
+  	</Method>
+  	<Method name="setRequired" return="void" tips="设置控件是否必填">
+  	</Method>
+  	<Method name="read" return="void" tips="设置控件为只读">
+  	</Method>
+  	<Method name="edit" return="void" tips="设置控件为可编辑">
+  	</Method>
+  	<Method name="disable" return="void" tips="设置控件无效">
+  	</Method>
+  	<Method name="enable" return="void" tips="设置控件有效">
+  	</Method>
+  	<Method name="hide" return="void" tips="隐藏本控件">
+  	</Method>
+  	<Method name="show" return="void" tips="显示本控件">
+  	</Method>
+  </Methods>
+  <JsFunctions>
+  	<JsFunction name="onChangeClient">
+/**
+ * 值改变时脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  oldValue 控件改变前的旧值
+ * @param  newValue 控件改变后的新值
+ */
+function {methodName} (rc, oldValue, newValue){
+	
+}
+  	</JsFunction>
+  	<JsFunction name="onValidClient">
+/**
+ * 验证脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ */
+function {methodName} (rc, value){
+	
+}
+  	</JsFunction>
+  	<JsFunction name="onKeyupClient">
+/**
+ * 输入时脚本({itemid})
+ * 
+ * @param  rc           系统提供的AJAX调用对象
+ * @param  value        控件的值
+ * @param  eventObject  触发事件的对象，Ext.EventObject类型
+ */
+function {methodName} (rc, value, eventObject){
+	
+}
+  	</JsFunction>
+  </JsFunctions>
+  	<JavaFunctions>
+		<JavaFunction name="onChangeServer">
+<![CDATA[
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onValidServer">
+<![CDATA[
+/**
+ * 验证时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onKeyupServer">
+<![CDATA[
+/**
+ * 输入时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

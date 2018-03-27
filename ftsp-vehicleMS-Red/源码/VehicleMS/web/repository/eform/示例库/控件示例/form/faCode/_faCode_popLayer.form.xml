@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>19ad08d2ce898bbefb2d7e498b41180f</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.faCode._faCode_popLayer.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/faCode/_faCode_popLayer.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form8a482">
+      <id>form8a482</id>
+      <text-align>left</text-align>
+      <Items>
+        <formArea sid="4e78fb0a3f4c71def269f5a00f5aa730">
+          <id>formAread84cc</id>
+          <width>1000</width>
+          <colNum>1</colNum>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <faFieldSet sid="941893fd1f19d855c83351138c0348f4">
+              <id>faFieldSet74dc2</id>
+              <fieldSetName>弹出层最小宽度</fieldSetName>
+              <colNum>3</colNum>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faCode sid="7697ca0c4e47dd1d66fc9a9d8a8f1ec7">
+                  <id>faCode9d663</id>
+                  <width>100</width>
+                  <minLayerWidth>0</minLayerWidth>
+                  <codeType>-5</codeType>
+                  <label>最小宽度0</label>
+                </faCode>
+                <faCode sid="875b647187560280845bb761a6ebd79f">
+                  <id>faCode21435</id>
+                  <width>100</width>
+                  <codeType>-5</codeType>
+                  <label>最小宽度150</label>
+                </faCode>
+                <faCode sid="8a4e3be84ee2075b07a2785b6911f85d">
+                  <id>faCode2c8ae</id>
+                  <width>100</width>
+                  <minLayerWidth>300</minLayerWidth>
+                  <codeType>-5</codeType>
+                  <label>最小宽度300</label>
+                </faCode>
+                <faCode sid="05d6212d5d5859a54a4b147747fc4131">
+                  <id>faCode928f3</id>
+                  <editor>sTree</editor>
+                  <width>100</width>
+                  <minLayerWidth>0</minLayerWidth>
+                  <codeType>-5</codeType>
+                  <label>最小宽度0</label>
+                </faCode>
+                <faCode sid="92ff7d977a0267fbdc563a6b37ccac31">
+                  <id>faCode84b9c</id>
+                  <editor>sTree</editor>
+                  <width>100</width>
+                  <codeType>-5</codeType>
+                  <label>最小宽度150</label>
+                </faCode>
+                <faCode sid="f624ac7bf3e62f7cb7dcf72b3a9cce4e">
+                  <id>faCode5c47e</id>
+                  <editor>sTree</editor>
+                  <width>100</width>
+                  <minLayerWidth>300</minLayerWidth>
+                  <codeType>-5</codeType>
+                  <label>最小宽度300</label>
+                </faCode>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="7d1d0b36cba1539accb4c110607f251e">
+              <id>faFieldSet0802f</id>
+              <fieldSetName>弹出层最小高度</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faCode sid="f26973499844255d56fc595df75c6a58">
+                  <id>faCode98b0b</id>
+                  <editor>sTree</editor>
+                  <minLayerHeight>0</minLayerHeight>
+                  <codeType>-1</codeType>
+                  <label>最小高度0</label>
+                </faCode>
+                <faCode sid="0a3d079103ba8ab956fef07a70dda9b4">
+                  <id>faCodeea1ab</id>
+                  <editor>sTree</editor>
+                  <minLayerHeight>150</minLayerHeight>
+                  <codeType>-1</codeType>
+                  <label>最小高度150</label>
+                </faCode>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="aab4e12c1d7c6941941e7d02feb44595">
+              <id>faFieldSet4b950</id>
+              <fieldSetName>弹出层最大高度</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faCode sid="f2b93d80d2dccb4102ba959a1c35c8dd">
+                  <id>faCodec6e06</id>
+                  <editor>sTree</editor>
+                  <maxLayerHeight>100</maxLayerHeight>
+                  <codeType>-5</codeType>
+                  <label>最大高度100</label>
+                </faCode>
+                <faCode sid="b98e8256098324162ac657c80a5c4cff">
+                  <id>faCodea7e7e</id>
+                  <editor>sTree</editor>
+                  <maxLayerHeight>300</maxLayerHeight>
+                  <codeType>-5</codeType>
+                  <label>最大高度300</label>
+                </faCode>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

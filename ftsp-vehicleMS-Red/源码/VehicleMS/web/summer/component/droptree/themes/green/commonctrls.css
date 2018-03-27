@@ -1,0 +1,46 @@
+.cbarrow {
+	background-image: url(images/cbarrow.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 16px;
+	width: 15px;
+}
+
+/*
+  ### Color Selector Panel
+*/
+
+.ColorBoxBorder
+{
+  border: #808080 1px solid;
+  position: static;
+}
+
+.ColorBox
+{
+  font-size: 1px;
+  width: 10px;
+  position: static;
+  height: 10px;
+}
+
+.ColorDeselected, .ColorSelected
+{
+  cursor: default;
+}
+
+.ColorDeselected
+{
+  border: #ffffff 1px solid;
+  padding: 2px;
+  float: left;
+}
+
+.ColorSelected
+{
+  border: #330066 1px solid;
+  padding: 2px;
+  float: left;
+  background-color: #c4cdd6;
+}
+

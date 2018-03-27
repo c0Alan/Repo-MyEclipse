@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>dac805668603a448d08bd83e6f42ec92</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.organ.Tjxgdw.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/organ/Tjxgdw.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form066cf">
+      <id>form066cf</id>
+      <Items>
+        <blankPanel sid="5918978876868fc3d6eb3bcaf5d87d7b">
+          <id>blankPanele9a85</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <bodyStyle>padding-top:10px;</bodyStyle>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="9d704e1726e64dead50bf42d51c696b8">
+              <id>header36ec4</id>
+              <text>&lt;span style="font-size:14px;padding:3px;"&gt;{req.headString}&lt;/span&gt;</text>
+            </header>
+            <formArea sid="d5e33356ae02d18a57d93214319404b4">
+              <id>formArea</id>
+              <ds>rs1</ds>
+              <width>400</width>
+              <colNum>1</colNum>
+              <style>margin-top:20px;</style>
+              <cellpadding>5</cellpadding>
+              <Items>
+                <faString sid="c8c0b44c7cd9c4efd5abf3f7ce0e4754">
+                  <id>corpName</id>
+                  <submitName>corp.name</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.name}</dataName>
+                  <maxLength>150</maxLength>
+                  <onValidClient><![CDATA[corpName_onValidClient]]></onValidClient>
+                  <onValidServer><![CDATA[corpName_onValidServer]]></onValidServer>
+                  <label>单位名称</label>
+                </faString>
+                <faString sid="c5d1949aa0b0bee3c68833214803901f">
+                  <id>corpAlias</id>
+                  <submitName>corp.alias</submitName>
+                  <dataName>{rs1.alias}</dataName>
+                  <maxLength>100</maxLength>
+                  <label>简称</label>
+                </faString>
+                <faCode sid="fb93b1abfd5f35f3a04c95b2bc233254">
+                  <id>corpValid</id>
+                  <submitName>corp.nValid</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.nValid}</dataName>
+                  <editor>sRadio</editor>
+                  <width />
+                  <dynamicData><![CDATA[faValid_dynamicData]]></dynamicData>
+                  <ajaxLoad>false</ajaxLoad>
+                  <label>是否有效</label>
+                </faCode>
+                <faHidden sid="2ec020b59fd06d565f28711d4ab5d361">
+                  <id>faHidden6bcf8</id>
+                  <submitName>corp.id</submitName>
+                  <dataName>{rs1.id}</dataName>
+                  <label>单位编号</label>
+                </faHidden>
+                <faHidden sid="9806572add193d5b80ac5c45e5825206">
+                  <id>parentId</id>
+                  <submitName>corp.pcorpId</submitName>
+                  <dataName>{rs1.pcorpId}</dataName>
+                  <label>父单位编号</label>
+                </faHidden>
+                <faHidden sid="aaf59e34a389353fba6697452446d63f">
+                  <id>faHidden5d922</id>
+                  <submitName>corp.order</submitName>
+                  <dataName>{rs1.order}</dataName>
+                  <label>显示顺序</label>
+                </faHidden>
+                <buttonArea sid="43613a867794452bc2daa6be00de98b8">
+                  <id>buttonArea21943</id>
+                  <spacing>10</spacing>
+                  <style>padding-left:100px;padding-top:10px;</style>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="7b2cc5f2d556686e223102ce49271f74">
+                      <id>addCorpBtn</id>
+                      <width>100</width>
+                      <text>添加单位</text>
+                      <themeStyle>apple</themeStyle>
+                      <onShow><![CDATA[addCorpBtn_onShow]]></onShow>
+                    </button>
+                    <button sid="6853e37ad0d8964cef9838857ba9610f">
+                      <id>updateCorpBtn</id>
+                      <width>100</width>
+                      <text>更新单位</text>
+                      <onClickClient><![CDATA[updateCorpBtn_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[updateCorpBtn_onClickServer]]></onClickServer>
+                      <themeStyle>apple</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="pcorpId" showName="父单位编号" value="" pvalue="-1" />
+    <param name="corpId" showName="单位编号" value="" pvalue="-1" />
+    <param name="headString" showName="标题行文字" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getCorpInfo</ds>
+  </dslist>
+</form>
+

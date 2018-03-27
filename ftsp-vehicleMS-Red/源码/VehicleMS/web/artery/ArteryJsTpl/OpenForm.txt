@@ -1,0 +1,13 @@
+Artery.openForm({
+	"formId" : "282CEC0CD8B31E49009D32F73F748A0A",
+	"formName" : "name",
+	"formType" : "1",//1表单，2报表，3文书
+	"title" : "添加图书",
+	"params" : {
+		"bookId" : ""
+	},
+	"runTimeType" : "insert",
+	"target" : "_window",//_window或_blank
+	"targetWidth" : 550,
+	"targetHeight" : 450
+});	

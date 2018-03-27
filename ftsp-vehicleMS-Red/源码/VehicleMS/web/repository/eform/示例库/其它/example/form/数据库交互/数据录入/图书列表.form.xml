@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>10d4f40bd75ea7d82a616b8c73b47731</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.form.sjkjh.sjlr.Tslb.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/form/sjkjh/sjlr/Tslb.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <topbar sid="A1a4ac471c38c99d12e5cf9e49e059ef9">
+          <id>A1a4ac471c38c99d12e5cf9e49e059ef9</id>
+          <Items>
+            <tbButton sid="Af1c2e9c3fa86763674900f372b2a91ab">
+              <id>Af1c2e9c3fa86763674900f372b2a91ab</id>
+              <text>添加图书(脚本)</text>
+              <linkto>{"formId":"282CEC0CD8B31E49009D32F73F748A0A","formName":"添加编辑图书（脚本）","formType":"1","params":{"bookId":""},"target":"_window","targetWidth":550,"targetHeight":480,"runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"","wincfg":""}</linkto>
+            </tbButton>
+            <tbSeparator sid="A11e8db3eb2b10e42295adf7b5c26c45c">
+              <id>A11e8db3eb2b10e42295adf7b5c26c45c</id>
+            </tbSeparator>
+            <tbButton sid="tbButton3ADE24F0A0F19546E729AB677F007C20">
+              <id>tbButton3ADE24F0A0F19546E729AB677F007C20</id>
+              <text>添加图书(自动)</text>
+              <linkto>{"formId":"6AD9CFC4E52F8C0A8166E36672E45433","formName":"添加编辑图书（自动）","formType":"1","params":{"bookId":""},"target":"_window","targetWidth":550,"targetHeight":480,"runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+            </tbButton>
+            <tbSeparator sid="tbSeparatorFA6BB08249B5339C99DCCCC673393E0D">
+              <id>tbSeparatorFA6BB08249B5339C99DCCCC673393E0D</id>
+            </tbSeparator>
+            <tbButton sid="tbButtonC2A4A40A4654B80E722B766E6D1FAF2C">
+              <id>tbButtonC2A4A40A4654B80E722B766E6D1FAF2C</id>
+              <text>添加图书(逻辑类)</text>
+              <linkto>{"formId":"404491013934B731E45BEF90892DF060","formName":"添加编辑图书（逻辑类）","formType":"1","params":{"bookId":""},"target":"_window","targetWidth":"550","targetHeight":"480","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"","wincfg":""}</linkto>
+            </tbButton>
+            <tbSeparator sid="tbSeparator9AF59613396814F835BF2560CC13A5EA">
+              <id>tbSeparator9AF59613396814F835BF2560CC13A5EA</id>
+            </tbSeparator>
+            <tbButton sid="tbButton51FAAD992708EFF7225261A2DB358B98">
+              <id>tbButton51FAAD992708EFF7225261A2DB358B98</id>
+              <text>添加图书(Hibernate)</text>
+              <linkto>{"formId":"64C9D9FA6DA6AC1B09EBCA354EAC7B44","formName":"添加编辑图书（hibernate）","formType":"1","params":{"bookId":""},"target":"_window","targetWidth":"550","targetHeight":"480","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"","wincfg":""}</linkto>
+            </tbButton>
+          </Items>
+        </topbar>
+        <listArea sid="Ad867d622dcac269ff60e93ba2f0977ef">
+          <id>bookList</id>
+          <ds>rs1</ds>
+          <height>100%</height>
+          <pageCount>15</pageCount>
+          <isStartNew>true</isStartNew>
+          <themeStyle>default</themeStyle>
+          <Items>
+            <columnIdentity sid="columnIdentity3F1F738CC9CAC7C83F5B8B0DD61E0CEC">
+              <id>lstCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>图书编号</title>
+              <isEditor>false</isEditor>
+            </columnIdentity>
+            <columnString sid="columnStringB32A6A35E5D7C824BC211E571732E7E2">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnStringD0B67EECB5EF6A3FDD19BB60107AD9BE">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnString9B8FA2B55619D3A5C5770CC3C7839DDB">
+              <id>lstCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnDate sid="columnDate65C464C53E39E9B35FB6BE3CB91ACC52">
+              <id>lstDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs1.D_PUBLISHER}</dataName>
+              <title>出版日期</title>
+              <isEditor>false</isEditor>
+            </columnDate>
+            <columnDate sid="columnDate1EEE6914EA40E5540B6363313640E5D5">
+              <id>lstDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{rs1.D_BUY}</dataName>
+              <title>购买日期</title>
+              <isEditor>false</isEditor>
+            </columnDate>
+            <columnCode sid="columnCode43B3013DD67794A575BB3B06653E5AC0">
+              <id>lstNTYPE</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{rs1.N_TYPE}</dataName>
+              <title>图书类型</title>
+              <isEditor>false</isEditor>
+              <codeType>-600</codeType>
+            </columnCode>
+            <columnString sid="columnStringCBD297CA812CB6CE4A21C1079520F4CB">
+              <id>lstCLIBRARYID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{rs1.C_LIBRARYID}</dataName>
+              <title>图书室id</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <column sid="Aee48d4175a90d106af93ee5cc8449f38">
+              <id>Aee48d4175a90d106af93ee5cc8449f38</id>
+              <title>操作</title>
+              <width>150</width>
+              <Items>
+                <colOperText sid="A5aa2dea91b7886d1ba8625c260fe2121">
+                  <id>oper_del</id>
+                  <text>删除</text>
+                  <onClickClient><![CDATA[oper_del_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[oper_del_onClickServer]]></onClickServer>
+                </colOperText>
+                <colOperText sid="A0f82d5389745387baccf6a616dfd5b3c">
+                  <id>A0f82d5389745387baccf6a616dfd5b3c</id>
+                  <text>编辑(脚本)</text>
+                  <linkto>{"formId":"282CEC0CD8B31E49009D32F73F748A0A","formName":"添加编辑图书（脚本）","formType":"1","params":{"bookId":"{rs1.C_ID}"},"target":"_window","targetWidth":550,"targetHeight":480,"runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"0","title":"","wincfg":""}</linkto>
+                </colOperText>
+                <colOperText sid="colOperText87717622145DDFB94335986E090A82F1">
+                  <id>colOperText87717622145DDFB94335986E090A82F1</id>
+                  <text>(自动)</text>
+                  <linkto>{"formId":"6AD9CFC4E52F8C0A8166E36672E45433","formName":"添加编辑图书（自动）","formType":"1","params":{"bookId":"{rs1.C_ID}"},"target":"_window","targetWidth":550,"targetHeight":480,"runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"","wincfg":""}</linkto>
+                </colOperText>
+                <colOperText sid="colOperTextE3D42795C90DF42F1D8DD0252818FBE0">
+                  <id>colOperTextE3D42795C90DF42F1D8DD0252818FBE0</id>
+                  <text>(逻辑类)</text>
+                  <linkto>{"formId":"404491013934B731E45BEF90892DF060","formName":"添加编辑图书（逻辑类）","formType":"1","params":{"bookId":"{rs1.C_ID}"},"target":"_window","targetWidth":550,"targetHeight":480,"runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"","wincfg":""}</linkto>
+                </colOperText>
+                <colOperText sid="colOperTextD49E5DCC3AE10973EF5AD849637BD725">
+                  <id>colOperTextD49E5DCC3AE10973EF5AD849637BD725</id>
+                  <text>(Hibernate)</text>
+                  <linkto>{"formId":"64C9D9FA6DA6AC1B09EBCA354EAC7B44","formName":"添加编辑图书（hibernate）","formType":"1","params":{"bookId":"{rs1.C_ID}"},"target":"_window","targetWidth":550,"targetHeight":480,"runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"","wincfg":""}</linkto>
+                </colOperText>
+              </Items>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Library where N_VALID=1</ds>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_ID , 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_PUBLISHER , 
+T_Eg_Book.D_PUBLISHER , 
+T_Eg_Book.D_BUY , 
+T_Eg_Book.N_TYPE , 
+T_Eg_Book.C_LIBRARYID 
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

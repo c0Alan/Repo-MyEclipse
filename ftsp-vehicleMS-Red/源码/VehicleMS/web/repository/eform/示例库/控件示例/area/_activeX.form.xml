@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>6962103c95a69130c13c53c31270aa99</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.area._activeX.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/area/_activeX.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form34398">
+      <id>form34398</id>
+      <importFile>/artery/pub/js/ocx-fix.js;</importFile>
+      <Items>
+        <tableLayout sid="a637b503b0f88d8fd53cabee2af01eb8">
+          <id>tableLayout66b6b</id>
+          <Items>
+            <activeX sid="5f166f9237260d1a866cb1a91893944a">
+              <id>activeX14d3c</id>
+              <codebase>/artery/arteryConsole/ocx/swflash.cab#version=9,0,28,0</codebase>
+              <classid>clsid:d27cdb6e-ae6d-11cf-96b8-444553540000</classid>
+              <param>&lt;param name="movie" value="{ctx}/artery/pub/images/login/fl.swf"&gt;</param>
+            </activeX>
+            <activeX sid="670fdd2808e9224ca48ceda15dbbb8d3">
+              <id>activeX0a250</id>
+              <codebase>/artery/arteryConsole/ocx/OfficeControl.cab#version=4,0,3,2</codebase>
+              <classid>clsid:C9BC4DFF-4248-4a3c-8A49-63A7D317F404</classid>
+              <param>&lt;param name="MakerCaption" value="北京紫光华宇软件股份有限公司"&gt;&lt;param name="MakerKey" value="38B4D34C447C7535C0060C51FF5707A8812BCC51"&gt;&lt;param name="ProductCaption" value="通用MIS系统构建平台"&gt;&lt;param name="ProductKey" value="F2AFEE15E32A9E589BD5B11CF1AFFC158A9F9D41"&gt;</param>
+            </activeX>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

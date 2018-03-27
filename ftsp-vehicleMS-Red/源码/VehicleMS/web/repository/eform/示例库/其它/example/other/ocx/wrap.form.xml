@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>62b2ffab218942d9359f92aeec9d3252</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.other.ocx.Wrap.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/other/ocx/Wrap.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form7f55a">
+      <id>form7f55a</id>
+      <importFile>/artery/pub/js/ocx-fix.js;</importFile>
+      <Items>
+        <topbar sid="9d1ae225e0735c0da3a585f805c4e0e6">
+          <id>topbara0e95</id>
+          <Items>
+            <tbButton sid="9856d961317a4b3c372bb202ed4bf561">
+              <id>tbButton54a82</id>
+              <onClickClient><![CDATA[tbButton54a82_onClickClient]]></onClickClient>
+            </tbButton>
+          </Items>
+        </topbar>
+        <blankPanel sid="585eeff72031589bada56d19dc0cd96c">
+          <id>blankPanel9a372</id>
+          <height>100%</height>
+          <Items>
+            <operArea sid="1f5d745ba30b908f6d7948dd5db12bc0">
+              <id>operAreac8670</id>
+              <linkto>{"formId":"cd6b742caada15af4178f83f5c8fa93a","formName":"activex示例","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+            </operArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

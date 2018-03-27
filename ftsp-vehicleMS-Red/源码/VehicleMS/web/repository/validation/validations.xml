@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<validations>
+	<validation id="ajmc" name="案件名称" template="ajjbxx" valid="true"
+		focusItemId="descriptStr" validMessage="测试，阶段验证定位!!" />
+	<validation id="test" name="test" template="test"
+		focusItemId="faString2d1ff" validMessage="测试，不能为空!" />
+</validations>

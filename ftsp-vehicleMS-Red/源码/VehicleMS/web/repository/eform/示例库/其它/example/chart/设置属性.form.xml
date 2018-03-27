@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e1e1a7039cbfcaaa1901c3b96559ec79</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.chart.Szsx.java</javaLocation>
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <tableLayout sid="tableLayoutB712D">
+          <id>tableLayoutB712D</id>
+          <colNum>2</colNum>
+          <Items>
+            <chartArea sid="chartAreaB0146">
+              <id>chart_confProp1</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaBEF34">
+              <id>chart_confProp2</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartArea4F2B5">
+              <id>chart_confProp3</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaFC299">
+              <id>chart_confProp4</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+              <loadType>ajax</loadType>
+            </chartArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

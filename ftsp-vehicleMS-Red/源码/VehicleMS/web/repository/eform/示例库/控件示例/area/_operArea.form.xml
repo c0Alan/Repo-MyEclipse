@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>6efbdced623c3017764935d96a2b01a4</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.area._operArea.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/area/_operArea.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formb303c">
+      <id>formb303c</id>
+      <Items>
+        <operArea sid="e375deb7b4e999049c09a86d09c31033">
+          <id>operAreaa2525</id>
+          <linkto>{"formId":"6962103c95a69130c13c53c31270aa99","formName":"_activeX","formType":"1","runTimeType":"insert","target":"_self","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+        </operArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

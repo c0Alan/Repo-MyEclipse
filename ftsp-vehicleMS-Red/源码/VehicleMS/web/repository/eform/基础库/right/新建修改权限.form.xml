@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>96f47aa3ddb495844a3c1cb6132f791b</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.right.Xjxgqx.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/right/Xjxgqx.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form777e1">
+      <id>form777e1</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <centerRegion sid="af857f894fdb33f2afec8754c9b93237">
+          <id>centerRegion42950</id>
+          <border>false</border>
+          <Items>
+            <formArea sid="ce03674f906dca9d5542a30cab706be2">
+              <id>formArea98754</id>
+              <colNum>1</colNum>
+              <colSpacing>5</colSpacing>
+              <labelAlign>top</labelAlign>
+              <labelWidth />
+              <cellpadding>5</cellpadding>
+              <Items>
+                <faString sid="9b933a771d127e241f74f08798d19b79">
+                  <id>keyStr</id>
+                  <submitName>right.rightKey</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.rightKey}</dataName>
+                  <maxLength>150</maxLength>
+                  <onValidClient><![CDATA[keyStr_onValidClient]]></onValidClient>
+                  <onValidServer><![CDATA[keyStr_onValidServer]]></onValidServer>
+                  <label>权限字</label>
+                </faString>
+                <faString sid="1553c473cf2f532de696bb1c75962fc9">
+                  <id>nameStr</id>
+                  <submitName>right.name</submitName>
+                  <required>true</required>
+                  <dataName>{rs1.name}</dataName>
+                  <maxLength>150</maxLength>
+                  <label>权限名称</label>
+                </faString>
+                <faString sid="8c04c22c5c8b5f240dd9eaa743b8dbdd">
+                  <id>descriptStr</id>
+                  <submitName>right.descript</submitName>
+                  <dataName>{rs1.descript}</dataName>
+                  <editor>textarea</editor>
+                  <maxLength>254</maxLength>
+                  <height>169</height>
+                  <label>描述</label>
+                  <labelStyle>width:100%;</labelStyle>
+                </faString>
+                <faHidden sid="8f3b0c399615365e38c7da818a092b7d">
+                  <id>orderStr</id>
+                  <submitName>right.order</submitName>
+                  <dataName>{rs1.order}</dataName>
+                  <label>显示顺序</label>
+                </faHidden>
+              </Items>
+            </formArea>
+          </Items>
+        </centerRegion>
+        <rightRegion sid="d593224d41bf5502205ed768b98c284c">
+          <id>rightRegion52fbe</id>
+          <width>180</width>
+          <split>false</split>
+          <margins>5 5 5 1</margins>
+          <Items>
+            <treeArea sid="c39fcb46cd46a03e966938a80637e900">
+              <id>selUserTreeArea</id>
+              <selType>checkbox</selType>
+              <height>100%</height>
+              <Items>
+                <treeDynamic sid="950d500e701d7c926cf42ec5bd8510bc">
+                  <id>selUserTreeDynamic</id>
+                </treeDynamic>
+              </Items>
+            </treeArea>
+          </Items>
+        </rightRegion>
+        <footer sid="4ed4fa7f32316f8e6e35f28d1ca11e97">
+          <id>footer3bf69</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="445a7b3490e2c0cf9a8f1201d615b9ac">
+              <id>addBtn</id>
+              <text>确定</text>
+              <onClickClient><![CDATA[addBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[addBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[addBtn_onShow]]></onShow>
+            </button>
+            <button sid="592835c1147b074c29641744197edff1">
+              <id>updateBtn</id>
+              <text>确定</text>
+              <onClickClient><![CDATA[updateBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[updateBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[updateBtn_onShow]]></onShow>
+            </button>
+            <simpleButton sid="be962189e5dd47e51c9c216794a5e006">
+              <id>closeBtn</id>
+              <text>关闭</text>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="rightKey" showName="权限字" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getRight</ds>
+  </dslist>
+</form>
+

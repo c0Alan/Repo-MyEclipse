@@ -1,0 +1,69 @@
+.noneBg{
+  background-color:#E0E0E0;
+}
+.blockBg{
+  background-color:#FFFFFF;
+}
+.navBtFirst {
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	border-width:0px;
+	background: url(images/first.gif) no-repeat;
+}
+.navBtLast {
+	background: url(images/last.gif) no-repeat;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	border-width:0px;
+}
+.navBtPriv {
+	background: url(images/prev.gif) no-repeat;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	border-width:0px;
+}
+.navBtNext {
+	background: url(images/next.gif) no-repeat;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	border-width:0px;
+}
+.tbFirst {
+	background: url(images/tb_first.gif) no-repeat;
+	height: 15px;
+	width: 8px;
+}
+.tbLast {
+	background: url(images/tb_last.gif) no-repeat;
+	height: 15px;
+	width: 8px;
+}
+.tbRight {
+	background: url(images/tb_right.gif) no-repeat;
+	height: 15px;
+	width: 8px;
+}
+.actbFirst {
+	background: url(images/actb_first.gif) no-repeat;
+	height: 15px;
+	width: 8px;
+}
+.actbLast {
+	background: url(images/actb_last.gif) no-repeat;
+	height: 15px;
+	width: 8px;
+}
+.actbLeft {
+	background: url(images/actb_left.gif) no-repeat;
+	height: 15px;
+	width: 8px;
+}
+.actbRight {
+	background: url(images/actb_right.gif) no-repeat;
+	height: 15px;
+	width: 8px;
+}

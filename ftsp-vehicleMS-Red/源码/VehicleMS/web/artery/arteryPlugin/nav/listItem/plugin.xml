@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="listItem" cn="列表导航操作项" jsType="artery-base" nameprop="caption"
+	icon="listItem.gif" iconNew="listItemNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe><![CDATA[列表导航操作项是列表导航中的叶子节点，不能展开或包含其他节点，通过连接到或后台脚本可实现对点击事件的导航功能]]></Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="listNav" />
+		<Parent type="listCatalog" />
+	</Parents>
+	<Children/>
+	<Class>com.thunisoft.artery.plugin.nav.ListItem
+	</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="说明" type="1" name="caption" tips="对导航操作项的说明">
+			<Value />
+		</Property>
+		<Property cn="图片" type="5" name="icon" tips="设置组件的显示图标，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value>/artery/arteryImage/file/tabs.gif</Value>
+		</Property>
+		<Property cn="右侧支持tip样式" type="11" name="tipSupport" export="true"
+			tips="当设置为true时，会在右侧生成一个绝对定位的div，可对此div设置其样式来隐藏边线">
+			<Value>false</Value>
+			<Description><![CDATA[
+			<p>通过控件的点击事件脚本，可利用此属性在按钮侧面产生一个导航窗口，代码如下：</p>
+			<pre>
+				/**
+				 * 客户端(listItemb2ed4)
+				 * 
+				 * @param  rc 系统提供的AJAX调用对象
+				 */
+				function listItemb2ed4_onClickClient (rc){
+					Artery.get('windowd57a0').show();
+					Artery.get('windowd57a0').alignTo(this.el,'tl-tr?')
+				}
+			</pre>
+			<p>在此情况下，可以设置此属性来消除导航栏与窗口之间明显的分割线</p>
+			<table width=1>		
+				<tr>
+			 		<td>showtip 为 false（默认）</td>
+			 		<td>showtip 为 true</td>
+		 		</tr>		
+			 	<tr>
+			 		<td><img src='../../resources/images/common/nav/showTip1.png'></td>
+			 		<td><img src='../../resources/images/common/nav/showTip.png'></td>
+		 		</tr>
+	 		</table>
+			]]>
+			</Description>
+			<Conditions>
+				<Condition>叶子节点要设置leaf属性为true，否则默认为目录,可参考Ext的Api进行设置</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="链接到" type="6" name="linkto" tips="设置控件单击时，链接到的表单或框架页面">
+			<Value />
+		</Property><Property cn="操作区域编号" type="1" name="operAreaId" tips="指明了此树中节点中的链接将在这里标识的区域中打开。相当于target，一般为框架页面中某个中心布局下面的操作区域id。(使用此属性需要设置连接到的target为空)">
+			<Value />
+		</Property><Property cn="是否生成" type="11" name="show" tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property><Property cn="生成时权限" type="1" name="showRight" tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient" tips="设置单击控件时所执行的脚本">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer" tips="设置单击控件时所执行的脚本">
+			<Value />
+			<Description><![CDATA[	
+			<pre>	
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object listItemde9cf_onClickServer(Item item) {
+	return null;
+}
+				</pre>	
+	]]>
+			</Description>
+		</Property>
+		<Property cn="客户端" type="15" group="取消选中时脚本" name="onDeselectClient" tips="设置控件取消选中时所执行的客户端脚本">
+			<Value />
+			<Description><![CDATA[	
+			<pre>	
+/**
+ * onDeselectClient(listItemde9cf)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function listItemde9cf_onDeselectClient (rc){
+	
+}
+</pre>	
+			]]>
+			</Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="取消选中时脚本" name="onDeselectServer" tips="设置控件取消选中时所执行的服务器端脚本">
+			<Value />
+			<Description><![CDATA[
+			<pre>
+/**
+ *  列表导航操作项
+ * 
+ * @param item
+ *            控件对象
+ */
+public void listItemde9cf_onDeselectServer(Item item) {
+
+}
+			</pre>
+				]]>
+			</Description>
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	
+  	<JavaFunctions>
+		<JavaFunction name="onClickServer">
+<![CDATA[
+
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+
+]]>
+		</JavaFunction>
+		<JavaFunction name="onCount">
+<![CDATA[
+
+/**
+ * 计数脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public String {methodName}(Item item) {
+	return null;
+}
+
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

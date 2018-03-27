@@ -1,0 +1,18 @@
+{
+	includeJs:[
+		'/artery/pub/js/ext-lang-zh_CN.js',
+		'/artery/pub/js/artery-pub.js',
+		'/artery/pub/js/ext-pub.js',
+		'/artery/pub/js/tip-message.js'
+	],
+	jsRelation:{
+		artery-base:{
+		},
+		artery-list:{
+			'artery-base':''
+		},
+		artery-tree:{
+			'artery-base':''
+		}
+	}
+}

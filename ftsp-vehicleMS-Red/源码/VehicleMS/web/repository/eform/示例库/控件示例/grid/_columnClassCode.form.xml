@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>43432a40eee9386f6003352327a58ebe</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._columnClassCode.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_columnClassCode.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formab09a">
+      <id>formab09a</id>
+      <Items>
+        <listArea sid="5494335b9f65b23b6924602ad40bd00d">
+          <id>listAreac32a3</id>
+          <ds>rs1</ds>
+          <type>grid</type>
+          <isEditor>true</isEditor>
+          <Items>
+            <columnClassCode sid="bc88d2580e46347fb1caeb2e297852bd">
+              <id>columnClassCode059d9</id>
+              <editor>mTree</editor>
+              <codeType>T_Eg_ClassCode</codeType>
+            </columnClassCode>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

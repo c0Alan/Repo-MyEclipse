@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e25e63aaa43279995f898d93fdab2695</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.subsys.Szzxtsym.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/subsys/Szzxtsym.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formea2cf">
+      <id>formea2cf</id>
+      <onLoadClient><![CDATA[formea2cf_onLoadClient]]></onLoadClient>
+      <Items>
+        <leftRegion sid="6601643856e692f6b88440523ed4ad2c">
+          <id>leftRegion11962</id>
+          <width>200</width>
+          <split>false</split>
+          <margins>4 0 4 4</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="256b45f2c85412169eb841107465dfc6">
+              <id>blankPanel9d249</id>
+              <width>100%</width>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <dynamicNav sid="23a62a2630f64617cb0979441dac3c07">
+                  <id>dynamicNav</id>
+                  <operAreaId>operArea</operAreaId>
+                  <onBeforeLoad><![CDATA[dynamicNav_onBeforeLoad]]></onBeforeLoad>
+                  <onLoad><![CDATA[dynamicNav_onLoad]]></onLoad>
+                  <onSearch><![CDATA[dynamicNav_onSearch]]></onSearch>
+                  <line>false</line>
+                  <useArrows>true</useArrows>
+                  <onNodeClickClient><![CDATA[dynamicNav_onNodeClickClient]]></onNodeClickClient>
+                  <themeStyle>orange</themeStyle>
+                </dynamicNav>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="eb57acc69668d3203f051f1452ebf76c">
+          <id>centerRegionfd730</id>
+          <margins>4 4 4 0</margins>
+          <border>false</border>
+          <Items>
+            <centerRegion sid="52665462eba6647fe174b4c0ff0caabb">
+              <id>upRegion7fd1c</id>
+              <margins>0 0 0 4</margins>
+              <Items>
+                <blankPanel sid="3d5d464d4b5df9322a78cefe70a1cf0f">
+                  <id>blankPanelc9426</id>
+                  <themeStyle>unis</themeStyle>
+                  <Items>
+                    <listArea sid="8f766b5bd47295b16663c0f33d1df88c">
+                      <id>listArea</id>
+                      <ds>rs1</ds>
+                      <type>grid</type>
+                      <height>100%</height>
+                      <emptyDataTip />
+                      <isPageSplit>false</isPageSplit>
+                      <displayInfo>false</displayInfo>
+                      <isShowRowNumber>false</isShowRowNumber>
+                      <isEditor>true</isEditor>
+                      <Items>
+                        <columnString sid="d85d27cc9288f441b3a30a196b91e8ec">
+                          <id>colName</id>
+                          <dataName>{rs1.name}</dataName>
+                          <title>名称</title>
+                          <isEditor>false</isEditor>
+                        </columnString>
+                        <columnString sid="b33f77ed5b37aca0984f65f1a2972bb4">
+                          <id>colValue</id>
+                          <title>值</title>
+                        </columnString>
+                      </Items>
+                    </listArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </centerRegion>
+            <downRegion sid="138fbb662ca76317820a35fb0d538b33">
+              <id>downRegion1b332</id>
+              <height>200</height>
+              <margins>0 0 0 4</margins>
+              <Items>
+                <blankPanel sid="e8dc99a31a677d08fa3c7637a667b834">
+                  <id>blankPanelfe404</id>
+                  <themeStyle>unis</themeStyle>
+                  <Items>
+                    <formArea sid="b2f7a0cfb1796313bbd33340f1b1336d">
+                      <id>formAreaf7182</id>
+                      <colNum>1</colNum>
+                      <labelWidth>90</labelWidth>
+                      <bodyStyle>padding-right:10px;padding-top:10px;</bodyStyle>
+                      <cellpadding>5</cellpadding>
+                      <Items>
+                        <faCode sid="529959508bb109651bc0791823bee8c6">
+                          <id>faRuntimeType</id>
+                          <width>30%</width>
+                          <dynamicData><![CDATA[faRuntimeType_dynamicData]]></dynamicData>
+                          <value>insert</value>
+                          <label>运行类型</label>
+                        </faCode>
+                        <faString sid="26635bb4cdb5144608764d3bc32a0d4b">
+                          <id>faURL</id>
+                          <width>90%</width>
+                          <label>URL地址</label>
+                        </faString>
+                        <faCode sid="4ad6b828c37804809b7c097a257d1c9f">
+                          <id>faParamsRequest</id>
+                          <editor>sRadio</editor>
+                          <width />
+                          <dynamicData><![CDATA[faParamsRequest_dynamicData]]></dynamicData>
+                          <value>false</value>
+                          <label>请求传参</label>
+                        </faCode>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </downRegion>
+          </Items>
+        </centerRegion>
+        <footer sid="55068045d8e633500cbc04702c9fcd75">
+          <id>footer45a0a</id>
+          <buttonAlign>right</buttonAlign>
+          <Items>
+            <button sid="1f97225ae72394336d68df5f27606520">
+              <id>clearAndCloseBtn</id>
+              <text>清除并关闭</text>
+              <onClickClient><![CDATA[clearAndCloseBtn_onClickClient]]></onClickClient>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <button sid="856acbd9c78d164da463cf741cf0f854">
+              <id>refEformBtn</id>
+              <text>刷新电子表单</text>
+              <onClickClient><![CDATA[refEformBtn_onClickClient]]></onClickClient>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <button sid="e13dd01b06bce13f80e6b206c175c470">
+              <id>confirmBtn</id>
+              <text>确定</text>
+              <onClickClient><![CDATA[confirmBtn_onClickClient]]></onClickClient>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <button sid="1d66e44ad08aa18fe1135d4dc8fbcd76">
+              <id>cancelBtn</id>
+              <text>取消</text>
+              <onClickClient><![CDATA[cancelBtn_onClickClient]]></onClickClient>
+              <themeStyle>cookie</themeStyle>
+            </button>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="param1" showName="sysId" value="" pvalue="" />
+    <param name="linkTo" showName="linkTo" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

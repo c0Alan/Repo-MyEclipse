@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<context:component-scan base-package="com.thunisoft.vehicle.dao"></context:component-scan>
+	<context:component-scan base-package="com.thunisoft.vehicle.service"></context:component-scan>
+	
+	<context:property-placeholder location="classpath:/props/config.properties"/>  
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass">
+			<value>${dataSource.driverClass}</value>
+		</property>
+		<property name="jdbcUrl">
+			<value>${dataSource.jdbcUrl}</value>
+		</property>
+		<property name="user">
+			<value>${dataSource.user}</value>
+		</property>
+		<property name="password">
+			<value>${dataSource.password}</value>
+		</property>
+		<!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+		<property name="acquireIncrement">
+			<value>${dataSource.acquireIncrement}</value>
+		</property>
+		<!--初始化时获取三个连接，取值应在minPoolSize与maxPoolSize之间。Default: 3 -->
+		<property name="initialPoolSize">
+			<value>${dataSource.initialPoolSize}</value>
+		</property>
+		<!--连接池中保留的最大连接数。Default: 15 -->
+		<property name="maxPoolSize">
+			<value>${dataSource.maxPoolSize}</value>
+		</property>
+		<!--连接池中保留的最小连接数。 -->
+		<property name="minPoolSize">
+			<value>${dataSource.minPoolSize}</value>
+		</property>
+		<property name="idleConnectionTestPeriod">
+	        <value>2000</value>
+        </property>
+        <property name="preferredTestQuery">
+	       <value>select 1</value>
+        </property>
+		
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="useTransactionAwareDataSource">
+			<value>true</value>
+		</property>
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:/hibernate/</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.connection.autocommit">${hibernate.connection.autocommit}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="dataSource_vehicle" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass">
+			<value>${dataSource.driverClass}</value>
+		</property>
+		<property name="jdbcUrl">
+			<value>${dataSource.jdbcUrl_vehicle}</value>
+		</property>
+		<property name="user">
+			<value>${dataSource.user}</value>
+		</property>
+		<property name="password">
+			<value>${dataSource.password}</value>
+		</property>
+		<!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+		<property name="acquireIncrement">
+			<value>${dataSource.acquireIncrement}</value>
+		</property>
+		<!--初始化时获取三个连接，取值应在minPoolSize与maxPoolSize之间。Default: 3 -->
+		<property name="initialPoolSize">
+			<value>${dataSource.initialPoolSize}</value>
+		</property>
+		<!--连接池中保留的最大连接数。Default: 15 -->
+		<property name="maxPoolSize">
+			<value>${dataSource.maxPoolSize}</value>
+		</property>
+		<!--连接池中保留的最小连接数。 -->
+		<property name="minPoolSize">
+			<value>${dataSource.minPoolSize}</value>
+		</property>
+		<property name="idleConnectionTestPeriod">
+	        <value>2000</value>
+        </property>
+        <property name="preferredTestQuery">
+	       <value>select 1</value>
+        </property>
+	</bean>
+	<bean id="sessionFactory_vehicle"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource_vehicle" />
+		</property>
+		<property name="useTransactionAwareDataSource">
+			<value>true</value>
+		</property>
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:/com/thunisoft/vehicle/hibernate/</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.connection.autocommit">${hibernate.connection.autocommit}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+			</props>
+		</property>
+	</bean>
+	
+    
+	
+	
+</beans>

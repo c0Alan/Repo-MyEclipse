@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1d0237e432d911f26670e68e92ff3a9a</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.area._loopAreaForm.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/area/_loopAreaForm.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form55be9">
+      <id>form55be9</id>
+      <Items>
+        <topbar sid="254f059653a3eceec285ab0618c04d8f">
+          <id>topbarb27eb</id>
+          <Items>
+            <tbButton sid="5d2f4cc4fd8adc87bc81ea1fab28b410">
+              <id>tbButtonbef75</id>
+              <text>新建图书</text>
+            </tbButton>
+            <tbButton sid="78c39f905173445b07c0106b3c908f87">
+              <id>tbButtonc57e7</id>
+              <text>删除所有</text>
+              <onClickClient><![CDATA[tbButtonc57e7_onClickClient]]></onClickClient>
+            </tbButton>
+          </Items>
+        </topbar>
+        <blankPanel sid="917d5e94570f41e6854e1c9baae9c873">
+          <id>blankPanel400b4</id>
+        </blankPanel>
+        <blankPanel sid="8b31df3d7c67d28f1cf8e8bd5610675e">
+          <id>blankPanel2da6f</id>
+          <Items>
+            <pagingbar1 sid="014b62f265b27ee756382c902deb98d6">
+              <id>pagingbar1d1646</id>
+              <ds>rs1</ds>
+              <pageCount>3</pageCount>
+              <pagePerNext>3</pagePerNext>
+            </pagingbar1>
+            <blankPanel sid="47ba38dda341aa6c0a4f4ecc488f2d37">
+              <id>blankPanel23176</id>
+              <Items>
+                <blankPanel sid="62ae109ff939fb9d284110d6d23aff09">
+                  <id>blankPanel57fc7</id>
+                  <Items>
+                    <loopArea sid="f5371cbebcb85bc3a5b6dacf03407cf3">
+                      <id>loopArea8f01c</id>
+                      <ds>rs1</ds>
+                      <Items>
+                        <blankPanel sid="e7840693398abe28824845a8f5139232">
+                          <id>blankPanelf549a</id>
+                          <Items>
+                            <formArea sid="fea7c93c94f9214dfbfc51ef6e107f84">
+                              <id>formAreacaeca</id>
+                              <ds>rs1</ds>
+                              <style>padding:10px;</style>
+                              <Items>
+                                <faString sid="782c3d39c2c7fc2384849961ef127fac">
+                                  <id>faStringCNAME</id>
+                                  <inherittbl>T_Eg_Book</inherittbl>
+                                  <inheritfld>C_NAME</inheritfld>
+                                  <dataName>{rs1.C_NAME}</dataName>
+                                </faString>
+                                <faString sid="5f5ca36ebd53b6d05e70d340e2952408">
+                                  <id>faStringCAUTH</id>
+                                  <inherittbl>T_Eg_Book</inherittbl>
+                                  <inheritfld>C_AUTH</inheritfld>
+                                  <dataName>{rs1.C_AUTH}</dataName>
+                                </faString>
+                                <faString sid="4f78a82b77933df1e01c91120dd8f07e">
+                                  <id>faStringCPUBLISHER</id>
+                                  <inherittbl>T_Eg_Book</inherittbl>
+                                  <inheritfld>C_PUBLISHER</inheritfld>
+                                  <dataName>{rs1.C_PUBLISHER}</dataName>
+                                </faString>
+                                <faDate sid="79f5127ac9e47139c762c5e51c97f9f3">
+                                  <id>faDateDPUBLISHER</id>
+                                  <inherittbl>T_Eg_Book</inherittbl>
+                                  <inheritfld>D_PUBLISHER</inheritfld>
+                                  <dataName>{rs1.D_PUBLISHER}</dataName>
+                                </faDate>
+                                <faDate sid="c7638c33a38c5606de2149a6cdd36478">
+                                  <id>faDateDBUY</id>
+                                  <inherittbl>T_Eg_Book</inherittbl>
+                                  <inheritfld>D_BUY</inheritfld>
+                                  <dataName>{rs1.D_BUY}</dataName>
+                                </faDate>
+                                <buttonArea sid="9c1307e777012015bdb7bdd1166acb3d">
+                                  <id>buttonArea0c3e0</id>
+                                  <hideLabel>true</hideLabel>
+                                  <Items>
+                                    <button sid="b3893bdbe487d86bcd8e0569a0a707bd">
+                                      <id>button5e151</id>
+                                      <text>删除</text>
+                                    </button>
+                                    <button sid="ca01d2977c56cdf63017e1e7a2f21617">
+                                      <id>button881e4</id>
+                                      <text>编辑</text>
+                                    </button>
+                                  </Items>
+                                </buttonArea>
+                              </Items>
+                            </formArea>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </loopArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+            <pagingbar1 sid="62fc44ab28e4da51b4709a4ba0e42cc5">
+              <id>pagingbar194738</id>
+              <ds>rs1</ds>
+              <pageCount>3</pageCount>
+              <pagePerNext>3</pagePerNext>
+            </pagingbar1>
+          </Items>
+        </blankPanel>
+        <formArea sid="1c4874d34c285ef56c1afa9dba2389e1">
+          <id>formArea28f83</id>
+          <width>50%</width>
+          <colNum>1</colNum>
+          <frame>true</frame>
+          <style>padding:10px;</style>
+          <show>false</show>
+          <Items>
+            <header sid="eec5a2c505ba75370d296baf6ead6bde">
+              <id>header25046</id>
+              <text>新建图书</text>
+            </header>
+            <faIdentity sid="73718266f0a4defdd994978751464f84">
+              <id>faIdentityCID</id>
+              <submitName>book.CId</submitName>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+            </faIdentity>
+            <faString sid="78003e11bff447d8e3af632de6cba2e3">
+              <id>faStringCNAME1</id>
+              <submitName>book.CName</submitName>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+            </faString>
+            <faString sid="8ea6cf6256e8cbb8a9bda290f45e14bb">
+              <id>faStringCAUTH1</id>
+              <submitName>book.CAuth</submitName>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+            </faString>
+            <faDate sid="2241a5761ec7b7f5bf28d15711dbc364">
+              <id>faDateDPUBLISHER1</id>
+              <submitName>book.DPublisher</submitName>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs1.D_PUBLISHER}</dataName>
+            </faDate>
+            <faString sid="dc55f5241e048a9a930612acc5550df3">
+              <id>faStringCLIBRARYID</id>
+              <submitName>book.CLibraryid</submitName>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{rs1.C_LIBRARYID}</dataName>
+            </faString>
+            <faCode sid="7c945e7ee2132bcccc65eda6b3b0d8f3">
+              <id>faCode7168d</id>
+              <submitName>abc</submitName>
+              <dynamicData><![CDATA[faCode7168d_dynamicData]]></dynamicData>
+            </faCode>
+            <buttonArea sid="5035d83d6f95746e1c06e47446cbc3e2">
+              <id>buttonAreaaf69d</id>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <button sid="c027b7f8588ebd399ff849f3a2546649">
+                  <id>buttonf3546</id>
+                  <text>保存</text>
+                </button>
+                <button sid="b10c109ecc5b7629c565b7c5ed2cd428">
+                  <id>button9ff9f</id>
+                  <text>取消</text>
+                </button>
+              </Items>
+            </buttonArea>
+            <buttonArea sid="95970ee358e471094eccec7dc96e899a">
+              <id>buttonArea37915</id>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <button sid="0d22365f89cc7b8df1420ab26708841a">
+                  <id>button8009b</id>
+                  <text>保存</text>
+                </button>
+                <button sid="0548094e54aa5b30ff601496ef1d279e">
+                  <id>button7c99d</id>
+                  <text>取消</text>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

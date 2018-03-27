@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>83a1a1c3346a883cfd572caebb58bb32</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.button._buttonArea.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/button/_buttonArea.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form69287">
+      <id>form69287</id>
+      <text-align>left</text-align>
+      <Items>
+        <tableLayout sid="edf79cf081c6880f52b283f840ac0d62">
+          <id>tableLayouta884d</id>
+          <colNum>4</colNum>
+          <colSpacing>10</colSpacing>
+          <width>1000</width>
+          <style>padding:10px;</style>
+          <Items>
+            <fieldSet sid="d34d2419360af685a427bd078128e5ef">
+              <id>fieldSetccc66</id>
+              <fieldSetName>排列方向：水平</fieldSetName>
+              <width>100%</width>
+              <height>100%</height>
+              <Items>
+                <buttonArea sid="b24f6acca62c398f9e71a4e491c9e3cb">
+                  <id>buttonArea73b9d</id>
+                  <width>220</width>
+                  <border>true</border>
+                  <Items>
+                    <button sid="7fc5f4124013b200179910d4ed991b93">
+                      <id>button8ef99</id>
+                    </button>
+                    <button sid="4dae1fbeb3caf29093baa3fd70e4bed1">
+                      <id>button9daea</id>
+                    </button>
+                    <button sid="686159bd13a28fd83be6ab42dddb3475">
+                      <id>buttone02f8</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="153711fab2b5bae6b675c433eb9d9fdb">
+              <id>fieldSetf19a3</id>
+              <fieldSetName>排列方向：垂直</fieldSetName>
+              <width>100%</width>
+              <height>100%</height>
+              <Items>
+                <buttonArea sid="5d06e59acef4dd80e27c285f78f624be">
+                  <id>buttonAreacc735</id>
+                  <width>200</width>
+                  <direction>ver</direction>
+                  <border>true</border>
+                  <Items>
+                    <button sid="0e7f57853e1f38cc858d630b53ff4372">
+                      <id>button52621</id>
+                    </button>
+                    <button sid="09c43e387bd96b3951fbd17a67c8597b">
+                      <id>button057a4</id>
+                    </button>
+                    <button sid="c479cacaa235ec426baeddfcea98cec4">
+                      <id>button65445</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="36f055046041d46b09ff61874aaed95a">
+              <id>fieldSetd9999</id>
+              <fieldSetName>排列方向：浮动</fieldSetName>
+              <width>50%</width>
+              <height>100%</height>
+              <colSpan>2</colSpan>
+              <Items>
+                <buttonArea sid="c84ca435fd60180c9aa5b14e0a411dbe">
+                  <id>buttonArea89775</id>
+                  <width>200</width>
+                  <direction>float</direction>
+                  <border>true</border>
+                  <Items>
+                    <button sid="4331f4bd81aae462ef7d44d3a9ff4e81">
+                      <id>button2f660</id>
+                    </button>
+                    <button sid="686798616b5a977115cd6bda2106614b">
+                      <id>buttondc7da</id>
+                    </button>
+                    <button sid="bd9f80fc32ac9e53eea1abd3f0c49549">
+                      <id>button472ed</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="e2cb71a1579a9ca4cbd7f596878dcfb8">
+              <id>fieldSet8e8f7</id>
+              <fieldSetName>对齐方式：left</fieldSetName>
+              <Items>
+                <buttonArea sid="e9ae098574f4a6446ce576c52ce1a34a">
+                  <id>buttonArea777bc</id>
+                  <border>true</border>
+                  <Items>
+                    <button sid="4542a1dc08d7a51a3e4e2cf463f01f47">
+                      <id>button5f55f</id>
+                    </button>
+                    <button sid="4134ff2578e21d0118d3634080ae3009">
+                      <id>button4c935</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="52fa07750ed9e8704ec4c01fb5518439">
+              <id>fieldSetb14c6</id>
+              <fieldSetName>对齐方式：center</fieldSetName>
+              <Items>
+                <buttonArea sid="d9a63e7d7050f70d8ebba828cbe84190">
+                  <id>buttonArea343c9</id>
+                  <align>center</align>
+                  <border>true</border>
+                  <Items>
+                    <button sid="7415ef5a1317f99e6871d62fd5f9321e">
+                      <id>button9b5d8</id>
+                    </button>
+                    <button sid="ccb744bbfa84a4f8f6882af9ca2e2132">
+                      <id>buttond685a</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="9bf381e1b102f94e9fcd09f063cbeef3">
+              <id>fieldSet5f708</id>
+              <fieldSetName>对齐方式：right</fieldSetName>
+              <Items>
+                <buttonArea sid="790a96b87314b029a53b899f08f84376">
+                  <id>buttonArea5d67a</id>
+                  <align>right</align>
+                  <border>true</border>
+                  <Items>
+                    <button sid="c92462569a0a25b683dd50812a0a0000">
+                      <id>button00484</id>
+                    </button>
+                    <button sid="0892d2ca53d7ece66d49f23e94d5c14d">
+                      <id>button351b6</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="957cdf0ce3b6c5ee82e53fb0bb9c0220">
+              <id>fieldSet236bb</id>
+              <fieldSetName>对齐方式：fill</fieldSetName>
+              <Items>
+                <buttonArea sid="c6bbdb0f98055cedd8c9574bd664ac97">
+                  <id>buttonAreaf8510</id>
+                  <align>fill</align>
+                  <border>true</border>
+                  <Items>
+                    <button sid="8d1b297bba2f38344d055ee4ba946502">
+                      <id>button84add</id>
+                    </button>
+                    <button sid="99589fca0145d88728f055460e31e07e">
+                      <id>buttond9b7e</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="161a870cb33c74ab009aba60e3b65ebe">
+              <id>fieldSetbdef7</id>
+              <fieldSetName>默认主题</fieldSetName>
+              <Items>
+                <buttonArea sid="275a3c2b1f377e1daef4ae3edd56ae7d">
+                  <id>buttonArea9af3d</id>
+                  <Items>
+                    <button sid="6781b7d63cf696adb4eff62571ed42a9">
+                      <id>button25252</id>
+                    </button>
+                    <button sid="6938cf7e16fa1dcacf5511e2e8383b6e">
+                      <id>buttona504f</id>
+                    </button>
+                    <button sid="0d5b9dd07bf647706b21e3200a35558a">
+                      <id>button2d818</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="be65f41e11cf109680bb26a75a721c60">
+              <id>fieldSetac43d</id>
+              <fieldSetName>simple主题</fieldSetName>
+              <width>33%</width>
+              <colSpan>3</colSpan>
+              <Items>
+                <buttonArea sid="f0fdf0b875b43fdeaab1b03ea267d465">
+                  <id>buttonArea65419</id>
+                  <themeStyle>simple</themeStyle>
+                  <Items>
+                    <button sid="94212c8b1de012dbe5ea4477cdae2ff9">
+                      <id>button8475c</id>
+                    </button>
+                    <button sid="d9d54b2774282bf20c79f43fafccbef2">
+                      <id>button7d7fe</id>
+                    </button>
+                    <button sid="0a1a11c820c30d4bda8e9cb24e70f152">
+                      <id>buttonfa61c</id>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="f363f6e943b9b3508cb1daccc9f04551">
+              <id>fieldSetbcab8</id>
+              <fieldSetName>使用开关模式</fieldSetName>
+              <width>25%</width>
+              <colSpan>4</colSpan>
+              <Items>
+                <buttonArea sid="2fa7bbb9c4c5318b5436a4227e26b46c">
+                  <id>buttonArea1b574</id>
+                  <toggle>true</toggle>
+                  <Items>
+                    <button sid="1758ba774e2d292719cb927c6b9c0bec">
+                      <id>buttond5f8a</id>
+                      <text>pressed</text>
+                      <pressed>true</pressed>
+                    </button>
+                    <button sid="5cbad1f8e69e6eaf453c61fa437464e7">
+                      <id>button6fe7e</id>
+                      <text>click me</text>
+                    </button>
+                    <button sid="2fe688fb84dcb2a7469aad891a6ff9d0">
+                      <id>button03149</id>
+                      <text>click me</text>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

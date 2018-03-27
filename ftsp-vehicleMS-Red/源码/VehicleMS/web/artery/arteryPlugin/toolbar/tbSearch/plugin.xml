@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="tbSearch" cn="高级查询" menu="系统按钮" jsType="artery-base"
+	icon="tbSearch.gif" iconNew="tbSearchNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>高级查询按钮，点击打开高级查询</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="topbar" />
+		<Parent type="bottomBar" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.toolbar.TbSearch
+	</Class>
+	<JsFile>
+		<File>tbSearch.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id" conf="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="名称" type="1" name="text" tips="设置菜单项的显示名称">
+			<Value>高级查询</Value>
+		</Property>
+		<Property cn="提示信息" type="1" name="tooltip" tips="设置鼠标移动到按钮上的提示">
+			<Value />
+		</Property>
+		<Property cn="图片" type="5" name="icon" tips="设置组件的显示图标，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value>/artery/arteryImage/file/search.gif</Value>
+		</Property>
+		<Property cn="只显示图片" type="11" name="onlyShowIcon" tips="按钮是否以图片按钮的样式展现">
+			<Value>true</Value>
+		</Property>
+		<Property cn="打开位置" type="1" name="target"
+			tips="设置高级查询界面的打开位置，可以是：_self，_blank，_parent或操作区域编号">
+			<Value>_blank</Value>
+		</Property>
+		<Property cn="参数" type="7" name="params" tips="json形式的参数，会添加到高级查询url中">
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="click"></Method>
+		<Method name="hide"></Method>
+		<Method name="show"></Method>
+		<Method name="disable" inherit="false" return="void" tips="设置控件无效">
+			<Description><![CDATA[<p>设置控件无效</p><pre>
+Artery.get("buttonId").disable();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="enable" inherit="false" return="void" tips="设置控件有效">
+			<Description><![CDATA[<p>设置控件有效</p><pre>
+Artery.get("buttonId").enable();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+</Item>
+

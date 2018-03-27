@@ -1,0 +1,81 @@
+/*
+pageControl控件的外框样式
+*/
+.pageControl_body {
+  background-color: #E9F5DD;
+  padding: 2px;
+}
+
+/*
+pageControl控件的选项卡对应面板样式
+*/
+.pageControl_form {
+  border: 1px solid #ACA899;
+  border-left-color: #FFFFFF;
+  border-top-color: #FFFFFF;
+  background-color: #E9F5DD;
+  padding: 5px;
+  position: relative;
+  clear: both;
+  z-index: 2;
+  top: -2px;
+  height: 200px;
+  font-size: 12px;
+}
+
+/*
+pageControl控件的选项卡正常样式
+*/
+.pageControl {
+  border: 1px solid #ACA899;
+  border-left-color: #FFFFFF;
+  border-top-color: #FFFFFF;
+  border-bottom-width: 0;
+  background-color: #E9F5DD;
+  position: relative;
+  float: left;
+  top: 0;
+  z-index: 1;
+  padding: 2px 5px 3px 5px;
+  margin: 1px -1px 1px 2px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+/*
+pageControl控件的移入选项卡样式
+*/
+.pageControl_over {
+  border: 1px solid #ACA899;
+  border-left-color: #FFFFFF;
+  border-top-color: #FFFFFF;
+  border-bottom-width: 0;
+  background-color: #E9F5DD;
+  position: relative;
+  float: left;
+  top: 0;
+  z-index: 1;
+  padding: 2px 5px 3px 5px;
+  margin: 1px -1px 1px 2px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+/*
+pageControl控件的激活选项卡样式
+*/
+.pageControl_current {
+  border: 1px solid #ACA899;
+  border-left-color: #FFFFFF;
+  border-top-color: #FFFFFF;
+  border-bottom-width: 0;
+  background-color: #E9F5DD;
+  position: relative;
+  float: left;
+  top: -3px;
+  z-index: 3;
+  padding: 2px 6px 6px 6px;
+  margin: 1px -3px -3px 0px;
+  white-space: nowrap;
+  font-size: 12px;
+}

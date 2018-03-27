@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="percentBar" cn="百分比状态条" menu="工具" jsType="artery-base"
+	icon="percentBar.gif" iconNew="percentBarNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>生成百分比进度条控件</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="blankPanel" />
+	</Parents>
+	<Class>com.thunisoft.artery.plugin.tool.PercentBar
+	</Class>
+	<JsFile>
+		<File>percentBar.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>appercentbar</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value></Value>
+		</Property>
+		<Property cn="百分比数" type="2" name="percentNum" export="true" tips="百分比数">
+			<Value></Value>
+		</Property>
+		<Property cn="是否显示数值" type="11" name="showPercentNum" export="true"
+			tips="当设置为true时，会在控件的右侧显示出百分比数值">
+			<Value>true</Value>
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" group="样式" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className" group="样式"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" group="样式"	tips="设置控件的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="hide" />
+		<Method name="show" />
+	</Methods>
+</Item>
+

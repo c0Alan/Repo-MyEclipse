@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0f6ab7952b4a2a2ea8e696c162d15597</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <background-color>#ffffff</background-color>
+      <Items>
+        <formArea sid="formArea9478ED3A7FC1DB4DF65CBB4532D95FDC">
+          <id>formArea9478ED3A7FC1DB4DF65CBB4532D95FDC</id>
+          <comment>true</comment>
+          <labelAlign>bottom</labelAlign>
+          <labelWidth>80</labelWidth>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <cellpadding>1</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <faString sid="faString5520B04DE9B30D71D2B9126C335342BA">
+              <id>frmCNAME</id>
+              <required>true</required>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <label extend="true">图书名称</label>
+            </faString>
+            <faString sid="faString664A8ECB11397007A1E964AB1DEB93D8">
+              <id>frmCAUTH</id>
+              <required>false</required>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <label extend="true">作者</label>
+            </faString>
+            <faString sid="faString923FAEC90368FD81098F3797D5ECA8ED">
+              <id>frmCPUBLISHER</id>
+              <required>false</required>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <label extend="true">出版社</label>
+            </faString>
+            <faDate sid="5cd74e2e5e3e347e06bfaa94b373df6a">
+              <id>faDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <label extend="true">出版日期</label>
+            </faDate>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

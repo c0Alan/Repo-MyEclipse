@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="tplPosition" cn="模板占位" jsType="artery-base"
+	icon="tplPosition.gif" iconNew="tplPositionNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2011-12-01</CreateTime>
+		<Describe>
+		<![CDATA[
+			模板片段控件用于配合表单模板功能使用，在表单添加需要的模版
+		]]>
+		</Describe>
+
+	</Info>
+	<Parents/>
+	<Children/>
+	<Class>com.thunisoft.artery.plugin.area.TplPosition
+	</Class>
+	<JsFile/>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apTplPosition</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+	</Properties>
+</Item>

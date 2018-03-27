@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ab299602ad296566268ab0f7ba4aadfa</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.frame.Fzkj.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/frame/Fzkj.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <centerRegion sid="centerRegion388E918AAE1E0A07DB42DE7838D78E3E">
+          <id>centerRegion388E918AAE1E0A07DB42DE7838D78E3E</id>
+          <Items>
+            <upRegion sid="upRegionE2E24370D4B9A24EBA25FF1C9AED1C5E">
+              <id>upRegionE2E24370D4B9A24EBA25FF1C9AED1C5E</id>
+              <Items>
+                <htmlArea sid="htmlArea50FF28B5FBE8A9DC1FD760747FAC0888">
+                  <id>htmlArea50FF28B5FBE8A9DC1FD760747FAC0888</id>
+                  <value>&lt;center&gt;&lt;h1&gt;待测试的框架页面&lt;h1&gt;&lt;/center&gt;</value>
+                </htmlArea>
+              </Items>
+            </upRegion>
+            <leftRegion sid="leftRegion268D7D09BE798303C7780F1CCD11DB6D">
+              <id>leftRegion268D7D09BE798303C7780F1CCD11DB6D</id>
+              <width>140</width>
+              <Items>
+                <dynamicNav sid="dynamicNavEA286C2C72CCAAE4C8046A80F4E95E36">
+                  <id>dynamicNav</id>
+                  <operAreaId>operarea1</operAreaId>
+                  <onLoad><![CDATA[dynamicNav_onLoad]]></onLoad>
+                  <onNodeClickClient><![CDATA[dynamicNav_onNodeClickClient]]></onNodeClickClient>
+                </dynamicNav>
+              </Items>
+            </leftRegion>
+            <downRegion sid="downRegion83DBF3F440A24CBBD8BA58BE0B77F0FC">
+              <id>downRegion83DBF3F440A24CBBD8BA58BE0B77F0FC</id>
+              <height>140</height>
+              <Items>
+                <htmlArea sid="012af376625443dced137991973be783">
+                  <id>htmlAreaa074a</id>
+                  <value>下布局的内容</value>
+                  <style>padding:5px;</style>
+                </htmlArea>
+              </Items>
+            </downRegion>
+            <rightRegion sid="rightRegion554120443E0D43C28D70097EFAD73C35">
+              <id>rightRegion554120443E0D43C28D70097EFAD73C35</id>
+              <width>140</width>
+              <Items>
+                <treeNav sid="staticNav7AF6F9F2CF98E9EAA72D945239B80F2B">
+                  <id>staticNav7AF6F9F2CF98E9EAA72D945239B80F2B</id>
+                  <operAreaId>operarea1</operAreaId>
+                  <Items>
+                    <treeCatalog sid="catalog3900B15034B3A8AB533F4AE65164BB10">
+                      <id>catalog3900B15034B3A8AB533F4AE65164BB10</id>
+                      <caption>目录</caption>
+                      <icon>/artery/dict/images/gensql.gif</icon>
+                      <Items>
+                        <treeItem sid="snItem61CB21CDB9FB8DE79C091C4670156BA4">
+                          <id>snItem61CB21CDB9FB8DE79C091C4670156BA4</id>
+                          <caption>sheet1节点</caption>
+                          <icon>/artery/dict/images/gensql.gif</icon>
+                          <linkto>{"formId":"621AC9FB8BCA9CFB24BF18774FE249FF","formName":"发送消息","formType":"1","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"display"}</linkto>
+                        </treeItem>
+                        <treeItem sid="snItem93A2C4C72117D370095D99B84359E9AA">
+                          <id>snItem93A2C4C72117D370095D99B84359E9AA</id>
+                          <caption>sheet2节点</caption>
+                          <linkto>{"formId":"621AC9FB8BCA9CFB24BF18774FE249FF","formName":"发送消息","formType":"1","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"display"}</linkto>
+                        </treeItem>
+                      </Items>
+                    </treeCatalog>
+                    <treeItem sid="snItemD2BE81924CD9237A283B89591394178B">
+                      <id>snItemD2BE81924CD9237A283B89591394178B</id>
+                      <caption>节点链接到</caption>
+                      <linkto>{"formId":"621AC9FB8BCA9CFB24BF18774FE249FF","formName":"发送消息","formType":"1","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"display"}</linkto>
+                    </treeItem>
+                    <treeItem sid="snItem191CF65A2DE145A74611F960EC74FB69">
+                      <id>snItem_1</id>
+                      <caption>节点单击事件</caption>
+                      <onClickClient><![CDATA[snItem_1_onClickClient]]></onClickClient>
+                    </treeItem>
+                    <treeCatalog sid="catalog6CF98925F43A72106D8BB0DAA26DC511">
+                      <id>catalog6CF98925F43A72106D8BB0DAA26DC511</id>
+                      <caption>目录链接到</caption>
+                      <linkto>{"formId":"1A10E601D4B3CE26719E4831864E0F0F","formName":"业务提示","formType":"1","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","location":"0","menubar":"0","status":"0","titlebar":"0","toolbar":"0","resizable":"1"}</linkto>
+                      <Items>
+                        <treeItem sid="snItemED0616131F41E0C1318199B67509213C">
+                          <id>snItemED0616131F41E0C1318199B67509213C</id>
+                          <caption>子节点1</caption>
+                        </treeItem>
+                      </Items>
+                    </treeCatalog>
+                    <treeCatalog sid="catalogB3D6A2E7C66C53677E10FDE198915A61">
+                      <id>catalog_1</id>
+                      <caption>目录单击事件</caption>
+                      <onClickClient><![CDATA[catalog_1_onClickClient]]></onClickClient>
+                      <Items>
+                        <treeItem sid="snItem5A2B1DE0D98812A8659C938C50C474EF">
+                          <id>snItem5A2B1DE0D98812A8659C938C50C474EF</id>
+                          <caption>子节点2</caption>
+                        </treeItem>
+                      </Items>
+                    </treeCatalog>
+                    <treeCatalog sid="catalogB72CE0101603A69D62F4786D540707E7">
+                      <id>catalogB72CE0101603A69D62F4786D540707E7</id>
+                      <caption>图书列表</caption>
+                      <Items>
+                        <treeItem sid="snItemD02C4D56564075092B34F5F1D13644A6">
+                          <id>snItemD02C4D56564075092B34F5F1D13644A6</id>
+                          <caption>子节点3</caption>
+                        </treeItem>
+                      </Items>
+                    </treeCatalog>
+                    <treeCatalog sid="catalogD500CD41B00EF6F9276984EB60F40B13">
+                      <id>catalogD500CD41B00EF6F9276984EB60F40B13</id>
+                      <caption>隐藏目录</caption>
+                      <onShow><![CDATA[item.set("show","false");]]></onShow>
+                    </treeCatalog>
+                    <treeCatalog sid="catalog45BF3A18CDD7A832C733E9B5AB500CFE">
+                      <id>catalog45BF3A18CDD7A832C733E9B5AB500CFE</id>
+                      <caption>计数统计</caption>
+                      <Items>
+                        <treeItem sid="snItemA129366D57C9675AED924938515F78E8">
+                          <id>snItem_book</id>
+                          <caption>图书个数</caption>
+                          <onCount><![CDATA[snItem_book_onCount]]></onCount>
+                        </treeItem>
+                        <treeItem sid="snItem7A7C08DF4AA76105C96BB7B2082CE358">
+                          <id>snItem_library</id>
+                          <caption>图书室个数</caption>
+                          <onCount><![CDATA[snItem_library_onCount]]></onCount>
+                        </treeItem>
+                        <treeItem sid="snItem041DDA2378DE13F35B32A60004957615">
+                          <id>snItem_history</id>
+                          <caption>借阅历史数</caption>
+                          <onCount><![CDATA[snItem_history_onCount]]></onCount>
+                        </treeItem>
+                      </Items>
+                    </treeCatalog>
+                  </Items>
+                </treeNav>
+              </Items>
+            </rightRegion>
+            <centerRegion sid="centerRegion861EEDB6455A6DD43E30C71CF23E2B9B">
+              <id>centerRegion861EEDB6455A6DD43E30C71CF23E2B9B</id>
+              <Items>
+                <operArea sid="operArea8E9699BB572B9BE4237130E7F0895040">
+                  <id>operarea1</id>
+                  <linkto>{"url":"http://www.baidu.com","params":{},"target":"","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"","wincfg":""}</linkto>
+                </operArea>
+              </Items>
+            </centerRegion>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

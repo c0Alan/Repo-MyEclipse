@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>74376239e57d9cf210ca7c7ad50f7de1</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.base._window.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/base/_window.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formb3a8b">
+      <id>formb3a8b</id>
+      <Items>
+        <blankPanel sid="a0d85a08d44a51f421bfaaf0ae97fc4c">
+          <id>blankPanel7c12e</id>
+          <width>100%</width>
+          <height>20%</height>
+          <bodyStyle>background-color: #c0c0c0;</bodyStyle>
+          <Items>
+            <htmlArea sid="3c54be57b0bf384af7a25f7f765d285a">
+              <id>htmlArea1100a</id>
+              <value>window控件是相对于OpenForm动态创建Window窗口的另外一种静态创建的方式&#xD;
+&lt;h1&gt;说明&lt;/h1&gt;&#xD;
+&lt;li&gt;Show:显示窗口对象&lt;/li&gt;&#xD;
+&lt;li&gt;ShowAt：显示窗口对象在[x,y]位置，现在为[10,20]&lt;/li&gt;&#xD;
+&lt;li&gt;Hide:隐藏窗口&lt;/li&gt;&#xD;
+&lt;li&gt;AlignTo:显示窗口对象，设置相对于某控件的位置&lt;/li&gt;</value>
+            </htmlArea>
+          </Items>
+        </blankPanel>
+        <window sid="0bd47a770fd699d1b99893b08096c921">
+          <id>winExample</id>
+          <resizable>true</resizable>
+          <Items>
+            <formArea sid="ae5b9714f467165c7b944fbbd201004b">
+              <id>formArea44183</id>
+              <labelWidth>50</labelWidth>
+              <Items>
+                <faString sid="698044eb1a874565ec65ce13e33ecf74">
+                  <id>faStringbeef8</id>
+                  <colSpan>2</colSpan>
+                  <label>姓名</label>
+                </faString>
+                <faCode sid="3a4d8ffa299912d5397e8c8915048e3f">
+                  <id>faCoded1bfa</id>
+                  <codeType>-1</codeType>
+                  <colSpan>2</colSpan>
+                  <label>性别</label>
+                </faCode>
+              </Items>
+            </formArea>
+          </Items>
+        </window>
+        <htmlArea sid="9dab020c83c9e6a44b419901294d66bd">
+          <id>htmlAreade9b8</id>
+          <value>标准位置</value>
+        </htmlArea>
+        <bottomBar sid="ed7a7338ee4ca2f22d3d9c084f9a2f09">
+          <id>bottomBara1fde</id>
+          <Items>
+            <tbButton sid="5be2061a4c7577167206444b1c426ec6">
+              <id>tbShow</id>
+              <text>Show</text>
+              <onClickClient><![CDATA[tbShow_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="e065e12048fbace3660b02340a48205d">
+              <id>tbShowAt</id>
+              <text>ShowAt</text>
+              <onClickClient><![CDATA[tbShowAt_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="0b24441479b308bf3b83c97dc416b69f">
+              <id>tbHide</id>
+              <text>Hide</text>
+              <onClickClient><![CDATA[tbHide_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="05ed8a658512e2a730f751374181b2d1">
+              <id>tbAlignTo</id>
+              <text>AlignTo</text>
+              <onClickClient><![CDATA[tbAlignTo_onClickClient]]></onClickClient>
+            </tbButton>
+          </Items>
+        </bottomBar>
+      </Items>
+    </form>
+  </Item>
+</form>
+

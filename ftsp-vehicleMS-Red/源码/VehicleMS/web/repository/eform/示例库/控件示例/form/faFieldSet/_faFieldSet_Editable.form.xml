@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>84f44e48b114d985558257131a72bbaa</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.faFieldSet._faFieldSet_Editable.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/faFieldSet/_fafieldset_editable.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formea145">
+      <id>formea145</id>
+      <Items>
+        <tableLayout sid="4daf828edeaa128492a7867821c1a1ab">
+          <id>tableLayoutb87a7</id>
+          <width>90%</width>
+          <cellpadding>7</cellpadding>
+          <Items>
+            <formArea sid="b438ba1cd35558f5425afad936a85c24">
+              <id>formArea8d9f7</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="eb41cdcc57a00a1531779efff7dbd6d1">
+                  <id>header7cfa0</id>
+                  <text>【编辑时子标签背景色】属性</text>
+                </header>
+                <faFieldSet sid="3884c9f75909f5828e1fd4916c960a46">
+                  <id>faFieldSet439ed</id>
+                  <fieldSetName>编辑时子标签背景色：blue</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <labelBackColor>blue</labelBackColor>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="14765fd64b27bee4e1ed59f8562106a2">
+                      <id>faStringc5d8a</id>
+                    </faString>
+                    <faString sid="658abd1e9691629cf52b402abb31b0c8">
+                      <id>faString386f2</id>
+                    </faString>
+                    <faString sid="4f4208f4328a56afcb0cd84648d29314">
+                      <id>faStringc3108</id>
+                    </faString>
+                    <faString sid="5862e604de5d991cc7523ba22e2759c0">
+                      <id>faStringcb65b</id>
+                    </faString>
+                    <faString sid="478e288355aeaba10e9352cbddb3b8d8">
+                      <id>faStringaa477</id>
+                    </faString>
+                    <faString sid="af6beb2307cdbe197a2024ce291e452e">
+                      <id>faStringbc55e</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+                <faFieldSet sid="98c780aee30eed11351989536a058103">
+                  <id>faFieldSet24762</id>
+                  <fieldSetName>编辑时子标签背景色：red</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <labelBackColor>red</labelBackColor>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="4932eae06369c97cb620604c50d67b1a">
+                      <id>faString1155f</id>
+                    </faString>
+                    <faString sid="402ddc53bc187432f86f4effe0c1ef22">
+                      <id>faStringa1116</id>
+                    </faString>
+                    <faString sid="e1b72acb8e4e9def7cc396953ac17cbe">
+                      <id>faString29d6b</id>
+                    </faString>
+                    <faString sid="ddbb006e520cafa5f7631818a43ab85e">
+                      <id>faString6a2d2</id>
+                    </faString>
+                    <faString sid="6b42902b292e19ab87626ab9a4cafef1">
+                      <id>faString32b84</id>
+                    </faString>
+                    <faString sid="fbc867ed5a0fd436b8d822a07376ca79">
+                      <id>faStringcddd8</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="43d2c0db7dd73a34058336b2d6e1edf0">
+              <id>formArea2d1e8</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="34177fd138fd5650c5dba46fccc91948">
+                  <id>headere932b</id>
+                  <text>【编辑时子标签容器背景色】属性</text>
+                </header>
+                <faFieldSet sid="10ddff4280e60bb8a46d5037ef14cd8e">
+                  <id>faFieldSet53e33</id>
+                  <fieldSetName>编辑时子标签容器背景色：blue</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <labelCtBackColor>blue</labelCtBackColor>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="293aeda0b09e17940dff2960528f8e6f">
+                      <id>faStringfe5ce</id>
+                    </faString>
+                    <faString sid="1da4b72ac8eb75294b0a2042a135c839">
+                      <id>faStringc3151</id>
+                    </faString>
+                    <faString sid="069ee601df66a87635516b27b699e1d5">
+                      <id>faString6103e</id>
+                    </faString>
+                    <faString sid="07ede4c3b7caa7cc9e14540cc5df5f4c">
+                      <id>faString7a314</id>
+                    </faString>
+                    <faString sid="9545f6b3d99c5e6e92c3ddf4f88ba344">
+                      <id>faStringaa8a8</id>
+                    </faString>
+                    <faString sid="ee53b5cbd3bd99091268e82bb22d2de6">
+                      <id>faStringaddb0</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+                <faFieldSet sid="92573a5cf063e0884e84cc3f9552b7b0">
+                  <id>faFieldSetf991b</id>
+                  <fieldSetName>编辑时子标签容器背景色：red</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <labelCtBackColor>red</labelCtBackColor>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="e015524268a2486bf1c8f19908391bf4">
+                      <id>faStringce70d</id>
+                    </faString>
+                    <faString sid="5160ae5359b9f48f1498864711c98040">
+                      <id>faString49f4f</id>
+                    </faString>
+                    <faString sid="33922ccc54fa56e6bfb3f60761d158be">
+                      <id>faStringf9966</id>
+                    </faString>
+                    <faString sid="7b15bdd26e61af1c76f9ea60578c5bf9">
+                      <id>faStringbaac7</id>
+                    </faString>
+                    <faString sid="a554425e39077a0f61c4c2f7802fbf87">
+                      <id>faString7fd6b</id>
+                    </faString>
+                    <faString sid="1cd3cfe0e865c138895640a52ee3a12c">
+                      <id>faString56474</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="886924e07454567189d0568574173fd3">
+              <id>formAreac8d65</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="3fdbeea9340833066277f7bb8c3d1cac">
+                  <id>headerd51d7</id>
+                  <text>【编辑时子标签样式】属性</text>
+                </header>
+                <faFieldSet sid="1ac070def35e01516e0dd328750fd251">
+                  <id>faFieldSetc2d05</id>
+                  <fieldSetName>编辑时子标签样式：border:1px solid blue;</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <labelSubStyle>border:1px solid blue;</labelSubStyle>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="00f7ad20f43d845f558005706abf5e2c">
+                      <id>faString87c41</id>
+                    </faString>
+                    <faString sid="01a6d5121eb8cb07287e345c059da9a5">
+                      <id>faString74d27</id>
+                    </faString>
+                    <faString sid="62fffcfc25a34933ad8bad4e69ae6b92">
+                      <id>faString09272</id>
+                    </faString>
+                    <faString sid="43116a5d0c2763e9aa613e8c080f9530">
+                      <id>faString990ad</id>
+                    </faString>
+                    <faString sid="a340b69f81f55c9e884d32f75e2b9562">
+                      <id>faStringf025f</id>
+                    </faString>
+                    <faString sid="7496b6fabfc20cebdbd652a0d4c84cf7">
+                      <id>faString18489</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+                <faFieldSet sid="59008b4c935187efc5d5347ca182262a">
+                  <id>faFieldSet061bc</id>
+                  <fieldSetName>编辑时子标签样式：border:1px solid red;</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <labelSubStyle>border:1px solid red;</labelSubStyle>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="6380b0c5348b818b6c818dc9236ed6f5">
+                      <id>faStringd1471</id>
+                    </faString>
+                    <faString sid="d35120d7dbd27b598e5b702717a596e2">
+                      <id>faString4060b</id>
+                    </faString>
+                    <faString sid="9dfa59a276248ec2d4317f8da2707895">
+                      <id>faStringdd3e7</id>
+                    </faString>
+                    <faString sid="9b2d36fbcb789f3f1bcd8cfb24bff0a1">
+                      <id>faStringf693e</id>
+                    </faString>
+                    <faString sid="eec32b3ee96a6ec41385f9b15243aec4">
+                      <id>faString03a6b</id>
+                    </faString>
+                    <faString sid="05d120b9e15bc5da42ec0c8246f982f5">
+                      <id>faStringb408b</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="794f810d2fa922f833b84f2281cba44a">
+              <id>formArea263b8</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="f6042b3fba76ad08f445c0a4309e7e76">
+                  <id>header37345</id>
+                  <text>【编辑时内容容器样式】属性</text>
+                </header>
+                <faFieldSet sid="3d8cf3c9202890f31746b263f1e0a3f9">
+                  <id>faFieldSet23d79</id>
+                  <fieldSetName>编辑时内容容器样式：border:1px solid blue;</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <contentCtStyleEdit>border:1px solid blue;</contentCtStyleEdit>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="f5b5274b5d3f0f86a8c70ddb509552df">
+                      <id>faStringa50f3</id>
+                    </faString>
+                    <faString sid="158789b3575641cbb335d48e2b07bee3">
+                      <id>faString420c4</id>
+                    </faString>
+                    <faString sid="5d670676e899d139852328063b35ee44">
+                      <id>faString36247</id>
+                    </faString>
+                    <faString sid="e6493e392d21a74271c6dc8841b5b45b">
+                      <id>faString9f73e</id>
+                    </faString>
+                    <faString sid="f37f70ad8eb2addde6358edf95b4ce4d">
+                      <id>faString0cc27</id>
+                    </faString>
+                    <faString sid="98c84d33ef792d302b7315436f5316bc">
+                      <id>faStringa09cf</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+                <faFieldSet sid="818647c0496b1d49cc49308236ac80c7">
+                  <id>faFieldSete3519</id>
+                  <fieldSetName>编辑时内容容器样式：border:1px solid red;</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <contentCtStyleEdit>border:1px solid red;</contentCtStyleEdit>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="a29f728a77b2187a2666fd68151a4324">
+                      <id>faString88181</id>
+                    </faString>
+                    <faString sid="3aa5d409d39c14d158e783cde0234d4b">
+                      <id>faString3738b</id>
+                    </faString>
+                    <faString sid="947fe00f461e2e6a6904cff19f1a1508">
+                      <id>faStringbf7d6</id>
+                    </faString>
+                    <faString sid="0b8b92620cdca22d8cbda7a2834b617d">
+                      <id>faString7cb06</id>
+                    </faString>
+                    <faString sid="c4342c0fe91baf110fa9638623ad2787">
+                      <id>faStringfc60e</id>
+                    </faString>
+                    <faString sid="947ecc8f9a1f58d9abd9f491558fe3f5">
+                      <id>faString1e698</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="ff40e93e20a4c1708a26ffc10bca2b5a">
+              <id>formAread1be5</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="c6839ee73cbebcc5e15dc6a3a3b89105">
+                  <id>headerfd005</id>
+                  <text>【编辑时是否显示表格线】属性</text>
+                </header>
+                <faFieldSet sid="738068bb18db261cb7c2ddab8f8515dc">
+                  <id>faFieldSet70f57</id>
+                  <fieldSetName>编辑时是否显示表格线：true</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <formTableBorder>true</formTableBorder>
+                  <borderStyle>border:1px solid gray;</borderStyle>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="7aae3e648d278b9dd9abaa5e0ee78763">
+                      <id>faStringcb91c</id>
+                    </faString>
+                    <faString sid="5a3238ffc62cf8fc836b36e9efc48ef6">
+                      <id>faString869f2</id>
+                    </faString>
+                    <faString sid="b671ee463444a051405d36deecdb228d">
+                      <id>faStringb91d5</id>
+                    </faString>
+                    <faString sid="98f69e24901de9ac9ae177ba4537b8d9">
+                      <id>faString1ed10</id>
+                    </faString>
+                    <faString sid="550d194cf8ca4f456b82c3f154e91242">
+                      <id>faStringbdbf3</id>
+                    </faString>
+                    <faString sid="788da12ec60e20029e00046e4d6ecd5c">
+                      <id>faString88b04</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+                <faFieldSet sid="440f0a09b9afffba0f951ecb0a8a8ad0">
+                  <id>faFieldSet420c8</id>
+                  <fieldSetName>编辑时是否显示表格线：false</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <borderStyle>border:1px solid gray;</borderStyle>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="9d3941397c45285acfe5b012dae1907f">
+                      <id>faString2aa98</id>
+                    </faString>
+                    <faString sid="cb00df3fe981875f4c070aa3babfaccd">
+                      <id>faString96225</id>
+                    </faString>
+                    <faString sid="9d1ec670341a91e167a07a6b25cb2e5e">
+                      <id>faString0f948</id>
+                    </faString>
+                    <faString sid="ed015abcf995c5ef76b05e4f4071e9e6">
+                      <id>faString59c11</id>
+                    </faString>
+                    <faString sid="9e81b9ba8da15ec3c4ba26a6a3b4be69">
+                      <id>faStringdcae1</id>
+                    </faString>
+                    <faString sid="5ed0bba61d13fbbac3252dec86fc0e5e">
+                      <id>faStringdbf99</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="40284940949b68873d3b50cd238fb56e">
+              <id>formAreaa77fc</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="4c3869f23b2695a0c3314cdbd9ac4f68">
+                  <id>header97213</id>
+                  <text>【编辑时间距】属性</text>
+                </header>
+                <faFieldSet sid="a7c0137ae941d5a3591695d4a58299eb">
+                  <id>faFieldSet89b1d</id>
+                  <fieldSetName>编辑时间距：2</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <cellpadding>2</cellpadding>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="9cc55eb4b52098877c7cb15f802dba51">
+                      <id>faString264b9</id>
+                    </faString>
+                    <faString sid="bb1782033db266dd1f70b3def2db07d0">
+                      <id>faString0e0a1</id>
+                    </faString>
+                    <faString sid="adc2cccb2f3a9018eb07d626b8bffce6">
+                      <id>faStringf3e33</id>
+                    </faString>
+                    <faString sid="695dbdfd1ee5579c0bbd8d8e1118523f">
+                      <id>faString483bc</id>
+                    </faString>
+                    <faString sid="9f4a92297f82ddb1f7e4d9c729b88e18">
+                      <id>faStringdf980</id>
+                    </faString>
+                    <faString sid="b3084a3f64e66082b002b39aad41ee2f">
+                      <id>faStringadb44</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+                <faFieldSet sid="2b5e5466b6920ba71bdf379dfca71861">
+                  <id>faFieldSet52cbd</id>
+                  <fieldSetName>编辑时间距：5</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <cellpadding>5</cellpadding>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="024d1845cc62e2115edcef61844888c1">
+                      <id>faString28999</id>
+                    </faString>
+                    <faString sid="9a81c68e49724221a74aed418a9ca6d4">
+                      <id>faStringd02ab</id>
+                    </faString>
+                    <faString sid="ec65559aba2c0b314bc019cfb94caad7">
+                      <id>faString54414</id>
+                    </faString>
+                    <faString sid="c2ce463cf9ea6ac45f0b4458d29f7a58">
+                      <id>faStringb5394</id>
+                    </faString>
+                    <faString sid="0782e9ccf9b22def26fd1b01a96056c8">
+                      <id>faString283b5</id>
+                    </faString>
+                    <faString sid="750f10bf92926d106372062740288386">
+                      <id>faStringb21d9</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <formArea sid="43d2cc1a30c8a8980fb728a38417f482">
+              <id>formAreafb106</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="9fa70ccfee8711479cf4e8d0ec36a1d8">
+                  <id>header56512</id>
+                  <text>【编辑时表格线样式】属性</text>
+                </header>
+                <faFieldSet sid="83abc66dbbf40f60213900902caca5fc">
+                  <id>faFieldSet9c5a0</id>
+                  <fieldSetName>编辑时表格线样式：border:1px solid blue;</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <formTableBorder>true</formTableBorder>
+                  <borderStyle>border:1px solid blue;</borderStyle>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="c42b6a4219b684fdc872290e80923d33">
+                      <id>faString2787c</id>
+                    </faString>
+                    <faString sid="95e39a02ec13fd8cbf55d2e626e82b9a">
+                      <id>faString3e275</id>
+                    </faString>
+                    <faString sid="5115a7cdbf1e3af2af022ce07783373f">
+                      <id>faStringfa0b5</id>
+                    </faString>
+                    <faString sid="ac03ac7f4ce55c220017b7b98c66678f">
+                      <id>faStringf7d3d</id>
+                    </faString>
+                    <faString sid="762f51ab9091cd0deb3c93003dc83ce8">
+                      <id>faString8a1bb</id>
+                    </faString>
+                    <faString sid="3a36ce324c23424416c3123c6f818642">
+                      <id>faString8b134</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+                <faFieldSet sid="30b824df5025aca8113d5e4ec6be33d5">
+                  <id>faFieldSet0ff16</id>
+                  <fieldSetName>编辑时表格线样式：border:1px solid red;</fieldSetName>
+                  <labelWidth>50</labelWidth>
+                  <formTableBorder>true</formTableBorder>
+                  <borderStyle>border:1px solid red;</borderStyle>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="f8a7e7941b496f3425dd6bf8ec860a22">
+                      <id>faString32521</id>
+                    </faString>
+                    <faString sid="8feec55a63be0284903e646d12eb9ef0">
+                      <id>faString02c5b</id>
+                    </faString>
+                    <faString sid="101208e62d8f95d80af36b649a0081e7">
+                      <id>faStringd8242</id>
+                    </faString>
+                    <faString sid="2ba6f006c33fb098763ffe890bf9a9b3">
+                      <id>faString3295e</id>
+                    </faString>
+                    <faString sid="d9afdac3ee4cef9d9e34ccb724f1bc0b">
+                      <id>faString90aa4</id>
+                    </faString>
+                    <faString sid="5728ad260d0909c798b8fd92ffa222c0">
+                      <id>faString03cf2</id>
+                    </faString>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

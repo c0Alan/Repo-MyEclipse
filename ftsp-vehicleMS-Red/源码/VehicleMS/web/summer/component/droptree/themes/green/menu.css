@@ -1,0 +1,134 @@
+/*Toolbar面板样式*/
+.toolbar {
+  font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	white-space: nowrap;
+	height: 20px;
+	border-color: #f0f0f0 #909090 #909090 #f0f0f0;
+	padding: 0px 3px 0px 3px;
+	-moz-user-select: none;
+}
+/*PopupMenu面板样式*/
+.popupmenu {
+	padding: 0px 1px 1px 0px;
+	background-color: #FFFFFF;
+	border: 1px solid;
+	border-color: #909090 #909090 #909090 #909090;
+	position: absolute;
+	z-index: 9999;
+	-moz-user-select: none;
+}
+/*PopupMenu分割栏*/
+.popupmenuhr {
+  border-top: 1px solid #909090;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 2px 2px;
+}
+/*MenuItem正常样式*/
+.menuitem_none {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	white-space: nowrap;
+	padding: 0px 3px 0px 3px;
+	cursor: default;
+	-moz-user-select: none;
+}
+/*MenuItem mouse移入时的样式*/
+.menuitem_over {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #316AC5;
+	white-space: nowrap;
+	padding: 0px 3px 0px 3px;
+	cursor: default;
+	-moz-user-select: none;
+}
+/*MenuItem mouse移出时的样式*/
+.menuitem_out {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	white-space: nowrap;
+	padding: 0px 3px 0px 3px;
+	cursor: default;
+	-moz-user-select: none;
+}
+/*MenuItem mouse按下时的样式*/
+.menuitem_down {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #316AC5;
+	white-space: nowrap;
+	padding: 0px 3px 0px 3px;
+	cursor: default;
+	-moz-user-select: none;
+}
+/*按钮正常的样式*/
+.toolbutton_none {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	white-space: nowrap;
+	padding: 0px;
+	cursor: default;
+	-moz-user-select: none;
+}
+/*移入按钮的样式*/
+.toolbutton_over {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #316AC5;
+	white-space: nowrap;
+	padding: 0px;
+	cursor: default;
+	-moz-user-select: none;
+}
+/*移出按钮的样式*/
+.toolbutton_out {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	white-space: nowrap;
+	padding: 0px;
+	cursor: default;
+	-moz-user-select: none;
+}
+/*按下按钮的样式*/
+.toolbutton_down {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #316AC5;
+	white-space: nowrap;
+	padding: 0px;
+	cursor: default;
+	-moz-user-select: none;
+}
+.downArrow {
+	background-image: url(images/downarrow.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 12px;
+	width: 12px;
+	-moz-user-select: none;
+}
+.rightArrow {
+	background-image: url(images/rightarrow.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 12px;
+	width: 12px;
+	-moz-user-select: none;
+}
+.checked {
+	background-image: url(images/check.gif);
+	background-repeat: no-repeat;
+	height: 12px;
+	width: 12px;
+	-moz-user-select: none;
+}

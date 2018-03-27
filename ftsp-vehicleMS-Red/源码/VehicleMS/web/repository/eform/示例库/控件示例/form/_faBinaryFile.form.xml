@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>068cc3907278bea96274897fd6fb96a3</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form._faBinaryFile.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_faBinaryFile.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form080bb">
+      <id>form080bb</id>
+      <bodyStyle>padding:10px;</bodyStyle>
+      <Items>
+        <blankPanel sid="2f40354d3aff06dc8d0aaca6379c8537">
+          <id>blankPanel4a2ba</id>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <formArea sid="607a9251755b699049eba1a0e127bb14">
+              <id>formArea61576</id>
+              <cellpadding>5</cellpadding>
+              <cellpaddingDisplay>5</cellpaddingDisplay>
+              <Items>
+                <faBinary sid="d17a86e8a229bf2e656dda8768c30bd7">
+                  <id>faBinary5e46f</id>
+                  <editor>file</editor>
+                  <label>单文件上传</label>
+                </faBinary>
+                <faBinary sid="c41f81d0c8d46437295a0dd1d6929c04">
+                  <id>faBinary56b86</id>
+                  <editor>file</editor>
+                  <fileAlign>bottom</fileAlign>
+                  <label>附件位置在下</label>
+                </faBinary>
+                <faBinary sid="b25ccbb8a123bacd50190ccd7b2df195">
+                  <id>faBinary83d63</id>
+                  <editor>file</editor>
+                  <multiple>true</multiple>
+                  <label>多文件上传</label>
+                </faBinary>
+                <faBinary sid="f7af7f8d2934aa0c595a8e4abe93bcf7">
+                  <id>faBinary3658b</id>
+                  <editor>file</editor>
+                  <multiple>true</multiple>
+                  <fileAlign>bottom</fileAlign>
+                  <label>附件位置在下</label>
+                </faBinary>
+                <faBinary sid="2e41bca038deb9d848fe9ae96757580e">
+                  <id>faBinarye9590</id>
+                  <required>true</required>
+                  <editor>file</editor>
+                  <label>必填</label>
+                </faBinary>
+                <faBinary sid="b0900fe3edc70fdf7216f2fcec3f1772">
+                  <id>faBinary83b9e</id>
+                  <editor>file</editor>
+                  <displayType>readOnly</displayType>
+                  <label>只读</label>
+                </faBinary>
+                <faBinary sid="fb96993152f00dc888d2c7ede99f1545">
+                  <id>faBinary8f8cf</id>
+                  <editor>file</editor>
+                  <displayType>disabled</displayType>
+                  <label>无效</label>
+                </faBinary>
+                <blankPanel sid="0991fd7e276357e11bdf1f45e986e37d">
+                  <id>blankPanel2dd69</id>
+                  <hideLabel>true</hideLabel>
+                </blankPanel>
+                <faBinary sid="6b52cba7d79d2a517ef879f889b7904b">
+                  <id>faBinaryb5588</id>
+                  <editor>file</editor>
+                  <value>{"name":"测试文件1.text","value":"idxxx"}</value>
+                  <label>单选编辑时</label>
+                </faBinary>
+                <faBinary sid="a913c381ff518f6c803fd99b71579b1e">
+                  <id>faBinary5443b</id>
+                  <editor>file</editor>
+                  <multiple>true</multiple>
+                  <value>[{"name":"测试文件1.txt","value":"id1"},{"name":"测试文件2.txt","value":"id2"},{"name":"测试文件3.txt","value":"id3"}]</value>
+                  <label>多选编辑时</label>
+                </faBinary>
+              </Items>
+            </formArea>
+            <header sid="cb93a44de0e04053170e5ec01037ef4f">
+              <id>header80d3d</id>
+              <text>文件上传控件</text>
+              <Items>
+                <collapseBtn sid="5db550cc1e90162786ef078b4a373917">
+                  <id>collapseBtn8a800</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="c38f4e7c427f51b92789a9da4370239c">
+              <id>blankPanel0a10a</id>
+              <width>100%</width>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <htmlArea sid="01d7bdbd1f52d6b2813ac3abc48a714d">
+                  <id>htmlAreac1a7f</id>
+                  <value>1.新建时&#xD;
+当表单新建保存时，在后台可通过如下代码获得FormFile对象复制内容到剪贴板代码:&#xD;
+                //当为单文件上传时&#xD;
+                FormFile file = ParamUtil.getFileObject("binaryFieldId");&#xD;
+                &#xD;
+                //当为多文件上传时&#xD;
+                List files = (List) ParamUtil.getFileList("binaryFieldId");2.更新时&#xD;
+当表单更新时可通过设置二进制控件的value属性来展现，此value为json格式的对象（list+map）或json字符串，如下所示&#xD;
+&#xD;
+a.单文件上传模式时&#xD;
+可设置控件的value属性为：{name:'文件名称',value:'id1',url:'/xxxx'}&#xD;
+&#xD;
+“name”：代表着文件名称，会在控件的上方显示出来（必须）&#xD;
+“value”：代表着此文件的标识，当删除一个文件时，系统会把此value的值传递到后台，如果不写此属性，则删除时传递名称name&#xD;
+“url”：下载链接，如果写了此值，则点击文件名称时会链接到此url下载文件&#xD;
+&#xD;
+以上的设置可为json字符串，也可为一个map对象，包含需要的键值即可。&#xD;
+&#xD;
+b.多文件上传模式时&#xD;
+和单文件类似，只不过设置的值为json数组或一个list+map对象，如：[{name:'name1'},{name:'name2'}]&#xD;
+&#xD;
+c.当删除文件时&#xD;
+当二进制控件生成时，同时也会生成一个隐藏域，此隐藏域的id为控件的id+Clear。当删除文件时，即把删除的文件的value或name属性的值记录到此隐藏域，多个文件用","分隔&#xD;
+&#xD;
+注：如果控件写了“提交名称”属性，则后台需要通过提交名称属性来获得，同样删除的隐藏域的id为“提交名称”+Clear</value>
+                  <convert2html>true</convert2html>
+                  <width>100%</width>
+                </htmlArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

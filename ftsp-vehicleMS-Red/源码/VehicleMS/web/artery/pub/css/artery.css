@@ -1,0 +1,236 @@
+A:visited,A:link {
+  text-decoration: none;
+}
+
+A:hover,A:active {
+  text-decoration: underline;
+}
+
+.x-statusbar .tips_ok{
+    padding-left: 25px;
+    background: url(images/items/tips_ok.gif) no-repeat 3px 3px;
+}
+
+.x-statusbar .tips_info{
+    padding-left: 25px;
+    background: url(images/items/tips_info.gif) no-repeat 3px 3px;
+}
+.x-statusbar .tips_warning{
+    padding-left: 25px;
+    background: url(images/items/tips_warning.gif) no-repeat 3px 3px;
+}
+.x-statusbar .tips_error{
+    padding-left: 25px;
+    background: url(images/items/tips_error.gif) no-repeat 3px 3px;
+}
+/*****************************
+ *         tipMessage        *
+ *****************************/
+.x-tip-message {
+    position: absolute;
+    z-index: 20002;
+    overflow: visible;
+}
+.x-tip-message .tips_body {
+	position: absolute;
+    font: 11px tahoma,arial,verdana,sans-serif;
+    border: 2px dashed #88ABD8;
+    background: #fff;
+    padding: 8px;
+    padding-top:2px;
+    color: #333;
+    overflow: visible;
+}
+
+.x-tip-message .x-tip-text {
+	white-space: nowrap;
+}
+
+.x-tip-message .tips_loading{
+	padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/loading.gif) no-repeat;
+}
+
+.x-tip-message .tips_ok{
+    padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/tips_ok.gif) no-repeat;
+}
+.x-tip-message .tips_info{
+    padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/tips_info.gif) no-repeat;
+}
+.x-tip-message .tips_warning{
+    padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/tips_warning.gif) no-repeat;
+}
+.x-tip-message .tips_error{
+    padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/tips_error.gif) no-repeat;
+}
+.x-tip-message .x-message-top{
+    text-align: right;
+}
+.x-tip-message .x-message-top-close{
+	display:inline;
+	background: url(../images/tips/close.gif) no-repeat;
+	height:10px;
+	width:8px;
+	cursor:hand;
+}
+.x-tip-message-small {
+	width:10px;
+	padding:0px;
+	height:10px;
+	overflow:hidden;
+	cursor:hand;
+	background: url(../images/tips/restore.gif) no-repeat ;
+}
+
+.add .x-btn-text{
+  background-image: url(../images/icon/add.gif);
+}
+.delete .x-btn-text{
+  background-image: url(../images/icon/del.gif);
+}
+.save .x-btn-text{
+  background-image: url(../images/icon/save.gif);
+}
+.syntax .x-btn-text{
+  background-image: url(../images/icon/chkSyntax.gif);
+}
+.back .x-btn-text{
+  background-image: url(../images/icon/back.gif);
+}
+.export .x-btn-text{
+  background-image: url(../images/icon/export.gif);
+}
+.import .x-btn-text{
+  background-image: url(../images/icon/import.gif);
+}
+.menu_show .x-btn-text{
+  background-image: url(../images/icon/menu-show.gif);
+}
+.refresh .x-btn-text{
+  background-image: url(../images/icon/refresh.gif);
+}
+.search .x-btn-text{
+  background-image: url(../images/icon/search.gif);
+}
+.excel .x-btn-text{
+  background-image: url(../images/icon/excel.gif);
+}
+.order .x-btn-text{
+  background-image: url(../images/icon/order.gif);
+}
+.up .x-btn-text{
+  background-image: url(../images/icon/up.gif);
+}
+.down .x-btn-text{
+  background-image: url(../images/icon/down.gif);
+}
+
+.preview .x-btn-text{
+  background-image: url(../images/icon/preview.gif);
+}
+
+.preview-d .x-btn-text{
+  background-image: url(../images/icon/preview_D.gif);
+  background-position: center !important;
+}
+
+.preview-u .x-btn-text{
+  background-image: url(../images/icon/preview_U.gif);
+  background-position: center !important;
+}
+
+.preview-i .x-btn-text{
+  background-image: url(../images/icon/preview_I.gif);
+  background-position: center !important;
+}
+
+.preview-p .x-btn-text{
+  background-image: url(../images/icon/preview_P.gif);
+  background-position: center !important;
+}
+
+.change-n .x-btn-text{
+  background-image: url(../images/icon/stat_N.gif);
+  background-position: center !important;
+}
+
+.change-d .x-btn-text{
+  background-image: url(../images/icon/stat_D.gif);
+  background-position: center !important;
+}
+
+.change-u .x-btn-text{
+  background-image: url(../images/icon/stat_U.gif);
+  background-position: center !important;
+}
+
+.change-i .x-btn-text{
+  background-image: url(../images/icon/stat_I.gif);
+  background-position: center !important;
+}
+
+.change-p .x-btn-text{
+  background-image: url(../images/icon/stat_P.gif);
+  background-position: center !important;
+}
+
+.checked .x-btn-text{
+  background-image: url(../images/icon/checked.gif);
+  background-position: center !important;
+}
+
+.unchecked .x-btn-text{
+  background-image: url(../images/icon/unchecked.gif);
+  background-position: center !important;
+}
+
+.background-normal{
+  background-color:#fff;
+}
+
+.background-display{
+  background-image: url(../images/icon/bg_D.gif);
+}
+
+.background-update{
+  background-image: url(../images/icon/bg_U.gif);
+}
+
+.background-insert{
+  background-image: url(../images/icon/bg_I.gif);
+}
+
+.background-print{
+  background-image: url(../images/icon/bg_P.gif);
+}
+
+.x-tree-node .change-state-item a span{
+  color: blue !important;
+}
+
+.x-panel-body-clean{
+  background-color: transparent;
+}
+
+.change-state-property{
+  color: blue;
+}
+
+.all .x-btn-text{
+  background-image: url(../images/icon/all.gif);
+}
+.prop .x-btn-text{
+  background-image: url(../images/icon/prop.gif);
+}
+.event .x-btn-text{
+  background-image: url(../images/icon/event.gif);
+}

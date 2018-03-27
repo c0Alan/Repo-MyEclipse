@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="listNav" cn="列表导航" menu="导航控件" jsType="artery-base"
+	icon="listNav.gif" iconNew="listNavNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe><![CDATA[列表导航控件实现了可分组显示，折叠子项的分组导航功能，通过向导航栏中加入导航目录，导航操作项等内容可快速实现分组导航栏。同时导航栏中还可以加入其他导航控件，以及面板区域实现灵活布局。
+			对于循环出现的控件，导航栏可以通过加入循环区域绑定数据源得以实现。
+		]]></Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="upRegion" />
+		<Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" />
+		<Parent type="blankPanel" />
+	</Parents>
+	<Children>
+		<Child type="listCatalog" />
+		<Child type="listItem" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.nav.ListNav
+	</Class>
+	<JsFile>
+		<File>listNav.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="操作区域编号" type="1" name="operAreaId" export="true"
+			tips="指明了此树中节点中的链接将在这里标识的区域中打开。相当于target，一般为框架页面中某个中心布局下面的操作区域id。(使用此属性需要设置连接到的target为空)">
+			<Value />
+		</Property>
+		<Property cn="动画效果" type="11" name="animate" export="true"
+			tips="设置展开时是否有动画效果">
+			<Value>false</Value>
+		</Property>
+		<Property cn="展开导航列表" type="11" name="expandList" export="true"
+			tips="设置是否在生成时，展开导航列表">
+			<Value>true</Value>
+		</Property>
+	   	<Property cn="仅Item可以被选中" type="11" name="onlyItem" export="true"
+			tips="设置为true时，表示仅有item节点可以获得额焦点，分组仅用于折叠">
+			<Value>false</Value>
+		</Property>
+		<Property cn="展开模式" type="3" name="expandMode"
+			ct="[singleExpand,multeExpand,fillExpand]" export="true" tips="设置是否允许展开多个导航目录">
+			<Value>singleExpand</Value>
+			<Description><![CDATA[
+
+<table border="1">
+  <tr>
+    <td><p>singleExpand展开模式指在此目录中只能展开一项内容，multeExpand允许展开多项内容，fillExpand将按照容器高度展开内容</p></td>
+    <td><p>multeExpand允许展开多项内容，fillExpand将按照容器高度展开内容</p></td>
+    <td><p>fillExpand将按照容器高度撑满展开内容</p></td>
+  </tr>
+  <tr>
+   <td><img src='../../resources/images/common/nav/single.png'></td>
+   <td><img src='../../resources/images/common/nav/multi.png'></td>
+   <td><img src='../../resources/images/common/nav/fill.png'></td>
+  </tr>
+</table>
+				
+			]]></Description>
+		</Property>
+		<Property cn="展开节点标识" type="1" name="expandNode" tips="设置需要展开的节点...">
+			<Value />
+			<Description><![CDATA[
+				<p>设置需要展开的节点，可以指定要展开的子控件的id，或序号。</p>				
+				<p>要使用此功能，不能设置展开导航列表属性</p>
+			]]></Description>
+		</Property>
+		<Property cn="隐藏折叠按钮" type="11" name="hideCollapseTool" tips="隐藏折叠按钮">
+			<Value>false</Value>
+		</Property>
+		<Property cn="显示导航边框" type="11" name="showNavBorder" tips="设置是否显示导航边框">
+			<Value>true</Value>
+		</Property>
+		<Property cn="使用Frame样式" type="11" name="frame" export="true"
+			tips="当设置为true，时，会以另一种样式展现控件，如：如果是面板控件的话...">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否显示边框" type="11" name="border" export="true"
+			tips="设置为true时，显示最外层的边框，否则不显示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="组件间隔" type="1" name="cellpadding" inherit="false"	tips="设置组件间的间隔，默认为4">
+			<Value>4</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle"	tips="设置列表的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="expand" return="void">
+			<Description><![CDATA[<p>展开listNav中的子节点，展开中会触发click事件。</p>
+<pre>Artery.get("listNavId").expand("listItemId");</pre>]]></Description>
+			<Parameters>
+				<Parameter>itemid</Parameter>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+	
+</Item>
+

@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>c2ba78b4aff3280a68759567f2455224</id>
+  <helpID />
+  <creator>100000000000001</creator>
+  <makeRight>3</makeRight>
+  <visitRight />
+  <logicClass />
+  <descript />
+  <needLogin>1</needLogin>
+  <Item type="rptLayout" sid="bodyPanel">
+    <Properties>
+      <Property name="xtype">
+        <Value>aprptlayout</Value>
+      </Property>
+      <Property name="id">
+        <Value>Aae239ba5bd377c2ed42d07c792190ecf</Value>
+      </Property>
+      <Property name="title">
+        <Value />
+      </Property>
+      <Property name="width">
+        <Value>100%</Value>
+      </Property>
+      <Property name="height">
+        <Value>100%</Value>
+      </Property>
+      <Property name="background-color">
+        <Value>#FFFFFF</Value>
+      </Property>
+      <Property name="text-align">
+        <Value>center</Value>
+      </Property>
+      <Property name="bodyStyle">
+        <Value />
+      </Property>
+      <Property name="style">
+        <Value />
+      </Property>
+      <Property name="onLoad">
+        <Value />
+      </Property>
+      <Property name="pubScript">
+        <Value />
+      </Property>
+      <Property name="show">
+        <Value>true</Value>
+      </Property>
+      <Property name="onShow">
+        <Value />
+      </Property>
+      <Property name="comment">
+        <Value />
+      </Property>
+      <Property name="descript">
+        <Value />
+      </Property>
+    </Properties>
+    <Items>
+      <Item type="topbar" sid="toolbarsid">
+        <Properties>
+          <Property name="id">
+            <Value>toolbar</Value>
+          </Property>
+          <Property name="frame">
+            <Value>false</Value>
+          </Property>
+          <Property name="tbarStyle">
+            <Value />
+          </Property>
+          <Property name="show">
+            <Value>true</Value>
+          </Property>
+          <Property name="onShow">
+            <Value />
+          </Property>
+        </Properties>
+        <Items>
+          <Item type="tbButton" sid="A943ad674a7687e0bc8f3e31424ffcbe5">
+            <Properties>
+              <Property name="xtype">
+                <Value>apTbButton</Value>
+              </Property>
+              <Property name="id">
+                <Value>A943ad674a7687e0bc8f3e31424ffcbe5</Value>
+              </Property>
+              <Property name="text">
+                <Value>查询</Value>
+              </Property>
+              <Property name="tooltip">
+                <Value />
+              </Property>
+              <Property name="icon">
+                <Value>/artery/report/parse/images/search.gif</Value>
+              </Property>
+              <Property name="iconId">
+                <Value />
+              </Property>
+              <Property name="onlyShowIcon">
+                <Value>false</Value>
+              </Property>
+              <Property name="frame">
+                <Value>false</Value>
+              </Property>
+              <Property name="enableToggle">
+                <Value>false</Value>
+              </Property>
+              <Property name="toggleGroup">
+                <Value />
+              </Property>
+              <Property name="pressed">
+                <Value>false</Value>
+              </Property>
+              <Property name="linkto">
+                <Value />
+              </Property>
+              <Property name="onClick">
+                <Value>{"client":"Artery.get(\"resultArea\").search();\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r","server":""}</Value>
+              </Property>
+              <Property name="disabled">
+                <Value>false</Value>
+              </Property>
+              <Property name="hidden">
+                <Value>false</Value>
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+          </Item>
+          <Item type="tbButton" sid="Af2453966654835dc38257122aa5fbaf6">
+            <Properties>
+              <Property name="xtype">
+                <Value>apTbButton</Value>
+              </Property>
+              <Property name="id">
+                <Value>Af2453966654835dc38257122aa5fbaf6</Value>
+              </Property>
+              <Property name="text">
+                <Value>显示/隐藏</Value>
+              </Property>
+              <Property name="tooltip">
+                <Value />
+              </Property>
+              <Property name="icon">
+                <Value>/artery/report/parse/images/split.gif</Value>
+              </Property>
+              <Property name="iconId">
+                <Value />
+              </Property>
+              <Property name="onlyShowIcon">
+                <Value>false</Value>
+              </Property>
+              <Property name="frame">
+                <Value>false</Value>
+              </Property>
+              <Property name="enableToggle">
+                <Value>false</Value>
+              </Property>
+              <Property name="toggleGroup">
+                <Value />
+              </Property>
+              <Property name="pressed">
+                <Value>false</Value>
+              </Property>
+              <Property name="linkto">
+                <Value />
+              </Property>
+              <Property name="onClick">
+                <Value>{"client":"Artery.get('resultArea').toggleCondition();\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r","server":""}</Value>
+              </Property>
+              <Property name="disabled">
+                <Value>false</Value>
+              </Property>
+              <Property name="hidden">
+                <Value>false</Value>
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+          </Item>
+          <Item type="tbButton" sid="A5589d27d7ec5fa73402256f9d83ec69f">
+            <Properties>
+              <Property name="xtype">
+                <Value>apTbButton</Value>
+              </Property>
+              <Property name="id">
+                <Value>A5589d27d7ec5fa73402256f9d83ec69f</Value>
+              </Property>
+              <Property name="text">
+                <Value>业务口径</Value>
+              </Property>
+              <Property name="tooltip">
+                <Value />
+              </Property>
+              <Property name="icon">
+                <Value>/artery/report/parse/images/comment.gif</Value>
+              </Property>
+              <Property name="iconId">
+                <Value />
+              </Property>
+              <Property name="onlyShowIcon">
+                <Value>false</Value>
+              </Property>
+              <Property name="frame">
+                <Value>false</Value>
+              </Property>
+              <Property name="enableToggle">
+                <Value>false</Value>
+              </Property>
+              <Property name="toggleGroup">
+                <Value />
+              </Property>
+              <Property name="pressed">
+                <Value>false</Value>
+              </Property>
+              <Property name="linkto">
+                <Value />
+              </Property>
+              <Property name="onClick">
+                <Value>{"client":"Artery.get(\"resultArea\").showComment();\r\n\r","server":""}</Value>
+              </Property>
+              <Property name="disabled">
+                <Value>false</Value>
+              </Property>
+              <Property name="hidden">
+                <Value>false</Value>
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+          </Item>
+          <Item type="tbSeparator" sid="Ad8ea600f515585dc1989dd14accf7614">
+            <Properties>
+              <Property name="id">
+                <Value>Ad8ea600f515585dc1989dd14accf7614</Value>
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+          </Item>
+          <Item type="tbMenu" sid="A8a0daa02a28ae7d8894b5a91c7b210b9">
+            <Properties>
+              <Property name="id">
+                <Value>A8a0daa02a28ae7d8894b5a91c7b210b9</Value>
+              </Property>
+              <Property name="text">
+                <Value>自动调整</Value>
+              </Property>
+              <Property name="icon">
+                <Value>/artery/report/parse/images/autoCol.gif</Value>
+              </Property>
+              <Property name="iconId">
+                <Value />
+              </Property>
+              <Property name="disabled">
+                <Value>false</Value>
+              </Property>
+              <Property name="hidden">
+                <Value>false</Value>
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+            <Items>
+              <Item type="tbMenuItem" sid="A9fb6909553129946c6e1c4c2d25c98d4">
+                <Properties>
+                  <Property name="id">
+                    <Value>A9fb6909553129946c6e1c4c2d25c98d4</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>自动列宽</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/autoCol.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").autoCol();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="Ab04af006fe96cb9efece2cd84822bef2">
+                <Properties>
+                  <Property name="id">
+                    <Value>Ab04af006fe96cb9efece2cd84822bef2</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>自动行高</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/autoRow.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").autoRow();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbSeparator" sid="A31741a1d5770c85379857620b4c8dddc">
+                <Properties>
+                  <Property name="id">
+                    <Value>A31741a1d5770c85379857620b4c8dddc</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="A8db25c87b7dac79aceddbb0004b63b72">
+                <Properties>
+                  <Property name="id">
+                    <Value>A8db25c87b7dac79aceddbb0004b63b72</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>恢复初始</Value>
+                  </Property>
+                  <Property name="iconpath">
+                    <Value />
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").autoRecover();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+            </Items>
+          </Item>
+          <Item type="tbMenu" sid="Ab8b2583c02e6b297c7c24bc7e15bc72c">
+            <Properties>
+              <Property name="id">
+                <Value>Ab8b2583c02e6b297c7c24bc7e15bc72c</Value>
+              </Property>
+              <Property name="text">
+                <Value>导出</Value>
+              </Property>
+              <Property name="icon">
+                <Value>/artery/report/parse/images/excel.gif</Value>
+              </Property>
+              <Property name="iconId">
+                <Value />
+              </Property>
+              <Property name="disabled">
+                <Value>false</Value>
+              </Property>
+              <Property name="hidden">
+                <Value>false</Value>
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+            <Items>
+              <Item type="tbMenuItem" sid="Aaa4cca2931f37f0f7c8fc04507afd4f8">
+                <Properties>
+                  <Property name="id">
+                    <Value>Aaa4cca2931f37f0f7c8fc04507afd4f8</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>导出Excel</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/excel.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").exportExcel();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="A1d142118ed4138b44f6f2486d112b9fc">
+                <Properties>
+                  <Property name="id">
+                    <Value>A1d142118ed4138b44f6f2486d112b9fc</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>导出全部Excel</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/excel.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").exportAllExcel();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbSeparator" sid="Ac545808ad1e2663d1e3ea5a026eeb86c">
+                <Properties>
+                  <Property name="id">
+                    <Value>Ac545808ad1e2663d1e3ea5a026eeb86c</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="A0f12c3bcb08dcea30b5a4cb766cf969c">
+                <Properties>
+                  <Property name="id">
+                    <Value>A0f12c3bcb08dcea30b5a4cb766cf969c</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>导出Excel(OCX)</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/excel.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").exportExcelWin();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="Ab1316e3f49b82c55b34c9ab3db6cd0da">
+                <Properties>
+                  <Property name="id">
+                    <Value>Ab1316e3f49b82c55b34c9ab3db6cd0da</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>导出全部Excel(OCX)</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/excel.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").exportAllExcelWin();\r\n\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbSeparator" sid="A904ca9d7777ada03f3d1724fee091c22">
+                <Properties>
+                  <Property name="id">
+                    <Value>A904ca9d7777ada03f3d1724fee091c22</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="A4393893e099585c11249341153f12243">
+                <Properties>
+                  <Property name="id">
+                    <Value>A4393893e099585c11249341153f12243</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>导出Pdf</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/pdf.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").exportPdf();\r\n\r\n\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="Abccbc784458851abe12408fa7810efdb">
+                <Properties>
+                  <Property name="id">
+                    <Value>Abccbc784458851abe12408fa7810efdb</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>导出全部Pdf</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/pdf.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").exportAllPdf();\r\n\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+            </Items>
+          </Item>
+          <Item type="tbMenu" sid="Ad4fa1832653e38c31a448237cf2ad85d">
+            <Properties>
+              <Property name="id">
+                <Value>Ad4fa1832653e38c31a448237cf2ad85d</Value>
+              </Property>
+              <Property name="text">
+                <Value>打印</Value>
+              </Property>
+              <Property name="icon">
+                <Value>/artery/report/parse/images/print.gif</Value>
+              </Property>
+              <Property name="iconId">
+                <Value />
+              </Property>
+              <Property name="disabled">
+                <Value>false</Value>
+              </Property>
+              <Property name="hidden">
+                <Value>false</Value>
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+            <Items>
+              <Item type="tbMenuItem" sid="Adcc4a4a480098f351a777de7c820a654">
+                <Properties>
+                  <Property name="id">
+                    <Value>Adcc4a4a480098f351a777de7c820a654</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>打印本页</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/print.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").print();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="A1c4551d6c0bc3e3536218633b95c47e5">
+                <Properties>
+                  <Property name="id">
+                    <Value>A1c4551d6c0bc3e3536218633b95c47e5</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>打印全部</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/print.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").printAll();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="A65ec9dfaf7ac6d9c76a63f8073860c5e">
+                <Properties>
+                  <Property name="id">
+                    <Value>A65ec9dfaf7ac6d9c76a63f8073860c5e</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>打印全部(分页)</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/print.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").printAllPage();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbSeparator" sid="A86f2762056a87e222ac8eab1ec98823e">
+                <Properties>
+                  <Property name="id">
+                    <Value>A86f2762056a87e222ac8eab1ec98823e</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="A6f23691c562acfc28e7a1e7c22a6f566">
+                <Properties>
+                  <Property name="id">
+                    <Value>A6f23691c562acfc28e7a1e7c22a6f566</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>打印本页(OCX)</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/print.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").exportExcelWin();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+              <Item type="tbMenuItem" sid="A4ebfeff4e1e8e609e0b7087f0e5fccf9">
+                <Properties>
+                  <Property name="id">
+                    <Value>A4ebfeff4e1e8e609e0b7087f0e5fccf9</Value>
+                  </Property>
+                  <Property name="text">
+                    <Value>打印全部(OCX)</Value>
+                  </Property>
+                  <Property name="icon">
+                    <Value>/artery/report/parse/images/print.gif</Value>
+                  </Property>
+                  <Property name="iconId">
+                    <Value />
+                  </Property>
+                  <Property name="showType">
+                    <Value>normal</Value>
+                  </Property>
+                  <Property name="checked">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="group">
+                    <Value />
+                  </Property>
+                  <Property name="linkto">
+                    <Value />
+                  </Property>
+                  <Property name="onClick">
+                    <Value>{"client":"Artery.get(\"resultArea\").exportAllExcelWin();\r\n\r","server":""}</Value>
+                  </Property>
+                  <Property name="disabled">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="hidden">
+                    <Value>false</Value>
+                  </Property>
+                  <Property name="show">
+                    <Value>true</Value>
+                  </Property>
+                  <Property name="onShow">
+                    <Value />
+                  </Property>
+                </Properties>
+              </Item>
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item type="rptCondition" sid="A36ff3fdc071890fc1144791531a4a5cf">
+        <Properties>
+          <Property name="xtype">
+            <Value>apformarea</Value>
+          </Property>
+          <Property name="id">
+            <Value>conditionArea</Value>
+          </Property>
+          <Property name="colNum">
+            <Value>3</Value>
+          </Property>
+          <Property name="colWidths">
+            <Value />
+          </Property>
+          <Property name="width">
+            <Value>90%</Value>
+          </Property>
+          <Property name="height">
+            <Value />
+          </Property>
+          <Property name="labelSeparator">
+            <Value>:</Value>
+          </Property>
+          <Property name="labelAlign">
+            <Value>left</Value>
+          </Property>
+          <Property name="labelWidth">
+            <Value>70</Value>
+          </Property>
+          <Property name="labelAlign">
+            <Value>left</Value>
+          </Property>
+          <Property name="labelWidth">
+            <Value>70</Value>
+          </Property>
+          <Property name="labelBackColor">
+            <Value>#f5f5f5</Value>
+          </Property>
+          <Property name="labelSubStyle">
+            <Value />
+          </Property>
+          <Property name="defaultSearch">
+            <Value>true</Value>
+          </Property>
+          <Property name="careCon">
+            <Value>true</Value>
+          </Property>
+          <Property name="border">
+            <Value>false</Value>
+          </Property>
+          <Property name="formTableBorder">
+            <Value />
+          </Property>
+          <Property name="cellpadding">
+            <Value>5</Value>
+          </Property>
+          <Property name="borderStyle">
+            <Value>solid</Value>
+          </Property>
+          <Property name="bodyStyle">
+            <Value />
+          </Property>
+          <Property name="style">
+            <Value />
+          </Property>
+          <Property name="hidden">
+            <Value>true</Value>
+          </Property>
+          <Property name="readOnly">
+            <Value>false</Value>
+          </Property>
+          <Property name="show">
+            <Value>true</Value>
+          </Property>
+          <Property name="onShow">
+            <Value />
+          </Property>
+        </Properties>
+      </Item>
+      <Item type="rptResult" sid="Ae7426be790949f95926593e72055e698">
+        <Properties>
+          <Property name="xtype">
+            <Value>aprptresult</Value>
+          </Property>
+          <Property name="id">
+            <Value>resultArea</Value>
+          </Property>
+          <Property name="autoCellType">
+            <Value>no</Value>
+          </Property>
+          <Property name="showPageNum">
+            <Value>false</Value>
+          </Property>
+          <Property name="pageRs">
+            <Value />
+          </Property>
+          <Property name="timeRefresh">
+            <Value>0</Value>
+          </Property>
+          <Property name="fullScreen">
+            <Value>false</Value>
+          </Property>
+          <Property name="cacheTmp">
+            <Value>false</Value>
+          </Property>
+          <Property name="printHeader">
+            <Value>第&amp;p页/共&amp;P页</Value>
+          </Property>
+          <Property name="printFooter">
+            <Value />
+          </Property>
+          <Property name="printLeftMargin">
+            <Value>19.05</Value>
+          </Property>
+          <Property name="printTopMargin">
+            <Value>19.05</Value>
+          </Property>
+          <Property name="printRightMargin">
+            <Value>19.05</Value>
+          </Property>
+          <Property name="printBottomMargin">
+            <Value>19.05</Value>
+          </Property>
+          <Property name="onCallBack">
+            <Value />
+          </Property>
+          <Property name="show">
+            <Value>true</Value>
+          </Property>
+          <Property name="onShow">
+            <Value />
+          </Property>
+        </Properties>
+      </Item>
+    </Items>
+  </Item>
+  <Template ver="1.0">
+    <Table DefaultColWidth="84" DefaultRowHeight="20" FixedCols="0" FixedRows="0" FixedLineColor="0" />
+    <ImgList />
+    <Cells>
+      <Cell Col="1" Row="1" ColWidths="148" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="1" Row="2" ColWidths="148" MergeWidths="133,201" RowHeights="38" AlignMode="4" MergeRight="3" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" FontSize="16" ForeText="图书管理主从表示例" Bold="1" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="1" Row="3" ColWidths="148" AlignMode="4" Color="16764057" ForeText="序号" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="1" Row="4" ColWidths="148" MergeHeights="20,20,20" AlignMode="4" MergeBottom="7" ForeText="{seq}{cc([C4])}" TrailingZero="1" ThousandSep="1" TdBT="0" />
+      <Cell Col="2" Row="1" ColWidths="133" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="2" Row="3" ColWidths="133" AlignMode="4" Color="16764057" ForeText="图书室名称" TrailingZero="1" ThousandSep="1" TdBL="0" />
+      <Cell Col="2" Row="4" ColWidths="133" ForeText="{rs1.select(#1)}{=rs1.select1(#2,'#1'='[B4]')}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="2" Row="5" ColWidths="133" Color="9868950" ForeText="图书名称{cc([B4])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="2" Row="6" ColWidths="133" ForeText="{rs2.group(#2,#3=[B4],false)}{cc([B4])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="2" Row="7" ColWidths="133" Color="10841658" ForeText="小计{cc([B4])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="3" Row="1" ColWidths="201" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="3" Row="3" ColWidths="201" AlignMode="4" Color="16764057" ForeText="图书室id" TrailingZero="1" ThousandSep="1" TdBL="0" />
+      <Cell Col="3" Row="4" ColWidths="201" ForeText="{rs1.#1}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="3" Row="5" ColWidths="201" Color="9868950" ForeText="图书价格" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="3" Row="6" ColWidths="201" ForeText="{rs2.sum(#4)}{nf([0.00])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="3" Row="7" ColWidths="201" Color="10841658" ForeText="{sum([C6])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+    </Cells>
+  </Template>
+  <dataSources>
+    <ds rsName="rs1" splitpage="1" record="30" dsName="dataSource">select C_ID,
+		 C_NAME,
+		 N_VALID 
+       from T_Eg_Library</ds>
+    <ds rsName="rs2" splitpage="1" record="30" dsName="dataSource">SELECT C_ID,
+       C_NAME,
+       C_LIBRARYID,
+       F_PRICE,
+		 D_BUY
+ FROM T_Eg_Book</ds>
+  </dataSources>
+</form>
+

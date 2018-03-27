@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>5e8c627d5f049ad158a4de088f48a061</id>
+  <configTable />
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>com.thunisoft.vehicle.logic.Carapply.java</javaLocation>
+  <jsLocation>car/js/carapply.js</jsLocation>
+  <cssLocation />
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="forme7eaa">
+      <id>forme7eaa</id>
+      <Items>
+        <upRegion sid="4430ac24df82f9b8419f64ca0da3cb2e">
+          <id>upRegiona1322</id>
+          <height />
+          <border>false</border>
+          <Items>
+            <blankPanel sid="b28b0de2c3019274099d61e9d9a3f021">
+              <id>blankPanelf0101</id>
+              <show>false</show>
+            </blankPanel>
+            <formArea sid="45042a8e48b789c7500617c5cc7d8985">
+              <id>formAreab9ec0</id>
+              <height>100%</height>
+              <colNum>6</colNum>
+              <labelAlign>left</labelAlign>
+              <Items>
+                <faString sid="85a281a06d358634ed923c9fc87cf53a">
+                  <id>faString76027</id>
+                  <submitName>cph</submitName>
+                  <width>175</width>
+                  <label>车牌号</label>
+                </faString>
+                <faDate sid="ea8b032e9e9c21ebb2f1dfb222c751cf">
+                  <id>faDate0f89e</id>
+                  <submitName>kssj</submitName>
+                  <showTime>true</showTime>
+                  <width>175</width>
+                  <label>开始日期</label>
+                </faDate>
+                <faDate sid="4750aae3dfc9a27944caacfa77936944">
+                  <id>faDatee139e</id>
+                  <submitName>jssj</submitName>
+                  <showTime>true</showTime>
+                  <width>175</width>
+                  <label>结束日期</label>
+                </faDate>
+                <buttonArea sid="3761eab99fec60f8f9371df0a4637c20">
+                  <id>buttonAreab203d</id>
+                  <width />
+                  <label />
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="99592db69bb70cd06fbb32afcd7c81e4">
+                      <id>button482be</id>
+                      <text>查询</text>
+                      <onClickClient><![CDATA[button482be_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[button482be_onClickServer]]></onClickServer>
+                    </button>
+                    <button sid="c99142cc4e7de0dd7e3d8815bed39455">
+                      <id>buttonf5f04</id>
+                      <text>申请</text>
+                      <linkto>{"formId":"c4f873564fd6d82c0615591e0517860c","formName":"carapplyform","formType":"1","runTimeType":"update","target":"_window","targetWidth":"400","targetHeight":"465","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"用车申请","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                      <onClickClient><![CDATA[buttonf5f04_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </upRegion>
+        <centerRegion sid="8c6a7b9b54e295a695be9697b39c8f59">
+          <id>centerRegionb06eb</id>
+          <Items>
+            <listArea sid="695603d7020d68e7f8e31d13adb0554e">
+              <id>listArea8d6ab</id>
+              <ds>rs1</ds>
+              <height>100%</height>
+              <Items>
+                <columnString sid="b12c83dbaf1fecd1d74ba701a0f31214">
+                  <id>b.CCarNumber</id>
+                  <dataName>{rs1[1].CCarNumber}</dataName>
+                  <title>车牌号</title>
+                  <isOrderBy>true</isOrderBy>
+                </columnString>
+                <columnString sid="c7b793f8e0fd16b84371c68a792f3f9f">
+                  <id>b.CCarTypeName</id>
+                  <dataName>{rs1[1].CCarTypeName}</dataName>
+                  <title>车辆类型</title>
+                  <isOrderBy>true</isOrderBy>
+                  <showOrderIcon>true</showOrderIcon>
+                </columnString>
+                <columnString sid="763f5ff2f7ab684dc3da62ad41a3af4e">
+                  <id>a.dtCreateTime</id>
+                  <dataName>{rs1[0].dtCreateTime}</dataName>
+                  <title>申请时间</title>
+                  <isOrderBy>true</isOrderBy>
+                  <showOrderIcon>true</showOrderIcon>
+                </columnString>
+                <columnString sid="7246e24b16f405d42be11a4f84fe8ffa">
+                  <id>columnString3741c</id>
+                  <dataName>{rs1[0].CApplyUserName}</dataName>
+                  <title>申请人</title>
+                </columnString>
+                <columnDate sid="b62d0b6bcdb089c362e60f6ad5080f0a">
+                  <id>columnDatee92c4</id>
+                  <dataName>{rs1[0].dtStartTime}至{rs1[0].dtEndTime}</dataName>
+                  <title>用车时间</title>
+                  <width>100</width>
+                  <showTime>true</showTime>
+                </columnDate>
+                <columnString sid="3980a4cfd640136738442a023e6d57cb">
+                  <id>columnString87438</id>
+                  <dataName>{rs1[0].CReason}</dataName>
+                  <title>用车事由</title>
+                </columnString>
+                <columnString sid="50fbeeeb3eb8a07fa9f6de46116af23d">
+                  <id>columnString7ac1c</id>
+                  <dataName>{rs1[0].CDestination}</dataName>
+                  <title>目的地</title>
+                </columnString>
+                <columnString sid="3a13a3cfdf8e189c0fa2127a66f1c05b">
+                  <id>columnString3b6ae</id>
+                  <dataName>{rs1[0].CNote}</dataName>
+                  <title>备注</title>
+                </columnString>
+                <columnString sid="68e659b78565cdf381c90c479a7ba2bf">
+                  <id>carid</id>
+                  <dataName>{rs1.CId}</dataName>
+                  <title>id</title>
+                  <width>0</width>
+                  <hidden>true</hidden>
+                </columnString>
+                <column sid="aa881b89eb5b1f4a4001b64663744ae8">
+                  <id>columnb3881</id>
+                  <title>操作</title>
+                  <Items>
+                    <colOperText sid="14730660a7753dfffaf7440dfdd0a79a">
+                      <id>colOperTexte7e7b</id>
+                      <text>删除</text>
+                      <onClickClient><![CDATA[colOperTexte7e7b_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[colOperTexte7e7b_onClickServer]]></onClickServer>
+                    </colOperText>
+                  </Items>
+                </column>
+              </Items>
+            </listArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+    <UpdateItems>
+      <faString sid="85a281a06d358634ed923c9fc87cf53a">
+        <width>170</width>
+      </faString>
+      <faDate sid="ea8b032e9e9c21ebb2f1dfb222c751cf">
+        <width>170</width>
+      </faDate>
+      <faDate sid="4750aae3dfc9a27944caacfa77936944">
+        <width>170</width>
+      </faDate>
+      <formArea sid="45042a8e48b789c7500617c5cc7d8985">
+        <labelWidth />
+        <width>800</width>
+      </formArea>
+    </UpdateItems>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getCarList</ds>
+  </dslist>
+</form>
+

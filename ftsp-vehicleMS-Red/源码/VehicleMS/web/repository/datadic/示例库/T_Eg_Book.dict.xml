@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>8C8171B701CB525DA459945B8F18C8F9</cid>
+  <key />
+  <tableName>T_Eg_Book</tableName>
+  <showName>图书表</showName>
+  <desc />
+  <submitName>TEgBook</submitName>
+  <fields>
+    <field cid="EBE6762125FAF1FB574E5AAA0A2FE230" fieldName="C_ID" fieldType="auto" dbmsType="" pk="true" defaultValue="" unique="false">
+      <extend label="图书编号" required="true" editor="uuidStr" show="true" showInContainer="normal" submitName="CId" />
+    </field>
+    <field cid="D0B95A7F9315509CEC66B3882FC22A0A" fieldName="C_NAME" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="true">
+      <extend label="图书名称" required="true" comment="尽量不要重名，重名后可以加后缀" maxLength="50" minLength="2" show="true" showInContainer="normal" editor="input" submitName="CName" />
+    </field>
+    <field cid="FE1FBA8620A91D1FC4476C6B7FEF0258" fieldName="C_AUTH" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend editor="input" show="true" label="作者" comment="英文名要写全称" required="false" showInContainer="normal" submitName="CAuth" />
+    </field>
+    <field cid="E7E7EE933C72EB651AE34EA927E27ED0" fieldName="C_PUBLISHER" fieldType="text" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="出版社" required="false" show="true" showInContainer="normal" editor="input" submitName="CPublisher" />
+    </field>
+    <field cid="B48C9B36E89F27E7935ACAE5B070A4C8" fieldName="D_PUBLISHER" fieldType="date" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="出版日期" required="false" show="true" showInContainer="normal" showTime="false" submitName="DPublisher" />
+    </field>
+    <field cid="3C566AB74E7A1872965CD99D8757F0B8" fieldName="D_BUY" fieldType="date" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="购买日期" required="false" show="true" showInContainer="normal" showTime="false" submitName="DBuy" />
+    </field>
+    <field cid="132A2AF40EC1D83DBCFF1AEE190C1B68" fieldName="C_LIBRARYID" fieldType="text" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="图书室id" required="true" show="true" showInContainer="normal" editor="input" submitName="CLibraryid" />
+    </field>
+    <field cid="4373FC483B6473B0A586EBEC3630D57F" fieldName="C_ISBN" fieldType="text" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="ISBN号" required="false" show="true" showInContainer="normal" editor="input" submitName="CIsbn" />
+    </field>
+    <field cid="63698BEC9587B07CC48451B56ED264AB" fieldName="C_VERSION" fieldType="text" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="版本" required="false" show="true" showInContainer="normal" editor="input" submitName="CVersion" />
+    </field>
+    <field cid="21A29715FDD7A7F458D89DC4CC03C385" fieldName="I_PHOTO" fieldType="image" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="图书封面" required="false" show="true" showInContainer="normal" submitName="IPhoto" />
+    </field>
+    <field cid="CD776FC22899ED396B7B1FA940B4647B" fieldName="T_ABSTRACT" fieldType="text" dbmsType="text" pk="false" defaultValue="" unique="false">
+      <extend label="摘要" required="false" show="true" showInContainer="normal" editor="input" submitName="TAbstract" />
+    </field>
+    <field cid="79853726EA7C1AA204E4313BC2F2DC23" fieldName="N_VALID" fieldType="normalcode" dbmsType="number" pk="false" defaultValue="" unique="false">
+      <extend label="是否有效" required="false" codeType="-1" editor="sSelect" show="true" showInContainer="normal" submitName="NValid" />
+    </field>
+    <field cid="6D0E8FDEA47130FB5246317ED467DFF4" fieldName="T_INVALIDREASON" fieldType="text" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="无效原因" required="false" show="true" showInContainer="normal" editor="input" submitName="TInvalidreason" />
+    </field>
+    <field cid="A4A033AEE9207EF93E8F7E898684ED67" fieldName="N_TYPE" fieldType="normalcode" dbmsType="number" pk="false" defaultValue="" unique="false">
+      <extend label="图书类型" required="false" codeType="-600" editor="sSelect" show="true" showInContainer="normal" submitName="NType" />
+    </field>
+    <field cid="212272456D3ED9C3FFB94B930441FC38" fieldName="D_BOOKING" fieldType="date" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="订阅日期" required="false" show="true" showInContainer="normal" showTime="false" submitName="DBooking" />
+    </field>
+    <field cid="010775ED001AC7BBD95D3ED7B226DC0F" fieldName="N_BOOKINGUSERID" fieldType="number" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="订阅用户id" required="false" maxLength="10" maxValue="4294967296" maxPrecision="0" minValue="-4294967297" show="true" showInContainer="normal" submitName="NBookinguserid" />
+    </field>
+    <field cid="0569591C05FDE2DE673520DF0F02ECF8" fieldName="N_LENDUSERID" fieldType="number" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="借阅用户id" required="false" maxLength="10" maxValue="4294967296" maxPrecision="0" minValue="-4294967297" show="true" showInContainer="normal" submitName="NLenduserid" />
+    </field>
+    <field cid="67E0EC887D7369D8B836CB1C175C3C3A" fieldName="D_LEND" fieldType="date" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="借阅日期" required="false" show="true" showInContainer="normal" showTime="false" submitName="DLend" />
+    </field>
+    <field cid="4960DBC8C1C3911BE7AAAE747E2EA9DE" fieldName="I_ATTACH" fieldType="image" dbmsType="" pk="false" defaultValue="" unique="false">
+      <extend label="附件" required="false" show="true" showInContainer="normal" submitName="IAttach" />
+    </field>
+  </fields>
+</table>
+

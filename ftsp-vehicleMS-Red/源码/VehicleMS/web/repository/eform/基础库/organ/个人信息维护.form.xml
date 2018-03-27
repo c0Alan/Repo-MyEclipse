@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>7b857b9491d6824c2faa278c6d1a8265</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.organ.Grxxwh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/organ/Grxxwh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form6580e">
+      <id>form6580e</id>
+      <Items>
+        <blankPanel sid="a9eb4ce9cc33e41b51f0a7bcb6543e48">
+          <id>blankPanel841af</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <bodyStyle>padding-top:10px;</bodyStyle>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="0200eebee0617a3d27e2ec3d3f392c8a">
+              <id>header1408c</id>
+              <text>&lt;span style="font-size:14px;padding:3px;"&gt;个人信息&lt;/span&gt;</text>
+            </header>
+            <formArea sid="d586b7af08051c8a4cdfb3cba9922bb4">
+              <id>formArea</id>
+              <width>350</width>
+              <colNum>1</colNum>
+              <labelSeparator>：</labelSeparator>
+              <bodyStyle>padding-top:20px</bodyStyle>
+              <cellpadding>5</cellpadding>
+              <cellpaddingRead>5</cellpaddingRead>
+              <Items>
+                <faString sid="e0eb2f01a4fc52443f8c94460e31b2a2">
+                  <id>faLoginId</id>
+                  <value>{rs1.loginId}</value>
+                  <displayType>display</displayType>
+                  <label>登录名称</label>
+                </faString>
+                <faString sid="49e89888a94152ff9575f0c49f01df08">
+                  <id>faUserName</id>
+                  <required>true</required>
+                  <value>{rs1.name}</value>
+                  <label>姓名</label>
+                </faString>
+                <faString sid="884663b8dc151dafbe04cc0adf0bee63">
+                  <id>faEmail</id>
+                  <value>{rs1.email}</value>
+                  <label>电子邮件</label>
+                </faString>
+                <faString sid="d0482cacb57c37b2be4560852dcebfda">
+                  <id>faXmjp</id>
+                  <value>{rs1.xmjp}</value>
+                  <label>拼音简拼</label>
+                </faString>
+                <buttonArea sid="704e76bee279fdfa5ea7d9e9b4ff7223">
+                  <id>buttonArea6eeb1</id>
+                  <style>padding-left:100px;padding-top:10px;</style>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="7950b37aee0837f8d3f78a2da6218525">
+                      <id>button34ba5</id>
+                      <width>100</width>
+                      <text>修改个人信息</text>
+                      <onClickClient>button34ba5_onClickClient</onClickClient>
+                      <onClickServer>button34ba5_onClickServer</onClickServer>
+                      <themeStyle>apple</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getCurrentUserInfo</ds>
+  </dslist>
+</form>
+

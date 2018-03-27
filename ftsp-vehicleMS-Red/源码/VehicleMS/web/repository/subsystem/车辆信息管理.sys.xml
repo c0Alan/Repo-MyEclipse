@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsys ver="2">
+  <cid>CD680BDBBDD498C9DC4E36505B518496</cid>
+  <name>车辆信息管理</name>
+  <firstForm>{"formId":"2b9fecffbda50bbb66797ce3b4619a80","formName":"车辆信息管理","formType":"1","runTimeType":"insert"}</firstForm>
+  <rootContext>library</rootContext>
+  <publish>true</publish>
+  <iconPath />
+</subsys>
+

@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>aa87336208d96e51c1551a4eb9b75859</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.layout.tableLayout._tableLayout.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/layout/tableLayout/_tableLayout.js</jsLocation>
+  <descript>表格布局控件示例</descript>
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formce0b0">
+      <id>formce0b0</id>
+      <Items>
+        <tableLayout sid="fff1e841731e87d6697727c8be419bff">
+          <id>tableLayout9daee</id>
+          <colNum>9</colNum>
+        </tableLayout>
+        <blankPanel sid="3249b442c02a04ee306d310136db7841">
+          <id>blankPanel9e239</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="465b06cfe6a05c8e55911fb6da87d019">
+              <id>header1629d</id>
+              <text>【列数】属性</text>
+              <Items>
+                <collapseBtn sid="f96495dc3b737f8ee06eee5c34a4ffd0">
+                  <id>collapseBtn30e72</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="2193ac4d221d4934eaa12f6ebdfbbe8d">
+              <id>blankPanelbb81a</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="6087cac17c46e0ebebcc760428741c64">
+                  <id>htmlAreaf68a1</id>
+                  <value>列数：2</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="0c5dc9fa8f2c0804303206747949e903">
+                  <id>htmlArea1d153</id>
+                  <value>列数：3</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="d689242193f8ec085b3b2a3d7a54a183">
+                  <id>blankPanel319c7</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-right:10px;</style>
+                  <Items>
+                    <tableLayout sid="5d02c670fb3ccff5b6cff8e12238785a">
+                      <id>tableLayoutba5fe</id>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="7e8c8cf756fe0d1a8412424489c4119d">
+                          <id>htmlArea50af2</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="5cbc1426adcd8eab05305430e8ad992c">
+                          <id>htmlArea808bb</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="610e8f94a1cb2efff7e43e209dc224ad">
+                          <id>htmlArea09cc4</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="db8cd625ea72a983276ecf4c5fb64cd0">
+                          <id>htmlAreac5f83</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="577f5c6aced1d20ae7cf067f254631f4">
+                          <id>htmlArea26581</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="32fba827f319264edc367a774cd16383">
+                          <id>htmlAreabac27</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="4b2ef82196381bef89f9a9f39ec892ac">
+                  <id>blankPanelb76d7</id>
+                  <height>120</height>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="ab9fe9ad61e78aaf1aa63acb0a48c77b">
+                      <id>tableLayout5e876</id>
+                      <colNum>3</colNum>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="95f364e8bde293dae9606034b1c96ef6">
+                          <id>htmlArea0b3d6</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="f6866b9bb6d711c7408aa8ae25a77540">
+                          <id>htmlAreabc7e4</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="bbd6e4b4ae2537cb2f21d69f816c08f1">
+                          <id>htmlArea6a7c1</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="da403ca38d00cab6526ffad95d0df751">
+                          <id>htmlArea41c46</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="35c4965d7d5914d8e5fd400508286dac">
+                          <id>htmlAreaf02ad</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="16d2a4e64415591b24bfbb591009bd0c">
+                          <id>htmlArea1ccbc</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="41f526e5a1ecfe12749ff6317fe05d7b">
+          <id>blankPanelb66c7</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="b13e28bd679b2824b4e7b5ad87d5ae09">
+              <id>header00361</id>
+              <text>【每列宽度】属性</text>
+              <Items>
+                <collapseBtn sid="a79853df77611e3a185c7410479ca237">
+                  <id>collapseBtne940b</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="ee98d32d5be6670997d5951aafd09a26">
+              <id>blankPanel1f983</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="cf92b4e19f9732bf28904d36513ad27c">
+                  <id>htmlAreadd5c1</id>
+                  <value>每列宽度：20%,*,30%</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="eb6ad9dd8abf37f077a314c3a2f74b8c">
+                  <id>htmlAread2c89</id>
+                  <value>每列宽度：80,*,50%</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="ebeb548693eca7da60e45b7882acc169">
+                  <id>blankPanel8aa05</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-right:10px;</style>
+                  <Items>
+                    <tableLayout sid="988190a2ab1a6ffc23265cc69882382f">
+                      <id>tableLayout65a8c</id>
+                      <colNum>3</colNum>
+                      <colWidths>20%,*,30%</colWidths>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="503f29f2a160eea4e5604c8e280f5620">
+                          <id>htmlAreaa938a</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c62884baba061ad1d4badbda32037509">
+                          <id>htmlAread74e3</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="da4cc84578fedabfd3a918dfcb27cc0c">
+                          <id>htmlAreac4641</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="51d6fec86fca6b1969dc72b1447b7c9a">
+                          <id>htmlAread51bd</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c10d056b9847b5fea58324f2f447f89b">
+                          <id>htmlArea33715</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="5cd6f43c98b05dc6d394e568e5fb15fe">
+                          <id>htmlAreaa3f24</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="c9a331d4aa172f7d546321ef1c6e6b80">
+                  <id>blankPanel7c308</id>
+                  <height>120</height>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="5d193ba06a464aafd9947104beef7d03">
+                      <id>tableLayout508da</id>
+                      <colNum>3</colNum>
+                      <colWidths>80,*,50%</colWidths>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="ff3b3c26381df7e2e53073292f3a4255">
+                          <id>htmlArea86589</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="0cb2d2579446b407c01427c82cdd8e4f">
+                          <id>htmlArea7d444</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="a3a47e52cc9987ba9c407488433f26b2">
+                          <id>htmlAreaf7a61</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="cf1cbf09dace5a445476d19110899490">
+                          <id>htmlArea88c80</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="7baeeae2df0fe96f99967e186a344cc7">
+                          <id>htmlArea07b37</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="dda8583d8e0c4fc1a80daa006dbae9b8">
+                          <id>htmlArea47156</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="b993eda4c776695092f3ab7ec3b38c3b">
+          <id>blankPanel8e580</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="82c6e6818028a2a330406a843b4c8f17">
+              <id>headerd2e5d</id>
+              <text>【列间距】属性</text>
+              <Items>
+                <collapseBtn sid="259e26fd9bd01fe5ac85035b824ccc0a">
+                  <id>collapseBtna28a7</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="42fd5f8af8d3e434907a3c45f17b407f">
+              <id>blankPanelcb26e</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="bd2ac6fb1746af1cbf709540381fd963">
+                  <id>htmlAreaebe7b</id>
+                  <value>列间距：未设置</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="7c0fd23bb3aea81ee4bfd6e81f321256">
+                  <id>htmlArea7c06f</id>
+                  <value>列间距：20</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="6646eb5f52b9ab251620dd43a2b96785">
+                  <id>blankPanel952d5</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-right:10px;</style>
+                  <Items>
+                    <tableLayout sid="ac9add42e57ca24f71d48827be2bcaac">
+                      <id>tableLayoutb9293</id>
+                      <colNum>4</colNum>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="ded862833eb62ebd210fbffbfd001c96">
+                          <id>htmlArea0bb38</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="118dece6fb997a1a35882c639d3cafd1">
+                          <id>htmlAread8caf</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="ec6a2a2f2c8a2f4c4a87f161432e2fbb">
+                          <id>htmlArea46a56</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c4b91e7468cac7f456754ef4be30fce0">
+                          <id>htmlArea2c686</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="241f6d21980460d734c87af953c51342">
+                          <id>htmlArea973ca</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="ca8d8661ae4bb1f5637f5346a1a3747b">
+                          <id>htmlAreafa6bc</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="910788c1653a8e9579efdacb7f41c3c4">
+                          <id>htmlAreaaf492</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="989e05c214d6d23c1c82c147b2ad6cae">
+                          <id>htmlArea84a0a</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="9fdbc926efc229e0c7d81080934a0e5b">
+                          <id>htmlArea641a1</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="68133f37ab1f8b88796270ff618753c3">
+                  <id>blankPaneleeaa7</id>
+                  <height>120</height>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="069fa475889bf417bdd0e3b55c2fc559">
+                      <id>tableLayoutd61fd</id>
+                      <colNum>4</colNum>
+                      <colSpacing>20</colSpacing>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="82ac78fbd360c320b754d1ed0b8e5c03">
+                          <id>htmlArea41f3f</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="5dbf8e5b4b9fff721c5d86632992524a">
+                          <id>htmlAreac4138</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="1bbf8fe58459897fdea304a1eed28d3d">
+                          <id>htmlAreae229a</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="501c9d17a70ab9f19d4c55d9265e9452">
+                          <id>htmlArea82e49</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="763fb96015cac45cfaf33b852c699398">
+                          <id>htmlArea9cabb</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="986cababa2f4cb606823e40ad141d434">
+                          <id>htmlAreaa885a</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="45c5482b83e09e12b78be340a12efcc6">
+                          <id>htmlArea36089</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="88796a48c60b07187752fa199ef57758">
+                          <id>htmlAreaf8d64</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="d27ac3209bef24321208cc86b25b8f59">
+                          <id>htmlAreab29e3</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="aae67530a47e9de69690c0a2bcf2e527">
+          <id>blankPanel7bd59</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="37710f8471f5bdd972b3e32626816c37">
+              <id>headerf6cb8</id>
+              <text>【是否显示边框】属性</text>
+              <Items>
+                <collapseBtn sid="fe36c5de335b1508a48be3a7c2bfa4ce">
+                  <id>collapseBtn12179</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="19e8a5a9e40323d2aba6a3af37616eff">
+              <id>blankPanel62b48</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="228a7e48a499e61a5f6184de2ee9dc9b">
+                  <id>htmlArea99fa3</id>
+                  <value>是否显示边框：true</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="9627d5d094b49886e67c4b0cc687fa38">
+                  <id>htmlArea9c1cc</id>
+                  <value>是否显示边框：false</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="20b50a87f916e1ef3670b4d3e9ca6546">
+                  <id>blankPanel844d4</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-right:10px;</style>
+                  <Items>
+                    <tableLayout sid="5b4207fa7dbc8e32c1f1fdba8bbfdb20">
+                      <id>tableLayout60d71</id>
+                      <colNum>4</colNum>
+                      <border>true</border>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="7b91fe8a48c78d37d012666ab07a0d2f">
+                          <id>htmlArea6591a</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="3c748d202b1e1844bd460b8e918c7c54">
+                          <id>htmlArea54834</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="243bfa9f9a79ef693224198540f530dd">
+                          <id>htmlArea81c5d</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="eb517b9c37e6a9ed617e3a60b1925ef3">
+                          <id>htmlAreae8040</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="535719cadb34943fdd4089369cdc6347">
+                          <id>htmlArea0a9a1</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="564efccaa9772827345e30da3f45a95c">
+                          <id>htmlArea09437</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="a7693dcb8e62df2d69119e47bfd999d5">
+                          <id>htmlArea5adca</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="0524aac3504a753434aae4e9d001fb9e">
+                          <id>htmlArea62146</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="91c1928dc4dea7e99f1d76015d422edd">
+                          <id>htmlArea87529</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="f1725c84ffe88de7a18966894c304d66">
+                  <id>blankPanelbbe0c</id>
+                  <height>120</height>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="13ccc7a23c65ad554881be490aca9f21">
+                      <id>tableLayout0c176</id>
+                      <colNum>4</colNum>
+                      <colSpacing>20</colSpacing>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="170332bf7738c40bbcfbdd9ffda5f29a">
+                          <id>htmlArea30e8d</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="3d9001d0ffbef53bf90157acd10c1bf0">
+                          <id>htmlArea7e044</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="84d34b9bde15e7797802a6f41454b09f">
+                          <id>htmlAreabb260</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c4ff7e170e8d771b93dfdfe242f7a98f">
+                          <id>htmlArea476a9</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="82a87a098bbb16ba2a30af11ca31fc97">
+                          <id>htmlAreacfac7</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="6504be705b0b56fd60b5aac6b0489214">
+                          <id>htmlArea207b5</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="edbe70001d87d14533616a276d069c5f">
+                          <id>htmlArea761a5</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="d53b9c1dc3ca53f6f43c6df738405407">
+                          <id>htmlArea080c1</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="6e2fe5d5968b6a75303623dd386ae994">
+                          <id>htmlArea8fd2f</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="4f03edd42ba918372c628a30d7971d7c">
+          <id>blankPanelce136</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="cfffb0f585b89514f0e7b2346ef3c559">
+              <id>header7b62e</id>
+              <text>【是否显示表格线】属性</text>
+              <Items>
+                <collapseBtn sid="41042ac9f34447997ea4bb8780115323">
+                  <id>collapseBtnd53b0</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="40a6aabefdc3c23a6dcaaf941bb8eb82">
+              <id>blankPanel72bf4</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="f6f6d7cc677ee8990432011356274885">
+                  <id>htmlArea05b65</id>
+                  <value>是否显示表格线：true</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="abd10f1cbd3b7a84d594d1312f36d922">
+                  <id>htmlArea999c8</id>
+                  <value>是否显示表格线：false</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="59205c4605e2c07a09f339dfea046193">
+                  <id>blankPanelef3ef</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-right:10px;</style>
+                  <Items>
+                    <tableLayout sid="f5a14b78c6068244244810fc0bc47043">
+                      <id>tableLayout488f7</id>
+                      <colNum>4</colNum>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="1e83436990249969da0b9323d7a48992">
+                          <id>htmlAreaae637</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="42264b2008878e7995b4b139fa4175bc">
+                          <id>htmlArea58abe</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="e1ea5497c3e85e0f852a322521a2611a">
+                          <id>htmlArea1c141</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="2ba3b3e3489ee2c6e94dfd6ddeeb0b76">
+                          <id>htmlAreabe0e3</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="8690bf6ce67663f99c22a2501786af0b">
+                          <id>htmlArea644dd</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="940388d8340747c0f755086b959d347f">
+                          <id>htmlArea39371</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="60ea84b74f1d0ac78eebc2b1a58a7fb4">
+                          <id>htmlArea27fc0</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="3ea361445c1a791a873bb8d547311ca3">
+                          <id>htmlArea91b46</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="df559fd48045396562cf4c917203b9d4">
+                          <id>htmlAreafdfdb</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="f8a219c9ecfba2f4d3c862a85f0f96be">
+                  <id>blankPanela9f98</id>
+                  <height>120</height>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="c5a2d3c36e9e9c27c37ed245e07ea038">
+                      <id>tableLayoutf23d5</id>
+                      <colNum>4</colNum>
+                      <colSpacing>20</colSpacing>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="96e833e9e7c3afe117947128b5a8af2b">
+                          <id>htmlAreaddb40</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="07fded46150911267e0de85c4be864f3">
+                          <id>htmlAreac4fd5</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="44d81e20e8fd609b46f97c9e63169545">
+                          <id>htmlArea8d2e9</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="5ce5acc07a27405ee1ed933c5a2838c7">
+                          <id>htmlAreaa93d9</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c6d71c1138700251efe69bedfd4ec8ed">
+                          <id>htmlAreaa619c</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="7c7a4fe4b9dfdd116e186a70ae79a2b9">
+                          <id>htmlArea7bc52</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="dc0c7cee106ba6a3d2deac28d2235c9f">
+                          <id>htmlArea9da3d</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="468f2e952a2a8138081239acbeeea3c3">
+                          <id>htmlArea3e4cf</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="7598b6d53c669a4e063bbec4fc94571a">
+                          <id>htmlArea3b55c</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="d1f06aaa8269c5dbfbcc984b83bb126c">
+          <id>blankPaneldc5fe</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="6e5fb8488657e5cd233df030cefcd6bc">
+              <id>header2df6b</id>
+              <text>【表格线宽度】属性</text>
+              <Items>
+                <collapseBtn sid="3bcae1a69c6ba605cff6124d113e8b96">
+                  <id>collapseBtn181a4</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="28906bf40c7f8e658be7a64a8c35130a">
+              <id>blankPanel207f8</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="8cecf3ea11a298726a6668ea2a7b993e">
+                  <id>htmlArea76d73</id>
+                  <value>表格线宽度：1</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="747a4e58386ee7b160c2a95d1308bfea">
+                  <id>htmlAreab43d1</id>
+                  <value>表格线宽度：2</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="e616d1f1543eaaca6fcc5953f382627f">
+                  <id>blankPanelfeb14</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-right:10px;</style>
+                  <Items>
+                    <tableLayout sid="97ae84fe417c569c9cd6b1b2d2024aa1">
+                      <id>tableLayout19d03</id>
+                      <colNum>4</colNum>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="fad0511767f53a4dbed56329484fa65b">
+                          <id>htmlArea1b658</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="bb799e73335dd9e5addf799e2d19393c">
+                          <id>htmlAreaa0471</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="8aee1c1f7ca39ed5bd9a997c16e4a4ad">
+                          <id>htmlAread84db</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="23f86adafa61750bce2f00d094c31f05">
+                          <id>htmlAread172b</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="4dce051ea2f45b0078980597e9ead118">
+                          <id>htmlArea98b03</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="0cd3bf5a15b345a4cdec821bea8b6478">
+                          <id>htmlAreaf735f</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="d595f62855f3f1c9bdb91134735dbbf3">
+                          <id>htmlAreacc90a</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="50e00bd7120ad9b23fc09d2acb8297f2">
+                          <id>htmlAreab3d5d</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c666540add3c28901727a46ecee5a80a">
+                          <id>htmlArea0845a</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="614d8fc979eea5fc0d46114fbc40bc03">
+                  <id>blankPanelf2a78</id>
+                  <height>120</height>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="e28373f9e7cd9b02cedd793d069087d9">
+                      <id>tableLayoute6854</id>
+                      <colNum>4</colNum>
+                      <colSpacing>20</colSpacing>
+                      <tableBorder>true</tableBorder>
+                      <borderWidth>2</borderWidth>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="2774ee68a5dc45b73670ef7802e58f2a">
+                          <id>htmlArea572de</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="6258d244d9e38c368d67501baf6a4b06">
+                          <id>htmlArea10443</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="74ce4d719ca969595468381cfe5a2e9d">
+                          <id>htmlArea1e987</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="d480b4bd74008a1054b4e2546a12bed6">
+                          <id>htmlArea48c90</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="f99f841a679dae742f452c9ba708c5ea">
+                          <id>htmlAread9ba1</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="29d49e8cf5d5848aefae0635d41eb85b">
+                          <id>htmlArea54d4e</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="df96cfa8b5ba6889ea7af39936937b33">
+                          <id>htmlAreaff117</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="feb44ed446f8f002ed1d2d7e54108313">
+                          <id>htmlArea38615</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c476b652f4cdbade5a4b0708c3a16ac2">
+                          <id>htmlAreae7de3</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="fc3908e3696d3088d73bed67a5e80cf8">
+          <id>blankPanel7014e</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="62eda40fa195bc5b46830cd195d07248">
+              <id>header1f1d4</id>
+              <text>【表格线颜色】属性</text>
+              <Items>
+                <collapseBtn sid="f2903e477851e2f3978abf018b7577a9">
+                  <id>collapseBtn50444</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="1a8160e08c8ff5f5d30ace43787822f0">
+              <id>blankPanel63166</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="f86d2ca973efc56a721544452e93dd59">
+                  <id>htmlAreacc9a7</id>
+                  <value>表格线颜色：#0000ff</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="3f6c2d93923d15a10b80de28c6e4618c">
+                  <id>htmlArea09fc0</id>
+                  <value>表格线颜色：#ff0000</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="335f120ae1713bbf0e85f6abcd21703d">
+                  <id>blankPanel04213</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-right:10px;</style>
+                  <Items>
+                    <tableLayout sid="0131e2223d22b53d66a7704a13167448">
+                      <id>tableLayout18d71</id>
+                      <colNum>4</colNum>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="533bd6b8b473daf12ae98e5d228372fd">
+                          <id>htmlAreadb514</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="6933d9fe9683894a7b4133b55c8ef6cd">
+                          <id>htmlArea5db07</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="3318aec6aa435f6743336ddbe7cfc50e">
+                          <id>htmlArea17467</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="0960871da6c3108101d71838d182b4d0">
+                          <id>htmlAreacf127</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="57a9409b1453e61406c4c8cad01e5719">
+                          <id>htmlAreae97cc</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="73704a5920f1d469e5b15f6f7694d0a4">
+                          <id>htmlAread0f7f</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="263cd2e91cc4f96fcd65026c8f184174">
+                          <id>htmlAreab52ce</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="a494c1f4e5fc6bcb353ee9af6d80f348">
+                          <id>htmlArea1252c</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="d097eba2312047e580efb6f591156a34">
+                          <id>htmlAreadbbdd</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="b6ac828d21ef59ffc93cece6aebf6d61">
+                  <id>blankPanel402b7</id>
+                  <height>120</height>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="03fcd26ba720fc6dd041426d0dfdcb5e">
+                      <id>tableLayout15031</id>
+                      <colNum>4</colNum>
+                      <colSpacing>20</colSpacing>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#ff0000</borderColor>
+                      <Items>
+                        <htmlArea sid="3e2076f573fb293b0c763377c3a8ef7c">
+                          <id>htmlArea81ade</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="83faecd38f42abde0be1d37639cd3965">
+                          <id>htmlArea8eaec</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c96c9d15f22a92bb75a5413af40406a3">
+                          <id>htmlArea1c683</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="5a1575c0a216a65137a5fd4e9cddf2ca">
+                          <id>htmlArea30bac</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="af0ea94b9f2e863c9fd8f24ec3600754">
+                          <id>htmlArea012cf</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="d60928564654258298dc441dda25a530">
+                          <id>htmlAreafd115</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="6aed92cd2455b22f56b893b0402b0d63">
+                          <id>htmlArea45b03</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="9dab6c0a5de99a94323f8d5a2a1dc6b2">
+                          <id>htmlArea46917</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="8ce67aa1e6d926e50ead361e6a317cd9">
+                          <id>htmlAread5c9c</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="ec39d96de4f598f279cf77b0d66fb0ed">
+          <id>blankPanel931a9</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="a6fb33a65a3ea77f71b854dd14a6b012">
+              <id>headera2826</id>
+              <text>【表格线样式】属性</text>
+              <Items>
+                <collapseBtn sid="426312511c72dfb425d0b6475179e6c8">
+                  <id>collapseBtnae5b9</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="898dbe3113d4c673956a3645d31a9139">
+              <id>blankPanel6165d</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="2ad052a32058b599daa27a0b71e35174">
+                  <id>htmlAreaddd23</id>
+                  <value>表格线样式：solid</value>
+                  <width>33%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="9d37ea2d2c55e1e3ace937586275c322">
+                  <id>htmlArea9481a</id>
+                  <value>表格线样式：dotted</value>
+                  <width>33%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="a935648bd15d106e6f5aa9a7734e7d76">
+                  <id>htmlAreab7663</id>
+                  <value>表格线样式：dashed</value>
+                  <width>33%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="5834fa6cb791ffbf3094e72152fd8ca6">
+                  <id>blankPanel8613d</id>
+                  <width>33%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-right:10px;</style>
+                  <Items>
+                    <tableLayout sid="26f8fb1c460c949844ad6a982c2db359">
+                      <id>tableLayout9761c</id>
+                      <colNum>4</colNum>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="50da78145d193ba77156238b8cc8d378">
+                          <id>htmlArea40ed3</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="d258ca6e658973541db89ea8f333a287">
+                          <id>htmlAreac4f72</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="ce7559d07c7bfc4e59bc79dc234f0f4c">
+                          <id>htmlArea5421c</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="3fd6175cb4f57a2cd1e1521d9d4302a1">
+                          <id>htmlArea61fc5</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="8c33427e5e98d06c61551d88a9056b6b">
+                          <id>htmlArea10a05</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="f157db4008b23e986510f4b5325c23f2">
+                          <id>htmlArea3949d</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="36514bbff9474eee36cec6d30197ecc0">
+                          <id>htmlArea2a696</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="6cc6b79f3c5457c3c249bda3c137f8f6">
+                          <id>htmlAreade37a</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="86165e835e0a8b766631ae0dda16353b">
+                          <id>htmlArea8ab55</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="a7290cf2d2e139a5f4060ec81dfa4918">
+                  <id>blankPanelb8645</id>
+                  <width>33%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="41409dc0e18bf37a40bd1065686b857e">
+                      <id>tableLayoutf312a</id>
+                      <colNum>4</colNum>
+                      <colSpacing>20</colSpacing>
+                      <tableBorder>true</tableBorder>
+                      <borderWidth>2</borderWidth>
+                      <borderColor>#0000ff</borderColor>
+                      <borderStyle>dotted</borderStyle>
+                      <Items>
+                        <htmlArea sid="35564d1f3d6644a37f9be68379ce432f">
+                          <id>htmlAreae9f62</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="94c8db984271e35e15a14d24656b7f4c">
+                          <id>htmlArea26e5f</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c11eb3468eebd63d2378b289c5b51b83">
+                          <id>htmlArea65a9c</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="6ae96e0a16362b5ff835ab67feca53cd">
+                          <id>htmlAreac4322</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="28bfb65b56158d67a5a5825b0c28ac0b">
+                          <id>htmlArea7de38</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="66b9e6aaaf71337fc7d97f70c67f9178">
+                          <id>htmlArea27935</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="e3c5da88c2ac5c31cf03725c2546c854">
+                          <id>htmlAreab3872</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="20366273124c537bcfbe2197fa8cc3b1">
+                          <id>htmlArea2b4ba</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="bcf5de5edba1eecf3710d65db6e8df2e">
+                          <id>htmlArea5bb44</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="1c68abff9cadf27dde5d477190d59329">
+                  <id>blankPanel6c0da</id>
+                  <height>120</height>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="421eb553429af79231fe07518849f0af">
+                      <id>tableLayoutdc54e</id>
+                      <colNum>4</colNum>
+                      <colSpacing>20</colSpacing>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <borderStyle>dashed</borderStyle>
+                      <Items>
+                        <htmlArea sid="4c234066a30abafcce32729dcca3a754">
+                          <id>htmlArea0d3f0</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="5b3bb29496c7a83d179ed668acb5595b">
+                          <id>htmlAreaaaa23</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="7f600af686dbb5a3aa85e54b832b9be8">
+                          <id>htmlArea8f835</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="5886e5ab77dec3315f546202bcf24f5d">
+                          <id>htmlAread49e8</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="dca38e830643b69729b348936f0b616c">
+                          <id>htmlAreaa9725</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="b1e80be6b6a367539af21020ff5a7936">
+                          <id>htmlAreaf21bc</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="8317b6c05b4c7ea28d14ad0ce04f6189">
+                          <id>htmlArea89c45</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c257dda56aef6ece522c57fe178cfc4d">
+                          <id>htmlAreaa9a13</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="2fbf3d54a40f787595553b0b55686ec3">
+                          <id>htmlAreafdf93</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="af5e63a937bfc3322059a4f0ae0cb95b">
+          <id>blankPanel9d9bc</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="8b90201cb978ee2527c7696ee0b98237">
+              <id>headerae0d2</id>
+              <text>【表格间距】属性</text>
+              <Items>
+                <collapseBtn sid="1f1bf29cd55a2223a915f67d748d05ec">
+                  <id>collapseBtn061bf</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="2560250298798387dea52ad0c188badd">
+              <id>blankPanel4c3f9</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="8fd319b5a8c529c1d1e13f094b125007">
+                  <id>htmlAreafb853</id>
+                  <value>表格间距：1</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="76b46a729702729a8dab1ea35547a064">
+                  <id>htmlArea2e801</id>
+                  <value>表格间距：3</value>
+                  <width>49%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="272f1c8409cf0be735a97cce30e06579">
+                  <id>blankPaneldfd01</id>
+                  <width>50%</width>
+                  <height>120</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <style>padding-right:10px;</style>
+                  <Items>
+                    <tableLayout sid="caa734b92559df8317417328d8d784a4">
+                      <id>tableLayoutb47a8</id>
+                      <colNum>4</colNum>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <Items>
+                        <htmlArea sid="7e05703ecb459e67dc56141d6d3c41e9">
+                          <id>htmlAreac2a56</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="37667a5f4c0f92858d7052d2e63ae248">
+                          <id>htmlAreadaffe</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="0b3fd0a0293e649f6b8ee3c55abb56a5">
+                          <id>htmlAreaa64ba</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="4221150bd4f93f6711d89eed258e9b87">
+                          <id>htmlArea29de4</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="c4d7c442d50c0ca00adf6ba6854b8340">
+                          <id>htmlAreac2090</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="71d2d1fbca46fea2a34ca9bd1bc6437d">
+                          <id>htmlArea4a4f2</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="a2704680c36f413e34d3d5e646eab734">
+                          <id>htmlArea78a40</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="057613e9d2cdb3e899745e4a60be5a8a">
+                          <id>htmlAreabd542</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="7af45035400a6817030b53d9a3a6b016">
+                          <id>htmlArea3a288</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="eb4ae31360a2bfee2d9bda41aec0055f">
+                  <id>blankPanela2d8f</id>
+                  <height>120</height>
+                  <style>padding-left:10px;</style>
+                  <Items>
+                    <tableLayout sid="d0a7c4a9aaa126d8ee1a0debf79db15c">
+                      <id>tableLayout7d1ca</id>
+                      <colNum>4</colNum>
+                      <tableBorder>true</tableBorder>
+                      <borderColor>#0000ff</borderColor>
+                      <cellpadding>3</cellpadding>
+                      <Items>
+                        <htmlArea sid="5c1e7ba4e5555281fa59e0da7305e7aa">
+                          <id>htmlArea19e15</id>
+                          <value>超文本一</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="787eb373aa94a23e83a94ac355198fa5">
+                          <id>htmlAreab5d81</id>
+                          <value>超文本二</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="cda47dc6feb96462d2ecca37a19d9d2c">
+                          <id>htmlArea7e334</id>
+                          <value>超文本三</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="e79d2b9f90ad47a8d08de94a72eff886">
+                          <id>htmlArea010c1</id>
+                          <value>超文本四</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="04541e4bb597ad211f1b49b5c5c4da8f">
+                          <id>htmlAreac9f45</id>
+                          <value>超文本五</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="b6dfb9f57f987b9cad9e31f4c5bf38dc">
+                          <id>htmlArea39392</id>
+                          <value>超文本六</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="fb945d58048a3b5ab2d180f53be22656">
+                          <id>htmlArea1d93a</id>
+                          <value>超文本七</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="20ac30cf00c99d7f77b0e99c3050c676">
+                          <id>htmlArea85ca0</id>
+                          <value>超文本八</value>
+                          <height>30</height>
+                        </htmlArea>
+                        <htmlArea sid="5e3a83d08b80abace8bb7773222a809b">
+                          <id>htmlArea519e6</id>
+                          <value>超文本九</value>
+                          <height>30</height>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

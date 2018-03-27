@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3dbf6eb2004ebb0948a9c562c7665a0a</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._column.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_column.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="forme01e4">
+      <id>forme01e4</id>
+      <Items>
+        <listArea sid="34c999d9ae65365c075d3d090e7ce3e1">
+          <id>listArea2ea39</id>
+          <ds>rs1</ds>
+          <Items>
+            <column sid="c9fe57d99c7e9c87fe1eea0d9e2d3bc9">
+              <id>columnIdentityCID</id>
+              <title>图书编号</title>
+              <editor>checkbox</editor>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <headSelect>true</headSelect>
+            </column>
+            <column sid="9d686de4326c7e0d75cd9e7c82bf79e2">
+              <id>columnStringCNAME</id>
+              <title>图书名称</title>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+            </column>
+            <column sid="4d61589c59206bbbecb4cf3415cf268e">
+              <id>columnStringCVERSION</id>
+              <title>版本</title>
+              <editor>radio</editor>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_VERSION</inheritfld>
+              <dataName>{rs1.C_VERSION}</dataName>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<def>
+  <setup>
+    <delimiters>
+      <![CDATA[:;,.={}() ]]>
+    </delimiters>
+    <sedelimiters>
+      <![CDATA[.~!%^&*()-+=|/{}[]:;"'\<> ,?]]>
+    </sedelimiters>
+    <commentseq>//</commentseq>
+    <blockcommenton>/*</blockcommenton>
+    <blockcommentoff>*/</blockcommentoff>
+    <de color="#000888" bold="false"/>
+    <comment color="#009900"  bold="false"/>
+    <string color="#FF0000"  bold="false"/>
+    <defaultFm color="#000000"  bold="false"/>
+  </setup>
+  <!-- js keywords -->
+  <c color="#800000" bold="true">
+    <w>abstract</w>
+    <w>boolean</w>
+    <w>break</w>
+    <w>byte</w>
+    <w>case</w>
+    <w>catch</w>
+    <w>char</w>
+    <w>class</w>
+    <w>const</w>
+    <w>continue</w>
+    <w>default</w>
+    <w>delete</w>
+    <w>do</w>
+    <w>double</w>
+    <w>else</w>
+    <w>extends</w>
+    <w>false</w>
+    <w>final</w>
+    <w>finally</w>
+    <w>float</w>
+    <w>for</w>
+    <w>function</w>
+    <w>goto</w>
+    <w>if</w>
+    <w>implements</w>
+    <w>import</w>
+    <w>in</w>
+    <w>instanceof</w>
+    <w>int</w>
+    <w>interface</w>
+    <w>long</w>
+    <w>native</w>
+    <w>new</w>
+    <w>null</w>
+    <w>package</w>
+    <w>private</w>
+    <w>protected</w>
+    <w>public</w>
+    <w>return</w>
+    <w>short</w>
+    <w>static</w>
+    <w>super</w>
+    <w>switch</w>
+    <w>synchronized</w>
+    <w>this</w>
+    <w>throw</w>
+    <w>throws</w>
+    <w>transient</w>
+    <w>true</w>
+    <w>try</w>
+    <w>typeof</w>
+    <w>var</w>
+    <w>void</w>
+    <w>while</w>
+    <w>with</w>
+  </c>
+  <!-- java keywords -->
+  <c color="#800000" bold="true">
+    <w>abstract</w>
+    <w>assert</w>
+    <w>boolean</w>
+    <w>break</w>
+    <w>byte</w>
+    <w>case</w>
+    <w>catch</w>
+    <w>char</w>
+    <w>class</w>
+    <w>const</w>
+    <w>continue</w>
+    <w>default</w>
+    <w>do</w>
+    <w>double</w>
+    <w>else</w>
+    <w>enum</w>
+    <w>extends</w>
+    <w>final</w>
+    <w>finally</w>
+    <w>float</w>
+    <w>for</w>
+    <w>goto</w>
+    <w>if</w>
+    <w>implements</w>
+    <w>import</w>
+    <w>instanceof</w>
+    <w>int</w>
+    <w>interface</w>
+    <w>long</w>
+    <w>native</w>
+    <w>new</w>
+    <w>package</w>
+    <w>private</w>
+    <w>protected</w>
+    <w>public</w>
+    <w>return</w>
+    <w>short</w>
+    <w>static</w>
+    <w>strictfp</w>
+    <w>super</w>
+    <w>switch</w>
+    <w>synchronized</w>
+    <w>this</w>
+    <w>throw</w>
+    <w>throws</w>
+    <w>transient</w>
+    <w>try</w>
+    <w>void</w>
+    <w>volatile</w>
+    <w>while</w>
+  </c>
+</def>

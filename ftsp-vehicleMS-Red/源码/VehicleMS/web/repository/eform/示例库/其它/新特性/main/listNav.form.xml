@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3805114bcb51bed89dcda361242760ae</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.main.ListNav.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/main/ListNav.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <background-color>#D3DDF9</background-color>
+      <Items>
+        <leftRegion sid="9ccbb25b328480d2c4294fc632715764">
+          <id>leftRegione583f</id>
+          <width>170</width>
+          <collapsible>true</collapsible>
+          <border>false</border>
+          <bodyStyle>padding:4px;padding-right:0px;</bodyStyle>
+          <arrowStyle>unis</arrowStyle>
+          <Items>
+            <listNav sid="977909e78df743a9f29754598ba99cc7">
+              <id>listNav53add</id>
+              <height>100%</height>
+              <expandMode>fillExpand</expandMode>
+              <expandNode>listItem2fb61</expandNode>
+              <hideCollapseTool>true</hideCollapseTool>
+              <frame>true</frame>
+              <border>true</border>
+              <cellpadding>0</cellpadding>
+              <themeStyle>np</themeStyle>
+              <Items>
+                <listItem sid="db2c86b5948c2f1e9049d8766bac0256">
+                  <id>listItem2fb61</id>
+                  <caption>主页</caption>
+                  <icon>/artery/arteryImage/sample/home.gif</icon>
+                </listItem>
+                <listCatalog sid="2d3853a44711b6b14367a7d002c0b906">
+                  <id>listCatalogceaf7</id>
+                  <caption>案件中心</caption>
+                  <icon>/artery/arteryImage/sample/text.gif</icon>
+                  <cellpadding>0</cellpadding>
+                  <Items>
+                    <blankPanel sid="7290482993e9eca554b9ca39448be5b1">
+                      <id>blankPanelc2078</id>
+                      <height>100%</height>
+                      <themeStyle>orangeBottom</themeStyle>
+                      <Items>
+                        <blankPanel sid="60e0dc9c88e5d5f2597166788167bb54">
+                          <id>blankPanel7bf5a</id>
+                          <height>100%</height>
+                          <themeStyle>orangeTop</themeStyle>
+                          <Items>
+                            <dynamicNav sid="04c4081f8428a6487bb0b2504077752e">
+                              <id>dynamicNav7aa5d</id>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <bodyStyle>padding:3px;padding-left:10px;padding-right:10px;</bodyStyle>
+                              <themeStyle>orange</themeStyle>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </listCatalog>
+                <listCatalog sid="31fbcf34ae413691276a83e30ec47745">
+                  <id>listCatalogca4bb</id>
+                  <caption>文书中心</caption>
+                  <icon>/artery/arteryImage/sample/edit.gif</icon>
+                  <cellpadding>0</cellpadding>
+                  <Items>
+                    <blankPanel sid="d722fd8d3d1fd7771db85baa436b8b30">
+                      <id>blankPanel36bf2</id>
+                      <height>100%</height>
+                      <themeStyle>orangeBottom</themeStyle>
+                      <Items>
+                        <blankPanel sid="fe7af9c5de7c8ac42594839448ff2492">
+                          <id>blankPanel925b3</id>
+                          <height>100%</height>
+                          <themeStyle>orangeTop</themeStyle>
+                          <Items>
+                            <dynamicNav sid="f752854e87f47015adc36c21fdf014c3">
+                              <id>dynamicNavb6617</id>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <bodyStyle>padding:3px;</bodyStyle>
+                              <themeStyle>orange</themeStyle>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </listCatalog>
+                <listCatalog sid="3262bd1c8f6160fc1bdc5a8788de317d">
+                  <id>listCatalog23567</id>
+                  <caption>交流中心</caption>
+                  <icon>/artery/arteryImage/sample/mail.gif</icon>
+                  <cellpadding>0</cellpadding>
+                  <Items>
+                    <blankPanel sid="052d5dc1b94d4854c32dab42faa1db84">
+                      <id>blankPanelf89b3</id>
+                      <height>100%</height>
+                      <themeStyle>orangeBottom</themeStyle>
+                      <Items>
+                        <blankPanel sid="01e3b5bd4b342d0cb97103d7f98727b7">
+                          <id>blankPanel2d44a</id>
+                          <height>100%</height>
+                          <themeStyle>orangeTop</themeStyle>
+                          <Items>
+                            <dynamicNav sid="df582a5f53ebcf79c6999a3353f718ba">
+                              <id>dynamicNava4f4c</id>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <bodyStyle>padding:3px;</bodyStyle>
+                              <themeStyle>orange</themeStyle>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </listCatalog>
+                <listCatalog sid="dc5a2636e8f0e93f2dc59776973aa462">
+                  <id>listCatalog67fcb</id>
+                  <caption>报表中心</caption>
+                  <icon>/artery/arteryImage/sample/chart.gif</icon>
+                  <cellpadding>0</cellpadding>
+                  <Items>
+                    <blankPanel sid="9b47e4e44c1c3e246ee5b68429e13907">
+                      <id>blankPanel02585</id>
+                      <height>100%</height>
+                      <themeStyle>orangeBottom</themeStyle>
+                      <Items>
+                        <blankPanel sid="223f408d143ae7f742398686e654293e">
+                          <id>blankPanelc4e1b</id>
+                          <height>100%</height>
+                          <themeStyle>orangeTop</themeStyle>
+                          <Items>
+                            <dynamicNav sid="f9ffcd71432b45d2d59e826b2ada7017">
+                              <id>dynamicNav11541</id>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <bodyStyle>padding:3px;</bodyStyle>
+                              <themeStyle>orange</themeStyle>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </listCatalog>
+                <listSep sid="724467c7c305fba3cca48a4499265b7f">
+                  <id>listSep5a9de</id>
+                </listSep>
+                <listItem sid="88cfbdedb4ee57847596597683b7241b">
+                  <id>listItemb2ed4</id>
+                  <caption>综合查询 &gt;&gt;</caption>
+                  <icon>/artery/arteryImage/sample/search.gif</icon>
+                </listItem>
+                <listItem sid="bafbe773f2e93fa612be5bc93747f5f3">
+                  <id>listItemf8893</id>
+                  <caption>工 具 箱 &gt;&gt;</caption>
+                  <icon>/artery/arteryImage/sample/tool.gif</icon>
+                </listItem>
+                <listItem sid="4c0c2fcece787692082f4fa4ccb6840c">
+                  <id>listItem4590f</id>
+                  <caption>工作提醒 &gt;&gt;</caption>
+                  <icon>/artery/arteryImage/sample/clock.gif</icon>
+                </listItem>
+                <listSep sid="3c6db250d7c16ef9e38b701535947c14">
+                  <id>listSep9dc2a</id>
+                </listSep>
+                <listItem sid="b01f02ae45ab75629dc9ca1641fc9c5b">
+                  <id>listItemccf99</id>
+                  <caption>使用帮助</caption>
+                  <icon>/artery/arteryImage/sample/help.gif</icon>
+                </listItem>
+              </Items>
+            </listNav>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="459994e6c6acf6c4f983cda4a8655aeb">
+          <id>centerRegion0b492</id>
+          <border>false</border>
+          <bodyStyle>padding:4px;padding-left:0px;</bodyStyle>
+          <Items>
+            <blankPanel sid="d02e9e3c1888129d2b01e47eb3d6a0ea">
+              <id>blankPanel7190d</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="23c8f00140d2701ec910c9cea6588037">
+                  <id>header9d205</id>
+                  <text />
+                  <Items>
+                    <blankPanel sid="8756c7f0cbe8006e16aa3d859ca64801">
+                      <id>blankPanelf2ae6</id>
+                      <Items>
+                        <buttonArea sid="2aeaeb5795d6c8e8c850a79771953c9c">
+                          <id>buttonArea881c0</id>
+                          <style>padding:6px;padding-bottom:3px;</style>
+                          <Items>
+                            <simpleButton sid="6ed78b1c73c4597eaddb6ae2f27675f7">
+                              <id>simpleButton6c511</id>
+                              <text>案件中心</text>
+                              <style>color:#4463AC;</style>
+                            </simpleButton>
+                            <blankPanel sid="08a6acc6b252668b38c10599ad2d2854">
+                              <id>blankPanel5ecdf</id>
+                              <Items>
+                                <htmlArea sid="c0d9c7c7ef5fbf43b00ee15c81400947">
+                                  <id>htmlArea59c35</id>
+                                  <value>-&gt;</value>
+                                </htmlArea>
+                              </Items>
+                            </blankPanel>
+                            <simpleButton sid="afaeecb4a10ffb7ff59778d5d06520c0">
+                              <id>simpleButton6ec72</id>
+                              <text>审查变更</text>
+                              <style>color:#4463AC;</style>
+                            </simpleButton>
+                            <blankPanel sid="b4dd37dfc3dff3f4206d5e6a906d5b3f">
+                              <id>blankPanel695df</id>
+                              <Items>
+                                <htmlArea sid="995f331f7388a1808f72c586ee780fd7">
+                                  <id>htmlArea08249</id>
+                                  <value>-&gt; 在办案件</value>
+                                </htmlArea>
+                              </Items>
+                            </blankPanel>
+                            <button sid="4f15face9f7e6341a77073c4d30c7e6b">
+                              <id>button18075</id>
+                              <text>案件</text>
+                              <themeStyle>cookie</themeStyle>
+                            </button>
+                            <button sid="0635b9fe0d5438fde032c8c1154acd98">
+                              <id>button78d4c</id>
+                              <text>文书</text>
+                              <themeStyle>cookie</themeStyle>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                        <tableLayout sid="f7bcdcde683a29cd0a0a45f23bccabf5">
+                          <id>tableLayout183cf</id>
+                          <colNum>3</colNum>
+                          <cellpadding>0</cellpadding>
+                          <Items>
+                            <formArea sid="94d94e59bbd2ce7ada2df007102805a3">
+                              <id>formAreaecddf</id>
+                              <width>200</width>
+                              <cellpadding>2</cellpadding>
+                              <cellpaddingRead>2</cellpaddingRead>
+                              <cellpaddingDisplay>2</cellpaddingDisplay>
+                              <Items>
+                                <faString sid="e0d47a0e67e450afb92afebc61f1eda5">
+                                  <id>faStringb11b0</id>
+                                  <width>210</width>
+                                  <emptyText>请输入嫌疑人、案由、案号关键字</emptyText>
+                                  <displayType>editable</displayType>
+                                  <hideLabel extend="true">true</hideLabel>
+                                </faString>
+                                <buttonArea sid="555048270507e7cde7b9aed76cd36954">
+                                  <id>buttonArea94cc8</id>
+                                  <hideLabel extend="true">true</hideLabel>
+                                  <Items>
+                                    <button sid="609c9d191101f335de2a542284785dfe">
+                                      <id>buttonb82e2</id>
+                                      <text>查找</text>
+                                      <icon>/artery/arteryImage/file/viewlog.gif</icon>
+                                      <themeStyle>cookie</themeStyle>
+                                    </button>
+                                  </Items>
+                                </buttonArea>
+                              </Items>
+                            </formArea>
+                            <htmlArea sid="2d51748e8bcb41bdeeda6e69b8830947">
+                              <id>htmlAreae3030</id>
+                              <value>共&lt;b&gt;35&lt;/b&gt;个案件，当前显示&lt;b&gt;1-10&lt;/b&gt;个</value>
+                              <style>text-align:right;padding-right:10px;color:#3C5DA6;</style>
+                              <synTabStyle extend="true">width:100%;</synTabStyle>
+                            </htmlArea>
+                            <pagingbar1 sid="624530a58475e5ca2fc5257bc299e141">
+                              <id>pagingbar1a49b2</id>
+                              <ds>rs1</ds>
+                              <pageCount>5</pageCount>
+                            </pagingbar1>
+                          </Items>
+                        </tableLayout>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <footer sid="7caf7f533638a28b3943f0475c8d3dd4">
+                  <id>footer9108f</id>
+                  <Items>
+                    <blankPanel sid="a09169e8572eb852fa89927800373d51">
+                      <id>blankPanelda358</id>
+                      <Items>
+                        <tableLayout sid="220a6bf7e99c7aa879f68ca0ca4b452a">
+                          <id>tableLayout9ab44</id>
+                          <colNum>4</colNum>
+                          <Items>
+                            <formArea sid="4878555aa7ed68623af80d6143551274">
+                              <id>formAreaf194e</id>
+                              <width>100</width>
+                              <colNum>1</colNum>
+                              <Items>
+                                <faCode sid="dc8551c98710ddf3d691487d5b588e63">
+                                  <id>faCode023ef</id>
+                                  <width>120</width>
+                                  <value>10</value>
+                                  <displayType>editable</displayType>
+                                  <hideLabel extend="true">true</hideLabel>
+                                </faCode>
+                              </Items>
+                            </formArea>
+                            <buttonArea sid="600e994a5faf33f0906a34c335d4b417">
+                              <id>buttonAreac8dec</id>
+                              <Items>
+                                <simpleButton sid="eac835dcc3503e4896a28119ce0d24ca">
+                                  <id>simpleButton79229</id>
+                                  <text>导出Excel</text>
+                                  <icon>/artery/arteryImage/file/excel.gif</icon>
+                                  <style>color:#4463AC;text-decoration: none;</style>
+                                </simpleButton>
+                              </Items>
+                            </buttonArea>
+                            <htmlArea sid="e999b327f0aa216baa9e0d9be53f8484">
+                              <id>htmlArea6f35a</id>
+                              <value>共&lt;b&gt;35&lt;/b&gt;个案件，当前显示&lt;b&gt;1-10&lt;/b&gt;个</value>
+                              <style>text-align:right;padding-right:10px;color:#3C5DA6;</style>
+                              <synTabStyle extend="true">width:100%;</synTabStyle>
+                            </htmlArea>
+                            <pagingbar1 sid="8a15f7e0ef82d4d70522e2e0696848c9">
+                              <id>pagingbar170fc3</id>
+                              <ds>rs1</ds>
+                              <pageCount>5</pageCount>
+                            </pagingbar1>
+                          </Items>
+                        </tableLayout>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </footer>
+                <listArea sid="552162ca729bfbaf146c493ba7b272dd">
+                  <id>listAreab834c</id>
+                  <ds>rs1</ds>
+                  <height>100%</height>
+                  <stripeRows>false</stripeRows>
+                  <isPageSplit>false</isPageSplit>
+                  <isShowRowNumber>false</isShowRowNumber>
+                  <themeStyle>unis</themeStyle>
+                  <Items>
+                    <column sid="19ba7ed2f712b42a96a477922197f899">
+                      <id>column614c2</id>
+                      <dataName>{rs1.ajlb}</dataName>
+                      <title>类别 / 来源</title>
+                      <width>40</width>
+                      <htmlEncode>false</htmlEncode>
+                      <Items>
+                        <columnMenu sid="adc7ecd59e17d6781eaee5cc578e2ce7">
+                          <id>columnMenucfb9d</id>
+                          <Items>
+                            <tbMenuItem sid="1623b5dbed22893f45d3f83d0ef86c01">
+                              <id>tbMenuItemfefc7</id>
+                              <text>案件类别正序</text>
+                              <icon>/artery/arteryImage/arrow/up1.gif</icon>
+                            </tbMenuItem>
+                            <tbMenuItem sid="f30dc2fc2699f332cc620baef5689705">
+                              <id>tbMenuItemf60e2</id>
+                              <text>案件类别倒序</text>
+                              <icon>/artery/arteryImage/arrow/down1.gif</icon>
+                            </tbMenuItem>
+                            <tbSeparator sid="b9195412f551578992913587e3d3604b">
+                              <id>tbSeparator9cb00</id>
+                            </tbSeparator>
+                            <tbMenuItem sid="34b09e66288c4d8df0b07127b53cc5e7">
+                              <id>tbMenuItem9c088</id>
+                              <text>案件来源正序</text>
+                              <icon>/artery/arteryImage/arrow/up1.gif</icon>
+                            </tbMenuItem>
+                            <tbMenuItem sid="1b0e3b44771e656ae1a0cde73ea970ca">
+                              <id>tbMenuItem64850</id>
+                              <text>案件来源倒序</text>
+                              <icon>/artery/arteryImage/arrow/down1.gif</icon>
+                            </tbMenuItem>
+                            <tbSeparator sid="7751155c10c4ae21ca66392c270643af">
+                              <id>tbSeparator969c6</id>
+                            </tbSeparator>
+                            <tbMenuItem sid="6c6300f712aac7f8a88c9f7e6f92f91a">
+                              <id>tbMenuItem5d2d2</id>
+                              <text>只显示交(督)办案件</text>
+                            </tbMenuItem>
+                          </Items>
+                        </columnMenu>
+                      </Items>
+                    </column>
+                    <column sid="c29a83eb17c21d5e9f495b80edf0f6ff">
+                      <id>columnec3b8</id>
+                      <dataName>{rs1.sl}</dataName>
+                      <title>审限</title>
+                      <width>30</width>
+                      <htmlEncode>false</htmlEncode>
+                    </column>
+                    <column sid="44a4708c7961c19c851641817a42efbd">
+                      <id>column56051</id>
+                      <title>嫌疑人 / 案由</title>
+                      <width>80</width>
+                      <htmlEncode>false</htmlEncode>
+                      <mustColStyle>true</mustColStyle>
+                      <Items>
+                        <blankPanel sid="d886c785cafdfe3467595ae36c26ab40">
+                          <id>blankPanel6d2f1</id>
+                          <Items>
+                            <linkArea sid="5c3bc4eaedac7d1ad182f820ac9ec0de">
+                              <id>linkAreae7548</id>
+                              <value>{rs1.xyr}</value>
+                            </linkArea>
+                            <blankPanel sid="d7670325761298539527be4fc84cd540">
+                              <id>blankPanel91265</id>
+                              <width>200</width>
+                              <frame>true</frame>
+                              <bodyStyle>padding-bottom:5px;</bodyStyle>
+                              <themeStyle>cooltip</themeStyle>
+                              <hidden>true</hidden>
+                              <Items>
+                                <htmlArea sid="67912a1d9e9ab69d87fb71bffecafce0">
+                                  <id>htmlArea7173e</id>
+                                  <value>该案有北京市公安局立案侦查，2010年1月25日向本院提请审查逮捕，由本部门李四、王五办理，目前已办理2天，剩余审限5天。</value>
+                                </htmlArea>
+                                <linkArea sid="5bcf6ebf325648469215e39a586cfa06">
+                                  <id>linkArea59193</id>
+                                  <value>[案件详情]</value>
+                                  <align>right</align>
+                                  <style>color:red;</style>
+                                  <underline>false</underline>
+                                </linkArea>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </column>
+                    <column sid="d46c706714c907498131d3cdb6501be2">
+                      <id>columnde0c4</id>
+                      <dataName>{rs1.ah}</dataName>
+                      <title>案号</title>
+                      <width>80</width>
+                      <isOrderBy>true</isOrderBy>
+                    </column>
+                    <column sid="34ad8b86d3105b4647eb1f21c8b4978d">
+                      <id>column09d92</id>
+                      <dataName>{rs1.cbr}</dataName>
+                      <title>承办人</title>
+                      <width>30</width>
+                      <isOrderBy>true</isOrderBy>
+                    </column>
+                    <column sid="16c8cfbc8d49b249e90c356215fc9546">
+                      <id>column28cb4</id>
+                      <title>操作</title>
+                      <mustColStyle>true</mustColStyle>
+                      <Items>
+                        <blankPanel sid="be2718d9b4dd5ba7e19272dd07fed152">
+                          <id>blankPanela275c</id>
+                          <Items>
+                            <buttonArea sid="6ab3b80bbf8b8a1ac2748a5f6c0c1092">
+                              <id>buttonArea05447</id>
+                              <Items>
+                                <button sid="eca56806959018970a79b3973f2e2504">
+                                  <id>button98425</id>
+                                  <text>详情</text>
+                                  <themeStyle>cookieLike</themeStyle>
+                                </button>
+                                <blankPanel sid="241d55bb7e7eef64c3d154b472330efb">
+                                  <id>blankPanelb5608</id>
+                                  <Items>
+                                    <imageArea sid="23f703616c6fb9c74e58ab94378afe0e">
+                                      <id>imageArea7f9f0</id>
+                                      <icon>/artery/arteryImage/file/icon-mark-complete.gif</icon>
+                                    </imageArea>
+                                  </Items>
+                                </blankPanel>
+                              </Items>
+                            </buttonArea>
+                            <buttonArea sid="efd2c2c63dae7a12c6ec5bc818a0c959">
+                              <id>buttonAreab8e50</id>
+                              <style>padding-top:3px;</style>
+                              <Items>
+                                <button sid="662c2c65c3662f64fabda1a2a44ad7d5">
+                                  <id>buttonfba40</id>
+                                  <text>二次分案</text>
+                                  <themeStyle>cookieLike</themeStyle>
+                                </button>
+                              </Items>
+                            </buttonArea>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </column>
+                  </Items>
+                </listArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

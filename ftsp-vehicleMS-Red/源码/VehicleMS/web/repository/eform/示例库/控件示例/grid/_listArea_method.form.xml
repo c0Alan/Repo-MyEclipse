@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ca3fb21fdaeb944e00b01ab74502ce8e</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._listArea_method.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_listArea_method.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form12a80">
+      <id>form12a80</id>
+      <Items>
+        <upRegion sid="938ae08d82b19e3ecbddd00d037a42d9">
+          <id>upRegionda608</id>
+          <Items>
+            <buttonArea sid="6a28b4c03b092955f97cfc218ec48a52">
+              <id>buttonAreac4924</id>
+              <Items>
+                <button sid="9ae439c12bbe5890c82b11b078c0347b">
+                  <id>button832a2</id>
+                  <text>exportExcel</text>
+                  <onClickClient><![CDATA[button832a2_onClickClient]]></onClickClient>
+                </button>
+                <button sid="8a24dd6411359cb25a6527cc3f18e6db">
+                  <id>button7430c</id>
+                  <text>exportPDF</text>
+                  <onClickClient><![CDATA[button7430c_onClickClient]]></onClickClient>
+                </button>
+                <button sid="62398bfbae06fa2595358bdb696b5d30">
+                  <id>button93fd0</id>
+                  <text>reload</text>
+                  <onClickClient><![CDATA[button93fd0_onClickClient]]></onClickClient>
+                </button>
+                <button sid="140875db458da72db9eaebcb9127e411">
+                  <id>button2c729</id>
+                  <text>getValue</text>
+                  <onClickClient><![CDATA[button2c729_onClickClient]]></onClickClient>
+                </button>
+                <button sid="d1f1613037e48d47c0a99ca5f40bab09">
+                  <id>button5449a</id>
+                  <text>getSelectedRowValue</text>
+                  <onClickClient><![CDATA[button5449a_onClickClient]]></onClickClient>
+                </button>
+                <button sid="58e83a38d2fe6a130468b55cd214d17a">
+                  <id>buttone9d61</id>
+                  <text>getCheckedRowValue</text>
+                  <onClickClient><![CDATA[buttone9d61_onClickClient]]></onClickClient>
+                </button>
+                <button sid="88e3b2e323062751d735d0f2e84b6747">
+                  <id>button8136c</id>
+                  <text>selectAllCheckbox</text>
+                  <onClickClient><![CDATA[button8136c_onClickClient]]></onClickClient>
+                </button>
+                <button sid="71c38e4ebbcbacf8246cdb9e0e16eae8">
+                  <id>button9d74b</id>
+                  <text>deselectAllCheckbox</text>
+                  <onClickClient><![CDATA[button9d74b_onClickClient]]></onClickClient>
+                </button>
+                <button sid="dd454bc5373d22cca9bd6e719d435a3a">
+                  <id>button9cd30</id>
+                  <text>insertRecord</text>
+                  <onClickClient><![CDATA[button9cd30_onClickClient]]></onClickClient>
+                </button>
+                <button sid="5b2dc7afb41222e201f54ac2ded9fdf1">
+                  <id>buttonaf55d</id>
+                  <text>deleteRecord</text>
+                  <onClickClient><![CDATA[buttonaf55d_onClickClient]]></onClickClient>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </upRegion>
+        <centerRegion sid="02117d7edd3511737bb5636b065a025e">
+          <id>centerRegion3c925</id>
+          <Items>
+            <listArea sid="d4684c1076be0fdd0e0afa6d4ef4d0ce">
+              <id>listArea05297</id>
+              <ds>rs1</ds>
+              <height>100%</height>
+              <isOnePageHideBar>true</isOnePageHideBar>
+              <Items>
+                <column sid="a75cb1555aa5309667159ec214d6fe92">
+                  <id>columnIdentityCID</id>
+                  <title>图书编号</title>
+                  <editor>checkbox</editor>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_ID</inheritfld>
+                  <dataName>{rs1.C_ID}</dataName>
+                  <headSelect>true</headSelect>
+                </column>
+                <columnString sid="a6d207dc4240b6407b60a010c1959a22">
+                  <id>columnStringCNAME</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs1.C_NAME}</dataName>
+                  <title>图书名称</title>
+                </columnString>
+                <columnCode sid="4d1313232fb57df6f287d32c53f1c750">
+                  <id>columnCodeNTYPE</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>N_TYPE</inheritfld>
+                  <dataName>{rs1.N_TYPE}</dataName>
+                  <title>图书类型</title>
+                </columnCode>
+                <columnDate sid="72b10094ef6ecba9a0f7680e65aa9a50">
+                  <id>columnDateDPUBLISHER</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>D_PUBLISHER</inheritfld>
+                  <dataName>{rs1.D_PUBLISHER}</dataName>
+                  <title>出版日期</title>
+                </columnDate>
+                <columnCode sid="c7413f24ca0e05d782d5326aa51f76c6">
+                  <id>columnCodeNVALID</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>N_VALID</inheritfld>
+                  <dataName>{rs1.N_VALID}</dataName>
+                  <title>是否有效</title>
+                </columnCode>
+                <columnString sid="6cc59642cac7328eae02d9f1c64ad0f6">
+                  <id>columnStringCAUTH</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_AUTH</inheritfld>
+                  <dataName>{rs1.C_AUTH}</dataName>
+                  <title>作者</title>
+                </columnString>
+              </Items>
+            </listArea>
+          </Items>
+        </centerRegion>
+        <downRegion sid="85b6aa1a0ef178b987ece0d83902c8c0">
+          <id>downRegion1a766</id>
+          <Items>
+            <formArea sid="1a623d0bd41faa7ce98257a8f4c503b8">
+              <id>sqlFormArea</id>
+              <colWidths>*,100</colWidths>
+              <Items>
+                <faString sid="6467b8615e486d3c5a52b35a21424fe7">
+                  <id>execSQL</id>
+                  <required>true</required>
+                  <inheritkey />
+                  <inherittbl />
+                  <inheritfld />
+                  <label>需要执行的SQL</label>
+                </faString>
+                <buttonArea sid="040507eaec945faf318640e6cbe57d0f">
+                  <id>buttonAreacc996</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="1c3ef34c6037a5daa36959f8c72bb917">
+                      <id>execSQLBtn</id>
+                      <text>执行</text>
+                      <onClickClient><![CDATA[execSQLBtn_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[execSQLBtn_onClickServer]]></onClickServer>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </downRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>512a4417950d4b3c0263e60d0d7a3855</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight>artery.eform.subsys</visitRight>
+  <javaLocation>arteryServer.jck.subsys.Zxtwh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/subsys/Zxtwh.js</jsLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="forme876a">
+      <id>forme876a</id>
+      <Items>
+        <leftRegion sid="8496a7722b8efe46de70367cf8ba79ca">
+          <id>leftRegion2cc79</id>
+          <width>250</width>
+          <collapsible>true</collapsible>
+          <margins>4 0 4 4</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="269b6d96bc933a615e42ba847cce28ce">
+              <id>blankPanele9644</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="f26421a24bdaa616748c9759d3efa26b">
+                  <id>header07be5</id>
+                  <text />
+                  <Items>
+                    <blankPanel sid="92f50cd9db2ddb52af533a8f1a252b87">
+                      <id>blankPanelf508d</id>
+                      <bodyStyle>display:none;</bodyStyle>
+                      <Items>
+                        <topbar sid="06dc05d5a0900a304f4190a2f595de2d">
+                          <id>topbarb5735</id>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbButton sid="4b721a9beae96ca38b54cf59971b1306">
+                              <id>addSubsysBtn</id>
+                              <text>新建子系统</text>
+                              <tooltip>新建子系统</tooltip>
+                              <icon>/artery/arteryImage/sys/addcomp.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[addSubsysBtn_onClickClient]]></onClickClient>
+                            </tbButton>
+                            <tbButton sid="14c96931f41b120f007a7fcfefccd73b">
+                              <id>delSubsysBtn</id>
+                              <text>删除子系统</text>
+                              <tooltip>删除子系统</tooltip>
+                              <icon>/artery/arteryImage/symbol/cross.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[delSubsysBtn_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[delSubsysBtn_onClickServer]]></onClickServer>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="1216c4b2d71f1a26c4ad97c438f58a8a">
+                              <id>refCacheBtn</id>
+                              <text>更新缓存</text>
+                              <tooltip>更新缓存</tooltip>
+                              <icon>/artery/arteryImage/file/refresh.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[refCacheBtn_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[refCacheBtn_onClickServer]]></onClickServer>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <dynamicNav sid="01cfee2016cf213d3ab0ee17371e27b3">
+                  <id>dynamicNav</id>
+                  <operAreaId>operArea</operAreaId>
+                  <onLoad><![CDATA[dynamicNav_onLoad]]></onLoad>
+                  <line>false</line>
+                  <useArrows>true</useArrows>
+                  <onNodeClickClient><![CDATA[dynamicNav_onNodeClickClient]]></onNodeClickClient>
+                  <expandTree>true</expandTree>
+                  <expandLevel>1</expandLevel>
+                  <themeStyle>orange</themeStyle>
+                </dynamicNav>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="fd10bff631f479b91386c6536b81513a">
+          <id>centerRegion8a7b2</id>
+          <margins>4 4 4 0</margins>
+          <border>false</border>
+          <Items>
+            <operArea sid="fc52fcf29158c7cfdb15bb0f36adc6b1">
+              <id>operArea</id>
+              <linkto>{"formId":"1f833bae08f9d211f4809d604beb8fd1","formName":"子系统统计","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+              <style>background-color:transparent;</style>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

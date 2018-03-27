@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="splitButton" cn="分割按钮" jsType="artery-base" nameprop="text"
+	icon="button.gif" iconNew="buttonNew.gif">
+	<Info>
+		<Author>新一代产品开发团队</Author>
+		<CreateTime>2010-04-11</CreateTime>
+		<Describe>生成页面的按钮控件，按钮带有菜单选项，触发不同事件</Describe>
+		<Images>
+			<File>info1.png</File>
+			<File>info2.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="buttonArea" />
+		<Parent type="footer" />
+		<Parent type="topbar" />
+	</Parents>
+	<Children>
+		<!-- Child type="tbMenu"/ -->
+		<Child type="tbMenuItem" />
+		<Child type="tbSeparator" />
+		<Child type="blankPanel" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.button.SplitButton
+	</Class>
+	<JsFile>
+		<File>splitButton.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>npSplitButton</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>55</Value>
+		</Property>
+		<Property cn="名称" type="1" name="text" export="true" tips="设置菜单项的显示名称">
+			<Value>splitButton</Value>
+		</Property>
+		<Property cn="提示信息" type="1" name="tooltip" tips="设置鼠标移动到按钮上的提示">
+			<Value />
+		</Property>
+		<Property cn="图标" type="5" name="icon"  export="true"  tips="设置组件的显示图标，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value />
+		</Property>
+		<Property cn="图标位置" type="3" name="iconAgion" ct="[top,bottom,left,right]" tips="设置组件的显示图标位置，如果箭头位置为bottom,则只能选择top和bottom,其他值无效;如果箭头位置为right则改属性只能设置为left和right,其他值无效">
+			<Value/>
+		</Property>
+		<Property cn="图标大小" type="3" name="scale" ct="[large,medium,small]" tips="图标大小，有small、medium、large三个选项，默认为small">
+			<Value>small</Value>
+		</Property>
+		<Property cn="是否按下" type="11" name="pressed" tips="设置按钮的初始状态是否是按下的状态">
+			<Value>false</Value>
+		</Property>
+		<Property cn="使用分割线" type="11" name="split" export="true" inherit="false"
+			tips="当为true时,按钮与下拉箭头之间用分割线隔开">
+			<Value>false</Value>
+		</Property>
+		<Property cn="允许按钮事件" type="11" name="allowButton" export="true" 
+			tips="当为true时,点击按钮时触发点击时脚本，否则打开下拉菜单项">
+			<Value>false</Value>
+		</Property>
+		<Property cn="使用Frame样式" type="11" name="frame" export="true"
+			tips="当设置为true时，本组件会以Frame的样式展现">
+			<Value>false</Value>
+		</Property>
+		<Property cn="空白容器" type="11" name="plain" tips="是否是空白容器展现，即菜单项没有背景色和缩进">
+			<Value>false</Value>
+		</Property>
+		<Property cn="隐藏图标栏" type="11" name="hideIconCol" tips="设置为true时，则会隐藏菜单项的图标栏，去掉缩进">
+			<Value>false</Value>
+		</Property>
+		<Property cn="下拉菜单位置" type="3" ct="[left,center,right]" name="menuPosition" export="true" tips="下拉菜单位置，有left,center,right三个选项">
+			<Value>left</Value>
+		</Property>
+		<Property cn="是否无效" type="11" name="disabled" tips="组件是否无效">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="链接到" type="6" name="linkto" tips="选择当组件点击时连接到的表单">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient"
+			tips="鼠标点击本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer"
+			tips="鼠标点击本组件时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="展开时脚本" name="onExpandClient"
+			tips="鼠标点击本组件展开下拉菜单时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="展开时脚本" name="onExpandServer"
+			tips="鼠标点击本组件展开下拉菜单时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="折叠时脚本" name="onCollapseClient"
+			tips="鼠标点击本组件折叠下拉菜单时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="折叠时脚本" name="onCollapseServer"
+			tips="鼠标点击本组件折叠下拉菜单时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" tips="设置控件的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="setText"></Method>
+		<Method name="hideIcon"></Method>
+		<Method name="showIcon"></Method>
+		<Method name="setIcon"></Method>
+		<Method name="click"></Method>
+		<Method name="hide"></Method>
+		<Method name="show"></Method>
+		<Method name="disable" inherit="false" return="void" tips="设置控件无效">
+			<Description><![CDATA[<p>设置控件无效</p><pre>
+Artery.get("buttonId").disable();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="enable" inherit="false" return="void" tips="设置控件有效">
+			<Description><![CDATA[<p>设置控件有效</p><pre>
+Artery.get("buttonId").enable();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="isDisabled"></Method>
+		<Method name="isHidden"></Method>
+		<Method name="setTooltip"></Method>
+	</Methods>
+	<JavaFunctions>
+		<JavaFunction name="onClickServer">
+<![CDATA[
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

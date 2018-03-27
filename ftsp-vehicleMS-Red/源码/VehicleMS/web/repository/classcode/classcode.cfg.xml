@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<records>
+	<record>
+		<fields>
+			<nid>1</nid>
+			<datasource>dataSource</datasource>
+			<cname>案由-recursion</cname>
+			<ctable>T_Eg_ClassCode</ctable>
+			<ntype>1</ntype>
+			<csplit></csplit>
+			<ncodesize>0</ncodesize>
+			<crootcode>1</crootcode>
+			<ncanwrite>1</ncanwrite>
+			<cfldcode>N_ID</cfldcode>
+			<cfldclassinfo>N_ID</cfldclassinfo>
+			<cfldname>C_Name</cfldname>
+			<cfldparentcode>N_PID</cfldparentcode>
+			<cfldmaintain>N_SFYAYXJ</cfldmaintain>
+			<cfldorder>N_Order</cfldorder>
+			<cfldvalid>N_Valid</cfldvalid>
+			<cfldgbcode>C_FBDM</cfldgbcode>	
+		</fields>
+	</record>
+</records>

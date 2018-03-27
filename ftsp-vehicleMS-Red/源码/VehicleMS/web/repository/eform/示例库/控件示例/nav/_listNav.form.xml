@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e9bb49fbc31f88b31e74f8650ffa7b54</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.nav._listNav.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/nav/_listNav.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form90d50">
+      <id>form90d50</id>
+      <Items>
+        <upRegion sid="877a60ee4aad23c84bc5d374e02efa36">
+          <id>upRegionc7102</id>
+        </upRegion>
+        <leftRegion sid="ed23c219dd1ea54b2b1634b422f0dda3">
+          <id>leftRegion1fd50</id>
+          <width>200</width>
+          <Items>
+            <listNav sid="3522fca9b12512f3fcbb7deb32f49e83">
+              <id>listNave55e0</id>
+              <width>100%</width>
+              <height>100%</height>
+              <animate>true</animate>
+              <expandMode>multeExpand</expandMode>
+              <Items>
+                <listCatalog sid="ad854328992c3e91daedc042de3bb362">
+                  <id>listCatalog82eb4</id>
+                  <caption>常用...</caption>
+                  <Items>
+                    <treeNav sid="ed8848a830cff104310d675b6d21a964">
+                      <id>treeNave1163</id>
+                      <height>180px</height>
+                      <Items>
+                        <treeCatalog sid="30ac6038236fb2e73d662577c2ef1b9e">
+                          <id>treeCatalogc8032</id>
+                          <caption>收藏夹</caption>
+                          <icon>/artery/arteryImage/organ/home_16.gif</icon>
+                          <Items>
+                            <treeItem sid="7e0a2b8a16e9da4a1008206d2090d8e7">
+                              <id>treeItemb7856</id>
+                              <caption>下载</caption>
+                              <icon>/artery/arteryImage/arrow/arrow-down.gif</icon>
+                              <linkto>{"url":"http://www.baidu.com","target":"operAreaeShow","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                            </treeItem>
+                            <treeItem sid="b4ef02289f87338ec7f8da2d04fb3af7">
+                              <id>treeItem6713b</id>
+                              <caption>桌面</caption>
+                              <icon>/artery/arteryImage/book/accordian.gif</icon>
+                              <linkto>{"url":"http://www.163.com","target":"operAreaeShow","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                            </treeItem>
+                            <treeItem sid="99917048eed96497b80ad8b65b5f8243">
+                              <id>treeItem6559d</id>
+                              <caption>最近访问的位置</caption>
+                              <icon>/artery/arteryImage/file/album.gif</icon>
+                            </treeItem>
+                          </Items>
+                        </treeCatalog>
+                        <treeCatalog sid="89226d8aeaf603364ae61f1eaa16dcfa">
+                          <id>treeCatalog3b12e</id>
+                          <caption>库</caption>
+                          <Items>
+                            <treeItem sid="10f723e71aa5cb5074edb7515965ee61">
+                              <id>treeItem2aa6a</id>
+                              <caption>视频</caption>
+                            </treeItem>
+                            <treeItem sid="ec24b198102a0bae54aec4be7d02a590">
+                              <id>treeItem3bfaf</id>
+                              <caption>图片</caption>
+                            </treeItem>
+                            <treeItem sid="13ffc139b9d0cd4f47fcb034452df8bf">
+                              <id>treeItemf0fc4</id>
+                              <caption>文档</caption>
+                            </treeItem>
+                            <treeItem sid="7c6bcb4de46566f05a19e16b1b50fe19">
+                              <id>treeItem0cc70</id>
+                              <caption>音乐</caption>
+                            </treeItem>
+                          </Items>
+                        </treeCatalog>
+                      </Items>
+                    </treeNav>
+                  </Items>
+                </listCatalog>
+                <listCatalog sid="5b03ee1255600552914b733240372ea9">
+                  <id>listCatalog6843c</id>
+                  <caption>计算机</caption>
+                  <Items>
+                    <dynamicNav sid="66aa05e27e98563de3f4ee7edc066641">
+                      <id>dynamicNavb7fc5</id>
+                      <height>150px</height>
+                      <onLoad><![CDATA[dynamicNavb7fc5_onLoad]]></onLoad>
+                    </dynamicNav>
+                  </Items>
+                </listCatalog>
+                <listCatalog sid="7953b32ba1767e7ebb87f8bb27c25e25">
+                  <id>listCatalogebceb</id>
+                  <caption>操作</caption>
+                  <Items>
+                    <listItem sid="9665d58919fcd0102873e93a63ae877b">
+                      <id>listItem9fd91</id>
+                      <caption>操作一</caption>
+                    </listItem>
+                    <listCatalog sid="e4f2d1aeaf58ebcca439a81daa0e51a8">
+                      <id>listCatalog10990</id>
+                      <caption>操作二</caption>
+                      <Items>
+                        <listItem sid="02887106ab544c51dfe4df8eac9f2e08">
+                          <id>listItem1652a</id>
+                          <caption>操作二一</caption>
+                        </listItem>
+                        <listItem sid="cbba5a2fe8fa93bca01791d03c74c90d">
+                          <id>listItem13b5d</id>
+                          <caption>操作二二</caption>
+                        </listItem>
+                      </Items>
+                    </listCatalog>
+                  </Items>
+                </listCatalog>
+                <listSep sid="6e1133aec282cb3fb3c13edc5ea73cfc">
+                  <id>listSep52652</id>
+                </listSep>
+                <listSep sid="0382bef17a31a3882389e38f47578c08">
+                  <id>listSepbcc66</id>
+                </listSep>
+                <listSep sid="da39a91ee502c9398d81efbb24eebf73">
+                  <id>listSep9bc23</id>
+                </listSep>
+                <listSep sid="2cfa130b613b93b580c6d8603d104444">
+                  <id>listSep5e6dc</id>
+                </listSep>
+                <listCatalog sid="a3885d11b4ff21047a8e291c02b4a897">
+                  <id>listCatalog66811</id>
+                  <caption>详细信息</caption>
+                  <Items>
+                    <blankPanel sid="e67360edaf04d0b9a845cd29daf59e63">
+                      <id>blankPanelc8c98</id>
+                      <Items>
+                        <formArea sid="7fb0ecec32d6c001a74df3ff3adf06c7">
+                          <id>formAreac1711</id>
+                          <labelWidth>50</labelWidth>
+                          <Items>
+                            <faString sid="3f89648c11bc98c202dbe76677bd94d4">
+                              <id>faStringbc62a</id>
+                              <colSpan>2</colSpan>
+                              <label>名称</label>
+                            </faString>
+                            <faString sid="66d19a8c0cb5c71ce9f24bfabd7dfdc5">
+                              <id>faString54431</id>
+                              <colSpan>2</colSpan>
+                              <label>时间</label>
+                            </faString>
+                          </Items>
+                        </formArea>
+                        <htmlArea sid="1a88773b745dde85ea0ab13cdc053f3c">
+                          <id>htmlAreaac4e9</id>
+                          <value>&lt;h1&gt;说明&lt;/h1&gt;&#xD;
+&lt;li&gt;这个地方是空面板&lt;/li&gt;</value>
+                        </htmlArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </listCatalog>
+              </Items>
+            </listNav>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="b29e8bc7c239048ca79890a1865c752a">
+          <id>centerRegionf8e48</id>
+          <Items>
+            <operArea sid="fe2e2afca3c666c936db7f2770e6e5e0">
+              <id>operAreaeShow</id>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

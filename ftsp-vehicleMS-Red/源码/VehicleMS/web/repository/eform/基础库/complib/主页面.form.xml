@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>f66bcc4d51f25c9c1fe11ca6d4689721</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.complib.Zym.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/complib/Zym.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form524b1">
+      <id>form524b1</id>
+      <Items>
+        <leftRegion sid="4ebda5489036610343431d22b039bb9b">
+          <id>leftRegiona66be</id>
+          <width>200</width>
+          <collapsible>true</collapsible>
+          <margins>5 0 0 5</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="0118b430d5255d76ebe596abdbc60363">
+              <id>blankPanela112f</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="8698b4965a3dfc5e4780963a27dd63b2">
+                  <id>headerf3a98</id>
+                  <text />
+                  <Items>
+                    <blankPanel sid="8a1965d6960c405d4bac78bfee550da5">
+                      <id>blankPanel6d9c1</id>
+                      <Items>
+                        <buttonArea sid="2eb4a932b8f8dc3d41f6219cec86277d">
+                          <id>buttonArea09b1e</id>
+                          <spacing>0</spacing>
+                          <themeStyle>simple</themeStyle>
+                          <Items>
+                            <button sid="01bea026d1dc9ece787f1db6f8b8a6d6">
+                              <id>addFolderBtn</id>
+                              <width>16</width>
+                              <text />
+                              <icon>/artery/arteryImage/sys/addcomp.gif</icon>
+                            </button>
+                            <button sid="40caa8d7cab9a36df66bfe11ccc225b8">
+                              <id>addFormBtn</id>
+                              <width>16</width>
+                              <text />
+                              <icon>/artery/arteryImage/sys/addform.gif</icon>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <footer sid="b9719b23f846543ab0302f943a1c9f10">
+                  <id>footerc9792</id>
+                  <spacing>0</spacing>
+                  <Items>
+                    <blankPanel sid="8f7dd0a00931c069ec24153c69e8cfbb">
+                      <id>blankPanelf3f91</id>
+                      <bodyStyle>padding-top:3px;</bodyStyle>
+                      <Items>
+                        <formArea sid="e47fc8ba7fbf17267ff685ecab706e9e">
+                          <id>formArea270ce</id>
+                          <colNum>1</colNum>
+                          <cellpadding>0</cellpadding>
+                          <cellpaddingRead>0</cellpaddingRead>
+                          <cellpaddingDisplay>0</cellpaddingDisplay>
+                          <Items>
+                            <faString sid="b9475ba6801c11a6d2571eaeccac306c">
+                              <id>faString1f389</id>
+                              <emptyText>请输入表单id</emptyText>
+                              <displayType>editable</displayType>
+                              <hideLabel>true</hideLabel>
+                            </faString>
+                          </Items>
+                        </formArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </footer>
+                <dynamicNav sid="708978bcce9d8645a094b3f7d69c4313">
+                  <id>complibTree</id>
+                  <operAreaId>operArea5aced</operAreaId>
+                  <expandTree>true</expandTree>
+                  <expandLevel>1</expandLevel>
+                  <bodyStyle>padding:3px;</bodyStyle>
+                </dynamicNav>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="e6fb03a7e7610daa6337a7faeb844b56">
+          <id>centerRegion960a7</id>
+          <border>false</border>
+          <Items>
+            <operArea sid="00d933b009e856cab900163e1e9b5aec">
+              <id>operArea5aced</id>
+              <linkto>{"formId":"c387c6197196a0fa65c63b1a32c7f4bc","formName":"表单制作","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+              <style>padding:5 5 0 0;</style>
+            </operArea>
+          </Items>
+        </centerRegion>
+        <window sid="6bdab3a19d629f47a57ff4dacc32a24c">
+          <id>createFolderWin</id>
+          <height>180</height>
+          <title>新建类别</title>
+          <Items>
+            <formArea sid="aef559f900c6ebd38b5f78998d597b98">
+              <id>createfolderForm</id>
+              <colNum>1</colNum>
+              <labelWidth>60</labelWidth>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <faString sid="19a09348463e41ab7c90bdf59c20c521">
+                  <id>parentFolderName</id>
+                  <displayType>disabled</displayType>
+                  <label>父类别</label>
+                </faString>
+                <faString sid="99263f3514e4c6fa7608b394e13a896c">
+                  <id>folderName</id>
+                  <required>true</required>
+                  <displayType>editable</displayType>
+                  <label>名称</label>
+                </faString>
+              </Items>
+            </formArea>
+            <footer sid="aee96a841b8b9a3c65fee0e78dcf7c51">
+              <id>footer12084</id>
+              <Items>
+                <button sid="84cfb5f510e463bdbee656ada555b64b">
+                  <id>createFolderBtn</id>
+                  <text>创建</text>
+                  <themeStyle>cookie</themeStyle>
+                </button>
+                <button sid="40ff71be0452673219be2d175837cb70">
+                  <id>cancleCreateFolderBtn</id>
+                  <text>取消</text>
+                  <themeStyle>cookie</themeStyle>
+                </button>
+              </Items>
+            </footer>
+          </Items>
+        </window>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

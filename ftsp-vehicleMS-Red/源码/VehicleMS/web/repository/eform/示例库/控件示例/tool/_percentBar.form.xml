@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>84d102d0fc4c4ed5e5a8cf7585dd59b1</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tool._percentBar.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tool/_percentBar.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form91801">
+      <id>form91801</id>
+      <Items>
+        <htmlArea sid="902207401f9430e3858ecd9bd9d3eaa4">
+          <id>htmlArea2ab2e</id>
+          <value>&lt;br&gt;&#xD;
+&lt;br&gt;&#xD;
+&lt;h1&gt;30%进度条&lt;/h1&gt;</value>
+        </htmlArea>
+        <blankPanel sid="3de4f9677a35262de4becaf9efeb4651">
+          <id>blankPanel0ed43</id>
+          <Items>
+            <percentBar sid="4b402b13f2071ffdefee45963ce4cfdb">
+              <id>percentBarefe6f</id>
+              <width>800</width>
+              <percentNum>30</percentNum>
+            </percentBar>
+          </Items>
+        </blankPanel>
+        <htmlArea sid="48dd7d8a6f1fe4bec44ffa0c22a216bf">
+          <id>htmlArea40b14</id>
+          <value>&lt;br&gt;&lt;br&gt;&#xD;
+&lt;h1&gt;操作进度条&lt;/h1&gt;</value>
+        </htmlArea>
+        <blankPanel sid="c49fee343ea2dc74ba2d45ecf35dbe4d">
+          <id>blankPanel3d249</id>
+          <Items>
+            <topbar sid="a80df91a396a35efb9a27588429715ec">
+              <id>topbard96d2</id>
+              <Items>
+                <tbButton sid="f5ef68d94a873be470ead40c19202d55">
+                  <id>tbSetValue</id>
+                  <text>setPercentNum</text>
+                  <onClickClient><![CDATA[tbSetValue_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <htmlArea sid="62a6ac58eaddfd2da51c42327b77b552">
+              <id>htmlArea9e7f1</id>
+              <value>&lt;br&gt;</value>
+            </htmlArea>
+            <percentBar sid="0ac3dbf8072ba1acff207ad73976cd11">
+              <id>percentBar982fe</id>
+              <width>800</width>
+              <percentNum>20</percentNum>
+            </percentBar>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

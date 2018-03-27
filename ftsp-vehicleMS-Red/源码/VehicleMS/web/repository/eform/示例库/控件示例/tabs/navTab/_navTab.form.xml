@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0a5356a719f38bdb00f24c07c9dd82f8</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tabs.navTab._navTab.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tabs/navTab/_navTab.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form9148d">
+      <id>form9148d</id>
+      <Items>
+        <leftRegion sid="e32b93bd9c42c134de14ca35c38ed1c2">
+          <id>leftRegion9edad</id>
+          <width>250</width>
+          <split>false</split>
+          <border>false</border>
+          <show>false</show>
+          <Items>
+            <navTabArea sid="8e4775ac95933b1ba24d57d3b55d4579">
+              <id>navTabArea2a53b</id>
+              <height>100%</height>
+              <Items>
+                <navTabItem sid="f87fce46a7eef75a2ff447c83117aab6">
+                  <id>navTabItem03606</id>
+                  <title />
+                  <Items>
+                    <blankPanel sid="ba290522f06169c6e54addc6df014765">
+                      <id>blankPanele38bf</id>
+                      <Items>
+                        <imageArea sid="4d38fdac6b47bfbf4477efbb2dad1034">
+                          <id>imageArea87a41</id>
+                          <icon>/artery/arteryImage/arrow/up.gif</icon>
+                        </imageArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </navTabItem>
+                <navTabItem sid="4f3f4d6525db2834b3f3451e7795b653">
+                  <id>navTabItemd9442</id>
+                  <title>第二个选项卡</title>
+                </navTabItem>
+                <navTabItem sid="662f45bd7acec6f01a36f1754d9a588c">
+                  <id>navTabItemfa452</id>
+                  <title>第三个选项卡</title>
+                </navTabItem>
+                <apNavTabGroup sid="49b7c3573d1689384fcaf1a793c02d56">
+                  <id>apNavTabGroup92082</id>
+                  <text>分组1</text>
+                  <Items>
+                    <navTabItem sid="ef040b5190e75b52b93b519afc41c233">
+                      <id>navTabItem6e830</id>
+                      <title>Google</title>
+                      <onClickClient><![CDATA[navTabItem6e830_onClickClient]]></onClickClient>
+                    </navTabItem>
+                    <navTabItem sid="f8c302f0983dbf8b6d2c3cf3c48318ef">
+                      <id>navTabItem042fa</id>
+                      <title>_window</title>
+                      <onClickClient><![CDATA[navTabItem042fa_onClickClient]]></onClickClient>
+                    </navTabItem>
+                  </Items>
+                </apNavTabGroup>
+              </Items>
+            </navTabArea>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="0d1126876fc6577e09684d5899b3e51e">
+          <id>centerRegionfc3e5</id>
+          <border>false</border>
+          <show>false</show>
+          <Items>
+            <operArea sid="665928e153679d64e0f8ade52a317dc0">
+              <id>operAreacdea0</id>
+            </operArea>
+          </Items>
+        </centerRegion>
+        <upRegion sid="756b7a688f0eb8dcab84d7f8cd588d6f">
+          <id>upRegion05932</id>
+          <height>300</height>
+          <split>false</split>
+          <show>false</show>
+        </upRegion>
+        <navTabArea sid="90596c364768e17779f71a68b303db77">
+          <id>navTabArea62562</id>
+          <height>100%</height>
+          <tabPosition>top</tabPosition>
+          <lastFile>false</lastFile>
+          <themeStyle>lightBlue</themeStyle>
+          <Items>
+            <navTabItem sid="ad3dea0a23ee1b52f9281e7bca133e62">
+              <id>navTabItem3215e</id>
+              <active>true</active>
+              <Items>
+                <blankPanel sid="8f480ede6294609af25cc9083c865fd2">
+                  <id>blankPanel00539</id>
+                  <bodyContainer>true</bodyContainer>
+                  <Items>
+                    <buttonArea sid="d7c102d063c94a62640695bb7e10f96c">
+                      <id>buttonArea9549c</id>
+                      <Items>
+                        <button sid="236c3f5a6dd9401f0cbad0eda0044e1d">
+                          <id>button93ee5</id>
+                          <text>item2</text>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabItem>
+            <navTabItem sid="5a94ef5b596f4eae6ebbe62705137058">
+              <id>navTabItem860d4</id>
+              <Items>
+                <blankPanel sid="9326d4971388b2a53974d80136fdcddc">
+                  <id>blankPanel591f4</id>
+                  <height>100%</height>
+                  <bodyContainer>true</bodyContainer>
+                  <Items>
+                    <topbar sid="55e7ea44e5da5e69a668831c1891c631">
+                      <id>topbar24990</id>
+                      <Items>
+                        <tbButton sid="9b901209d46c3dcd0b4a60cefcce9ebd">
+                          <id>tbButtond1865</id>
+                        </tbButton>
+                      </Items>
+                    </topbar>
+                    <bottomBar sid="1d808d0e924f74e39b3039bf707c81ae">
+                      <id>bottomBarc3ba3</id>
+                      <Items>
+                        <tbButton sid="d380fb94fbe15448a98e45b75a564fb7">
+                          <id>tbButton419cd</id>
+                        </tbButton>
+                      </Items>
+                    </bottomBar>
+                    <formArea sid="bd6ab6c8c8ccb466654fe2a20b6bb808">
+                      <id>formArea48be6</id>
+                      <Items>
+                        <faString sid="33519626ad359b7fad99586f682feb88">
+                          <id>faString39e62</id>
+                        </faString>
+                        <faString sid="6c29d7464fa79e844bca740b82722d4d">
+                          <id>faString717a9</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabItem>
+            <navTabItem sid="a22827e2b166b1a4082d6f93ee995c09">
+              <id>navTabItem16f49</id>
+              <Items>
+                <blankPanel sid="f24f35053be88f7020724196cae7509d">
+                  <id>blankPanel475bd</id>
+                  <height>100%</height>
+                  <bodyContainer>true</bodyContainer>
+                  <Items>
+                    <operArea sid="f8a541defc483fa056e87a15aa10c6dc">
+                      <id>operArea08288</id>
+                      <linkto>{"url":"http://www.baidu.com","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                    </operArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabItem>
+          </Items>
+        </navTabArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

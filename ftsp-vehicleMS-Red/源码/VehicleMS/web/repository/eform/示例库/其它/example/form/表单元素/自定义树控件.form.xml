@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>643260783d1131a26f0114437111639d</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.form.bdys.Zdyskj.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/form/bdys/Zdyskj.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <topbar sid="topbarBFA964015F1CC49E0900D05C86CC432C">
+          <id>topbarBFA964015F1CC49E0900D05C86CC432C</id>
+          <Items>
+            <tbButton sid="tbButton39C4B8D520A5D382E1913F84F555E8E4">
+              <id>tbButton_1</id>
+              <text>setValue</text>
+              <onClickClient><![CDATA[tbButton_1_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="tbButton44B0362C31F5DBB3F919C258E87B7581">
+              <id>tbButton_2</id>
+              <text>getValue</text>
+              <onClickClient><![CDATA[tbButton_2_onClickClient]]></onClickClient>
+            </tbButton>
+          </Items>
+        </topbar>
+        <tableLayout sid="tableLayout302CFEC40DBC19735C6BE3FFB6333549">
+          <id>tableLayout302CFEC40DBC19735C6BE3FFB6333549</id>
+          <Items>
+            <formArea sid="formAreaAD16858FF23243A049C2940213C9EBEC">
+              <id>formAreaAD16858FF23243A049C2940213C9EBEC</id>
+              <border>true</border>
+              <labelBackColor>#f5f5f5</labelBackColor>
+              <formTableBorder>false</formTableBorder>
+              <cellpadding>2</cellpadding>
+              <borderStyle>solid</borderStyle>
+              <readOnlyBorder>true</readOnlyBorder>
+              <cellpaddingRead>2</cellpaddingRead>
+              <cellpaddingDisplay>2</cellpaddingDisplay>
+              <colSpan>2</colSpan>
+              <synTabHeight>true</synTabHeight>
+              <Items>
+                <faFieldSet sid="faFieldSet65337">
+                  <id>faFieldSet65337</id>
+                  <fieldSetName>静态树</fieldSetName>
+                  <colNum>1</colNum>
+                  <formTableBorder />
+                  <readOnlyBorder />
+                  <displayBorder />
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTree sid="faTree40C6BFADE4DB132331031BA0B419E27B">
+                      <id>faTree40C6BFADE4DB132331031BA0B419E27B</id>
+                      <expandTree>true</expandTree>
+                      <height>0</height>
+                      <value>node31</value>
+                      <label>弹出-单选</label>
+                      <Items>
+                        <treeMenu sid="treeMenu38D620DA23837B8F48210397B1812FF2">
+                          <id>treeMenu38D620DA23837B8F48210397B1812FF2</id>
+                          <text>1</text>
+                          <icon>/artery/arteryConsole/complib/images/addcomp.gif</icon>
+                          <Items>
+                            <treeNode sid="treeNodeE5D09C267DC9A311E30E3CCA1638E173">
+                              <id>node1</id>
+                              <text>1.1</text>
+                            </treeNode>
+                          </Items>
+                        </treeMenu>
+                        <treeNode sid="treeNodeC221CACD70B22DE7A326ACF7A150B888">
+                          <id>node2d</id>
+                          <text>2</text>
+                        </treeNode>
+                        <treeMenu sid="treeMenu4C3689C9B9955AF7A1A11C4B3BA827E3">
+                          <id>treeMenu4C3689C9B9955AF7A1A11C4B3BA827E3</id>
+                          <text>3</text>
+                          <Items>
+                            <treeNode sid="treeNodeBF864288BF305814DFCA16D4341F6FC0">
+                              <id>node31d</id>
+                              <text>3.1</text>
+                            </treeNode>
+                            <treeMenu sid="treeMenuBF0B995CBE7981770681061BA801423B">
+                              <id>treeMenuBF0B995CBE7981770681061BA801423B</id>
+                              <text>3.2</text>
+                              <Items>
+                                <treeNode sid="treeNodeEA9C24B85DC69ECA1DB3B9ECDACA9253">
+                                  <id>node321</id>
+                                  <text>3.2.1</text>
+                                </treeNode>
+                              </Items>
+                            </treeMenu>
+                          </Items>
+                        </treeMenu>
+                      </Items>
+                    </faTree>
+                    <faTree sid="faTreeD59560C92C8BC158023A74C403DBC28B">
+                      <id>faTreeD59560C92C8BC158023A74C403DBC28B</id>
+                      <editor>mTree</editor>
+                      <expandTree>true</expandTree>
+                      <height>0</height>
+                      <value>node11,node2,node31</value>
+                      <label>弹出-多选</label>
+                      <Items>
+                        <treeMenu sid="treeMenu5101E0F3B3D400DECD86CBB86DFBAE4B">
+                          <id>treeMenu5101E0F3B3D400DECD86CBB86DFBAE4B</id>
+                          <text>1</text>
+                          <Items>
+                            <treeNode sid="treeNode53241CD386814302D21C6904F82C08A2">
+                              <id>node11</id>
+                              <text>1.1</text>
+                            </treeNode>
+                          </Items>
+                        </treeMenu>
+                        <treeNode sid="treeNodeDA03A02FA398DEBF94CDF11F719B42A5">
+                          <id>node2</id>
+                          <text>2</text>
+                        </treeNode>
+                        <treeMenu sid="treeMenu2A18EEC5C875CC1FE16ADAAAC6ACF696">
+                          <id>treeMenu2A18EEC5C875CC1FE16ADAAAC6ACF696</id>
+                          <text>3</text>
+                          <Items>
+                            <treeNode sid="treeNode4D435B72730702380F2D9DE4DDB954CC">
+                              <id>node31</id>
+                              <text>3.1</text>
+                            </treeNode>
+                            <treeMenu sid="treeMenu4A2CFF737A08738FB1000DA95EB557E7">
+                              <id>treeMenu4A2CFF737A08738FB1000DA95EB557E7</id>
+                              <text>3.2</text>
+                              <Items>
+                                <treeNode sid="treeNode861D80673059756A78A201246054DE11">
+                                  <id>treeNode861D80673059756A78A201246054DE11</id>
+                                  <text>3.2.1</text>
+                                </treeNode>
+                              </Items>
+                            </treeMenu>
+                          </Items>
+                        </treeMenu>
+                      </Items>
+                    </faTree>
+                    <faTree sid="faTree5B612">
+                      <id>faTree5B612</id>
+                      <showType>window</showType>
+                      <label>窗口-单选</label>
+                      <Items>
+                        <treeMenu sid="treeMenu0FC78">
+                          <id>treeMenu0FC78</id>
+                          <text>目录1</text>
+                          <showCheck>true</showCheck>
+                          <Items>
+                            <treeNode sid="treeNode4B510">
+                              <id>treeNode4B510</id>
+                              <text>节点11</text>
+                            </treeNode>
+                            <treeNode sid="treeNodeA0D86">
+                              <id>treeNodeA0D86</id>
+                              <text>节点12</text>
+                            </treeNode>
+                          </Items>
+                        </treeMenu>
+                        <treeMenu sid="treeMenu4B02E">
+                          <id>treeMenu4B02E</id>
+                          <text>目录2</text>
+                          <showCheck>true</showCheck>
+                          <Items>
+                            <treeNode sid="treeNode0520F">
+                              <id>treeNode0520F</id>
+                              <text>节点21</text>
+                            </treeNode>
+                            <treeNode sid="treeNode674FB">
+                              <id>treeNode674FB</id>
+                              <text>节点22</text>
+                            </treeNode>
+                          </Items>
+                        </treeMenu>
+                      </Items>
+                    </faTree>
+                    <faTree sid="faTree4949066AEF6F760855DAE8D6937224EF">
+                      <id>faTree4949066AEF6F760855DAE8D6937224EF</id>
+                      <editor>mTree</editor>
+                      <showType>window</showType>
+                      <label>窗口-多选</label>
+                      <Items>
+                        <treeMenu sid="treeMenuF91E6842EC4C4BFBDAB86AE1BC758FFE">
+                          <id>treeMenuF91E6842EC4C4BFBDAB86AE1BC758FFE</id>
+                          <text>目录1</text>
+                          <showCheck>true</showCheck>
+                          <Items>
+                            <treeNode sid="treeNodeD24CB62F0B20A9F644E060058235E765">
+                              <id>treeNodeD24CB62F0B20A9F644E060058235E765</id>
+                              <text>节点11</text>
+                            </treeNode>
+                            <treeNode sid="treeNode44A21F3BDA4F38BA9F018D8A179FB015">
+                              <id>treeNode44A21F3BDA4F38BA9F018D8A179FB015</id>
+                              <text>节点12</text>
+                            </treeNode>
+                          </Items>
+                        </treeMenu>
+                        <treeMenu sid="treeMenuDF5039CE7C15A98B3E0EEC181A9E8AAE">
+                          <id>treeMenuDF5039CE7C15A98B3E0EEC181A9E8AAE</id>
+                          <text>目录2</text>
+                          <showCheck>true</showCheck>
+                          <Items>
+                            <treeNode sid="treeNodeFACCEA58BA407B14143117D29B084FB1">
+                              <id>treeNodeFACCEA58BA407B14143117D29B084FB1</id>
+                              <text>节点21</text>
+                            </treeNode>
+                            <treeNode sid="treeNode43D9CC08A6F8D4448E3BBB0C174D26BB">
+                              <id>treeNode43D9CC08A6F8D4448E3BBB0C174D26BB</id>
+                              <text>节点22</text>
+                            </treeNode>
+                          </Items>
+                        </treeMenu>
+                      </Items>
+                    </faTree>
+                    <faTree sid="faTree6E8358B95FAECF857CA5E7338A7941CA">
+                      <id>faTree6E8358B95FAECF857CA5E7338A7941CA</id>
+                      <editor>mTree</editor>
+                      <minLayerWidth>250</minLayerWidth>
+                      <cascade>true</cascade>
+                      <expandTree>true</expandTree>
+                      <label>弹出-级联</label>
+                      <Items>
+                        <treeMenu sid="treeMenu1842818EE68BD9E5F0C804D232FF3794">
+                          <id>treeMenu1842818EE68BD9E5F0C804D232FF3794</id>
+                          <text>目录1</text>
+                          <showCheck>true</showCheck>
+                          <Items>
+                            <treeNode sid="treeNode4E9607C628ABBD341A989A1A7E8B618E">
+                              <id>treeNode4E9607C628ABBD341A989A1A7E8B618E</id>
+                              <text>节点11</text>
+                            </treeNode>
+                            <treeNode sid="treeNodeCBD15740BE37DB7AEEBB775021B9AC91">
+                              <id>treeNodeCBD15740BE37DB7AEEBB775021B9AC91</id>
+                              <text>节点12</text>
+                            </treeNode>
+                          </Items>
+                        </treeMenu>
+                        <treeMenu sid="treeMenu16852FB21A921311E967723AFEF67C2B">
+                          <id>treeMenu16852FB21A921311E967723AFEF67C2B</id>
+                          <text>目录2</text>
+                          <showCheck>true</showCheck>
+                          <Items>
+                            <treeNode sid="treeNodeEBC1EB769E008A415A757538BAC98BE4">
+                              <id>treeNodeEBC1EB769E008A415A757538BAC98BE4</id>
+                              <text>节点21</text>
+                            </treeNode>
+                            <treeNode sid="treeNodeBBDFBF55E38348D15E7065CA21B8B99F">
+                              <id>treeNodeBBDFBF55E38348D15E7065CA21B8B99F</id>
+                              <text>节点22</text>
+                            </treeNode>
+                          </Items>
+                        </treeMenu>
+                      </Items>
+                    </faTree>
+                  </Items>
+                </faFieldSet>
+                <faFieldSet sid="faFieldSet351B5">
+                  <id>faFieldSet351B5</id>
+                  <fieldSetName>动态树</fieldSetName>
+                  <colNum>1</colNum>
+                  <formTableBorder />
+                  <readOnlyBorder />
+                  <displayBorder />
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faTree sid="faTree3F015CCF957E667DF4CDA9467E132665">
+                      <id>faTree_1</id>
+                      <height>0</height>
+                      <value>-1</value>
+                      <onBeforeLoad><![CDATA[faTree_1_onBeforeLoad]]></onBeforeLoad>
+                      <label>弹出-单选</label>
+                      <Items>
+                        <treeDynamic sid="treeDynamicFB8AEE33A5F02C4D5472A1DA7C2D410C">
+                          <id>treeDynamic_1</id>
+                          <onLoadTree><![CDATA[treeDynamic_1_onLoadTree]]></onLoadTree>
+                          <onNodeDetail><![CDATA[treeDynamic_1_onNodeDetail]]></onNodeDetail>
+                        </treeDynamic>
+                      </Items>
+                    </faTree>
+                    <faTree sid="faTree86ED4C564276D6A0EBCAA89210FA2DDC">
+                      <id>faTree86ED4C564276D6A0EBCAA89210FA2DDC</id>
+                      <editor>mTree</editor>
+                      <height>0</height>
+                      <label>弹出-多选</label>
+                      <Items>
+                        <treeDynamic sid="treeDynamic803EE75473D1709C0936FF6F80EBB9DD">
+                          <id>treeDynamic_2</id>
+                          <onLoadTree><![CDATA[treeDynamic_2_onLoadTree]]></onLoadTree>
+                        </treeDynamic>
+                      </Items>
+                    </faTree>
+                    <faTree sid="faTreeE8E0812820DD7F3716E45DC6BCEAA5AB">
+                      <id>faTreeE8E0812820DD7F3716E45DC6BCEAA5AB</id>
+                      <showType>window</showType>
+                      <showFilter>true</showFilter>
+                      <height>0</height>
+                      <label>窗口-单选</label>
+                      <Items>
+                        <treeDynamic sid="treeDynamic11A901221060B18DE72EBA887247611D">
+                          <id>treeDynamic_3</id>
+                          <onLoadTree><![CDATA[treeDynamic_3_onLoadTree]]></onLoadTree>
+                        </treeDynamic>
+                      </Items>
+                    </faTree>
+                    <faTree sid="faTreeD1F88077C4A7B9ACC898632B0F99AAA4">
+                      <id>faTreeD1F88077C4A7B9ACC898632B0F99AAA4</id>
+                      <editor>mTree</editor>
+                      <showType>window</showType>
+                      <height>0</height>
+                      <label>窗口-多选</label>
+                      <Items>
+                        <treeDynamic sid="treeDynamicB9EF935040A6DE2C5516F1664079B650">
+                          <id>treeDynamic_4</id>
+                          <onLoadTree><![CDATA[treeDynamic_4_onLoadTree]]></onLoadTree>
+                        </treeDynamic>
+                      </Items>
+                    </faTree>
+                    <faTree sid="faTree64493C14AE82E2291773D0453B5BEEC8">
+                      <id>faTree64493C14AE82E2291773D0453B5BEEC8</id>
+                      <editor>mTree</editor>
+                      <showFilter>true</showFilter>
+                      <height>0</height>
+                      <label>过滤</label>
+                      <Items>
+                        <treeDynamic sid="treeDynamicED018158B0B9D4BB921667212B27B087">
+                          <id>treeDynamic_5</id>
+                          <onLoadTree><![CDATA[treeDynamic_5_onLoadTree]]></onLoadTree>
+                        </treeDynamic>
+                      </Items>
+                    </faTree>
+                  </Items>
+                </faFieldSet>
+              </Items>
+            </formArea>
+            <treeArea sid="treeAreaC26D7576B29FD799B44EFEBCD72D4431">
+              <id>tree1</id>
+              <selType>checkbox</selType>
+              <expandTree>true</expandTree>
+              <value>11</value>
+              <height>200</height>
+              <border>true</border>
+              <Items>
+                <treeMenu sid="treeMenu7F5C5F9613D3DFB8D0A4AB81DCF9114C">
+                  <id>treeMenu7F5C5F9613D3DFB8D0A4AB81DCF9114C</id>
+                  <text>1</text>
+                  <icon>/artery/arteryConsole/complib/images/addcomp.gif</icon>
+                  <Items>
+                    <treeNode sid="treeNode6D3E670BB8EFF9059EC57B0E2D4AAE1E">
+                      <id>11</id>
+                      <text>1.1</text>
+                    </treeNode>
+                    <treeNode sid="treeNode8169B6ACF0D128708990E88377F19416">
+                      <id>12</id>
+                      <text>1.2</text>
+                    </treeNode>
+                  </Items>
+                </treeMenu>
+                <treeMenu sid="treeMenu280614162EC6818A76AEF97633CBEB26">
+                  <id>treeMenu280614162EC6818A76AEF97633CBEB26</id>
+                  <text>2</text>
+                  <Items>
+                    <treeNode sid="treeNode7FCA3075E8C285F945D4684EE69F4B13">
+                      <id>21</id>
+                      <text>2.1</text>
+                    </treeNode>
+                  </Items>
+                </treeMenu>
+              </Items>
+            </treeArea>
+            <treeArea sid="treeArea63626DE787BCEB99D802339FBA6A9080">
+              <id>treeArea63626DE787BCEB99D802339FBA6A9080</id>
+              <selType>radio</selType>
+              <value>7</value>
+              <height>200</height>
+              <border>true</border>
+              <Items>
+                <treeDynamic sid="treeDynamic5D6799368EBCEF578C5EE53708D1E3CC">
+                  <id>treeDynamic_6</id>
+                  <onLoadTree><![CDATA[treeDynamic_6_onLoadTree]]></onLoadTree>
+                </treeDynamic>
+              </Items>
+            </treeArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

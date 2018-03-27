@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>16f34c39f2d52c178ba69fc743a28328</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.valid.Tjbdym.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/valid/Tjbdym.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form2d140">
+      <id>form2d140</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <treeArea sid="91c57d41a2480acee9097df1b7b7e77d">
+          <id>treeAreaff5cb</id>
+          <selType>checkbox</selType>
+          <line>false</line>
+          <useArrows>true</useArrows>
+          <bodyStyle>background-color:transparent;</bodyStyle>
+          <themeStyle>orange</themeStyle>
+          <Items>
+            <treeDynamic sid="9fad5aca6cbb15367ae16db4a9b35264">
+              <id>complibDynamicNode</id>
+              <onBeforeLoad>complibDynamicNode_onBeforeLoad</onBeforeLoad>
+              <onLoadTree><![CDATA[complibDynamicNode_onLoadTree]]></onLoadTree>
+            </treeDynamic>
+          </Items>
+        </treeArea>
+        <footer sid="93f575ce2350b9efb8fa9b691ba9d0b9">
+          <id>footer78a17</id>
+          <buttonAlign>left</buttonAlign>
+          <Items>
+            <button sid="fe877662babedca50ee829662e27cf0a">
+              <id>saveBtn</id>
+              <text>确定</text>
+              <onClickClient><![CDATA[saveBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[saveBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <simpleButton sid="03a8b17229ba0ef4ec0a6e8877d6ff83">
+              <id>cancelBtn</id>
+              <text>取消</text>
+              <onClickClient><![CDATA[cancelBtn_onClickClient]]></onClickClient>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+</form>
+

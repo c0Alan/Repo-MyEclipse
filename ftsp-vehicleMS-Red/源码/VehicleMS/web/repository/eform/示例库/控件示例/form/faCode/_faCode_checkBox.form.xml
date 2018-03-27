@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>a48b336a34f8a2bd2b6d57e31ca99bfd</id>
+  <configTable />
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_faCode_checkbox.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <background-color>#ffffff</background-color>
+      <Items>
+        <topbar sid="Ad709835ce4f5f4fd8fa80d3a231ee731">
+          <id>Ad709835ce4f5f4fd8fa80d3a231ee731</id>
+          <Items>
+            <tbButton sid="A5b081a22dba44466951d2c504286037f">
+              <id>button_check1</id>
+              <text>check1的值</text>
+              <onClickClient><![CDATA[button_check1_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="A5b3cbd731eeb9391b76780abd93925db">
+              <id>button_check2</id>
+              <text>check2的值</text>
+              <onClickClient><![CDATA[button_check2_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="Acb702a6072ae7bfeeb2af877c66daf13">
+              <id>button_check3</id>
+              <text>check3的值</text>
+              <onClickClient><![CDATA[button_check3_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="A5a21b78b81b89fe0a432a36924d5c278">
+              <id>button_check4</id>
+              <text>check4的值</text>
+              <onClickClient><![CDATA[button_check4_onClickClient]]></onClickClient>
+            </tbButton>
+          </Items>
+        </topbar>
+        <formArea sid="Ab259ca3c4813733cbf149d963a68aaf3">
+          <id>Ab259ca3c4813733cbf149d963a68aaf3</id>
+          <width>500</width>
+          <colNum>3</colNum>
+          <colWidths>50,200</colWidths>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <formTableBorder>false</formTableBorder>
+          <cellpadding>5</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <faFieldSet sid="DE04F8FEA81DEC990974BCF602A594F8">
+              <id>9876E8F4F95593078BEC2E79000DEDAD</id>
+              <fieldSetName>Group One</fieldSetName>
+              <colNum>3</colNum>
+              <colWidths>50,200</colWidths>
+              <formTableBorder />
+              <readOnlyBorder />
+              <displayBorder />
+              <colSpan>3</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <htmlArea sid="A6667ffcbabb782307198c42e0f9b1dd6">
+                  <id>A6667ffcbabb782307198c42e0f9b1dd6</id>
+                  <value>&lt;P align=center&gt;&lt;STRONG&gt;&amp;nbsp;选择&lt;/STRONG&gt;&lt;/P&gt;</value>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <htmlArea sid="A776b2dc22532b94270622f58b0d25e66">
+                  <id>A776b2dc22532b94270622f58b0d25e66</id>
+                  <value>&lt;P align=center&gt;&lt;STRONG&gt;人员&lt;/STRONG&gt;&lt;/P&gt;</value>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <htmlArea sid="A12b49e69e026fa3056c21dd77ab5a4f1">
+                  <id>A12b49e69e026fa3056c21dd77ab5a4f1</id>
+                  <value>&lt;P align=center&gt;&lt;STRONG&gt;类型&lt;/STRONG&gt;&lt;/P&gt;</value>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <faCode sid="Aca29a549fb233fa3adf653e2d6de7871">
+                  <id>check2</id>
+                  <editor>checkbox</editor>
+                  <height>0</height>
+                  <ajaxLoad>false</ajaxLoad>
+                  <editable>true</editable>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faCode>
+                <faString sid="A228dc991568bbd3c6424a44fe8ad64d3">
+                  <id>A228dc991568bbd3c6424a44fe8ad64d3</id>
+                  <height>0</height>
+                  <value>类型1</value>
+                  <displayType>readOnly</displayType>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faString>
+                <faOrgan sid="A4c55094c2500228e44af46348d7593eb">
+                  <id>A4c55094c2500228e44af46348d7593eb</id>
+                  <showType>window</showType>
+                  <height>0</height>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faOrgan>
+                <faCode sid="Af415f8b283c7d1ad7c0d0730eafb6475">
+                  <id>check4</id>
+                  <editor>checkbox</editor>
+                  <height>0</height>
+                  <ajaxLoad>false</ajaxLoad>
+                  <editable>true</editable>
+                  <value>0</value>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faCode>
+                <faString sid="Aec8004ef772b39d427435170a1c72088">
+                  <id>Aec8004ef772b39d427435170a1c72088</id>
+                  <height>0</height>
+                  <value>类型3</value>
+                  <displayType>readOnly</displayType>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faString>
+                <faOrgan sid="A0842de40a68516510cac830fb4f530f9">
+                  <id>A0842de40a68516510cac830fb4f530f9</id>
+                  <showType>window</showType>
+                  <height>0</height>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faOrgan>
+                <faCode sid="A4555425ec934304cc92b85b68ca314df">
+                  <id>check1</id>
+                  <editor>checkbox</editor>
+                  <height>0</height>
+                  <ajaxLoad>false</ajaxLoad>
+                  <editable>true</editable>
+                  <value>1</value>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faCode>
+                <faString sid="A4684046b5fdb70556b616687d15f59dd">
+                  <id>A4684046b5fdb70556b616687d15f59dd</id>
+                  <height>0</height>
+                  <value>类型2</value>
+                  <displayType>readOnly</displayType>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faString>
+                <faOrgan sid="A48241e36af84d0536bd6507221722143">
+                  <id>A48241e36af84d0536bd6507221722143</id>
+                  <showType>window</showType>
+                  <height>0</height>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faOrgan>
+                <faCode sid="A88d76caba4c011f928d90dc66225650e">
+                  <id>check3</id>
+                  <editor>checkbox</editor>
+                  <height>0</height>
+                  <ajaxLoad>false</ajaxLoad>
+                  <editable>true</editable>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faCode>
+                <faString sid="Ad18255a251b7524c87918780a546da16">
+                  <id>Ad18255a251b7524c87918780a546da16</id>
+                  <height>0</height>
+                  <value>类型4</value>
+                  <displayType>readOnly</displayType>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faString>
+                <faOrgan sid="A5e030c666d6449dc162d53effbbda237">
+                  <id>A5e030c666d6449dc162d53effbbda237</id>
+                  <showType>window</showType>
+                  <height>0</height>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                </faOrgan>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

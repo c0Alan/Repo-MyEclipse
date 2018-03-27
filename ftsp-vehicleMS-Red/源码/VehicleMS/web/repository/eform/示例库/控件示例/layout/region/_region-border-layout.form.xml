@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>C8C3CA581DD94B2263590436D13DF1DF</id>
+  <cfgTbl />
+  <helpID />
+  <creator>-1</creator>
+  <makeRight>3</makeRight>
+  <visitRight />
+  <logicClass />
+  <descript>​</descript>
+  <needLogin>0</needLogin>
+  <Item type="form" sid="formDAD99">
+    <Properties>
+      <Property name="xtype">
+        <Value>apform</Value>
+      </Property>
+      <Property name="id">
+        <Value>formDAD99</Value>
+      </Property>
+      <Property name="loadAllJs">
+        <Value>false</Value>
+      </Property>
+      <Property name="title">
+        <Value />
+      </Property>
+      <Property name="width">
+        <Value>100%</Value>
+      </Property>
+      <Property name="height">
+        <Value>100%</Value>
+      </Property>
+      <Property name="background-color">
+        <Value />
+      </Property>
+      <Property name="text-align">
+        <Value>center</Value>
+      </Property>
+      <Property name="theme">
+        <Value />
+      </Property>
+      <Property name="bodyStyle">
+        <Value />
+      </Property>
+      <Property name="style">
+        <Value />
+      </Property>
+      <Property name="importFile">
+        <Value />
+      </Property>
+      <Property name="onLoad">
+        <Value />
+      </Property>
+      <Property name="pubScript">
+        <Value />
+      </Property>
+      <Property name="show">
+        <Value>true</Value>
+      </Property>
+      <Property name="onShow">
+        <Value />
+      </Property>
+    </Properties>
+    <Items>
+      <Item type="upRegion" sid="upRegion477D3">
+        <Properties>
+          <Property name="xtype">
+            <Value>apBasePanel</Value>
+          </Property>
+          <Property name="id">
+            <Value>upRegion477D3</Value>
+          </Property>
+          <Property name="collapsible">
+            <Value>true</Value>
+          </Property>
+          <Property name="collapsed">
+            <Value>false</Value>
+          </Property>
+          <Property name="split">
+            <Value>true</Value>
+          </Property>
+          <Property name="height">
+            <Value>60</Value>
+          </Property>
+          <Property name="border">
+            <Value>true</Value>
+          </Property>
+          <Property name="isFixScroll">
+            <Value>false</Value>
+          </Property>
+          <Property name="bodyStyle">
+            <Value />
+          </Property>
+          <Property name="style">
+            <Value />
+          </Property>
+          <Property name="show">
+            <Value>true</Value>
+          </Property>
+          <Property name="onShow">
+            <Value />
+          </Property>
+        </Properties>
+        <Items>
+          <Item type="header" sid="header21842">
+            <Properties>
+              <Property name="id">
+                <Value>header21842</Value>
+              </Property>
+              <Property name="text">
+                <Value>上布局</Value>
+              </Property>
+              <Property name="headerStyle">
+                <Value />
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+          </Item>
+        </Items>
+      </Item>
+      <Item type="leftRegion" sid="leftRegion1B47F">
+        <Properties>
+          <Property name="xtype">
+            <Value>apBasePanel</Value>
+          </Property>
+          <Property name="id">
+            <Value>leftRegion1B47F</Value>
+          </Property>
+          <Property name="collapsible">
+            <Value>true</Value>
+          </Property>
+          <Property name="collapsed">
+            <Value>false</Value>
+          </Property>
+          <Property name="split">
+            <Value>true</Value>
+          </Property>
+          <Property name="width">
+            <Value>150</Value>
+          </Property>
+          <Property name="border">
+            <Value>true</Value>
+          </Property>
+          <Property name="isFixScroll">
+            <Value>false</Value>
+          </Property>
+          <Property name="bodyStyle">
+            <Value />
+          </Property>
+          <Property name="style">
+            <Value />
+          </Property>
+          <Property name="show">
+            <Value>true</Value>
+          </Property>
+          <Property name="onShow">
+            <Value />
+          </Property>
+        </Properties>
+        <Items>
+          <Item type="header" sid="headerA503B">
+            <Properties>
+              <Property name="id">
+                <Value>headerA503B</Value>
+              </Property>
+              <Property name="text">
+                <Value>左布局</Value>
+              </Property>
+              <Property name="headerStyle">
+                <Value />
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+          </Item>
+        </Items>
+      </Item>
+      <Item type="downRegion" sid="downRegionD8C0C">
+        <Properties>
+          <Property name="xtype">
+            <Value>apBasePanel</Value>
+          </Property>
+          <Property name="id">
+            <Value>downRegionD8C0C</Value>
+          </Property>
+          <Property name="collapsible">
+            <Value>false</Value>
+          </Property>
+          <Property name="collapsed">
+            <Value>false</Value>
+          </Property>
+          <Property name="split">
+            <Value>true</Value>
+          </Property>
+          <Property name="height">
+            <Value>60</Value>
+          </Property>
+          <Property name="border">
+            <Value>true</Value>
+          </Property>
+          <Property name="isFixScroll">
+            <Value>false</Value>
+          </Property>
+          <Property name="bodyStyle">
+            <Value />
+          </Property>
+          <Property name="style">
+            <Value />
+          </Property>
+          <Property name="show">
+            <Value>true</Value>
+          </Property>
+          <Property name="onShow">
+            <Value />
+          </Property>
+        </Properties>
+      </Item>
+      <Item type="rightRegion" sid="rightRegion544C0">
+        <Properties>
+          <Property name="xtype">
+            <Value>apBasePanel</Value>
+          </Property>
+          <Property name="id">
+            <Value>rightRegion544C0</Value>
+          </Property>
+          <Property name="collapsible">
+            <Value>false</Value>
+          </Property>
+          <Property name="collapsed">
+            <Value>false</Value>
+          </Property>
+          <Property name="split">
+            <Value>true</Value>
+          </Property>
+          <Property name="width">
+            <Value>150</Value>
+          </Property>
+          <Property name="border">
+            <Value>true</Value>
+          </Property>
+          <Property name="isFixScroll">
+            <Value>false</Value>
+          </Property>
+          <Property name="bodyStyle">
+            <Value />
+          </Property>
+          <Property name="style">
+            <Value />
+          </Property>
+          <Property name="show">
+            <Value>true</Value>
+          </Property>
+          <Property name="onShow">
+            <Value />
+          </Property>
+        </Properties>
+      </Item>
+      <Item type="centerRegion" sid="centerRegion7BD80">
+        <Properties>
+          <Property name="xtype">
+            <Value>apBasePanel</Value>
+          </Property>
+          <Property name="id">
+            <Value>centerRegion7BD80</Value>
+          </Property>
+          <Property name="border">
+            <Value>true</Value>
+          </Property>
+          <Property name="isFixScroll">
+            <Value>false</Value>
+          </Property>
+          <Property name="bodyStyle">
+            <Value />
+          </Property>
+          <Property name="style">
+            <Value />
+          </Property>
+          <Property name="show">
+            <Value>true</Value>
+          </Property>
+          <Property name="onShow">
+            <Value />
+          </Property>
+        </Properties>
+        <Items>
+          <Item type="leftRegion" sid="leftRegionD6C47">
+            <Properties>
+              <Property name="xtype">
+                <Value>apBasePanel</Value>
+              </Property>
+              <Property name="id">
+                <Value>leftRegionD6C47</Value>
+              </Property>
+              <Property name="collapsible">
+                <Value>false</Value>
+              </Property>
+              <Property name="collapsed">
+                <Value>false</Value>
+              </Property>
+              <Property name="split">
+                <Value>true</Value>
+              </Property>
+              <Property name="width">
+                <Value>150</Value>
+              </Property>
+              <Property name="border">
+                <Value>true</Value>
+              </Property>
+              <Property name="isFixScroll">
+                <Value>false</Value>
+              </Property>
+              <Property name="bodyStyle">
+                <Value />
+              </Property>
+              <Property name="style">
+                <Value />
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+          </Item>
+          <Item type="centerRegion" sid="centerRegion23EEE">
+            <Properties>
+              <Property name="xtype">
+                <Value>apBasePanel</Value>
+              </Property>
+              <Property name="id">
+                <Value>centerRegion23EEE</Value>
+              </Property>
+              <Property name="border">
+                <Value>true</Value>
+              </Property>
+              <Property name="isFixScroll">
+                <Value>false</Value>
+              </Property>
+              <Property name="bodyStyle">
+                <Value />
+              </Property>
+              <Property name="style">
+                <Value />
+              </Property>
+              <Property name="show">
+                <Value>true</Value>
+              </Property>
+              <Property name="onShow">
+                <Value />
+              </Property>
+            </Properties>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

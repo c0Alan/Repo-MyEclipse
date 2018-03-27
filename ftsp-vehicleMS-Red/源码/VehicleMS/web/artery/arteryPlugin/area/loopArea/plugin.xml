@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="loopArea" cn="循环区域" jsType="artery-base"
+	icon="loopArea.gif" iconNew="loopAreaNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-11-16</CreateTime>
+		<Describe>
+		<![CDATA[
+			循环区域用来根据一个集合循环生成控件。<br>
+			循环区域有一个数据源属性，此属性对应数据源的结果应该为一个可迭代的对象，如Collection的子类，系统会迭代这个集合中的每一条记录，循环来生成此控件中的子控件<br>
+			<h2>1.控件特性：</h2>
+			<ul class="x-ul">
+			 <li class="x-li">可添加到任何容器中，理论上可以对任何组件进行循环控制</li>
+			 <li class="x-li">支持数据源，数据结构</li>
+			 <li class="x-li">支持嵌套，支持EL表达式取值，并可通过标签中的条件进行多个数据源关联</li>
+			 <li class="x-li">循环生成的控件支持原有事件，并且事件的服务器端会对应到原控件的服务器端执行</li>
+			</ul>
+			可生成动态的菜单，动态的按钮，动态的不规则的列表等等<br>
+			<img src="loopArea/info1.jpg"></img>
+			<h2>2.得到当前数据及元信息</h2>
+				1.得到当前循环的数据<br>
+				在循环控件循环时，可通过如下方法来获得当前正在解析的数据<br>
+				<span style="color:blue;">Object dataRow = DataSetManager.getCurrentData();</span><br>
+				Artery中数据源默认查询出的结果是List+Map，即此时的dataRow对象是map对象，如果是自己生成的结果集则转成需要的类型即可。<br>
+				 <br>
+				2.得到当前循环的元数据信息<br>
+				 有时候我们需要判断当前循环的位置，如index，总循环个数，是不是第一个元素，最后一个元素等信息，我们可通过如下方式获得<br>
+				<span style="color:blue;"> DataMeta meta = DataSetManager.getCurrentDataMeta();</span>
+		]]>
+		</Describe>
+
+	</Info>
+	<Parents/>
+	<Children/>
+	<Class>com.thunisoft.artery.plugin.area.LoopArea
+	</Class>
+	<JsFile>
+		<File>loopArea.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apLoopArea</Value>
+		</Property>
+		<Property cn="虚拟控件" type="11" name="virtualItem" isHidden="1" export="false" cfg="true">
+			<Value>true</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="ds"
+			tips="设置关联到的数据源名称,系统会根据此属性执行加载数据...">
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="动态数据" type="14" name="dynamicData" tips="循环区域加载的数据可以由此脚本生成，如果写了此脚本，则会用此数据展现，不会再去加载数据源中的数据。">
+			<Value />
+		</Property>
+	</Properties>
+	<JavaFunctions>
+		<JavaFunction name="dynamicData"><![CDATA[/**
+ * 动态数据
+ * 
+ * @param item
+ *            控件对象
+ * @return Object
+ */
+public Object {methodName}(Item item) {
+	return null;
+}]]></JavaFunction>
+	</JavaFunctions>
+</Item>
+

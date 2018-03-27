@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>30d23b66e72bd908ec7feb89b255ed11</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._listArea_color.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_listArea_color.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form15e8a">
+      <id>form15e8a</id>
+      <Items>
+        <listArea sid="ef4a3e7e74083c9cda03d81f64c4965c">
+          <id>listArea8bc83</id>
+          <ds>rs1</ds>
+          <highLightRule><![CDATA[listArea8bc83_highLightRule]]></highLightRule>
+          <Items>
+            <columnString sid="cbe5f97280f431a3e46754c7364af259">
+              <id>columnStringCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+            </columnString>
+            <columnString sid="5c210979f1415cee7d8bf9d4c4da14f1">
+              <id>columnStringCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+            </columnString>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

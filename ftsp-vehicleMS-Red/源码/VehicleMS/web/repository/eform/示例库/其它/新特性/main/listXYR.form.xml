@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>8d5174455d228b966410a95d75b6be2c</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.main.ListNavRR.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/main/ListNavRR.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <background-color>#D3DDF9</background-color>
+      <Items>
+        <blankPanel sid="344566e01b0d574ef194c764133f633d">
+          <id>blankPanel39a8c</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <header sid="23c8f00140d2701ec910c9cea6588037">
+              <id>header9d205</id>
+              <text />
+              <Items>
+                <blankPanel sid="8756c7f0cbe8006e16aa3d859ca64801">
+                  <id>blankPanelf2ae6</id>
+                  <Items>
+                    <buttonArea sid="2aeaeb5795d6c8e8c850a79771953c9c">
+                      <id>buttonArea881c0</id>
+                      <style>padding:6px;padding-bottom:3px;</style>
+                      <Items>
+                        <simpleButton sid="6ed78b1c73c4597eaddb6ae2f27675f7">
+                          <id>simpleButton6c511</id>
+                          <text>案件中心</text>
+                          <style>color:#4463AC;</style>
+                        </simpleButton>
+                        <blankPanel sid="08a6acc6b252668b38c10599ad2d2854">
+                          <id>blankPanel5ecdf</id>
+                          <Items>
+                            <htmlArea sid="c0d9c7c7ef5fbf43b00ee15c81400947">
+                              <id>htmlArea59c35</id>
+                              <value>-&gt;</value>
+                            </htmlArea>
+                          </Items>
+                        </blankPanel>
+                        <simpleButton sid="afaeecb4a10ffb7ff59778d5d06520c0">
+                          <id>simpleButton6ec72</id>
+                          <text>审查变更</text>
+                          <style>color:#4463AC;</style>
+                        </simpleButton>
+                        <blankPanel sid="b4dd37dfc3dff3f4206d5e6a906d5b3f">
+                          <id>blankPanel695df</id>
+                          <Items>
+                            <htmlArea sid="995f331f7388a1808f72c586ee780fd7">
+                              <id>htmlArea08249</id>
+                              <value>-&gt; 在办案件</value>
+                            </htmlArea>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+            <topbar sid="1331c4bbd565739fbd92751128f4017a">
+              <id>topbar96532</id>
+              <Items>
+                <formArea sid="94d94e59bbd2ce7ada2df007102805a3">
+                  <id>formAreaecddf</id>
+                  <width>200</width>
+                  <cellpadding>2</cellpadding>
+                  <cellpaddingRead>2</cellpaddingRead>
+                  <cellpaddingDisplay>2</cellpaddingDisplay>
+                  <Items>
+                    <faString sid="e0d47a0e67e450afb92afebc61f1eda5">
+                      <id>faStringb11b0</id>
+                      <width>210</width>
+                      <emptyText>请输入嫌疑人、案由、案号关键字</emptyText>
+                      <displayType>editable</displayType>
+                      <hideLabel>true</hideLabel>
+                    </faString>
+                    <buttonArea sid="555048270507e7cde7b9aed76cd36954">
+                      <id>buttonArea94cc8</id>
+                      <hideLabel>true</hideLabel>
+                      <Items>
+                        <button sid="609c9d191101f335de2a542284785dfe">
+                          <id>buttonb82e2</id>
+                          <text>查找</text>
+                          <icon>/artery/arteryImage/file/viewlog.gif</icon>
+                          <themeStyle>cookie</themeStyle>
+                        </button>
+                        <button sid="21764ab2b5490eaa2aaadb491322503c">
+                          <id>button6a95a</id>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </formArea>
+                <tbFill sid="c676f1f17d8050e8fe7afabb0d391fa3">
+                  <id>tbFilld23f0</id>
+                </tbFill>
+                <blankPanel sid="69458b69026573efbcdd12e4e2ef2a68">
+                  <id>blankPanelb05b9</id>
+                  <Items>
+                    <htmlArea sid="2d51748e8bcb41bdeeda6e69b8830947">
+                      <id>htmlAreae3030</id>
+                      <value>共&lt;b&gt;35&lt;/b&gt;个案件，当前显示&lt;b&gt;1-10&lt;/b&gt;个</value>
+                      <style>text-align:right;padding-right:10px;color:#3C5DA6;</style>
+                    </htmlArea>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="b11d733c824304bedae34f3d8f614a9f">
+                  <id>blankPanel366a1</id>
+                  <Items>
+                    <pagingbar1 sid="624530a58475e5ca2fc5257bc299e141">
+                      <id>pagingbar1a49b2</id>
+                      <ds>rs1</ds>
+                      <pageCount>5</pageCount>
+                    </pagingbar1>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </topbar>
+            <footer sid="7caf7f533638a28b3943f0475c8d3dd4">
+              <id>footer9108f</id>
+              <show>false</show>
+              <Items>
+                <blankPanel sid="a09169e8572eb852fa89927800373d51">
+                  <id>blankPanelda358</id>
+                  <Items>
+                    <tableLayout sid="220a6bf7e99c7aa879f68ca0ca4b452a">
+                      <id>tableLayout9ab44</id>
+                      <colNum>4</colNum>
+                      <Items>
+                        <formArea sid="4878555aa7ed68623af80d6143551274">
+                          <id>formAreaf194e</id>
+                          <width>100</width>
+                          <colNum>1</colNum>
+                          <Items>
+                            <faCode sid="dc8551c98710ddf3d691487d5b588e63">
+                              <id>faCode023ef</id>
+                              <width>120</width>
+                              <value>10</value>
+                              <displayType>editable</displayType>
+                              <hideLabel>true</hideLabel>
+                            </faCode>
+                          </Items>
+                        </formArea>
+                        <buttonArea sid="600e994a5faf33f0906a34c335d4b417">
+                          <id>buttonAreac8dec</id>
+                          <Items>
+                            <simpleButton sid="eac835dcc3503e4896a28119ce0d24ca">
+                              <id>simpleButton79229</id>
+                              <text>导出Excel</text>
+                              <icon>/artery/arteryImage/file/excel.gif</icon>
+                              <style>color:#4463AC;text-decoration: none;</style>
+                            </simpleButton>
+                          </Items>
+                        </buttonArea>
+                        <htmlArea sid="e999b327f0aa216baa9e0d9be53f8484">
+                          <id>htmlArea6f35a</id>
+                          <value>共&lt;b&gt;35&lt;/b&gt;个案件，当前显示&lt;b&gt;1-10&lt;/b&gt;个</value>
+                          <style>text-align:right;padding-right:10px;color:#3C5DA6;</style>
+                          <synTabStyle>width:100%;</synTabStyle>
+                        </htmlArea>
+                        <pagingbar1 sid="8a15f7e0ef82d4d70522e2e0696848c9">
+                          <id>pagingbar170fc3</id>
+                          <ds>rs1</ds>
+                          <pageCount>5</pageCount>
+                        </pagingbar1>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </footer>
+            <listArea sid="552162ca729bfbaf146c493ba7b272dd">
+              <id>listAreab834c</id>
+              <ds>rs1</ds>
+              <height>100%</height>
+              <rowClickSelect>false</rowClickSelect>
+              <stripeRows>false</stripeRows>
+              <isPageSplit>false</isPageSplit>
+              <isShowRowNumber>false</isShowRowNumber>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <column sid="5a496dd637a2875d467008f9ab902364">
+                  <id>columnXyrId</id>
+                  <dataName>{rs1.xyrid}</dataName>
+                  <isOnlyData>true</isOnlyData>
+                </column>
+                <column sid="19ba7ed2f712b42a96a477922197f899">
+                  <id>column614c2</id>
+                  <dataName>{rs1.ajlb}</dataName>
+                  <title>类别 / 来源</title>
+                  <width>40</width>
+                  <htmlEncode>false</htmlEncode>
+                  <Items>
+                    <columnMenu sid="adc7ecd59e17d6781eaee5cc578e2ce7">
+                      <id>columnMenucfb9d</id>
+                      <Items>
+                        <tbMenuItem sid="1623b5dbed22893f45d3f83d0ef86c01">
+                          <id>tbMenuItemfefc7</id>
+                          <text>案件类别正序</text>
+                          <icon>/artery/arteryImage/arrow/up1.gif</icon>
+                        </tbMenuItem>
+                        <tbMenuItem sid="f30dc2fc2699f332cc620baef5689705">
+                          <id>tbMenuItemf60e2</id>
+                          <text>案件类别倒序</text>
+                          <icon>/artery/arteryImage/arrow/down1.gif</icon>
+                        </tbMenuItem>
+                        <tbSeparator sid="b9195412f551578992913587e3d3604b">
+                          <id>tbSeparator9cb00</id>
+                        </tbSeparator>
+                        <tbMenuItem sid="34b09e66288c4d8df0b07127b53cc5e7">
+                          <id>tbMenuItem9c088</id>
+                          <text>案件来源正序</text>
+                          <icon>/artery/arteryImage/arrow/up1.gif</icon>
+                        </tbMenuItem>
+                        <tbMenuItem sid="1b0e3b44771e656ae1a0cde73ea970ca">
+                          <id>tbMenuItem64850</id>
+                          <text>案件来源倒序</text>
+                          <icon>/artery/arteryImage/arrow/down1.gif</icon>
+                        </tbMenuItem>
+                        <tbSeparator sid="7751155c10c4ae21ca66392c270643af">
+                          <id>tbSeparator969c6</id>
+                        </tbSeparator>
+                        <tbMenuItem sid="6c6300f712aac7f8a88c9f7e6f92f91a">
+                          <id>tbMenuItem5d2d2</id>
+                          <text>只显示交(督)办案件</text>
+                        </tbMenuItem>
+                      </Items>
+                    </columnMenu>
+                  </Items>
+                </column>
+                <column sid="c29a83eb17c21d5e9f495b80edf0f6ff">
+                  <id>columnec3b8</id>
+                  <dataName>{rs1.sl}</dataName>
+                  <title>审限</title>
+                  <width>30</width>
+                  <htmlEncode>false</htmlEncode>
+                </column>
+                <column sid="44a4708c7961c19c851641817a42efbd">
+                  <id>column56051</id>
+                  <dataName>{rs1.xyr}</dataName>
+                  <title>嫌疑人 / 案由</title>
+                  <width>80</width>
+                  <htmlEncode>false</htmlEncode>
+                  <mustColStyle>true</mustColStyle>
+                </column>
+                <column sid="d46c706714c907498131d3cdb6501be2">
+                  <id>columnde0c4</id>
+                  <dataName>{rs1.ah}</dataName>
+                  <title>案号</title>
+                  <width>80</width>
+                  <isOrderBy>true</isOrderBy>
+                </column>
+                <column sid="34ad8b86d3105b4647eb1f21c8b4978d">
+                  <id>column09d92</id>
+                  <dataName>{rs1.cbr}</dataName>
+                  <title>承办人</title>
+                  <width>30</width>
+                  <isOrderBy>true</isOrderBy>
+                </column>
+                <column sid="8c7e0b38fbfffc2e79457c22ebdd3b46">
+                  <id>column35080</id>
+                  <dataName>{rs1.xryid}</dataName>
+                  <isOnlyData>true</isOnlyData>
+                </column>
+                <column sid="16c8cfbc8d49b249e90c356215fc9546">
+                  <id>column28cb4</id>
+                  <title>操作</title>
+                  <mustColStyle>true</mustColStyle>
+                  <Items>
+                    <blankPanel sid="be2718d9b4dd5ba7e19272dd07fed152">
+                      <id>blankPanela275c</id>
+                      <Items>
+                        <buttonArea sid="6ab3b80bbf8b8a1ac2748a5f6c0c1092">
+                          <id>buttonArea05447</id>
+                          <Items>
+                            <button sid="eca56806959018970a79b3973f2e2504">
+                              <id>button98425</id>
+                              <text>详情</text>
+                              <className>x-btn-detail</className>
+                              <themeStyle>cookieLike</themeStyle>
+                            </button>
+                            <button sid="2107d19bd49c47b430c406b83752557c">
+                              <id>buttonc958c</id>
+                              <text>删除</text>
+                              <themeStyle>cookieLike</themeStyle>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </column>
+                <blankPanel sid="15ff845b2e8a049c95bcd15536653823">
+                  <id>blankPanel6ed38</id>
+                  <style>padding:5px;padding-left:15px;</style>
+                  <className>bg-blue-arrow</className>
+                  <hidden>true</hidden>
+                  <Items>
+                    <tableLayout sid="70a4c947d0d5d45b4b38f177724cc32f">
+                      <id>tableLayout1d15e</id>
+                      <Items>
+                        <buttonArea sid="078eac026e0edd40d0c2b36c7730ec77">
+                          <id>buttonArea5ab85</id>
+                          <spacing>10</spacing>
+                          <toggle>true</toggle>
+                          <themeStyle>simple</themeStyle>
+                          <Items>
+                            <simpleButton sid="dc29d4e02fa0537fdf3f6d2f60fc7717">
+                              <id>simpleButton5e082</id>
+                              <text>基本信息</text>
+                              <pressed>true</pressed>
+                            </simpleButton>
+                            <blankPanel sid="0a68c774eed5f4944e9f0046aa741f0b">
+                              <id>blankPanel3131a</id>
+                              <bodyStyle>border-left:1px solid #3C5DA6;</bodyStyle>
+                            </blankPanel>
+                            <simpleButton sid="7dcb92b372d64ab7594b544ad668c0f8">
+                              <id>simpleButton63dad</id>
+                              <text>强制措施</text>
+                              <className>x-btn-qzcs</className>
+                            </simpleButton>
+                            <blankPanel sid="e56c450b99444743a4de76340226394e">
+                              <id>blankPanel328f2</id>
+                              <bodyStyle>border-left:1px solid #3C5DA6;</bodyStyle>
+                            </blankPanel>
+                            <simpleButton sid="51caf4030d3cc7aec8ba095264ce2378">
+                              <id>simpleButton25a07</id>
+                              <text>审结信息</text>
+                            </simpleButton>
+                          </Items>
+                        </buttonArea>
+                        <buttonArea sid="ce50d9166cfad2a88f5b71f42563f0fe">
+                          <id>buttonArea23284</id>
+                          <align>right</align>
+                          <Items>
+                            <button sid="47174d62f76723f8847c840451b9f5e1">
+                              <id>button098fe</id>
+                              <text>修改</text>
+                              <linkto>{"formId":"2256f97e1d33958569ddd059c9e2115a","formName":"form3","formType":"1","params":{},"target":"_window","targetWidth":"500","targetHeight":"300","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <className>x-btn-modify</className>
+                              <themeStyle>cookie</themeStyle>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </tableLayout>
+                    <blankPanel sid="9d21d6eaf8793eab6fc8cd0b1143995f">
+                      <id>blankPanel33c22</id>
+                      <bodyStyle>padding-top:10px;</bodyStyle>
+                      <Items>
+                        <htmlArea sid="a17835571b23ccd4f2a5f5ebed6a8763">
+                          <id>htmlAreaf3def</id>
+                          <value>内容简介&#xD;
+&#xD;
+一个人彻悟的程度，恰等于他所受痛苦的深度。&#xD;
+《国学拾遗》包括儒家：仁者爱人、道家：大道无形和佛家：无生无灭三部分。&#xD;
+“仁”，或真人性，在道德感的形式上，是以人的内心和外在的宇宙的道德相和谐为基础。当这个“真义”实现时，便“天地位焉，万物育焉”。这就是儒家的哲学基础。&#xD;
+道家哲学和儒家哲学的涵义，一个代表消极的人生观，一个代表积极的人生观，那么，我相信这两种哲学不仅是中国人有之，而也是人类天性所固有的东西。&#xD;
+我们大家都是生就一半道家主义，一半儒家主义。</value>
+                          <convert2html>true</convert2html>
+                        </htmlArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </listArea>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="f037790a19b2d65e0f1e5d7eabc1e13b">
+          <id>blankPanel14050</id>
+          <show>false</show>
+          <Items>
+            <listArea sid="0b200d11b0f2c06859e0ddbac0d94c0a">
+              <id>listArea79e72</id>
+              <ds>rs2</ds>
+              <height />
+              <pageCount>5</pageCount>
+              <Items>
+                <columnString sid="952e4320e8650574098fd1c0b23a1e36">
+                  <id>columnString42e26</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs2.C_NAME}</dataName>
+                  <title>图书名称</title>
+                  <isOrderBy>true</isOrderBy>
+                </columnString>
+                <columnString sid="46494ff328a1b4c2cb5766831809626a">
+                  <id>columnString40ba0</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_AUTH</inheritfld>
+                  <dataName>{rs2.C_AUTH}</dataName>
+                  <title>作者</title>
+                  <isOrderBy>true</isOrderBy>
+                </columnString>
+                <columnString sid="ab6dfd843931a0891c9c9446c2508d2b">
+                  <id>columnStringd6dc2</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_PUBLISHER</inheritfld>
+                  <dataName>{rs2.C_PUBLISHER}</dataName>
+                  <title>出版社</title>
+                </columnString>
+                <column sid="8d3cb6c21c7d8e7b13a1a8eb67a25c38">
+                  <id>column601be</id>
+                  <title>操作</title>
+                  <mustColStyle>true</mustColStyle>
+                  <Items>
+                    <blankPanel sid="6e15ec679dfea4bfa5e0272510a3878e">
+                      <id>blankPanelddb9c</id>
+                      <Items>
+                        <buttonArea sid="2f50d86811b17614f82010d54f104d5e">
+                          <id>buttonAreaa39d6</id>
+                          <Items>
+                            <button sid="5a7b07114e12d89e685e3c70e27cb75f">
+                              <id>button0156b</id>
+                              <width>150</width>
+                              <text>修改（{rs2.C_NAME}）</text>
+                              <themeStyle>cat</themeStyle>
+                            </button>
+                            <button sid="839d7b8c3f446be4159a01c50ff873d4">
+                              <id>button1204e</id>
+                              <text>修改</text>
+                              <linkto>{"formId":"5f6320825c11f59e30c5f80f3a91214f","formName":"form4","formType":"1","params":{"bookId":"{rs2.C_ID}","listAreaId":"{item(listArea79e72).id}"},"target":"_window","targetWidth":"","targetHeight":"","runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <themeStyle>cookie</themeStyle>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </column>
+              </Items>
+            </listArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">SELECT&#xD;
+	T_Eg_Book.C_ID,&#xD;
+    T_Eg_Book.C_NAME,&#xD;
+    T_Eg_Book.C_AUTH,&#xD;
+    T_Eg_Book.C_PUBLISHER&#xD;
+FROM&#xD;
+    T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>b36500051612c98eb0440dff4fc01a36</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.button._simpleButton.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/button/_simpleButton.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form58209">
+      <id>form58209</id>
+      <text-align>left</text-align>
+      <Items>
+        <tableLayout sid="418e1d855058323a877fa4ff1a2e3d72">
+          <id>tableLayout4b58b</id>
+          <colNum>1</colNum>
+          <colSpacing>10</colSpacing>
+          <width>1000</width>
+          <style>padding:10px;</style>
+          <Items>
+            <fieldSet sid="55ebc950ab8da3e09d8e925dc97f999a">
+              <id>fieldSet56063</id>
+              <fieldSetName>简单按钮常用设置</fieldSetName>
+              <Items>
+                <buttonArea sid="ae65d30f8a888074ced904b4f102500e">
+                  <id>buttonArea49e47</id>
+                  <spacing>20</spacing>
+                  <Items>
+                    <simpleButton sid="f3ac604a3470adcbf6ce84858dd56dc2">
+                      <id>simpleButtonba6f3</id>
+                      <text>默认简单按钮</text>
+                    </simpleButton>
+                    <simpleButton sid="1214952c7dd7c3d14441a713024e8d57">
+                      <id>simpleButton642f6</id>
+                      <text>带图标按钮</text>
+                      <icon>/artery/arteryImage/organ/user_12.gif</icon>
+                    </simpleButton>
+                    <simpleButton sid="f06912b8ecce86093201c97dd8ca2b06">
+                      <id>simpleButton737b6</id>
+                      <text>不显示下划线</text>
+                      <underline>false</underline>
+                    </simpleButton>
+                    <simpleButton sid="3997cd0d6b417487df72f89cb7932f9e">
+                      <id>simpleButtonc025c</id>
+                      <text>无效按钮</text>
+                      <disabled>true</disabled>
+                    </simpleButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </fieldSet>
+            <fieldSet sid="3dc4b111a328e3c3052434731baca8e2">
+              <id>fieldSetf742d</id>
+              <fieldSetName>简单按钮常用方法</fieldSetName>
+              <Items>
+                <tableLayout sid="7a902fdd2c73f9180eae5b0e64267a07">
+                  <id>tableLayout035a6</id>
+                  <colNum>1</colNum>
+                  <Items>
+                    <buttonArea sid="fd29532f5058896496abecf5e6f34eee">
+                      <id>buttonArea8dae6</id>
+                      <height>50</height>
+                      <align>center</align>
+                      <Items>
+                        <simpleButton sid="82613b01afd71325ca39df838321dedc">
+                          <id>simpleButton3489f</id>
+                          <text>预览示例</text>
+                          <icon>/artery/arteryImage/symbol/star_red.gif</icon>
+                          <onClickClient><![CDATA[simpleButton3489f_onClickClient]]></onClickClient>
+                        </simpleButton>
+                      </Items>
+                    </buttonArea>
+                    <buttonArea sid="35d569b933cee07d4cb48f23e5698c1a">
+                      <id>buttonArea54fc7</id>
+                      <align>center</align>
+                      <spacing>20</spacing>
+                      <Items>
+                        <simpleButton sid="b0010a22c3b4237577f22c27ffb88b86">
+                          <id>simpleButton3f71a</id>
+                          <text>setText</text>
+                          <onClickClient><![CDATA[simpleButton3f71a_onClickClient]]></onClickClient>
+                        </simpleButton>
+                        <simpleButton sid="6f2bb081b0e46e00c900e0c9c74d5f93">
+                          <id>simpleButton6b482</id>
+                          <text>hideIcon</text>
+                          <onClickClient><![CDATA[simpleButton6b482_onClickClient]]></onClickClient>
+                        </simpleButton>
+                        <simpleButton sid="cbbfaf388c0de4b5269e4b958d4aba2f">
+                          <id>simpleButton5939c</id>
+                          <text>showIcon</text>
+                          <onClickClient><![CDATA[simpleButton5939c_onClickClient]]></onClickClient>
+                        </simpleButton>
+                        <simpleButton sid="f6e8ad4bebfe3df90598f5ea3b8e08ac">
+                          <id>simpleButtona3b84</id>
+                          <text>setIcon</text>
+                          <onClickClient><![CDATA[simpleButtona3b84_onClickClient]]></onClickClient>
+                        </simpleButton>
+                        <simpleButton sid="d8ea49ad85e443d7c7ca014ef7d40644">
+                          <id>simpleButton7fb13</id>
+                          <text>click</text>
+                          <onClickClient><![CDATA[simpleButton7fb13_onClickClient]]></onClickClient>
+                        </simpleButton>
+                        <simpleButton sid="65aff061b537a3b2c5c81a5300082d68">
+                          <id>simpleButton93445</id>
+                          <text>hide</text>
+                          <onClickClient><![CDATA[simpleButton93445_onClickClient]]></onClickClient>
+                        </simpleButton>
+                        <simpleButton sid="c9ecc2fc82cae50070acfbda55a66900">
+                          <id>simpleButton73df3</id>
+                          <text>show</text>
+                          <onClickClient><![CDATA[simpleButton73df3_onClickClient]]></onClickClient>
+                        </simpleButton>
+                        <simpleButton sid="f7e48ebf1e26f828b6ddb07b0f14f883">
+                          <id>simpleButton2f50c</id>
+                          <text>disable</text>
+                          <onClickClient><![CDATA[simpleButton2f50c_onClickClient]]></onClickClient>
+                        </simpleButton>
+                        <simpleButton sid="18416720e1961ad857b955043fb75528">
+                          <id>simpleButtona6ddc</id>
+                          <text>enable</text>
+                          <onClickClient><![CDATA[simpleButtona6ddc_onClickClient]]></onClickClient>
+                        </simpleButton>
+                        <simpleButton sid="53a186abe744f5be18a229de6bb0dc78">
+                          <id>simpleButton58e1b</id>
+                          <text>setTooltip</text>
+                          <onClickClient><![CDATA[simpleButton58e1b_onClickClient]]></onClickClient>
+                        </simpleButton>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </fieldSet>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

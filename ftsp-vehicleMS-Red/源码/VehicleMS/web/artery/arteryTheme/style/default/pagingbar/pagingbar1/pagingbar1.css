@@ -1,0 +1,52 @@
+.x-pagingbar1-wrap{
+	padding: 0 3px;
+	white-space: nowrap;
+	
+}
+.x-pagingbar1-wrap .x-pagingbar-pageInfo{
+	color: #3C5DA6;
+	padding:3px;
+	height: 100%;
+	vertical-align: bottom;
+	white-space: nowrap;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.x-pagingbar1-wrap .x-pagingbar-pageInfo .x-pagingbar-pageInfo-text{
+	font-weight: 700;
+}
+.x-pagingbar1-num{
+	padding:2px;
+	padding-bottom:6px;
+	padding-left: 5x;
+	padding-right: 5px;
+	height: 100%;
+	color:#3F5CA5;
+	cursor: pointer;
+	vertical-align: bottom;
+	white-space: nowrap;
+	text-decoration: underline;
+}
+.x-pagingbar1-num-current{
+	color: #4EB600;
+	text-decoration: none;
+	font-weight: 700;
+	cursor: default;
+}
+.x-pagingbar1-prePage,.x-pagingbar1-nextPage,.x-pagingbar1-firstPage,.x-pagingbar1-lastPage{
+	height: 100%;
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+.x-pagingbar1-prePage,.x-pagingbar1-num{
+	margin-right: 3px;
+}
+
+.x-pagingbar-disable{
+}
+.x-pagingbar1-firstPage {
+	padding-right : 5px;
+}
+.x-pagingbar1-lastPage {
+	padding-left : 5px;
+}

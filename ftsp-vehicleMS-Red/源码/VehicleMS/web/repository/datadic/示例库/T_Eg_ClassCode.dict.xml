@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+  <cid>5fa7a3ef4a15378c921a47d3f6e1f3e9</cid>
+  <dbName>T_Eg_ClassCode</dbName>
+  <showName>分级代码示例（案由）</showName>
+  <desc />
+  <fields>
+    <field>
+      <cid>2c2db395ff9dea1b54bb73a600b93aa4</cid>
+      <fieldName>N_ID</fieldName>
+      <showName>标识</showName>
+      <fieldType>1</fieldType>
+      <pk>1</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_number_length" />
+        <property name="field_number_max" />
+        <property name="field_number_showtype" />
+        <property name="field_number_precision" />
+        <property name="field_number_min" />
+      </properties>
+    </field>
+    <field>
+      <cid>1a79e91722f097da0cc11f1f709240f2</cid>
+      <fieldName>N_PID</fieldName>
+      <showName>父标识</showName>
+      <fieldType>1</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue>0</defaultValue>
+      <note />
+      <properties>
+        <property name="field_number_length" />
+        <property name="field_number_max" />
+        <property name="field_number_showtype" />
+        <property name="field_number_precision" />
+        <property name="field_number_min" />
+      </properties>
+    </field>
+    <field>
+      <cid>11d2a680e5cad04c5dae2458b5cc17e8</cid>
+      <fieldName>C_Name</fieldName>
+      <showName>名称</showName>
+      <fieldType>2</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_text_length" />
+        <property name="field_text_allownull">2</property>
+        <property name="field_text_openmask">2</property>
+      </properties>
+    </field>
+    <field>
+      <cid>5aee496573a52524ff1d69cf2b8ab200</cid>
+      <fieldName>C_FBDM</fieldName>
+      <showName>法标代码</showName>
+      <fieldType>2</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>1</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_text_length" />
+        <property name="field_text_allownull">2</property>
+        <property name="field_text_openmask">2</property>
+      </properties>
+    </field>
+    <field>
+      <cid>136e879010794765ae5a9b8f2b66b9dd</cid>
+      <fieldName>N_SFYAYXJ</fieldName>
+      <showName>是否有案由细节</showName>
+      <fieldType>5</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue>0</defaultValue>
+      <note />
+      <properties>
+        <property name="field_code_type">-1</property>
+        <property name="field_code_selecttype">1</property>
+      </properties>
+    </field>
+    <field>
+      <cid>955d2fb46f21017c72d45dc85bc62b73</cid>
+      <fieldName>N_Type</fieldName>
+      <showName>类型</showName>
+      <fieldType>1</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>1</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_number_length" />
+        <property name="field_number_max" />
+        <property name="field_number_showtype" />
+        <property name="field_number_precision" />
+        <property name="field_number_min" />
+      </properties>
+    </field>
+    <field>
+      <cid>9445e6801325e2e81585c43de9e36eb7</cid>
+      <fieldName>N_Order</fieldName>
+      <showName>显示顺序</showName>
+      <fieldType>1</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>1</empty>
+      <defaultValue>1</defaultValue>
+      <note />
+      <properties>
+        <property name="field_number_length" />
+        <property name="field_number_max" />
+        <property name="field_number_showtype" />
+        <property name="field_number_precision" />
+        <property name="field_number_min" />
+      </properties>
+    </field>
+    <field>
+      <cid>d1980526e5ddc72ad38a8d8aedea83a3</cid>
+      <fieldName>N_Valid</fieldName>
+      <showName>是否有效</showName>
+      <fieldType>5</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue>1</defaultValue>
+      <note />
+      <properties>
+        <property name="field_code_type">-1</property>
+        <property name="field_code_selecttype">1</property>
+      </properties>
+    </field>
+    <field>
+      <cid>87bded19e1f041e8facf9007f8f27caa</cid>
+      <fieldName>N_CanDeath</fieldName>
+      <showName>可否判死刑</showName>
+      <fieldType>5</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue>1</defaultValue>
+      <note />
+      <properties>
+        <property name="field_code_type">-1</property>
+        <property name="field_code_selecttype">1</property>
+      </properties>
+    </field>
+  </fields>
+</table>
+

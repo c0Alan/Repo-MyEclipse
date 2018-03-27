@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ea18b0d643b0f7374ea540cef28ddca2</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation>artery/arteryClient/slk/qt/example/form/sjkjh/Dltcdl.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>A51582fd148e052da52fea266f23c966c</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <formArea sid="A0eda32ede16b0da3367a0ab9783f2bba">
+          <id>formArea</id>
+          <width>90%</width>
+          <colNum>3</colNum>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <cellpadding>5</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <htmlArea sid="e80117a4053a4919694c4f22cb519786">
+              <id>htmlArea71065</id>
+              <value>{ses.username}</value>
+              <width>90%</width>
+              <colSpan extend="true">3</colSpan>
+              <label extend="true">当前登录人</label>
+            </htmlArea>
+            <faString sid="A14e26975f7437cb2e2c6617f5bdc70c5">
+              <id>j_username</id>
+              <required>false</required>
+              <height>0</height>
+              <label extend="true">用户名</label>
+            </faString>
+            <faString sid="A2812370fbcd03a15747411c025a1a5f8">
+              <id>j_password</id>
+              <required>false</required>
+              <height>0</height>
+              <label extend="true">密码</label>
+            </faString>
+            <buttonArea sid="Ae273340347ad63e1d3063f5022b8605e">
+              <id>Ae273340347ad63e1d3063f5022b8605e</id>
+              <hideLabel extend="true">true</hideLabel>
+              <Items>
+                <button sid="A08a52abf7806ae4ab267fab443b045d7">
+                  <id>button_login</id>
+                  <text>登录</text>
+                  <onClickClient><![CDATA[button_login_onClickClient]]></onClickClient>
+                </button>
+                <button sid="Ae06b5fcf3cb83ac1823e338a97b00e42">
+                  <id>button_logout</id>
+                  <text>退出登录</text>
+                  <onClickClient><![CDATA[button_logout_onClickClient]]></onClickClient>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

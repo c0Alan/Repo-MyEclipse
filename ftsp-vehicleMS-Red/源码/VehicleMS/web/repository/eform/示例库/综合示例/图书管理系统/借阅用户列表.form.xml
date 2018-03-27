@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>A3A144CFB32A7900A868CEFB8A34CDC5</id>
+  <cfgTbl>T_Aty_User</cfgTbl>
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.book.JyyhlbLogic.java</javaLocation>
+  <jsLocation>artery/arteryClient/book/jyyhlb.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <listArea sid="Aca3cd417535ce4cd17f861223b6e23e5">
+          <id>listArea</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <height>100%</height>
+          <stripeRows>false</stripeRows>
+          <isStartNew>true</isStartNew>
+          <themeStyle>default</themeStyle>
+          <Items>
+            <column sid="A7e4cc54cd2a7db3b7857f4ef41ef01a7">
+              <id>checkUser</id>
+              <dataName>{rs1.C_ID}</dataName>
+              <editor>radio</editor>
+              <title>选择</title>
+              <width>10</width>
+              <checkedRule><![CDATA[checkUser_checkedRule]]></checkedRule>
+              <disableRule><![CDATA[checkUser_disableRule]]></disableRule>
+            </column>
+            <column sid="Abf20672885a69baf0b5f400aade2a304">
+              <id>lstCName</id>
+              <inherittbl>T_Aty_User</inherittbl>
+              <inheritfld>C_Name</inheritfld>
+              <dataName>{rs1.C_Name}</dataName>
+              <title>用户名</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A1c263acc56201076166743fffd7089a3">
+              <id>lstCLoginID</id>
+              <inherittbl>T_Aty_User</inherittbl>
+              <inheritfld>C_LoginID</inheritfld>
+              <dataName>{rs1.C_LoginID}</dataName>
+              <title>登录id</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A43e42b9e11f8058676a0778ba3bf692d">
+              <id>lstNCORP</id>
+              <inherittbl>T_Aty_User</inherittbl>
+              <inheritfld>N_CORP</inheritfld>
+              <dataName>{ocode([rs1.C_CORP],corp)}</dataName>
+              <title>单位</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Adcd24a0b84ab24efd2caefc2ff2eddff">
+              <id>lstNDEPT</id>
+              <inherittbl>T_Aty_User</inherittbl>
+              <inheritfld>N_DEPT</inheritfld>
+              <dataName>{ocode([rs1.C_DEPT],dept)}</dataName>
+              <title>部门</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+          </Items>
+        </listArea>
+        <footer sid="A91cc98851dc0b562f2331e485c933d6a">
+          <id>A91cc98851dc0b562f2331e485c933d6a</id>
+          <buttonAlign>right</buttonAlign>
+          <Items>
+            <button sid="A66fb940601851ba7808db81aff0829e8">
+              <id>okBtn</id>
+              <text>确定</text>
+              <onClickClient><![CDATA[okBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[okBtn_onClickServer]]></onClickServer>
+              <onShow><![CDATA[okBtn_onShow]]></onShow>
+            </button>
+            <button sid="A10836c380a6c5ab0ed5bbaedb91eeb5f">
+              <id>cancelBtn</id>
+              <text>取消</text>
+              <onClickClient><![CDATA[cancelBtn_onClickClient]]></onClickClient>
+            </button>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="lendUserId" showName="lendUserId" value="" pvalue="" />
+    <param name="bookId" showName="bookId" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Aty_User</ds>
+  </dslist>
+</form>
+

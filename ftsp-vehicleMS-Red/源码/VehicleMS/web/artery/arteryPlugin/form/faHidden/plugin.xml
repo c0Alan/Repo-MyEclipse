@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="faHidden" cn="隐藏类型" menu="输入控件" nameprop="label" icon="faHidden.gif"
+	iconNew="faHiddenNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>Hidden控件，不会面界面上显示出来，其数据只会做为参数来传递
+		</Describe>
+	</Info>
+	<Parents>
+		<Parent type="formArea" />
+		<Parent type="faFieldSet" />
+		<Parent type="faBlankLayout" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.form.FaHidden
+	</Class>
+	<JsFile>
+		<File>faHidden.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="提交名称" type="1" name="submitName"
+			tips="用于设置form提交时本控件的提交名称，也就是input标签的name属性">
+			<Value />
+		</Property>
+		<Property cn="无效时是否提交" type="3" name="submitDisabled" ct="[inherit,true,false]"
+			 tips="设置表单提交的时候，当displayType属性为disabled时是否提交，默认为inherit">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="继承key" type="1" name="inheritkey"
+			tips="继承的数据字典的key，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="继承表" type="1" name="inherittbl"
+			tips="继承的数据字典的表名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="继承字段" type="1" name="inheritfld"
+			tips="继承的数据字典的字段名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="dataName"
+			tips="对应着从数据源中取数据 可写数据源标签 示例：{rs1.C_NAME}">
+			<Value />
+		</Property>
+		<Property cn="值" type="1" name="value" export="true" tips="设置本控件的值">
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+</Item>
+

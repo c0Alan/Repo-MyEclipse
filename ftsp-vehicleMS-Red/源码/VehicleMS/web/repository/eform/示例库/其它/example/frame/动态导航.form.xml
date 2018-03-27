@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>82760fe442ee91255c1286e4743d8a63</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.frame.Dtdh.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/frame/Dtdh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <leftRegion sid="Ad76a7dc35359a0bf456d3520a706f084">
+          <id>Ad76a7dc35359a0bf456d3520a706f084</id>
+          <width>250</width>
+          <Items>
+            <topbar sid="topbarF0441DACF2D049D6D769ED07D80167AB">
+              <id>topbarF0441DACF2D049D6D769ED07D80167AB</id>
+              <Items>
+                <tbButton sid="tbButton3068500D1A949BD75DD4BCDD512424BE">
+                  <id>tbButton_reload</id>
+                  <text>重载节点</text>
+                  <tooltip>重载最后单击节点</tooltip>
+                  <onClickClient><![CDATA[tbButton_reload_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <dynamicNav sid="Acd899f5a0968a60176ab137edf162ef0">
+              <id>daynmic_tree</id>
+              <operAreaId>operarea1</operAreaId>
+              <onLoad><![CDATA[daynmic_tree_onLoad]]></onLoad>
+              <onNodeClickClient><![CDATA[daynmic_tree_onNodeClickClient]]></onNodeClickClient>
+              <animate>true</animate>
+              <expandTree>true</expandTree>
+              <expandLevel>1</expandLevel>
+            </dynamicNav>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="A3145096c3353ab23ed4b77203ca4ec68">
+          <id>A3145096c3353ab23ed4b77203ca4ec68</id>
+          <Items>
+            <operArea sid="A5df6998ba445cb710b21f9ede58af688">
+              <id>operarea1</id>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

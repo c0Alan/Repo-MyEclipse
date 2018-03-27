@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ddcb56dbc1cb00ae8e4b858fb6a1b456</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation>artery/arteryClient/slk/qt/example/other/Tscksl.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <formArea sid="formArea20341FB144AB4FA3272916E6C722DE0F">
+          <id>formArea20341FB144AB4FA3272916E6C722DE0F</id>
+          <width>90%</width>
+          <colNum>1</colNum>
+          <style>padding-top:10px;</style>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <formTableBorder>false</formTableBorder>
+          <cellpadding>1</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <faFieldSet sid="0521D68C4855320A960C33EE7314A569">
+              <id>38F580A6FFA14515F1D0AEA63FE6F440</id>
+              <fieldSetName>弹出窗口</fieldSetName>
+              <colNum>1</colNum>
+              <formTableBorder />
+              <readOnlyBorder />
+              <displayBorder />
+              <hideLabel extend="true">true</hideLabel>
+              <Items>
+                <buttonArea sid="buttonAreaB35FC922ADD238CEDEBCEC3B54423C2E">
+                  <id>buttonAreaB35FC922ADD238CEDEBCEC3B54423C2E</id>
+                  <hideLabel extend="true">true</hideLabel>
+                  <Items>
+                    <button sid="button466C9768EC0CA0BB3A81EFB90B83323A">
+                      <id>button_alert</id>
+                      <text>Alert</text>
+                      <onClickClient><![CDATA[button_alert_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="button9BD3AFECAC52939185B2293BE0DA8AD8">
+                      <id>button_confirm</id>
+                      <text>Confirm</text>
+                      <onClickClient><![CDATA[button_confirm_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="button6F6469C4713742FD6D3562B7257A7205">
+                      <id>button_prompt</id>
+                      <text>Prompt</text>
+                      <onClickClient><![CDATA[button_prompt_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="faFieldSet2A5FB">
+              <id>faFieldSet2A5FB</id>
+              <fieldSetName>系统提示</fieldSetName>
+              <formTableBorder />
+              <readOnlyBorder />
+              <displayBorder />
+              <hideLabel extend="true">true</hideLabel>
+              <Items>
+                <buttonArea sid="buttonArea8737E9208D47095D163AC9C328D9D0E4">
+                  <id>buttonArea8737E9208D47095D163AC9C328D9D0E4</id>
+                  <hideLabel extend="true">true</hideLabel>
+                  <Items>
+                    <button sid="button70A4D997C0877848B10DFBC41C1838DB">
+                      <id>button_message</id>
+                      <text>Message</text>
+                      <onClickClient><![CDATA[button_message_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="buttonC56C28588772724A1AEFD627D1C2A70F">
+                      <id>button_info</id>
+                      <text>Info</text>
+                      <onClickClient><![CDATA[button_info_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="button2D4E68A118ECF64861CC1EA15CFF4238">
+                      <id>button_warning</id>
+                      <text>Warning</text>
+                      <onClickClient><![CDATA[button_warning_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="buttonB3671D64B77A92C635B5C2745FACF54D">
+                      <id>button_error</id>
+                      <text>Error</text>
+                      <onClickClient><![CDATA[button_error_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="button0B16BCE25AFBF490B90CD5E357B8F7E7">
+                      <id>button_loading</id>
+                      <text>Loading</text>
+                      <onClickClient><![CDATA[button_loading_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="buttonA0456BB41E6797B94B1CE759DE6B74DF">
+                      <id>button_loadTrue</id>
+                      <text>LoadTrue</text>
+                      <onClickClient><![CDATA[button_loadTrue_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="buttonBA64BCDAE8D0F600B76A6A96A8C80473">
+                      <id>button_loadFalse</id>
+                      <text>LoadFalse</text>
+                      <onClickClient><![CDATA[button_loadFalse_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="buttonF9808E9BA480654AB1E323461643695D">
+                      <id>button_hide</id>
+                      <text>HideMessage</text>
+                      <onClickClient><![CDATA[button_hide_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

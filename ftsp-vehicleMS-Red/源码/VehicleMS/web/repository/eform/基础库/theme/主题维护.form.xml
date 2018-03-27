@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d7c9bdb1eefaa649de1baa779177de41</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.theme.Ztwh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/theme/Ztwh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formf044e">
+      <id>formf044e</id>
+      <onLoadClient><![CDATA[formf044e_onLoadClient]]></onLoadClient>
+      <onShow><![CDATA[formf044e_onShow]]></onShow>
+      <Items>
+        <topbar sid="1d4a46adc4fff660cbd296d27968be87">
+          <id>topbar30e4c</id>
+          <Items>
+            <tbButton sid="76cb2f69b01668706b761f910203a3bb">
+              <id>saveBtn</id>
+              <text>保存</text>
+              <icon>/artery/arteryImage/file/image005.gif</icon>
+              <onClickClient><![CDATA[saveBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[saveBtn_onClickServer]]></onClickServer>
+            </tbButton>
+            <tbButton sid="591b9b4b93fecefeda88fe2c6141aee7">
+              <id>reloadCacheBtn</id>
+              <text>刷新缓存</text>
+              <icon>/artery/arteryImage/file/refresh.gif</icon>
+              <onClickClient><![CDATA[reloadCacheBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[reloadCacheBtn_onClickServer]]></onClickServer>
+              <show>false</show>
+            </tbButton>
+          </Items>
+        </topbar>
+        <navTabArea sid="65a368fb50f4844eb8b31f3ba3bcf0ba">
+          <id>navTabAreae7c37</id>
+          <height>100%</height>
+          <tabPosition>top</tabPosition>
+          <style>padding-top:4px</style>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <navTabItem sid="597cc74d4919356838f884d043df4184">
+              <id>navTabItemef295</id>
+              <title>主题样式设置</title>
+              <active>true</active>
+              <Items>
+                <blankPanel sid="82ea7e46f16a07e416268cb1cdbbd8a2">
+                  <id>blankPaneld5ab5</id>
+                  <width>100%</width>
+                  <height>100%</height>
+                  <themeStyle>pear</themeStyle>
+                  <bodyContainer>true</bodyContainer>
+                  <Items>
+                    <tableLayout sid="8c2a3ef26a53a4993457409174bdc491">
+                      <id>tableLayout9eb92</id>
+                      <colNum>1</colNum>
+                      <height>100%</height>
+                      <cellpadding>3</cellpadding>
+                      <Items>
+                        <blankPanel sid="69fc5e60eb92b62e2b7b95bf3fc9c266">
+                          <id>blankPanel4657d</id>
+                          <width>100%</width>
+                          <height>50%</height>
+                          <frame>true</frame>
+                          <bodyStyle>padding:3px;</bodyStyle>
+                          <themeStyle>unis</themeStyle>
+                          <synTabHeight>true</synTabHeight>
+                          <Items>
+                            <header sid="506d82e1515aaed2ab83e558d623d978">
+                              <id>headerc81ee</id>
+                              <text>&lt;span style="font-size:14px;padding:3px;"&gt;主题样式选择&lt;/span&gt;</text>
+                            </header>
+                            <imageArea sid="d4da3cde51fe5f5702594d2b038af61e">
+                              <id>themes</id>
+                              <value>{var.themeName}</value>
+                              <Items>
+                                <loopArea sid="dd7aae88c3ffbd27cba24da3539d046e">
+                                  <id>loopArea8d887</id>
+                                  <ds>rs1</ds>
+                                  <Items>
+                                    <imageItem sid="d14681e6635c1a212e86827037eb382e">
+                                      <id>imageItem54002</id>
+                                      <title>{rs1.name}</title>
+                                      <icon>{rs1.img}</icon>
+                                      <imgWidth>160</imgWidth>
+                                      <imgHeight>120</imgHeight>
+                                      <value>{rs1.name}</value>
+                                      <bodyStyle>margin-right:5px;</bodyStyle>
+                                    </imageItem>
+                                  </Items>
+                                </loopArea>
+                              </Items>
+                            </imageArea>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="ab9264432d57c19cb6774a8d5be8724d">
+                          <id>blankPanelfc839</id>
+                          <width>100%</width>
+                          <height>50%</height>
+                          <frame>true</frame>
+                          <themeStyle>unis</themeStyle>
+                          <synTabHeight>true</synTabHeight>
+                          <Items>
+                            <header sid="9a3080ed0e4cdcebec26fdc12d2fe239">
+                              <id>header8ac30</id>
+                              <text>&lt;span style="font-size:14px;padding:3px;"&gt;自定义主题样式CSS&lt;/span&gt;</text>
+                            </header>
+                            <formArea sid="ac9bacb62a3e0825fc517ec8659b3b13">
+                              <id>formAread3651</id>
+                              <height>100%</height>
+                              <colNum>1</colNum>
+                              <tableStyle>height:100%;</tableStyle>
+                              <Items>
+                                <faString sid="05714ef377c3f0b899b1cd5d23415134">
+                                  <id>themeCss</id>
+                                  <editor>textarea</editor>
+                                  <height>100%</height>
+                                  <value>{var.themeCss}</value>
+                                  <hideLabel>true</hideLabel>
+                                </faString>
+                              </Items>
+                            </formArea>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabItem>
+            <navTabItem sid="1e734a80309c665dfdea4672bd20de7c">
+              <id>navTabItem20c70</id>
+              <title>控件默认属性设置</title>
+              <Items>
+                <blankPanel sid="37bc6c63df3a99dc86adf01405691f35">
+                  <id>blankPanel4177a</id>
+                  <width>100%</width>
+                  <height>100%</height>
+                  <frame>true</frame>
+                  <themeStyle>pear</themeStyle>
+                  <bodyContainer>true</bodyContainer>
+                  <Items>
+                    <tableLayout sid="e6ea7bd1a205dbc84595670e71a749d2">
+                      <id>tableLayout8a3d7</id>
+                      <colWidths>250,*</colWidths>
+                      <colSpacing>4</colSpacing>
+                      <height>100%</height>
+                      <Items>
+                        <blankPanel sid="554a726787c2c9251cc961b2db35f70a">
+                          <id>blankPanel0f8c3</id>
+                          <width>100%</width>
+                          <height>100%</height>
+                          <frame>true</frame>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <dynamicNav sid="62b8e61199b0b3015b98b4cdd243e1c8">
+                              <id>plugins</id>
+                              <line>false</line>
+                              <themeStyle>orange</themeStyle>
+                              <useArrows>true</useArrows>
+                              <onLoad><![CDATA[plugins_onLoad]]></onLoad>
+                              <onNodeClickClient><![CDATA[plugins_onNodeClickClient]]></onNodeClickClient>
+                            </dynamicNav>
+                            <footer sid="8f3a31141caafaa32506ce4cca20e4f0">
+                              <id>footer754c5</id>
+                              <spacing>0</spacing>
+                              <show>false</show>
+                              <Items>
+                                <blankPanel sid="d1bfb2237fa02a4ff1933ab77c71f05d">
+                                  <id>blankPanelde00c</id>
+                                  <bodyStyle>padding-top:3px;</bodyStyle>
+                                  <Items>
+                                    <formArea sid="18ee2a7203fd5017807b15be4edc8162">
+                                      <id>formAreaf1cd6</id>
+                                      <colWidths>80% 20%</colWidths>
+                                      <colSpacing>5</colSpacing>
+                                      <onEnter><![CDATA[formAreaf1cd6_onEnter]]></onEnter>
+                                      <cellpadding>0</cellpadding>
+                                      <cellpaddingRead>0</cellpaddingRead>
+                                      <cellpaddingDisplay>0</cellpaddingDisplay>
+                                      <Items>
+                                        <faString sid="4cbe5d32bd8edfc3e9b47673cff7aa8c">
+                                          <id>searchString</id>
+                                          <height>100%</height>
+                                          <emptyText>请输入控件类型</emptyText>
+                                          <displayType>editable</displayType>
+                                          <hideLabel>true</hideLabel>
+                                        </faString>
+                                        <buttonArea sid="11a5240a9536e4dffd892ef37f511f1b">
+                                          <id>buttonArea93bd8</id>
+                                          <hideLabel>true</hideLabel>
+                                          <Items>
+                                            <button sid="b891ba5d5439926a76c078e60e05fe4f">
+                                              <id>searchBtn</id>
+                                              <width>30</width>
+                                              <text>查询</text>
+                                              <onClickClient><![CDATA[searchBtn_onClickClient]]></onClickClient>
+                                              <onClickServer><![CDATA[searchBtn_onClickServer]]></onClickServer>
+                                              <themeStyle>cookie</themeStyle>
+                                              <onShow><![CDATA[searchBtn_onShow]]></onShow>
+                                            </button>
+                                          </Items>
+                                        </buttonArea>
+                                      </Items>
+                                    </formArea>
+                                  </Items>
+                                </blankPanel>
+                              </Items>
+                            </footer>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="ad8109ca3b1fe07af8157bc1bdca7155">
+                          <id>blankPanel8e121</id>
+                          <width>100%</width>
+                          <height>100%</height>
+                          <frame>true</frame>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <header sid="20df765b766153b45acc249f3030cb01">
+                              <id>proheader</id>
+                              <text>&lt;span style="font-size:14px;padding:3px;"&gt;请选择控件&lt;/span&gt;</text>
+                            </header>
+                            <blankPanel sid="40446371cd0b2327d48ca4e288f3bdc7">
+                              <id>blankPanele8920</id>
+                              <width>100%</width>
+                              <height>100%</height>
+                              <themeStyle>pear</themeStyle>
+                              <Items>
+                                <listArea sid="307bb86e4979e7cf9eaf15e5abe1f8ce">
+                                  <id>pluginPros</id>
+                                  <ds>rs2</ds>
+                                  <type>grid</type>
+                                  <height>100%</height>
+                                  <emptyDataTip />
+                                  <isPageSplit>false</isPageSplit>
+                                  <displayInfo>false</displayInfo>
+                                  <isEditor>true</isEditor>
+                                  <highLightRule><![CDATA[pluginPros_highLightRule]]></highLightRule>
+                                  <onLoad><![CDATA[pluginPros_onLoad]]></onLoad>
+                                  <Items>
+                                    <columnString sid="0a6fcebd3d42ee9cb8403d00ee3873e2">
+                                      <id>proName</id>
+                                      <dataName>{rs2.en}</dataName>
+                                      <title>属性名</title>
+                                      <hidden>true</hidden>
+                                    </columnString>
+                                    <columnString sid="c9e3e95a5b3a09840ee71a67eddba9eb">
+                                      <id>proNameCN</id>
+                                      <dataName>{rs2.cn}</dataName>
+                                      <export>false</export>
+                                      <title>属性名称</title>
+                                      <width>150</width>
+                                      <isEditor>false</isEditor>
+                                    </columnString>
+                                    <columnString sid="487a509ad5ea103e9f27b83aad326d17">
+                                      <id>proValue</id>
+                                      <dataName>{rs2.cfgValue}</dataName>
+                                      <title>属性值</title>
+                                      <width>200</width>
+                                      <onChangeClient><![CDATA[proValue_onChangeClient]]></onChangeClient>
+                                    </columnString>
+                                    <columnString sid="1d789bf12130b49f1edc30da27b993ed">
+                                      <id>columnString8f29b</id>
+                                      <dataName>{rs2.defaultValue}</dataName>
+                                      <title>属性默认值</title>
+                                      <width>150</width>
+                                      <isEditor>false</isEditor>
+                                      <rowScript><![CDATA[columnString8f29b_rowScript]]></rowScript>
+                                    </columnString>
+                                  </Items>
+                                </listArea>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabItem>
+          </Items>
+        </navTabArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getThemeList</ds>
+    <ds dsName="dataSource" name="rs2" type="logic">getPropertyList</ds>
+  </dslist>
+</form>
+

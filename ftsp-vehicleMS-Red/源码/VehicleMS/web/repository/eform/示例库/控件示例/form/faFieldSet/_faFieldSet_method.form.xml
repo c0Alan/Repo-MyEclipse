@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>f24ad007868d95f30439b2baf1ed0575</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.faFieldSet._faFieldSet_method.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/faFieldSet/_faFieldSet_method.js</jsLocation>
+  <descript>faFieldSet控件方法示例</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formd57b4">
+      <id>formd57b4</id>
+      <Items>
+        <formArea sid="629dc0c3656d8910d73599ae4bc538d6">
+          <id>formAreab1e49</id>
+          <width>80%</width>
+          <colNum>1</colNum>
+          <Items>
+            <faFieldSet sid="db00357487e7d14578bc2817f5dd5fbc">
+              <id>faFieldSet9d239</id>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faString sid="2ca7af08710cb72c921a1e64177d2178">
+                  <id>faString5f23c</id>
+                  <required>true</required>
+                  <label>字符串控件</label>
+                </faString>
+                <faDate sid="9f9be2a42be3b1c6263bf1477ac3f0eb">
+                  <id>faDatebc836</id>
+                  <value>2011-10-21</value>
+                  <label>日期控件</label>
+                </faDate>
+                <faTime sid="36cca23c20d811c6509dee6803f147e4">
+                  <id>faTime7df75</id>
+                  <value>17:22:33</value>
+                  <label>时间控件</label>
+                </faTime>
+                <faNumeric sid="d5625e578fbcd0870c4fa81dd79882e7">
+                  <id>faNumeric15995</id>
+                  <value>123456</value>
+                  <label>数值控件</label>
+                </faNumeric>
+                <faBinary sid="86889b85b442b0a8a34db05051293254">
+                  <id>faBinary03ad3</id>
+                  <editor>file</editor>
+                  <label>二进制控件</label>
+                </faBinary>
+                <faCode sid="0bd2641062067c13c9fb0e8f4d2f75cd">
+                  <id>faCodefaaeb</id>
+                  <codeType>-1</codeType>
+                  <value>1</value>
+                  <label>代码控件</label>
+                </faCode>
+                <faClassCode sid="9055dce329c8a19ffcdbcaec5887b78c">
+                  <id>faClassCode97ae5</id>
+                  <codeType>T_Eg_ClassCode</codeType>
+                  <value>-1</value>
+                  <label>分级代码控件</label>
+                </faClassCode>
+                <faOrgan sid="f8e28c959c260977b34776a09e2de793">
+                  <id>faOrgan9cc7a</id>
+                  <value>-1</value>
+                  <label>组织机构控件</label>
+                </faOrgan>
+                <faHidden sid="09211c35c19873db0b17a280e0e27f5d">
+                  <id>faHidden90436</id>
+                  <value>隐藏类型</value>
+                  <label>隐藏控件</label>
+                </faHidden>
+                <faTrigger sid="6073a58cbf50d99d130e6b3f8fa63b0f">
+                  <id>faTriggerfe594</id>
+                  <value>trigger控件</value>
+                  <label>trigger控件</label>
+                </faTrigger>
+                <faTree sid="52cfa2a4633d6f6e808cc36224ad2626">
+                  <id>faTree467b2</id>
+                  <value>treeNode6aab1</value>
+                  <label>树控件</label>
+                  <Items>
+                    <treeMenu sid="11e010a3e3cb952473a522b73b2bbfd8">
+                      <id>treeMenue392d</id>
+                      <Items>
+                        <treeNode sid="2ff158468d0179caeee9cd65b7e1ba26">
+                          <id>treeNode6aab1</id>
+                        </treeNode>
+                      </Items>
+                    </treeMenu>
+                    <treeMenu sid="028d4c42fde737078a4ed7a0d811d15e">
+                      <id>treeMenu3b3da</id>
+                      <Items>
+                        <treeNode sid="7e693918e049914fbb068a3c27e3f937">
+                          <id>treeNode5ea51</id>
+                        </treeNode>
+                      </Items>
+                    </treeMenu>
+                  </Items>
+                </faTree>
+                <faIdentity sid="8437544bf2cb37e83c09e3040e977bab">
+                  <id>faIdentity2677b</id>
+                  <label>自动编号控件</label>
+                </faIdentity>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+        <buttonArea sid="d2a0e9bf52736614f093bc6770305d26">
+          <id>buttonAreab3d34</id>
+          <align>center</align>
+          <style>padding-top:10px;</style>
+          <Items>
+            <button sid="bfabee17ac957bfa296f41b3ccf61366">
+              <id>button04a36</id>
+              <text>hide</text>
+              <onClickClient><![CDATA[button04a36_onClickClient]]></onClickClient>
+            </button>
+            <button sid="c4247f0a711f2eb3c6f08af8c5d40387">
+              <id>button25d25</id>
+              <text>show</text>
+              <onClickClient><![CDATA[button25d25_onClickClient]]></onClickClient>
+            </button>
+            <button sid="3305e1ce8db4d0d7064bdc64658c98b3">
+              <id>button04294</id>
+              <text>alignTo</text>
+              <onClickClient><![CDATA[button04294_onClickClient]]></onClickClient>
+            </button>
+            <button sid="027d30a1888f89619d53a0535c192805">
+              <id>buttonfccca</id>
+              <text>center</text>
+              <onClickClient><![CDATA[buttonfccca_onClickClient]]></onClickClient>
+            </button>
+            <button sid="59400491541a6ba64e0efdc3950ac4d6">
+              <id>button19b70</id>
+              <text>readAllSub</text>
+              <onClickClient><![CDATA[button19b70_onClickClient]]></onClickClient>
+            </button>
+            <button sid="ecba07acb87e6ed64e88d70cb44c098a">
+              <id>button49b52</id>
+              <text>editAllSub</text>
+              <onClickClient><![CDATA[button49b52_onClickClient]]></onClickClient>
+            </button>
+            <button sid="046b57031973413ff0626bc8f18b7b58">
+              <id>button11304</id>
+              <text>disableAllSub</text>
+              <onClickClient><![CDATA[button11304_onClickClient]]></onClickClient>
+            </button>
+            <button sid="1b356de8686d913ce597c8ab3dcbdb66">
+              <id>button64b52</id>
+              <text>enableAllSub</text>
+              <onClickClient><![CDATA[button64b52_onClickClient]]></onClickClient>
+            </button>
+          </Items>
+        </buttonArea>
+        <blankPanel sid="e1f02bc296e36400a43c0a0e3e8e2031">
+          <id>blankPanel3ad0c</id>
+          <width>100%</width>
+          <height>200</height>
+          <border>true</border>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

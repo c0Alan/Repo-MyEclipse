@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="tbText" cn="超文本" jsType="artery-base" nameprop="text"
+	icon="tbText.gif" iconNew="tbTextNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>工具栏上的文本，不能点击</Describe>
+	</Info>
+	<Parents>
+		<Parent type="topbar" />
+		<Parent type="bottomBar" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.toolbar.TbText
+	</Class>
+	<JsFile>
+		<File>tbText.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apTbText</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="内容" type="1" name="text" export="true" tips="可写html代码或文本">
+			<Value>text</Value>
+		</Property>
+        <Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+          group="大小" et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+          <Value />
+        </Property>
+        <Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$"
+          group="大小" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+          <Value />
+        </Property>
+        <Property cn="超出以省略号显示" type="11" name="ellipsis" group="样式"
+          tips="设置当内容超出宽度时，是否以省略号显示；默认为false">
+          <Value>false</Value>
+          <Description><![CDATA[
+            <p>设置当内容超出宽度时，是否以省略号显示；默认为false</p>
+            <p>设置为true时，当超出宽度时，以省略号显示</p>
+            <table><tr><td style='text-align:center;font-weight:700'>默认：false</td><td style='text-align:center;font-weight:700'>设置为：true</td></tr><tr><td><img src='../../resources/images/common/form/htmlArea/htmlArea-ellipsis1.png'></td><td><img src='../../resources/images/common/form/htmlArea/htmlArea-ellipsis2.png'></td></tr></table>
+          ]]></Description>
+        </Property>
+		<Property cn="组件样式" type="1" name="style" group="样式"  tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+	      <Value />
+	    </Property>
+        <Property cn="样式名称" type="1" name="className" group="样式"
+          tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+            <Value />
+        </Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="updateText" inherit="false" return="void" tips="更新显示内容">
+			<Parameters>
+				<Param>text:string 更新内容（可以是html片段）,字符串对象</Param>
+			</Parameters>
+		</Method>
+		<Method name="hide"></Method>
+		<Method name="show"></Method>
+	</Methods>
+</Item>
+

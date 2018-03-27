@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>dd04899dc7edb312fd0a4de20a29bf18</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.area._linkItem.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/area/_linkItem.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formf1633">
+      <id>formf1633</id>
+      <Items>
+        <htmlArea sid="44dd2f4b623997a69efeb4ce61197c60">
+          <id>htmlArea0a0dc</id>
+          <value>&lt;br&gt;&#xD;
+&lt;br&gt;&#xD;
+&lt;li&gt;链接控件&lt;li&gt;&#xD;
+&lt;h3&gt;链接控件可链接到其他表单的控件，用于展示，例如在某个表单上建N个公共列表查询，那么在做其他表单时，需要使用其中一项，就可以直接使用链接控件，而不需要重复劳动&lt;/h3&gt;&#xD;
+&lt;br&gt;&#xD;
+&lt;br&gt;</value>
+        </htmlArea>
+        <linkItem sid="87f26ab9325053bb64620c46e1f275f5">
+          <id>linkItem72712</id>
+          <linkItem>{"formId":"546615230686b4fbefed7b97a0818957","formName":"_listArea_search","itemId":"blankPanel281d5","params":{}}</linkItem>
+        </linkItem>
+      </Items>
+    </form>
+  </Item>
+</form>
+

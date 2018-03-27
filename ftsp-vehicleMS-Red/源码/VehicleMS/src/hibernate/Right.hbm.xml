@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.thunisoft.artery.core.right.domain">
+    <class table="T_Aty_Right" name="Right">
+        <id name="rightKey" column="C_RightKey" type="java.lang.String">
+            <generator class="assigned" />
+        </id>
+        <property name="name" column="C_Name"  type="java.lang.String" not-null="true" />
+        <property name="descript" column="C_Descript" type="java.lang.String" />
+        <property name="order" column="N_Order" type="java.lang.Integer" />
+    </class>
+    <class table="T_Aty_Role_Right" name="RoleRight" >
+        <id name="id" column="C_ID" type="java.lang.String">
+            <generator class="com.thunisoft.artery.util.uuid.HibernateIDGenerator" />
+        </id>
+        <property name="roleId" column="C_RoleID" type="java.lang.String" not-null="true" />
+        <property name="rightKey" column="C_RightKey" type="java.lang.String" not-null="true" />
+    </class>
+    <class table="T_Aty_User_Right" name="UserRight">
+        <id name="id" column="C_ID" type="java.lang.String">
+            <generator class="com.thunisoft.artery.util.uuid.HibernateIDGenerator" />
+        </id>
+        <property name="userId" column="C_UserID" type="java.lang.String" />
+        <property name="type" column="N_Type" type="int" not-null="true" />
+        <property name="roleId" column="C_RoleID" type="java.lang.String" />
+        <property name="rightKey" column="C_RightKey" type="java.lang.String" />
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+.preview .x-btn-text{
+    background-image: url(images/preview.gif) !important;
+}
+.save .x-btn-text{
+    background-image: url(images/save.gif) !important;
+}
+.print .x-btn-text{
+    background-image: url(images/print.gif) !important;
+}
+.printsetup .x-btn-text{
+    background-image: url(images/printSetup.gif) !important;
+}

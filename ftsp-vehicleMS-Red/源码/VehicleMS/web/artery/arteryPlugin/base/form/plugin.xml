@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="form" cn="表单模板" jsType="artery-base" icon="form.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>表单的顶层模板</Describe>
+	</Info>
+	<Parents />
+	<Children>
+		<Child type="upRegion" />
+		<Child type="leftRegion" />
+		<Child type="downRegion" />
+		<Child type="rightRegion" />
+		<Child type="centerRegion" />
+		<Child type="htmlArea" />
+		<Child type="treeArea" />
+		<Child type="tabArea" />
+		<Child type="buttonArea" />
+		<Child type="activeX" />
+		<Child type="header" />
+		<Child type="topbar" />
+		<Child type="tableLayout" />
+		<Child type="formArea" />
+		<Child type="listArea" />
+		<Child type="bottomBar" />
+		<Child type="footer" />
+		<Child type="synchTimer" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.base.Form
+	</Class>
+	<JsFile>
+		<File>form.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apform</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="是否加载全部js" type="11" name="loadAllJs"
+			tips="当设置为true时，会加载artery-all.js，否则会根据控件类型判断">
+			<Value>false</Value>
+			<Description>
+				当设置为true时，会加载artery-all.js，否则会根据控件类型判断
+      </Description>
+			<Conditions>
+				因为系统的日期等控件是在顶层页面打开，并依赖于artery-all，如果顶层页面不是artery-all，就会在本页面打开
+			</Conditions>
+		</Property>
+		<Property cn="标题" type="1" name="title"
+			tips="表单的标题,对应着html中的title项,会在浏览器的标题栏显示">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+		</Property>
+		<Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value>100%</Value>
+		</Property>
+		<Property cn="背景色" type="10" name="background-color" tips="设置整个表单的背景色">
+			<Value></Value>
+		</Property>
+		<Property cn="位置" type="3" name="text-align" ct="[left,center,right]"
+			tips="设置表单中内容组件的位置，默认为center，还可选择left，right">
+			<Value>center</Value>
+		</Property>
+		<Property cn="主题样式路径" type="1" name="theme"
+			tips="设置本主题的主题样式，如果进行了设置，则以设置的为主,如果不设置，则使用“系统管理”中设置的主题，目前系统支持除ext外的另2种主题">
+			<Value />
+			<Description>
+        	<![CDATA[
+      	<p>设置本主题的主题样式，如果进行了设置，则以设置的为主,如果不设置，则使用“系统管理”中设置的主题，目前系统支持除ext外的另2种主题</p>
+      	<pre>
+/artery/arteryTheme/theme/classic/xtheme-classic.css
+/artery/arteryTheme/theme/nice/xtheme-nice.css      	
+      	</pre>
+      	 ]]>
+			</Description>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" tips="设置控件的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="引用文件" type="7" name="importFile"
+			tips="设置本表单需要引用的文件，支持js，css，java类，每个是一行，必需以“；”结尾">
+			<Value />
+			<Description>
+      <![CDATA[
+      	设置本表单需要引用的文件，支持js，css，java类，每个是一行，必需以“；”结尾
+      	<pre>
+//java
+import com.thunisoft.artery.xxx;
+import com.thunisoft.test.*;
+
+//js
+/test/test.js;
+
+//css
+/test/test.css;     	
+      	</pre>
+      	 ]]>
+			</Description>
+			<Conditions>
+				<Condition>每个导入的文件为一行，可导入任意多个文件，结尾必须写“；”</Condition>
+				<Condition>导入java必须以import开始，和在类中写法一至</Condition>
+				<Condition>导入js和css不必写ContextPath，直接写web目录下的路径即可</Condition>
+				<Condition>在此处导入的js或类在此表单任何一处脚本均可使用，不用再重复导入</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否修复ocx" type="11" name="ocxFix"
+			tips="当设置为true时，弹窗、提示、下拉框等将不会被按钮、flash等控件遮挡">
+			<Value>false</Value>
+			<Description>
+				当设置为true时，弹窗、提示、下拉框等将不会被按钮、flash等控件遮挡
+            </Description>
+		</Property>
+		<Property cn="客户端" type="15" group="加载时脚本" name="onLoadClient"
+			tips="相当于页面的onload事件，在此脚本中可以得到任何页面对象，此方法只在页面生成时执行一次">
+			<Value />
+			<Description>
+      
+      	<![CDATA[
+      	<p>相当于页面的onload事件，在此脚本中可以得到任何页面对象，此方法只在页面生成时执行一次</p>
+<pre>
+/**
+ * onLoadClient(form5a0ef)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function form5a0ef_onLoadClient (rc){
+	
+}
+
+</pre>
+      		
+      ]]>
+
+			</Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="加载时脚本" name="onLoadServer"
+			tips="当客户端加载时脚本向后台发送请求时可以执行">
+			<Value />
+			<Description>
+    
+      	<![CDATA[
+      	<p>当客户端加载时脚本向后台发送请求时可以执行</p>
+<pre>
+/**
+	 *  表单模板
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public void form5a0ef_pubScript(Item item) {
+	
+	}
+
+}
+
+</pre>
+      		
+      ]]>
+
+			</Description>
+		</Property>
+
+		<Property cn="客户端" type="15" group="关闭时脚本" name="onUnloadClient"
+			tips="相当于页面的body元素的unload事件，此脚本在页面卸载时执行">
+			<Value />
+			<Description>      
+      	<![CDATA[
+      	<p>相当于页面的body元素的unload事件，此脚本在页面卸载时执行，如果需要执行rc.send()的回调函数，需要同步rc，rc.asyn = false;</p>
+<pre>
+/**
+ * onUnloadClient(formd3a25)
+ * 
+ * @param rc
+ *            系统提供的AJAX调用对象
+ */
+function formd3a25_onUnloadClient(rc) {	
+
+}
+</pre>      		
+      ]]>
+			</Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="关闭时脚本" name="onUnloadServer"
+			tips="当客户端页面卸载时脚本向后台发送请求时可以执行">
+			<Value />
+			<Description>    
+      	<![CDATA[
+      	<p>当客户端页面卸载时脚本向后台发送请求时可以执行</p>
+<pre>
+/**
+ * 加载时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object formd3a25_onUnloadServer(Item item) {	
+	
+}
+</pre>      		
+]]>
+			</Description>
+		</Property>
+		<Property cn="宿主脚本" type="14" name="pubScript"
+			tips="可写服务器端的脚本，跟随着组件的生成而执行。不管是正常请求还是Ajax请求，此属性的脚本都会在得到组件时执行，注意与控件的生成时脚本的区别">
+			<Value />
+			<Description>
+      <![CDATA[
+      <p>可写服务器端的脚本，跟随着组件的生成而执行。不管是正常请求还是Ajax请求，此属性的脚本都会在得到组件时执行，注意与控件的生成时脚本的区别</p>
+      <pre>
+/**
+ *  表单模板
+ * 
+ * @param item
+ *            控件对象
+ */
+public void form5a0ef_pubScript(Item item) {
+
+}
+	</pre>
+       ]]>
+			</Description>
+			<Conditions>
+				<Condition>宿主脚本（pubScript）：宿主脚本只存在于表单的顶层节点“表单模板”中，并且会和系统的得到表单的方法一起执行，即系统在后台只要调用得到表单的方法，就会执行宿主脚本。因为不管是第一次http请求，还是ajax请求，后台都会调用得到请求的表单的方法，所以宿主脚本永远都会执行。
+				</Condition>
+				<Condition>
+					生成时脚本（onShow）：每个控件都有生成时脚本，只在页面第一次加载时执行，如上图所示，系统会调用每个控件的onShow脚本执行。当页面再有ajax请求时，onShow脚本不会执行。
+				</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+			<Conditions>
+				<Condition>仅当使用链接到控件链接此控件时，此属性生效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="生成时权限" type="1" name="showRight" tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+			<Conditions>
+				<Condition>仅当使用链接到控件链接此控件时，此属性生效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="参数名称" type="1" name="namedParams" export="true"
+			tips="本控件输入的值为要取值的名称，可通过Artery.getNamedParams()方法来获得，此方法首先会获得请求中的参数，如果没有命中则从页面的控件中获得">
+			<Value></Value>
+			<Description>
+				本控件输入的值为要取值的名称，可通过Artery.getNamedParams()方法来获得，此方法首先会获得请求中的参数，如果没有命中则从页面的控件中获得
+			</Description>
+			<Conditions>
+				<Condition>多个参数间用“，”分隔</Condition>
+			</Conditions>
+		</Property>
+
+	</Properties>
+
+
+	<JavaFunctions>
+		<JavaFunction name="onLoadServer">
+<![CDATA[
+/**
+ * 加载时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onUnloadServer">
+<![CDATA[
+/**
+ * 加载时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>bda4ff88cfbfe3ebe25ce4540bc2bf63</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.right.Drqx.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/right/Drqx.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form5e500">
+      <id>form5e500</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <formArea sid="8464951e91ce1ec9fb01595834b3ee84">
+          <id>formArea1ddde</id>
+          <colNum>1</colNum>
+          <labelAlign>top</labelAlign>
+          <labelWidth>200</labelWidth>
+          <Items>
+            <faBinary sid="e82444d4f1d0c1b2ed6f3980db820e1e">
+              <id>faBinary8e690</id>
+              <submitName>fileName</submitName>
+              <required>true</required>
+              <editor>file</editor>
+              <fileAlign>bottom</fileAlign>
+              <onValidClient>faBinary8e690_onValidClient</onValidClient>
+              <label>请选择要导入的文件</label>
+            </faBinary>
+          </Items>
+        </formArea>
+        <footer sid="2937ea335c67cff422a0dfc002e12f8d">
+          <id>footer57061</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="f674e0c900debaf31e2b7a0ee0b9d3ae">
+              <id>importRightBtn</id>
+              <width>75</width>
+              <text>确定</text>
+              <onClickServer>importRightBtn_onClickServer</onClickServer>
+            </button>
+            <simpleButton sid="2a81d4eb0d71400a3b1cce61ac46d803">
+              <id>closeBtn</id>
+              <text>关闭</text>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+</form>
+

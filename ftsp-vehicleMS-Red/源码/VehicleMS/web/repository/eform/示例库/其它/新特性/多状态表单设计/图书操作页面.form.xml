@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>263ab5f7f15a2736867263742088801c</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.dztbdsj.Tsczym.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/xtx/dztbdsj/Tsczym.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form0aa5e">
+      <id>form0aa5e</id>
+      <Items>
+        <formArea sid="d69342cabf358d373b4a5d7d53b2ae95">
+          <id>formArea62197</id>
+          <ds>rs1</ds>
+          <width>500</width>
+          <colNum>1</colNum>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <faIdentity sid="3033b726902a7407a586e8dafcbd2126">
+              <id>faIdentityCID</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+            </faIdentity>
+            <faString sid="de67ad796b6d18a61fcc772cbe7b3f37">
+              <id>faStringCNAME</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+            </faString>
+            <faString sid="f57b7b77f16f70657f195ad61c77d9a0">
+              <id>faStringCAUTH</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+            </faString>
+            <faString sid="10e7ba4c474b5a77b81d2939e346ed75">
+              <id>faStringCPUBLISHER</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+            </faString>
+            <faDate sid="51cc835c58a9709cbef6432c6d3a9115">
+              <id>faDateDPUBLISHER</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs1.D_PUBLISHER}</dataName>
+            </faDate>
+            <faCode sid="c8dcef3c153400f7ffb9f2bf701c3962">
+              <id>faStringCLIBRARYID</id>
+              <submitName />
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{rs1.C_LIBRARYID}</dataName>
+              <dynamicData><![CDATA[faStringCLIBRARYID_dynamicData]]></dynamicData>
+              <ajaxLoad>false</ajaxLoad>
+              <label>所属图书室</label>
+            </faCode>
+            <buttonArea sid="627fc89ee1150fae6b8a7d7c3c0604dc">
+              <id>buttonArea32e19</id>
+              <align>center</align>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <button sid="8b62daecb139f84d7a5b3c2deff1a3da">
+                  <id>buttonf45d4</id>
+                  <text>新建</text>
+                  <onClickClient><![CDATA[buttonf45d4_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[buttonf45d4_onClickServer]]></onClickServer>
+                </button>
+                <button sid="5f341ea99ff656c02a6d79d813c9e29b">
+                  <id>button9bbbe</id>
+                  <text>取消</text>
+                  <onClickClient><![CDATA[button9bbbe_onClickClient]]></onClickClient>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+    <UpdateItems>
+      <button sid="8b62daecb139f84d7a5b3c2deff1a3da">
+        <onClickServer><![CDATA[buttonf45d4_onClickServer_update]]></onClickServer>
+        <text>修改</text>
+        <onClickClient><![CDATA[buttonf45d4_onClickClient_update]]></onClickClient>
+      </button>
+    </UpdateItems>
+    <DisplayItems>
+      <button sid="8b62daecb139f84d7a5b3c2deff1a3da">
+        <show>false</show>
+      </button>
+      <button sid="5f341ea99ff656c02a6d79d813c9e29b">
+        <text>返回</text>
+      </button>
+      <formArea sid="d69342cabf358d373b4a5d7d53b2ae95">
+        <frame>true</frame>
+      </formArea>
+    </DisplayItems>
+    <PrintItems>
+      <buttonArea sid="627fc89ee1150fae6b8a7d7c3c0604dc">
+        <show>false</show>
+      </buttonArea>
+    </PrintItems>
+  </Item>
+  <params>
+    <param name="bookId" showName="图书id" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    T_Eg_Book.C_ID,&#xD;
+    T_Eg_Book.C_NAME,&#xD;
+    T_Eg_Book.C_AUTH,&#xD;
+    T_Eg_Book.C_PUBLISHER,&#xD;
+    T_Eg_Book.D_PUBLISHER,&#xD;
+    T_Eg_Book.C_LIBRARYID&#xD;
+FROM&#xD;
+    T_Eg_Book&#xD;
+WHERE T_Eg_Book.C_ID = '{req.bookId}'</ds>
+  </dslist>
+</form>
+

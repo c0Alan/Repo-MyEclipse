@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>c555b6e7471ad5d9200c6673b814d9dc</cid>
+  <key />
+  <tableName>T_Aty_Corp</tableName>
+  <showName>单位表</showName>
+  <desc />
+  <fields>
+    <field cid="ee694fe6129ffa74c7722e05cc8e18af" fieldName="C_ID" fieldType="text" dbmsType="varchar" pk="true" defaultValue="" unique="true" desc="">
+      <extend required="true" label="单位编号" maxLength="50" />
+    </field>
+    <field cid="f6edc0e95b616db72449bf965736185c" fieldName="C_Name" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="true" label="单位名称" maxLength="150" />
+    </field>
+    <field cid="e12b9014126c93fe83ca905dde1e4b24" fieldName="C_PID" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="父单位编号" maxLength="50" />
+    </field>
+    <field cid="344301fe3e7088080399ab9e06c1ce46" fieldName="N_Level" fieldType="number" dbmsType="number" pk="false" defaultValue="4 " unique="false" desc="">
+      <extend required="true" label="单位层级" maxLength="3" maxPrecision="0" maxValue="255" minValue="0" />
+    </field>
+    <field cid="9aa2c7cc83f70d6d75408184bf35b4ee" fieldName="C_GBM" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="国标码" maxLength="100" />
+    </field>
+    <field cid="c7168e2d403ce2201d46e63cb10043d0" fieldName="C_Alias" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="简称" maxLength="100" />
+    </field>
+    <field cid="4976b05f031cc7c4d391db4e577c6219" fieldName="N_Valid" fieldType="number" dbmsType="number" pk="false" defaultValue="1 " unique="false" desc="">
+      <extend required="true" label="是否有效" maxLength="3" maxPrecision="0" maxValue="255" minValue="0" />
+    </field>
+    <field cid="6d5cda4303f14c1a63a3340a8183ec4b" fieldName="N_Order" fieldType="number" dbmsType="number" pk="false" defaultValue="1 " unique="false" desc="">
+      <extend required="true" label="显示顺序" maxLength="5" maxPrecision="0" maxValue="65535" minValue="-65536" />
+    </field>
+  </fields>
+</table>
+

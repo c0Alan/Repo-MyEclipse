@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2f4771cd032b2f267c95f51fb4c64649</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.config.Xtjkxq.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/config/Xtjkxq.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="forma353f">
+      <id>forma353f</id>
+      <Items>
+        <centerRegion sid="26198ede22a2e101458916b92c77d590">
+          <id>centerRegionb558f</id>
+          <Items>
+            <topbar sid="322ac06c1e1ee1920eaca36ab7556546">
+              <id>topbar31199</id>
+              <bodyStyle>text-align:right;</bodyStyle>
+              <Items>
+                <tbButton sid="f643e56ddee0009615a54b78044e84b6">
+                  <id>tbButton2fab9</id>
+                  <text>返回监控列表</text>
+                  <icon>/artery/arteryImage/arrow/back.gif</icon>
+                  <linkto>{"formId":"bce9c516221612736a17de83fbfecc34","formName":"系统监控","formType":"1","runTimeType":"display","target":"_self","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                </tbButton>
+                <tbFill sid="2a1f027b253ba31e35db8a5965f69c0c">
+                  <id>tbFill3534e</id>
+                </tbFill>
+                <tbButton sid="9bf917dbb01cbf2e3a35c2d18af5bb7f">
+                  <id>tbButton61efc</id>
+                  <text>展开全树</text>
+                  <enableToggle>true</enableToggle>
+                  <toggleGroup>expand</toggleGroup>
+                  <onClickClient><![CDATA[tbButton61efc_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="061bba1ac2bf5e9d40852c922933bdc5">
+                  <id>tbButton3d415</id>
+                  <text>折叠全树</text>
+                  <enableToggle>true</enableToggle>
+                  <toggleGroup>expand</toggleGroup>
+                  <onClickClient><![CDATA[tbButton3d415_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="571a61ff5e1aac54cdf886a9bfd8b2cd">
+                  <id>tbButtonbdf8e</id>
+                  <text>过滤节点</text>
+                  <tooltip>只显示解析时间大于零的节点</tooltip>
+                  <enableToggle>true</enableToggle>
+                  <toggleGroup>filter</toggleGroup>
+                  <onClickClient><![CDATA[tbButtonbdf8e_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="6c9cc05897e2082aead7737b934f52cd">
+                  <id>tbButton8f6c6</id>
+                  <text>全部显示</text>
+                  <tooltip>显示全部节点，可能包括大量无用节点</tooltip>
+                  <enableToggle>true</enableToggle>
+                  <toggleGroup>filter</toggleGroup>
+                  <onClickClient><![CDATA[tbButton8f6c6_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <dynamicNav sid="573b9680d5313a101db4f2e40ea67d42">
+              <id>dynamicNav2bb7e</id>
+              <ds>rs1</ds>
+            </dynamicNav>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="recordID" showName="" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="blankPanel" cn="空面板" menu="面板区域" jsType="artery-base"
+	icon="blankPanel.gif" iconNew="blankPanelNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-11-16</CreateTime>
+		<Describe><![CDATA[
+		空面板是最常用的布局组件，很多组件都可以放到空面板中，即一个控件如果可以添加空面板，那么就可以间接的添加其它控件了。空面板有如下特性：<br>
+		<h2>1.做为基本内容容器</h2>
+			根据添加的子控件不同，空面板生成的方式也不同：<br>
+			<ul class="x-ul">
+				<li class="x-li">如果没有添加“工具栏”、“状态栏”、“标题栏”、“页角”和没有选中“使用frame样式”,则只生成一个div对象</li>
+				<li class="x-li">如果有上述的控件中的任何一个，则会生成多层嵌套div</li>
+			</ul>
+			如下所示：<br>
+			<img src="blankPanel/info1.gif"></img>
+		<h2>2.做为button样式展现</h2>	
+			当选中“使用button样式”属性时，空面板会生成类似button的布局结构，即左中右三层div结构，添加的子控件会在中间的div中展现出来<br>
+			此种风格需要配合特殊的样式才能展现正确，如默认提供的以bf开头的一些样式
+			如下所示：<br>
+			<img src="blankPanel/info2.jpg"></img>
+		<h2>3.做为动态解析控件的容器</h2>	
+			系统支持动态解析控件，也是就通过Artery.parseItem()方法来请求后台生成控件，然后在callback回调函数中可以把返回的控件的结果添加到空面板中展现出来<br>
+			如下所示：<br>
+			<pre>
+	Artery.parseItem({
+		params:{itemid:'blankPaneladddse',name:'abc',id:'132'},
+		callback:function(result){
+			Artery.get('blankPanelad267').addItem(result);
+		},
+		asyn:true//默认异步加载
+	},this)
+			</pre>
+		<h2>4.“基本”、“更多”容器</h2>
+		当子控件设置属性“所在父容器”为normal或more时，空面板会生成上下两个区域，上面的为基本区域，所有子控件的“所在父容器”设置为normal的在此区域显示出来；下面的为更多区域，即所设置为more的子控件在此显示，更多区域默认不显示出来
+		<table class="x-table" width="300px" ><thead><td>收起状态</td><td>展开状态</td></thead><tr><td><img src='../../resources/images/common/panel/collapseState.jpg'></td><td><img src='../../resources/images/common/panel/expandState.jpg'></td></tr></table>
+		<h2>5.做为事件的容器</h2>
+		本控件支持很的鼠标事件，如下：
+		<ul class="x-ul">
+				<li class="x-li">鼠标点击事件</li>
+				<li class="x-li">鼠标移入、移出事件</li>
+				<li class="x-li">控件选中、不选中事件</li>
+			</ul>
+		通过组合这些事件可以完成很多复杂些的需求
+		]]>
+		</Describe>
+		<Images>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+		<Parent type="window" />
+		<Parent type="tabItem" />
+		<Parent type="upRegion" />
+		<Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" />
+	</Parents>
+	<Children>
+		<Child type="upRegion" />
+		<Child type="leftRegion" />
+		<Child type="downRegion" />
+		<Child type="rightRegion" />
+		<Child type="centerRegion" />
+		<Child type="blankPanel" />
+		<Child type="fieldSet" />
+		<Child type="tableLayout" />
+		<Child type="tabArea" />
+		<Child type="treeArea" />
+		<Child type="operArea" />
+		<Child type="buttonArea" />
+		<Child type="formArea" />
+		<Child type="listArea" />
+		<Child type="htmlArea" />
+		<Child type="activeX" />
+		<Child type="chartArea" />
+		<Child type="imageArea" />
+		<Child type="rptArea" />
+		<Child type="dynamicNav" />
+		<Child type="header" />
+		<Child type="topbar" />
+		<Child type="bottomBar" />
+		<Child type="footer" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.area.BlankPanel
+	</Class>
+	<JsFile>
+		<File>blankPanel.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" group="大小" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="高度" type="1" name="height" group="大小" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="使用Frame样式" type="11" name="frame" group="样式" export="true"
+			tips="当设置为true，时，会以另一种样式展现控件，如：如果是面板控件的话...">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否显示边框" type="11" name="border" group="样式" export="true"
+			tips="设置为true时，显示最外层的边框，否则不显示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle" group="样式"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" group="样式" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className" group="样式"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" group="样式"	tips="设置控件的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="使用Button样式" type="11" name="buttonFrame" group="样式"
+			tips="当设置为true，时，空面板会生成类似button的布局结构">
+			<Description><![CDATA[
+			当设置为true，时，空面板会生成类似button的布局结构，即左中右三层div结构，添加的子控件会在中间的div中展现出来<br>
+			<img src="blankPanel/info2.jpg"></img>
+			]]></Description>
+			<Conditions>
+				<Condition>此种风格需要配合特殊的样式才能展现正确，如默认提供的以bf开头的一些样式</Condition>
+			</Conditions>
+			<Value>false</Value>
+		</Property>
+		<Property cn="所属分组" type="1" name="toggleGroup" group="特性" export="true"
+			tips="设置本控件所属的分组名称，同一个分组中的控件只会有一个选中">
+			<Value />
+			<Description><![CDATA[
+			设置本控件所属的分组名称，表单中所有分组名称相同的控件只会有一个选中，即会触发本控件的“选中时脚本”和“取消选中时脚本”
+			]]></Description>
+		</Property>
+		<Property cn="修正滚动条" type="11" name="isFixScroll" group="特性" export="true"
+			tips="设置为true时，如果容器中的内容超出容器的宽度时，由容器的宽度不变，会出横向滚动条，否则容器会被撑开。注意，设置为true时会影响一定的性能">
+			<Value>false</Value>
+		</Property>
+		<Property cn="折叠状态名称" type="1" name="collapseStateName" group="容器" export="true"
+			tips="设置控件处于折叠状态的名称">
+			<Value>>>展开更多信息</Value>
+			<Description><![CDATA[
+			设置控件处于折叠状态的名称。<br>当子控件设置属性“所在父容器”为normal或more时，空面板会生成上下两个区域，上面的为基本区域，所有子控件的“所在父容器”设置为normal的在此区域显示出来；下面的为更多区域，即所设置为more的子控件在此显示，更多区域默认不显示出来
+			<table class="x-table"><thead><td>收起状态</td><td>展开状态</td></thead><tr><td><img src='../../resources/images/common/panel/collapseState.jpg'></td><td><img src='../../resources/images/common/panel/expandState.jpg'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="展开状态名称" type="1" name="expandStateName" group="容器" export="true"
+			tips="设置控件处于展开状态的名称">
+			<Value>>>收起更多信息</Value>
+			<Description><![CDATA[
+			设置控件处于展开状态的名称。<br>当子控件设置属性“所在父容器”为normal或more时，空面板会生成上下两个区域，上面的为基本区域，所有子控件的“所在父容器”设置为normal的在此区域显示出来；下面的为更多区域，即所设置为more的子控件在此显示，更多区域默认不显示出来
+			<table class="x-table"><thead><td>收起状态</td><td>展开状态</td></thead><tr><td><img src='../../resources/images/common/panel/collapseState.jpg'></td><td><img src='../../resources/images/common/panel/expandState.jpg'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient"
+			tips="鼠标点击本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer"
+			tips="鼠标点击本组件时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="双击时脚本" name="onDbClickClient"
+			tips="鼠标点击本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="双击时脚本" name="onDbClickServer"
+			tips="鼠标点击本组件时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="鼠标移上时脚本" name="onMouseOverClient"
+			tips="鼠标移上本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="鼠标移上时脚本" name="onMouseOverServer"
+			tips="鼠标移上本组件时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="鼠标移出时脚本" name="onMouseOutClient"
+			tips="鼠标移出本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="鼠标移出时脚本" name="onMouseOutServer"
+			tips="鼠标移出本组件时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="选中时脚本" name="onSelectClient"
+			tips="点击选中本组件时触发的客户端事件">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="选中时脚本" name="onSelectServer"
+			tips="点击选中本组件时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="取消选中时脚本" name="onDeselectClient"
+			tips="取消选中本组件时触发的客户端事件，注意，此脚本只有在设置了分组属性后有效">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="取消选中时脚本" name="onDeselectServer"
+			tips="取消选中本组件时触发的服务器端事件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="是否输出js对象" type="11" name="exportJs"
+			tips="当此属性为false时，不会输出控件的js对象，可减少页面js的创建">
+			<Value>true</Value>
+		</Property>
+	</Properties>
+	<ExtendProperties>
+		<Property cn="生成时容器" type="3" name="showInContainer" ct="[normal,more]" tips="设置控件的显示的容器，即在父容器中的位置">
+	      <Value>normal</Value>
+	      <Description><![CDATA[
+			设置控件的显示的容器，即在父容器中的位置。<br>当子控件设置属性“所在父容器”为normal或more时，空面板会生成上下两个区域，上面的为基本区域，所有子控件的“所在父容器”设置为normal的在此区域显示出来；下面的为更多区域，即所设置为more的子控件在此显示，更多区域默认不显示出来
+			<table class="x-table"><thead><td>收起状态</td><td>展开状态</td></thead><tr><td><img src='../../resources/images/common/panel/collapseState.jpg'></td><td><img src='../../resources/images/common/panel/expandState.jpg'></td></tr></table>
+			]]></Description>
+	    </Property>
+	</ExtendProperties>
+	<Methods>
+		<Method name="click" />
+		<Method name="select" return="void" tips="触发控件的选中事件">
+	  		<Description><![CDATA[<p>触发控件的选中事件</p><pre>
+	Artery.get("id").select();
+	  		</pre>]]></Description>
+	  		<Parameters>
+	  			<Param>无</Param>
+	  		</Parameters>
+	  		<Return>void</Return>
+	  	</Method>
+		<Method name="deselect" return="void" tips="触发控件的取消选中事件">
+	  		<Description><![CDATA[<p>触发控件的取消选中事件</p><pre>
+	Artery.get("id").deselect();
+	  		</pre>]]></Description>
+	  		<Parameters>
+	  			<Param>无</Param>
+	  		</Parameters>
+	  		<Return>void</Return>
+	  	</Method>
+		<Method name="collapse" return="void" tips="折叠控件的内容区域">
+	  		<Description><![CDATA[<p>折叠控件的内容区域</p><pre>
+	Artery.get("id").collapse();
+	  		</pre>]]></Description>
+	  		<Parameters>
+	  			<Param>无</Param>
+	  		</Parameters>
+	  		<Conditions>
+	      	  <Condition>此方法只有在控件添加了标题栏后起作用</Condition>
+	        </Conditions>
+	  		<Return>void</Return>
+	  	</Method>
+		<Method name="expand" return="void" tips="展开控件的内容区域">
+	  		<Description><![CDATA[<p>展开控件的内容区域</p><pre>
+	Artery.get("id").collapse();
+	  		</pre>]]></Description>
+	  		<Parameters>
+	  			<Param>无</Param>
+	  		</Parameters>
+	  		<Conditions>
+	      	  <Condition>此方法只有在控件添加了标题栏后起作用</Condition>
+	        </Conditions>
+	  		<Return>void</Return>
+	  	</Method>
+		<Method name="addItem" />
+		<Method name="removeItem" />
+		<Method name="alignTo" />
+		<Method name="center" />
+		<Method name="hide" />
+		<Method name="show" />
+	</Methods>
+	<JavaFunctions>
+		<JavaFunction name="onMouseOutServer">
+<![CDATA[
+/**
+ * 鼠标移出时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onMouseOverServer">
+<![CDATA[
+/**
+ * 鼠标移上时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ba646ede9e99a1c0326e84bb05bc00ac</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.role.Xjjs.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/role/Xjjs.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formdb28c">
+      <id>formdb28c</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <formArea sid="e7df4e5f79c2ab18b14eacc40a927b12">
+          <id>formArea98754</id>
+          <colNum>1</colNum>
+          <colSpacing>5</colSpacing>
+          <labelAlign>left</labelAlign>
+          <labelWidth>70</labelWidth>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <faString sid="ef788fafeb991e15980643fde36d202e">
+              <id>roleName</id>
+              <submitName>role.name</submitName>
+              <required>true</required>
+              <maxLength>150</maxLength>
+              <onValidClient><![CDATA[roleName_onValidClient]]></onValidClient>
+              <onValidServer><![CDATA[roleName_onValidServer]]></onValidServer>
+              <label>角色名称</label>
+            </faString>
+            <faString sid="47d90362463bfa228912e5adf5e6b7d7">
+              <id>faStringd41eb</id>
+              <submitName>role.descript</submitName>
+              <editor>textarea</editor>
+              <maxLength>255</maxLength>
+              <label>角色描述</label>
+            </faString>
+            <faHidden sid="a2e30a91daf11cc181e33f7cea1237df">
+              <id>faHiddenbb1a6</id>
+              <submitName>role.order</submitName>
+              <show>false</show>
+              <label>显示顺序</label>
+            </faHidden>
+          </Items>
+        </formArea>
+        <footer sid="07ead6107fe2947518667a5e23c5aad7">
+          <id>footer3bf69</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="cca056945ebb861272b1289fc949ea95">
+              <id>insertBtn</id>
+              <text>确定</text>
+              <onClickClient><![CDATA[insertBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[insertBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <simpleButton sid="be962189e5dd47e51c9c216794a5e006">
+              <id>closeBtn</id>
+              <text>关闭</text>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+</form>
+

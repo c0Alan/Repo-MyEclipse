@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+  <definition name=".userInfo.base" path="/layouts/baseLayout.jsp">
+    <put name="title" value="${title}" />
+    <put name="header" value="/tiles/header.jsp" />
+    <put name="body" value="${body}" />
+    <put name="footer" value="/tiles/footer.jsp" />
+    <put name="menu" value="/tiles/menu.jsp" />
+  </definition>
+  <definition extends=".userInfo.base" name=".userInfo.main">
+    <put name="title" value="Another Title" />
+    <put name="body" value="/tiles/mainbody.jsp" />
+  </definition>
+</tiles-definitions>

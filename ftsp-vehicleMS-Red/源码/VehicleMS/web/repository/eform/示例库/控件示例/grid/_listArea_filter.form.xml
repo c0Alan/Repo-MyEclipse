@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>8034d84903782f296a63e577592fd11d</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._listArea_filter.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_listArea_filter.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form037bc">
+      <id>form037bc</id>
+      <Items>
+        <listArea sid="37d70115dd754b61aa446163672a779d">
+          <id>listArea55523</id>
+          <ds>rs1</ds>
+          <type>grid</type>
+          <Items>
+            <columnIdentity sid="c2dd27bd428dcef2c3d04b0d007bf4d1">
+              <id>columnIdentityCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <isOnlyData>false</isOnlyData>
+              <title>图书编号</title>
+              <isFilter>true</isFilter>
+            </columnIdentity>
+            <columnCode sid="0c03aea964d42e2fe3a6a7b080833925">
+              <id>columnCodeNTYPE</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{rs1.N_TYPE}</dataName>
+              <title>图书类型</title>
+              <isFilter>true</isFilter>
+            </columnCode>
+            <columnString sid="9d909cd21c036360b5cb51ad989bfce3">
+              <id>columnStringCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <isFilter>true</isFilter>
+            </columnString>
+            <columnDate sid="25bf51c4a02f04a22680aabfd829df0e">
+              <id>columnDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs1.D_PUBLISHER}</dataName>
+              <title>出版日期</title>
+              <isFilter>true</isFilter>
+            </columnDate>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>dbc0772746d6d688e4caf4f53235b244</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.faCode._faCode.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/faCode/_faCode.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form4c2b2">
+      <id>form4c2b2</id>
+      <text-align>left</text-align>
+      <Items>
+        <formArea sid="7a985a0e7a48e5ecd91552d296402c03">
+          <id>formArea41954</id>
+          <width>1000</width>
+          <displaySuffixPosition>follow</displaySuffixPosition>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <faFieldSet sid="e9bb18a1d74a401670dcf8fde9f53f2f">
+              <id>faFieldSet9e71d</id>
+              <fieldSetName>控件类型</fieldSetName>
+              <colNum>3</colNum>
+              <colSpan>2</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faCode sid="450cffff26fa3bcaebbbe0cfb051da11">
+                  <id>faCode3c044</id>
+                  <codeType>-5</codeType>
+                  <label>sSelect</label>
+                </faCode>
+                <faCode sid="39ed9e99d11695cd4e7ef117a17958b7">
+                  <id>faCode17845</id>
+                  <editor>mSelect</editor>
+                  <codeType>-5</codeType>
+                  <label>mSelect</label>
+                </faCode>
+                <faCode sid="00bf7328ac6294f514cfc0c85779c985">
+                  <id>faCode937d9</id>
+                  <editor>sTree</editor>
+                  <dynamicData><![CDATA[common_dynamicData]]></dynamicData>
+                  <label>sTree</label>
+                </faCode>
+                <faCode sid="55ed7cb90b0f9d829a11df7c7ede854c">
+                  <id>faCodefdff6</id>
+                  <editor>mTree</editor>
+                  <dynamicData><![CDATA[common_dynamicData]]></dynamicData>
+                  <label>mTree</label>
+                </faCode>
+                <faCode sid="b033fca2c182555c9846dbd4a97c5dfd">
+                  <id>faCode5c50b</id>
+                  <editor>sRadio</editor>
+                  <codeType>-5</codeType>
+                  <label>sRadio</label>
+                </faCode>
+                <faCode sid="d48c8215813dd7b244a13046e58a03fd">
+                  <id>faCode25f65</id>
+                  <editor>mCheckbox</editor>
+                  <codeType>-5</codeType>
+                  <label>mCheckbox</label>
+                </faCode>
+                <faCode sid="a6d210fccafe09fca6381ceedb382ecf">
+                  <id>faCodeaddd0</id>
+                  <editor>checkbox</editor>
+                  <width>20</width>
+                  <label>checkbox</label>
+                  <suffixLabel>使用默认配置</suffixLabel>
+                </faCode>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="da820ceb23bb45450530c0290b79dbef">
+              <id>faFieldSet23afe</id>
+              <fieldSetName>代码项数据来源</fieldSetName>
+              <colSpan>2</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faCode sid="67c1bd38a3abaf33c91080b3e1c42b0f">
+                  <id>faCode30a38</id>
+                  <codeType>-1</codeType>
+                  <label>代码类型</label>
+                  <labelStyle>width:180px;</labelStyle>
+                  <labelCntStyle>width:180px;</labelCntStyle>
+                </faCode>
+                <faCode sid="f672c1b464f592382a3f72a70419b511">
+                  <id>faCode0493d</id>
+                  <dynamicData><![CDATA[faCode0493d_dynamicData]]></dynamicData>
+                  <label>动态数据－map</label>
+                </faCode>
+                <faCode sid="0031ae263b004412db035460fee85e03">
+                  <id>faCodeb1db9</id>
+                  <dynamicData><![CDATA[faCodeb1db9_dynamicData]]></dynamicData>
+                  <label>动态数据－数组list</label>
+                  <labelStyle>width:180px;</labelStyle>
+                  <labelCntStyle>width:180px;</labelCntStyle>
+                </faCode>
+                <faCode sid="4462e99ac4993d46270412e58c807756">
+                  <id>faCode9febc</id>
+                  <dynamicData><![CDATA[faCode9febc_dynamicData]]></dynamicData>
+                  <label>动态数据－sql</label>
+                </faCode>
+                <faCode sid="3622a64512c495031b60d10e64bfe4ab">
+                  <id>faCodef19da</id>
+                  <editor>sTree</editor>
+                  <selType>2</selType>
+                  <dynamicData><![CDATA[common_dynamicData]]></dynamicData>
+                  <label>动态数据－INormalCode list</label>
+                  <labelStyle>width:180px;</labelStyle>
+                  <labelCntStyle>width:180px;</labelCntStyle>
+                </faCode>
+                <blankPanel sid="1a50d8debf9cc2c391b92a6fa9c4ea7e">
+                  <id>blankPanelee862</id>
+                  <width>900</width>
+                  <frame>true</frame>
+                  <style>padding-left:50px;</style>
+                  <themeStyle>bluePlain</themeStyle>
+                  <colSpan>2</colSpan>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <htmlArea sid="4ce25c4b72824b7732cdec8e81aeb309">
+                      <id>htmlArea5ebf2</id>
+                      <value>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;单值代码中的代码项来源主要有配置“代码l类型”属性和在“动态数据”响应方法中返回两种方式。后者又可返回三种结构的数据：&lt;br&gt;&#xD;
+1、Map&lt;br&gt;&#xD;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;key为代码值，value为代码名称&lt;br&gt;&#xD;
+2、List&lt;br&gt;&#xD;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;以数组为元素的List，数组第一列为代码名称，第二列为代码值；或sql查询所得list&lt;br&gt;&#xD;
+3、INormalCode List&lt;br&gt;&#xD;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;以INormalCode对象为元素的List&lt;br&gt;</value>
+                    </htmlArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="5b0572d66cc2fd8cd0b5b9899389d15a">
+              <id>faFieldSet87e5d</id>
+              <fieldSetName>“选择类型”属性</fieldSetName>
+              <colSpan>2</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faCode sid="cd5bb69d9d801c3f34d5875c1f2bca83">
+                  <id>faCode4df02</id>
+                  <editor>sTree</editor>
+                  <dynamicData><![CDATA[common_dynamicData]]></dynamicData>
+                  <label>选择类型1</label>
+                </faCode>
+                <faCode sid="e174668e645fdc939aaff5b1f335344a">
+                  <id>faCodeb7f41</id>
+                  <editor>sTree</editor>
+                  <selType>2</selType>
+                  <dynamicData><![CDATA[common_dynamicData]]></dynamicData>
+                  <label>选择类型2</label>
+                </faCode>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="7f699d3d48aa49635eb30bb18cf1f45c">
+              <id>faFieldSet5c872</id>
+              <fieldSetName>“布局列数”属性</fieldSetName>
+              <colSpan>2</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <faCode sid="a56e1ae6ffa7e9e48bb6e06fded12b1c">
+                  <id>faCode5afcf</id>
+                  <editor>mCheckbox</editor>
+                  <codeType>-5</codeType>
+                  <colNum>2</colNum>
+                  <label>布局列数2</label>
+                </faCode>
+                <faCode sid="c848f0c6cacd6e03ee0e0a9b2fd583b7">
+                  <id>faCode55495</id>
+                  <editor>sRadio</editor>
+                  <codeType>-5</codeType>
+                  <colNum>2</colNum>
+                  <label>布局列数2</label>
+                </faCode>
+                <faCode sid="6fb369a4fdbca09e0789315de0735a52">
+                  <id>faCodeb0fdb</id>
+                  <editor>mCheckbox</editor>
+                  <codeType>-5</codeType>
+                  <label>布局列数3</label>
+                </faCode>
+                <faCode sid="015246b702a6170ded9b79141d66e9b9">
+                  <id>faCode25c94</id>
+                  <editor>sRadio</editor>
+                  <codeType>-5</codeType>
+                  <label>布局列数3</label>
+                </faCode>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

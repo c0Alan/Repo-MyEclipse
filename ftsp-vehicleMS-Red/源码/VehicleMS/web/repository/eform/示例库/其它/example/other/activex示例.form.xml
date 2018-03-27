@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>27c6e484891045ea40df6df36d6d21a4</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation>artery/arteryClient/slk/qt/example/other/Activexsl.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <formArea sid="Abe323acc584ac7ef7f9c94cf4af81577">
+          <id>Abe323acc584ac7ef7f9c94cf4af81577</id>
+          <height>100%</height>
+          <border>true</border>
+          <labelBackColor>#f5f5f5</labelBackColor>
+          <formTableBorder>false</formTableBorder>
+          <cellpadding>5</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <activeX sid="A580a2c7d3f20ed30505e971a85dcc054">
+              <id>A580a2c7d3f20ed30505e971a85dcc054</id>
+              <codebase>/artery/arteryConsole/ocx/swflash.cab#version=9,0,28,0</codebase>
+              <classid>clsid:d27cdb6e-ae6d-11cf-96b8-444553540000</classid>
+              <param>"&lt;param name=\"movie\" value=\"{ctx}/artery/pub/images/login/fl.swf\"&gt;"</param>
+              <width>450</width>
+              <height>300</height>
+              <hideLabel extend="true">true</hideLabel>
+            </activeX>
+            <activeX sid="A42105abef30a402d9debc8962371d1d6">
+              <id>ntko1</id>
+              <codebase>/artery/arteryConsole/ocx/OfficeControl.cab#version=4,0,3,2</codebase>
+              <classid>clsid:C9BC4DFF-4248-4a3c-8A49-63A7D317F404</classid>
+              <param>"&lt;param name=\"MakerCaption\" value=\"北京紫光华宇软件股份有限公司\"&gt;&lt;param name=\"MakerKey\" value=\"38B4D34C447C7535C0060C51FF5707A8812BCC51\"&gt;&lt;param name=\"ProductCaption\" value=\"通用MIS系统构建平台\"&gt;&lt;param name=\"ProductKey\" value=\"F2AFEE15E32A9E589BD5B11CF1AFFC158A9F9D41\"&gt;"</param>
+              <width>500</width>
+              <height>300</height>
+              <hideLabel extend="true">true</hideLabel>
+            </activeX>
+            <htmlArea sid="htmlAreaBD623A0D16D2863D32A3DAB20258F880">
+              <id>htmlAreaBD623A0D16D2863D32A3DAB20258F880</id>
+              <hideLabel extend="true">true</hideLabel>
+            </htmlArea>
+            <buttonArea sid="buttonArea3D6D6F92877285CC3BF35C89163D2F1A">
+              <id>buttonArea3D6D6F92877285CC3BF35C89163D2F1A</id>
+              <hideLabel extend="true">true</hideLabel>
+              <Items>
+                <button sid="buttonDC7B7BDA658AFFE4BA225F599B3CEDE5">
+                  <id>button_new</id>
+                  <text>新建word文档</text>
+                  <onClickClient><![CDATA[button_new_onClickClient]]></onClickClient>
+                </button>
+                <button sid="button33730EF931E817B1E99A29D616F19F09">
+                  <id>button_save</id>
+                  <text>打开文档后再点击我</text>
+                  <onClickClient><![CDATA[button_save_onClickClient]]></onClickClient>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

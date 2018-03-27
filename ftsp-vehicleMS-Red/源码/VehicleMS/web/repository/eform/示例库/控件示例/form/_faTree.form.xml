@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3ab9f41b942773d187a747c7ff4144b8</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form._faTree.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_faTree.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formd3cb8">
+      <id>formd3cb8</id>
+      <Items>
+        <blankPanel sid="133406f95b9b1fa6d3110078a8a434c0">
+          <id>blankPanel1fb22</id>
+          <width>100%</width>
+          <height>20%</height>
+          <bodyStyle>background-color: #c0c0c0;</bodyStyle>
+          <Items>
+            <htmlArea sid="06bd807d79fe125b90799926b29a9d7e">
+              <id>htmlAreae2aa4</id>
+              <value>&lt;h1&gt;说明&lt;/h1&gt;&#xD;
+&lt;li&gt;树1：固定节点的树，显示方式为window&lt;/li&gt;&#xD;
+&lt;li&gt;树2：动态节点的树，开启级联选择(级联类型为allChild，还可以为singleChild)&lt;/li&gt;</value>
+            </htmlArea>
+          </Items>
+        </blankPanel>
+        <formArea sid="ea3c7b74ef95e1a4d3c74f81c2e07ade">
+          <id>formAreae7158</id>
+          <width>90%</width>
+          <Items>
+            <faTree sid="ae9fc7e2b5f8086b04d5a76853457ad8">
+              <id>faTree43532</id>
+              <showType>window</showType>
+              <label>树1</label>
+              <Items>
+                <treeMenu sid="0139c6dd2e1a1682fd88f317152d964d">
+                  <id>treeMenu8f58b</id>
+                  <text>四季</text>
+                  <Items>
+                    <treeNode sid="c2e87eef79d1e77becbbc965328045f9">
+                      <id>treeNode7e076</id>
+                      <text>春天</text>
+                      <icon>/artery/arteryImage/book/user_suit.gif</icon>
+                    </treeNode>
+                    <treeNode sid="f6bbee05ebc819e373ca67a554687da2">
+                      <id>treeNodeb439c</id>
+                      <text>夏天</text>
+                      <icon>/artery/arteryImage/organ/group.gif</icon>
+                    </treeNode>
+                    <treeNode sid="c92fb76905161201470e34fccad61d10">
+                      <id>treeNode1d9cf</id>
+                      <text>秋天</text>
+                    </treeNode>
+                    <treeNode sid="154b0e25f7bc524ec177236172b36bcf">
+                      <id>treeNode341cc</id>
+                      <text>冬天</text>
+                    </treeNode>
+                  </Items>
+                </treeMenu>
+                <treeMenu sid="46632dbadcbbd1850cee515e3cf57b91">
+                  <id>treeMenue09eb</id>
+                  <text>星期</text>
+                  <icon>/artery/arteryImage/organ/user_12.gif</icon>
+                  <Items>
+                    <treeNode sid="1b31996278168c297c84b2c0f81163ba">
+                      <id>treeNode9db30</id>
+                      <text>星期一</text>
+                    </treeNode>
+                    <treeNode sid="945eabfac5b5734b689a854e49351dfe">
+                      <id>treeNode58bf5</id>
+                      <text>星期二</text>
+                    </treeNode>
+                    <treeNode sid="75763d5801db00b2b4a88132aa4ebc09">
+                      <id>treeNodebc5fc</id>
+                      <text>星期三</text>
+                    </treeNode>
+                    <treeNode sid="6456a7e7c0d0a5179642936a93098953">
+                      <id>treeNode1749a</id>
+                      <text>星期四</text>
+                    </treeNode>
+                    <treeNode sid="4e585063aee28e6f09fdb1ad1a811ad5">
+                      <id>treeNodeb78f1</id>
+                      <text>星期五</text>
+                    </treeNode>
+                    <treeNode sid="84081b31009e2f552e9dea6fd3a52b5c">
+                      <id>treeNodef7c43</id>
+                      <text>星期六</text>
+                    </treeNode>
+                    <treeNode sid="463590389e9336deb5982d22261f0fb5">
+                      <id>treeNode3229c</id>
+                      <text>星期日</text>
+                    </treeNode>
+                  </Items>
+                </treeMenu>
+              </Items>
+            </faTree>
+            <faTree sid="68ba2d7c14d60aad0a4b3bf369f8f828">
+              <id>faTree1a1c1</id>
+              <editor>mTree</editor>
+              <cascade>true</cascade>
+              <label>树2</label>
+              <Items>
+                <treeDynamic sid="b2d56b03caeb5e77d8fb118004ef7efb">
+                  <id>node</id>
+                  <onLoadTree><![CDATA[node_onLoadTree]]></onLoadTree>
+                </treeDynamic>
+              </Items>
+            </faTree>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>55f56968d61a986b1ecd67c62b5eed04</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.list.gl.Btgl.java</javaLocation>
+  <jsLocation />
+  <descript>&lt;P&gt;&amp;nbsp;&lt;/P&gt;</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>A7f392947ddfb6d152bb019c645ceade3</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <topbar sid="A02f8d2461eef1b374aa2ab6cb9af1143">
+          <id>A02f8d2461eef1b374aa2ab6cb9af1143</id>
+          <Items>
+            <tbFill sid="A7b1a2fefcd67c820a029c1c2967a026b">
+              <id>A7b1a2fefcd67c820a029c1c2967a026b</id>
+            </tbFill>
+            <tbText sid="A30c2338bc8ca18fd9cff96a82bda0976">
+              <id>A30c2338bc8ca18fd9cff96a82bda0976</id>
+              <text>过滤符号定义："="首字匹配，"&gt;"，"&gt;="，"&lt;"，"&lt;="，"[,]"，"(,)"区间范围</text>
+            </tbText>
+          </Items>
+        </topbar>
+        <listArea sid="A47e5e588a456b9596bf54ca8af6f0256">
+          <id>bookList</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <height>100%</height>
+          <defaultOrder>D_BUY desc</defaultOrder>
+          <isStartNew>true</isStartNew>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <themeStyle>default</themeStyle>
+          <Items>
+            <columnIdentity sid="columnIdentity3302B2863EB6B06B6037AC29691B43A4">
+              <id>lstCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>图书编号</title>
+              <isEditor>false</isEditor>
+            </columnIdentity>
+            <column sid="Aed64202c49d18b4ad4c4a33868535a08">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>名称</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A846d872a45ea4b9e5e1750b77ffb250e">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A4056ad5c169871ffa38cea2fbf9c1cd2">
+              <id>lstCISBN</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ISBN</inheritfld>
+              <dataName>{rs1.C_ISBN}</dataName>
+              <title>ISBN号</title>
+              <isFilter>true</isFilter>
+            </column>
+            <column sid="A636db39bfbb9859bc27907ac4c2fc81e">
+              <id>lstCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A6c5045ec69eb175bb8139b618effec7f">
+              <id>lstDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{df([rs1.D_PUBLISHER],yyyy-MM-dd)}</dataName>
+              <title>出版日期</title>
+              <isFilter>true</isFilter>
+            </column>
+            <column sid="Af5973aeef706e849eaf3bca92bae2530">
+              <id>lstDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{df([rs1.D_BUY],yyyy-MM-dd)}</dataName>
+              <title>购买日期</title>
+              <isFilter>true</isFilter>
+            </column>
+            <columnCode sid="columnCode6176BAA19A105D0D5FC7BEEB1B8BCB21">
+              <id>lstNTYPE</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{rs1.N_TYPE}</dataName>
+              <title>图书类型</title>
+              <isEditor>false</isEditor>
+              <codeType>-600</codeType>
+              <isFilter>true</isFilter>
+              <dynamicDataFilter><![CDATA[lstNTYPE_dynamicDataFilter]]></dynamicDataFilter>
+            </columnCode>
+            <column sid="A42eec2d54735a36d8f1550e786ccd9cf">
+              <id>lstCLIBRARYID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{list(rs2,C_NAME,C_ID=[rs1.C_LIBRARYID],',')}</dataName>
+              <title>所属图书室</title>
+              <isFilter>true</isFilter>
+              <dynamicDataFilter><![CDATA[lstCLIBRARYID_dynamicDataFilter]]></dynamicDataFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Library where N_VALID=1</ds>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT &#xD;
+T_Eg_Book.C_ID , &#xD;
+T_Eg_Book.C_NAME , &#xD;
+T_Eg_Book.C_AUTH , &#xD;
+T_Eg_Book.C_ISBN , &#xD;
+T_Eg_Book.C_PUBLISHER , &#xD;
+T_Eg_Book.D_PUBLISHER , &#xD;
+T_Eg_Book.D_BUY , &#xD;
+T_Eg_Book.N_TYPE , &#xD;
+T_Eg_Book.C_LIBRARYID &#xD;
+FROM T_Eg_Book&#xD;
+where N_VALID=1</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,26 @@
+/***************************************************************************************
+ * menu
+ ***************************************************************************************/
+.x-menu-non-menuItem{
+	margin-left: 27px;
+}
+
+.x-menu-plain{
+	background: none;
+}
+
+.x-menu-plain .x-menu-list,.x-menu-plain .x-menu-list .x-menu-list-item,.x-menu-plain .x-menu-item, .x-menu-plain .x-menu-non-menuItem{
+	padding:0px;
+	margin: 0px;
+}
+
+.x-menu-plain .x-menu-non-menuItem{
+	margin-left: 0px;
+}
+.x-menu-hidden-icon-col{
+	background-position: -26px 0;
+}
+.x-menu-hidden-icon-col .x-menu-item{
+	padding-left: 3px;
+	padding-right: 3px;
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="activeX" cn="控件类型" menu="面板区域" jsType="artery-base"
+	icon="activeX.gif" iconNew="activeXNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>本控件用于生成html中定义的object标签元素，
+			标签用于包含对象，比如图像、音频、视频、Java applets、ActiveX、PDF 以及 Flash。
+			示例代码如下：
+		<![CDATA[
+		<pre>
+<object id="ntko1"
+    classid="clsid:C9BC4DFF-4248-4a3c-8A49-63A7D317F404"
+    codebase="http://172.16.5.3:8888/bugsys/artery/arteryConsole/ocx/OfficeControl.cab#version=4,0,3,2"
+    width="500" height="300">
+  <param name="MakerCaption" value="北京紫光华宇软件股份有限公司">
+  <param name="MakerKey" value="38B4D34C447C7535C0060C51FF5707A8812BCC51">
+  <param name="ProductCaption" value="通用MIS系统构建平台">
+  <param name="ProductKey" value="F2AFEE15E32A9E589BD5B11CF1AFFC158A9F9D41">
+</object></pre>
+		]]>
+		</Describe>
+		<Images>
+			<File>info1.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="form" />
+		<Parent type="tableLayout" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.area.ActiveX
+	</Class>
+	<JsFile>
+		<File>activeX.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="代码源" type="7" name="codebase"
+			tips="定义在何处可找到对象所需的代码，提供一个基准 URL。">
+			<Value />
+		</Property>
+		<Property cn="类标识" type="7" name="classid"
+			tips="定义嵌入 Windows Registry 中或某个 URL 中的类的 ID 值，此属性可用来指定浏览器中包含的对象的位置，通常是一个 Java 类。">
+			<Value />
+		</Property>
+		<Property cn="参数" type="7" name="param"
+			tips="param 元素允许您为插入 XHTML 文档的对象规定 run-time 设置">
+			<Description><![CDATA[
+			param 元素允许您为插入 XHTML 文档的对象规定 run-time 设置，
+			 <pre>			
+			也就是说，此标签可为包含它的 <object> 或者 <applet> 标签提供参数。例如：
+  <param name="MakerCaption" value="北京紫光华宇软件股份有限公司">
+ </pre>
+      ]]></Description>
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1" name="showRight" tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="hide" />
+		<Method name="show" />
+	</Methods>
+	<JavaFunctions>
+		<JavaFunction name="onShow">
+<![CDATA[
+/**
+ * 生成时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public void {methodName}(Item item) {
+
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

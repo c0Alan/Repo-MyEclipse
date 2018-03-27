@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>245867d5a896a8f38c30305b1c33723f</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tabs.ribbon._ribbonArea.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tabs/ribbon/_ribbonArea.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form908d5">
+      <id>form908d5</id>
+      <Items>
+        <tableLayout sid="a6532d7c5bee731ba64d448fb1b2694c">
+          <id>tableLayout42afd</id>
+          <colNum>1</colNum>
+          <height>100%</height>
+          <Items>
+            <ribbonArea sid="8dbb4522d9a4a3c2ad51753c68d46f27">
+              <id>ribbonAreaf7b14</id>
+              <themeStyle>blue</themeStyle>
+              <synTabStyle>height:1px</synTabStyle>
+              <Items>
+                <ribbonItem sid="13d348bc43fc720dcaf44580311cf3d0">
+                  <id>ribbonItem34338</id>
+                  <title>系统维护</title>
+                  <Items>
+                    <ribbonGroup sid="d3e1a240359a191eea0738c320a33f32">
+                      <id>ribbonGroupa070c</id>
+                      <title>数据字典</title>
+                      <Items>
+                        <ribbonCell sid="3fafdecade1422e5b53e75dabddc316b">
+                          <id>ribbonCell97eac</id>
+                          <title>数据字典</title>
+                          <tip>2个</tip>
+                          <tipInfo>提示信息</tipInfo>
+                          <linkto>{"url":"http://www.google.cn","target":"operAreaShow","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                        </ribbonCell>
+                        <ribbonCell sid="ed26398198edb4918226161926b7ecd7">
+                          <id>ribbonCell9b08f</id>
+                          <title>表间关系</title>
+                          <tip>warn</tip>
+                          <tipInfo>警告</tipInfo>
+                          <linkto>{"url":"http://www.baidu.com","target":"operAreaShow","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                        </ribbonCell>
+                        <ribbonCell sid="6da3cf2963f87af1fdf034733a2aea7c">
+                          <id>ribbonCell7ea72</id>
+                          <title>字典个性化</title>
+                          <tip>ok</tip>
+                          <tipInfo>OKOKOK</tipInfo>
+                          <onClickClient><![CDATA[ribbonCell7ea72_onClickClient]]></onClickClient>
+                        </ribbonCell>
+                      </Items>
+                    </ribbonGroup>
+                    <ribbonGroup sid="ba574b452679c7437782e74ca1112138">
+                      <id>ribbonGroup470a7</id>
+                      <title>系统信息</title>
+                      <Items>
+                        <ribbonCell sid="e3f6ee4d90a129c1549f19de2e3164bd">
+                          <id>ribbonCell19afd</id>
+                          <title>平台信息</title>
+                          <onClickClient><![CDATA[ribbonCell19afd_onClickClient]]></onClickClient>
+                        </ribbonCell>
+                        <ribbonCell sid="cd081354e743673e7c702afdc60e1177">
+                          <id>ribbonCellaa08a</id>
+                          <title>系统帮助</title>
+                          <onClickClient><![CDATA[ribbonCellaa08a_onClickClient]]></onClickClient>
+                        </ribbonCell>
+                        <ribbonCell sid="40048cd4c881a294c74b792cbcfb1c24">
+                          <id>ribbonCell6688f</id>
+                          <title>测试测试</title>
+                          <tip>ab</tip>
+                          <onClickClient><![CDATA[ribbonCell6688f_onClickClient]]></onClickClient>
+                        </ribbonCell>
+                      </Items>
+                    </ribbonGroup>
+                  </Items>
+                </ribbonItem>
+                <ribbonItem sid="3a3a4ffc0e7ef491bd9cd3d49aed52fa">
+                  <id>ribbonItemdbe4d</id>
+                  <title>扩展模块</title>
+                  <Items>
+                    <ribbonGroup sid="5d6aa13ce7273465afdadac31bcdb580">
+                      <id>ribbonGroupeeaac</id>
+                      <title>配置验证</title>
+                      <Items>
+                        <ribbonCell sid="a2206542e0031bb32ef7248593758d4b">
+                          <id>ribbonCell469e3</id>
+                          <title>系统配置</title>
+                        </ribbonCell>
+                        <ribbonCell sid="a51634d672d7696965e823654de1945d">
+                          <id>ribbonCell2eafb</id>
+                          <title>系统监控</title>
+                        </ribbonCell>
+                        <ribbonMenu sid="731d11519d22aeeff6d670f8db54dedb">
+                          <id>ribbonMenu946e4</id>
+                          <Items>
+                            <ribbonGroup sid="78e24e7c8d86d08416f110f77bb66224">
+                              <id>ribbonGroup12c99</id>
+                              <title>验证</title>
+                              <Items>
+                                <ribbonCell sid="201ae98243813f16b88cd4da48631c90">
+                                  <id>ribbonCell84e04</id>
+                                  <title>模板验证</title>
+                                </ribbonCell>
+                                <ribbonCell sid="c5814ed27b2820758921c8db4c49b028">
+                                  <id>ribbonCellaedca</id>
+                                  <title>数据验证</title>
+                                </ribbonCell>
+                                <ribbonCell sid="cf4566f2fec381bb6dc50a10de458db4">
+                                  <id>ribbonCell80b2e</id>
+                                  <title>权限验证</title>
+                                </ribbonCell>
+                              </Items>
+                            </ribbonGroup>
+                          </Items>
+                        </ribbonMenu>
+                      </Items>
+                    </ribbonGroup>
+                    <ribbonGroup sid="10e6d75b96778b35ebd6400d84ec3449">
+                      <id>ribbonGroup417db</id>
+                      <title>星期</title>
+                      <Items>
+                        <ribbonCell sid="9a45a88e32cf6a92db28b6d2fa17feb1">
+                          <id>ribbonCell41136</id>
+                          <width>70</width>
+                          <title>星期一</title>
+                        </ribbonCell>
+                        <ribbonCell sid="03574357f2a43feba8549a9a8808075a">
+                          <id>ribbonCelle3cff</id>
+                          <width>70</width>
+                          <title>星期二</title>
+                        </ribbonCell>
+                        <ribbonCell sid="78841ebd5b76acb20b671aa0ecea9db0">
+                          <id>ribbonCell24a45</id>
+                          <width>70</width>
+                          <title>星期三</title>
+                        </ribbonCell>
+                        <ribbonCell sid="35eedaf31cd902a6cd4ad24854a8e8ac">
+                          <id>ribbonCell17426</id>
+                          <width>70</width>
+                          <title>星期四</title>
+                        </ribbonCell>
+                        <ribbonCell sid="446d7eb66e809d3e696385020b9b9099">
+                          <id>ribbonCell31073</id>
+                          <width>70</width>
+                          <title>星期五</title>
+                        </ribbonCell>
+                        <ribbonCell sid="2ec57545388f0c57e23e886221f86831">
+                          <id>ribbonCell41a92</id>
+                          <width>70</width>
+                          <title>星期六</title>
+                        </ribbonCell>
+                        <ribbonCell sid="52f1ecdbd421ea05c83ab3d78e6a5671">
+                          <id>ribbonCell837e3</id>
+                          <width>70</width>
+                          <title>星期日</title>
+                        </ribbonCell>
+                      </Items>
+                    </ribbonGroup>
+                    <ribbonGroup sid="40591141fe52a2b468133536eb87a5ce">
+                      <id>ribbonGroupf8fbb</id>
+                      <title>月份</title>
+                      <Items>
+                        <ribbonCell sid="70d356ef5e671abae8716708722196f0">
+                          <id>ribbonCelle5b9f</id>
+                          <width>80</width>
+                          <title>一月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="14500558ee83b5d4fa9ce4b082c98c76">
+                          <id>ribbonCellf0434</id>
+                          <width>80</width>
+                          <title>二月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="b8dc6a2621e6f83bf57bab3a30abe08a">
+                          <id>ribbonCellbd580</id>
+                          <width>80</width>
+                          <title>三月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="80c865693991a1ad88b9b263ae97a0e8">
+                          <id>ribbonCelld807d</id>
+                          <width>80</width>
+                          <title>四月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="bc2071c86e592bb4d1c1b39369ead0f2">
+                          <id>ribbonCell64950</id>
+                          <width>80</width>
+                          <title>五月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="08cf82a59e8c7867a930a146a75d3ce2">
+                          <id>ribbonCellcb299</id>
+                          <width>80</width>
+                          <title>六月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="83c312ab422d49af5aa33e023c881bf6">
+                          <id>ribbonCell6231b</id>
+                          <width>80</width>
+                          <title>七月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="8203264f2dc391299d6d3c261951452b">
+                          <id>ribbonCell91a0d</id>
+                          <width>80</width>
+                          <title>八月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="c6c50ccca2cee2174927298c8cb3f822">
+                          <id>ribbonCell8c25a</id>
+                          <width>80</width>
+                          <title>九月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="c8d30e9f914d7c57e1009050d4673dd6">
+                          <id>ribbonCell23daa</id>
+                          <width>80</width>
+                          <title>十月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="c7973a4be2979df818798bff19a17595">
+                          <id>ribbonCellc1eb6</id>
+                          <width>80</width>
+                          <title>十一月份</title>
+                        </ribbonCell>
+                        <ribbonCell sid="b88fdc111bbe7f65e06481ed1934ed4f">
+                          <id>ribbonCellfac2c</id>
+                          <width>80</width>
+                          <title>十二月份</title>
+                        </ribbonCell>
+                      </Items>
+                    </ribbonGroup>
+                  </Items>
+                </ribbonItem>
+              </Items>
+            </ribbonArea>
+            <operArea sid="ec7b531a1322af389285f382defc8026">
+              <id>operAreaShow</id>
+            </operArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

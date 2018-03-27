@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+  <cid>D9F2758BE723D841642CEA5A18F0CC67</cid>
+  <dbName>T_Eg_LibAdmin</dbName>
+  <showName>图书室管理员表</showName>
+  <desc />
+  <fields>
+    <field>
+      <cid>DFBAA0C5F1792229FCE587C7B3F1AA72</cid>
+      <fieldName>C_ID</fieldName>
+      <showName>C_ID</showName>
+      <fieldType>2</fieldType>
+      <pk>1</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_text_length">32</property>
+        <property name="field_text_allownull">1</property>
+        <property name="field_text_openmask">2</property>
+      </properties>
+    </field>
+    <field>
+      <cid>300AF04845E2F997440A994980E9B530</cid>
+      <fieldName>C_LIBRARYID</fieldName>
+      <showName>图书室id</showName>
+      <fieldType>2</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_text_length" />
+        <property name="field_text_allownull">2</property>
+        <property name="field_text_openmask">2</property>
+      </properties>
+    </field>
+    <field>
+      <cid>26B81E6AF81E4A1353533FC40EB453FE</cid>
+      <fieldName>N_USERID</fieldName>
+      <showName>管理员编号</showName>
+      <fieldType>1</fieldType>
+      <pk>2</pk>
+      <unique>2</unique>
+      <empty>2</empty>
+      <defaultValue />
+      <note />
+      <properties>
+        <property name="field_number_length">16</property>
+        <property name="field_number_max" />
+        <property name="field_number_showtype" />
+        <property name="field_number_precision">0</property>
+        <property name="field_number_min" />
+      </properties>
+    </field>
+  </fields>
+</table>
+

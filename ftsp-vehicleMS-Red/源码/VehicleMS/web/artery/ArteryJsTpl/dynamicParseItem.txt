@@ -1,0 +1,8 @@
+Artery.parseItem({
+	params:{itemid:'blankPaneladddse',name:'abc',id:'132'},
+	callback:function(result){
+		//Artery.get('blankPanelad267').removeAll();
+		Artery.get('blankPanelad267').addItem(result);
+	},
+	asyn:true//默认异步加载
+},this)

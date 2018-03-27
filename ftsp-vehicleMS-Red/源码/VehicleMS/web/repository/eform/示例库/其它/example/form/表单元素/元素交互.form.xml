@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>155f0be9ef43073bbc5984e881c0900f</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.form.bdys.Ysjh.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/form/bdys/Ysjh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>Aedbf07bb32b58cc77fe39cf54e3218db</id>
+      <background-color>#DFE8F6</background-color>
+      <Items>
+        <topbar sid="A1d97d5e93d4f83bd3bd61b6dba1bb4e4">
+          <id>A1d97d5e93d4f83bd3bd61b6dba1bb4e4</id>
+          <Items>
+            <tbButton sid="A6fed39e0913dc4e476f4c74b7958ad23">
+              <id>tbButton_1</id>
+              <text>setValue</text>
+              <onClickClient><![CDATA[tbButton_1_onClickClient]]></onClickClient>
+            </tbButton>
+          </Items>
+        </topbar>
+        <formArea sid="A361352b5b1305fc98f226be0bc900fce">
+          <id>A361352b5b1305fc98f226be0bc900fce</id>
+          <labelWidth>100</labelWidth>
+          <formTableBorder>false</formTableBorder>
+          <cellpadding>5</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <readOnlyBorder>true</readOnlyBorder>
+          <Items>
+            <faString sid="Aac6b5134a04464ea45b4e4f63bbae51c">
+              <id>field1</id>
+              <required>false</required>
+              <height>0</height>
+              <onChangeClient><![CDATA[field1_onChangeClient]]></onChangeClient>
+              <label extend="true">同步字段2</label>
+            </faString>
+            <faString sid="Ac478f3070067e23fde8fb2a7157417c3">
+              <id>field2</id>
+              <required>false</required>
+              <height>0</height>
+              <label extend="true">字段2</label>
+            </faString>
+            <faCode sid="A7327a60226bce673d079bc31333ca818">
+              <id>field3</id>
+              <height>0</height>
+              <codeType>-1</codeType>
+              <ajaxLoad>false</ajaxLoad>
+              <onChangeClient><![CDATA[field3_onChangeClient]]></onChangeClient>
+              <label extend="true">显示隐藏字段4</label>
+            </faCode>
+            <faString sid="A3aecd86b188ad4d0393a6dd2582694bc">
+              <id>field4</id>
+              <required>false</required>
+              <height>0</height>
+              <value>2345</value>
+              <label extend="true">字段4</label>
+              <labelStyle extend="true">字段4</labelStyle>
+            </faString>
+            <faCode sid="A207a7ce64ba6947bb393825de3aa978e">
+              <id>field5</id>
+              <height>0</height>
+              <dynamicData><![CDATA[field5_dynamicData]]></dynamicData>
+              <ajaxLoad>false</ajaxLoad>
+              <onChangeClient><![CDATA[field5_onChangeClient]]></onChangeClient>
+              <label extend="true">代码类型</label>
+            </faCode>
+            <faCode sid="Aec5ba25cbc774733db94a94871705aae">
+              <id>field6</id>
+              <height>0</height>
+              <label extend="true">请选择</label>
+            </faCode>
+            <faNumeric sid="A9c7ba8bf201f7e3071ada995f962851b">
+              <id>numberFld</id>
+              <required>false</required>
+              <height>0</height>
+              <onChangeClient><![CDATA[numberFld_onChangeClient]]></onChangeClient>
+              <label extend="true">数值类型</label>
+            </faNumeric>
+            <faDate sid="A4ff6621210d215b6ca9e407c68fa1835">
+              <id>dateFld</id>
+              <height>0</height>
+              <onChangeClient><![CDATA[dateFld_onChangeClient]]></onChangeClient>
+              <label extend="true">日期</label>
+            </faDate>
+            <faOrgan sid="A68b68d1129470f99f239e3c341eac12b">
+              <id>organFld</id>
+              <editor>mTree</editor>
+              <showType>window</showType>
+              <height>0</height>
+              <value>-1</value>
+              <onChangeClient><![CDATA[organFld_onChangeClient]]></onChangeClient>
+              <label extend="true">组织机构</label>
+            </faOrgan>
+            <faCode sid="A2a0be16072dc475a5f74e8ec0dfe8e78">
+              <id>sradioFld</id>
+              <editor>mCheckbox</editor>
+              <height>0</height>
+              <codeType>-2</codeType>
+              <ajaxLoad>false</ajaxLoad>
+              <editable>true</editable>
+              <onChangeClient><![CDATA[sradioFld_onChangeClient]]></onChangeClient>
+              <label extend="true">sRadio</label>
+            </faCode>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

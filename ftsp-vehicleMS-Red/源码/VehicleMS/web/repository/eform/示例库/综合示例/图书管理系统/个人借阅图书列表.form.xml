@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>B5327983AA4C4B5160C52C1EBD63C431</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.book.GrjyLogic.java</javaLocation>
+  <jsLocation>artery/arteryClient/book/userLending.js</jsLocation>
+  <descript>​</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <listArea sid="A5e19a8eba53e457da240ecac7fd853e5">
+          <id>lendList</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <width>97%</width>
+          <height>30%</height>
+          <isPageSplit>false</isPageSplit>
+          <isStartNew>true</isStartNew>
+          <style>margin-top:10px;</style>
+          <themeStyle>default</themeStyle>
+          <highLightRule><![CDATA[lendList_highLightRule]]></highLightRule>
+          <onShow><![CDATA[lendList_onShow]]></onShow>
+          <Items>
+            <header sid="Aa8c821c3f88e241e13332ea4a75ecd51">
+              <id>Aa8c821c3f88e241e13332ea4a75ecd51</id>
+              <text>已借图书</text>
+            </header>
+            <column sid="Ae38bd7d234681601905e5ec9a9c4a904">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>名称</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Ab02a68605581034e2e7e84ba3f4e1919">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Ac637bcb789bd83418742eca2b5271246">
+              <id>lstCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A56b35b4709b6fb496cc86ada234e93c6">
+              <id>lstDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{df([rs1.D_PUBLISHER],yyyy-MM-dd)}</dataName>
+              <title>出版时间</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Ae9961d673b37a5575a4d3df82ed661ed">
+              <id>lstDLEND</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_LEND</inheritfld>
+              <dataName>{df([rs1.D_LEND],yyyy-MM-dd)}</dataName>
+              <title>借阅时间</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A66faa2e077ae3f5c7d94666a1b5660e6">
+              <id>lstNTYPE</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{ncode([rs1.N_TYPE],600)}</dataName>
+              <title>分类</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Aeab5c1c095b925ccebfa75dae094c1ef">
+              <id>lstCLIBRARYID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{rs1.C_LIBRARYNAME}</dataName>
+              <title>所属图书室</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <topbar sid="topbarD89458D3925F231A822676C9B3A2C713">
+              <id>topbarD89458D3925F231A822676C9B3A2C713</id>
+              <Items>
+                <tbButton sid="tbButton41F91BEEF493B44BCDE83EF0A1CDA3CF">
+                  <id>tbButton41F91BEEF493B44BCDE83EF0A1CDA3CF</id>
+                </tbButton>
+              </Items>
+            </topbar>
+          </Items>
+        </listArea>
+        <listArea sid="A630eb3ef25f99ecc54e958707933d53f">
+          <id>bookingList</id>
+          <ds>rs2</ds>
+          <width>97%</width>
+          <height>65%</height>
+          <isStartNew>true</isStartNew>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <style>margin-top:10px;</style>
+          <themeStyle>default</themeStyle>
+          <onShow><![CDATA[bookingList_onShow]]></onShow>
+          <Items>
+            <header sid="Af389e5f1ca4a91df80bcc613ecfe0724">
+              <id>Af389e5f1ca4a91df80bcc613ecfe0724</id>
+              <text>预定图书</text>
+            </header>
+            <column sid="Af010f1ab4fb27a41d77340f27195bf19">
+              <id>Af010f1ab4fb27a41d77340f27195bf19</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs2.C_NAME}</dataName>
+              <title>名称</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A300f6d396a18b94ed0fc7a3593578adb">
+              <id>A300f6d396a18b94ed0fc7a3593578adb</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs2.C_AUTH}</dataName>
+              <title>作者</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A3f36ed9c7bb5dfe21d4df5529883ebea">
+              <id>A3f36ed9c7bb5dfe21d4df5529883ebea</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs2.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Af7f69a8b72a66e65116fdae4f7a94ec6">
+              <id>Af7f69a8b72a66e65116fdae4f7a94ec6</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{df([rs2.D_PUBLISHER],yyyy-MM-dd)}</dataName>
+              <title>出版时间</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A911cc50848b3a2e804f882cb9c30dbb0">
+              <id>A911cc50848b3a2e804f882cb9c30dbb0</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BOOKING</inheritfld>
+              <dataName>{df([rs2.D_BOOKING],yyyy-MM-dd)}</dataName>
+              <title>预定时间</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A25425b790c2d445b7a95b267b63c6f67">
+              <id>A25425b790c2d445b7a95b267b63c6f67</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{ncode([rs2.N_TYPE],-600)}</dataName>
+              <title>分类</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A809d51c37c71d6b3eeaccbeba044b23a">
+              <id>A809d51c37c71d6b3eeaccbeba044b23a</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{rs2.C_LIBRARYNAME}</dataName>
+              <title>所属图书室</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Ac3b247a7d9d75e9241aa50a52aec0448">
+              <id>Ac3b247a7d9d75e9241aa50a52aec0448</id>
+              <title>操作</title>
+              <Items>
+                <colOperText sid="Aa40db9f67510f53f89f1616a6956711f">
+                  <id>cancelOper</id>
+                  <text>取消预定</text>
+                  <onClickClient><![CDATA[cancelOper_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[cancelOper_onClickServer]]></onClickServer>
+                </colOperText>
+              </Items>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs2" type="sql">SELECT 
+T_Eg_Book.C_ID ,
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_PUBLISHER , 
+T_Eg_Book.D_PUBLISHER , 
+T_Eg_Book.D_BOOKING , 
+T_Eg_Book.N_TYPE , 
+(select b.C_NAME from T_Eg_Library b where b.C_ID = T_Eg_Book.C_LIBRARYID ) as "C_LIBRARYNAME"
+FROM T_Eg_Book where N_VALID=1 
+ and N_BOOKINGUSERID={ses.userid}</ds>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_ID ,
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_PUBLISHER , 
+T_Eg_Book.D_PUBLISHER , 
+T_Eg_Book.D_LEND , 
+T_Eg_Book.N_TYPE , 
+(select b.C_NAME from T_Eg_Library b where b.C_ID = T_Eg_Book.C_LIBRARYID ) as "C_LIBRARYNAME"
+FROM T_Eg_Book 
+ where N_VALID=1 
+  and N_LENDUSERID={ses.userid}</ds>
+  </dslist>
+</form>
+

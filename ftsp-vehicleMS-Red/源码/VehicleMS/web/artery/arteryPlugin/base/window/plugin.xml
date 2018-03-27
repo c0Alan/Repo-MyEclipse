@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="window" cn="窗口" jsType="artery-base" icon="window.gif"
+	iconNew="windowNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-07-01</CreateTime>
+		<Describe>弹出窗口控件，由于本窗口本身就在表单中,减少Iframe的使用,openForm是用Ifram打开新的一个表单,如果窗口比较简单使用window比openForm效率要高,默认是不显示出来的,需要调用show或者showAt方法来弹出,</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<!-- 设置本控件与其它控件的位置关系 -->
+	<Parents>
+		<Parent type="form"></Parent>
+		<Parent type="blankPanel"></Parent>
+	</Parents>
+	<Children>
+		<Child type="upRegion" />
+		<Child type="leftRegion" />
+		<Child type="downRegion" />
+		<Child type="rightRegion" />
+		<Child type="centerRegion" />
+		<Child type="htmlArea" />
+		<Child type="treeArea" />
+		<Child type="tabArea" />
+		<Child type="buttonArea" />
+		<Child type="activeX" />
+		<Child type="tableLayout" />
+		<Child type="formArea" />
+		<Child type="listArea" />
+		<Child type="header" />
+		<Child type="topbar" />
+		<Child type="bottomBar" />
+		<Child type="footer" />
+	</Children>
+
+	<Class>com.thunisoft.artery.plugin.base.Window
+	</Class>
+
+	<!-- 设置本控件所需的js文件 -->
+	<JsFile>
+		<File>window.js</File>
+	</JsFile>
+
+	<!-- 设置本控件的属性 -->
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apwindow</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" export="true" et="正确输入为：n"
+			tips="设置本组件的宽度，可输入数值">
+			<Value>300</Value>
+		</Property>
+		<Property cn="高度" type="1" name="height" export="true" et="正确输入为：n"
+			tips="设置本组件的高度，可输入数值">
+			<Value>300</Value>
+		</Property>
+		<Property cn="标题" type="1" name="title" export="true" tips="窗口的标题">
+			<Value>新窗口</Value>
+		</Property>
+		<Property cn="是否可拖动" type="11" name="draggable" export="true" tips="是否可拖动,默认为true可拖动">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否可调整大小" type="11" name="resizable" export="true" tips="是否可调整大小,默认为false不可调整大小">
+			<Value>false</Value>
+		</Property>
+		<Property cn="样式名称" type="1" export="true" name="className"  tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+	      <Value />
+	    </Property>
+	    <Property cn="主题样式" type="21" export="true" name="themeStyle" tips="设置控件的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="客户端" type="15" group="关闭时脚本" name="onCloseClient"
+			tips="窗口关闭时触发的客户端事件">
+			<Value />
+      <Description>
+    
+      	<![CDATA[
+      	<p>窗口关闭时触发的客户端事件</p>
+<pre>
+/**
+ * onCloseClient(window7870c)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function window7870c_onCloseClient (rc){
+	
+}
+
+</pre>
+      		
+      ]]>
+
+      </Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="关闭时脚本" name="onCloseServer"
+			tips="窗口关闭时触发的服务器端事件,当客户端向后台发送请求时才会执行">
+			<Value />
+           <Description>
+    
+      	<![CDATA[
+      	<p>窗口关闭时触发的服务器端事件,当客户端向后台发送请求时才会执行</p>
+<pre>
+/**
+	 *  窗口
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public void window7870c_onCloseServer(Item item) {
+	}
+
+}
+
+</pre>
+      		
+      ]]>
+
+      </Description>
+		</Property>
+		<Property cn="是否生成" type="11" name="show">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow">
+			<Value />
+		</Property>
+	</Properties>
+	
+		<Methods>
+		<Method name="getWin" inherit="false" return="Ext.Window" tips="获取本window组件的Ext.Window">
+			<Description><![CDATA[<p>获取本window组件的Ext.Window</p><pre>
+Artery.get("windowId").getWin();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>Ext.Window</Return>
+		</Method>
+		
+		<Method name="show" inherit="false" return="void" tips="显示窗口">
+			<Description><![CDATA[<p>显示窗口</p><pre>
+Artery.get("windowId").show();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		
+		<Method name="hide" inherit="false" return="void" tips="隐藏窗口">
+			<Description><![CDATA[<p>隐藏窗口</p><pre>
+Artery.get("windowId").hide();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		
+		<Method name="showAt" inherit="false" return="void" tips="在指定坐标显示,参数xy代表要显示的坐标的数组">
+			<Description><![CDATA[<p>在指定坐标显示,参数xy代表要显示的坐标的数组</p><pre>
+Artery.get("windowId").showAt([x,y]);
+  		</pre>]]></Description>
+			<Parameters>
+				<Param value="[x,y]">[x,y]:坐标</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		
+	<Method name="alignTo"  return="void" tips="把本element生成到另一个element相对位置">
+		<Description><![CDATA[<p>把本element生成到另一个element相对位置</p>
+		<P>参数解释(参考 Ext.Element.alignTo( Mixed element, String position, [Array offsets], [Boolean/Object animate] ))
+Artery.get("windowId").alignTo(otherEl,position,relative);
+  		</pre>]]></Description>
+		<Parameters>
+			<Param>otherEl:Mixed</Param>
+			<Param>position:String</Param>
+			<Param>relative:Array</Param>
+		</Parameters>
+		<Return>void</Return>
+	</Method>
+
+	</Methods>
+</Item>

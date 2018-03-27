@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>999477ff01be39c71281f97d3c4c71d9</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.tab.Page1.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/tab/Page1.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form2aa42">
+      <id>form2aa42</id>
+      <background-color>#0982C6</background-color>
+      <Items>
+        <tableLayout sid="7c356d5ecb07eee76e9cb4e4c139cb35">
+          <id>tableLayout3a90b</id>
+          <colNum>1</colNum>
+          <height>100%</height>
+          <Items>
+            <blankPanel sid="1bf7b6159c258efc525a60646c61515d">
+              <id>blankPanel987b4</id>
+              <bodyStyle>text-align:center;position:relative;</bodyStyle>
+              <synTabStyle>height:35px;vertical-align:top;</synTabStyle>
+              <Items>
+                <blankPanel sid="9c93e0489791f6dc3ccdd1ede98a9b18">
+                  <id>blankPanel96e8c</id>
+                  <width>0</width>
+                  <bodyStyle>white-space:nowrap;</bodyStyle>
+                  <themeStyle>bftopTitle</themeStyle>
+                  <buttonFrame>true</buttonFrame>
+                  <Items>
+                    <htmlArea sid="1c7ba6d29a466c6e16305c575bb67362">
+                      <id>htmlAreac451f</id>
+                      <value>王刚过失投放危险物质罪、过失以危险方法危害公共安全罪一案（吉检侦监审[2010]第0009号）</value>
+                      <align>center</align>
+                      <style>padding:3px;font-size:13px;color:#fff;</style>
+                    </htmlArea>
+                  </Items>
+                </blankPanel>
+                <buttonArea sid="896ab561b3fce04b8071590758074f51">
+                  <id>buttonArea178ad</id>
+                  <width>20</width>
+                  <style>position:absolute;right:0;top:3;</style>
+                  <Items>
+                    <button sid="b8ecfa1039d8a999d1a63953dfc5ed82">
+                      <id>button804cc</id>
+                      <text>全流程</text>
+                      <themeStyle>darkblue</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="eae1188872906dd0d04c737ea1fa7f9f">
+              <id>blankPanel780eb</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>bluePlain</themeStyle>
+              <synTabHeight>true</synTabHeight>
+              <Items>
+                <leftRegion sid="ef05a58bdcd233038d05cc3a04b01dd3">
+                  <id>leftRegion6df6f</id>
+                  <split>false</split>
+                  <margins>0 0 0 5</margins>
+                  <border>false</border>
+                  <Items>
+                    <navTabArea sid="1952fb3041e8b5f08d597142c2462e1a">
+                      <id>navTabAreaabd1e</id>
+                      <width>228</width>
+                      <height>100%</height>
+                      <tabPosition>top</tabPosition>
+                      <tabItemFill>true</tabItemFill>
+                      <frame>true</frame>
+                      <themeStyle>cookie</themeStyle>
+                      <Items>
+                        <navTabItem sid="fab23cdc9ceadb3d99266d2fa8c7b9b4">
+                          <id>navTabIteme21f0</id>
+                          <title />
+                          <icon>/artery/arteryImage/sample/mail.gif</icon>
+                          <titleTip>我的邮箱</titleTip>
+                          <active>true</active>
+                          <Items>
+                            <blankPanel sid="def2b7ab1754588161de807ff9d3715a">
+                              <id>blankPanel265f3</id>
+                              <height>100%</height>
+                              <bodyContainer>true</bodyContainer>
+                              <Items>
+                                <treeNav sid="999bed6cda20c46a9e5789beb967f364">
+                                  <id>treeNav01653</id>
+                                  <line>false</line>
+                                  <useArrows>true</useArrows>
+                                  <themeStyle>orange</themeStyle>
+                                  <Items>
+                                    <treeItem sid="bc655a5d394f62601bae42ece16b683c">
+                                      <id>treeItem4b597</id>
+                                      <caption>案件摘要</caption>
+                                      <icon>/artery/arteryImage/organ/treenode_corp.gif</icon>
+                                    </treeItem>
+                                    <treeCatalog sid="7882b74b68a17beafb780d8b8730b52d">
+                                      <id>treeCatalog9250e</id>
+                                      <caption>证据</caption>
+                                      <Items>
+                                        <treeItem sid="6465f4a0960d69f4958a2916ec8a97d9">
+                                          <id>treeItem90f00</id>
+                                          <caption>电子资料1</caption>
+                                          <icon>/artery/arteryImage/file/tbmenuitem.gif</icon>
+                                        </treeItem>
+                                        <treeItem sid="104288332b92320c7c8a1e827099c5f4">
+                                          <id>treeItem623d3</id>
+                                          <caption>电子资料2</caption>
+                                          <icon>/artery/arteryImage/file/tbmenuitem.gif</icon>
+                                        </treeItem>
+                                      </Items>
+                                    </treeCatalog>
+                                    <treeCatalog sid="c8fe438227fd8856c0709719d7a89ee6">
+                                      <id>treeCatalogf62a9</id>
+                                      <caption>被害人</caption>
+                                    </treeCatalog>
+                                    <treeCatalog sid="b6976f69e8adf8d86bac2803ae7d536c">
+                                      <id>treeCatalog03ece</id>
+                                      <caption>事实认定</caption>
+                                      <Items>
+                                        <treeItem sid="f3a0dee328b1bb96c9983f454466a16b">
+                                          <id>treeItem2cf39</id>
+                                          <caption>提押证</caption>
+                                          <icon>/artery/arteryImage/file/writ.gif</icon>
+                                        </treeItem>
+                                        <treeItem sid="b65ac2b9b9ff21838f242600fd2140f9">
+                                          <id>treeItem61fc0</id>
+                                          <caption>询问犯罪嫌疑人</caption>
+                                          <icon>/artery/arteryImage/file/writ.gif</icon>
+                                        </treeItem>
+                                        <treeItem sid="5af701cd73d42589de55471da2615515">
+                                          <id>treeItemf6e5c</id>
+                                          <caption>听取犯罪嫌疑人</caption>
+                                          <icon>/artery/arteryImage/file/writ.gif</icon>
+                                        </treeItem>
+                                      </Items>
+                                    </treeCatalog>
+                                  </Items>
+                                </treeNav>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </navTabItem>
+                        <navTabItem sid="8d531a4450ea4f985aeefb6b35f4685c">
+                          <id>navTabItem87118</id>
+                          <title />
+                          <icon>/artery/arteryImage/sample/text.gif</icon>
+                          <titleTip>我的文档</titleTip>
+                          <Items>
+                            <blankPanel sid="ff58b978e749cba8b6d80373908e8d55">
+                              <id>blankPanel83273</id>
+                              <height>100%</height>
+                              <bodyStyle>padding:5px;</bodyStyle>
+                              <bodyContainer>true</bodyContainer>
+                              <Items>
+                                <blankPanel sid="d9fe7e79997fb508310921d46df4c2bb">
+                                  <id>blankPanel2cf92</id>
+                                  <bodyStyle>padding:3px;</bodyStyle>
+                                  <themeStyle>collapseUnis</themeStyle>
+                                  <Items>
+                                    <header sid="8ac5854204d3f1d9bc7fcc63789aafa8">
+                                      <id>header4563c</id>
+                                      <text>正卷</text>
+                                      <Items>
+                                        <collapseBtn sid="43e6b24eb406ae0a4083e8679d5abf86">
+                                          <id>collapseBtna9c99</id>
+                                        </collapseBtn>
+                                      </Items>
+                                    </header>
+                                    <buttonArea sid="cdd526398e69fd2dd25652c6f6d850b8">
+                                      <id>buttonAreacbbc9</id>
+                                      <direction>ver</direction>
+                                      <align>fill</align>
+                                      <Items>
+                                        <button sid="776aec0fad14426e1004b260c096a63c">
+                                          <id>buttonc2f1b</id>
+                                          <text>审查逮捕意见书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="4eb363f8ad7fb182122038699d6cb865">
+                                          <id>buttone69bb</id>
+                                          <text>逮捕决定书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="1c613ab36c191b5c17ef1425b5ef5dd1">
+                                          <id>button01edb</id>
+                                          <text>审查逮捕意见书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="6840d01361cfda5772850d17d749fdde">
+                                          <id>button69856</id>
+                                          <text>移送有关主管机关</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="1fdb6c9082d2629d77be33b3beb52556">
+                                          <id>button0230f</id>
+                                          <text>审查逮捕意见书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                      </Items>
+                                    </buttonArea>
+                                  </Items>
+                                </blankPanel>
+                                <blankPanel sid="98c35005ba42ae1e3dbb0888898af83a">
+                                  <id>blankPanela9af6</id>
+                                  <bodyStyle>padding:3px;</bodyStyle>
+                                  <themeStyle>collapseUnis</themeStyle>
+                                  <Items>
+                                    <header sid="25e0e1dc0950017c3b6d74bb6a9c7240">
+                                      <id>header41efa</id>
+                                      <text>副卷一</text>
+                                      <Items>
+                                        <collapseBtn sid="815b6fe9cfcb23861c48073c868a9a66">
+                                          <id>collapseBtn457b5</id>
+                                        </collapseBtn>
+                                      </Items>
+                                    </header>
+                                    <buttonArea sid="9c87f3cb1b192e0beced13c43541cd33">
+                                      <id>buttonArea0389c</id>
+                                      <direction>ver</direction>
+                                      <align>fill</align>
+                                      <Items>
+                                        <button sid="61dece68e605df3b651dab2f1755078f">
+                                          <id>button98fab</id>
+                                          <text>告知书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="516c6f504111877addd983a9faa95600">
+                                          <id>buttonbf8eb</id>
+                                          <text>询问罪犯</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="bc8ef6328eef78a35cb7227663567e8e">
+                                          <id>button583d0</id>
+                                          <text>嫌疑人笔录</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="e729d7dd5c124d619fdc66c874672050">
+                                          <id>button6ed97</id>
+                                          <text>案件讨论记录</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                      </Items>
+                                    </buttonArea>
+                                  </Items>
+                                </blankPanel>
+                                <blankPanel sid="b5e6da76350c23ea1bd33feee0c162e5">
+                                  <id>blankPanel3bcb4</id>
+                                  <bodyStyle>padding:3px;</bodyStyle>
+                                  <themeStyle>collapseUnis</themeStyle>
+                                  <Items>
+                                    <header sid="b47e7be311a276b7f413f10c1a2176cf">
+                                      <id>headeref50e</id>
+                                      <text>副卷二</text>
+                                      <Items>
+                                        <collapseBtn sid="8bc9186eba7a206191aea6bd1c2c30c9">
+                                          <id>collapseBtn7aec0</id>
+                                        </collapseBtn>
+                                      </Items>
+                                    </header>
+                                    <buttonArea sid="a387034b9ff558e33f630648c14d1432">
+                                      <id>buttonArea761fd</id>
+                                      <direction>ver</direction>
+                                      <align>fill</align>
+                                      <Items>
+                                        <button sid="28e8f33a7b2d709cb79922828c0f3822">
+                                          <id>button74b74</id>
+                                          <text>逮捕决定书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="af53a6dc400be24c7d3f721e0c5eeb23">
+                                          <id>buttone50ef</id>
+                                          <text>移送有关主管机关</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="3d1826a036617abcd0fb88e074f61d36">
+                                          <id>button3d8e5</id>
+                                          <text>告知书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="157aca3242934a44e340f1eef65120cf">
+                                          <id>buttonc7788</id>
+                                          <text>询问嫌疑人笔录</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                      </Items>
+                                    </buttonArea>
+                                  </Items>
+                                </blankPanel>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </navTabItem>
+                        <navTabItem sid="503faec48b82722d026f32e4088eee23">
+                          <id>navTabItemef1f9</id>
+                          <title />
+                          <icon>/artery/arteryImage/sample/home.gif</icon>
+                          <titleTip>我的主页</titleTip>
+                          <Items>
+                            <blankPanel sid="ab60ce0367e62b041df09f7993840a70">
+                              <id>blankPanelaf81c</id>
+                              <height>100%</height>
+                              <bodyStyle>padding:5px;</bodyStyle>
+                              <bodyContainer>true</bodyContainer>
+                              <Items>
+                                <blankPanel sid="bd5fb1e01ea355782c2d3fee2180b110">
+                                  <id>blankPanel3035b</id>
+                                  <bodyStyle>padding:3px;</bodyStyle>
+                                  <themeStyle>collapseUnis</themeStyle>
+                                  <Items>
+                                    <header sid="1acc4a31887c1f56baed49c6bc579d43">
+                                      <id>header19dcd</id>
+                                      <text>承前案件文书</text>
+                                      <Items>
+                                        <collapseBtn sid="c5145dc27554b6242b2e32a9ed255d77">
+                                          <id>collapseBtn9a758</id>
+                                        </collapseBtn>
+                                      </Items>
+                                    </header>
+                                    <htmlArea sid="f77cd007c62821e26dc97007ddf82f2c">
+                                      <id>htmlArea33f41</id>
+                                      <value>X检举索字[2009]第0013号</value>
+                                      <style>color:#828083;padding:5 0;</style>
+                                    </htmlArea>
+                                    <buttonArea sid="00bbcb9454bc775b93e18115b9336703">
+                                      <id>buttonArea433e0</id>
+                                      <direction>ver</direction>
+                                      <align>fill</align>
+                                      <Items>
+                                        <button sid="ba8ea2bce242b743545ba1f0accfee94">
+                                          <id>buttone8811</id>
+                                          <text>审查逮捕意见书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="695938638767049d58fad31a8fd990f5">
+                                          <id>button0b6fa</id>
+                                          <text>逮捕决定书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="bcce5bfabdd5366b949dd26a2fcb6e50">
+                                          <id>button3fe10</id>
+                                          <text>审查逮捕意见书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="1a5dd638ca4bbd1933c56e061959470e">
+                                          <id>buttona57d1</id>
+                                          <text>移送有关主管机关</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="0a73cfd031d694478d3795e4b13d0c5f">
+                                          <id>button4a5d7</id>
+                                          <text>审查逮捕意见书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                      </Items>
+                                    </buttonArea>
+                                    <htmlArea sid="f322404ecbd9631da59442dcf6cb83fa">
+                                      <id>htmlArea9de26</id>
+                                      <value>X检反贪索字[2009]第0015号</value>
+                                      <style>color:#828083;padding:5 0;</style>
+                                    </htmlArea>
+                                    <buttonArea sid="3c2b51648bb71b33f8882aec5bc90ef5">
+                                      <id>buttonArea3731b</id>
+                                      <direction>ver</direction>
+                                      <align>fill</align>
+                                      <Items>
+                                        <button sid="cdecb658a876cf80816b9a81058f7f77">
+                                          <id>button13cdf</id>
+                                          <text>告知书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="48dd8dad788a37295e18cb3ec4268134">
+                                          <id>button69fdf</id>
+                                          <text>询问罪犯</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="8b3fea479b18294f2ac77b85d1e17971">
+                                          <id>buttone9101</id>
+                                          <text>嫌疑人笔录</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="455d0329002e1ab6db0374ccc4ca2ed3">
+                                          <id>button0893e</id>
+                                          <text>案件讨论记录</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                      </Items>
+                                    </buttonArea>
+                                  </Items>
+                                </blankPanel>
+                                <blankPanel sid="613f90a709ca8c13e3e8232f74cc6fb7">
+                                  <id>blankPanelc39ee</id>
+                                  <bodyStyle>padding:3px;</bodyStyle>
+                                  <themeStyle>collapseUnis</themeStyle>
+                                  <Items>
+                                    <header sid="d22a22bf872c68c20675c656afd08a3d">
+                                      <id>header76e33</id>
+                                      <text>后续案件文书</text>
+                                      <Items>
+                                        <collapseBtn sid="ba69e788f7386ba4f3c659360c059931">
+                                          <id>collapseBtn6c65e</id>
+                                        </collapseBtn>
+                                      </Items>
+                                    </header>
+                                    <htmlArea sid="c05951f2b3e10c7d82efdb545620831f">
+                                      <id>htmlAreaac5bf</id>
+                                      <value>X检刑诉受[2009]第0102号</value>
+                                      <style>color:#828083;padding:5 0;</style>
+                                    </htmlArea>
+                                    <buttonArea sid="95f77d196c3c20c6026b60a44a1be13b">
+                                      <id>buttonAreabca3e</id>
+                                      <direction>ver</direction>
+                                      <align>fill</align>
+                                      <Items>
+                                        <button sid="aa50dcd177b23daf245b87382b7026c0">
+                                          <id>button4b23b</id>
+                                          <text>逮捕决定书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="f676cf89803df7f2a11b2dbe965ed3fa">
+                                          <id>buttonea830</id>
+                                          <text>移送有关主管机关</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="2a4135195286933c3554ca62aaa49d06">
+                                          <id>button9abd4</id>
+                                          <text>告知书</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                        <button sid="56f8f4ff0470310dbff080471e096945">
+                                          <id>button3f3ca</id>
+                                          <text>询问嫌疑人笔录</text>
+                                          <icon>/artery/arteryImage/file/page.gif</icon>
+                                          <themeStyle>listBlue</themeStyle>
+                                        </button>
+                                      </Items>
+                                    </buttonArea>
+                                  </Items>
+                                </blankPanel>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </navTabItem>
+                        <navTabItem sid="417a60185122f89b94bce3807dd8b46b">
+                          <id>navTabItem7a02d</id>
+                          <title />
+                          <icon>/artery/arteryImage/sample/clock.gif</icon>
+                          <titleTip>我的提醒</titleTip>
+                          <Items>
+                            <blankPanel sid="89ed7bd706e9986e5bb85b0c29a48de0">
+                              <id>blankPanelaa2c9</id>
+                              <bodyStyle>padding:2px;</bodyStyle>
+                              <bodyContainer>true</bodyContainer>
+                              <Items>
+                                <buttonArea sid="3e87d09e91ff33378e50e0dbab7e1b4e">
+                                  <id>buttonArea368d2</id>
+                                  <direction>float</direction>
+                                  <spacing>2</spacing>
+                                  <Items>
+                                    <button sid="f3081b6577b3ff02584eb3e46f40eb14">
+                                      <id>buttonaab13</id>
+                                      <text>通话记录</text>
+                                      <icon>/artery/arteryImage/sample/phone.png</icon>
+                                      <iconTop>true</iconTop>
+                                      <themeStyle>block</themeStyle>
+                                    </button>
+                                    <button sid="f4724b31452b39e7ad56ac5ab069d047">
+                                      <id>buttone1fb2</id>
+                                      <text>监控录相</text>
+                                      <icon>/artery/arteryImage/sample/camera.png</icon>
+                                      <iconTop>true</iconTop>
+                                      <themeStyle>block</themeStyle>
+                                    </button>
+                                    <button sid="ff2fa34669e6d3c8f3f1127341e054d2">
+                                      <id>buttona83a7</id>
+                                      <text>证据一</text>
+                                      <icon>/artery/arteryImage/sample/file.png</icon>
+                                      <iconTop>true</iconTop>
+                                      <themeStyle>block</themeStyle>
+                                    </button>
+                                    <button sid="4cb3099a174bf98df6a7bddbc4cbe0b7">
+                                      <id>button1bae7</id>
+                                      <text>证据二</text>
+                                      <icon>/artery/arteryImage/sample/file.png</icon>
+                                      <iconTop>true</iconTop>
+                                      <themeStyle>block</themeStyle>
+                                    </button>
+                                    <button sid="ef3c5003fbcf9cc11fdc8ad1908de149">
+                                      <id>button47fa6</id>
+                                      <text>证据三</text>
+                                      <icon>/artery/arteryImage/sample/file.png</icon>
+                                      <iconTop>true</iconTop>
+                                      <themeStyle>block</themeStyle>
+                                    </button>
+                                  </Items>
+                                </buttonArea>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </navTabItem>
+                      </Items>
+                    </navTabArea>
+                  </Items>
+                </leftRegion>
+                <centerRegion sid="d2cf53ce217b949f6dce200c05abc995">
+                  <id>centerRegiona5f58</id>
+                  <margins>0 5 0 5</margins>
+                  <border>false</border>
+                  <Items>
+                    <blankPanel sid="3a5f928f81908839e1fa9b53f55a4ec3">
+                      <id>blankPanel31756</id>
+                      <height>100%</height>
+                      <frame>true</frame>
+                      <themeStyle>unis</themeStyle>
+                      <Items>
+                        <blankPanel sid="ba8f1e71cf4e9fd319233d8d5edb2d35">
+                          <id>blankPanel9a6c3</id>
+                          <style>padding:8px;border-bottom:1px solid #AFBEDD;</style>
+                          <Items>
+                            <tableLayout sid="9c4ea661088919bbd8eeafa1be73b0c6">
+                              <id>tableLayoutc7cf4</id>
+                              <colWidths>60</colWidths>
+                              <Items>
+                                <imageArea sid="0b5084d201c2891cb3fa27fa9fc63c83">
+                                  <id>imageArea1c197</id>
+                                  <icon>/artery/arteryImage/file/calendar.png</icon>
+                                  <rowSpan>3</rowSpan>
+                                </imageArea>
+                                <htmlArea sid="c5c50180cc9e9b7d41e11f4d787a0b32">
+                                  <id>htmlAreae96ea</id>
+                                  <value>案件目前处于办理中</value>
+                                  <style>font-weight:700;font-size:16px;color:#00489E;</style>
+                                </htmlArea>
+                                <htmlArea sid="f8c02acb58604a0c43018eadbce29b44">
+                                  <id>htmlArea37a4c</id>
+                                  <value>承办人：程邦(吉林省人民检察院侦监处）</value>
+                                </htmlArea>
+                                <htmlArea sid="1396ccdae189bf6bf087800cffa96e0e">
+                                  <id>htmlArea86122</id>
+                                  <value>&lt;table cellpadding=0 cellspacing=0 width="350px"&gt;&lt;tr&gt;&lt;td width="70%" class="bg-process-green" style="border:1px solid #037700;border-right:0px;"&gt;已用6天&lt;/td&gt;&lt;td class="bg-process-red" style="border:1px solid #C93200;"&gt;剩余1天&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+                                </htmlArea>
+                              </Items>
+                            </tableLayout>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="9de8688bd71fd44295c89795e39529ab">
+                          <id>blankPanela7067</id>
+                          <style>padding:8px;border-bottom:1px solid #AFBEDD;</style>
+                          <Items>
+                            <htmlArea sid="e3e1d61ef0defbb4f298a6357f90b0ef">
+                              <id>htmlArea057ae</id>
+                              <value>基本信息</value>
+                              <style>font-weight:700;font-size:16px;color:#00489E;</style>
+                            </htmlArea>
+                            <formArea sid="45d7d9de1c59dd6d28675bccf80e5e08">
+                              <id>formArea0a221</id>
+                              <colNum>1</colNum>
+                              <labelAlign>left</labelAlign>
+                              <labelWidth>70</labelWidth>
+                              <displayType>display</displayType>
+                              <cellpaddingDisplay>3</cellpaddingDisplay>
+                              <Items>
+                                <faString sid="df0d68584e7327837a41a124c9feffdf">
+                                  <id>faString3547c</id>
+                                  <value>吉检侦监审[2010]第0009号</value>
+                                  <label>案号</label>
+                                </faString>
+                                <faString sid="683a7071291e7860ffe792bc69c46c2b">
+                                  <id>faStringb6dec</id>
+                                  <value>2010年03月09日</value>
+                                  <label>受案日期</label>
+                                </faString>
+                                <faString sid="6446b4b893acad759d0b4221bb039aaa">
+                                  <id>faStringd69d7</id>
+                                  <value>程邦</value>
+                                  <label>受案人</label>
+                                </faString>
+                                <faString sid="5b9799ba3df2ee223b4386000ff9b454">
+                                  <id>faString76b78</id>
+                                  <value>长春市人民检察院</value>
+                                  <label>侦查单位</label>
+                                </faString>
+                              </Items>
+                            </formArea>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="74ecd7f37cccee0f896da7fd8c480d14">
+                          <id>blankPanelbfe58</id>
+                          <style>padding:8px;border-bottom:1px solid #AFBEDD;</style>
+                          <Items>
+                            <htmlArea sid="3cb2d984dac170f3b36609bcebf32435">
+                              <id>htmlArea3d290</id>
+                              <value>嫌疑人</value>
+                              <style>font-weight:700;font-size:16px;color:#00489E;padding-right:10px;</style>
+                            </htmlArea>
+                            <blankPanel sid="b419cce5c36cc057ae2ec284b7f5063e">
+                              <id>blankPanel6508d</id>
+                              <collapseStateName>&gt;&gt;所有嫌疑人</collapseStateName>
+                              <expandStateName>&gt;&gt;收起嫌疑人</expandStateName>
+                              <Items>
+                                <loopArea sid="0216ebff9084550ebee0e07c6936d17b">
+                                  <id>loopArea3b499</id>
+                                  <ds>rs1</ds>
+                                  <Items>
+                                    <htmlArea sid="b0c33fa6dda5309bd9f0a94c6074e39e">
+                                      <id>htmlArea6f8fb</id>
+                                      <value>{rs1[0]}</value>
+                                      <style>margin:8px;</style>
+                                      <icon>/artery/arteryImage/organ/treenode_emp.gif</icon>
+                                    </htmlArea>
+                                  </Items>
+                                </loopArea>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="732bb51397221842a6bf7b7891eaf02b">
+                          <id>blankPanele56c2</id>
+                          <style>padding:8px;</style>
+                          <Items>
+                            <htmlArea sid="66a42d6b38326b29892576fda35e3c01">
+                              <id>htmlArea63247</id>
+                              <value>事实证据</value>
+                              <style>font-weight:700;font-size:16px;color:#00489E;padding-right:10px;</style>
+                            </htmlArea>
+                            <blankPanel sid="7fa927c8c686247d123682e5a8d3973d">
+                              <id>blankPanel3c21a</id>
+                              <collapseStateName>&gt;&gt;所有嫌疑人</collapseStateName>
+                              <expandStateName>&gt;&gt;收起嫌疑人</expandStateName>
+                              <Items>
+                                <buttonArea sid="08668341276141425dc420c85aee7fa6">
+                                  <id>buttonArea7f931</id>
+                                  <direction>float</direction>
+                                  <Items>
+                                    <loopArea sid="c3197e817cb26015b959f62d8b21ab4e">
+                                      <id>loopAreaa42db</id>
+                                      <ds>rs2</ds>
+                                      <Items>
+                                        <button sid="f335184eaa680589db0ed66cf18aa41b">
+                                          <id>buttonc6304</id>
+                                          <text>{rs2[0]}</text>
+                                          <icon>/artery/arteryImage/sample/file.png</icon>
+                                          <iconTop>true</iconTop>
+                                          <themeStyle>block</themeStyle>
+                                        </button>
+                                      </Items>
+                                    </loopArea>
+                                  </Items>
+                                </buttonArea>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </centerRegion>
+              </Items>
+            </blankPanel>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+    <ds dsName="dataSource" name="rs2" type="logic">ds_rs2</ds>
+  </dslist>
+</form>
+

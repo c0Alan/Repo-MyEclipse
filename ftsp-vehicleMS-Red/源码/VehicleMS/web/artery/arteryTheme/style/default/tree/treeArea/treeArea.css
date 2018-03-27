@@ -1,0 +1,24 @@
+/***************************************************************************************
+ * x-theme-treeArea-orange
+ ***************************************************************************************/
+.x-theme-treeArea-orange .x-tree-node{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.x-theme-treeArea-orange .x-tree-node .x-tree-node-el{
+	padding: 1px;
+	border: 0px;
+}
+.x-theme-treeArea-orange .x-tree-node .x-tree-selected{
+	border: 1px solid #F1CF82;
+	padding:0px;
+	background-color: transparent;
+	background-image: url("images/orange/itemSelectBg.png");
+}
+.x-theme-treeArea-orange .x-tree-node .x-tree-selected .ItemNormal{
+	background-image: url(images/orange/itemSelect.gif);
+}
+
+.x-theme-treeArea-orange .x-tree-node-el span{
+	font-size: 13px;
+}

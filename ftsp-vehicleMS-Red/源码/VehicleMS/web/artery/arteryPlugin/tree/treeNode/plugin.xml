@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="treeNode" cn="树节点" jsType="artery-tree" nameprop="text"
+	icon="treeNode.gif" iconNew="treeNodeNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe><![CDATA[树的静态叶子节点,可以设定节点的文字，图片，选择框等属性，可以按照不同权限判断生成。可以通过循环控件动态加载。]]></Describe>
+	</Info>
+	<Parents>
+		<Parent type="faTree" />
+		<Parent type="columnTree" />
+		<Parent type="treeArea" />
+		<Parent type="treeMenu" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.tree.TreeItem</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="文本" type="1" name="text" tips="设置树节点文本">
+			<Value>树节点</Value>
+		</Property>
+		<Property cn="图片" type="5" name="icon" tips="设置组件的显示图标，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value />
+		</Property>
+		<Property cn="使用图片" type="3" name="useIcon" ct="[true,false]" tips="当设置为true时,树节点钱会显示'图片'属性中定义的图片">
+      		<Value>true</Value>
+    	</Property>
+		<Property cn="显示选择框" type="11" name="showCheck" tips="为true，则显示checkbox或radio">
+			<Value>true</Value>
+		</Property>
+		<Property cn="禁用选择框" type="11" name="disableCheck" tips="为true，则可以改变checkbox或radio选中状态">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show" tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"	tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+	</Properties>
+</Item>
+

@@ -1,0 +1,33 @@
+.menu-add{
+    background-image: url(images/addmenu.gif) !important;
+}
+
+.table-add{
+    background-image: url(images/addtable.gif) !important;
+}
+
+.field-add{
+    background-image: url(images/addfield.gif) !important;
+}
+.dict{
+    background-image: url(images/dict.gif) !important;
+}
+.reverse .x-btn-text{
+    background-image: url(images/reverse.gif);
+}
+
+.gensql .x-btn-text{
+    background-image: url(images/gensql.gif);
+}
+
+.addmenu .x-btn-text{
+  background-image: url(images/addmenu.gif);
+}
+
+.addtable .x-btn-text{
+  background-image: url(images/addtable.gif);
+}
+
+.menu-delete{
+    background-image: url(../pub/images/icon/del.gif)
+}

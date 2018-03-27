@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9371b5774899e71e1b1960b203466f79</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.normalcode.Drdm.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/normalcode/Drdm.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form22090">
+      <id>form22090</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <formArea sid="14f353e2f5b6ae869ecf8253175f2a22">
+          <id>formAreac8d03</id>
+          <height>100%</height>
+          <colNum>1</colNum>
+          <labelAlign>top</labelAlign>
+          <labelWidth>200</labelWidth>
+          <Items>
+            <faHidden sid="1900e4b3fd430ab6ea3684481f04e1eb">
+              <id>faHidden7730a</id>
+              <submitName>artery_db</submitName>
+              <value>{req.dbBelongsTo}</value>
+            </faHidden>
+            <faBinary sid="d1d3db7e586a0be50f79fcc4bbe61b3b">
+              <id>faBinarye15f5</id>
+              <submitName>artery_file</submitName>
+              <required>true</required>
+              <editor>file</editor>
+              <label>请选择要导入的文件</label>
+            </faBinary>
+          </Items>
+        </formArea>
+        <footer sid="a99f06e1e6aaf6a332f3b3d05bf7ca06">
+          <id>footer1eec7</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="0a7eedbe44471b570d7c219e91908feb">
+              <id>importBtn</id>
+              <text>导入</text>
+              <onClickClient><![CDATA[importBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[importBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <simpleButton sid="be962189e5dd47e51c9c216794a5e006">
+              <id>shutdownBtn</id>
+              <text>关闭</text>
+              <onClickClient><![CDATA[shutdownBtn_onClickClient]]></onClickClient>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>5114b0529089fcbaf0131bc406acf3de</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.chart.Bthqyt.java</javaLocation>
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <tableLayout sid="tableLayout3C40F">
+          <id>tableLayout3C40F</id>
+          <colNum>2</colNum>
+          <Items>
+            <chartArea sid="chartArea6D256">
+              <id>chart_Bar2D</id>
+              <chartConf>{"chartType":"Bar2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartArea33FDE">
+              <id>chart_MSBar2D</id>
+              <chartConf>{"chartType":"MSBar2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartArea9D58A">
+              <id>chart_MsBar3D</id>
+              <chartConf>{"chartType":"MsBar3D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaBD82D">
+              <id>chart_StackedBar2D</id>
+              <chartConf>{"chartType":"StackedBar2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartAreaA55CE">
+              <id>chart_StackedBar3D</id>
+              <chartConf>{"chartType":"StackedBar3D"}</chartConf>
+            </chartArea>
+            <htmlArea sid="htmlArea87794">
+              <id>htmlArea87794</id>
+            </htmlArea>
+            <chartArea sid="chartAreaDBD7F">
+              <id>chart_Area2D</id>
+              <chartConf>{"chartType":"Area2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartArea8A428">
+              <id>chart_MSArea</id>
+              <chartConf>{"chartType":"MSArea"}</chartConf>
+            </chartArea>
+            <chartArea sid="chartArea6B2D2">
+              <id>chart_StackedArea2D</id>
+              <chartConf>{"chartType":"StackedArea2D"}</chartConf>
+            </chartArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>c1bad66e19cdb5a1a412158505740f3e</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.dev.list.BySql.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/dev/list/BySql.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form4b05d">
+      <id>form4b05d</id>
+      <bodyStyle>padding:30px;</bodyStyle>
+      <Items>
+        <listArea sid="c895234fe924938bb154ff77a4670231">
+          <id>listArea6abdf</id>
+          <ds>rs1</ds>
+          <Items>
+            <columnString sid="e0df1babcd1697e001ddb1142ac1885f">
+              <id>columnStringCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </columnString>
+            <columnString sid="c582ffc241e352fc11755e8b9cfae628">
+              <id>columnStringCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </columnString>
+            <columnString sid="38ed637afdb8d2d825ef783c6b2298c5">
+              <id>columnStringCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+            </columnString>
+            <columnDate sid="756babb4b564e97ee6a3a85589ca0c71">
+              <id>columnDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs1.D_PUBLISHER}</dataName>
+              <title>出版日期</title>
+            </columnDate>
+            <columnDate sid="cd07f136faff6a7c54acaf0c6dffdd39">
+              <id>columnDateDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{rs1.D_BUY}</dataName>
+              <title>购买日期</title>
+            </columnDate>
+            <columnString sid="12bc4c8bc0a0847901f475ac0de2e0ab">
+              <id>columnStringCISBN</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ISBN</inheritfld>
+              <dataName>{rs1.C_ISBN}</dataName>
+              <title>ISBN号</title>
+            </columnString>
+            <columnCode sid="8cc1d271267e8dc8cd6c236d060d301a">
+              <id>columnCodeNTYPE</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{rs1.N_TYPE}</dataName>
+              <title>图书类型</title>
+            </columnCode>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    T_Eg_Book.C_NAME,&#xD;
+    T_Eg_Book.C_AUTH,&#xD;
+    T_Eg_Book.C_PUBLISHER,&#xD;
+    T_Eg_Book.D_PUBLISHER,&#xD;
+    T_Eg_Book.D_BUY,&#xD;
+    T_Eg_Book.C_ISBN,&#xD;
+    T_Eg_Book.N_TYPE&#xD;
+FROM&#xD;
+    T_Eg_Book</ds>
+  </dslist>
+</form>
+

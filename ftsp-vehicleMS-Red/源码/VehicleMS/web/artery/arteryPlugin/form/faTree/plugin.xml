@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="faTree" cn="树控件" menu="输入控件" nameprop="label" icon="faTree.gif"
+	iconNew="faTreeNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>树控件，用户可以自定义树的内容，</Describe>
+		<Images>
+			<File>info.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="formArea" />
+		<Parent type="faFieldSet" />
+		<Parent type="faBlankLayout" />
+	</Parents>
+	<Children />
+	<Class more="editor">com.thunisoft.artery.plugin.form.FaTree
+	</Class>
+	<JsFile>
+		<File>faTree.js</File>
+		<File>faTreePopup.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="提交名称" type="1" name="submitName"
+			tips="用于设置form提交时本控件的提交名称，也就是input标签的name属性">
+			<Value />
+		</Property>
+				<Property cn="控件提示" type="1" name="comment" tips="用于产生控件的提示信息">
+			<Value />
+			<Description><![CDATA[
+			用于产生控件的提示信息,如果控件指定了继承表，继承字段，此项默认会显示数据字典中相应字段的描述信息。
+			如果填写此属性，则会覆盖数据字典中的描述信息。
+			]]></Description>
+		</Property>
+		<Property cn="是否必填" type="11" name="required" tips="设置本组件是否为必填项">
+			<Value>false</Value>
+		</Property>
+		<Property cn="display必填标识" type="11" name="displayRequiredStyle" tips="当运行时类型为display时是否应用label的必填样式，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="只读时是否验证" type="11" name="validOnReadOnly" export="true" tips="当设置为true时，调用表单的submit方法时 会对展现类型（displayType）属性为ReadOnly的控件进行验证，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="无效时是否提交" type="3" name="submitDisabled" ct="[inherit,true,false]"
+			 tips="设置表单提交的时候，当displayType属性为disabled时是否提交，默认为inherit">
+			<Value>inherit</Value>
+		</Property>
+        <Property cn="继承key" type="1" name="inheritkey"
+            tips="继承的数据字典的key，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+            <Value />
+        </Property>
+		<Property cn="继承表" type="1" name="inherittbl"
+			tips="继承的数据字典的表名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="继承字段" type="1" name="inheritfld"
+			tips="继承的数据字典的字段名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="dataName"
+			tips="对应着从数据源中取数据 可写数据源标签 示例：{rs1.C_NAME}">
+			<Value />
+		</Property>
+		<Property cn="控件类型" type="3" name="editor" ct="[sTree,mTree]"
+			tips="设置树控件的类型，可选择：sTree,mTree">
+			<Value>sTree</Value>
+			<Description><![CDATA[
+				<p>设置树控件的类型，可选择：sTree：单选树，mTree：多选树；默认为sTree</p>
+				<table><tr><td style='text-align:center;font-weight:700'>sTree效果</td><td style='text-align:center;font-weight:700'>mTree效果</td></tr><tr><td><img src='../../resources/images/common/form/faTree/faTree_spop.png'></td><td><img src='../../resources/images/common/form/faTree/faTree_mpop.png'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="显示方式" type="3" name="showType" ct="[window,popup]"
+			tips="设置树控件的显示方式，可选择window,popup">
+			<Value>popup</Value>
+			<Description><![CDATA[
+				<p>设置树控件的显示方式，可选择：window：弹出窗口，popup：弹出层；默认为popup</p>
+				<table><tr><td style='text-align:center;font-weight:700'>window效果</td><td style='text-align:center;font-weight:700'>popup效果</td></tr><tr><td><img src='../../resources/images/common/form/faTree/faTree_swin.png'></td><td><img src='../../resources/images/common/form/faTree/faTree_spop.png'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="弹出层最小宽度" type="2" name="minLayerWidth" export="true"
+			tips="设置弹出层的最小宽度">
+			<Value>150</Value>
+			<Description><![CDATA[
+				<p>设置弹出层的最小宽度，可输入数值，默认为150。</p>
+			]]></Description>
+			<Conditions>
+				<Condition>显示方式（showType）属性为popup时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="单击节点时选中" type="11" name="singleClickCheck" export="true" tips="当为true时，单击树上的节点则选中，为false时，则需要双击才会选中，默认为false">
+			<Value>false</Value>
+			<Conditions>
+				<Condition>当控件类型是mList时不支持此属性。</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否显示清空按钮" type="11" name="showClear" export="true"
+			tips="设置是否显示控件的清空按钮">
+			<Value>true</Value>
+		</Property>
+		<Property cn="级联选择" type="11" name="cascade"
+			tips="设置是否开启级联选择模式，true：开启级联选择，false不开启级联选择；默认为false">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>设置是否开启级联选择模式，默认为false</p>
+				<p>true：  开启级联选择，当选择父节点时，其所有子节点都将自动被选择</p>
+				<p>false：开启级联选择，当选择父节点时，不会选择其子节点</p>
+			]]></Description>
+			<Conditions>
+				<Condition>控件类型（editor）属性为mTree时有效</Condition>
+			</Conditions>
+		</Property>
+        <Property cn="级联父节点" type="3" name="cascadeParent" ct="[allchild,singlechild,false]" tips="如果为allChild，则子节点全选时，父节点自动被选中...">
+        	<Description><![CDATA[
+如果为allChild，则子节点全选时，父节点自动被选中,如果为singleChild，则有子节点被选中，父节点被选中，如果为false，没有子节点到父节点的级联效果     
+        	]]>
+			</Description>
+            <Value>allchild</Value>
+            <Conditions>
+            	<Condition>控件类型（editor）属性为mTree，且级联选择（cascade）属性为true时有效</Condition>
+			</Conditions>
+        </Property>
+		<Property cn="展开树" type="11" name="expandTree" tips="设置是否将树展开，默认为false">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>设置是否将树展开，默认为false</p>
+				<p>true： 将自动展开树上所有节点</p>
+				<p>false：不自动展开树</p>
+			]]></Description>
+			<Conditions>
+				<Condition>此属性设置为true，将展开树上所有节点，当树是用动态节点生成时，将产生多个Ajax请求，慎用此属性</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否过滤" type="11" name="showFilter" export="true"
+			tips="设置是否显示过滤框，默认为false">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>设置是否显示过滤框，默认为false；true：显示过滤框，false：不显示过滤框</p>
+				<table><tr><td style='text-align:center;font-weight:700'>true：显示过滤框</td><td style='text-align:center;font-weight:700'>false：不显示过滤框</td></tr><tr><td><img src='../../resources/images/common/form/faTree/faTree_spop_sf.png'></td><td><img src='../../resources/images/common/form/faTree/faTree_spop.png'></td></tr></table>
+<pre>
+/**
+ *在过滤框中输入过滤文本，点击确定后，会触发树控件的重新加载
+ *在重新加载时，在动态节点的“加载节点脚本（onLoadTree）”事件中：
+ *                      可以通过ParamUtil.getString("filterValue");获得用户输入的过滤文本
+ *                      并依据过滤文本对树控件加载的节点进行过滤
+ */
+ 	/**
+	 * 加载节点脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 * @param node
+	 *            树节点对象
+	 * @return 返回本node节点的子节点列表
+	 */
+	public List<TreeNode> treeDynamic9A922_onLoadTree(Item item, TreeNode node) {
+		String fv = ParamUtil.getString("filterValue");	//获得用户输入的过滤文本
+		List nodeList = new ArrayList();
+		if(node.getId().equals("root")){
+			for(int i=1;i<5;i++){
+				if(StringUtils.isNotBlank(fv) && !fv.equals("节点" + i)){	//仅加载用户指定的节点
+					continue;
+				}
+				TreeNode tn = new TreeNode();
+				tn.setId("node"+i);
+				tn.setName("节点"+i);
+				tn.setShowCheck(true);
+				tn.setLeaf(false);
+				nodeList.add(tn);
+			}
+		}else{
+			String id = node.getId();
+			for(int i=1;i<5;i++){
+				if(StringUtils.isNotBlank(fv) && !fv.equals("节点" + i)){	//仅加载用户指定的节点
+					continue;
+				}
+				TreeNode tn = new TreeNode();
+				tn.setId(id+i);
+				tn.setName("节点"+i);
+				tn.setShowCheck(true);
+				tn.setLeaf(id.length()>5);
+				nodeList.add(tn);
+			}
+		}
+		return nodeList;
+	}
+</pre>
+			<p>上面代码运行后结果如下：</p>
+			<table><tr><td style='text-align:center;font-weight:700'>过滤前</td><td style='text-align:center;font-weight:700'>过滤后</td></tr><tr><td><img src='../../resources/images/common/form/faTree/faTree_spop.png'></td><td><img src='../../resources/images/common/form/faTree/faTree_spop_f.png'></td></tr></table>
+			]]></Description>
+			<Conditions>
+				<Condition>仅当树控件下添加动态节点控件时，才能够实现过滤的功能</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否可输入" type="11" name="editable" export="true"
+			tips="当此属性为false时，选择框不能输入，只能进行选择操作，反之可输入">
+			<Value>false</Value>
+		</Property>
+		<Property cn="输入最大长度" type="1" name="maxLength" mask="^\d{1,}$" tips="限制控件可输入的最大长度，仅当“是否可输入（editable）”属性为true时有效">
+			<Value />
+		</Property>
+		<Property cn="打开重新加载" type="11" name="openReload" export="true"
+			tips="当此属性为true时，每次打开时树控件都会重新进行加载，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比。">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比。">
+      <Value />
+    </Property>
+    <Property cn="弹出层最小高度" type="1" name="minLayerHeight"  mask="^\d{1,}%{0,1}$" et="正确输入为：n" tips="设置本组件的弹出层最小高度，不设置的话默认为0。可输入数值">
+      <Value>300</Value>
+		<Description><![CDATA[
+			<p>设置本组件的弹出层最小高度，不设置的话默认为300。可输入数值</p>
+			<p>弹出层的高度与弹出层中的树展开的高度一致的，但如果设置了弹出层最小高度，则弹出层高度不能小于此高度。</p>
+			<table><tr><td style='text-align:center;font-weight:700'>弹出层最小高度不设置或者设为0</td><td style='text-align:center;font-weight:700'>弹出层最小高度设置为：300</td></tr><tr><td><img src='../../resources/images/common/form/faTree/faTree_minLayerHeight.png'></td><td><img src='../../resources/images/common/form/faTree/faTree_spop.png'></td></tr></table>
+		]]></Description>
+		<Conditions>
+			<Condition>显示方式（showType）属性为popup时有效</Condition>
+		</Conditions>
+    </Property>
+    <Property cn="弹出层最大高度" type="1" name="maxLayerHeight"  mask="^\d{1,}%{0,1}$" et="正确输入为：n" tips="设置本组件的弹出层最大高度，若展开的树节点高度大于设置的最大高度，则出现纵向滚动条，不设置的话默认为300。可输入数值">
+      <Value>300</Value>
+		<Description><![CDATA[
+			<p>设置本组件的弹出层最大高度，若展开的树节点高度大于设置的最大高度，则出现纵向滚动条，不设置的话默认为300。可输入数值</p>
+			<p>弹出层的高度与弹出层中的树展开的高度一致的，但如果设置了弹出层最大高度，则弹出层高度不能大于于此高度，会出现纵向滚动条。</p>
+			<p>如设置控件的弹出层最大高度为300</p>
+			<table><tr><td style='text-align:center;font-weight:700'>树的展开高度小于所示最大高度，以树的展开高度为准</td><td style='text-align:center;font-weight:700'>树的展开高度大于所设最大高度，出现纵向滚动条</td></tr><tr><td><img src='../../resources/images/common/form/faTree/faTree_spop.png'></td><td><img src='../../resources/images/common/form/faTree/faTree_maxLayerHeight.png'></td></tr></table>
+		]]></Description>
+		<Conditions>
+			<Condition>显示方式（showType）属性为popup时有效</Condition>
+		</Conditions>
+    </Property>
+    <Property cn="显示值" type="1" name="valueText" tips="指定在控件的输入框中默认显示的值">
+      <Value />
+    </Property>
+    <Property cn="显示路径" type="1" name="valuePath" tips="指定控件显示时的自动定位路径">
+      <Value />
+    </Property>
+    <Property cn="值" type="1" name="value" tips="设置本控件的值">
+      <Value />
+    </Property>
+    <Property cn="显示值提示" type="11" name="showValueTip"  export="true" tips="鼠标移动到控件上，显示控件的值...">
+      <Value>false</Value>
+    </Property>
+    <Property cn="展开值" type="1" name="expandValue" tips="设置弹出时组织机构树上自动展开的节点">
+      <Value />
+    </Property>
+    <Property cn="输入提示" type="1" name="emptyText" export="true" tips="设置本控件的输入提示值，相当于ext的emptyText属性">
+      <Value />
+    </Property>
+    <Property cn="选择框样式" type="1" name="valueStyle" export="true" tips="设置选择框的样式">
+      <Value />
+    </Property>
+    <Property cn="选择框样式(只读)" type="1" name="valueStyleRead" export="true" tips="设置选择框(只读)的样式">
+      <Value />
+    </Property>
+    <Property cn="验证提示方式" type="3" name="validType" ct="[cooltip,title]" tips="设置验证的提示方式，默认为tip提示的方式，选择title则以html的title样式展现">
+      <Value>cooltip</Value>
+    </Property>
+    <Property cn="展现类型" type="3" name="displayType" ct="[inherit,editable,readOnly,display,disabled]" export="true" tips="当设置此属性为true时，整个表单组件都会为只读的">
+      <Value>inherit</Value>
+    </Property>
+    <Property cn="是否隐藏" type="11" name="hidden"  tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="隐藏方式" type="3" name="hideMode" ct="[display,visibility]" tips="设置组件的隐藏方式，相当于css的样式，可选display和visibility">
+      <Value>display</Value>
+    </Property>
+    <Property cn="客户端" type="15" group="值改变时脚本" name="onChangeClient" tips="当本组件的值改变时触发的事件，客户端脚本">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="值改变时脚本" name="onChangeServer" tips="当本组件的值改变时触发的事件，服务器端脚本">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" group="验证脚本" name="onValidClient" tips="表单控件的验证事件(客户端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="验证脚本" name="onValidServer" tips="表单控件的验证事件(服务器端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" name="onFilterClient" tips="当本组件过滤时触发的事件，客户端脚本" group="过滤时脚本">
+      <Value />
+      <Conditions>
+        <Condition>显示方式（showType）属性为window时有效</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="服务器端" type="14" name="onFilterServer" tips="当本组件过滤时触发的事件，服务器端脚本" group="过滤时脚本">
+      <Value />
+      <Conditions>
+        <Condition>显示方式（showType）属性为window时有效</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="加载前脚本" type="15" name="onBeforeLoad" tips="在加载子节点前，将执行此脚本，可以在此处设置一些传回的参数">
+      <Value />
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"
+		tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14" name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+    <Methods>
+  	<Method name="getValue" return="string" tips="得到控件的值">
+  	</Method>
+  	<Method name="getValueText" return="string" tips="得到控件的显示值">
+  	</Method>
+  	<Method name="setValue" return="void" tips="设置控件的值">
+  	</Method>
+  	<Method name="reset" return="void" tips="恢复控件的初始值">
+  	</Method>
+  	<Method name="reload" return="void" tips="重新加载树控件">
+  		<Description><![CDATA[
+			<p>重新加载树控件；支持自定义参数和回调函数</p>
+	<pre>
+		Artery.get("faTreeD56B7").reload({
+			params : {	//重新加载时的参数
+				userId: "-1"
+			},
+			callback : function(){	//重新加载之后的回调函数
+				
+			},
+			clearValue:true		//true：清空控件的值；false：不清空控件的值；默认为清空
+		});
+	</pre>
+  			]]></Description>
+			<Parameters>
+				<Param>options|{params:{},callback:function(){}, clearValue:true}}</Param>
+			</Parameters>
+			<Return>void</Return>
+  	</Method>
+  	<Method name="setOriginalValue" return="void" tips="设置控件的初始值">
+  	</Method>
+  	<Method name="setLabel" return="void" tips="设置控件的label的显示内容">
+  	</Method>
+  	<Method name="setLabelColor" return="void" tips="设置控件的label的显示内容的颜色">
+  	</Method>
+  	<Method name="setLabelStyle" return="void" tips="设置控件的label的样式">
+  	</Method>
+  	<Method name="setLabelCntStyle" return="void" tips="设置控件的label容器的样式">
+  	</Method>
+  	<Method name="setValueStyle" return="void" tips="设置控件的内容样式">
+  	</Method>
+  	<Method name="setRequired" return="void" tips="设置控件是否必填">
+  	</Method>
+  	<Method name="read" return="void" tips="设置控件为只读">
+  	</Method>
+  	<Method name="edit" return="void" tips="设置控件为可编辑">
+  	</Method>
+  	<Method name="disable" return="void" tips="设置控件无效">
+  	</Method>
+  	<Method name="enable" return="void" tips="设置控件有效">
+  	</Method>
+  	<Method name="hide" return="void" tips="隐藏本控件">
+  	</Method>
+  	<Method name="show" return="void" tips="显示本控件">
+  	</Method>
+  </Methods>
+  <JsFunctions>
+  	<JsFunction name="onChangeClient">
+/**
+ * 值改变时脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  oldValue 控件改变前的旧值
+ * @param  newValue 控件改变后的新值
+ */
+function {methodName} (rc, oldValue, newValue){
+	
+}
+  	</JsFunction>
+  	<JsFunction name="onValidClient">
+/**
+ * 验证脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ */
+function {methodName} (rc, value){
+	
+}
+  	</JsFunction>
+  	<JsFunction name="onBeforeLoad">
+/**
+ * 加载前脚本({itemid})
+ * 
+ * @param  loader 用于加载节点的对象
+ * @param  node 展开的节点
+ */
+function {methodName} (loader, node){
+	
+}
+  	</JsFunction>
+  </JsFunctions>
+  	<JavaFunctions>
+		<JavaFunction name="onChangeServer">
+<![CDATA[
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onValidServer">
+<![CDATA[
+/**
+ * 验证时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

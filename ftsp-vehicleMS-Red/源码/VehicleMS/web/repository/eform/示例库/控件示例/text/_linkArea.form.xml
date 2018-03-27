@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9097084e7031c5785861379ed538787e</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.text._linkArea.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/text/_linkArea.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form11b8b">
+      <id>form11b8b</id>
+      <Items>
+        <tableLayout sid="bb49ca28e2142683176a1f49a9cae828">
+          <id>tableLayoutf6728</id>
+          <colNum>3</colNum>
+          <width>500</width>
+          <style>padding:10px;</style>
+          <Items>
+            <linkArea sid="1affe8424c837d70ff33564e9411d199">
+              <id>linkArea961d3</id>
+              <value>百度</value>
+              <linkto>{"url":"http://www.baidu.com","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+            </linkArea>
+            <linkArea sid="5ca870c11d0038a74fd25e36e628a5b7">
+              <id>linkAreabbb25</id>
+              <value>&lt;font color="red"&gt;紫光华宇&lt;/font&gt;</value>
+              <icon>/artery/arteryImage/organ/treenode_corp.gif</icon>
+              <linkto>{"url":"http://iwww.thunisoft.com/jeecms/","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+            </linkArea>
+            <linkArea sid="f9a50596c30f9548ac2e5561ee59f1f4">
+              <id>linkArea0247c</id>
+              <value>&lt;font color="red"&gt;紫光华宇软件股份有限公司－内网&lt;/font&gt;</value>
+              <width>100</width>
+              <ellipsis>true</ellipsis>
+              <linkto>{"url":"http://iwww.thunisoft.com/jeecms/","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+            </linkArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

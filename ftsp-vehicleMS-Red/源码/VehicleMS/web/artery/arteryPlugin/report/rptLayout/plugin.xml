@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="rptLayout" cn="报表布局" nameprop="title" icon="rptLayout.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>
+		报表布局控件是用来独立定义报表展现形式和内容的控件。
+		控件支持定义报表，及其相关工具栏、状态栏条件区域等功能。
+		控件支持类似excel布局定义方式的报表定义，支持多种数据访问标签，数据格式化标签，数据分组，自动编号等功能。
+		控件支持关联到其他表单的链接方式，同时也可以获取其他表单传递的参数，实现条件过滤。
+		</Describe>
+	</Info>
+	<Parents />
+	<Children>
+		<Child type="rptCondition" />
+		<Child type="rptResult" />
+		<Child type="bottomBar" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.report.RptLayout
+	</Class>
+	<JsFile>
+		<File>rptLayout.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>aprptlayout</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="标题" type="1" name="title">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比 只支持整数或百百分比数值">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比 只支持整数或百百分比数值">
+      <Value>100%</Value>
+    </Property>
+    <Property cn="背景色" type="10" name="background-color" tips="设置布局的背景色">
+      <Value>#ffffff</Value>
+    </Property>
+    <Property cn="位置" type="3" name="text-align" ct="[left,center,right]" tips="设置表单中内容组件的位置，默认为center，还可选择left，right">
+      <Value>center</Value>
+    </Property>
+    <Property cn="组件样式" type="1" name="bodyStyle"  tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+      <Value />
+    </Property>
+    <Property cn="组件容器样式" type="1" name="style"  tips="设置本组件的样式，可填写css代码">
+      <Value />
+    </Property>
+    <Property cn="是否共用滚动条" type="11" name="shareScrollBar"
+            tips="用来控制报表的条件区域和条件区域是否共用滚动条">
+      <Value>false</Value>
+    </Property>
+	<Property cn="是否修复ocx" type="11" name="ocxFix"
+			tips="当设置为true时，弹窗、提示、下拉框等将不会被按钮、flash等控件遮挡">
+	  <Value>false</Value>
+	  <Description>
+			当设置为true时，弹窗、提示、下拉框等将不会被按钮、flash等控件遮挡
+      </Description>
+	</Property>
+    <Property cn="客户端" type="15" group="加载时脚本" name="onLoadClient" tips="相当于页面的onload事件，在此脚本中可以得到任何页面对象...">
+      <Value />
+      <Description>
+      相当于页面的onload事件，在此脚本中可以得到任何页面对象，此方法只在页面生成时执行一次
+      	<pre>
+//隐藏控件
+Artery.get("id").hide();
+      	</pre>
+      </Description>
+    </Property>
+    <Property cn="服务器端" type="14" group="加载时脚本" name="onLoadServer" tips="相当于页面的onload事件，在此脚本中可以得到任何页面对象...">
+      <Value />
+    </Property>
+    <Property cn="宿主脚本" type="14"  name="pubScript" tips="可写服务器端的脚本，跟随着组件的生成而执行。不管是正常请求还是Ajax请求，此属性的脚本都会在得到组件时执行">
+      <Value />
+    </Property>
+    <Property cn="是否生成" type="11" name="show" tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+    <Property cn="生成时脚本" type="14"  name="onShow" tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+    <Property cn="业务口径解释" type="8" name="comment" tips="在这里对业务口径进行解释说明">
+      <Value />
+    </Property>
+    <Property cn="模板制作说明" type="8" name="descript" tips="在这里对模板制作进行说明">
+      <Value />
+    </Property>
+  </Properties>
+  	<JavaFunctions>
+		<JavaFunction name="onLoadServer">
+<![CDATA[
+/**
+ * 加载时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

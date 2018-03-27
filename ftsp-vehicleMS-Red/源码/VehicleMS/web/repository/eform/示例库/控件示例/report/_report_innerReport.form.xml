@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>72d26571c511bc019ec3dfc07f18dc52</id>
+  <configTable />
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <formArea sid="formArea87F0A">
+          <id>formArea87F0A</id>
+          <colNum>3</colNum>
+          <comment>false</comment>
+          <labelAlign>left</labelAlign>
+          <labelWidth>70</labelWidth>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <formTableBorder />
+          <cellpadding>5</cellpadding>
+          <readOnlyBorder />
+          <Items>
+            <faString sid="faString77D1828F7E0305BE253F4187720C0B54">
+              <id>name</id>
+              <height>0</height>
+              <label>名称</label>
+              <labelColor>#000000</labelColor>
+            </faString>
+            <faString sid="faStringDE21053DC9D33A908049D64308E8B71E">
+              <id>author</id>
+              <height>0</height>
+              <label>作者</label>
+              <labelColor>#000000</labelColor>
+            </faString>
+            <buttonArea sid="buttonArea0B8BE">
+              <id>buttonArea0B8BE</id>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <button sid="buttonB6EF7">
+                  <id>buttonB6EF7</id>
+                  <text>查询</text>
+                  <onClickClient><![CDATA[Artery.get("rptArea184BD").search({
+	con1:Artery.get("name").getValue(),
+	con2:Artery.get("author").getValue()
+});]]></onClickClient>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </formArea>
+        <rptArea sid="rptArea184BD">
+          <id>rptArea184BD</id>
+          <linkto>{"formId":"8a8324e2a6ac9a131d7ebcaaa4f39a68","formName":"_report_bookList.rpt.xml","formType":"2","runTimeType":"insert","target":"","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+          <width>80%</width>
+          <baseOriginal>false</baseOriginal>
+          <careCon>false</careCon>
+          <autoCellType>col</autoCellType>
+          <printHeader>第&amp;p页/共&amp;P页aaaasss</printHeader>
+          <printFooter>ssss</printFooter>
+          <border>true</border>
+          <Items>
+            <header sid="header88FAD">
+              <id>header88FAD</id>
+            </header>
+            <topbar sid="toolbarsid">
+              <id>toolbar</id>
+              <Items>
+                <tbButton sid="A943ad674a7687e0bc8f3e31424ffcbe5">
+                  <id>A943ad674a7687e0bc8f3e31424ffcbe5</id>
+                  <text>查询</text>
+                  <icon>/artery/report/parse/images/search.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("rptArea184BD").search();]]></onClickClient>
+                </tbButton>
+                <tbButton sid="Af2453966654835dc38257122aa5fbaf6">
+                  <id>Af2453966654835dc38257122aa5fbaf6</id>
+                  <text>显示/隐藏</text>
+                  <icon>/artery/report/parse/images/split.gif</icon>
+                  <onClickClient><![CDATA[Artery.get('rptArea184BD').toggleCondition();]]></onClickClient>
+                </tbButton>
+                <tbButton sid="A5589d27d7ec5fa73402256f9d83ec69f">
+                  <id>A5589d27d7ec5fa73402256f9d83ec69f</id>
+                  <text>业务口径</text>
+                  <icon>/artery/report/parse/images/comment.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("rptArea184BD").showComment();]]></onClickClient>
+                </tbButton>
+                <tbSeparator sid="Ad8ea600f515585dc1989dd14accf7614">
+                  <id>Ad8ea600f515585dc1989dd14accf7614</id>
+                </tbSeparator>
+                <tbMenu sid="A8a0daa02a28ae7d8894b5a91c7b210b9">
+                  <id>A8a0daa02a28ae7d8894b5a91c7b210b9</id>
+                  <text>自动调整</text>
+                  <icon>/artery/report/parse/images/autoCol.gif</icon>
+                  <Items>
+                    <tbMenuItem sid="A9fb6909553129946c6e1c4c2d25c98d4">
+                      <id>A9fb6909553129946c6e1c4c2d25c98d4</id>
+                      <text>自动列宽</text>
+                      <icon>/artery/report/parse/images/autoCol.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").autoCol();]]></onClickClient>
+                    </tbMenuItem>
+                    <tbMenuItem sid="Ab04af006fe96cb9efece2cd84822bef2">
+                      <id>Ab04af006fe96cb9efece2cd84822bef2</id>
+                      <text>自动行高</text>
+                      <icon>/artery/report/parse/images/autoRow.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").autoRow();]]></onClickClient>
+                    </tbMenuItem>
+                    <tbSeparator sid="A31741a1d5770c85379857620b4c8dddc">
+                      <id>A31741a1d5770c85379857620b4c8dddc</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="A8db25c87b7dac79aceddbb0004b63b72">
+                      <id>A8db25c87b7dac79aceddbb0004b63b72</id>
+                      <text>恢复初始</text>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").autoRecover();]]></onClickClient>
+                    </tbMenuItem>
+                  </Items>
+                </tbMenu>
+                <tbMenu sid="Ab8b2583c02e6b297c7c24bc7e15bc72c">
+                  <id>Ab8b2583c02e6b297c7c24bc7e15bc72c</id>
+                  <text>导出</text>
+                  <icon>/artery/report/parse/images/excel.gif</icon>
+                  <Items>
+                    <tbMenuItem sid="Aaa4cca2931f37f0f7c8fc04507afd4f8">
+                      <id>Aaa4cca2931f37f0f7c8fc04507afd4f8</id>
+                      <text>导出Excel</text>
+                      <icon>/artery/report/parse/images/excel.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").exportExcel({multi:['rptAreaAD412','rptArea219C5']});]]></onClickClient>
+                    </tbMenuItem>
+                    <tbMenuItem sid="A1d142118ed4138b44f6f2486d112b9fc">
+                      <id>A1d142118ed4138b44f6f2486d112b9fc</id>
+                      <text>导出全部Excel</text>
+                      <icon>/artery/report/parse/images/excel.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").exportAllExcel();]]></onClickClient>
+                    </tbMenuItem>
+                    <tbSeparator sid="Ac545808ad1e2663d1e3ea5a026eeb86c">
+                      <id>Ac545808ad1e2663d1e3ea5a026eeb86c</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="A0f12c3bcb08dcea30b5a4cb766cf969c">
+                      <id>A0f12c3bcb08dcea30b5a4cb766cf969c</id>
+                      <text>导出Excel(OCX)</text>
+                      <icon>/artery/report/parse/images/excel.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").exportExcelWin();]]></onClickClient>
+                    </tbMenuItem>
+                    <tbMenuItem sid="Ab1316e3f49b82c55b34c9ab3db6cd0da">
+                      <id>Ab1316e3f49b82c55b34c9ab3db6cd0da</id>
+                      <text>导出全部Excel(OCX)</text>
+                      <icon>/artery/report/parse/images/excel.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").exportAllExcelWin();]]></onClickClient>
+                    </tbMenuItem>
+                    <tbSeparator sid="A904ca9d7777ada03f3d1724fee091c22">
+                      <id>A904ca9d7777ada03f3d1724fee091c22</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="A4393893e099585c11249341153f12243">
+                      <id>A4393893e099585c11249341153f12243</id>
+                      <text>导出Pdf</text>
+                      <icon>/artery/report/parse/images/pdf.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").exportPdf();]]></onClickClient>
+                    </tbMenuItem>
+                    <tbMenuItem sid="Abccbc784458851abe12408fa7810efdb">
+                      <id>Abccbc784458851abe12408fa7810efdb</id>
+                      <text>导出全部Pdf</text>
+                      <icon>/artery/report/parse/images/pdf.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").exportAllPdf();]]></onClickClient>
+                    </tbMenuItem>
+                  </Items>
+                </tbMenu>
+                <tbMenu sid="Ad4fa1832653e38c31a448237cf2ad85d">
+                  <id>Ad4fa1832653e38c31a448237cf2ad85d</id>
+                  <text>打印</text>
+                  <icon>/artery/report/parse/images/print.gif</icon>
+                  <Items>
+                    <tbMenuItem sid="Adcc4a4a480098f351a777de7c820a654">
+                      <id>Adcc4a4a480098f351a777de7c820a654</id>
+                      <text>打印本页</text>
+                      <icon>/artery/report/parse/images/print.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").print({multi:['rptAreaAD412','rptArea219C5']});]]></onClickClient>
+                    </tbMenuItem>
+                    <tbMenuItem sid="A1c4551d6c0bc3e3536218633b95c47e5">
+                      <id>A1c4551d6c0bc3e3536218633b95c47e5</id>
+                      <text>打印全部</text>
+                      <icon>/artery/report/parse/images/print.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").printAll();]]></onClickClient>
+                    </tbMenuItem>
+                    <tbMenuItem sid="A65ec9dfaf7ac6d9c76a63f8073860c5e">
+                      <id>A65ec9dfaf7ac6d9c76a63f8073860c5e</id>
+                      <text>打印全部(分页)</text>
+                      <icon>/artery/report/parse/images/print.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").printAllPage();]]></onClickClient>
+                    </tbMenuItem>
+                    <tbSeparator sid="A86f2762056a87e222ac8eab1ec98823e">
+                      <id>A86f2762056a87e222ac8eab1ec98823e</id>
+                    </tbSeparator>
+                    <tbMenuItem sid="A6f23691c562acfc28e7a1e7c22a6f566">
+                      <id>A6f23691c562acfc28e7a1e7c22a6f566</id>
+                      <text>打印本页(OCX)</text>
+                      <icon>/artery/report/parse/images/print.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").exportExcelWin();]]></onClickClient>
+                    </tbMenuItem>
+                    <tbMenuItem sid="A4ebfeff4e1e8e609e0b7087f0e5fccf9">
+                      <id>A4ebfeff4e1e8e609e0b7087f0e5fccf9</id>
+                      <text>打印全部(OCX)</text>
+                      <icon>/artery/report/parse/images/print.gif</icon>
+                      <onClickClient><![CDATA[Artery.get("rptArea184BD").exportAllExcelWin();]]></onClickClient>
+                    </tbMenuItem>
+                  </Items>
+                </tbMenu>
+                <tbButton sid="5e82bc0fff5078bcba8c7fb00c2f55be">
+                  <id>tbButton21ed9</id>
+                  <onClickClient><![CDATA[Artery.get("rptArea219C5").exportExcel({multi:['rptArea184BD']});]]></onClickClient>
+                </tbButton>
+                <tbButton sid="1f50739e00fb7d17b7000cc8a8b77f1b">
+                  <id>tbButton2d092</id>
+                  <onClickClient><![CDATA[Artery.get("rptArea184BD").exportExcel({multi:['rptArea219C5']});]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <rptCondition sid="rptCondition96F1A">
+              <id>rptCondition96F1A</id>
+              <width>90%</width>
+              <labelBackColor>#f5f5f5</labelBackColor>
+              <cellpadding>1</cellpadding>
+              <borderStyle>solid</borderStyle>
+              <Items>
+                <faString sid="Ac95b55c108373e9a5fae8c2d8de8ecb3">
+                  <id>con1</id>
+                  <height>0</height>
+                  <label>名称</label>
+                  <labelColor>#000000</labelColor>
+                </faString>
+                <faString sid="A3c9bbf2d42e3d048905f0dd926f9ccfe">
+                  <id>con2</id>
+                  <height>0</height>
+                  <label>作者</label>
+                  <labelColor>#000000</labelColor>
+                </faString>
+              </Items>
+            </rptCondition>
+          </Items>
+        </rptArea>
+        <tableLayout sid="tableLayoutF5144">
+          <id>tableLayoutF5144</id>
+          <Items>
+            <rptArea sid="rptAreaAD412">
+              <id>rptAreaAD412</id>
+              <linkto>{"formId":"30bfdb3d54b58068d2da0da1f3628c51","formName":"_report_dynamicData.rpt.xml","formType":"2","runTimeType":"insert","target":"","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+            </rptArea>
+            <rptArea sid="rptArea219C5">
+              <id>rptArea219C5</id>
+              <linkto>{"formId":"34ac2574b9e26bfe7d64b5b3afcb4f97","formName":"_report_bookImageText.rpt.xml","formType":"2","runTimeType":"insert","target":"","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+            </rptArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

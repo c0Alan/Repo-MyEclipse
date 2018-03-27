@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="faFieldSet" cn="FieldSet" menu="布局控件" nameprop="fieldSetName"
+	icon="faFieldSet.gif" iconNew="faFieldSetNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>对表单中的控件进行分组</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="formArea" />
+		<Parent type="faFieldSet" />
+		<Parent type="faBlankLayout" />
+	</Parents>
+	<Children>
+		<Child type="faString" />
+		<Child type="faDate" />
+		<Child type="faNumeric" />
+		<Child type="faBinary" />
+		<Child type="faCode" />
+		<Child type="faClassCode" />
+		<Child type="faOrgan" />
+		<Child type="faIdentity" />
+		<Child type="faHidden" />
+		<Child type="faTrigger" />
+		<Child type="faTree" />
+		<Child type="faBlankLayout" />
+		<Child type="buttonArea" />
+		<Child type="htmlArea" />
+		<Child type="blankPanel" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.form.FaFieldSet
+	</Class>
+	<JsFile>
+		<File>faFieldSet.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apfafieldset</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+				<Property cn="控件提示" type="1" name="comment" tips="用于产生控件的提示信息">
+			<Value />
+			<Description><![CDATA[
+			用于产生控件的提示信息,如果控件指定了继承表，继承字段，此项默认会显示数据字典中相应字段的描述信息。
+			如果填写此属性，则会覆盖数据字典中的描述信息。
+			]]></Description>
+		</Property>
+		<Property cn="分组名称" type="1" name="fieldSetName"
+			tips="设置分组的名称">
+			<Value>FieldSet</Value>
+			<Description><![CDATA[
+				<p>设置分组的名称，默认为FieldSet</P>
+				<img src="../../resources/images/common/form/fieldset_name.png"></img>
+			]]></Description>
+		</Property>
+		<Property cn="列数" type="2" name="colNum" group="列设置" tips="设置table的列数，即table布局共有几列">
+			<Value>2</Value>
+		</Property>
+		<Property cn="每列宽度" type="1" name="colWidths" group="列设置" tips="设置每列的宽度，如有多列，用“，”号分隔。支持整数值和百分比">
+			<Value />
+		</Property>
+		<Property cn="列间距" type="1" name="colSpacing" group="列设置" tips="设置每列之间的宽度">
+			<Value />
+		</Property>
+		<Property cn="子标签位置" type="3" name="labelAlign" group="标签" export="true"
+			ct="[inherit,left,right,top]" tips="设置表单控件的label的位置，可设置为left，right，top">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="子标签宽度" type="2" name="labelWidth" group="标签" export="true"
+			tips="设置表单控件的label的宽度">
+			<Value></Value>
+		</Property>
+		<Property cn="子后缀宽度" type="2" name="subSuffixWidth" group="后缀"
+			export="true" tips="设置表单控件的后缀的宽度">
+			<Value />
+			<Description><![CDATA[
+				<p>设置表单控件的label的宽度，默认为100</p>
+				<table width=1><tr><td style='text-align:center;font-weight:700'>子后缀宽度为：100 </td><td style='text-align:center;font-weight:700'>子后缀宽度为：40 </td></tr><tr><td><img src='../../resources/images/common/form/formArea/formArea_suffixWidth1.png'></td><td><img src='../../resources/images/common/form/formArea/formArea_suffixWidth2.png'></td></tr></table>
+				]]></Description>
+		</Property>
+		<Property cn="展现时子后缀位置" type="3" name="displaySuffixPosition"
+			group="后缀" ct="[right,follow]" tips="设置控件的后缀位置，可选right、follow；默认为right">
+			<Value>right</Value>
+			<Description><![CDATA[
+				<p>设置控件的后缀位置，可选right、follow；默认为right</p>
+				<p>right：后缀将显示在控件的右侧</p>
+				<p>follow：后缀将紧跟着控件的值进行显示</p>
+				<table width=1><tr><td style='text-align:center;font-weight:700'>展现时子后缀位置：right</td><td style='text-align:center;font-weight:700'>展现时子后缀位置：follow</td></tr><tr><td><img src='../../resources/images/common/form/formArea/formArea_displaySuffixPosition1.png'></td><td><img src='../../resources/images/common/form/formArea/formArea_displaySuffixPosition2.png'></td></tr></table>
+			]]></Description>
+		<Conditions>
+			<Condition>当表单的展现类型为display时有效</Condition>
+		</Conditions>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" tips="设置控件的主题样式，此主题样式是由控件提供的不同的展现风格，可在开发控件时定义">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="展现类型" type="3" name="displayType" inherit="false"
+			ct="[inherit,editable,readOnly,display]" tips="设置表单的展现类型，此属性默认为inherit，即继承自表单表单区域的展现时类型...">
+			<Value>inherit</Value>
+			<Description><![CDATA[
+				<p>设置表单的展现类型，此属性默认为inherit，即继承自表单表单区域的展现时类型</p>
+				<table width=1><tr><td style='text-align:center;font-weight:700'>editable类型</td><td style='text-align:center;font-weight:700'>readOnly类型</td><td style='text-align:center;font-weight:700'>display类型</td></tr><tr><td><img src='formArea/displayType1.gif'></td><td><img src='formArea/displayType2.gif'></td><td><img src='formArea/displayType3.gif'></td></tr></table>
+			]]></Description>
+			<Conditions>
+				<Condition>如果子控件的“展现类型”属性为inherit时，则子控件会继承此属性显示</Condition>
+				<Condition>如果子控件的“展现类型”属性不为inherit时，则子控件会按自己设置的值显示</Condition>
+				<Condition>每种展现类型展示时都可以自定义输入框的样式</Condition>
+				<Condition>每种展现类型的样式如果不自定义输入框的样式，默认都继承自“主题设置”模块中配置的样式</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+    <Property cn="子标签背景色" type="10" name="labelBackColor" group="编辑时" tips="设置label的背景色">
+      <Value></Value>
+    </Property>
+    <Property cn="子标签容器背景色" type="10" name="labelCtBackColor" group="编辑时" tips="设置label容器td的背景色">
+      <Value></Value>
+    </Property>
+    <Property cn="子标签样式" type="1" name="labelSubStyle" group="编辑时" tips="设置label的样式">
+      <Value></Value>
+    </Property>
+    <Property cn="内容容器样式" type="1" name="contentCtStyleEdit" group="编辑时" tips="设置内容td的样式">
+      <Value></Value>
+    </Property>
+    <Property cn="是否显示表格线" type="3" name="formTableBorder" ct="[inherit,true,false]" group="编辑时" tips="设置当表单为编辑状态时，是否显示表格线">
+      <Value>inherit</Value>
+    </Property>
+    <Property cn="间距" type="1" name="cellpadding" group="编辑时"  tips="设置编辑时的表格间距">
+      <Value />
+    </Property>
+    <Property cn="表格线样式" type="1" name="borderStyle" group="编辑时" tips="设置表格线的样式，如：border:1px solid gray;">
+      <Value />
+    </Property>
+    <Property cn="子标签背景色" type="10" name="labelBackColorRead" group="只读时" tips="设置label的背景色">
+      <Value></Value>
+    </Property>
+    <Property cn="子标签容器背景色" type="10" name="labelCtBackColorRead" group="只读时" tips="设置label容器td的背景色">
+      <Value></Value>
+    </Property>
+    <Property cn="子标签样式" type="1" name="labelSubStyleRead" group="只读时" tips="设置label的样式">
+      <Value></Value>
+    </Property>
+    <Property cn="内容容器样式" type="1" name="contentCtStyleRead" group="只读时" tips="设置内容td的样式">
+      <Value></Value>
+    </Property>
+    <Property cn="是否显示表格线" type="3" name="readOnlyBorder" ct="[inherit,true,false]" group="只读时" tips="设置当表单为只读状态时，是否显示表格线">
+      <Value>inherit</Value>
+    </Property>
+    <Property cn="间距" type="1" name="cellpaddingRead" group="只读时"  tips="设置只读时的表格间距">
+      <Value />
+    </Property>
+    <Property cn="表格线样式" type="1" name="borderStyleRead" group="只读时" tips="设置表格线的样式，如：border:1px solid gray;">
+      <Value />
+    </Property>
+    <Property cn="子标签背景色" type="10" name="labelBackColorDisplay" group="展现时" tips="设置label的背景色">
+      <Value></Value>
+    </Property>
+    <Property cn="子标签容器背景色" type="10" name="labelCtBackColorDisplay" group="展现时" tips="设置label容器td的背景色">
+      <Value></Value>
+    </Property>
+    <Property cn="子标签样式" type="1" name="labelSubStyleDisplay" group="展现时" tips="设置label的样式">
+      <Value></Value>
+    </Property>
+    <Property cn="内容容器样式" type="1" name="contentCtStyleDisplay" group="展现时" tips="设置内容td的样式">
+      <Value></Value>
+    </Property>
+    <Property cn="是否显示表格线" type="3" name="displayBorder" ct="[inherit,true,false]" group="展现时" tips="设置当表单为只读状态时，是否显示表格线">
+      <Value>inherit</Value>
+    </Property>
+    <Property cn="间距" type="1" name="cellpaddingDisplay" group="展现时"  tips="设置只读时的表格间距">
+      <Value />
+    </Property>
+    <Property cn="表格线样式" type="1" name="borderStyleDisplay" group="展现时" tips="设置表格线的样式，如：border:1px solid gray;">
+      <Value />
+    </Property>
+	</Properties>
+  <ExtendProperties>
+  	<Property cn="所占列数" type="2" name="colSpan" tips="当本组件处于表格布局中时，设置本组件占几列，相当于td的copspan属性">
+      <Value>1</Value>
+    </Property>
+    <Property cn="所占行数" type="2" name="rowSpan" tips="当本组件处于表格布局中时，设置本组件占几行，相当于td的rowspan属性">
+      <Value>1</Value>
+    </Property>
+    <Property cn="同步表格高度" type="11" name="synTabHeight" export="true" tips="当本组件的父容器是“表格布局”时，可以通过此属性来设置本组件所在表格容器...">
+      <Value>false</Value>
+    </Property>
+    <Property cn="同步表格样式" type="1" name="synTabStyle" export="true" tips="本组件设置的样式会应用到表格的td的样式。只有本组件在表格布局内使用时有效">
+      <Value></Value>
+    </Property>
+    <Property cn="标签文字" type="1" name="label" tips="设置标签文字">
+		<Value>label</Value>
+	</Property>
+	<Property cn="标签颜色" type="10" name="labelColor" tips="设置标签的颜色">
+		<Value></Value>
+	</Property>
+	<Property cn="标签样式" type="1" name="labelStyle" tips="设置标签的样式">
+		<Value />
+	</Property>
+	<Property cn="标签容器样式" type="1" name="labelCntStyle" tips="设置标签容器td的样式">
+		<Value />
+	</Property>
+	<Property cn="控件容器样式" inherit="false" type="1" name="contentCtStyle" tips="设置内容td的样式">
+		<Value></Value>
+	</Property>
+	<Property cn="隐藏标签" type="11" name="hideLabel" tips="设置标签是否隐藏">
+		<Value>false</Value>
+	</Property>
+	<Property cn="样式名称" type="1" name="className"
+		tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+		<Value />
+	</Property>
+	<Property cn="后缀文字" type="1" name="suffixLabel" group="后缀" tips="设置后缀文字">
+		<Value />
+		<Description><![CDATA[
+		设置后缀文字，支持HTML标签，如：<pre><font color=red>设置后缀文字为红色</font></pre>
+		]]></Description>
+	</Property>
+	<Property cn="后缀宽度" type="2" name="suffixWidth" group="后缀" tips="设置控件的后缀的宽度">
+		<Value />
+	</Property>
+	<Property cn="后缀样式" type="1" name="suffixStyle" group="后缀"
+		tips="设置后缀的样式">
+		<Value />
+		<Conditions>
+			<Condition>注意：数值控件的“缩写单位/valueUnit”属性，会被当作后缀来处理，因此会受到此样式的影响</Condition>
+		</Conditions>
+	</Property>
+	<Property cn="隐藏后缀" type="11" name="hideSuffix" group="后缀" tips="设置后缀是否隐藏">
+		<Value>false</Value>
+	</Property>
+	<Property cn="隐藏方式" type="3" name="hideMode" export="true"
+			ct="[display,visibility]" tips="设置组件的隐藏方式，相当于css的样式，可选display和visibility">
+			<Value>display</Value>
+		</Property>
+  </ExtendProperties>
+	<Methods>
+		<Method name="hide" return="void" tips="隐藏本控件"></Method>
+		<Method name="show" return="void" tips="显示本控件"></Method>
+		<!--这两个方法暂时不先到API中，和hide的区别是，占位置
+		<Method name="collapse" return="void" tips="收起本控件"></Method>
+		<Method name="expand" return="void" tips="展开本控件"></Method> 
+		-->
+		<Method name="alignTo" return="void" tips=""></Method>
+		<Method name="center" return="void" tips="在body中居中显示本控件"></Method>
+		<Method name="readAllSub" return="void" tips="设置所有子控件为只读" />
+		<Method name="editAllSub" return="void" tips="设置所有子控件为可编辑" />
+		<Method name="disableAllSub" return="void" tips="设置所有子控件为无效" />
+		<Method name="enableAllSub" return="void" tips="设置所有子控件为有效" />
+	</Methods>
+</Item>
+

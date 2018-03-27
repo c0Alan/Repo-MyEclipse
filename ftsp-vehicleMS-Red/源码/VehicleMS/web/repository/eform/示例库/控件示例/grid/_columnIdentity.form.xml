@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2084f6fcd9f64b40b0a263a53ce780ae</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._columnIdentity.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_columnIdentity.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form70335">
+      <id>form70335</id>
+      <Items>
+        <listArea sid="4da9d4041fb714ebe5c03b36800f3bdc">
+          <id>listArea043c5</id>
+          <ds>rs1</ds>
+          <Items>
+            <columnIdentity sid="f97b1c4cc2a6f6a899aec553e6cdc21d">
+              <id>columnIdentity9e484</id>
+            </columnIdentity>
+            <columnString sid="961350796858d2e625676e4b929a4a7d">
+              <id>columnStringCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+            </columnString>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

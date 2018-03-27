@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>f3e687db730ecaeaf7afce723a67f101</id>
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.maintain.Fwltjbb.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/maintain/Fwltjbb.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <rptLayout sid="rptlayoutsid">
+      <id>Aae239ba5bd377c2ed42d07c792190ecf</id>
+      <background-color />
+      <Items>
+        <topbar sid="toolbarsid">
+          <id>toolbar</id>
+          <Items>
+            <tbText sid="6c292c31257dcc3c454013d8ba6d918b">
+              <id>tbText83610</id>
+              <text>&lt;span style="font-size:14px;font-weight:700;color:#15428B;"&gt;{req.statTitle}&lt;/span&gt;</text>
+            </tbText>
+            <tbSeparator sid="e65d0ff1927d25d8f88c2c71dc0fca8b">
+              <id>tbSeparator5e9da</id>
+            </tbSeparator>
+            <tbButton sid="Af2453966654835dc38257122aa5fbaf6">
+              <id>Af2453966654835dc38257122aa5fbaf6</id>
+              <text>显示/隐藏</text>
+              <icon>/artery/arteryTheme/theme/default/images/report/split.gif</icon>
+              <onClickClient><![CDATA[Artery.get('resultArea').toggleCondition();]]></onClickClient>
+            </tbButton>
+            <tbSeparator sid="Ad8ea600f515585dc1989dd14accf7614">
+              <id>Ad8ea600f515585dc1989dd14accf7614</id>
+            </tbSeparator>
+            <tbMenu sid="A8a0daa02a28ae7d8894b5a91c7b210b9">
+              <id>A8a0daa02a28ae7d8894b5a91c7b210b9</id>
+              <text>自动调整</text>
+              <icon>/artery/arteryTheme/theme/default/images/report/autoCol.gif</icon>
+              <Items>
+                <tbMenuItem sid="A9fb6909553129946c6e1c4c2d25c98d4">
+                  <id>A9fb6909553129946c6e1c4c2d25c98d4</id>
+                  <text>自动列宽</text>
+                  <icon>/artery/arteryTheme/theme/default/images/report/autoCol.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").autoCol();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="Ab04af006fe96cb9efece2cd84822bef2">
+                  <id>Ab04af006fe96cb9efece2cd84822bef2</id>
+                  <text>自动行高</text>
+                  <icon>/artery/arteryTheme/theme/default/images/report/autoRow.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").autoRow();]]></onClickClient>
+                </tbMenuItem>
+                <tbSeparator sid="A31741a1d5770c85379857620b4c8dddc">
+                  <id>A31741a1d5770c85379857620b4c8dddc</id>
+                </tbSeparator>
+                <tbMenuItem sid="A8db25c87b7dac79aceddbb0004b63b72">
+                  <id>A8db25c87b7dac79aceddbb0004b63b72</id>
+                  <text>恢复初始</text>
+                  <onClickClient><![CDATA[Artery.get("resultArea").autoRecover();]]></onClickClient>
+                </tbMenuItem>
+              </Items>
+            </tbMenu>
+            <tbMenu sid="Ab8b2583c02e6b297c7c24bc7e15bc72c">
+              <id>Ab8b2583c02e6b297c7c24bc7e15bc72c</id>
+              <text>导出</text>
+              <icon>/artery/arteryTheme/theme/default/images/report/excel.gif</icon>
+              <Items>
+                <tbMenuItem sid="Aaa4cca2931f37f0f7c8fc04507afd4f8">
+                  <id>Aaa4cca2931f37f0f7c8fc04507afd4f8</id>
+                  <text>导出Excel</text>
+                  <icon>/artery/arteryTheme/theme/default/images/report/excel.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportExcel();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="A1d142118ed4138b44f6f2486d112b9fc">
+                  <id>A1d142118ed4138b44f6f2486d112b9fc</id>
+                  <text>导出全部Excel</text>
+                  <icon>/artery/arteryTheme/theme/default/images/report/excel.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportAllExcel();]]></onClickClient>
+                </tbMenuItem>
+                <tbSeparator sid="A904ca9d7777ada03f3d1724fee091c22">
+                  <id>A904ca9d7777ada03f3d1724fee091c22</id>
+                </tbSeparator>
+                <tbMenuItem sid="A4393893e099585c11249341153f12243">
+                  <id>A4393893e099585c11249341153f12243</id>
+                  <text>导出Pdf</text>
+                  <icon>/artery/arteryTheme/theme/default/images/report/pdf.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportPdf();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="Abccbc784458851abe12408fa7810efdb">
+                  <id>Abccbc784458851abe12408fa7810efdb</id>
+                  <text>导出全部Pdf</text>
+                  <icon>/artery/arteryTheme/theme/default/images/report/pdf.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportAllPdf();]]></onClickClient>
+                </tbMenuItem>
+              </Items>
+            </tbMenu>
+            <tbMenu sid="Ad4fa1832653e38c31a448237cf2ad85d">
+              <id>Ad4fa1832653e38c31a448237cf2ad85d</id>
+              <text>打印</text>
+              <icon>/artery/arteryTheme/theme/default/images/report/print.gif</icon>
+              <Items>
+                <tbMenuItem sid="Adcc4a4a480098f351a777de7c820a654">
+                  <id>Adcc4a4a480098f351a777de7c820a654</id>
+                  <text>打印本页</text>
+                  <icon>/artery/arteryTheme/theme/default/images/report/print.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").print();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="A1c4551d6c0bc3e3536218633b95c47e5">
+                  <id>A1c4551d6c0bc3e3536218633b95c47e5</id>
+                  <text>打印全部</text>
+                  <icon>/artery/arteryTheme/theme/default/images/report/print.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").printAll();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="A65ec9dfaf7ac6d9c76a63f8073860c5e">
+                  <id>A65ec9dfaf7ac6d9c76a63f8073860c5e</id>
+                  <text>打印全部(分页)</text>
+                  <icon>/artery/arteryTheme/theme/default/images/report/print.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").printAllPage();]]></onClickClient>
+                </tbMenuItem>
+              </Items>
+            </tbMenu>
+          </Items>
+        </topbar>
+        <rptCondition sid="A36ff3fdc071890fc1144791531a4a5cf">
+          <id>conditionArea</id>
+          <colNum>5</colNum>
+          <colWidths>25%,25%,20%,20%</colWidths>
+          <cellpadding>5</cellpadding>
+          <borderStyle>solid</borderStyle>
+          <hidden>false</hidden>
+          <Items>
+            <faDate sid="fab6cb38b56cbbf80c51368bb0afdec8">
+              <id>faStartDate</id>
+              <required>true</required>
+              <onShow><![CDATA[faStartDate_onShow]]></onShow>
+              <label>开始时间</label>
+            </faDate>
+            <faDate sid="313ea958f8358c14bdc0d60a5b1dca5c">
+              <id>faEndDate</id>
+              <required>true</required>
+              <onShow><![CDATA[faEndDate_onShow]]></onShow>
+              <label>结束时间</label>
+            </faDate>
+            <faCode sid="5cf20be1a04e5feb9d5c479f74ea9ccd">
+              <id>faXaxis</id>
+              <required>true</required>
+              <dynamicData><![CDATA[faXaxis_dynamicData]]></dynamicData>
+              <value>{req.xaxis}</value>
+              <onShow><![CDATA[xaxis_onShow]]></onShow>
+              <label>横轴</label>
+            </faCode>
+            <faCode sid="f9f5cf036f9c6252f243304c6492fae9">
+              <id>faYaxis</id>
+              <required>true</required>
+              <dynamicData><![CDATA[faYaxis_dynamicData]]></dynamicData>
+              <value>{req.yaxis}</value>
+              <onShow><![CDATA[faYaxis_onShow]]></onShow>
+              <label>纵轴</label>
+            </faCode>
+            <buttonArea sid="780d8d43e81c8614036d22bb6f38e812">
+              <id>buttonAreadfe8f</id>
+              <label>abc</label>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <button sid="2dadc912c5b6d4f4ebe8c36a4d2a2de5">
+                  <id>buttond8511</id>
+                  <text>查询</text>
+                  <icon>/artery/arteryImage/sample/search.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").search();]]></onClickClient>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </rptCondition>
+        <rptResult sid="Ae7426be790949f95926593e72055e698">
+          <id>resultArea</id>
+          <showPageNum>false</showPageNum>
+          <pageRs />
+        </rptResult>
+      </Items>
+    </rptLayout>
+  </Item>
+  <Template ver="1.0">
+    <Table DefaultColWidth="84" DefaultRowHeight="20" FixedCols="0" FixedRows="0" FixedLineColor="0" />
+    <ImgList />
+    <Cells>
+      <Cell Col="1" Row="1" ColWidths="140" RowHeights="40" Color="16764057" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="1" Row="2" ColWidths="140" ForeText="{rs2.group(yaxis)}{=rs2.select1(yaxisText)}" TrailingZero="1" ThousandSep="1" TdBT="0" />
+      <Cell Col="1" Row="3" ColWidths="140" Color="16764057" ForeText="合计" TrailingZero="1" ThousandSep="1" TdBT="0" />
+      <Cell Col="2" Row="1" ColWidths="80" RowHeights="40" Color="16764057" ExtendType="1" ForeText="{rs1.select(time)}" TrailingZero="1" ThousandSep="1" TdBL="0" />
+      <Cell Col="2" Row="2" ColWidths="80" ForeText="{rs2.count(C_ID,'#xaxis'='[B1]'&amp;'#yaxis'='[A2]')}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="2" Row="3" ColWidths="80" ForeText="{sum([B2])}{nf([0])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="3" Row="1" ColWidths="77" RowHeights="40" Color="16764057" ForeText="合计" TrailingZero="1" ThousandSep="1" TdBL="0" />
+      <Cell Col="3" Row="2" ColWidths="77" ForeText="{sumhe([B2])}{nf([0])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="3" Row="3" ColWidths="77" ForeText="{sum([C2])}{nf([0])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+    </Cells>
+  </Template>
+  <dataSources>
+    <ds dsName="dataSource" rsName="rs1" type="logic" splitpage="2">getXAxis</ds>
+    <ds dsName="dataSource" rsName="rs2" type="logic" splitpage="2">getLogList</ds>
+  </dataSources>
+</form>
+

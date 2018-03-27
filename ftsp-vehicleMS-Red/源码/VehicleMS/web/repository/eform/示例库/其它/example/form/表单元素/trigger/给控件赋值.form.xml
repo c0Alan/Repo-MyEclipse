@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9bf47b8f42af259dcd9e60da8172433f</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation>artery/arteryClient/slk/qt/example/form/bdys/trigger/Jkjfz.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <background-color>#ffffff</background-color>
+      <Items>
+        <tableLayout sid="A63e6981475c98953aa01fb7feaad6395">
+          <id>A63e6981475c98953aa01fb7feaad6395</id>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <formArea sid="A66a6a4ba58c4e38daa725e914c4e0776">
+              <id>A66a6a4ba58c4e38daa725e914c4e0776</id>
+              <labelBackColor>#f5f5f5</labelBackColor>
+              <cellpadding>5</cellpadding>
+              <borderStyle>solid</borderStyle>
+              <readOnlyBorder>true</readOnlyBorder>
+              <Items>
+                <faString sid="A9668e16cdf2b6d8f8d2dcbd043fedd34">
+                  <id>input_show</id>
+                  <required>false</required>
+                  <height>0</height>
+                  <value>{req.showValue}</value>
+                  <label extend="true">显示值</label>
+                </faString>
+                <faString sid="A2caac3b7ab4a4e2e9bb90b4dd1d80606">
+                  <id>input_hidden</id>
+                  <required>false</required>
+                  <height>0</height>
+                  <value>{req.hiddenValue}</value>
+                  <label extend="true">隐藏值</label>
+                </faString>
+              </Items>
+            </formArea>
+            <buttonArea sid="A83fc68c17cf53ca6713df068758180a6">
+              <id>A83fc68c17cf53ca6713df068758180a6</id>
+              <Items>
+                <button sid="A47101d0ca7d607a1020267724b0dca65">
+                  <id>button_set</id>
+                  <text>确定</text>
+                  <onClickClient><![CDATA[button_set_onClickClient]]></onClickClient>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

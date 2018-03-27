@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>81dde32f9da7f8a68d4936000bdaea03</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>com.thunisoft.vehicle.logic.Applyfail.java</javaLocation>
+  <jsLocation>car/js/applyfail.js</jsLocation>
+  <cssLocation />
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="form41f3d">
+      <id>form41f3d</id>
+      <Items>
+        <blankPanel sid="ece04546afd38059c1ecc95c00f18d52">
+          <id>blankPanela60c2</id>
+          <Items>
+            <centerRegion sid="4e541f7db42525e4247585b938b7ddcc">
+              <id>centerRegion84e3e</id>
+              <Items>
+                <listArea sid="f9ab3c73d5b200de6bc2b09d0bd2c843">
+                  <id>listAreafadd5</id>
+                  <ds>rs1</ds>
+                  <width />
+                  <height />
+                  <showTitle>false</showTitle>
+                  <isPageSplit>false</isPageSplit>
+                  <displayInfo>false</displayInfo>
+                  <isOnePageHideBar>true</isOnePageHideBar>
+                  <isShowRowNumber>false</isShowRowNumber>
+                  <border>true</border>
+                  <Items>
+                    <column sid="3540979e6bc42a705aa0e8b32d60b352">
+                      <id>column87f06</id>
+                      <title>用车人</title>
+                      <dataName>{rs1.CApplyUserName}</dataName>
+                      <width>20</width>
+                    </column>
+                    <column sid="a6081dc55552f1e87de6cb4ad727168a">
+                      <id>column19167</id>
+                      <title>用车开始时间</title>
+                      <dataName>{rs1.dtStartTime}</dataName>
+                      <width>49</width>
+                    </column>
+                    <column sid="c76966dedadc524d0ab6228b5627c199">
+                      <id>columnb7eaa</id>
+                      <title>用车结束时间</title>
+                      <dataName>{rs1.dtEndTime}</dataName>
+                      <width>49</width>
+                    </column>
+                  </Items>
+                </listArea>
+              </Items>
+            </centerRegion>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">applyfailList</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>94b7328fc85c93cf74a03917be5e5678</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.schedule.Tjjh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/schedule/Tjjh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formee199">
+      <id>formee199</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <blankPanel sid="0f0dc811378058cb1530168cee76eb53">
+          <id>blankPanel5bf54</id>
+          <height>100%</height>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <formArea sid="f0021386a40cac3d90869ebc12ba14a6">
+              <id>plan_formArea</id>
+              <height>100%</height>
+              <labelWidth>65</labelWidth>
+              <onShow><![CDATA[plan_formArea_onShow]]></onShow>
+              <cellpadding>5</cellpadding>
+              <cellpaddingRead>5</cellpaddingRead>
+              <cellpaddingDisplay>5</cellpaddingDisplay>
+              <Items>
+                <faHidden sid="0ce4964a323a815f756ff7f067da8bcc">
+                  <id>cid_faHidden</id>
+                  <submitName>plan.cid</submitName>
+                  <dataName>{req.cid}</dataName>
+                  <label>cid</label>
+                </faHidden>
+                <faString sid="297cde205aede18a7d1d02680f0ee99e">
+                  <id>planName_faString</id>
+                  <submitName>plan.name</submitName>
+                  <required>true</required>
+                  <onShow><![CDATA[planName_faString_onShow]]></onShow>
+                  <label>计划名称</label>
+                </faString>
+                <faCode sid="aedd73db7dbd908388cc0a91c5db29cc">
+                  <id>jobType_faCode</id>
+                  <submitName>plan.jobType</submitName>
+                  <required>true</required>
+                  <showClear>false</showClear>
+                  <dynamicData><![CDATA[jobType_faCode_dynamicData]]></dynamicData>
+                  <value>1</value>
+                  <onChangeClient><![CDATA[jobType_faCode_onChangeClient]]></onChangeClient>
+                  <onShow><![CDATA[jobType_faCode_onShow]]></onShow>
+                  <label>作业类型</label>
+                </faCode>
+                <faString sid="0fb61b2077ad6c49692441bb1f26c718">
+                  <id>triggerTime_faString</id>
+                  <submitName>plan.triggerTime</submitName>
+                  <required>true</required>
+                  <onShow><![CDATA[triggerTime_faString_onShow]]></onShow>
+                  <label>触发时间</label>
+                </faString>
+                <faCode sid="c8c049c2e18cf50963c0a3ce4eca2ad6">
+                  <id>log_faCode</id>
+                  <submitName>plan.log</submitName>
+                  <required>true</required>
+                  <showClear>false</showClear>
+                  <dynamicData><![CDATA[log_faCode_dynamicData]]></dynamicData>
+                  <value>true</value>
+                  <onShow><![CDATA[log_faCode_onShow]]></onShow>
+                  <label>记录日志</label>
+                </faCode>
+                <faCode sid="479776afcdb93a3f5a8e79e80f00382a">
+                  <id>exceptionPrecess_faCode</id>
+                  <submitName>plan.exceptionProcess</submitName>
+                  <required>true</required>
+                  <editor>sRadio</editor>
+                  <width>200</width>
+                  <showClear>false</showClear>
+                  <dynamicData><![CDATA[exceptionPrecess_faCode_dynamicData]]></dynamicData>
+                  <value>2</value>
+                  <onShow><![CDATA[exceptionPrecess_faCode_onShow]]></onShow>
+                  <colSpan>2</colSpan>
+                  <label>异常处理</label>
+                </faCode>
+                <faString sid="18f0372999e61f1f9272a10485d5e037">
+                  <id>scriptOrSql_faString</id>
+                  <submitName>plan.scriptOrSql</submitName>
+                  <editor>textarea</editor>
+                  <height>300</height>
+                  <onShow><![CDATA[scriptOrSql_faString_onShow]]></onShow>
+                  <colSpan>2</colSpan>
+                  <label>脚本</label>
+                  <hideLabel>true</hideLabel>
+                </faString>
+                <faString sid="8f45d6292cd113456a74598b6f06e4f2">
+                  <id>className_faString</id>
+                  <submitName>plan.className</submitName>
+                  <hidden>true</hidden>
+                  <onShow><![CDATA[className_faString_onShow]]></onShow>
+                  <colSpan>2</colSpan>
+                  <label>类名</label>
+                </faString>
+                <faString sid="800bcd1970ea19468caa324488dba529">
+                  <id>methodName_faString</id>
+                  <submitName>plan.methodName</submitName>
+                  <hidden>true</hidden>
+                  <onShow><![CDATA[methodName_faString_onShow]]></onShow>
+                  <colSpan>2</colSpan>
+                  <label>方法名</label>
+                </faString>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+        <footer sid="2465609ddea0f044e6c446327cc54d0b">
+          <id>footer7f950</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="d647ed05218c3d1099fcd68507d5c60e">
+              <id>modifyBtn</id>
+              <text>修改</text>
+              <icon>/artery/arteryImage/other/tools.gif</icon>
+              <onClickClient><![CDATA[modifyBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[modifyBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[modifyBtn_onShow]]></onShow>
+            </button>
+            <button sid="05d296bd279219d7bd8e3976886d528f">
+              <id>addBtn</id>
+              <text>添加</text>
+              <icon>/artery/arteryImage/file/image005.gif</icon>
+              <onClickClient><![CDATA[addBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[addBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[addBtn_onShow]]></onShow>
+            </button>
+            <simpleButton sid="43a0d1705fd315b8d34df4e4645d6096">
+              <id>cancelBtn</id>
+              <text>取消</text>
+              <onClickClient><![CDATA[cancelBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[cancelBtn_onClickServer]]></onClickServer>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="cid" showName="" value="" pvalue="" />
+  </params>
+</form>
+

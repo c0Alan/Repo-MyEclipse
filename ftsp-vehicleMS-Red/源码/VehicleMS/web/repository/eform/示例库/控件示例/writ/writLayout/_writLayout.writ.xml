@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>957aa5f614b30c46fa93f5570cb021f5</id>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.writ.writLayout._writLayout.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/writ/writLayout/_writLayout.js</jsLocation>
+  <descript>文书布局控件示例</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <writLayout sid="writLayoutC9BCC">
+      <id>writLayoutC9BCC</id>
+      <title>这是标题</title>
+      <width>90%</width>
+      <height>90%</height>
+      <Items>
+        <topbar sid="toolbarsid">
+          <id>toolbarsid</id>
+          <Items>
+            <tbButton sid="btnSaveAsSid">
+              <id>btnSaveAs</id>
+              <text>保存到本地</text>
+              <tooltip>保存文书到本地磁盘</tooltip>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").saveAs();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnSaveToSvrSid">
+              <id>btnSaveToSvr</id>
+              <text>保存到服务器</text>
+              <tooltip>保存文书到服务器</tooltip>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").save();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnPrintSid">
+              <id>btnPrint</id>
+              <text>打印</text>
+              <tooltip>打印文书</tooltip>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").print(true);]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnPrintSetupSid">
+              <id>btnPrintSetup</id>
+              <text>打印设置</text>
+              <tooltip>打印项目配置</tooltip>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").printSetup();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnPreviewSid">
+              <id>btnPreview</id>
+              <text>打印预览</text>
+              <tooltip>打印预览</tooltip>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").preview();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnLoadSid">
+              <id>btnLoad</id>
+              <text>从本地加载</text>
+              <tooltip>打开本地磁盘保存的文书</tooltip>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").openDoc();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnShowHisSid">
+              <id>btnShowHis</id>
+              <text>显示历史</text>
+              <tooltip>显示本文书的修改历史记录</tooltip>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").showHistory();]]></onClickClient>
+            </tbButton>
+          </Items>
+        </topbar>
+        <writTplContainer sid="ntkoeditorsid" />
+      </Items>
+    </writLayout>
+  </Item>
+</form>
+

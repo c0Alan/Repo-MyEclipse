@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9f7b98252d98d85129d77227cdb57259</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.config.Xtpz.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/config/Xtpz.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form92f41">
+      <id>form92f41</id>
+      <bodyStyle>padding:10px;</bodyStyle>
+      <Items>
+        <blankPanel sid="dc64a0693ef44c81eb708bd9f103a013">
+          <id>blankPanel5aef9</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <blankPanel sid="b8bbec5da2f002dc38fa37e2e1dccb4b">
+              <id>blankPanelab000</id>
+              <bodyStyle>background-color:transparent;</bodyStyle>
+              <themeStyle>collapseUnis</themeStyle>
+              <Items>
+                <header sid="8576a8243b5a8ed7168b3a762e5e28a2">
+                  <id>headerf3cb8</id>
+                  <text>JS加载模式</text>
+                </header>
+                <buttonArea sid="c8c76e43c8a4e07d0b00c458a87fdf4d">
+                  <id>buttonArea6ad68</id>
+                  <spacing>10</spacing>
+                  <toggle>true</toggle>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <button sid="91c17dcad153d107244a076045ae5426">
+                      <id>allSepBtn</id>
+                      <text>独立加载</text>
+                      <onClickClient><![CDATA[allSepBtn_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[allSepBtn_onClickServer]]></onClickServer>
+                      <themeStyle>cookieLike</themeStyle>
+                      <onShow><![CDATA[allSepBtn_onShow]]></onShow>
+                    </button>
+                    <button sid="1cc64994d46eb52946a7498c7755aebd">
+                      <id>allOneBtn</id>
+                      <text>合并加载</text>
+                      <onClickClient><![CDATA[allOneBtn_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[allOneBtn_onClickServer]]></onClickServer>
+                      <themeStyle>cookieLike</themeStyle>
+                      <onShow><![CDATA[allOneBtn_onShow]]></onShow>
+                    </button>
+                    <button sid="b73d352dfbc34e18388f26621f169d19">
+                      <id>allOneDebugBtn</id>
+                      <text>合并加载（调试）</text>
+                      <onClickClient><![CDATA[allOneDebugBtn_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[allOneDebugBtn_onClickServer]]></onClickServer>
+                      <themeStyle>cookieLike</themeStyle>
+                      <onShow><![CDATA[allOneDebugBtn_onShow]]></onShow>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e1213e9ce3f7c057a8810436279396ee</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.subsys.Tjxgzxt.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/subsys/Tjxgzxt.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form24b39">
+      <id>form24b39</id>
+      <Items>
+        <blankPanel sid="5e8dfc1fec2b70c2a751c721365d0745">
+          <id>blankPanel4dc35</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <bodyStyle>padding-top:10px;</bodyStyle>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="2efe398438d6fd2503b3693b9af74e0b">
+              <id>header8092a</id>
+              <text>&lt;span style="font-size:14px;padding:3px;"&gt;{req.headString}&lt;/span&gt;</text>
+            </header>
+            <formArea sid="c58ca2118f7e5202fd78d57f63ae4306">
+              <id>formArea</id>
+              <ds>rs1</ds>
+              <width>400</width>
+              <colNum>1</colNum>
+              <style>margin-top:20px;</style>
+              <cellpadding>5</cellpadding>
+              <Items>
+                <faIdentity sid="d6ab10f4397878002c820db175f0f825">
+                  <id>faId</id>
+                  <required>true</required>
+                  <dataName>{rs1.id}</dataName>
+                  <label>子系统id</label>
+                </faIdentity>
+                <faString sid="99c21742e17d6d6662f70893b5766f6c">
+                  <id>faName</id>
+                  <required>true</required>
+                  <dataName>{rs1.name}</dataName>
+                  <label>名称</label>
+                </faString>
+                <faTrigger sid="f8474c985921209a5bc4c08bf4e1c829">
+                  <id>faTrigger</id>
+                  <onTriggerClickClient><![CDATA[faTrigger_onTriggerClickClient]]></onTriggerClickClient>
+                  <dataName>{rs1.firstForm}</dataName>
+                  <showValueScript><![CDATA[faTrigger_showValueScript]]></showValueScript>
+                  <label>首页面</label>
+                </faTrigger>
+                <faString sid="b2c4fd6bc3003babb202bd3c24ee429d">
+                  <id>faIconPath</id>
+                  <dataName>{rs1.iconPath}</dataName>
+                  <emptyText>web下的相对路径，如 /artery/arteryImage/sys/gears.gif</emptyText>
+                  <label>系统图标</label>
+                </faString>
+                <faCode sid="3286597d33b8d15d489ad72d08891ce5">
+                  <id>faTheme</id>
+                  <dataName>{rs1.theme}</dataName>
+                  <dynamicData><![CDATA[faTheme_dynamicData]]></dynamicData>
+                  <editable>true</editable>
+                  <label>主题样式</label>
+                </faCode>
+                <faString sid="bd2c0cd2168af9006d62d3f9ea09ea6e">
+                  <id>faRootContext</id>
+                  <dataName>{rs1.rootContext}</dataName>
+                  <label>上下文根</label>
+                </faString>
+                <faCode sid="8882d6b62c48067016e2f669b2fc6eb5">
+                  <id>sysPublish</id>
+                  <required>true</required>
+                  <dataName>{rs1.publish}</dataName>
+                  <editor>sRadio</editor>
+                  <width />
+                  <dynamicData><![CDATA[sysPublish_dynamicData]]></dynamicData>
+                  <ajaxLoad>false</ajaxLoad>
+                  <value>false</value>
+                  <label>是否发布</label>
+                </faCode>
+                <buttonArea sid="c1ddb40ce244707b1310dc890a60b258">
+                  <id>buttonAreabcc45</id>
+                  <spacing>10</spacing>
+                  <style>padding-left:100px;padding-top:10px;</style>
+                  <label />
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="2c13b3935213f1bce6e4f9cfabb12c51">
+                      <id>addSysBtn</id>
+                      <text>创建</text>
+                      <onClickClient><![CDATA[addSysBtn_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[addSysBtn_onClickServer]]></onClickServer>
+                      <themeStyle>apple</themeStyle>
+                      <onShow><![CDATA[addSysBtn_onShow]]></onShow>
+                    </button>
+                    <button sid="0f7c8b9e18d74a84ffd2faf19f13a031">
+                      <id>updSysBtn</id>
+                      <text>更新</text>
+                      <onClickClient><![CDATA[updSysBtn_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[updSysBtn_onClickServer]]></onClickServer>
+                      <themeStyle>apple</themeStyle>
+                      <onShow><![CDATA[updSysBtn_onShow]]></onShow>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="sysId" showName="" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getSystemInfo</ds>
+  </dslist>
+</form>
+

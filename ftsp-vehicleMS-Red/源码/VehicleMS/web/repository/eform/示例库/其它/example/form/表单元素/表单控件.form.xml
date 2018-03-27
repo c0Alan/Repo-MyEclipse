@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>36be4515ceabf776a4aa23bbda030a22</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <formArea sid="formArea5B1ED71479FA15B3E30B1889F7FF98DA">
+          <id>formArea5B1ED71479FA15B3E30B1889F7FF98DA</id>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <faString sid="faStringC501ED38F939560647F2FE9AA28BC08A">
+              <id>faStringC501ED38F939560647F2FE9AA28BC08A</id>
+              <required>false</required>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">字符串</label>
+              <labelColor extend="true" />
+            </faString>
+            <faNumeric sid="faNumeric7BB32E8E7B01C34BFF92B41B081B9AAE">
+              <id>faNumeric7BB32E8E7B01C34BFF92B41B081B9AAE</id>
+              <required>false</required>
+              <showType>number</showType>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">数值</label>
+              <labelColor extend="true" />
+            </faNumeric>
+            <faDate sid="faDateD367D34A0DB95C4360B64B8E07819EE5">
+              <id>faDateD367D34A0DB95C4360B64B8E07819EE5</id>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">日期</label>
+              <labelColor extend="true" />
+            </faDate>
+            <faCode sid="faCode82D67BB1D789F002312A7CE8ACA4892D">
+              <id>faCode82D67BB1D789F002312A7CE8ACA4892D</id>
+              <codeType>-2</codeType>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">代码</label>
+              <labelColor extend="true" />
+            </faCode>
+            <faClassCode sid="faClassCode45513DBC3135E7EDB761A15D72976F0E">
+              <id>faClassCode45513DBC3135E7EDB761A15D72976F0E</id>
+              <codeType>T_Eg_ClassCode</codeType>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">分级代码</label>
+              <labelColor extend="true" />
+            </faClassCode>
+            <faClassCode sid="faClassCode157294468F7FA6FCC5DB639937387DB4">
+              <id>faClassCode157294468F7FA6FCC5DB639937387DB4</id>
+              <editor>mTree</editor>
+              <codeType>T_Eg_ClassCode</codeType>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">分级代码（多选）</label>
+              <labelColor extend="true" />
+            </faClassCode>
+            <faOrgan sid="faOrgan4E309A54B880589BEF9254D99C7E4032">
+              <id>faOrgan4E309A54B880589BEF9254D99C7E4032</id>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">组织机构</label>
+              <labelColor extend="true" />
+            </faOrgan>
+            <faOrgan sid="faOrgan08B92FD574F517F889C175E9F692E821">
+              <id>faOrgan08B92FD574F517F889C175E9F692E821</id>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">组织机构（多选）</label>
+              <labelColor extend="true" />
+            </faOrgan>
+            <faTree sid="faTreeD59560C92C8BC158023A74C403DBC28B">
+              <id>faTreeD59560C92C8BC158023A74C403DBC28B</id>
+              <editor>mTree</editor>
+              <expandTree>true</expandTree>
+              <height>0</height>
+              <value>node11,node2,node31</value>
+              <label extend="true">多选静态树</label>
+              <Items>
+                <treeMenu sid="treeMenu5101E0F3B3D400DECD86CBB86DFBAE4B">
+                  <id>treeMenu5101E0F3B3D400DECD86CBB86DFBAE4B</id>
+                  <text>1</text>
+                  <Items>
+                    <treeNode sid="treeNode53241CD386814302D21C6904F82C08A2">
+                      <id>node11</id>
+                      <text>1.1</text>
+                    </treeNode>
+                  </Items>
+                </treeMenu>
+                <treeNode sid="treeNodeDA03A02FA398DEBF94CDF11F719B42A5">
+                  <id>node2</id>
+                  <text>2</text>
+                </treeNode>
+                <treeMenu sid="treeMenu2A18EEC5C875CC1FE16ADAAAC6ACF696">
+                  <id>treeMenu2A18EEC5C875CC1FE16ADAAAC6ACF696</id>
+                  <text>3</text>
+                  <Items>
+                    <treeNode sid="treeNode4D435B72730702380F2D9DE4DDB954CC">
+                      <id>node31</id>
+                      <text>3.1</text>
+                    </treeNode>
+                    <treeMenu sid="treeMenu4A2CFF737A08738FB1000DA95EB557E7">
+                      <id>treeMenu4A2CFF737A08738FB1000DA95EB557E7</id>
+                      <text>3.2</text>
+                      <Items>
+                        <treeNode sid="treeNode861D80673059756A78A201246054DE11">
+                          <id>treeNode861D80673059756A78A201246054DE11</id>
+                          <text>3.2.1</text>
+                        </treeNode>
+                      </Items>
+                    </treeMenu>
+                  </Items>
+                </treeMenu>
+              </Items>
+            </faTree>
+            <faNumeric sid="faNumeric7E5AB">
+              <id>faNumeric7E5AB</id>
+              <required>false</required>
+              <showType>###,###.00</showType>
+              <value>123456789.12</value>
+              <valueStyle>background-image:none;</valueStyle>
+              <displayType>display</displayType>
+              <label extend="true">货币格式</label>
+              <labelColor extend="true" />
+            </faNumeric>
+            <faNumeric sid="faNumericF5921">
+              <id>faNumericF5921</id>
+              <required>false</required>
+              <value>123456789.12</value>
+              <valueStyle>background-image:none;</valueStyle>
+              <label extend="true">数字格式</label>
+              <labelColor extend="true" />
+            </faNumeric>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

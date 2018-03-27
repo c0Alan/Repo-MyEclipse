@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9DE89BCB41A8B563C03B0431DDFC7246</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <tableLayout sid="Ac6015fdd5f40cedf13f643c918cafe5c">
+          <id>Ac6015fdd5f40cedf13f643c918cafe5c</id>
+          <colNum>2</colNum>
+          <colWidths>30%,70%</colWidths>
+          <width>98%</width>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <formArea sid="A0eabd8ecb58c3c30c8058cb8fad319dd">
+              <id>A0eabd8ecb58c3c30c8058cb8fad319dd</id>
+              <colWidths>80%,20%</colWidths>
+              <frame>true</frame>
+              <border>true</border>
+              <formTableBorder>false</formTableBorder>
+              <cellpadding>5</cellpadding>
+              <borderStyle>solid</borderStyle>
+              <readOnlyBorder>true</readOnlyBorder>
+              <Items>
+                <header sid="Adcde9ce2c09286aa57cb1167c06c5416">
+                  <id>Adcde9ce2c09286aa57cb1167c06c5416</id>
+                  <text>表单区域</text>
+                </header>
+                <faString sid="A4a63c3074cefad3d72881635014867d0">
+                  <id>A4a63c3074cefad3d72881635014867d0</id>
+                  <required>false</required>
+                  <height>0</height>
+                  <label extend="true">名称</label>
+                </faString>
+                <buttonArea sid="A34ec5a2675a00de7ed9ffa998a5a0c6c">
+                  <id>A34ec5a2675a00de7ed9ffa998a5a0c6c</id>
+                  <hideLabel extend="true">true</hideLabel>
+                  <Items>
+                    <button sid="Ad56da3fe8b1f2d39904466435ff36b31">
+                      <id>Ad56da3fe8b1f2d39904466435ff36b31</id>
+                      <text>提交</text>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+            <listArea sid="A5be4c47568c21dcd02a0eae1d2492105">
+              <id>list1</id>
+              <ds>rs1</ds>
+              <isInitData>true</isInitData>
+              <height>100%</height>
+              <stripeRows>false</stripeRows>
+              <loadMask>false</loadMask>
+              <isStartNew>true</isStartNew>
+              <isExpExcel>true</isExpExcel>
+              <isExpPdf>true</isExpPdf>
+              <frame>true</frame>
+              <themeStyle>default</themeStyle>
+              <rowSpan extend="true">2</rowSpan>
+              <Items>
+                <header sid="A80ba156978e93da64ee55faa6526c468">
+                  <id>A80ba156978e93da64ee55faa6526c468</id>
+                  <text>列表区域</text>
+                </header>
+                <column sid="A88ab75f45169c0dbe992013ed992399b">
+                  <id>lstCNAME</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs1.C_NAME}</dataName>
+                  <title>图书名称</title>
+                </column>
+                <column sid="A32afdede4a132d952b4efdb92f041b4a">
+                  <id>lstCAUTH</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_AUTH</inheritfld>
+                  <dataName>{rs1.C_AUTH}</dataName>
+                  <title>作者</title>
+                </column>
+                <column sid="A589586862ca32fb94d6673a2973192d5">
+                  <id>lstCPUBLISHER</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_PUBLISHER</inheritfld>
+                  <dataName>{rs1.C_PUBLISHER}</dataName>
+                  <title>出版社</title>
+                </column>
+              </Items>
+            </listArea>
+            <blankPanel sid="A8fdc69521482c84bbd8e41efbdf92ab9">
+              <id>A8fdc69521482c84bbd8e41efbdf92ab9</id>
+              <width>100%</width>
+              <frame>true</frame>
+              <border>true</border>
+              <Items>
+                <header sid="Ae4005fee5c8a6036df31dc42b746aadb">
+                  <id>Ae4005fee5c8a6036df31dc42b746aadb</id>
+                  <text>文本区域</text>
+                </header>
+              </Items>
+            </blankPanel>
+            <listArea sid="A5e76ea67dee44a06ad967eaad5673d8b">
+              <id>A5e76ea67dee44a06ad967eaad5673d8b</id>
+              <ds>rs1</ds>
+              <height>200</height>
+              <stripeRows>false</stripeRows>
+              <loadMask>false</loadMask>
+              <isShowRowNumber>false</isShowRowNumber>
+              <isStartNew>true</isStartNew>
+              <isExpExcel>true</isExpExcel>
+              <isExpPdf>true</isExpPdf>
+              <themeStyle>default</themeStyle>
+              <colSpan extend="true">2</colSpan>
+              <Items>
+                <column sid="A8d5dff6517ed3c0c2db75035225ad6b1">
+                  <id>A8d5dff6517ed3c0c2db75035225ad6b1</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs1.C_NAME}</dataName>
+                  <title>图书名称</title>
+                </column>
+                <column sid="A068f7dc0a58c375c7479e1e24231d244">
+                  <id>A068f7dc0a58c375c7479e1e24231d244</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_AUTH</inheritfld>
+                  <dataName>{rs1.C_AUTH}</dataName>
+                  <title>作者</title>
+                </column>
+                <column sid="Aafd2fabc0bb35e71a81db130b1f2f946">
+                  <id>Aafd2fabc0bb35e71a81db130b1f2f946</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_PUBLISHER</inheritfld>
+                  <dataName>{rs1.C_PUBLISHER}</dataName>
+                  <title>出版社</title>
+                </column>
+                <column sid="A7f8ac9cd354de121f5bbe7c1930d8fc5">
+                  <id>A7f8ac9cd354de121f5bbe7c1930d8fc5</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>D_PUBLISHER</inheritfld>
+                  <dataName>{df([rs1.D_PUBLISHER],yyyy-MM-dd)}</dataName>
+                  <title>出版日期</title>
+                </column>
+                <column sid="Afc7529f322cf3916ab29c35f16f37d5c">
+                  <id>Afc7529f322cf3916ab29c35f16f37d5c</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>D_BUY</inheritfld>
+                  <dataName>{df([rs1.D_BUY],yyyy-MM-dd)}</dataName>
+                  <title>购买日期</title>
+                </column>
+                <column sid="A2c464d468ab2ac71e85e7bbd1e83ce58">
+                  <id>A2c464d468ab2ac71e85e7bbd1e83ce58</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_ISBN</inheritfld>
+                  <dataName>{rs1.C_ISBN}</dataName>
+                  <title>C_ISBN</title>
+                </column>
+                <column sid="A8fb8db81bf788675ed5ccdece67aa944">
+                  <id>A8fb8db81bf788675ed5ccdece67aa944</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_LIBRARYID</inheritfld>
+                  <dataName>{rs1.C_LIBRARYID}</dataName>
+                  <title>图书室id</title>
+                </column>
+              </Items>
+            </listArea>
+          </Items>
+        </tableLayout>
+        <tableLayout sid="Aa02c3fed65bb35145b873d73003ff465">
+          <id>Aa02c3fed65bb35145b873d73003ff465</id>
+          <colNum>2</colNum>
+          <colWidths>50%,50%</colWidths>
+          <width>98%</width>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <formArea sid="A06781e089d7137a8533ea976a42579f5">
+              <id>A06781e089d7137a8533ea976a42579f5</id>
+              <ds>rs1</ds>
+              <frame>true</frame>
+              <border>true</border>
+              <formTableBorder>false</formTableBorder>
+              <cellpadding>5</cellpadding>
+              <borderStyle>solid</borderStyle>
+              <readOnlyBorder>true</readOnlyBorder>
+              <Items>
+                <faString sid="A20cb79238ebcb2d91d1454b138d64e4f">
+                  <id>frmCNAME</id>
+                  <required>false</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs1.C_NAME}</dataName>
+                  <height>0</height>
+                  <label extend="true">图书名称</label>
+                </faString>
+                <faString sid="A9c98128cf5b04c2a4e3cdb9ff2ec2216">
+                  <id>frmCAUTH</id>
+                  <required>false</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_AUTH</inheritfld>
+                  <dataName>{rs1.C_AUTH}</dataName>
+                  <height>0</height>
+                  <label extend="true">作者</label>
+                </faString>
+                <faString sid="A0a02021e5261bb7d893f64b5c1ac3667">
+                  <id>frmCPUBLISHER</id>
+                  <required>false</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_PUBLISHER</inheritfld>
+                  <dataName>{.rs1C_PUBLISHER}</dataName>
+                  <height>0</height>
+                  <label extend="true">出版社</label>
+                </faString>
+                <faDate sid="A78dc0c80ac216619e87fec9ccf482455">
+                  <id>frmDPUBLISHER</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>D_PUBLISHER</inheritfld>
+                  <dataName>{rs1.D_PUBLISHER}</dataName>
+                  <height>0</height>
+                  <label extend="true">出版日期</label>
+                </faDate>
+              </Items>
+            </formArea>
+            <formArea sid="A13cf376cfd251c4aba9f82975196cb45">
+              <id>A13cf376cfd251c4aba9f82975196cb45</id>
+              <ds>rs1</ds>
+              <frame>true</frame>
+              <border>true</border>
+              <formTableBorder>false</formTableBorder>
+              <cellpadding>5</cellpadding>
+              <borderStyle>solid</borderStyle>
+              <readOnlyBorder>true</readOnlyBorder>
+              <Items>
+                <faString sid="A35cdb9b23a84277bb308c19cf9dc8f31">
+                  <id>A35cdb9b23a84277bb308c19cf9dc8f31</id>
+                  <required>false</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs1.C_NAME}</dataName>
+                  <height>0</height>
+                  <label extend="true">图书名称</label>
+                </faString>
+                <faString sid="A0298a3931d4612bc4fe97f5e0e0ad5d4">
+                  <id>A0298a3931d4612bc4fe97f5e0e0ad5d4</id>
+                  <required>false</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_AUTH</inheritfld>
+                  <dataName>{rs1.C_AUTH}</dataName>
+                  <height>0</height>
+                  <label extend="true">作者</label>
+                </faString>
+                <faString sid="A5ce845854e396dd6c786b901c92efe1a">
+                  <id>A5ce845854e396dd6c786b901c92efe1a</id>
+                  <required>false</required>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_PUBLISHER</inheritfld>
+                  <dataName>{.rs1C_PUBLISHER}</dataName>
+                  <height>0</height>
+                  <label extend="true">出版社</label>
+                </faString>
+                <faDate sid="Ac1ae3b97cf6d0fbe5c1f19b6e9e8ed30">
+                  <id>Ac1ae3b97cf6d0fbe5c1f19b6e9e8ed30</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>D_PUBLISHER</inheritfld>
+                  <dataName>{rs1.D_PUBLISHER}</dataName>
+                  <height>0</height>
+                  <label extend="true">出版日期</label>
+                </faDate>
+              </Items>
+            </formArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT &#xD;
+T_Eg_Book.C_AUTH , &#xD;
+T_Eg_Book.C_ISBN , &#xD;
+T_Eg_Book.C_PUBLISHER , &#xD;
+T_Eg_Book.C_NAME , &#xD;
+T_Eg_Book.D_PUBLISHER , &#xD;
+T_Eg_Book.D_BUY , &#xD;
+T_Eg_Book.C_LIBRARYID &#xD;
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2482ca10b8d0022e8f4971f98e1e5307</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tree._treeArea.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tree/_treeArea.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form0fef4">
+      <id>form0fef4</id>
+      <Items>
+        <leftRegion sid="838c7072ba7a4c2e32f1810f4ea9c247">
+          <id>leftRegionf13a0</id>
+          <width>200</width>
+          <Items>
+            <treeArea sid="c1741ef057b61aa91e287fee83345314">
+              <id>treeAreac2b29</id>
+              <selType>checkbox</selType>
+              <cascade>true</cascade>
+              <cascadeParent>singlechild</cascadeParent>
+              <Items>
+                <treeMenu sid="313c7d2a80e11add33b9584ea475f3c0">
+                  <id>treeMenub8774</id>
+                  <text>四季</text>
+                  <showCheck>true</showCheck>
+                  <Items>
+                    <treeNode sid="a1e424f85a3a2f4e730ff3a964ef81b1">
+                      <id>treeNode4189f</id>
+                      <text>春天</text>
+                    </treeNode>
+                    <treeNode sid="dc331d1568b7aa4fb16a17ce63e40de9">
+                      <id>treeNode511ef</id>
+                      <text>夏天</text>
+                    </treeNode>
+                    <treeNode sid="e6c9f2fff3fa9e9240be1fb4ffac3f0c">
+                      <id>treeNode5fcc5</id>
+                      <text>秋天</text>
+                    </treeNode>
+                    <treeNode sid="e2f9052192a584b0a512f4d49a0083b1">
+                      <id>treeNodeae224</id>
+                      <text>冬天</text>
+                    </treeNode>
+                  </Items>
+                </treeMenu>
+                <treeMenu sid="2d7cb009a49cb15eca542eee99f08188">
+                  <id>treeMenu60560</id>
+                  <text>星期</text>
+                  <showCheck>true</showCheck>
+                  <Items>
+                    <treeNode sid="739553b3d41be0a125fdfe948f2a0066">
+                      <id>treeNode14603</id>
+                      <text>星期一</text>
+                    </treeNode>
+                    <treeNode sid="6cd0c93ef62fb423975b0796db22605d">
+                      <id>treeNodef226c</id>
+                      <text>星期五</text>
+                    </treeNode>
+                    <treeMenu sid="da7e5095bc35171771d6d57c313d229f">
+                      <id>treeMenue6803</id>
+                      <text>周末</text>
+                      <showCheck>true</showCheck>
+                      <Items>
+                        <treeNode sid="bf7f9673039b9169c2ce9e00db56475d">
+                          <id>treeNodeb33b9</id>
+                          <text>星期六</text>
+                        </treeNode>
+                        <treeNode sid="357d580eaa7444a3183a101dc4e4f35a">
+                          <id>treeNodec6b2b</id>
+                          <text>星期日</text>
+                        </treeNode>
+                      </Items>
+                    </treeMenu>
+                  </Items>
+                </treeMenu>
+              </Items>
+            </treeArea>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="7365664e8b257fd5f2b77a173859266a">
+          <id>centerRegioneda86</id>
+        </centerRegion>
+        <rightRegion sid="015b192085d7067cc38e751981594dd9">
+          <id>rightRegion35c88</id>
+          <width>200</width>
+          <Items>
+            <treeArea sid="5cf273bbf3ef16c0df29f1be7dff5b79">
+              <id>treeArea4ef6b</id>
+              <Items>
+                <treeDynamic sid="fe88525428d1c24dfcc1e1c361bb6e63">
+                  <id>node</id>
+                  <onLoadTree><![CDATA[node_onLoadTree]]></onLoadTree>
+                </treeDynamic>
+              </Items>
+            </treeArea>
+          </Items>
+        </rightRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

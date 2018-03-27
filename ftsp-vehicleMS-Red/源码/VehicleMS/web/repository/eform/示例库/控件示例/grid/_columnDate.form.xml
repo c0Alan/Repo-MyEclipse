@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3e6168d126672ffb51c38df4a18b7df3</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid.ColumnDate.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/ColumnDate.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form1f390">
+      <id>form1f390</id>
+      <Items>
+        <listArea sid="56fdd3f759d3fd84a6fab6cacc36da4f">
+          <id>listAreae0aaf</id>
+          <ds>rs1</ds>
+          <Items>
+            <columnDate sid="44b5f764a49bd94fe1a257a93119e593">
+              <id>columnDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs1.D_PUBLISHER}</dataName>
+              <title>出版日期</title>
+              <customFormat>Y-M-d</customFormat>
+            </columnDate>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

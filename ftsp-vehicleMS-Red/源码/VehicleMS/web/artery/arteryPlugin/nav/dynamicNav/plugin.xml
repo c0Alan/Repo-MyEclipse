@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="dynamicNav" cn="动态导航" menu="导航控件" jsType="artery-tree"
+	icon="dynamicNav.gif" iconNew="dynamicNavNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe> <![CDATA[
+		<p>动态导航控件主要实现了动态加载树形结构导航栏的功能。</p>
+		<p>导航栏初始化时将会执行后台加载时脚本onload初始化数据，此函数默认通过前台传递的需要加载的节点信息参数返回此节点下的树节点列表。</p>
+		<p>此方法首次调用会传递根节点，通过node.getType()判断节点类型，并查询返回相应节点下的子节点列表。根节点类型为“root”。如果，前台此时设置了“展开级数”属性为1，则不再请求第一层导航节点下的子节点，否则将会继续递归调用到相应层级。</p>
+		<p>导航栏初始化后，每次展开相应节点时，会再次调用后台加载脚本，加载相应节点下的子节点列表。已加载的节点不会重复请求加载。</p>
+		<p>加载脚本示例如下:</p>
+				<pre>
+/**
+ * 加载节点脚本
+ */
+public List dynamicNav57F25_onLoad(Item item, TreeNode node) {
+	List nodeList = new ArrayList();
+	if(node.getId().equals("root")){
+		for(int i=1;i<4;i++){
+			TreeNode tn = new TreeNode();
+			tn.setId("node"+i);
+			tn.setName("节点"+tn.getId());
+			tn.setShowCheck(true);
+			tn.setLeaf(false);
+			nodeList.add(tn);
+		}
+	}else{
+		String id = node.getId();
+		for(int i=1;i<4;i++){
+			TreeNode tn = new TreeNode();
+			tn.setId(id+i);
+			tn.setName("节点"+id+i);
+			tn.setShowCheck(true);
+			tn.setLeaf(id.length()>5);
+			nodeList.add(tn);
+		}
+	}
+	return nodeList;
+}
+				</pre>
+			]]>
+		</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="upRegion" />
+		<Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" />
+		<Parent type="blankPanel" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.nav.DynamicNav
+	</Class>
+	<JsFile>
+		<File>dynamicNav.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apDynamictree</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="1在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+		</Property>
+		<Property cn="高度" type="1" name="height" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value>100%</Value>
+		</Property>
+		<Property cn="数据源" type="1" name="ds"
+			tips="设置关联到的数据源名称（数据源名称在表单的数据源页面设置的，如：rs1），系统会把此结果集">
+			<Value />
+			<Description><![CDATA[
+			<p>设置关联到的数据源名称（数据源名称在表单的数据源页面设置的，如：rs1），系统会把此结果集生成json对象传递给客户端的树控件</p>
+			<p>结果集的格式为List+Map或List+Pojo，其中Map或Pojo的属性要符合Ext的TreeNode对象的属性，如text,leaf,href,children等</p>
+			<p>动态导航支持放在循环区域中，可循环数据来生成树，并且“数据源”属性可用标签取值，如“{rs1.datas}”</p>
+			<pre>
+	/**
+	 * 数据源查询方法
+	 * 
+	 * @param qp
+	 *            查询参数，只在分页查询时可用，否则为null
+	 * @return Object 当为分页查询时，需要返回IPagableData对象，否则可为任意pojo
+	 */
+	public Object ds_rs1(IQueryInfo qp) {
+		List data = new ArrayList();
+		// 第1个节点
+		Map node = new HashMap();
+		data.add(node);
+		node.put("text", "node1");
+		node.put("leaf", Boolean.TRUE);
+
+		// 第二个节点
+		node = new HashMap();
+		data.add(node);
+		node.put("text", "node2");
+		node.put("leaf", Boolean.TRUE);
+		node
+				.put("href",
+						"/artery/form/dealParse.do?action=previewForm&formid=7711546a79293228b340f137b1868650&runTimeType=display");
+
+		// 第三个节点（目录）
+		node = new HashMap();
+		data.add(node);
+		node.put("text", "node3");
+		List data1 = new ArrayList();
+		node.put("children", data1);
+		// 目录下的子节点
+		node = new HashMap();
+		data1.add(node);
+		node.put("text", "node11");
+		node.put("leaf", Boolean.TRUE);
+
+		return data;
+	}
+			</pre>	]]>
+			</Description>
+			<Conditions>
+				<Condition>此属性不要与动态生成脚本同时使用</Condition>
+				<Condition>叶子节点要设置leaf属性为true，否则默认为目录,可参考Ext的Api进行设置</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="使用虚线" type="3" name="line" ct="[true,false]"
+			tips="当设置为true时,树的父子节点之间会用虚线连接,设置为false时则不会用虚线连接">
+			<Value>true</Value>
+		</Property>
+		<Property cn="修正滚动条" type="11" name="isFixScroll" export="true" tips="设置为true时，如果容器中的内容超出容器的宽度时，由容器的宽度不变，会出横向滚动条，否则容器会被撑开。注意，设置为true时会影响一定的性能" group="特性">
+			<Value>true</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" tips="设置风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="动画效果" type="11" name="animate" export="true"
+			tips="设置在展开时是否有动画效果">
+			<Value>false</Value>
+		</Property>
+		<Property cn="使用箭头" type="3" name="useArrows" ct="[true,false]"
+			tips="当设置为true时,树的父节点使用箭头表示收起与展开,并且此时'使用虚线'属性不起作用.">
+			<Value>false</Value>
+		</Property>
+		<Property cn="操作区域编号" type="1" name="operAreaId" export="true"
+			tips="指明了此树中节点中的链接将在这里标识的区域中打开。相当于target，一般为框架页面中某个中心布局下面的操作区域id。(使用此属性需要设置连接到的target为空)">
+			<Value />
+		</Property>
+		<Property cn="展开导航树" type="11" name="expandTree" export="true"
+			tips="是否在生成时展开导航树，导航树展开到哪一层由expandLevel属性决定。">
+			<Value>false</Value>
+		</Property>
+		<Property cn="展开级数" type="2" name="expandLevel"
+			tips="用于指定展开几级节点，为0，则都展开，为正数，则展开指定级数。">
+			<Value>0</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1" name="showRight" tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="加载前脚本" type="15" name="onBeforeLoad"
+			tips="在加载子节点前，将执行此脚本，可以在此处设置一些传回的参数">
+			<Value />
+		</Property>
+		<Property cn="加载时脚本" type="14" name="onLoad"
+			sh="自动引入：com.thunisoft.artery.eform.frame.parse.bean.TreeNode,需要返回List"
+			tips="当加载方式为ajax时，每展开一个节点时，都会发出一个ajax请求加载子节点列表，这时，将执行此脚本。">
+			<Value />
+			<Description>
+        <![CDATA[每展开一个节点时，都会执行此脚本，此脚本应该返回子节点列表，示例代码如下：
+<pre>
+// 写在逻辑类中的方法，node为展开的节点
+public List daynmic_tree_onLoad(Item item, TreeNode node) throws Exception {
+    List alist = new ArrayList();
+    // 加载根节点下的子节点列表
+    if(node.getType().equals("root")){
+        dealCorp("select * from T_Aty_Corp where C_PID is null", alist);
+    }
+    // 加载单位下的子节点列表
+    else if(node.getType().equals("corp")){
+        dealCorp("select * from T_Aty_Corp where C_PID=\'"+node.getId()+"\'", alist);
+        dealDept("select * from T_Aty_Dept where C_PID is null and C_CORP=\'"+node.getId()+"\'", alist);
+        dealUser("select * from T_Aty_User where C_DEPT is null and C_CORP=\'"+node.getId()+"\'", alist);
+    }
+    // 加载部门下的子节点列表
+    else if(node.getType().equals("dept")){
+        dealDept("select * from T_Aty_Dept where C_PID=\'"+node.getId()+"\'", alist);
+        dealUser("select * from T_Aty_User where C_DEPT=\'"+node.getId()+"\'", alist);
+    }
+    return alist;
+}</pre>]]>
+			</Description>
+		</Property>
+		<Property cn="查询时脚本" type="14" name="onSearch" sh="需要返回String"
+			tips="在页面上调用search方法时，将执行此脚本查找节点路径，并自动展开节点">
+			<Value />
+			<Description><![CDATA[
+       在页面上调用search方法时，将执行此脚本查找节点路径，并自动展开节点，示例如下：
+      <p>客户端脚本</p>
+      <pre>
+// 从文本框中获得值，调用动态导航控件的search方法
+var st = Artery.get("faString_search").getValue();
+Artery.get("daynmic_tree").search(st);
+      </pre>
+      <p>服务器端脚本</p>
+      <pre>
+public String daynmic_tree_onSearch(Item item) throws Exception {
+    // 获得查询字符串
+    String searchText = ParamUtil.getString("searchText");
+    // 拼节点路径，从左到右分别代表每个节点的id，最左侧的为根节点id，最右侧为查找节点id
+    return "-1,-2,-3";
+}
+      </pre>
+      ]]></Description>
+		</Property>
+
+
+		<Property cn="客户端" type="15" group="点击节点脚本" name="onNodeClickClient"
+			tips="点击树上节点时，将调用此方法，可以发送ajax请求">
+			<Value />
+			<Description><![CDATA[ 
+        <p>当前台导航栏节点被点击时，将首先执行此方法,此方法可发送后台请求，已触发相应后台事件方法</p>
+        <p>示例代码如下：</p>    
+        <pre> 
+       
+/**
+ * 点击节点脚本(dynamicNavc2551)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  node 导航树节点
+ */
+function dynamicNavc2551_onNodeClickClient (rc, node){
+	//要传递的参数
+	rc.put("param1","ok");
+	//必须调用此方法才会执行服务器端点击事件方法
+	rc.send(function(result){
+		//成功返回result
+		
+		//判断返回信息
+		if(result=="ok"){
+			//操作成功
+		}else{
+			//操作失败
+		}
+ 		
+	});
+}
+		</pre>
+      ]]></Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="点击节点脚本" name="onNodeClickServer"
+			tips="点击树上节点时，将调用此方法，可以发送ajax请求">
+			<Value />
+			<Description><![CDATA[ 
+        <p>当前台导航栏节点被点击时，如发送后台请求，将执行此方法</p>  
+         <p>示例代码如下：</p>    
+        <pre> 
+/**
+* 点击时脚本
+* 
+* @param item
+*            控件对象
+*/
+public Object dynamicNavc2551_onNodeClickServer(Item item) {
+	//获取参数
+	String param = ParamUtil.getString("param1");
+	//后台操作
+	
+	//返回消息
+	return "ok";
+}
+</pre>
+      ]]></Description>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="getClickNode" inherit="false" return="lastClickNode"
+			tips="获得最后单击的节点">
+			<Description><![CDATA[获得最后单击的节点
+      <pre>
+var node = Artery.get("dynamic_tree").getClickNode();
+alert(node.attributes.cid);
+      </pre>]]>
+			</Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>Ext.tree.TreeNode对象</Return>
+		</Method>
+		<Method name="clearClickNode" inherit="false" return="void"
+			tips="清空最后点击的节点">
+			<Description><![CDATA[清空最后点击的节点
+      <pre>
+var node = Artery.get("dynamic_tree").clearClickNode();
+      </pre>]]>
+			</Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="search" inherit="false" return="void"
+			tips="执行查询脚本，根据返回的路径信息，展开节点">
+			<Description><![CDATA[执行查询脚本，根据返回的路径信息，展开节点，示例如下：
+      <pre>
+// 从文本框中获得值，调用动态导航控件的search方法
+var st = Artery.get("faString_search").getValue();
+Artery.get("daynmic_tree").search(st);
+      </pre>]]>
+			</Description>
+			<Parameters>
+				<Param>str:string 查询字符串，后台通过ParamUtil.getString("searchText")可获得
+				</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="filter" inherit="false" return="void" tips="根据过滤参数重新加载动态导航">
+			<Description><![CDATA[根据过滤参数重新加载动态导航，示例如下：
+      <pre>
+// 从文本框中获得值，调用动态导航控件的filter方法
+var fs = Artery.get("faString_text").getValue();
+Artery.get("daynmic_tree").filter(fs);
+      </pre>]]>
+			</Description>
+			<Parameters>
+				<Param>str:string 过滤字符串，后台通过ParamUtil.getString("filter")可获得</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="doExpandTree" inherit="false" return="void"
+			tips="展开导航树，如果设置了展开层级，则展开指定的层次，否则全部展开">
+			<Description><![CDATA[展开导航树，如果设置了展开层级，则展开指定的层次，否则全部展开，示例如下：
+      <pre>
+// 重载根节点，加载完后，展开导航树
+var dt = Artery.get("daynmic_tree");
+dt.root.reload(function(){
+    dt.doExpandTree();
+});</pre>]]>
+			</Description>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+	<JsFunctions>
+		<JsFunction name="onNodeClickClient">
+			/**
+			* 点击节点脚本({itemid})
+			*
+			* @param rc 系统提供的AJAX调用对象
+			* @param node 导航树节点
+			*/
+			function {methodName} (rc, node){
+
+			}
+    </JsFunction>
+		<JsFunction name="onBeforeLoad">
+			/**
+			* 加载前脚本({itemid})
+			*
+			* @param loader 加载器
+			* @param node 导航树节点
+			*/
+			function {methodName} (loader, node){
+
+			}
+    </JsFunction>
+	</JsFunctions>
+	<JavaFunctions>
+		<JavaFunction name="onLoad"
+			imports="com.thunisoft.artery.plugin.tree.TreeNode;">
+<![CDATA[
+/**
+ * 加载节点脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            树节点对象
+ * @return 返回本node节点的子节点列表
+ */
+public List {methodName}(Item item, TreeNode node) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onNodeClickServer">
+<![CDATA[
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onSearch">
+<![CDATA[
+/**
+ * 查询时脚本
+ * 
+ * @param item
+ *            控件对象
+ * @return 返回节点路径(valuePath)
+ */
+public String {methodName}(Item item) {
+
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

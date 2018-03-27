@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>7c0a7c5c70724b6d3863125d3352eeb5</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight>artery.tools.monitor</visitRight>
+  <javaLocation>arteryServer.jck.maintain.Ywgl.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/maintain/Ywgl.js</jsLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formb78ca">
+      <id>formb78ca</id>
+      <Items>
+        <leftRegion sid="e5ec28166322184049c78b06a443e28e">
+          <id>leftRegion237bc</id>
+          <width>200</width>
+          <collapsible>true</collapsible>
+          <margins>4 0 4 4</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="a681143e47a13d93885124e00d8c4332">
+              <id>blankPanel0657b</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="9b0a2dc8951314e9ed88e5fabd653b80">
+                  <id>header41d44</id>
+                  <text>运维管理</text>
+                </header>
+                <listNav sid="b3389cdb8dc956b4b275edb66f36bce0">
+                  <id>listNav20410</id>
+                  <expandMode>multeExpand</expandMode>
+                  <Items>
+                    <listCatalog sid="41eda036fd9677e2861ff98ab01b4b94">
+                      <id>listCatalog0c5f4</id>
+                      <caption>访问量查询</caption>
+                      <Items>
+                        <listItem sid="19b5491652bec5b0acd3e33188e60298">
+                          <id>listItemd372e</id>
+                          <caption>登录日志</caption>
+                          <onClickClient><![CDATA[listItemd372e_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                        <listItem sid="4d262bd503917962437ff67bc0172c93">
+                          <id>listItemfa8be</id>
+                          <caption>子系统访问日志</caption>
+                          <onClickClient><![CDATA[listItemfa8be_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                        <listItem sid="6c50c7de80606c2ace8d4f7f55fecfc4">
+                          <id>listItemaea99</id>
+                          <caption>表单页面访问日志</caption>
+                          <onClickClient><![CDATA[listItemaea99_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                        <listItem sid="a27dbdeeebbb89e0d057decc8a17d5be">
+                          <id>listItem08416</id>
+                          <caption>后台维护操作日志</caption>
+                          <onClickClient><![CDATA[listItem08416_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                        <listItem sid="0715b49f62ef57eb73f4a643bc8ebcb7">
+                          <id>listItemba09e</id>
+                          <caption>业务操作日志</caption>
+                          <onClickClient><![CDATA[listItemba09e_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                      </Items>
+                    </listCatalog>
+                    <listCatalog sid="afd8750c4e53fa4969bb5bae9f7f34d4">
+                      <id>listCatalog30c4a</id>
+                      <caption>访问量统计</caption>
+                      <Items>
+                        <listItem sid="3498037a49ce67e5c90919b041da002e">
+                          <id>listItem83100</id>
+                          <caption>平台访问量</caption>
+                          <onClickClient><![CDATA[listItem83100_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                        <listItem sid="7835fdc314fae327e50f3ec331d6eccb">
+                          <id>listItemd38c3</id>
+                          <caption>子系统访问量</caption>
+                          <onClickClient><![CDATA[listItemd38c3_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                        <listItem sid="0a4d0fb77c0258ce80a24f7c82185491">
+                          <id>listItem70433</id>
+                          <caption>表单页面访问量</caption>
+                          <onClickClient><![CDATA[listItem70433_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                        <listItem sid="087690b303fa7fa6e101a48337b3d8d3">
+                          <id>listItemb0203</id>
+                          <caption>后台维护访问量</caption>
+                          <onClickClient><![CDATA[listItemb0203_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                        <listItem sid="e36a569a12e44602e1714b02828fcf95">
+                          <id>listItem28568</id>
+                          <caption>业务操作访问量</caption>
+                          <onClickClient><![CDATA[listItem28568_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                      </Items>
+                    </listCatalog>
+                    <listCatalog sid="1a440bf401bb0dd1bc9107da35bdced2">
+                      <id>listCatalogc334f</id>
+                      <caption>应用服务器监控</caption>
+                      <Items>
+                        <listItem sid="9f2fcfc02f0abe597bd74a69ea24b191">
+                          <id>listItem89550</id>
+                          <caption>JVM使用情况</caption>
+                          <onClickClient><![CDATA[listItem89550_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                        <listItem sid="dc7140ce56e95fa843ec5c272fca8083">
+                          <id>listItema25d1</id>
+                          <caption>JVM配置</caption>
+                          <onClickClient><![CDATA[listItema25d1_onClickClient]]></onClickClient>
+                          <operAreaId>operArea</operAreaId>
+                        </listItem>
+                      </Items>
+                    </listCatalog>
+                  </Items>
+                </listNav>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="c34a27e065ce3b743de7e841c46a1cc0">
+          <id>centerRegion2f9e4</id>
+          <margins>4 4 4 0</margins>
+          <border>false</border>
+          <Items>
+            <operArea sid="4545a6e8e11489e001754727720054d3">
+              <id>operArea</id>
+              <linkto>{"formId":"4b85a9ede4fd7e4ac566cdba05d4be16","formName":"登录日志查询","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+              <style>background-color:transparent;</style>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

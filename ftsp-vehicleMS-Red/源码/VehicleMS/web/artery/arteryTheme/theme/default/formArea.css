@@ -1,0 +1,390 @@
+
+/***************************************************************************************
+ * FormArea
+ ***************************************************************************************/
+.a-formArea{
+	background-color: transparent;
+}
+	/* invalid fields */
+.x-form-invalid,textarea.x-form-invalid {
+	background: #FFF8F5 !important;
+	border: 1px solid #D2A681 !important;
+}
+
+.x-item-readonly {
+	cursor: default !important;
+	background-image: none !important;
+	border: 0px solid red !important;
+	background-color: transparent !important;
+}
+
+.x-form-table-cust {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: transparent;
+}
+
+.x-form-table-lable-cust{
+	color:#3A6BB6;
+}
+
+.x-form-label-disabled,.x-form-label-disabled span{
+	color:gray !important;
+}
+
+.x-form-td-cust {
+	/*height: 100%;*/
+}
+
+.x-form-text-cust {
+	height: 22px;
+	padding: 3px 3px;
+	background: #fff url("images/form/text-bg.png") repeat-x 0 0;
+	border: 1px solid #A6B9C9;
+}
+
+.x-form-text-cust::-ms-clear { 
+	display: none; 
+}
+
+.x-form-el-table-cust {
+	font: normal 12px tahoma, arial, helvetica, sans-serif;
+	height: 100%;
+	table-layout: fixed;
+}
+
+.x-form-el-table-cust label,.x-form-el-table-cust .x-display {
+	padding:3px;
+	height: 100%;
+	width: 100%;
+	line-height: 15px;
+	word-break: break-all;
+}
+
+.x-form-el-td-cust {
+	vertical-align: top;
+	padding-right: 1px;
+}
+
+.x-form-field-filename-cust {
+	padding: 2px;
+	color: blue;
+}
+
+.x-form-field-fileclear-cust {
+	width: 16px;
+	height: 16px;
+	cursor: hand;
+	background-image: url(images/delete.gif);
+	background-repeat: no-repeat;
+}
+
+.x-form-field-wrap{
+	table-layout: fixed;
+    position:static;
+}
+
+/*textarea*/
+textarea{
+	min-height: 22px;
+}
+
+/*binary*/
+.x-form-file-wrap-cust { /*position: relative;
+	height: 24px;
+	border: 1px solid #fff;*/
+	
+}
+
+.x-form-file-cust {
+	position: absolute;
+	top: 3px;
+	right: 0px;
+	-moz-opacity: 0.0;;
+	opacity: 0;;
+	filter: alpha(opacity =   0);;
+	width: 80px;
+}
+
+.x-form-check-wrap {
+	text-align: left;
+}
+
+.x-form-focus,textarea.x-form-focus {
+	border: 1px solid #7eadd9;
+}
+
+.x-form-more-text{
+	text-align: left;
+	color: #3A6BB6;
+	font-weight: 700;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.x-field-comment{
+	width: 11px;
+	height: 11px;
+	background-image: url("images/form/comment.gif");
+	background-repeat:no-repeat;
+	cursor: pointer;
+	display: inline-block;
+}
+
+/***************************************************************************************
+ * faCode 
+ ***************************************************************************************/
+.x-combo-list-inner {
+    overflow-x:auto;
+}
+
+.x-code-rc{
+	
+}
+
+/***************************************************************************************
+ * faDate 
+ ***************************************************************************************/
+.x-date-table-wrap {
+	padding: 0px;
+}
+
+.x-date-hourtd {
+	padding-top: 4px;
+}
+
+.x-date-minutetd {
+	padding-top: 4px;
+}
+
+.x-date-secondtd {
+	padding-top: 4px;
+}
+/***************************************************************************************
+ * Select 
+ ***************************************************************************************/
+.x-combo-list .x-combo-list-cursor{
+	border: 1px dotted #000000 !important;
+}
+
+/* Hack - added for visual effect */
+.x-combo-list-item{
+	cursor: pointer;
+	margin: 1px;
+	overflow: visible;
+}
+
+.x-form-field-wrap .x-form-trigger-wrap{
+	width: 17px;
+}
+
+.x-form-field-wrap .x-form-trigger{
+	width:17px;
+    height: 21px;
+	border: 0;
+	cursor: pointer;
+	border-bottom: 1px solid #B5B8C8;
+	position: static;
+	vertical-align: top;
+	background-image:url(images/form/trigger.gif);
+	box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+}
+
+.x-form-field-wrap .x-form-clear-trigger{
+    background-image: url(images/form/clear-trigger.gif);
+}
+
+.x-form-field-wrap .x-trigger-popup{
+    background-image:url(images/form/popup.gif);
+}
+
+.x-form-field-wrap .x-form-trigger-over{
+    background-position:-17px 0;
+}
+
+.x-form-field-wrap .x-form-trigger-click{
+    background-position:-17px 0;
+}
+
+.x-trigger-wrap-focus .x-form-trigger{
+    background-position:-17px 0;
+}
+
+.x-trigger-wrap-focus .x-form-trigger-over{
+    background-position:-17px 0;
+}
+
+.x-trigger-wrap-focus .x-form-trigger-click{
+    background-position:-17px 0;
+}
+
+.x-trigger-wrap-focus .x-form-trigger{
+    border-bottom-color:#3C7FB1 !important;
+}
+
+.x-from-trigger-flag .x-form-text-cust{
+	border-right: 0px;
+}
+
+.x-from-trigger-flag .x-form-focus{
+	border-right-width: 0px;
+}
+
+.x-from-trigger-flag .x-field-readonly{
+	border: 1px solid #A6B9C9;
+}
+
+.x-form-field-wrap .x-form-checkbox-wrap{
+	padding-left: 5px;
+	width: 80px;
+	vertical-align: middle;
+}
+.x-form-field-wrap .x-form-checkbox-wrap .x-form-checkbox{
+	vertical-align: bottom;
+}
+/***************************************************************************************
+ * Spinner
+ ***************************************************************************************/
+.x-form-spinner-proxy{
+	/*background-color:#ff00cc;*/
+}
+.x-form-field-wrap .x-form-spinner-trigger {
+    background:transparent url(images/spinner/spinner.gif) no-repeat 0 0;
+    vertical-align: top;
+    width: 17px;
+}
+
+.x-form-field-wrap .x-form-spinner-overup{
+    background-position:-17px 0;
+}
+.x-form-field-wrap .x-form-spinner-clickup{
+    background-position:-34px 0;
+}
+.x-form-field-wrap .x-form-spinner-overdown{
+    background-position:-51px 0;
+}
+.x-form-field-wrap .x-form-spinner-clickdown{
+    background-position:-68px 0;
+}
+
+
+.x-trigger-wrap-focus .x-form-spinner-trigger{
+    background-position:-85px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-overup{
+    background-position:-102px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-clickup{
+    background-position:-119px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-overdown{
+    background-position:-136px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-clickdown{
+    background-position:-153px 0;
+}
+.x-trigger-wrap-focus .x-form-trigger{
+    border-bottom: 1px solid #7eadd9;
+}
+
+.x-form-field-wrap .x-form-spinner-splitter {
+	line-height:1px;
+	font-size:1px;
+    background:transparent url(images/spinner/spinner-split.gif) no-repeat 0 0;
+	position:absolute;
+	cursor: n-resize;
+	overflow:hidden;
+}
+.x-trigger-wrap-focus .x-form-spinner-splitter{
+    background-position:-14px 0;
+}
+
+
+/***************************************************************************************
+ * fieldset
+ ***************************************************************************************/
+.x-fieldset-cust{
+	padding:10px;
+	border: 1px solid #B5B8C8;
+}
+.x-fieldset-cust .x-fieldset-header{
+	margin-bottom: 10px;
+}
+.x-fieldset-cust .x-fieldset-header .x-fieldset-header-text{
+	color:#15428B;
+}
+
+/***************************************************************************************
+ * x-theme-fieldSet-classic
+ ***************************************************************************************/
+.x-theme-fieldSet-classic .x-fieldset-cust {
+	BORDER-RIGHT: #666661 1px solid;
+	PADDING-RIGHT: 10px;
+	BORDER-TOP: #fff 1px solid;
+	PADDING-LEFT: 10px;
+	BACKGROUND: #f2f2e6;
+	MARGIN-BOTTOM: 36px;
+	PADDING-BOTTOM: 10px;
+	BORDER-LEFT: #fff 1px solid;
+	WIDTH: 600px;
+	PADDING-TOP: 10px;
+	BORDER-BOTTOM: #666661 1px solid;
+}
+.x-theme-fieldSet-classic .x-fieldset-cust legend {
+	MARGIN: -26px 0px 0px -11px;
+	
+}
+.x-theme-fieldSet-classic .x-fieldset-cust legend .x-fieldset-header-text{
+	position: relative;
+	BORDER-RIGHT: #505014 1px solid;
+	PADDING-RIGHT: 10px;
+	BORDER-TOP: #e5e5c3 1px solid;
+	PADDING-LEFT: 10px;
+	BACKGROUND: #bfbf30;
+	PADDING-BOTTOM: 1px;
+	FONT: bold 17px Calibri, Arial, Helvetica, sans-serif;
+	BORDER-LEFT: #e5e5c3 1px solid;
+	COLOR: #fff;
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #505014 1px solid;
+}
+
+
+/***************************************************************************************
+ * x-theme-faFieldSet-classic
+ ***************************************************************************************/
+.x-theme-faFieldSet-classic .x-fieldset-cust {
+	BORDER-RIGHT: #666661 1px solid;
+	PADDING-RIGHT: 10px;
+	BORDER-TOP: #fff 1px solid;
+	PADDING-LEFT: 10px;
+	BACKGROUND: #f2f2e6;
+	MARGIN-BOTTOM: 36px;
+	PADDING-BOTTOM: 10px;
+	BORDER-LEFT: #fff 1px solid;
+	WIDTH: 600px;
+	PADDING-TOP: 10px;
+	BORDER-BOTTOM: #666661 1px solid;
+}
+.x-theme-faFieldSet-classic .x-fieldset-cust legend {
+	MARGIN: -26px 0px 0px -11px;
+	
+}
+.x-theme-faFieldSet-classic .x-fieldset-cust legend .x-fieldset-header-text{
+	position: relative;
+	BORDER-RIGHT: #505014 1px solid;
+	PADDING-RIGHT: 10px;
+	BORDER-TOP: #e5e5c3 1px solid;
+	PADDING-LEFT: 10px;
+	BACKGROUND: #bfbf30;
+	PADDING-BOTTOM: 1px;
+	FONT: bold 17px Calibri, Arial, Helvetica, sans-serif;
+	BORDER-LEFT: #e5e5c3 1px solid;
+	COLOR: #fff;
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #505014 1px solid;
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>bfa795408a608905abaa04cec4ddbfd0</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.toolbar._bottomBar.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/toolbar/_bottomBar.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formad1e9">
+      <id>formad1e9</id>
+      <Items>
+        <bottomBar sid="fa716c11be29b67fbf8bdada6b150b08">
+          <id>bottomBar502ae</id>
+          <Items>
+            <tbChangePassword sid="1aaeda152c1bd3c7c7811f4568354a10">
+              <id>tbChangePasswordbee57</id>
+            </tbChangePassword>
+            <tbSeparator sid="a0d4a5e30db8f75ee1bead5dbd6e187f">
+              <id>tbSeparatorefbb7</id>
+            </tbSeparator>
+            <tbLogout sid="be700b87be86a9189a1dde4d09dc345b">
+              <id>tbLogout79417</id>
+            </tbLogout>
+            <tbSeparator sid="5e63a58cb015cdad96fea231e33c5c67">
+              <id>tbSeparatorc03ca</id>
+            </tbSeparator>
+            <tbSysChange sid="84709dfc950c13524c2304e6adf6c343">
+              <id>tbSysChange5e079</id>
+            </tbSysChange>
+            <tbSysChange sid="6e3f08beb427918d9083d4b1c07ea516">
+              <id>tbSysChange5e4ad</id>
+              <showType>window</showType>
+            </tbSysChange>
+            <tbSeparator sid="7e140ebc71465fbb7ed7f707fb2d17d3">
+              <id>tbSeparatordd63f</id>
+            </tbSeparator>
+            <tbButton sid="f80a91cfc6a63dd817f8b00f35f3e2a4">
+              <id>tbButton52a51</id>
+              <text>按钮1</text>
+            </tbButton>
+            <tbSeparator sid="5c11be667277f49950eb303029c7d3bb">
+              <id>tbSeparator6f01a</id>
+            </tbSeparator>
+            <tbButton sid="be75fdd77c6d7ba22a64c1b38a071a1f">
+              <id>tbButtonf6290</id>
+              <text>按钮2</text>
+              <themeStyle>blank</themeStyle>
+            </tbButton>
+            <tbSeparator sid="59b2d7d64d0c5767c965a64e644ea7bb">
+              <id>tbSeparator6b071</id>
+            </tbSeparator>
+            <tbButton sid="def61671704e64095f79f2a6853b04f9">
+              <id>tbButton940e5</id>
+              <text>按钮3</text>
+              <themeStyle>cat</themeStyle>
+            </tbButton>
+            <tbSeparator sid="3923a721d80212fb7b74467fb63c1567">
+              <id>tbSeparator2fd6d</id>
+            </tbSeparator>
+            <tbMenu sid="d146f288bed0079964cff53ce312b06b">
+              <id>tbMenuf7373</id>
+              <text>菜单</text>
+              <Items>
+                <tbMenuItem sid="6e24d0ad996cddb565b97ac813302763">
+                  <id>tbMenuItem34352</id>
+                  <text>菜单项1</text>
+                </tbMenuItem>
+                <tbMenu sid="42ccf99693764a8d22e5db8c226953e7">
+                  <id>tbMenu521c8</id>
+                  <text>子菜单</text>
+                  <Items>
+                    <tbMenuItem sid="f87313840cde03504f74eedab61380de">
+                      <id>tbMenuItem0a314</id>
+                      <text>子菜单项1</text>
+                    </tbMenuItem>
+                    <tbMenuItem sid="f5e865bed5e936eb651320779a19047c">
+                      <id>tbMenuItemd083b</id>
+                      <text>子菜单项2</text>
+                    </tbMenuItem>
+                  </Items>
+                </tbMenu>
+                <tbSeparator sid="b3fd243814466599d2163326f8f9cac6">
+                  <id>tbSeparator38386</id>
+                </tbSeparator>
+                <tbMenuItem sid="96c003dd3600cb227651a0db74bb131d">
+                  <id>tbMenuItema8f54</id>
+                  <text>菜单项2</text>
+                </tbMenuItem>
+                <tbMenuItem sid="41cbb803edbd9bcbc74cb8179d15de20">
+                  <id>tbMenuItemfb6fb</id>
+                  <text>菜单项3</text>
+                </tbMenuItem>
+              </Items>
+            </tbMenu>
+          </Items>
+        </bottomBar>
+      </Items>
+    </form>
+  </Item>
+</form>
+

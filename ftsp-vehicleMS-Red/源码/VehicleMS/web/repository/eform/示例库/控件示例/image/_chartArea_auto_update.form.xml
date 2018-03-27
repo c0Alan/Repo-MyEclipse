@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9c8bd5e1d97ad0c8de6dbf867de03124</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.image.Zdgx.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/image/Zdgx.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <tableLayout sid="tableLayout5AFC6">
+          <id>tableLayout5AFC6</id>
+          <Items>
+            <chartArea sid="chartArea273EF">
+              <id>chart_autoUpdate</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+              <loadType>ajax</loadType>
+              <updateTime>6</updateTime>
+            </chartArea>
+            <buttonArea sid="buttonArea00DF1">
+              <id>buttonArea00DF1</id>
+              <align>center</align>
+              <Items>
+                <button sid="button5F243">
+                  <id>button_stop</id>
+                  <width>80</width>
+                  <text>停止自动更新</text>
+                  <onClickClient><![CDATA[button_stop_onClickClient]]></onClickClient>
+                </button>
+                <button sid="button8B407">
+                  <id>button_start</id>
+                  <width>80</width>
+                  <text>启动自动更新</text>
+                  <onClickClient><![CDATA[button_start_onClickClient]]></onClickClient>
+                </button>
+                <button sid="button4290F">
+                  <id>button_load</id>
+                  <width>80</width>
+                  <text>手动更新</text>
+                  <onClickClient><![CDATA[button_load_onClickClient]]></onClickClient>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

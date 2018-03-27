@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="arteryTest" cn="示例" menu="示例">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe></Describe>
+	</Info>
+	<!-- 设置本控件与其它控件的位置关系 -->
+	<Parents>
+		<Parent type="form"></Parent>
+	</Parents>
+	<Class>
+		com.thunisoft.artery.plugin.sample.TestComp
+  </Class>
+	<!-- 设置本控件所需的js文件 -->
+	<JsFile>
+		<File>test.js</File>
+	</JsFile>
+
+	<!-- 设置本控件的属性 -->
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>aptest</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true">
+			<Value />
+		</Property>
+		<Property cn="名称" type="1" name="name" export="true">
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow" >
+			<Value />
+		</Property>
+	</Properties>
+</Item>

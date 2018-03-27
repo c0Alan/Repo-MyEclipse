@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>7adf1a6dee9cf091a58da3869452320e</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid.Yz.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/Yz.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <height>500</height>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <listArea sid="listAreaD2EB0CC3201662E5FF9AA27C1BB6CAA3">
+          <id>bookList</id>
+          <ds>rs1</ds>
+          <type>grid</type>
+          <isInitData>false</isInitData>
+          <height>100%</height>
+          <loadMask>false</loadMask>
+          <isPageSplit>false</isPageSplit>
+          <pageCount>8</pageCount>
+          <isStartNew>true</isStartNew>
+          <themeStyle>default</themeStyle>
+          <isEditor>true</isEditor>
+          <Items>
+            <header sid="headerD2E6BB4C77DFF2140CA2D728EBC8E640">
+              <id>headerD2E6BB4C77DFF2140CA2D728EBC8E640</id>
+              <text>图书名称列进行了验证：1.唯一（数据字典）2：不能为空 3：js验证 4：服务器验证 详见图书名称列的“验证脚本”属性</text>
+            </header>
+            <columnIdentity sid="columnIdentity22B908FE8BC5B1B3709CFDC5F51EDF6D">
+              <id>lstCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>图书编号</title>
+              <isEditor>false</isEditor>
+            </columnIdentity>
+            <columnString sid="columnDCAC1A00105A94DC0E0B955DB64764B0">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <defValue>请输入图书名称</defValue>
+              <required>true</required>
+              <onValidClient><![CDATA[lstCNAME_onValidClient]]></onValidClient>
+              <onValidServer><![CDATA[lstCNAME_onValidServer]]></onValidServer>
+              <isOrderBy>true</isOrderBy>
+            </columnString>
+            <columnString sid="columnString6FB99D9E9A7C8F41DA63592E1BFA4B72">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <defValue>请输入作者名称</defValue>
+              <required>true</required>
+            </columnString>
+            <columnDate sid="columnDate1FA0258FE4C868F3952E94A1E35AAC73">
+              <id>lstDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{rs1.D_BUY}</dataName>
+              <title>购买日期</title>
+              <defValue>{calendar(y.m.d)}</defValue>
+              <isOrderBy>true</isOrderBy>
+            </columnDate>
+            <columnCode sid="columnCode55256632F4B68EA02DB1BE37EA3600F5">
+              <id>booktype</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{rs1.N_TYPE}</dataName>
+              <title>图书类型</title>
+              <defValue>1</defValue>
+              <codeType>-600</codeType>
+              <ajaxLoad>true</ajaxLoad>
+              <isOrderBy>true</isOrderBy>
+            </columnCode>
+            <columnString sid="columnStringA647CAC72609629408E1D47B1BB92931">
+              <id>lstTABSTRACT</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>T_ABSTRACT</inheritfld>
+              <dataName>{rs1.T_ABSTRACT}</dataName>
+              <title>摘要</title>
+              <isEditor>false</isEditor>
+              <editor>textarea</editor>
+              <htmlEncode>false</htmlEncode>
+            </columnString>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_ID , 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_PUBLISHER, 
+T_Eg_Book.N_TYPE,
+T_Eg_Book.C_LIBRARYID,
+T_Eg_Book.T_ABSTRACT,
+T_Eg_Book.D_BUY,
+T_Eg_Book.C_ISBN,
+T_Eg_Book.I_PHOTO
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

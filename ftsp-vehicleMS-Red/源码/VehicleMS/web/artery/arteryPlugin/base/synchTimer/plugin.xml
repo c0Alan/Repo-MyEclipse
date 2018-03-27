@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="synchTimer" cn="同步定时器" jsType="artery-base" icon="synchTimer.gif"
+	iconNew="synchTimerNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-06-29</CreateTime>
+		<Describe>
+		<![CDATA[
+		<p>此控件有三种用法</p>
+		<p>1,定时通讯，防止session过期,定时向后台发送心跳</p>
+		<p>2,定时执行一段脚本,脚本在"定时脚本"中写,包括客户端和服务器端</p>
+		<p>3,如果只想手动调用定时器要执行的脚本,定时器的"是否启动"选项取消选择,然后获得定时器,再调用doWork方法,去执行相应的定时脚本</p>
+		<pre>
+		Artery.get("synchTimerId").doWork();
+  		</pre>]]>
+		</Describe>
+		<Images />
+	</Info>
+	<Parents>
+		<Parent type="form" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.base.SynchTimer
+	</Class>
+	<JsFile>
+		<File>synchTimer.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>synchTimer</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="间隔时间" type="2" name="interval" tips="间隔时间，单位秒">
+			<Value>300</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+				<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="是否启动" type="11" name="isStart" export="true" 
+			tips="当为false时,仅生成定时器，不会自动启动定时器；当为true时，将自动启动定时器">
+			<Value>true</Value>
+		</Property>
+		<Property cn="启动时执行" type="11" name="runOnStart" export="true" 
+			tips="当为true时, 定时器启动时立即执行第一次定时器任务；当为false时，定时器启动后间隔用户设置的“间隔时间”之后才执行第一次定时器任务，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="关闭时执行" type="11" name="runOnStop" export="true" 
+			tips="当为true时, 定时器关闭时将执行一次定时器任务（即使间隔时间未到也会执行）；当为false时，定时器关闭时不执行定时器任务，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="定时脚本" name="onRunClient"
+			tips="定时器运行时触发的客户端事件">
+			<Value />
+			           <Description>
+    
+      	<![CDATA[
+      	<p>定时器运行时触发的客户端事件</p>
+<pre>
+/**
+ * onRunClient(synchTimer42435)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function synchTimer42435_onRunClient (rc){
+
+}
+
+
+</pre>
+      		
+      ]]>
+
+      </Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="定时脚本" name="onRunServer"
+			tips="定时器运行时触发的服务器端事件">
+			<Value />
+			           <Description>
+    
+      	<![CDATA[
+      	<p>定时器运行时触发的服务器端事件</p>
+<pre>
+/**
+	 * 运行时脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public Object synchTimer42435_onRunServer(Item item) {
+		System.out.println("a");
+		return null;
+	}
+
+
+</pre>
+      		
+      ]]>
+
+      </Description>
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="start" inherit="false" return="void" tips="启动定时器，按照“间隔时间”属性的设置，循环执行“定时脚本”。">
+			<Description><![CDATA[<p>启动定时器，按照“间隔时间”属性的设置，循环执行“定时脚本”。</p><pre>
+Artery.get("synchTimerId").start();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="stop" inherit="false" return="void" tips="关闭定时器">
+			<Description><![CDATA[<p>关闭定时器</p><pre>
+Artery.get("synchTimerId").stop();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="doWork" inherit="false" return="void" tips="执行定时脚本,调用此方法，仅执行一次“定时脚本”，不会启动定时器">
+			<Description><![CDATA[<p>执行定时脚本,调用此方法，仅执行一次“定时脚本”，不会启动定时器</p><pre>
+Artery.get("synchTimerId").doWork();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+	<JavaFunctions>
+		<JavaFunction name="onRunServer">
+<![CDATA[
+/**
+ * 运行时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

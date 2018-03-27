@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>CBC1ACE27A80AA8F071B7B60DF79D511</id>
+  <configTable />
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript>​</descript>
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form85E17">
+      <id>form85E17</id>
+      <Items>
+        <upRegion sid="upRegion1E7DD">
+          <id>upRegion1E7DD</id>
+          <Items>
+            <header sid="header16F98">
+              <id>header16F98</id>
+              <text>上布局</text>
+            </header>
+          </Items>
+        </upRegion>
+        <centerRegion sid="centerRegion29594">
+          <id>centerRegion29594</id>
+          <Items>
+            <operArea sid="operArea4D8F0">
+              <id>operArea4D8F0</id>
+              <linkto>{"url":"http://www.baidu.com","target":"","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

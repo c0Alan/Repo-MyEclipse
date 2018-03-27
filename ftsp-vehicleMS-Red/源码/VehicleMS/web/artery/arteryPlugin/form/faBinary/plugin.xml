@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="faBinary" cn="二进制类型" menu="输入控件" nameprop="label" order="1000" libType="" icon="faBinary.gif" iconNew="faBinaryNew.gif">
+  <Info>
+    <Author>Artery开发小组</Author>
+    <CreateTime>2008-09-05</CreateTime>
+    <Describe><![CDATA[二进制控件，包含图片和文件上传两个控件，当控件类型为文件上传时支持多文件上传]]></Describe>
+    <Images>
+      <File>info1.gif</File>
+      <File>info2.gif</File>
+    </Images>
+  </Info>
+  <Parents>
+    <Parent type="formArea" />
+    <Parent type="faFieldSet" />
+    <Parent type="faBlankLayout" />
+  </Parents>
+  <Class more="editor">com.thunisoft.artery.plugin.form.FaBinary</Class>
+  <JsFile>
+    <File>faBinary.js</File>
+  </JsFile>
+  <Properties>
+    <Property cn="标识" type="1" name="id" export="true" tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+      <Value />
+    </Property>
+    <Property cn="提交名称" type="1" name="submitName" tips="用于设置form提交时本控件的提交名称，也就是input标签的name属性">
+      <Value />
+    </Property>
+    <Property cn="控件提示" type="1" name="comment" tips="用于产生控件的提示信息">
+      <Description><![CDATA[用于产生控件的提示信息,如果控件指定了继承表，继承字段，此项默认会显示数据字典中相应字段的描述信息。
+			如果填写此属性，则会覆盖数据字典中的描述信息。]]></Description>
+      <Value />
+    </Property>
+    <Property cn="是否必填" type="11" name="required" tips="设置是否为必填项，默认为false">
+      <Value>false</Value>
+    </Property>
+    <Property cn="display必填标识" type="11" name="displayRequiredStyle" tips="当运行时类型为display时是否应用label的必填样式，默认为false">
+      <Value>false</Value>
+    </Property>
+    <Property cn="只读时是否验证" type="11" name="validOnReadOnly" export="true" tips="当设置为true时，调用表单的submit方法时 会对展现类型（displayType）属性为ReadOnly的控件进行验证，默认为false">
+      <Value>false</Value>
+    </Property>
+    <Property cn="继承key" type="1" name="inheritkey" tips="继承的数据字典的key，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+      <Value />
+    </Property>
+    <Property cn="继承表" type="1" name="inherittbl" tips="继承的数据字典的表名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+      <Value />
+    </Property>
+    <Property cn="继承字段" type="1" name="inheritfld" tips="继承的数据字典的字段名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+      <Value />
+    </Property>
+    <Property cn="数据源" type="1" name="dataName" tips="对应着从数据源中取数据">
+      <Value />
+    </Property>
+    <Property cn="控件类型" type="3" name="editor" tips="选择二进制控件的子类型，可选image（图片上传），file（文件上传），默认为image" ct="[image,file]">
+      <Value>image</Value>
+    </Property>
+    <Property cn="多文件对齐" type="3" name="filesAlign" tips="多选文件时，文件对其方式，默认为垂直" ct="[vertical,horizontal]">
+      <Value>vertical</Value>
+    </Property>
+    <Property cn="多文件上传" type="11" name="multiple" export="true" tips="设置是否可以上传多个文件，多个文件的文件名会递增，如第一个文件为aa，则下一个为aa_1，第二个为aa_2，本属性只有file类型起作用">
+      <Description><![CDATA[<p>设置是否可以上传多个文件，多个文件的文件名会递增，如第一个文件为aa，则下一个为aa_1，第二个为aa_2，本属性只有file类型起作用</p>]]></Description>
+      <Value>false</Value>
+      <Conditions>
+        <Condition>本属性只有当“控件类型（editor）”属性为“file”类型起作用</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="附件位置" type="3" name="fileAlign" tips="设置附件显示的位置，top：在上传选择控件的上方， bottom在上传选择控件的下方，默认为top" ct="[top,bottom]">
+      <Description><![CDATA[<p>设置附件显示的位置，top：在上传选择控件的上方， bottom在上传选择控件的下方，默认为top</p>
+					<table width=1><tr><td style='text-align:center;font-weight:700'>top</td><td style='text-align:center;font-weight:700'>bottom</td></tr><tr><td><img src='../../resources/images/common/form/faBinary-top.png'></td><td><img src='../../resources/images/common/form/faBinary-bottom.png'></td></tr></table>]]></Description>
+      <Value>top</Value>
+      <Conditions>
+        <Condition>本属性只有当“控件类型（editor）”属性为“file”类型起作用</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="宽度" type="1" name="width" tips="设置本组件的宽度，可输入数值或百分比" mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n">
+      <Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height" tips="设置本组件的高度，可输入数值或百分比" mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n">
+      <Value />
+    </Property>
+    <Property cn="图片宽度" type="1" name="imgWidth" tips="设置图片宽度，可输入数值或百分比">
+      <Description><![CDATA[<p>设置图片宽度，可输入数值或百分比</p>]]></Description>
+      <Value />
+      <Conditions>
+        <Condition>本属性只有当“控件类型（editor）”属性为“image”类型起作用</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="图片高度" type="1" name="imgHeight" tips="设置图片高度 ，输入数值或百分比">
+      <Description><![CDATA[<p>设置图片高度 ，输入数值或百分比</p>]]></Description>
+      <Value />
+      <Conditions>
+        <Condition>本属性只有当“控件类型（editor）”属性为“image”类型起作用</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="图片样式" type="1" name="imgStyle" tips="设置图片样式，可写css代码，如：border:1px solid gray;">
+      <Description><![CDATA[<p>设置图片样式，可写css代码，如：border:1px solid gray;</p>]]></Description>
+      <Value />
+      <Conditions>
+        <Condition>本属性只有当“控件类型（editor）”属性为“image”类型起作用</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="值" type="1" name="value" tips="设置本控件的值">
+      <Value />
+    </Property>
+    <Property cn="显示值提示" type="11" name="showValueTip" export="true" tips="鼠标移动到控件上，显示控件的值...">
+      <Value>false</Value>
+    </Property>
+    <Property cn="输入最大长度" type="1" name="maxLength" tips="限制本控件可输入的最大长度" mask="^\d{1,}$">
+      <Value />
+    </Property>
+    <Property cn="输入框样式" type="1" name="valueStyle" export="true" tips="设置输入框的样式">
+      <Value />
+    </Property>
+    <Property cn="输入框样式(只读)" type="1" name="valueStyleRead" export="true" tips="设置只读时输入框的样式">
+      <Value />
+    </Property>
+    <Property cn="验证提示方式" type="3" name="validType" tips="设置验证的提示方式，默认为cooltip提示的方式，选择title则以html的title样式展现" ct="[cooltip,title]">
+      <Value>cooltip</Value>
+    </Property>
+    <Property cn="展现类型" type="3" name="displayType" export="true" tips="设置表单的展现类型，此属性默认为inherit，即继承自表单表单区域的展现时类型" ct="[inherit,editable,readOnly,display,disabled]">
+      <Value>inherit</Value>
+    </Property>
+    <Property cn="display状态是否允许下载" type="11" name="displayAllowDownLoad" export="true" tips="表单展现为display状态下,是否允许下载">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否隐藏" type="11" name="hidden" export="true" tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="隐藏方式" type="3" name="hideMode" export="true" tips="设置本组件的隐藏方式，display：控件隐藏，不占位置，visibility：控件隐藏，占位置，默认为display" ct="[display,visibility]">
+      <Value>display</Value>
+    </Property>
+    <Property cn="客户端" type="15" name="onChangeClient" tips="当本组件的值改变时触发的事件，客户端脚本" group="值改变时脚本">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" name="onChangeServer" tips="当本组件的值改变时触发的事件，服务器端脚本" group="值改变时脚本">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" name="onValidClient" tips="表单控件的验证事件(客户端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证" group="验证脚本">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" name="onValidServer" tips="表单控件的验证事件(服务器端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证" group="验证脚本">
+      <Value />
+    </Property>
+    <Property cn="是否生成" type="11" name="show" tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+    <Property cn="生成时权限" type="1" name="showRight" tips="设置后，拥有设置的权限才会生成控件">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" name="onDownloadClient" tips="更新时，点击已有文件名称时触发的下载事件，客户端脚本" group="点击时下载事件">
+      <Description><![CDATA[<p>更新时，点击已有文件名称时触发的下载事件，客户端脚本</p>
+<pre>
+/**
+ * 点击时下载事件(faBinary0d488)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  fileName  文件名称
+ * @param  fileId    文件标示
+ */
+function faBinary0d488_onDownloadClient (rc, fileName, fileId){
+	//alert("fileName___" + fileName + "\nfileId___" + fileId);
+	Artery.download({"fileName":fileName, "fileId":fileId});
+}
+</pre>]]></Description>
+      <Value />
+      <Conditions>
+        <Condition>此事件，只有当“控件类型（editor）”属性为“file”类型有效</Condition>
+        <Condition>此事件，只有文件为更新时有效，新增加的文件不会触发此事件</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="服务器端" type="14" name="onDownloadServer" tips="更新时，点击已有文件名称时触发的下载事件，服务器端脚本" group="点击时下载事件">
+      <Description><![CDATA[<p>更新时，点击已有文件名称时触发的下载事件，服务器端脚本</p>
+<pre>
+	/**
+	 * 点击时下载事件
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public Object faBinary0d488_onDownloadServer(Item item) {
+		String fileName = ParamUtil.getString("fileName");
+		String fileId = ParamUtil.getString("fileId");
+		
+		Map<String, Object> object = new HashMap<String, Object>();
+		object.put("name", "fff.zip");
+		ByteArrayOutputStream out = new ByteArrayOutputStream();
+		try {
+			out.reset();
+			ZipOutputStream zipOut = new ZipOutputStream(out);
+			// 写入rightCSV
+			ZipEntry ze = new ZipEntry("aaaa.txt");
+			zipOut.putNextEntry(ze);
+			zipOut.write((fileName + fileId).getBytes());
+
+			zipOut.close();
+			object.put("data",  out.toByteArray());
+		} catch (IOException e) {
+		}
+		
+		return object;
+	}
+</pre>]]></Description>
+      <Value />
+      <Conditions>
+        <Condition>此事件，只有当“控件类型（editor）”属性为“file”类型有效</Condition>
+        <Condition>此事件，只有文件为更新时有效，新增加的文件不会触发此事件</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="生成时脚本" type="14" name="onShow" tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <Methods>
+    <Method name="getValue" return="string">
+      <Description><![CDATA[得到控件上传文件的路径，如果为多文件上传，则路径会以“，”分隔
+  		<pre>
+//得到文件录路径，返回结构为：C:\Users\hanf\Desktop\1.txt,C:\Users\hanf\Desktop\111.txt
+Artery.get("id").getValue();
+  		</pre>]]></Description>
+    </Method>
+    <Method name="getFileName" return="string">
+      <Description><![CDATA[得到控件上传文件的名称，如果为多文件上传，则名称会以“，”分隔
+  		<pre>
+//得到文件名称，返回结构为：test1.xml,abc.doc
+Artery.get("id").getFileName();
+  		</pre>]]></Description>
+      <Conditions>
+        <Condition>本方法只有当“控件类型（editor）”属性为“file”类型时有效</Condition>
+      </Conditions>
+    </Method>
+    <Method name="getFileCount" return="int">
+      <Description><![CDATA[得到控件上传文件的个数，如果没有任何文件则为0
+  		<pre>
+Artery.get("id").getFileCount();
+  		</pre>]]></Description>
+      <Conditions>
+        <Condition>本方法只有当“控件类型（editor）”属性为“file”类型时有效</Condition>
+      </Conditions>
+    </Method>
+    <Method name="clear" return="void">
+      <Description><![CDATA[清空文件列表
+  		<pre>
+Artery.get("id").clear();
+  		</pre>]]></Description>
+      <Conditions>
+        <Condition>本方法只有当“控件类型（editor）”属性为“file”类型时有效</Condition>
+      </Conditions>
+    </Method>
+    <Method name="reset" return="void">
+      <Description><![CDATA[恢复控件的值为初始值，初始值即为控件第一次展现时的值<pre>
+Artery.get("id").rest();
+  		</pre>]]></Description>
+      <Conditions>
+        <Condition>本方法只有当“控件类型（editor）”属性为“file”类型时有效</Condition>
+      </Conditions>
+    </Method>
+    <Method name="setData" return="void">
+      <Description><![CDATA[设置控件的显示数据，参数为json形式的数据<pre>
+Artery.get("id").setData([{"name":"name","value":"value"}]);
+  		</pre>]]></Description>
+      <Conditions>
+        <Condition>本方法传递参数需要显示的数据为json串中name的部分</Condition>
+      </Conditions>
+    </Method>
+    <Method name="setLabel" return="void">
+      <Description><![CDATA[设置控件的label的显示内容]]></Description>
+    </Method>
+    <Method name="setLabelColor" return="void">
+      <Description><![CDATA[设置控件的label的显示内容的颜色]]></Description>
+    </Method>
+    <Method name="setLabelStyle" return="void">
+      <Description><![CDATA[设置控件的label的样式]]></Description>
+    </Method>
+    <Method name="setLabelCntStyle" return="void">
+      <Description><![CDATA[设置控件的label容器的样式]]></Description>
+    </Method>
+    <Method name="setRequired" return="void">
+      <Description><![CDATA[设置控件是否必填]]></Description>
+    </Method>
+    <Method name="read" return="void">
+      <Description><![CDATA[设置控件为只读]]></Description>
+    </Method>
+    <Method name="edit" return="void">
+      <Description><![CDATA[设置控件为可编辑]]></Description>
+    </Method>
+    <Method name="disable" return="void">
+      <Description><![CDATA[设置控件无效]]></Description>
+    </Method>
+    <Method name="enable" return="void">
+      <Description><![CDATA[设置控件有效]]></Description>
+    </Method>
+    <Method name="hide" return="void">
+      <Description><![CDATA[隐藏本控件]]></Description>
+    </Method>
+    <Method name="show" return="void">
+      <Description><![CDATA[显示本控件]]></Description>
+    </Method>
+  </Methods>
+  <JsFunctions>
+    <JsFunction name="onChangeClient"><![CDATA[
+/**
+ * 值改变时脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  oldValue 控件改变前的旧值
+ * @param  newValue 控件改变后的新值
+ */
+function {methodName} (rc, oldValue, newValue){
+	
+}]]></JsFunction>
+    <JsFunction name="onValidClient"><![CDATA[
+/**
+ * 验证脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ */
+function {methodName} (rc, value){
+	
+}]]></JsFunction>
+    <JsFunction name="onDownloadClient"><![CDATA[
+/**
+ * 点击时下载事件({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  fileName  文件名称
+ * @param  fileId    文件标示
+ */
+function {methodName} (rc, fileName, fileId){
+	
+}]]></JsFunction>
+  </JsFunctions>
+  <JavaFunctions>
+    <JavaFunction name="onChangeServer"><![CDATA[
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}]]></JavaFunction>
+    <JavaFunction name="onValidServer"><![CDATA[
+/**
+ * 验证时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}]]></JavaFunction>
+    <JavaFunction name="onDownloadServer"><![CDATA[
+/**
+ * 点击时下载事件
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}]]></JavaFunction>
+  </JavaFunctions>
+</Item>
+

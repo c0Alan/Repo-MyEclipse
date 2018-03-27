@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9f8110ac4132b9c54904669443c4bd84</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.list.SelectBookR.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/list/SelectBookR.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <bodyStyle>padding:30px;</bodyStyle>
+      <Items>
+        <topbar sid="b56faac14aa6882f16cd8d683c580195">
+          <id>topbar8e53f</id>
+          <Items>
+            <tbButton sid="d4a148fd6bf6fece39718b72f41e14aa">
+              <id>tbButtonc9a0e</id>
+              <text>getValues</text>
+            </tbButton>
+          </Items>
+        </topbar>
+        <tableLayout sid="c2afcade08439c7bc2a634a57b01923f">
+          <id>tableLayout9fb8b</id>
+          <colNum>3</colNum>
+          <colWidths>50%,50,50%</colWidths>
+          <width>400</width>
+          <Items>
+            <listArea sid="f08189581051d07e238523452171771c">
+              <id>listAreaa3e00</id>
+              <ds>rs1</ds>
+              <autoRowHeight>true</autoRowHeight>
+              <showTitle>false</showTitle>
+              <stripeRows>false</stripeRows>
+              <isPageSplit>false</isPageSplit>
+              <isShowRowNumber>false</isShowRowNumber>
+              <border>true</border>
+              <themeStyle>plain</themeStyle>
+              <Items>
+                <columnString sid="2c1aa2d0bdd62f41cc575f71c1d874a0">
+                  <id>columnStringCNAME</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs1.C_NAME}</dataName>
+                  <title>图书名称</title>
+                </columnString>
+              </Items>
+            </listArea>
+            <buttonArea sid="c050b4d0e215f6ea0b8b5da37e9c0cd3">
+              <id>buttonArea6867b</id>
+              <direction>ver</direction>
+              <spacing>20</spacing>
+              <Items>
+                <button sid="dac17c76b6891a7996f96a84eb0ac5fc">
+                  <id>button537a2</id>
+                  <text>&gt;&gt;</text>
+                </button>
+                <button sid="2d1e5365190a503c6b92d3249528e965">
+                  <id>buttonfffd1</id>
+                  <text>&lt;&lt;</text>
+                </button>
+              </Items>
+            </buttonArea>
+            <listArea sid="73dd648dbf59bddf23beaeb0fd21dd1a">
+              <id>listArea0876b</id>
+              <autoRowHeight>true</autoRowHeight>
+              <showTitle>false</showTitle>
+              <stripeRows>false</stripeRows>
+              <isPageSplit>false</isPageSplit>
+              <border>true</border>
+              <themeStyle>plain</themeStyle>
+              <Items>
+                <columnString sid="a71c8b5a6ba7e8a3e218614fce161603">
+                  <id>columnString2f259</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs1.C_NAME}</dataName>
+                  <title>图书名称</title>
+                </columnString>
+                <column sid="68c9bd3f53f8c84619b7541b940a3c54">
+                  <id>columndab0a</id>
+                  <width>10</width>
+                  <Items>
+                    <colOperImg sid="8cfd3858934dcd325477dc81fe5e4903">
+                      <id>colOperImg55ed7</id>
+                      <icon>/artery/arteryImage/symbol/closepage.gif</icon>
+                    </colOperImg>
+                  </Items>
+                </column>
+              </Items>
+            </listArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

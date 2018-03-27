@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>b45a1943d2dee7a1c3b09e4c45e56933</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form._fakindeditor.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/_fakindeditor.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formabfd2">
+      <id>formabfd2</id>
+      <Items>
+        <formArea sid="9d4813e971ae87f3cd47da830065bcdd">
+          <id>formAreaa7190</id>
+          <height>100%</height>
+          <tableStyle>height:100%</tableStyle>
+          <Items>
+            <fakindeditor sid="83be533b86f474fa746b61a402b183fa">
+              <id>editorExample</id>
+              <items>source,|,fullscreen,undo,redo,print,cut,copy,paste,&#xD;
+plainpaste,wordpaste,|,justifyleft,justifycenter,justifyright,&#xD;
+justifyfull,insertorderedlist,insertunorderedlist,indent,outdent,subscript,&#xD;
+superscript,|,selectall,-,&#xD;
+title,fontname,fontsize,|,textcolor,bgcolor,bold,&#xD;
+italic,underline,strikethrough,removeformat,|,image,&#xD;
+flash,media,advtable,hr,emoticons,link,unlink,-,about</items>
+              <onKeyupClient><![CDATA[editorExample_onKeyupClient]]></onKeyupClient>
+              <colSpan>2</colSpan>
+              <label>内容</label>
+            </fakindeditor>
+            <faString sid="62c1d9de9859c244ac2eed824450fd57">
+              <id>faString2a034</id>
+              <label>字数1</label>
+            </faString>
+            <faString sid="8d3c1e3033feb59ed47a585c1f26009c">
+              <id>faStringfe1f6</id>
+              <label>字数2</label>
+            </faString>
+            <bottomBar sid="00ba2aafa0c0589e782f771b432a4aa2">
+              <id>bottomBardc8c9</id>
+              <Items>
+                <tbButton sid="f7cec4667b2adf2f04d634971d2f126c">
+                  <id>tbGetHtml</id>
+                  <text>getHtml</text>
+                  <onClickClient><![CDATA[tbGetHtml_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="2dd6751dd6c0fb87d406564f1d508f7c">
+                  <id>tbSetHtml</id>
+                  <text>setHtml</text>
+                  <onClickClient><![CDATA[tbSetHtml_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="8799da4d2dd5b2f9669d68d601d4a6d6">
+                  <id>tbGetText</id>
+                  <text>getText</text>
+                  <onClickClient><![CDATA[tbGetText_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="6424ec754bfc0ffff42c5b052a7d8a62">
+                  <id>tbSetText</id>
+                  <text>setText</text>
+                  <onClickClient><![CDATA[tbSetText_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="683726e5c29026199b045c0277011f38">
+                  <id>tbInsertHtml</id>
+                  <text>insertHtml</text>
+                  <onClickClient><![CDATA[tbInsertHtml_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="48dba982854efa78d43301cd68380f58">
+                  <id>tbAppendHtml</id>
+                  <text>appendHtml</text>
+                  <onClickClient><![CDATA[tbAppendHtml_onClickClient]]></onClickClient>
+                </tbButton>
+                <tbButton sid="d1b4dce5f0b72c0ee602454b94563b25">
+                  <id>tbGetBrowser</id>
+                  <text>getBrowser</text>
+                  <onClickClient><![CDATA[tbGetBrowser_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </bottomBar>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

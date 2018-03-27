@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3388fbaf50b99b43e6b39ae70c74cb62</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.dztbdsj.Tslb.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/xtx/dztbdsj/Tslb.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form3c1f0">
+      <id>form3c1f0</id>
+      <Items>
+        <topbar sid="73d5eef5bc977894cea2fa012fd7e1f1">
+          <id>topbar3e8b2</id>
+          <Items>
+            <tbButton sid="844a84feb1ad045155b7a366c9d65624">
+              <id>tbButtona832e</id>
+              <text>添加图书</text>
+              <linkto>{"formId":"a0dc8c9e709ab8c2cb34f5dcdaf37783","formName":"图书操作页面","formType":"1","runTimeType":"insert","target":"_self","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+            </tbButton>
+          </Items>
+        </topbar>
+        <listArea sid="acf61189f5cd7b104425d63455caa5c7">
+          <id>listArea70c95</id>
+          <ds>rs1</ds>
+          <Items>
+            <columnIdentity sid="7a79c2b5a137a390b88b3f08559391cd">
+              <id>columnIdentityCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>图书编号</title>
+            </columnIdentity>
+            <columnString sid="0902696b3cc8d940ff222c840e344cb6">
+              <id>columnStringCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+              <linkto>{"formId":"a0dc8c9e709ab8c2cb34f5dcdaf37783","formName":"图书操作页面","formType":"1","params":{"bookId":"{rs1.C_ID}"},"runTimeType":"display","target":"_self","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+            </columnString>
+            <columnString sid="338b2eee58d878b53a07980e16f99060">
+              <id>columnStringCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </columnString>
+            <columnString sid="0c913871a473b0d923896b035f3b72b5">
+              <id>columnStringCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </columnString>
+            <columnDate sid="20f6e06621989d5b35f03261e0866265">
+              <id>columnDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs1.D_PUBLISHER}</dataName>
+              <title>出版日期</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </columnDate>
+            <column sid="599b91478f03b8143a0bcb4ceb3b4461">
+              <id>columnStringCLIBRARYID</id>
+              <title>所属图书室</title>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{list(rs2,C_NAME,C_ID=[rs1.C_LIBRARYID],',')}</dataName>
+              <isFilter>true</isFilter>
+              <dynamicDataFilter><![CDATA[columnStringCLIBRARYID_dynamicDataFilter]]></dynamicDataFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="fa48f3cf9f5dccee8a82e0d3f175e6f2">
+              <id>column23b82</id>
+              <title>操作</title>
+              <Items>
+                <colOperText sid="6d01947876f2be17bbef6aee80cc75e1">
+                  <id>colOperTextfc825</id>
+                  <text>编辑</text>
+                  <linkto>{"formId":"a0dc8c9e709ab8c2cb34f5dcdaf37783","formName":"图书操作页面","formType":"1","params":{"bookId":"{rs1.C_ID}"},"runTimeType":"update","target":"_self","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                </colOperText>
+                <colOperText sid="cf688313dbc48a450ffbd5db0eadc27b">
+                  <id>colOperTextecd18</id>
+                  <text>查看</text>
+                  <linkto>{"formId":"a0dc8c9e709ab8c2cb34f5dcdaf37783","formName":"图书操作页面","formType":"1","params":{"bookId":"{rs1.C_ID}"},"runTimeType":"display","target":"_self","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                </colOperText>
+              </Items>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    T_Eg_Book.C_ID,&#xD;
+    T_Eg_Book.C_NAME,&#xD;
+    T_Eg_Book.C_AUTH,&#xD;
+    T_Eg_Book.C_PUBLISHER,&#xD;
+    T_Eg_Book.D_PUBLISHER,&#xD;
+    T_Eg_Book.C_LIBRARYID&#xD;
+FROM&#xD;
+    T_Eg_Book&#xD;
+WHERE T_Eg_Book.N_VALID=1</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Library where N_VALID=1</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ad18b8b634a9ed8d30a1583813ae0917</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._listArea_dynamicData.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_listArea_dynamicData.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="forme1d56">
+      <id>forme1d56</id>
+      <Items>
+        <listArea sid="ee1aa952108e47bb899c34006bae3765">
+          <id>listAreaf3e18</id>
+          <dynamicData><![CDATA[listAreaf3e18_dynamicData]]></dynamicData>
+          <Items>
+            <column sid="aec3408d638b135f2d68003675f4f04c">
+              <id>columna7f71</id>
+              <title>id</title>
+              <dataName>{rs1.C_ID}</dataName>
+            </column>
+            <column sid="bf337cade9be2140236811460d9064b2">
+              <id>columna74e8</id>
+              <title>name</title>
+              <dataName>{rs1.C_Name}</dataName>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

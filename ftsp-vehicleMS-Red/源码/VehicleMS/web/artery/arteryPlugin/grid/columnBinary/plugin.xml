@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="columnBinary" cn="二进制列" menu="类型列" jsType="artery-list"
+	nameprop="title" icon="columnBinary.gif" iconNew="columnBinaryNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe><![CDATA[
+		二进制列控件用于实现自动下载文件图片等二进制数据的功能。<br/>
+		*使用此控件会产生大量临时文件，导致页面加载过慢，因此不推荐使用此控件。
+		]]></Describe>
+		<Images>
+			<File>info1.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="listArea" />
+	</Parents>
+	<Children />
+	<Class more="editor">com.thunisoft.artery.plugin.grid.ColumnBinary</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id">
+			<Value />
+		</Property>
+		<Property cn="继承key" type="1" name="inheritkey">
+			<Value />
+		</Property>
+		<Property cn="继承表" type="1" name="inherittbl">
+			<Value />
+		</Property>
+		<Property cn="继承字段" type="1" name="inheritfld">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="dataName">
+			<Value />
+		</Property>
+		<Property cn="作为数据项" type="11" name="isOnlyData">
+			<Value>false</Value>
+		</Property>
+		<Property cn="参与导出" type="11" name="export">
+			<Value>true</Value>
+		</Property>
+		<Property cn="标题" type="1" name="title" tips="设置本列的标题">
+			<Value>Title</Value>
+		</Property>
+		<Property cn="省略过长列标题" type="11" name="isTitleEllipsis" ct="[true,false]"
+			tips="当标题过长时，是否省略列标题">
+			<Value>false</Value>
+			<Description><![CDATA[
+    			当标题过长时，是否省略列标题
+      ]]></Description>
+			<Conditions>
+				<Condition>此属性目前只支持在list类型下使用</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="宽度" type="1" name="width" tips="设置本组件的宽度，目前各列的宽度不支持填写百分比，如果要使用比例宽度，请配合自动宽度属性">
+			<Value>50</Value>
+		</Property>
+		<Property cn="自动宽度" type="11" name="autoWidth"
+			tips="如果为true，则本列的宽度将自动展开，在列表的适应宽度属性为true时有效">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否可编辑" type="11" name="isEditor">
+			<Value>true</Value>
+		</Property>
+		<Property cn="编辑器类型" type="3" name="editor" ct="[image,file,ntko]"
+			tips="选择编辑器类型，目前只有file类型进行了实现">
+			<Value>file</Value>
+		</Property>
+		<Property cn="新建默认值" type="1" name="defValue">
+			<Value />
+		</Property>
+	<Property cn="是否必填" type="11" name="required" tips="设置是否为必填项" inherit="false">
+		<Value>false</Value>
+		<Description><![CDATA[
+			设置是否为必填项,如果为true则不能编辑为空值</br><img src="../../resources/images/common/list/required.png">
+			]]></Description>
+	</Property>		
+		<Property cn="是否显示Hint提示" type="11" name="isShowHint">
+			<Value>false</Value>
+		</Property>
+		<Property cn="Hint提示内容" type="1" name="hintText">
+			<Value />
+		</Property>
+		<Property cn="提示是否过滤html标签" type="11" name="isHintFilterHtml"
+			tips="Hint提示是否过滤html标签，设置为true则过滤html标签；否则，html标签会作为文本输出">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否折行" type="3" name="autoRowHeight" ct="[inherit,true,false]">
+			<Value />
+		</Property>
+		<Property cn="内容位置" type="3" name="contentAlign" ct="[left,center,right]" tips="设置本列内容的位置，默认为left">
+			<Value>left</Value>
+		</Property>
+		<Property cn="内容是否编码" type="11" name="htmlEncode">
+			<Value>true</Value>
+		</Property>
+		<Property cn="是否合计" type="11" name="isSum">
+			<Value>false</Value>
+		</Property>
+		<Property cn="合计处理" type="1" name="sumFormula">
+			<Value />
+		</Property>
+		<Property cn="是否固定" type="11" name="isFix">
+			<Value>false</Value>
+		</Property>
+		<Property cn="链接到" type="6" name="linkto">
+			<Value />
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1" name="showRight">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="验证脚本" name="onValidClient">
+			<Value />
+		</Property><Property cn="服务器端" type="14" group="验证脚本" name="onValidServer">
+			<Value />
+		</Property><Property cn="客户端" type="15" group="点击时脚本" name="onClickClient">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer"
+			tips="鼠标点击本组件时触发的服务器端事件...">
+			<Value />
+			<Description><![CDATA[
+			鼠标点击本组件时触发的服务器端事件
+			<pre>
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object column6bae6_onClickServer(Item item) {
+	//数据操作
+	
+	return “操作成功”;
+}
+			</pre>
+			]]></Description>
+		</Property>
+		<Property cn="行脚本" type="14" name="rowScript"
+			sh="value,rowIndex,cellRow,cellRow.getString(col),dataRow,dataRow.isEmpty(),dataRow.getString(col),dataRow.getInt(col),dataRow.getDouble(col),dataRow.getData(col),dataRow.index()">
+			<Value />
+		</Property>
+		<Property cn="过滤动态代码" type="14" name="dynamicDataFilter">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow">
+			<Value />
+		</Property>
+	</Properties>
+	<JsFunctions>
+		<JsFunction name="onValidClient"><![CDATA[
+/**
+ * 验证脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ */
+function {methodName} (rc, value){
+	
+}]]>
+		</JsFunction>
+	</JsFunctions>
+	<JavaFunctions>
+		<JavaFunction name="onClickServer">
+<![CDATA[
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="rowScript"
+			imports="com.thunisoft.artery.parse.eform.form.cellset.Cell;com.thunisoft.artery.parse.eform.form.cellset.CellRow;">
+<![CDATA[
+/**
+ * 行脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param cell
+ *            展现单元格对象
+ * @param cellRow
+ *            展现数据行对象
+ * @param dataRow
+ *            结果数据行对象
+ * @param value
+ *            当前单元格的值
+ */
+public void {methodName}(Item item, Cell cell, CellRow cellRow,
+		Object dataRow, String value) {
+
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

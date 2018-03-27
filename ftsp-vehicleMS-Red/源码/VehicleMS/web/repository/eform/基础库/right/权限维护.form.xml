@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>4d042c93e9b328c4093958824b52dbe1</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.right.Qxwh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/right/Qxwh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formbd24a">
+      <id>formbd24a</id>
+      <Items>
+        <centerRegion sid="38e8c841dbfa54d4ada796937d45de2b">
+          <id>centerRegion91c11</id>
+          <margins>4 0 4 4</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="f5b4f8c182bf57ee8c7c1d07e232cd02">
+              <id>blankPanel78944</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <listArea sid="657c2685bc12e034644953712babe62b">
+                  <id>rightList</id>
+                  <ds>rs1</ds>
+                  <height>100%</height>
+                  <emptyDataTip />
+                  <isPageSplit>false</isPageSplit>
+                  <isShowRowNumber>false</isShowRowNumber>
+                  <themeStyle>unis</themeStyle>
+                  <Items>
+                    <columnString sid="e2012645757ac9ed70a043bed83f1e10">
+                      <id>keyColumn</id>
+                      <inheritfld>rightKey</inheritfld>
+                      <dataName>{rs1.rightKey}</dataName>
+                      <title>权限字</title>
+                      <width>100</width>
+                      <isFilter>true</isFilter>
+                      <highlightCol>true</highlightCol>
+                    </columnString>
+                    <columnString sid="99430f37dc3800911e137ecd6b833d6c">
+                      <id>nameColumn</id>
+                      <inheritfld>name</inheritfld>
+                      <dataName>{rs1.name}</dataName>
+                      <title>权限名称</title>
+                      <isFilter>true</isFilter>
+                    </columnString>
+                    <columnString sid="f4f407284b6c56f3ce909a85a7736c45">
+                      <id>descriptColumn</id>
+                      <inheritfld>descript</inheritfld>
+                      <dataName>{rs1.descript}</dataName>
+                      <title>描述</title>
+                      <isFilter>true</isFilter>
+                    </columnString>
+                    <column sid="26f2f524c3eebef4ec2e972db17d5bc3">
+                      <id>column31c14</id>
+                      <title>操作</title>
+                      <Items>
+                        <colOperText sid="127d8e4d3efa6f51281f2a740e9f484f">
+                          <id>delRightCOT</id>
+                          <text>删除</text>
+                          <onClickClient><![CDATA[delRightCOT_onClickClient]]></onClickClient>
+                          <onClickServer><![CDATA[delRightCOT_onClickServer]]></onClickServer>
+                        </colOperText>
+                        <colOperText sid="32a58dfe0cc323a6733fc75f25610fe5">
+                          <id>editRightCOT</id>
+                          <text>编辑</text>
+                          <linkto>{"formId":"96f47aa3ddb495844a3c1cb6132f791b","formName":"新建修改权限","formType":"1","params":{"rightKey":"{rs1.rightKey}"},"target":"_window","targetWidth":"600","targetHeight":"400","runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"编辑权限","wincfg":""}</linkto>
+                          <className>x-modify</className>
+                        </colOperText>
+                      </Items>
+                    </column>
+                  </Items>
+                </listArea>
+                <header sid="95d10bc4f634ca72241ed7cad62dd48b">
+                  <id>header44572</id>
+                  <text />
+                  <Items>
+                    <blankPanel sid="1d49351dd9f1e176221f4861ad9f17a0">
+                      <id>blankPanelc9523</id>
+                      <bodyStyle>overflow:hidden;</bodyStyle>
+                      <Items>
+                        <topbar sid="4c307cf52443dbca3a0edc6ebd94277f">
+                          <id>topbard824a</id>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbButton sid="9973a7b862adc0cee41cc08b65aa5fb9">
+                              <id>tbButtonb8948</id>
+                              <text>新建</text>
+                              <icon>/artery/arteryImage/symbol/add.gif</icon>
+                              <linkto>{"formId":"96f47aa3ddb495844a3c1cb6132f791b","formName":"新建权限","formType":"1","params":{},"target":"_window","targetWidth":"600","targetHeight":"400","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"2","title":"新建权限","wincfg":""}</linkto>
+                            </tbButton>
+                            <tbSeparator sid="22879c3c996565311317190a9c1e7a44">
+                              <id>tbSeparatord71f9</id>
+                            </tbSeparator>
+                            <tbButton sid="2df1d5bb7c55b46f8aa0b1419e33954c">
+                              <id>tbButton65741</id>
+                              <text>导入</text>
+                              <icon>/artery/arteryImage/server/import.gif</icon>
+                              <linkto>{"formId":"bda4ff88cfbfe3ebe25ce4540bc2bf63","formName":"导入权限","formType":"1","params":{},"target":"_window","targetWidth":"350","targetHeight":"150","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </tbButton>
+                            <tbButton sid="9cec4d25a44f852b385806e0737d9e80">
+                              <id>tbButtonae988</id>
+                              <text>导出</text>
+                              <icon>/artery/arteryImage/server/export.gif</icon>
+                              <linkto>{"formId":"b350e33d306a78430b03a67730cefd6d","formName":"导出权限","formType":"1","params":{},"target":"_window","targetWidth":"350","targetHeight":"180","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <footer sid="3307e5e213045bd7d07210071a3a9f34">
+                  <id>footer58d97</id>
+                  <Items>
+                    <blankPanel sid="663f76017b3d8c1eb29b8dc589253852">
+                      <id>blankPanelaa448</id>
+                      <Items>
+                        <pagingbar1 sid="00e18f36e543c8f8d54c7182a71cc8b0">
+                          <id>rightpagingbar</id>
+                          <ds>rs1</ds>
+                          <isShowPageInfo>true</isShowPageInfo>
+                          <pageInfoAlign>left</pageInfoAlign>
+                          <align>right</align>
+                          <onSearch><![CDATA[rightpagingbar_onSearch]]></onSearch>
+                        </pagingbar1>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </footer>
+              </Items>
+            </blankPanel>
+          </Items>
+        </centerRegion>
+        <rightRegion sid="75d2caf0204153aa112d56a4fa15964a">
+          <id>rightRegion06396</id>
+          <width>240</width>
+          <collapsible>true</collapsible>
+          <split>false</split>
+          <margins>4 4 4 4</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="3e8ad0a385b7f2ec9ab60244400a75ab">
+              <id>blankPaneld0498</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <bodyStyle>padding-top:8px;</bodyStyle>
+              <themeStyle>pear</themeStyle>
+              <Items>
+                <header sid="3f21678b2b29792e765a78f8e75891f0">
+                  <id>headerb8ec9</id>
+                  <text>角色及人员明细</text>
+                  <bodyStyle>font-size:14px;padding:8px;</bodyStyle>
+                </header>
+                <navTabArea sid="cd8cc5d5ae91eccf591e50f9eea02010">
+                  <id>navTabArea9bdde</id>
+                  <height>100%</height>
+                  <tabPosition>top</tabPosition>
+                  <themeStyle>unis</themeStyle>
+                  <Items>
+                    <navTabItem sid="eb0b9098b42dbbe67d4bcabee53e7f48">
+                      <id>navTabItem932a7</id>
+                      <title>人员明细</title>
+                      <active>true</active>
+                      <Items>
+                        <blankPanel sid="a82a37bc57c0df1460a7a41f8b29f757">
+                          <id>blankPanel1ec5f</id>
+                          <width>100%</width>
+                          <height>100%</height>
+                          <bodyContainer>true</bodyContainer>
+                          <Items>
+                            <treeArea sid="90439c368e8f95c1d1ab3b8b2e6d0d61">
+                              <id>userTreeArea</id>
+                              <height>100%</height>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <style>background-color:transparent;</style>
+                              <Items>
+                                <treeDynamic sid="6bf48595b3c2740b4be43fd362794f25">
+                                  <id>userTreeDynamic</id>
+                                  <onLoadTree><![CDATA[userTreeDynamic_onLoadTree]]></onLoadTree>
+                                </treeDynamic>
+                              </Items>
+                            </treeArea>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </navTabItem>
+                    <navTabItem sid="081a0acb7be082a89370498545b74aba">
+                      <id>navTabItem3b8aa</id>
+                      <title>角色明细</title>
+                      <Items>
+                        <blankPanel sid="54bbe8c7b6a9cc09142c295db07f62e9">
+                          <id>blankPaneleb6ba</id>
+                          <height>100%</height>
+                          <bodyContainer>true</bodyContainer>
+                          <Items>
+                            <treeArea sid="e016c21e8cd022bcee11074b688b4a1b">
+                              <id>roleTreeArea</id>
+                              <height>100%</height>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <Items>
+                                <treeDynamic sid="c56bd33222d75aa878d2d0d48b634a0a">
+                                  <id>roleTreeDynamice</id>
+                                  <onLoadTree><![CDATA[roleTreeDynamice_onLoadTree]]></onLoadTree>
+                                </treeDynamic>
+                              </Items>
+                            </treeArea>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </navTabItem>
+                  </Items>
+                </navTabArea>
+              </Items>
+            </blankPanel>
+          </Items>
+        </rightRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getAllRightList</ds>
+  </dslist>
+</form>
+

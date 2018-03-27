@@ -1,0 +1,147 @@
+.x-btn{
+	height: 23px;
+}
+
+.x-btn-left {
+	background-image: url(images/button/default/button.png);
+	background-position: 0 -588px;
+	width: 7px;
+}
+
+.x-btn-right {
+	background-image: url(images/button/default/button.png);
+	background-position: right -651px;
+	width: 7px;
+}
+
+.x-btn-center {
+	height: 23px;
+	background-image: url(images/button/default/button.png);
+	background-position: 0 -620px;
+}
+
+/** 当button宽度固定，字数过长时，显示... **/
+.x-btn-ellipsis{
+	overflow:hidden !important;
+	text-overflow:ellipsis !important;
+}
+
+/** 给按钮的左右td中的li添加样式，解决多浏览器时，按钮左右td的宽度过小的问题 **/
+.x-btn-left-text, .x-btn-right-text {
+	width: 7px;
+	display: inline-block;
+}
+
+.x-btn-over .x-btn-left,.x-btn-focus .x-btn-left{
+	background-image: url(images/button/default/button.png) !important;
+	background-position: 0 -694px !important;
+}
+
+.x-btn-over .x-btn-right,.x-btn-focus .x-btn-right{
+	background-image: url(images/button/default/button.png) !important;
+	background-position: right -758px !important;
+}
+
+.x-btn-over .x-btn-center,.x-btn-focus .x-btn-center{
+	background-image: url(images/button/default/button.png) !important;
+	background-position: 0 -726px !important;
+}
+
+.x-btn-click .x-btn-left,.x-btn-pressed .x-btn-left {
+	background-image: url(images/button/default/button.png) !important;
+	background-position: 0 -791px !important;
+}
+.x-btn-click .x-btn-right,.x-btn-pressed .x-btn-right {
+	background-image: url(images/button/default/button.png) !important;
+	background-position: right -854px !important;
+}
+.x-btn-click .x-btn-center,.x-btn-pressed .x-btn-center {
+	background-image: url(images/button/default/button.png) !important;
+	background-position: 0 -820px !important;
+}
+
+/*icon button*/
+.x-btn-icon .x-btn-center .x-btn-text{
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 16px !important;
+	cursor:pointer;
+	white-space: nowrap;
+    padding:0;
+}
+.x-btn-icon .x-btn-center{
+	padding:1px;
+}
+
+.x-btn-text-icon .x-btn-center .x-btn-text{
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	padding-left:18px;
+	padding-top:5px !important;
+    padding-right:0;
+    height: 100%;
+}
+
+.x-btn-center em.x-btn-arrow {
+    display:block;
+    background:transparent url(images/button/default/btn-arrow.gif) no-repeat right 0;
+	padding-right:10px;
+}
+
+/*simpleButton*/
+.x-btn-simple-link{
+	white-space: nowrap;
+}
+
+
+/***************************************************************************************
+ * x-theme-button-cat
+ ***************************************************************************************/
+.x-theme-button-cat .x-btn {
+	height: 26px !important;
+}
+.x-theme-button-cat .x-btn-left {
+	background-image: url(images/button/cat/button-left.png) !important;
+	background-position: 0 0 !important;
+}
+.x-theme-button-cat .x-btn-right {
+	background-image: url(images/button/cat/button-right.png) !important;
+	background-position: right 0px !important;
+}
+.x-theme-button-cat .x-btn-center {
+	background-image: url(images/button/cat/button.png) !important;
+	background-position: 0 0 !important;
+}
+.x-theme-button-cat .x-btn-center .x-btn-text {
+	color: #fff;
+	font-weight: 500;
+}
+
+.x-theme-button-cat .x-btn-over .x-btn-left,.x-theme-button-cat .x-btn-focus .x-btn-left{
+	background-image: url(images/button/cat/button-left.png) !important;
+	background-position: 0 -26px !important;
+}
+
+.x-theme-button-cat .x-btn-over .x-btn-right,.x-theme-button-cat .x-btn-focus .x-btn-right{
+	background-image: url(images/button/cat/button-right.png) !important;
+	background-position: right -26px !important;
+}
+
+.x-theme-button-cat .x-btn-over .x-btn-center,.x-theme-button-cat .x-btn-focus .x-btn-center{
+	background-image: url(images/button/cat/button.png) !important;
+	background-position: 0 -26px !important;
+}
+
+.x-theme-button-cat .x-btn-click .x-btn-left,.x-theme-button-cat .x-btn-pressed .x-btn-left {
+	background-image: url(images/button/cat/button-left.png) !important;
+	background-position: 0 -26px !important;
+}
+.x-theme-button-cat .x-btn-click .x-btn-right,.x-theme-button-cat .x-btn-pressed .x-btn-right {
+	background-image: url(images/button/cat/button-right.png) !important;
+	background-position: right -26px !important;
+}
+.x-theme-button-cat .x-btn-click .x-btn-center,.x-theme-button-cat .x-btn-pressed .x-btn-center {
+	background-image: url(images/button/cat/button.png) !important;
+	background-position: 0 -26px !important;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Methods>
+  	<Method name="put" return="void" tips="增加参数">
+  	  <Description><![CDATA[增加参数
+  		<pre>
+rc.put(key,value);
+  		</pre>]]></Description>
+  		<Parameters>
+  			<Param>key:String 参数的键名称</Param>
+  			<Param>value:String 参数的值</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+  	<Method name="putJson" return="void" tips="增加参数">
+  	  <Description><![CDATA[增加参数，示例：<br>rc.putJson({name:'zhang',id:'123'});]]></Description>
+  		<Parameters>
+  			<Param>params:Json Json形式的参数</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  		<ParamTemplte></ParamTemplte>
+  	</Method>
+  	<Method name="send" return="void" tips="发送Ajax请求方法，执行回调函数">
+  	  <Description><![CDATA[发送Ajax请求方法，执行回调函数，示例：<br>rc.send(function(result){<br>  //todo<br>});]]></Description>
+  		<Parameters>
+  			<Param value="function(result){}">callBack:Function 回调函数</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+</Methods>

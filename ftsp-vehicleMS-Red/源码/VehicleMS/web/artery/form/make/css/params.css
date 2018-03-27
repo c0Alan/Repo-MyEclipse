@@ -1,0 +1,9 @@
+.add{
+  background-image: url(../images/add.gif) !important;
+}
+.del{
+  background-image: url(../images/del.gif) !important;
+}
+.save{
+  background-image: url(../images/save.gif) !important;
+}

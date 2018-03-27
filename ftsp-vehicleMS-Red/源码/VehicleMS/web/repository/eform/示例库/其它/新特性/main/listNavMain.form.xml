@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>7be8ad0e6b3f4e64b09576401c1c5769</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.main.ListNavR.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/main/ListNavR.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <background-color>#D3DDF9</background-color>
+      <Items>
+        <leftRegion sid="9ccbb25b328480d2c4294fc632715764">
+          <id>leftRegione583f</id>
+          <width>170</width>
+          <collapsible>true</collapsible>
+          <border>false</border>
+          <bodyStyle>padding:6px;padding-right:0px;</bodyStyle>
+          <arrowStyle>unis</arrowStyle>
+          <Items>
+            <listNav sid="977909e78df743a9f29754598ba99cc7">
+              <id>listNav53add</id>
+              <height>100%</height>
+              <expandMode>fillExpand</expandMode>
+              <expandNode>listItem2fb61</expandNode>
+              <hideCollapseTool>true</hideCollapseTool>
+              <frame>true</frame>
+              <border>true</border>
+              <cellpadding>0</cellpadding>
+              <themeStyle>np</themeStyle>
+              <Items>
+                <listItem sid="db2c86b5948c2f1e9049d8766bac0256">
+                  <id>listItem2fb61</id>
+                  <caption>主页</caption>
+                  <icon>/artery/arteryImage/sample/home.gif</icon>
+                </listItem>
+                <listCatalog sid="2d3853a44711b6b14367a7d002c0b906">
+                  <id>listCatalogceaf7</id>
+                  <caption>案件中心</caption>
+                  <icon>/artery/arteryImage/sample/text.gif</icon>
+                  <cellpadding>0</cellpadding>
+                  <Items>
+                    <blankPanel sid="7290482993e9eca554b9ca39448be5b1">
+                      <id>blankPanelc2078</id>
+                      <height>100%</height>
+                      <themeStyle>orangeBottom</themeStyle>
+                      <Items>
+                        <blankPanel sid="60e0dc9c88e5d5f2597166788167bb54">
+                          <id>blankPanel7bf5a</id>
+                          <height>100%</height>
+                          <themeStyle>orangeTop</themeStyle>
+                          <Items>
+                            <dynamicNav sid="04c4081f8428a6487bb0b2504077752e">
+                              <id>dynamicNav7aa5d</id>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <bodyStyle>padding:3px;padding-left:10px;padding-right:10px;</bodyStyle>
+                              <themeStyle>orange</themeStyle>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </listCatalog>
+                <listCatalog sid="31fbcf34ae413691276a83e30ec47745">
+                  <id>listCatalogca4bb</id>
+                  <caption>文书中心</caption>
+                  <icon>/artery/arteryImage/sample/edit.gif</icon>
+                  <cellpadding>0</cellpadding>
+                  <Items>
+                    <blankPanel sid="d722fd8d3d1fd7771db85baa436b8b30">
+                      <id>blankPanel36bf2</id>
+                      <height>100%</height>
+                      <themeStyle>orangeBottom</themeStyle>
+                      <Items>
+                        <blankPanel sid="fe7af9c5de7c8ac42594839448ff2492">
+                          <id>blankPanel925b3</id>
+                          <height>100%</height>
+                          <themeStyle>orangeTop</themeStyle>
+                          <Items>
+                            <dynamicNav sid="f752854e87f47015adc36c21fdf014c3">
+                              <id>dynamicNavb6617</id>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <bodyStyle>padding:3px;</bodyStyle>
+                              <themeStyle>orange</themeStyle>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </listCatalog>
+                <listCatalog sid="3262bd1c8f6160fc1bdc5a8788de317d">
+                  <id>listCatalog23567</id>
+                  <caption>交流中心</caption>
+                  <icon>/artery/arteryImage/sample/mail.gif</icon>
+                  <cellpadding>0</cellpadding>
+                  <Items>
+                    <blankPanel sid="052d5dc1b94d4854c32dab42faa1db84">
+                      <id>blankPanelf89b3</id>
+                      <height>100%</height>
+                      <themeStyle>orangeBottom</themeStyle>
+                      <Items>
+                        <blankPanel sid="01e3b5bd4b342d0cb97103d7f98727b7">
+                          <id>blankPanel2d44a</id>
+                          <height>100%</height>
+                          <themeStyle>orangeTop</themeStyle>
+                          <Items>
+                            <dynamicNav sid="df582a5f53ebcf79c6999a3353f718ba">
+                              <id>dynamicNava4f4c</id>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <bodyStyle>padding:3px;</bodyStyle>
+                              <themeStyle>orange</themeStyle>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </listCatalog>
+                <listCatalog sid="dc5a2636e8f0e93f2dc59776973aa462">
+                  <id>listCatalog67fcb</id>
+                  <caption>报表中心</caption>
+                  <icon>/artery/arteryImage/sample/chart.gif</icon>
+                  <cellpadding>0</cellpadding>
+                  <Items>
+                    <blankPanel sid="9b47e4e44c1c3e246ee5b68429e13907">
+                      <id>blankPanel02585</id>
+                      <height>100%</height>
+                      <themeStyle>orangeBottom</themeStyle>
+                      <Items>
+                        <blankPanel sid="223f408d143ae7f742398686e654293e">
+                          <id>blankPanelc4e1b</id>
+                          <height>100%</height>
+                          <themeStyle>orangeTop</themeStyle>
+                          <Items>
+                            <dynamicNav sid="f9ffcd71432b45d2d59e826b2ada7017">
+                              <id>dynamicNav11541</id>
+                              <line>false</line>
+                              <useArrows>true</useArrows>
+                              <bodyStyle>padding:3px;</bodyStyle>
+                              <themeStyle>orange</themeStyle>
+                            </dynamicNav>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </listCatalog>
+                <listSep sid="724467c7c305fba3cca48a4499265b7f">
+                  <id>listSep5a9de</id>
+                </listSep>
+                <listCatalog sid="a8f8dd15fe1d1d34525fd2e82aa47fa9">
+                  <id>listCatalog3ebd6</id>
+                  <onlyGroup>true</onlyGroup>
+                  <cellpadding>0</cellpadding>
+                  <Items>
+                    <listItem sid="88cfbdedb4ee57847596597683b7241b">
+                      <id>listItemb2ed4</id>
+                      <caption>综合查询 &gt;&gt;</caption>
+                      <icon>/artery/arteryImage/sample/search.gif</icon>
+                      <tipSupport>true</tipSupport>
+                    </listItem>
+                    <listItem sid="bafbe773f2e93fa612be5bc93747f5f3">
+                      <id>listItemf8893</id>
+                      <caption>工 具 箱 &gt;&gt;</caption>
+                      <icon>/artery/arteryImage/sample/tool.gif</icon>
+                      <tipSupport>true</tipSupport>
+                    </listItem>
+                    <listItem sid="4c0c2fcece787692082f4fa4ccb6840c">
+                      <id>listItem4590f</id>
+                      <caption>工作提醒 &gt;&gt;</caption>
+                      <icon>/artery/arteryImage/sample/clock.gif</icon>
+                      <tipSupport>true</tipSupport>
+                    </listItem>
+                  </Items>
+                </listCatalog>
+                <listSep sid="3c6db250d7c16ef9e38b701535947c14">
+                  <id>listSep9dc2a</id>
+                </listSep>
+                <listItem sid="b01f02ae45ab75629dc9ca1641fc9c5b">
+                  <id>listItemccf99</id>
+                  <caption>使用帮助</caption>
+                  <icon>/artery/arteryImage/sample/help.gif</icon>
+                  <linkto>{"formId":"013a21eaecc6cfd0cf064a46ac941837","formName":"menu","formType":"1","params":{},"target":"_window","targetWidth":"400","targetHeight":"300","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                </listItem>
+              </Items>
+            </listNav>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="459994e6c6acf6c4f983cda4a8655aeb">
+          <id>centerRegion0b492</id>
+          <border>false</border>
+          <bodyStyle>padding:6px;padding-left:0px;</bodyStyle>
+          <Items>
+            <tableLayout sid="f422f0617590f78af9277d25c72368b3">
+              <id>tableLayouta50e0</id>
+              <colNum>1</colNum>
+              <height>100%</height>
+              <Items>
+                <blankPanel sid="4790e90158e7344e33178b3029b48087">
+                  <id>blankPanel74806</id>
+                  <buttonFrame>true</buttonFrame>
+                  <synTabStyle extend="true">padding-bottom:5px;</synTabStyle>
+                  <Items>
+                    <tableLayout sid="f1ab1eaef6b28793e24ceb4860099c89">
+                      <id>tableLayout84972</id>
+                      <colNum>3</colNum>
+                      <height>100%</height>
+                      <style>padding-left:10px;padding-right:10px;</style>
+                      <Items>
+                        <htmlArea sid="39f868518779e80b50f50f50d81e2788">
+                          <id>htmlArea597ed</id>
+                          <value>本月办理案件&lt;b&gt;14&lt;/b&gt;件</value>
+                          <style>color:#3E5CA5;</style>
+                        </htmlArea>
+                        <htmlArea sid="de36522ecf53c89ba3f7b2e0314b6c61">
+                          <id>htmlArea59063</id>
+                          <value>排名：&lt;b&gt;1/28&lt;/b&gt;</value>
+                          <style>color:#3E5CA5;</style>
+                        </htmlArea>
+                        <htmlArea sid="e8e4baccc960150a0087b0037f66b7a7">
+                          <id>htmlAreab026c</id>
+                          <value>平均每个案件办理&lt;b&gt;6&lt;/b&gt;天</value>
+                          <style>color:#3E5CA5;text-align:right;</style>
+                        </htmlArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="d02e9e3c1888129d2b01e47eb3d6a0ea">
+                  <id>blankPanel7190d</id>
+                  <height>100%</height>
+                  <frame>true</frame>
+                  <themeStyle>unis</themeStyle>
+                  <synTabHeight extend="true">true</synTabHeight>
+                  <Items>
+                    <header sid="23c8f00140d2701ec910c9cea6588037">
+                      <id>header9d205</id>
+                      <text />
+                      <Items>
+                        <blankPanel sid="9cddafc8087caa103fb86b8a2a965062">
+                          <id>blankPanelc8d3f</id>
+                          <bodyStyle>padding:5px;</bodyStyle>
+                          <Items>
+                            <tableLayout sid="818d31dad146fbe7462c4226fcbbb1e4">
+                              <id>tableLayout4bbf6</id>
+                              <Items>
+                                <htmlArea sid="b6f25e22b5a94972aa2b7c0b0f637cad">
+                                  <id>htmlAreada20d</id>
+                                  <value>在办案件（11）</value>
+                                  <style>font-size:14px;color:#3E5CA5;</style>
+                                </htmlArea>
+                                <buttonArea sid="e7b122f12e7f51f5e649eb0e0c998229">
+                                  <id>buttonArea0b8ea</id>
+                                  <align>right</align>
+                                  <spacing>15</spacing>
+                                  <toggle>true</toggle>
+                                  <themeStyle>simple</themeStyle>
+                                  <Items>
+                                    <simpleButton sid="5b2c14704cbb689fb0b12620792dea39">
+                                      <id>simpleButtond9754</id>
+                                      <text>10条</text>
+                                      <pressed>true</pressed>
+                                    </simpleButton>
+                                    <simpleButton sid="0ff748188039d5caa79408bb9775a170">
+                                      <id>simpleButton27aec</id>
+                                      <text>20条</text>
+                                    </simpleButton>
+                                    <simpleButton sid="2062f5a0011f637e9ebf0c446f908ac5">
+                                      <id>simpleButtonb7f70</id>
+                                      <text>全部</text>
+                                    </simpleButton>
+                                  </Items>
+                                </buttonArea>
+                              </Items>
+                            </tableLayout>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </header>
+                    <footer sid="7caf7f533638a28b3943f0475c8d3dd4">
+                      <id>footer9108f</id>
+                      <Items>
+                        <blankPanel sid="a09169e8572eb852fa89927800373d51">
+                          <id>blankPanelda358</id>
+                          <Items>
+                            <pagingbar1 sid="8a15f7e0ef82d4d70522e2e0696848c9">
+                              <id>pagingbar170fc3</id>
+                              <ds>rs2</ds>
+                              <pageCount>5</pageCount>
+                              <pagePerNext>2</pagePerNext>
+                            </pagingbar1>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </footer>
+                    <blankPanel sid="ea98999d64b46191c944c1cb40a876d6">
+                      <id>blankPanelb0711</id>
+                      <height>100%</height>
+                      <bodyStyle>overflow-x:visible;</bodyStyle>
+                      <Items>
+                        <loopArea sid="4f471637938faa815de50d9f6cd214ca">
+                          <id>loopArea26ac8</id>
+                          <ds>rs2</ds>
+                          <Items>
+                            <blankPanel sid="7890b9465a6feb19d754c15674519c48">
+                              <id>blankPanel2b82b</id>
+                              <height>100</height>
+                              <bodyStyle>border-bottom:1px solid #D3DBE8;</bodyStyle>
+                              <Items>
+                                <tableLayout sid="57b5282df90b9e2ee11b3279973b2e56">
+                                  <id>tableLayoutc9b8a</id>
+                                  <colWidths>80,*</colWidths>
+                                  <height>100%</height>
+                                  <Items>
+                                    <htmlArea sid="7068f1a4396704b82a4c4138862fe6bd">
+                                      <id>htmlAreabe0ad</id>
+                                      <align>center</align>
+                                      <style>padding-top:10px;</style>
+                                      <className>x-tip-blue</className>
+                                      <synTabStyle extend="true">padding-left:15px;</synTabStyle>
+                                    </htmlArea>
+                                    <blankPanel sid="5ae63d5cdfbdcff7a75019933f01378e">
+                                      <id>blankPanel4bcc6</id>
+                                      <Items>
+                                        <blankPanel sid="649d84cf5b7945adae99b9b7f86ba1f4">
+                                          <id>blankPanele8824</id>
+                                          <Items>
+                                            <htmlArea sid="d5a5f49ad37fb338c74947e89dc01408">
+                                              <id>htmlAreae69af</id>
+                                              <inline>true</inline>
+                                              <style>color:red;padding-right:5px;</style>
+                                            </htmlArea>
+                                            <linkArea sid="195b2d2dbe65ae990e8530fec424fa7e">
+                                              <id>linkAread14dd</id>
+                                              <value>{rs2.aj}</value>
+                                              <inline>true</inline>
+                                              <style>font-size:14px;font-weight:700;</style>
+                                              <underline>false</underline>
+                                            </linkArea>
+                                          </Items>
+                                        </blankPanel>
+                                        <htmlArea sid="71f327d22dbdf957c4b84d3e9649da5f">
+                                          <id>htmlAreac9436</id>
+                                          <value>{rs2.ah}</value>
+                                          <style>color:#636468;</style>
+                                        </htmlArea>
+                                        <buttonArea sid="9271579880dc5d8d635fc033f5d5b2dc">
+                                          <id>buttonArea2b79f</id>
+                                          <spacing>20</spacing>
+                                          <Items>
+                                            <simpleButton sid="867edef7f531f3a0c8bc9df6c26f65a7">
+                                              <id>simpleButton01296</id>
+                                              <text>案件办理</text>
+                                              <icon>/artery/arteryImage/other/tools.gif</icon>
+                                              <underline>false</underline>
+                                            </simpleButton>
+                                            <simpleButton sid="b7f2b0c33b88d7cfbf8d6eaa3d6c0253">
+                                              <id>simpleButton6a924</id>
+                                              <text>写文书</text>
+                                              <icon>/artery/arteryImage/file/article.gif</icon>
+                                              <underline>false</underline>
+                                            </simpleButton>
+                                            <blankPanel sid="c74ffec9c1612b9b660716087861828a">
+                                              <id>blankPaneld9724</id>
+                                              <width>1</width>
+                                              <bodyStyle>border-left:1px solid #859AC7;</bodyStyle>
+                                            </blankPanel>
+                                            <splitButton sid="96c2044e6f858aa7dfb54dd445d85a16">
+                                              <id>splitButton6ec15</id>
+                                              <text>已写文书</text>
+                                              <hideIconCol>true</hideIconCol>
+                                              <themeStyle>bluePlain</themeStyle>
+                                              <Items>
+                                                <tbMenuItem sid="b493cee9dd090f207786af59e4bb8f0e">
+                                                  <id>tbMenuItemf6afa</id>
+                                                  <text>&lt;table cellpadding=0 cellspacing=0 style="width:160px;"&gt;&lt;tr&gt;&lt;td&gt;提押证-王刚&lt;/td&gt;&lt;td style='width:60px;text-align:right;'&gt;一天前&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</text>
+                                                </tbMenuItem>
+                                                <tbMenuItem sid="8d2befffefbba0eec8e001181d0bc857">
+                                                  <id>tbMenuItem5349f</id>
+                                                  <text>&lt;table cellpadding=0 cellspacing=0 style="width:160px;"&gt;&lt;tr&gt;&lt;td&gt;检查建议书&lt;/td&gt;&lt;td style='width:60px;text-align:right;'&gt;一天前&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</text>
+                                                </tbMenuItem>
+                                                <tbMenuItem sid="2355ac7440a12a3f4bddbfa51f4a5f28">
+                                                  <id>tbMenuItem3d3b9</id>
+                                                  <text>&lt;table cellpadding=0 cellspacing=0 style="width:160px;"&gt;&lt;tr&gt;&lt;td&gt;逮捕决定书&lt;/td&gt;&lt;td style='width:60px;text-align:right;'&gt;一天前&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</text>
+                                                </tbMenuItem>
+                                                <tbMenuItem sid="2e4daea516bd9111490a8a3dce96d9d5">
+                                                  <id>tbMenuItemefee3</id>
+                                                  <text>&lt;table cellpadding=0 cellspacing=0 style="width:160px;"&gt;&lt;tr&gt;&lt;td&gt;逮捕通知书&lt;/td&gt;&lt;td style='width:60px;text-align:right;'&gt;一天前&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</text>
+                                                </tbMenuItem>
+                                              </Items>
+                                            </splitButton>
+                                            <splitButton sid="b99789389000541dccff28fc1df13915">
+                                              <id>splitButton1d5ed</id>
+                                              <text>菜单居中</text>
+                                              <menuPosition>center</menuPosition>
+                                              <themeStyle>bluePlain</themeStyle>
+                                              <Items>
+                                                <tbMenuItem sid="1ea75fc2ef83ad23219ab3315fca0f5a">
+                                                  <id>tbMenuItem15111</id>
+                                                </tbMenuItem>
+                                                <tbMenuItem sid="24f9a28460b37d83716efbd3a232b273">
+                                                  <id>tbMenuItem643b0</id>
+                                                </tbMenuItem>
+                                                <tbMenuItem sid="65f208321282e43c89be89f3de419522">
+                                                  <id>tbMenuItem2eaa6</id>
+                                                </tbMenuItem>
+                                                <tbMenuItem sid="cae36123dfd3238ffdbf3fa5e9f8db5a">
+                                                  <id>tbMenuItem204cb</id>
+                                                </tbMenuItem>
+                                              </Items>
+                                            </splitButton>
+                                          </Items>
+                                        </buttonArea>
+                                      </Items>
+                                    </blankPanel>
+                                  </Items>
+                                </tableLayout>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </loopArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </tableLayout>
+          </Items>
+        </centerRegion>
+        <rightRegion sid="a4e3db9b00f9e866f8262c84f7a941e0">
+          <id>rightRegion318e7</id>
+          <width>320</width>
+          <split>false</split>
+          <border>false</border>
+          <bodyStyle>padding:6px;padding-left:0px;</bodyStyle>
+          <Items>
+            <blankPanel sid="2756bf409f41b92b90eb3100e6394522">
+              <id>blankPanelbda07</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <bodyStyle>padding-top:5px;</bodyStyle>
+              <themeStyle>pear</themeStyle>
+              <Items>
+                <header sid="7adec6aee1162cd9d6a71e3200332217">
+                  <id>headerbc596</id>
+                  <text />
+                  <Items>
+                    <blankPanel sid="da5b4983d1320daef463bc08502532f6">
+                      <id>blankPanelf5293</id>
+                      <bodyStyle>padding:3px;</bodyStyle>
+                      <Items>
+                        <tableLayout sid="b26742bcb2c51b84bcd9c108686a27b8">
+                          <id>tableLayoutff76c</id>
+                          <Items>
+                            <htmlArea sid="7a99c16fb3f0a81a49e8e69a6cd68a89">
+                              <id>htmlAreac6a70</id>
+                              <value>最近编辑文书（5）</value>
+                              <style>font-size:14px;color:#3E5CA5;</style>
+                            </htmlArea>
+                            <buttonArea sid="0fcd4d66014fb427231d09aa5b31b4bf">
+                              <id>buttonAreaa2800</id>
+                              <align>right</align>
+                              <spacing>8</spacing>
+                              <toggle>true</toggle>
+                              <themeStyle>simple</themeStyle>
+                              <Items>
+                                <simpleButton sid="63b4e06fa700dfcdc0de1d1efc04ce2a">
+                                  <id>simpleButton266f3</id>
+                                  <text>3天</text>
+                                  <pressed>true</pressed>
+                                </simpleButton>
+                                <simpleButton sid="9b1858c64cb5baae85b196c65d897ccf">
+                                  <id>simpleButton9efe2</id>
+                                  <text>7天</text>
+                                </simpleButton>
+                                <simpleButton sid="c3fe3479fd1d04aae4da2d2e32aeb052">
+                                  <id>simpleButton85fcf</id>
+                                  <text>30天</text>
+                                </simpleButton>
+                              </Items>
+                            </buttonArea>
+                          </Items>
+                        </tableLayout>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <tableLayout sid="0485cc79f470774e77bd9c65c46682d4">
+                  <id>tableLayoute171a</id>
+                  <colNum>1</colNum>
+                  <height>100%</height>
+                  <Items>
+                    <navTabArea sid="216394e82312dda7b26739794c650707">
+                      <id>navTabAreae1dd5</id>
+                      <tabPosition>top</tabPosition>
+                      <themeStyle>unis</themeStyle>
+                      <Items>
+                        <navTabItem sid="b1db0561befe65d18b12bc73b7eb7e84">
+                          <id>navTabItem33bc0</id>
+                          <title>所有</title>
+                          <active>true</active>
+                        </navTabItem>
+                        <navTabItem sid="04a481b7e7261a01cdc30b08e288191d">
+                          <id>navTabItemb9a16</id>
+                          <title>审批完成</title>
+                        </navTabItem>
+                        <navTabItem sid="5a03cbf55dec889e8d7c5edab2f47d42">
+                          <id>navTabItemba084</id>
+                          <title>提请审批</title>
+                        </navTabItem>
+                        <navTabItem sid="74148694287da851b95f68a3a827e596">
+                          <id>navTabItem2ca77</id>
+                          <title>未提请审批</title>
+                        </navTabItem>
+                      </Items>
+                    </navTabArea>
+                    <blankPanel sid="0fb96e0a9025ac8c100a004b3410106f">
+                      <id>blankPanel71d54</id>
+                      <height>100%</height>
+                      <synTabHeight extend="true">true</synTabHeight>
+                      <Items>
+                        <blankPanel sid="e8081a85a010f8e92d3f12703a45cf9d">
+                          <id>blankPanel7475c</id>
+                          <bodyStyle>padding:8px;padding-bottom:0px;</bodyStyle>
+                          <themeStyle>plain</themeStyle>
+                          <Items>
+                            <loopArea sid="ad61017c3bbe2356562f6b75466a8edd">
+                              <id>loopArea8254c</id>
+                              <ds>rs3</ds>
+                              <Items>
+                                <blankPanel sid="f5eaffc4852dfc3ded3abb6b20513edf">
+                                  <id>blankPanel026c4</id>
+                                  <bodyStyle>padding-bottom:10px;</bodyStyle>
+                                  <Items>
+                                    <blankPanel sid="e8e7042ab5c1d2017096f47f31ff8b66">
+                                      <id>blankPanele3db7</id>
+                                      <bodyStyle>padding-top:7px;</bodyStyle>
+                                      <themeStyle>bfunis</themeStyle>
+                                      <buttonFrame>true</buttonFrame>
+                                      <Items>
+                                        <tableLayout sid="a127e67d15d6c2bd5aa1c3c78e123aa4">
+                                          <id>tableLayout6fed2</id>
+                                          <Items>
+                                            <linkArea sid="96f094a2ea3ad6d042d7241852df1ca0">
+                                              <id>linkAreac78f8</id>
+                                              <value>{rs3.writName}</value>
+                                              <style>font-weight:700;font-size:14px;</style>
+                                              <underline>false</underline>
+                                            </linkArea>
+                                            <htmlArea sid="cce1982ee3873fb841a04cb1dfabeb49">
+                                              <id>htmlArea09293</id>
+                                              <value>{rs3.writTiem}</value>
+                                              <align>right</align>
+                                              <style>color:#989699;</style>
+                                            </htmlArea>
+                                          </Items>
+                                        </tableLayout>
+                                      </Items>
+                                    </blankPanel>
+                                    <htmlArea sid="c7d819abf9612acb22b8a83b214f0a51">
+                                      <id>htmlAreac361b</id>
+                                      <value>&lt;b&gt;{rs3.persion}&lt;/b&gt;&lt;span style="color:#666666;"&gt;{rs3.aj}&lt;/span&gt;</value>
+                                      <style>padding:8px;padding-bottom:0px;</style>
+                                    </htmlArea>
+                                    <htmlArea sid="78a1bd05bc934614611fea4f6bd0cffd">
+                                      <id>htmlArea527ab</id>
+                                      <value>&lt;span style="color:#969696;"&gt;当前状态：&lt;/span&gt;{rs3.state}</value>
+                                      <style>padding:8px;padding-top:5px;</style>
+                                    </htmlArea>
+                                  </Items>
+                                </blankPanel>
+                              </Items>
+                            </loopArea>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="e65588e2a02d97573aeb1c66c881538c">
+                          <id>blankPanel826fb</id>
+                          <bodyStyle>padding:8px;padding-top:0px;</bodyStyle>
+                          <Items>
+                            <loopArea sid="7b2a236da462f18143d27057c7d37ac0">
+                              <id>loopArea7aab4</id>
+                              <ds>rs4</ds>
+                              <Items>
+                                <blankPanel sid="75478fa7c7a774f9ae3bf63649dfd7ab">
+                                  <id>blankPanel83b60</id>
+                                  <bodyStyle>padding-bottom:10px;</bodyStyle>
+                                  <Items>
+                                    <tableLayout sid="b18c0bade7586b7290a288af08dada16">
+                                      <id>tableLayoutf0287</id>
+                                      <style>padding:8px;padding-bottom:0px;</style>
+                                      <Items>
+                                        <linkArea sid="0efd788516dbf4405ba9239f836c7174">
+                                          <id>linkArea5a328</id>
+                                          <value>{rs4.writName}</value>
+                                          <underline>false</underline>
+                                        </linkArea>
+                                        <htmlArea sid="39b2862f8293006027ab3b693fd3cbd7">
+                                          <id>htmlArea9305e</id>
+                                          <value>{rs4.writTiem}</value>
+                                          <align>right</align>
+                                          <style>color:#989699;</style>
+                                        </htmlArea>
+                                      </Items>
+                                    </tableLayout>
+                                    <htmlArea sid="366d233a2f95e73f0c47f8a2c3d3d06c">
+                                      <id>htmlArea0b453</id>
+                                      <value>&lt;b&gt;{rs4.persion}&lt;/b&gt;&lt;span style="color:#666666;"&gt;{rs4.aj}&lt;/span&gt;</value>
+                                      <style>padding:8px;padding-bottom:0px;padding-top:0px;</style>
+                                    </htmlArea>
+                                  </Items>
+                                </blankPanel>
+                              </Items>
+                            </loopArea>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+          </Items>
+        </rightRegion>
+        <window sid="6228a0f51a471a5822d642da152acf9f">
+          <id>windowd57a0</id>
+          <width>400</width>
+          <height>200</height>
+          <draggable>false</draggable>
+          <Items>
+            <header sid="dc81ce295926857355308876cbbd24a8">
+              <id>header94977</id>
+              <text />
+              <Items>
+                <blankPanel sid="2d7c0ef0649b1e3b474821f3e598254c">
+                  <id>blankPanel5f122</id>
+                  <Items>
+                    <navTabArea sid="6cf95669fa7e64789444e092843a5f0c">
+                      <id>navTabArea1a5e9</id>
+                      <tabPosition>top</tabPosition>
+                      <style>background-color:transparent;</style>
+                      <themeStyle>lightBlue</themeStyle>
+                      <Items>
+                        <navTabItem sid="ee5635461e2ca412db6d0b6bfcfa28eb">
+                          <id>navTabItemb08c4</id>
+                          <title>案件</title>
+                          <active>true</active>
+                        </navTabItem>
+                        <navTabItem sid="bba1ee083c3c62bdcb3ec047bf37c1d0">
+                          <id>navTabItemd80eb</id>
+                          <title>法规</title>
+                        </navTabItem>
+                        <navTabItem sid="7af9bc99ec964e2844803827fa074ca1">
+                          <id>navTabItem7f229</id>
+                          <title>案例库</title>
+                        </navTabItem>
+                      </Items>
+                    </navTabArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+          </Items>
+        </window>
+        <window sid="7df7382584697b9ae6bc1eb48aff2040">
+          <id>windowc580d</id>
+          <width>400</width>
+          <height>200</height>
+          <title />
+          <draggable>false</draggable>
+          <Items>
+            <header sid="f47d95ee8d393e5d57300be093148264">
+              <id>header34e21</id>
+              <text />
+              <Items>
+                <blankPanel sid="2cf2294899129bb250a03cad6883a5f9">
+                  <id>blankPanelf74dd</id>
+                  <Items>
+                    <buttonArea sid="84d3d24bab9827ea7ef1c8bcfdd37d0f">
+                      <id>buttonArea0c9f2</id>
+                      <spacing>10</spacing>
+                      <toggle>true</toggle>
+                      <style>padding:3px;</style>
+                      <themeStyle>simple</themeStyle>
+                      <Items>
+                        <simpleButton sid="89df594a0e5bba376ec1393cf10433e9">
+                          <id>simpleButton283e7</id>
+                          <text>最新</text>
+                          <pressed>true</pressed>
+                        </simpleButton>
+                        <simpleButton sid="542ad68ec928589a803e7d00c35dc6b0">
+                          <id>simpleButton88682</id>
+                          <text>1天</text>
+                        </simpleButton>
+                        <simpleButton sid="199466c20e0a925a7083723e0d61911f">
+                          <id>simpleButton59904</id>
+                          <text>7天</text>
+                        </simpleButton>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+            <blankPanel sid="8209713a9339e6db17cb8e47fc214695">
+              <id>blankPaneldeb69</id>
+              <height>100%</height>
+              <Items>
+                <navTabArea sid="79beb866386b13bc228600ffcac941eb">
+                  <id>navTabArea177c2</id>
+                  <tabPosition>top</tabPosition>
+                  <themeStyle>lightBlue</themeStyle>
+                  <Items>
+                    <navTabItem sid="61a8f62e25814e6260cfdb3b94ee799a">
+                      <id>navTabItem48094</id>
+                      <title>系统(10)</title>
+                      <active>true</active>
+                    </navTabItem>
+                    <navTabItem sid="6845e01d911b3ea11d40fffee7c02519">
+                      <id>navTabItemf643d</id>
+                      <title>用户设置(1)</title>
+                    </navTabItem>
+                  </Items>
+                </navTabArea>
+              </Items>
+            </blankPanel>
+            <footer sid="55ea6b620f4749810fdb5b762a7d7529">
+              <id>footer69856</id>
+              <Items>
+                <button sid="a5ddea0b5a48103c542bdf3f13e5a901">
+                  <id>button62d11</id>
+                </button>
+              </Items>
+            </footer>
+          </Items>
+        </window>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+    <ds dsName="dataSource" name="rs2" type="logic">ds_rs2</ds>
+    <ds dsName="dataSource" name="rs3" type="logic">ds_rs3</ds>
+    <ds dsName="dataSource" name="rs4" type="logic">ds_rs4</ds>
+  </dslist>
+</form>
+

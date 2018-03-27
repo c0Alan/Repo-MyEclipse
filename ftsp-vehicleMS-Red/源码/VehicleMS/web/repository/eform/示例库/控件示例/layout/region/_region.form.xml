@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>62d922362a5d28f34da8a46d8d0a2daa</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.layout.region._region.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/layout/region/_region.js</jsLocation>
+  <descript>中心布局（centerRegion）控件示例表单</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form06721">
+      <id>form06721</id>
+      <Items>
+        <blankPanel sid="a430caf9552ef1aa104d74e6095fe404">
+          <id>blankPanel0d7c6</id>
+          <width>80%</width>
+          <height>300</height>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="56ace6bfd4de1feb4c797a42bdb65b68">
+              <id>headercdc4f</id>
+              <text>布局控件</text>
+              <Items>
+                <collapseBtn sid="4d7f734b8ed6f5cd73996a2ee1084c2d">
+                  <id>collapseBtn0f0a2</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <upRegion sid="ef9bb9b9505947e0997d6edc934950f3">
+              <id>upRegione1d2e</id>
+              <margins>4 0 0 0</margins>
+              <Items>
+                <htmlArea sid="1c936a251a88075338bcd2f1fe0bc7d2">
+                  <id>htmlArea7c265</id>
+                  <value>&lt;span style="font-size:16px;"&gt;&lt;b&gt;上布局&lt;/b&gt;&lt;/span&gt;</value>
+                  <align>center</align>
+                </htmlArea>
+              </Items>
+            </upRegion>
+            <leftRegion sid="425f7ac509bba439cee28bfb355abafd">
+              <id>leftRegion7c0a5</id>
+              <Items>
+                <htmlArea sid="b80d2bd0ebe4c9b34979a7efffcd6d41">
+                  <id>htmlAreaa7dba</id>
+                  <value>&lt;span style="font-size:16px;"&gt;&lt;b&gt;左布局&lt;/b&gt;&lt;/span&gt;</value>
+                  <align>center</align>
+                </htmlArea>
+              </Items>
+            </leftRegion>
+            <downRegion sid="24a72b4979758518d701c9777e6d68be">
+              <id>downRegionfd83f</id>
+              <Items>
+                <htmlArea sid="2243c1dbff1ad6a4eab209dbbf75dabc">
+                  <id>htmlAreaa9088</id>
+                  <value>&lt;span style="font-size:16px;"&gt;&lt;b&gt;下布局&lt;/b&gt;&lt;/span&gt;</value>
+                  <align>center</align>
+                </htmlArea>
+              </Items>
+            </downRegion>
+            <rightRegion sid="c476a4d9f779852c205f14c5a4f24c81">
+              <id>rightRegion53ea3</id>
+              <Items>
+                <htmlArea sid="47913e6f6be375eb2243b7c7c0488cbe">
+                  <id>htmlAreabef0e</id>
+                  <value>&lt;span style="font-size:16px;"&gt;&lt;b&gt;右布局&lt;/b&gt;&lt;/span&gt;</value>
+                  <align>center</align>
+                </htmlArea>
+              </Items>
+            </rightRegion>
+            <centerRegion sid="28ea3bc9ece4fb507af9e45efc43114b">
+              <id>centerRegionaa0ea</id>
+              <Items>
+                <htmlArea sid="b4fc8b2a3b44d5729f0c3a68a620461e">
+                  <id>htmlAreae167c</id>
+                  <value>&lt;span style="font-size:16px;"&gt;&lt;b&gt;中心布局&lt;/b&gt;&lt;br&gt;中心布局控件是必须的，布局界面中必须包含此控件&lt;/span&gt;</value>
+                  <align>center</align>
+                </htmlArea>
+              </Items>
+            </centerRegion>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="91b49bc82bf934adb1ab9040b42e0eb7">
+          <id>blankPanel5f239</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="781f1daeef19f4cd807e6f1ad611fd29">
+              <id>headere8b95</id>
+              <text>【边距】属性</text>
+              <Items>
+                <collapseBtn sid="e8f8f898156fb242302631f2ecea4b6c">
+                  <id>collapseBtn5d486</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="575942bed264b5d82d1853067aff112c">
+              <id>blankPanel10be4</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="fe1a24f0728d30226ade14465146ed65">
+                  <id>htmlAreaf1dcd</id>
+                  <value>边距：0 0 0 0</value>
+                  <width>25%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="2aabc1a19b6808fa11cf8a78fed22261">
+                  <id>htmlAreaa2493</id>
+                  <value>边距：5 5 5 5</value>
+                  <width>25%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="a93bf1dc77d2cafad7ff3d5ad455f6fa">
+                  <id>htmlArea2c4b4</id>
+                  <value>边距：5 10 5 10</value>
+                  <width>25%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="d0bc972a5177d5a1ab5cfe5f9593d6a4">
+                  <id>htmlArea9f823</id>
+                  <value>边距：5 10 15 20</value>
+                  <width>24%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="5ccdd1bd19226955ec209db8b4927e97">
+                  <id>blankPanel019e1</id>
+                  <width>25%</width>
+                  <height>200</height>
+                  <border>true</border>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <centerRegion sid="7774eafaeb3cbffa296e01849333eb35">
+                      <id>centerRegiond9eb3</id>
+                      <margins>0 0 0 0</margins>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="937bd960e0ca8cd0e423423d3d462db6">
+                  <id>blankPaneld3a52</id>
+                  <width>25%</width>
+                  <height>200</height>
+                  <border>true</border>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <centerRegion sid="c1b8c04ce761fb449a0e5019e4745a8f">
+                      <id>centerRegionad346</id>
+                      <margins>5 5 5 5</margins>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="7dc0dbbd5fbd17a78f7022519ca95885">
+                  <id>blankPanel8f5dd</id>
+                  <width>25%</width>
+                  <height>200</height>
+                  <border>true</border>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <centerRegion sid="5dac2c9022a5547b74829a1006079a9d">
+                      <id>centerRegion2013b</id>
+                      <margins>5 10 5 10</margins>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="556b7586332043587260e111ae3e43f5">
+                  <id>blankPanelbd821</id>
+                  <height>200</height>
+                  <border>true</border>
+                  <Items>
+                    <centerRegion sid="ef86d61646dbf9cdcd5987ade39d5da6">
+                      <id>centerRegionbeaac</id>
+                      <margins>5 10 15 20</margins>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="80882efe3bb34d21a4ec6217a6b8d6ed">
+          <id>blankPanel9e239</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="f14c8d0bc95579fb23c0930abeafc18c">
+              <id>header1629d</id>
+              <text>【是否可折叠】属性</text>
+              <Items>
+                <collapseBtn sid="864205a67ae6b512228d734ebf1c9289">
+                  <id>collapseBtn30e72</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="d2c0262a085015af0b308dfeae97e3ce">
+              <id>blankPanelbb81a</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="9c80fa92f85f762bf94a8ce2bb040ff1">
+                  <id>htmlAreaf68a1</id>
+                  <value>是否可折叠：true</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="9e71d6c341f514d65566c19f9bbec4e8">
+                  <id>htmlArea1d153</id>
+                  <value>是否可折叠：false</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="282898b942db69bd4eca67c774c69dcc">
+                  <id>blankPanel319c7</id>
+                  <width>50%</width>
+                  <height>200</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <upRegion sid="59ad795d75b2cffe97553aff9f40ff35">
+                      <id>upRegion9e02a</id>
+                      <collapsible>true</collapsible>
+                    </upRegion>
+                    <centerRegion sid="7395c8b8b371c542d8087b1e5cfc8b56">
+                      <id>centerRegion64c7e</id>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="f0aba14282abb31781665acaa11bd198">
+                  <id>blankPanelb76d7</id>
+                  <height>200</height>
+                  <Items>
+                    <upRegion sid="a9070abf9ce9eb21f8b12cdfee5fb7d9">
+                      <id>upRegion91182</id>
+                    </upRegion>
+                    <centerRegion sid="7a4efe339655f27b1e508eddd21892b9">
+                      <id>centerRegione7fc6</id>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="58422fd07ec188e9ecb34af6b5c7dbf2">
+          <id>blankPanel6fe52</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="a539c4e84e52e36394183573badc29b7">
+              <id>header76235</id>
+              <text>【折叠状态】属性</text>
+              <Items>
+                <collapseBtn sid="67aeb97e0f105ef260f5fa5b80bb41fd">
+                  <id>collapseBtn00df1</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="2896711153eabaa145edc733762f1918">
+              <id>blankPanelb3993</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="a9a9ac864baef2a57f73d2c6d4f76826">
+                  <id>htmlArea817f7</id>
+                  <value>折叠状态：true</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="d82a6820d2d10627a9f543b09b44d6ce">
+                  <id>htmlArea1870a</id>
+                  <value>折叠状态：false</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="5ab28bd5d851356aff1aa08f83b39247">
+                  <id>blankPaneld623a</id>
+                  <width>50%</width>
+                  <height>200</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <upRegion sid="d4c6994016e395ca885585e403c05f55">
+                      <id>upRegionebbe9</id>
+                      <collapsible>true</collapsible>
+                      <collapsed>true</collapsed>
+                    </upRegion>
+                    <centerRegion sid="b85b9af75091aeeef951f4350ace8ac5">
+                      <id>centerRegionacd98</id>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="e4d3608ae22281c261b50efeeb553dca">
+                  <id>blankPanel34413</id>
+                  <height>200</height>
+                  <Items>
+                    <upRegion sid="d68cf71653a6b26b92b8582cbd77b1fa">
+                      <id>upRegion0eea7</id>
+                      <collapsible>true</collapsible>
+                    </upRegion>
+                    <centerRegion sid="933ac1725723dde2331f37160fd98e57">
+                      <id>centerRegion08679</id>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="7a338acdc0d3fd9a9d5dd4bd00009c9e">
+          <id>blankPanel3720e</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <themeStyle>collapseUnis</themeStyle>
+          <Items>
+            <header sid="279eea8564d85f560f62c87097c3bd29">
+              <id>header624c6</id>
+              <text>【调整大小】属性</text>
+              <Items>
+                <collapseBtn sid="1c3324a5508572cc57fee49fdd513161">
+                  <id>collapseBtnab22f</id>
+                </collapseBtn>
+              </Items>
+            </header>
+            <blankPanel sid="0b5fcc79005dcdbfcadc4f64a303f014">
+              <id>blankPanelcfe14</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="945e28ec8cab287bf751e7506b682247">
+                  <id>htmlArea5a81b</id>
+                  <value>调整大小：true</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="54353185bf84db2f55ea6a9552dc4843">
+                  <id>htmlArea8f202</id>
+                  <value>调整大小：false</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="ff4e3b72a480ae0879425be387bf9e4f">
+                  <id>blankPanel0fc10</id>
+                  <width>50%</width>
+                  <height>200</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <upRegion sid="5768a89a1df2a7cab28a58cd702c8ad6">
+                      <id>upRegion74130</id>
+                    </upRegion>
+                    <centerRegion sid="85d5a8d8aa3e6af88d6d99eeca5a0623">
+                      <id>centerRegion64a6f</id>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="c25f6ecc256e746681fd56c708880552">
+                  <id>blankPanelcfeda</id>
+                  <height>200</height>
+                  <Items>
+                    <upRegion sid="d852f0e532b07d3bc6ed705497c60d33">
+                      <id>upRegiona4a43</id>
+                      <split>false</split>
+                    </upRegion>
+                    <centerRegion sid="d61be4567637fdd18641f01e6b283c0f">
+                      <id>centerRegion031d9</id>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="051c4c095fbaf1c6985e164aacaea204">
+          <id>blankPanel02055</id>
+          <width>80%</width>
+          <style>padding-top:20px;</style>
+          <Items>
+            <htmlArea sid="7d71d39d7d2401e731f53647c7845575">
+              <id>htmlAreab39ce</id>
+              <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;【分隔箭头样式】属性&lt;/span&gt;</value>
+              <style>border-bottom:2px solid #b9ccdd;</style>
+            </htmlArea>
+            <blankPanel sid="0d990aacdc0726c2acca18779adeb56d">
+              <id>blankPanelafcdb</id>
+              <width>100%</width>
+              <Items>
+                <htmlArea sid="c02d0c098ab2a4d2ddee2b5263750f25">
+                  <id>htmlAreac6feb</id>
+                  <value>分隔箭头样式：不设置或者为inherit</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <htmlArea sid="30958beacd5c88e8702557668a8786d0">
+                  <id>htmlAreadf954</id>
+                  <value>分隔箭头样式：设置为unis</value>
+                  <width>50%</width>
+                  <height>40px</height>
+                  <align>center</align>
+                  <inline>true</inline>
+                  <style>padding-top:10px;</style>
+                </htmlArea>
+                <blankPanel sid="643d8799033fcffb1fa345c2094befc4">
+                  <id>blankPanel571de</id>
+                  <width>50%</width>
+                  <height>200</height>
+                  <bodyStyle>float:left;</bodyStyle>
+                  <Items>
+                    <upRegion sid="6f9c40ffdeddc74f082f5841f8563487">
+                      <id>upRegion4aa2c</id>
+                      <collapsible>true</collapsible>
+                      <arrowStyle>inherit</arrowStyle>
+                    </upRegion>
+                    <centerRegion sid="cc3ff4649c2c6b1c05097e1c1031fb9b">
+                      <id>centerRegion8b341</id>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="455f157d67d9a299cef8b7588a8fd75f">
+                  <id>blankPanel8cfca</id>
+                  <height>200</height>
+                  <Items>
+                    <upRegion sid="2d49cef10673d9b099c045fb5129ad44">
+                      <id>upRegion3ebcd</id>
+                      <collapsible>true</collapsible>
+                      <arrowStyle>unis</arrowStyle>
+                    </upRegion>
+                    <centerRegion sid="9440e312cddb116e4e0b1b32f462761b">
+                      <id>centerRegion4e919</id>
+                    </centerRegion>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

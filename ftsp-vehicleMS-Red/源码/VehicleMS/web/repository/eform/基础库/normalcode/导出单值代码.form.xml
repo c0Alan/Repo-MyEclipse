@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>01a2df75619e7764851d165b3559b630</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.normalcode.Dcdzdm.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/normalcode/Dcdzdm.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="forme62c8">
+      <id>forme62c8</id>
+      <themeStyle>funis</themeStyle>
+      <Items>
+        <formArea sid="65ccbc5eed8b70a1ce0963a0bf353e84">
+          <id>formAreab3f68</id>
+          <height>100%</height>
+          <colNum>1</colNum>
+          <labelAlign>left</labelAlign>
+          <labelWidth>80</labelWidth>
+          <Items>
+            <faCode sid="ec527e9b0108b0ce1adc1569b41797d1">
+              <id>conFaCode</id>
+              <submitName>exportModel</submitName>
+              <editor>sRadio</editor>
+              <dynamicData><![CDATA[conFaCode_dynamicData]]></dynamicData>
+              <colNum>1</colNum>
+              <value>1</value>
+              <onChangeClient><![CDATA[conFaCode_onChangeClient]]></onChangeClient>
+              <label />
+              <hideLabel>true</hideLabel>
+            </faCode>
+            <faString sid="fc2f52757501a6a03815dec3b5816c4a">
+              <id>exportFaString</id>
+              <submitName>regex</submitName>
+              <onShow><![CDATA[exportFaString_onShow]]></onShow>
+              <label>导出表达式</label>
+            </faString>
+            <htmlArea sid="939edc90f5d16df2e615b329d28eeb0c">
+              <id>htmlArea32151</id>
+              <value>指定代码，如“1-76，367，456-500&lt;br&gt;&#xD;
+表示导出代码类型标识为1到76，367和456到500的单值代码。</value>
+              <style>color:red; padding:3px</style>
+              <hideLabel>true</hideLabel>
+            </htmlArea>
+          </Items>
+        </formArea>
+        <footer sid="e5b04de314006a4fa869e7724307a045">
+          <id>footer2a3c1</id>
+          <buttonAlign>left</buttonAlign>
+          <spacing>10</spacing>
+          <Items>
+            <button sid="ff417ed1203be60a0ec31dec4746e1bf">
+              <id>exportBtn</id>
+              <text>导出</text>
+              <onClickClient><![CDATA[exportBtn_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[exportBtn_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+            </button>
+            <simpleButton sid="a00ae6bedfc6909861d44e96f1e8776c">
+              <id>shutBtn</id>
+              <text>关闭</text>
+              <onClickClient><![CDATA[shutBtn_onClickClient]]></onClickClient>
+            </simpleButton>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+</form>
+

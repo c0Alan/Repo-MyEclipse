@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="faOrgan" cn="组织机构类型" menu="输入控件" nameprop="label" icon="faOrgan.gif"
+	iconNew="faOrganNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>组织机构控件</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="formArea" />
+		<Parent type="faFieldSet" />
+		<Parent type="faBlankLayout" />
+	</Parents>
+	<Children />
+	<Class more="editor">com.thunisoft.artery.plugin.form.FaOrgan
+	</Class>
+	<JsFile>
+		<File>faOrgan.js</File>
+		<File>faOrganPopup.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="提交名称" type="1" name="submitName"
+			tips="用于设置form提交时本控件的提交名称，也就是input标签的name属性">
+			<Value />
+		</Property>
+		<Property cn="控件提示" type="1" name="comment" tips="用于产生控件的提示信息">
+			<Value />
+			<Description><![CDATA[
+			用于产生控件的提示信息,如果控件指定了继承表，继承字段，此项默认会显示数据字典中相应字段的描述信息。
+			如果填写此属性，则会覆盖数据字典中的描述信息。
+			]]></Description>
+		</Property>
+		<Property cn="是否必填" type="11" name="required" tips="是否是必填项">
+			<Value>false</Value>
+		</Property>
+		<Property cn="display必填标识" type="11" name="displayRequiredStyle" tips="当运行时类型为display时是否应用label的必填样式，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="只读时是否验证" type="11" name="validOnReadOnly" export="true" tips="当设置为true时，调用表单的submit方法时 会对展现类型（displayType）属性为ReadOnly的控件进行验证，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="无效时是否提交" type="3" name="submitDisabled" ct="[inherit,true,false]"
+			 tips="设置表单提交的时候，当displayType属性为disabled时是否提交，默认为inherit">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="继承key" type="1" name="inheritkey" group="数据字典" 
+			tips="继承的数据字典的key，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="继承表" type="1" name="inherittbl" group="数据字典" 
+			tips="继承的数据字典的表名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="继承字段" type="1" name="inheritfld" group="数据字典" 
+			tips="继承的数据字典的字段名，如果填写，则会根据此属性找到对应的数据字典来进行解析">
+			<Value />
+		</Property>
+		<Property cn="数据源" type="1" name="dataName"
+			tips="对应着从数据源中取数据 可写数据源标签 示例：{rs1.C_NAME}">
+			<Value />
+		</Property>
+		<Property cn="控件类型" type="3" name="editor" ct="[sTree,mTree,mList]"
+			tips="选择组织机构控件的子类型，可选sTree，mTree，mList，默认为sTree">
+			<Value>sTree</Value>
+			<Description><![CDATA[
+				<p>选择组织机构控件的子类型，可选sTree，mTree，mList，默认为sTree</p>
+				<table><tr><td style='text-align:center;font-weight:700'>sTree（单选树）</td><td style='text-align:center;font-weight:700'>mTree（多选树）</td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_stree.png'></td><td><img src='../../resources/images/common/form/faOrgan/faOrgan_mtree.png'></td></tr><tr><td style='text-align:center;font-weight:700' colspan="2">mList（多选列表）</td></tr><tr><td colspan="2"><img src='../../resources/images/common/form/faOrgan/faOrgan_mlist.png'></td></tr></table>
+			]]></Description>
+			<Conditions>
+				<Condition>当控件类型为mList时，控件将按照展现类型为window进行展示，即使展现类型选择为popup也不起作用。</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="显示方式" type="3" name="showType" ct="[window,popup]"
+			tips="用于设置控件显示方式，可以选择window、popup，默认为popup">
+			<Value>popup</Value>
+			<Description><![CDATA[
+				<p>用于设置控件显示方式，可以选择window、popup，默认为popup，比对效果如下：</p>
+				<table width=1><tr><td style='text-align:center;font-weight:700'>window效果</td><td style='text-align:center;font-weight:700'>popup效果</td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_window.png'></td><td><img src='../../resources/images/common/form/faOrgan/faOrgan_stree.png'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="宽度" type="1" name="width" group="大小" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+		</Property>
+		<Property cn="高度" type="1" name="height" group="大小" mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+			<Value />
+		</Property>
+		<Property cn="弹出窗口高度" type="1" name="windowHeight" group="弹出设置" tips="设置本组件的弹出窗口的高度">
+			<Value>400</Value>
+			<Description><![CDATA[
+				<p>设置本组件的弹出窗口的高度，可输入数值，默认弹出窗口高度为400</p>
+			]]></Description>
+			<Conditions>
+				<Condition>显示方式（showType）属性为window时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="弹出层最小宽度" type="2" name="minLayerWidth" group="弹出设置" export="true"
+			tips="设置弹出层的最小宽度，可输入数值，默认为150。">
+			<Value>150</Value>
+			<Description><![CDATA[
+				<p>设置弹出层的最小宽度，可输入数值，默认为150。</p>
+			]]></Description>
+			<Conditions>
+				<Condition>显示方式（showType）属性为popup时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="弹出层最小高度" type="1" name="minLayerHeight"  group="弹出设置" mask="^\d{1,}%{0,1}$" et="正确输入为：n" tips="设置本组件的弹出层最小高度，不设置的话默认为300。可输入数值">
+			<Value>300</Value>
+			<Description><![CDATA[
+				<p>设置本组件的弹出层最小高度，不设置的话默认为300。可输入数值</p>
+				<p>弹出层的高度与弹出层中的树展开的高度一致的，但如果设置了弹出层最小高度，则弹出层高度不能小于此高度。</p>
+				<table><tr><td style='text-align:center;font-weight:700'>弹出层最小高度不设置或者设为0</td><td style='text-align:center;font-weight:700'>弹出层最小高度设置为：300</td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_minLayerHeight.png'></td><td><img src='../../resources/images/common/form/faOrgan/faOrgan_stree.png'></td></tr></table>
+			]]></Description>
+			<Conditions>
+				<Condition>显示方式（showType）属性为popup时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="弹出层最大高度" type="1" name="maxLayerHeight" group="弹出设置" mask="^\d{1,}%{0,1}$" et="正确输入为：n" tips="设置本组件的弹出层最大高度，若展开的树节点高度大于设置的最大高度，则出现纵向滚动条，不设置的话默认为300。可输入数值">
+			<Value>300</Value>
+			<Description><![CDATA[
+				<p>设置本组件的弹出层最大高度，若展开的树节点高度大于设置的最大高度，则出现纵向滚动条，不设置的话默认为300。可输入数值</p>
+				<p>弹出层的高度与弹出层中的树展开的高度一致的，但如果设置了弹出层最大高度，则弹出层高度不能大于于此高度，会出现纵向滚动条。</p>
+				<p>如设置控件的弹出层最大高度为150</p>
+				<table><tr><td style='text-align:center;font-weight:700'>树的展开高度小于所示最大高度，以树的展开高度为准</td><td style='text-align:center;font-weight:700'>树的展开高度大于所设最大高度，出现纵向滚动条</td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_maxLayerHeight1.png'></td><td><img src='../../resources/images/common/form/faOrgan/faOrgan_maxLayerHeight2.png'></td></tr></table>
+			]]></Description>
+			<Conditions>
+				<Condition>显示方式（showType）属性为popup时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="单击节点时展开" type="11" name="singleClickExpand"  tips="当为true时，单击树上的节点则展开，为false时，则需要双击才会展开，默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="单击节点时选中" type="11" name="singleClickCheck" export="true" tips="当为true时，单击树上的节点则选中，为false时，则需要双击才会选中，默认为false">
+			<Value>false</Value>
+			<Conditions>
+				<Condition>当控件类型是mList时不支持此属性。</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="双击节点时确定" type="11" name="dblClickReturn" export="true" tips="当为true时，双击树上的节点则返回，为false时，则需要点击确定按钮才会返回，默认为false">
+			<Value>false</Value>
+			<Conditions>
+				<Condition>当控件类型是sTree时支持此属性。</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否显示清空按钮" type="11" name="showClear" export="true"
+			tips="设置是否显示控件的清空按钮，默认为true">
+			<Value>true</Value>
+			<Description><![CDATA[
+				<p>设置是否显示控件的清空按钮，默认为true</p>
+				<table width=1><tr><td style='text-align:center;font-weight:700'>值：true</td><td style='text-align:center;font-weight:700'>值：false</td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_showclear_t.png'></td><td><img src='../../resources/images/common/form/faOrgan/faOrgan_showclear_f.png'></td></tr></table>
+			]]></Description>
+		</Property>
+		<Property cn="选择类型" type="3" name="organType" ct="[user,dept,corp,corp_dept,all]" tips="设置选择组织机构的类型，可选择user,dept,corp,corp_dept,all，默认为user">
+			<Value>user</Value>
+			<Description><![CDATA[
+				<p>设置选择组织机构的类型，可选择user,dept,corp,corp_dept,all，默认为user</p>
+				<table><tr><td style='font-weight:700'>user：</td><td >组织机构树上，只有人员节点可以选择</td></tr><tr><td style='font-weight:700'>dept：</td><td >组织机构树上，只有部门节点可以选择，且只显示到部门节点，人员节点不会显示</td></tr><tr><td style='font-weight:700'>corp：</td><td >组织机构树上，只有单位节点可以选择，且只显示到单位节点，部门和人员节点不会显示</td></tr><tr><td style='font-weight:700'>corp_dept：</td><td >组织机构树上，部门和单位节点都可以选择，且只显示到部门节点，人员节点不会显示</td></tr><tr><td style='font-weight:700'>all：</td><td >组织机构树上，所有节点都可以选择</td></tr></table>
+				<table width=1><tr><td style='text-align:center;font-weight:700'>选择类型：user</td><td style='text-align:center;font-weight:700'>选择类型：dept</td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_stree.png'></td><td><img src='../../resources/images/common/form/faOrgan/faOrgan_organType_dept.png'></td></tr><tr><td style='text-align:center;font-weight:700'>选择类型：corp</td><td style='text-align:center;font-weight:700'>选择类型：corp_dept</td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_organType_corp.png'></td><td><img src='../../resources/images/common/form/faOrgan/faOrgan_organType_corpdept.png'></td></tr><tr><td style='text-align:center;font-weight:700'>选择类型：all</td><td></td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_organType_all.png'></td><td></td></tr></table>
+			]]></Description>
+		</Property>
+    <Property cn="选择范围" type="3" name="organScope" tips="设置选择组织机构的范围，默认为all" ct="[all,cpCorp,csCorp,corp,csDept,dept]">
+        <Description><![CDATA[
+<p>all---:全部<br>
+	<p>cpCorp:本单位及上级单位---根:上级单位---过滤统计单位，子单位</p>
+	<p>csCorp:本单位及下级单位---根:本单位</p>
+<p>corp--:本单位-----------根:本单位----过滤子单位</p>
+<p>csDept:本部门及子部门-----根:本部门</p>
+<p>dept--:本部门-----------根:本部门----过滤子部门</p>
+        ]]></Description>
+      <Value>all</Value>
+    </Property>
+		<Property cn="是否显示无效节点" type="11" name="showInvalidNode" export="true" tips="设置选择组织机构时是否显示无效的组织机构节点。当此属性为true时，显示无效的组织机构节点，反之不显示。默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="根节点是否可选" type="11" name="rootSelect" tips="设置根节点是否可选，true：根节点可选，false：根节点不可选，默认为true">
+			<Value>true</Value>
+		</Property>
+		<Property cn="添加所有子节点" type="11" name="addAllSubNode" export="true" tips="当控件类型为mList时，此属性为true，则添加选中节点的所有子节点，此属性为false，则只添加选中节点的直接子节点。默认为false。">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>当控件类型为mList时，此属性为true，则添加选中节点的所有子节点，此属性为false，则只添加选中节点的直接子节点。默认为false</p>
+				<table width=1><tr><td style='text-align:center;font-weight:700'>添加所有子节点：true</td><td style='text-align:center;font-weight:700'>添加所有子节点：false</td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_addAllSubNode_true.png'></td><td><img src='../../resources/images/common/form/faOrgan/faOrgan_addAllSubNode_false.png'></td></tr></table>
+			]]></Description>
+			<Conditions>
+				<Condition>仅当控件类型为mList时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否可输入" type="11" name="editable" export="true" tips="设置控件是否可输入，当此属性为false时，选择框不能输入，只能进行选择操作，反之可输入；默认为false">
+			<Value>false</Value>
+		</Property>
+		<Property cn="输入必须为可选项" type="11" name="freeData" export="true" tips="当此属性为false时，可以输入任意内容；当此属性为true时，只能输入在可选范围内的内容，否则会提示输入错误">
+			<Value>false</Value>
+			<Description><![CDATA[
+	 			<p>当此属性为false时，可以输入任意内容；当此属性为true时，只能输入在可选范围内的内容，否则会提示输入错误</p>
+			]]></Description>
+			<Conditions>
+				<Condition>仅当控件类型的editable属性为true时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="输入最大长度" type="1" name="maxLength" mask="^\d{1,}$" tips="限制本控件可输入的最大长度">
+			<Value />
+			<Description><![CDATA[
+				<p>限制本控件可输入的最大长度</p>
+			]]></Description>
+			<Conditions>
+				<Condition>仅当“是否可输入（editable）”属性为true时有效</Condition>
+				<!-- <Condition>此属性仅限制用户输入的值，对于通过弹出窗口或弹出层进行选择值不进行限制</Condition>-->
+			</Conditions>
+		</Property>
+		<Property cn="拼音控件" type="11" name="enablePinyin" tips="设置是否启用拼音查询，默认为true可以通过拼音进行查询 ">
+			<Value>true</Value>
+			<Description><![CDATA[
+				<p>设置是否启用拼音查询，默认为true可以通过拼音进行查询，如果设置为false，则不能使用拼音进行查询，只能使用名称进行查询</p>
+			]]></Description>
+			<Conditions>
+				<Condition>目前只有人员可使用拼音进行查询，且需要人员表的拼音字段数据</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否启用下拉列表" type="11" name="selectList" group="下拉选择列表" export="true" tips="设置是否启用下拉选择列表">
+			<Value>true</Value>
+			<Description><![CDATA[
+	 			<p>设置是否启用下拉选择列表，默认为true。</p>
+	 			<p>当为true时，用户输入时，会根据用户的输入进行过滤，将过滤后的结果在下拉列表中显示</p>
+			]]></Description>
+			<Conditions>
+				<Condition>仅当控件类型的editable属性为true时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="下拉列表显示个数" type="1" name="maxSelectCount" group="下拉选择列表" export="true" tips="设置下拉列表中最多显示候选项的个数。">
+			<Value>20</Value>
+			<Description><![CDATA[
+	 			<p>设置下拉列表中最多显示的候选项的个数，默认为20。</p>
+	 			<p>当符合用户输入的候选项个数多于此属性设置时，将仅显示此属性设置的个数，多余的将会省略。</p>
+			]]></Description>
+			<Conditions>
+				<Condition>仅当控件类型的editable属性为true时有效</Condition>
+			</Conditions>
+		</Property>
+    <Property cn="值" type="1" name="value" tips="设置本组件的值">
+      <Value />
+    </Property>
+    <Property cn="值附带类型" type="11" name="valueWithType" export="true" tips="用于设置组织机构控件的值中是否附带类型">
+      <Value>false</Value>
+      <Description><![CDATA[
+          <p>用于设置组织机构控件的值中是否附带类，默认为false</p>
+          <br>
+          <p>设置为true时：  组织机构控件的值中将会附带组织机构类型，如下：</p>
+          <p>corp_-1;dept_356F5D00906DEE490B1E4CD937C9AE5C;user_1428ECF71A59E0AEFDDCF5E9FE140932</p>
+          <br>
+          <p>设置为false时：组织机构控件的值中仅有id，没有类型信息，如下：</p>
+          <p>-1;356F5D00906DEE490B1E4CD937C9AE5C;1428ECF71A59E0AEFDDCF5E9FE140932</p>
+      ]]></Description>
+      <Conditions>
+        <Condition>当此属性为true的时候，给控件设置值的时候，也应该是附带类型信息的值</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="显示值提示" type="11" name="showValueTip" export="true"  tips="鼠标移动到控件上，显示控件的值...">
+      <Value>false</Value>
+    </Property>
+    <Property cn="展开值" type="1" name="expandValue" tips="设置弹出时组织机构树上自动展开的节点">
+      <Value />
+    </Property>
+    <Property cn="输入提示" type="1" name="emptyText" export="true" tips="设置本控件的输入提示值，相当于ext的emptyText属性">
+      <Value />
+    </Property>
+     <Property cn="选择框样式" type="1" name="valueStyle" export="true" tips="设置选择框的样式">
+      <Value />
+    </Property>
+    <Property cn="选择框样式(只读)" type="1" name="valueStyleRead" export="true" tips="设置选择框(只读)的样式">
+      <Value />
+    </Property>
+    <Property cn="验证提示方式" type="3" name="validType" ct="[cooltip,title]" tips="设置验证的提示方式，默认为tip提示的方式，选择title则以html的title样式展现">
+      <Value>cooltip</Value>
+    </Property>
+    <Property cn="展现类型" type="3" name="displayType" ct="[inherit,editable,readOnly,display,disabled]" export="true" tips="当设置此属性为true时，整个表单组件都会为只读的">
+      <Value>inherit</Value>
+    </Property>
+    <Property cn="是否隐藏" type="11" name="hidden"  tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="隐藏方式" type="3" name="hideMode" ct="[display,visibility]" tips="设置组件的隐藏方式，相当于css的样式，可选display和visibility">
+      <Value>display</Value>
+    </Property>
+		<Property cn="级联选择" type="11" name="cascade"
+			tips="设置是否开启级联选择模式，true：开启级联选择，false不开启级联选择；默认为false">
+			<Value>false</Value>
+			<Description><![CDATA[
+				<p>设置是否开启级联选择模式，默认为false</p>
+				<p>true：  开启级联选择，当选择父节点时，其所有子节点都将自动被选择</p>
+				<p>false：开启级联选择，当选择父节点时，不会选择其子节点</p>
+			]]></Description>
+			<Conditions>
+				<Condition>控件类型（editor）属性为mTree时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="级联父节点" type="3" name="cascadeParent" ct="[allchild,singlechild,false]" tips="如果为allChild，则子节点全选时，父节点自动被选中...">
+			<Description><![CDATA[
+如果为allChild，则子节点全选时，父节点自动被选中,如果为singleChild，则有子节点被选中，父节点被选中，如果为false，没有子节点到父节点的级联效果     
+			]]>
+			</Description>
+			<Value>allchild</Value>
+			<Conditions>
+				<Condition>控件类型（editor）属性为mTree，且级联选择（cascade）属性为true时有效</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="加载全部" type="11" name="loadAll" tips="如果勾选“加载全部”，则一次次加载就会将所有子节点都load，而不是分别加载">
+	      <Description><![CDATA[如果勾选“加载全部”，则一次次加载就会将所有子节点都load，而不是分别加载]]></Description>
+	      <Value>false</Value>
+	    </Property>
+		<Property cn="显示级联checkbox" type="11" name="cascadeCheckbox"
+			tips="设置是否显示控制级联选择的checkbox，true：显示，false不显示；默认为false">
+			<Value>false</Value>
+			<Conditions>
+				<Condition>控件类型（editor）属性为mTree，且级联选择（cascade）属性为true时有效</Condition>
+			</Conditions>
+		</Property>
+    <Property cn="客户端" type="15" group="值改变时脚本" name="onChangeClient" tips="当本组件的值改变时触发的事件，客户端脚本">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="值改变时脚本" name="onChangeServer" tips="当本组件的值改变时触发的事件，服务器端脚本">
+      <Value />
+    </Property>
+    <Property cn="客户端" type="15" group="验证脚本" name="onValidClient" tips="表单控件的验证事件(客户端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="服务器端" type="14" group="验证脚本" name="onValidServer" tips="表单控件的验证事件(服务器端)，可在此事件中对表单中的控件进行自定义的验证，本验证可实现实时验证">
+      <Value />
+    </Property>
+    <Property cn="根节点规则" type="14" name="onRootFilter" sh="node,node.id,node.name" tips="加载组织机构树时，调用此事件确定组织机构树的根节点">
+      <Value />
+      <Description><![CDATA[
+          <p>加载组织机构树时，调用此事件确定组织机构树的根节点</p>
+          <p>对于每个组织机构节点都会回调此方法，直到某一节点调用后返回为true，此节点作为根节点</p>
+          <pre>
+	/**
+	 * 根节点规则 此方法用于回调
+	 * 
+	 * @param item
+	 *            控件对象
+	 * @param node
+	 *            组织机构的节点对象
+	 * @return 当返回值为true时，则表明本node节点为根节点
+	 */
+	public boolean faOrgan5b84f_onRootFilter(Item item, IBaseOrgan node) {
+		if(node.getName().equals("刑一庭")) {
+			return true;	//作为根节点
+		}
+		return false;
+	}
+          </pre>
+          <p>上面代码的结果如下，“刑一庭”作为根节点：</p>
+          <img src='../../resources/images/common/form/faOrgan/faOrgan_onrootfilter.png'>
+      ]]></Description>
+      <Conditions>
+          <Condition>当某一节点调用此方法返回true之后，其后面的节点将不会再回调此方法</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="过滤规则" type="14" name="onFilter" tips="加载组织机构树时，调用次事件对组织机构节点进行过滤">
+      <Value />
+      <Description><![CDATA[
+          <p>加载组织机构树时，调用次事件对组织机构节点进行过滤</p>
+          <p>对于每个组织机构节点都会回调此方法，当返回true时过滤，即不加载当前组织机构节点</p>
+          <pre>
+	/**
+	 * 过滤规则 此方法用于回调
+	 * 
+	 * @param item
+	 *            控件对象
+	 * @param node
+	 *            组织机构的节点对象
+	 * @return 当返回值为true时，则表明本node节点会过滤掉
+	 */
+	public boolean faOrgan5b84f_onFilter(Item item, IBaseOrgan node) {
+		if(node.getName().contains("二")){ //所有名称中包含“二”的节点将被过滤
+			return true;
+		}
+		return false;
+	}
+          </pre>
+          <p>上面代码的结果如下，所有名称中包含“二”的节点都被过滤掉了：</p>
+          <img src='../../resources/images/common/form/faOrgan/faOrgan_onfilter.png'>
+      ]]></Description>
+      <Conditions>
+          <Condition>当某一节点调用此方法返回true之后，其后面的节点将不会再回调此方法</Condition>
+      </Conditions>
+    </Property>
+    <Property cn="节点规则" type="14" name="onNodeRule" tips="通过此事件，可以在生成组织机构树时，设置树上节点的显示相关的属性">
+      <Value />
+      <Description><![CDATA[
+          <p>过此事件，可以在生成组织机构树时，设置树上节点的显示相关的属性</p>
+          <pre>
+	/**
+	 * 节点规则， 此方法用于回调
+	 * 
+	 * @param node
+	 *            组织机构树节点对象
+	 * @param item
+	 *            控件对象
+	 * @param node
+	 *            组织机构对象
+	 */
+	public void faOrgan5b84f_onNodeRule(TreeNode node, Item item, IBaseOrgan organ) {
+		if(node.getName().contains("二")){ //将名称中包含“二”的节点不显示选择框
+			node.setShowCheck(false);
+		}
+	}
+          </pre>
+          <p>上面代码的结果如下，所有名称中包含“二”的节点都没有选择框：</p>
+          <img src='../../resources/images/common/form/faOrgan/faOrgan_onnoderule.png'>
+      ]]></Description>
+    </Property>
+    <Property cn="下拉列表显示规则" type="14" name="onListDisplayRule" tips="通过此事件，可以设置下拉列表上候选项的属性">
+      <Value />
+      <Description><![CDATA[
+          <p>通过此事件，可以设置下拉列表上候选项的属性</p>
+          <pre>
+	/**
+	 * 节点规则， 此方法用于回调
+	 * 
+	 * @param node
+	 *            组织机构树节点对象
+	 * @param item
+	 *            控件对象
+	 * @param node
+	 *            组织机构对象
+	 */
+	public void faOrgan5b84f_onNodeRule(TreeNode node, Item item, IBaseOrgan organ) {
+		if(node.getName().contains("二")){ //将名称中包含“二”的节点不显示选择框
+			node.setShowCheck(false);
+		}
+	}
+          </pre>
+          <p>上面代码的结果如下，所有名称中包含“二”的节点都没有选择框：</p>
+          <img src='../../resources/images/common/form/faOrgan/faOrgan_onnoderule.png'>
+      ]]></Description>
+    </Property>
+    <Property cn="是否生成" type="11" name="show"  tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"
+		tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14" name="onShow"  tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+    <Methods>
+  	<Method name="getValue" return="string" tips="得到控件的值">
+  	</Method>
+  	<Method name="getValueText" return="string" tips="得到控件的显示值">
+  	</Method>
+  	<Method name="setValue" return="void" tips="设置控件的值">
+  	</Method>
+  	<Method name="reset" return="void" tips="恢复控件的初始值">
+  	</Method>
+  	<Method name="reload" return="void" tips="重新加载组织机构控件">
+  		<Description><![CDATA[
+  			<p>重新加载组织机构控件，支持自定义参数和回调函数</p>
+<pre>
+/********在按钮的点击时脚本中重新加载组织机构控件，增加rootname参数***************/
+
+	/**
+	 * onClickClient(button3e089)
+	 * 
+	 * @param  rc 系统提供的AJAX调用对象
+	 */
+	function button3e089_onClickClient (rc){
+		Artery.get("faOrgan5b84f").reload({
+			params : {	//重新加载时的参数
+				rootname:"刑一庭"
+			},
+			callback : function(){	//重新加载之后的回调函数
+				
+			}
+		});
+	}
+
+/********在组织机构树控件的“根节点规则”事件中，根据rootname参数确定根节点***************/
+	/**
+	 * 根节点规则 此方法用于回调
+	 * 
+	 * @param item
+	 *            控件对象
+	 * @param node
+	 *            组织机构的节点对象
+	 * @return 当返回值为true时，则表明本node节点为根节点
+	 */
+	public boolean faOrgan5b84f_onRootFilter(Item item, IBaseOrgan node) {
+		String rootName = ParamUtil.getString("rootname");
+		if(StringUtils.isBlank(rootName) || node.getName().equals(rootName)) {
+			return true;
+		}
+		return false;
+	}
+</pre>
+		代码执行结果如下：
+		<table><tr><td style='text-align:center;font-weight:700'>重新加载前</td><td style='text-align:center;font-weight:700'>重新加载后</td></tr><tr><td><img src='../../resources/images/common/form/faOrgan/faOrgan_reload1.png'></td><td><img src='../../resources/images/common/form/faOrgan/faOrgan_reload2.png'></td></tr></table>
+			
+  		]]></Description>
+  		<Parameters>
+  			<Param><![CDATA[
+  			value:json    json对象,格式为：{params:{}, clearParam:false, callback:function(){}}<br>
+  			　　　　　　params：自定义参数<br>
+  			　　　　　　clearParam：值为true将清空上次reload时参数；默认为false<br>
+  			　　　　　　callback：回调函数<br>
+  			]]></Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+<!-- 
+  	<Method name="expandNode" return="void" tips="根据所给节点的路径，展开组织机构树上的节点；支持选中展开的节点">
+  		<Description><![CDATA[
+  			<p>根据所给节点的路径，展开组织机构树上的节点；支持选中展开的节点</p>
+<pre>
+	var path = "corp_-1,dept_-1,dept_-3,user_-2";
+	Artery.get("faOrgan5b84f").expandNode(path,true);
+</pre>
+  		]]></Description>
+  		<Parameters>
+  			<Param>path    : String    从根节点到需要展开的节点的路径，如：</Param>
+  			<Param>checked : boolean   设置是否选中所展开的节点，true为选中节点</Param>
+  		</Parameters>
+  		<Return>void</Return>
+  	</Method>
+ -->
+  	<Method name="setOriginalValue" return="void" tips="设置控件的初始值">
+  	</Method>
+  	<Method name="setLabel" return="void" tips="设置控件的label的显示内容">
+  	</Method>
+  	<Method name="setLabelColor" return="void" tips="设置控件的label的显示内容的颜色">
+  	</Method>
+  	<Method name="setLabelStyle" return="void" tips="设置控件的label的样式">
+  	</Method>
+  	<Method name="setLabelCntStyle" return="void" tips="设置控件的label容器的样式">
+  	</Method>
+  	<Method name="setValueStyle" return="void" tips="设置控件的内容样式">
+  	</Method>
+  	<Method name="setRequired" return="void" tips="设置控件是否必填">
+  	</Method>
+  	<Method name="read" return="void" tips="设置控件为只读">
+  	</Method>
+  	<Method name="edit" return="void" tips="设置控件为可编辑">
+  	</Method>
+  	<Method name="disable" return="void" tips="设置控件无效">
+  	</Method>
+  	<Method name="enable" return="void" tips="设置控件有效">
+  	</Method>
+  	<Method name="hide" return="void" tips="隐藏本控件">
+  	</Method>
+  	<Method name="show" return="void" tips="显示本控件">
+  	</Method>
+  </Methods>
+  <JsFunctions>
+  	<JsFunction name="onChangeClient">
+/**
+ * 值改变时脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  oldValue 控件改变前的旧值
+ * @param  newValue 控件改变后的新值
+ */
+function {methodName} (rc, oldValue, newValue){
+	
+}
+  	</JsFunction>
+  	<JsFunction name="onValidClient">
+/**
+ * 验证脚本({itemid})
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ * @param  value 控件的值
+ */
+function {methodName} (rc, value){
+	
+}
+  	</JsFunction>
+  </JsFunctions>
+  <JavaFunctions>
+		<JavaFunction name="onChangeServer">
+<![CDATA[
+/**
+ * 值改变时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onValidServer">
+<![CDATA[
+/**
+ * 验证时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onRootFilter" imports="com.thunisoft.artery.module.organ.IBaseOrgan">
+<![CDATA[
+/**
+ * 根节点规则 此方法用于回调
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            组织机构的节点对象
+ * @return 当返回值为true时，则表明本node节点为根节点
+ */
+public boolean {methodName}(Item item, IBaseOrgan node) {
+	return true;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onFilter" imports="com.thunisoft.artery.module.organ.IBaseOrgan">
+<![CDATA[
+/**
+ * 过滤规则 此方法用于回调
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            组织机构的节点对象
+ * @return 当返回值为true时，则表明本node节点会过滤掉
+ */
+public boolean {methodName}(Item item, IBaseOrgan node) {
+	return false;
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onNodeRule" imports="com.thunisoft.artery.plugin.tree.TreeNode;com.thunisoft.artery.module.organ.IBaseOrgan">
+<![CDATA[
+/**
+ * 节点规则， 此方法用于回调
+ * 
+ * @param node
+ *            组织机构树节点对象
+ * @param item
+ *            控件对象
+ * @param node
+ *            组织机构对象
+ */
+public void {methodName}(TreeNode node, Item item, IBaseOrgan organ) {
+	
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onListDisplayRule" imports="java.util.Map;com.thunisoft.artery.module.organ.IBaseOrgan">
+<![CDATA[
+/**
+ * 下拉列表显示规则， 此方法用于回调
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            组织机构对象
+ */
+public Map<String, String> {methodName}(Item item, IBaseOrgan organ) {
+	Map<String, String> map = new HashMap<String, String>();
+	map.put("text", organ.getName());
+	map.put("value", organ.getId());
+	map.put("jp", "");
+	return map;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

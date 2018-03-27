@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e9bb584c0ad66e3b35901a74d885d23a</id>
+  <configTable>
+    <table table="T_Eg_Book" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._listArea_extendedPanel.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_listArea_extendedPanel.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form68866">
+      <id>form68866</id>
+      <Items>
+        <listArea sid="a81d44eb9543071b677b60726cc21f37">
+          <id>listArea1199c</id>
+          <ds>rs1</ds>
+          <Items>
+            <column sid="872513cddf7be9904fdb67d0acd31259">
+              <id>column93053</id>
+              <title>图书名称</title>
+              <Items>
+                <blankPanel sid="c4f98a3d2b26f410ca90c4adae3dac0b">
+                  <id>blankPanel891dd</id>
+                  <onMouseOverClient><![CDATA[blankPanel891dd_onMouseOverClient]]></onMouseOverClient>
+                  <onMouseOutClient><![CDATA[blankPanel891dd_onMouseOutClient]]></onMouseOutClient>
+                  <Items>
+                    <htmlArea sid="3e5759726c6fd17fde4b7bc3d4061aed">
+                      <id>htmlArea9f13b</id>
+                      <value>{rs1.C_NAME}</value>
+                    </htmlArea>
+                    <blankPanel sid="8f61362a69a719b18179f4f31be6b70e">
+                      <id>blankPanel89ced</id>
+                      <width>200</width>
+                      <height>100</height>
+                      <frame>true</frame>
+                      <border>true</border>
+                      <themeStyle>cooltip</themeStyle>
+                      <hidden>true</hidden>
+                      <Items>
+                        <htmlArea sid="5ac9280bdad2083883d881370deabb59">
+                          <id>htmlAreae25d0</id>
+                          <value>《{rs1.C_NAME}》由&lt;b&gt;{rs1.C_AUTH}&lt;/b&gt;于&lt;b&gt;2010年03月15日&lt;/b&gt;借出，距归还日期还有&lt;b&gt;3&lt;/b&gt;天。&lt;br&gt;&lt;br&gt;&lt;span style="color:#3A6BB6;font-weight:700;"&gt;查看借阅详情&gt;&gt;&lt;/span&gt;</value>
+                        </htmlArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </column>
+            <columnDate sid="c30c8d9c20dd832873c5fd6067fd1333">
+              <id>columnDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs1.D_PUBLISHER}</dataName>
+              <title>出版日期</title>
+            </columnDate>
+            <columnString sid="488f7864ab53df650ccbfa9f43ca9522">
+              <id>columnStringCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+            </columnString>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+  </dslist>
+</form>
+

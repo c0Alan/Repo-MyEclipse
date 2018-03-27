@@ -1,0 +1,2247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="form" sid="bodyPanel">
+  <Properties>
+    <Property name="name">
+      <Value />
+    </Property>
+    <Property name="padding-top">
+      <Value>0</Value>
+    </Property>
+    <Property name="padding-left">
+      <Value>0</Value>
+    </Property>
+    <Property name="padding-right">
+      <Value>0</Value>
+    </Property>
+    <Property name="padding-bottom">
+      <Value>0</Value>
+    </Property>
+    <Property name="background-color">
+      <Value>ffffff</Value>
+    </Property>
+    <Property name="text-align">
+      <Value>center</Value>
+    </Property>
+    <Property name="width">
+      <Value>100%</Value>
+    </Property>
+    <Property name="height">
+      <Value>100%</Value>
+    </Property>
+    <Property name="isMove">
+      <Value>false</Value>
+    </Property>
+    <Property name="isResize">
+      <Value>false</Value>
+    </Property>
+    <Property name="show">
+      <Value>true</Value>
+    </Property>
+    <Property name="onShow">
+      <Value />
+    </Property>
+  </Properties>
+  <Items>
+    <Item type="paramArea" sid="00001">
+      <Items>
+        <Item type="param" sid="00002">
+          <Properties>
+            <Property name="text">
+              <Value />
+            </Property>
+            <Property name="key">
+              <Value />
+            </Property>
+            <Property name="value">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+      </Items>
+    </Item>
+    <Item type="dataSource" sid="10001">
+      <Items>
+        <Item type="resultSet" sid="10002">
+          <Properties>
+            <Property name="name">
+              <Value>rs1</Value>
+            </Property>
+            <Property name="sql">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+      </Items>
+    </Item>
+    <Item type="header" sid="20001">
+      <Properties>
+        <Property name="text">
+          <Value>text</Value>
+        </Property>
+        <Property name="hidden">
+          <Value>false</Value>
+        </Property>
+        <Property name="show">
+          <Value>true</Value>
+        </Property>
+        <Property name="onShow">
+          <Value />
+        </Property>
+      </Properties>
+    </Item>
+    <Item type="topbar" sid="30001">
+      <Properties>
+        <Property name="show">
+          <Value>true</Value>
+        </Property>
+        <Property name="onShow">
+          <Value />
+        </Property>
+      </Properties>
+      <Items>
+        <Item type="tbMenu" sid="30002_1">
+          <Properties>
+            <Property name="text">
+              <Value>Menu Button</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+          <Items>
+            <Item type="tbMenuItem" sid="30002_1_1">
+              <Properties>
+                <Property name="text">
+                  <Value>Button1</Value>
+                </Property>
+                <Property name="disabled">
+                  <Value>true</Value>
+                </Property>
+                <Property name="hidden">
+                  <Value>false</Value>
+                </Property>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+                <Property name="onClick">
+                  <Value />
+                </Property>
+                <Property name="iconId">
+                  <Value />
+                </Property>
+                <Property name="showType">
+                  <Value>normal</Value>
+                </Property>
+                <Property name="checked">
+                  <Value>false</Value>
+                </Property>
+                <Property name="group">
+                  <Value />
+                </Property>
+              </Properties>
+            </Item>
+            <Item type="tbMenuItem" sid="30002_1_2">
+              <Properties>
+                <Property name="text">
+                  <Value>Button2</Value>
+                </Property>
+                <Property name="disabled">
+                  <Value>false</Value>
+                </Property>
+                <Property name="hidden">
+                  <Value>false</Value>
+                </Property>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+                <Property name="onClick">
+                  <Value />
+                </Property>
+                <Property name="iconId">
+                  <Value>F0DD4706E4092BAAFD9B919CDDBC2CC2</Value>
+                </Property>
+                <Property name="showType">
+                  <Value>normal</Value>
+                </Property>
+                <Property name="checked">
+                  <Value>false</Value>
+                </Property>
+                <Property name="group">
+                  <Value />
+                </Property>
+              </Properties>
+            </Item>
+            <Item type="tbSeparator" sid="30002_1_3">
+              <Properties>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+              </Properties>
+            </Item>
+            <Item type="tbMenuItem" sid="30002_1_4">
+              <Properties>
+                <Property name="text">
+                  <Value>Button3</Value>
+                </Property>
+                <Property name="disabled">
+                  <Value>false</Value>
+                </Property>
+                <Property name="hidden">
+                  <Value>false</Value>
+                </Property>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+                <Property name="onClick">
+                  <Value />
+                </Property>
+                <Property name="iconId">
+                  <Value />
+                </Property>
+                <Property name="showType">
+                  <Value>checkbox</Value>
+                </Property>
+                <Property name="checked">
+                  <Value>false</Value>
+                </Property>
+                <Property name="group">
+                  <Value />
+                </Property>
+              </Properties>
+            </Item>
+            <Item type="tbMenu" sid="30002_1_6">
+              <Properties>
+                <Property name="text">
+                  <Value>Sub Menu</Value>
+                </Property>
+                <Property name="disabled">
+                  <Value>false</Value>
+                </Property>
+                <Property name="hidden">
+                  <Value>false</Value>
+                </Property>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+              </Properties>
+              <Items>
+                <Item type="tbMenuItem" sid="30002_1_6_1">
+                  <Properties>
+                    <Property name="text">
+                      <Value>Button4</Value>
+                    </Property>
+                    <Property name="disabled">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="hidden">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="show">
+                      <Value>true</Value>
+                    </Property>
+                    <Property name="onShow">
+                      <Value />
+                    </Property>
+                    <Property name="onClick">
+                      <Value />
+                    </Property>
+                    <Property name="iconId">
+                      <Value />
+                    </Property>
+                    <Property name="showType">
+                      <Value>radio</Value>
+                    </Property>
+                    <Property name="checked">
+                      <Value>true</Value>
+                    </Property>
+                    <Property name="group">
+                      <Value>group1</Value>
+                    </Property>
+                  </Properties>
+                </Item>
+                <Item type="tbMenuItem" sid="30002_1_6_2">
+                  <Properties>
+                    <Property name="text">
+                      <Value>Button5</Value>
+                    </Property>
+                    <Property name="disabled">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="hidden">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="show">
+                      <Value>true</Value>
+                    </Property>
+                    <Property name="onShow">
+                      <Value />
+                    </Property>
+                    <Property name="onClick">
+                      <Value />
+                    </Property>
+                    <Property name="iconId">
+                      <Value />
+                    </Property>
+                    <Property name="showType">
+                      <Value>radio</Value>
+                    </Property>
+                    <Property name="checked">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="group">
+                      <Value>group1</Value>
+                    </Property>
+                  </Properties>
+                </Item>
+              </Items>
+            </Item>
+          </Items>
+        </Item>
+        <Item type="tbSeparator" sid="30003">
+          <Properties>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbButton" sid="30002">
+          <Properties>
+            <Property name="text">
+              <Value>Button1</Value>
+            </Property>
+            <Property name="tooltip">
+              <Value>This is a button!</Value>
+            </Property>
+            <Property name="iconId">
+              <Value>F0DD4706E4092BAAFD9B919CDDBC2CC2</Value>
+            </Property>
+            <Property name="onlyShowIcon">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onClick">
+              <Value />
+            </Property>
+            <Property name="enableToggle">
+              <Value>false</Value>
+            </Property>
+            <Property name="toggleGroup">
+              <Value />
+            </Property>
+            <Property name="pressed">
+              <Value>false</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbSeparator" sid="30003_s1">
+          <Properties>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbButton" sid="300021">
+          <Properties>
+            <Property name="text">
+              <Value>Button5</Value>
+            </Property>
+            <Property name="tooltip">
+              <Value>This is a button!</Value>
+            </Property>
+            <Property name="iconId">
+              <Value />
+            </Property>
+            <Property name="onlyShowIcon">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onClick">
+              <Value />
+            </Property>
+            <Property name="enableToggle">
+              <Value>true</Value>
+            </Property>
+            <Property name="toggleGroup">
+              <Value>tgroup1</Value>
+            </Property>
+            <Property name="pressed">
+              <Value>true</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbButton" sid="300022">
+          <Properties>
+            <Property name="text">
+              <Value>Button6</Value>
+            </Property>
+            <Property name="tooltip">
+              <Value />
+            </Property>
+            <Property name="iconId">
+              <Value />
+            </Property>
+            <Property name="onlyShowIcon">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onClick">
+              <Value />
+            </Property>
+            <Property name="enableToggle">
+              <Value>true</Value>
+            </Property>
+            <Property name="toggleGroup">
+              <Value>tgroup1</Value>
+            </Property>
+            <Property name="pressed">
+              <Value>false</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbSpacer" sid="30004">
+          <Properties>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbSeparator" sid="30005">
+          <Properties>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbFill" sid="30006">
+          <Properties>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbText" sid="30007">
+          <Properties>
+            <Property name="text">
+              <Value>这是文本字符串</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbButton" sid="30008">
+          <Properties>
+            <Property name="text">
+              <Value>Button2</Value>
+            </Property>
+            <Property name="iconId">
+              <Value />
+            </Property>
+            <Property name="onlyShowIcon">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>true</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onClick">
+              <Value />
+            </Property>
+            <Property name="tooltip">
+              <Value>This is a button!</Value>
+            </Property>
+            <Property name="enableToggle">
+              <Value>false</Value>
+            </Property>
+            <Property name="toggleGroup">
+              <Value />
+            </Property>
+            <Property name="pressed">
+              <Value>false</Value>
+            </Property>
+          </Properties>
+        </Item>
+      </Items>
+    </Item>
+    <Item type="htmlArea" sid="40001">
+      <Properties>
+        <Property name="value">
+          <Value>&lt;span style="color:red;"&gt; 这是Html代码 &lt;/span&gt;</Value>
+        </Property>
+        <Property name="show">
+          <Value>false</Value>
+        </Property>
+        <Property name="onShow">
+          <Value />
+        </Property>
+      </Properties>
+    </Item>
+    <Item type="formArea" sid="50001">
+      <Properties>
+        <Property name="itemId">
+          <Value />
+        </Property>
+        <Property name="colNum">
+          <Value>2</Value>
+        </Property>
+        <Property name="labelAlign">
+          <Value>left</Value>
+        </Property>
+        <Property name="labelWidth">
+          <Value>120</Value>
+        </Property>
+        <Property name="width">
+          <Value>90%</Value>
+        </Property>
+        <Property name="height">
+          <Value />
+        </Property>
+        <Property name="formBorder">
+          <Value>false</Value>
+        </Property>
+        <Property name="border">
+          <Value>false</Value>
+        </Property>
+        <Property name="borderWidth">
+          <Value>1</Value>
+        </Property>
+        <Property name="borderColor">
+          <Value>#c0c0c0</Value>
+        </Property>
+        <Property name="borderStyle">
+          <Value>solid</Value>
+        </Property>
+        <Property name="cellpadding">
+          <Value>5</Value>
+        </Property>
+        <Property name="bodyStyle">
+          <Value />
+        </Property>
+        <Property name="groupType">
+          <Value>panel</Value>
+        </Property>
+        <Property name="tabPosition">
+          <Value>top</Value>
+        </Property>
+        <Property name="readOnly">
+          <Value>false</Value>
+        </Property>
+        <Property name="show">
+          <Value>true</Value>
+        </Property>
+        <Property name="onShow">
+          <Value />
+        </Property>
+      </Properties>
+      <Items>
+        <Item type="faString" sid="n50001">
+          <Properties>
+            <Property name="editor">
+              <Value>input</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>姓名</Value>
+            </Property>
+            <Property name="value">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faString" sid="n50002">
+          <Properties>
+            <Property name="editor">
+              <Value>password</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>密码</Value>
+            </Property>
+            <Property name="value">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faDate" sid="n500078">
+          <Properties>
+            <Property name="editor">
+              <Value>date</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>时间</Value>
+            </Property>
+            <Property name="value">
+              <Value>2008-06-26 14:47:32</Value>
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value />
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="showTime">
+              <Value>true</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faNumeric" sid="n5000dd">
+          <Properties>
+            <Property name="editor">
+              <Value>input</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>年龄</Value>
+            </Property>
+            <Property name="value">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faBinary" sid="n5dd0002">
+          <Properties>
+            <Property name="editor">
+              <Value>image</Value>
+            </Property>
+            <Property name="imgWidth">
+              <Value />
+            </Property>
+            <Property name="imgHeight">
+              <Value />
+            </Property>
+            <Property name="imgStyle">
+              <Value />
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>图片</Value>
+            </Property>
+            <Property name="value">
+              <Value>http://172.16.1.3:8080/bbs/images/avatars/14.gif</Value>
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faString" sid="n50002">
+          <Properties>
+            <Property name="editor">
+              <Value>textarea</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>说明</Value>
+            </Property>
+            <Property name="value">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value>100</Value>
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faString" sid="n50003">
+          <Properties>
+            <Property name="editor">
+              <Value>richedit</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>描述</Value>
+            </Property>
+            <Property name="value">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>2</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value>50</Value>
+            </Property>
+            <Property name="readOnly">
+              <Value>true</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>false</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faCode" sid="nddll5d00s02d">
+          <Properties>
+            <Property name="editor">
+              <Value>sSelect</Value>
+            </Property>
+            <Property name="codeType">
+              <Value>2</Value>
+            </Property>
+            <Property name="ajaxLoad">
+              <Value>false</Value>
+            </Property>
+            <Property name="enablePinyin">
+              <Value>true</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>单选,拼音</Value>
+            </Property>
+            <Property name="value">
+              <Value>5</Value>
+            </Property>
+            <Property name="valueText">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="filter">
+              <Value />
+            </Property>
+            <Property name="checkCode">
+              <Value>1</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faCode" sid="nddll50002">
+          <Properties>
+            <Property name="editor">
+              <Value>sSelect</Value>
+            </Property>
+            <Property name="codeType">
+              <Value>2</Value>
+            </Property>
+            <Property name="ajaxLoad">
+              <Value>true</Value>
+            </Property>
+            <Property name="enablePinyin">
+              <Value>true</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>单选,异步,拼音</Value>
+            </Property>
+            <Property name="value">
+              <Value>5</Value>
+            </Property>
+            <Property name="valueText">
+              <Value>日期选择控件</Value>
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="filter">
+              <Value />
+            </Property>
+            <Property name="checkCode">
+              <Value>1</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faCode" sid="nddll500s02d">
+          <Properties>
+            <Property name="editor">
+              <Value>mSelect</Value>
+            </Property>
+            <Property name="codeType">
+              <Value>2</Value>
+            </Property>
+            <Property name="ajaxLoad">
+              <Value>false</Value>
+            </Property>
+            <Property name="enablePinyin">
+              <Value>true</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>多选,拼音</Value>
+            </Property>
+            <Property name="value">
+              <Value />
+            </Property>
+            <Property name="valueText">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="filter">
+              <Value />
+            </Property>
+            <Property name="checkCode">
+              <Value>1</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faCode" sid="ndk02d">
+          <Properties>
+            <Property name="editor">
+              <Value>mSelect</Value>
+            </Property>
+            <Property name="codeType">
+              <Value>2</Value>
+            </Property>
+            <Property name="checkCode">
+              <Value />
+            </Property>
+            <Property name="ajaxLoad">
+              <Value>true</Value>
+            </Property>
+            <Property name="enablePinyin">
+              <Value>true</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>多选,异步,拼音</Value>
+            </Property>
+            <Property name="value">
+              <Value>1</Value>
+            </Property>
+            <Property name="valueText">
+              <Value>普通输入框</Value>
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="filter">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faOrgan" sid="50ddaf2">
+          <Properties>
+            <Property name="editor">
+              <Value>sTree</Value>
+            </Property>
+            <Property name="organType">
+              <Value>dept</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>部门,单选</Value>
+            </Property>
+            <Property name="value">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="filter">
+              <Value />
+            </Property>
+            <Property name="valueText">
+              <Value />
+            </Property>
+            <Property name="valuePath">
+              <Value />
+            </Property>
+            <Property name="enablePinyin">
+              <Value>true</Value>
+            </Property>
+            <Property name="valuePinyin">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faOrgan" sid="5000sdf2">
+          <Properties>
+            <Property name="editor">
+              <Value>sTree</Value>
+            </Property>
+            <Property name="organType">
+              <Value>user</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>人员,单选,连续查询</Value>
+            </Property>
+            <Property name="value">
+              <Value>100000000000002</Value>
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="filter">
+              <Value />
+            </Property>
+            <Property name="valueText">
+              <Value>李四</Value>
+            </Property>
+            <Property name="valuePath">
+              <Value>100000000000002,100000003,100000001,10000001,</Value>
+            </Property>
+            <Property name="enablePinyin">
+              <Value>true</Value>
+            </Property>
+            <Property name="valuePinyin">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faOrgan" sid="5srrf2">
+          <Properties>
+            <Property name="editor">
+              <Value>mTree</Value>
+            </Property>
+            <Property name="organType">
+              <Value>dept</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>部门,多选</Value>
+            </Property>
+            <Property name="value">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="filter">
+              <Value />
+            </Property>
+            <Property name="valueText">
+              <Value />
+            </Property>
+            <Property name="valuePath">
+              <Value />
+            </Property>
+            <Property name="enablePinyin">
+              <Value>true</Value>
+            </Property>
+            <Property name="valuePinyin">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faOrgan" sid="5ss0sdf2">
+          <Properties>
+            <Property name="editor">
+              <Value>mTree</Value>
+            </Property>
+            <Property name="organType">
+              <Value>user</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>人员,多选,连续查询</Value>
+            </Property>
+            <Property name="value">
+              <Value>100000000000002</Value>
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="filter">
+              <Value />
+            </Property>
+            <Property name="valueText">
+              <Value>李四</Value>
+            </Property>
+            <Property name="valuePath">
+              <Value />
+            </Property>
+            <Property name="enablePinyin">
+              <Value>true</Value>
+            </Property>
+            <Property name="valuePinyin">
+              <Value>ls</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="faCode" sid="nddddll500s02d">
+          <Properties>
+            <Property name="editor">
+              <Value>sCheckbox</Value>
+            </Property>
+            <Property name="codeType">
+              <Value>1</Value>
+            </Property>
+            <Property name="checkCode">
+              <Value>1</Value>
+            </Property>
+            <Property name="ajaxLoad">
+              <Value>false</Value>
+            </Property>
+            <Property name="itemId">
+              <Value />
+            </Property>
+            <Property name="label">
+              <Value>二值代码</Value>
+            </Property>
+            <Property name="value">
+              <Value>1</Value>
+            </Property>
+            <Property name="valueText">
+              <Value />
+            </Property>
+            <Property name="colSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="rowSpan">
+              <Value>1</Value>
+            </Property>
+            <Property name="width">
+              <Value>100%</Value>
+            </Property>
+            <Property name="height">
+              <Value />
+            </Property>
+            <Property name="readOnly">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="hideMode">
+              <Value>display</Value>
+            </Property>
+            <Property name="labelColor">
+              <Value>000000</Value>
+            </Property>
+            <Property name="labelStyle">
+              <Value />
+            </Property>
+            <Property name="valueStyle">
+              <Value />
+            </Property>
+            <Property name="groupName">
+              <Value>Group One</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onChange">
+              <Value />
+            </Property>
+            <Property name="validRule">
+              <Value />
+            </Property>
+            <Property name="filter">
+              <Value />
+            </Property>
+            <Property name="enablePinyin">
+              <Value>false</Value>
+            </Property>
+          </Properties>
+        </Item>
+      </Items>
+    </Item>
+    <Item type="buttonArea" sid="5d0003">
+      <Properties>
+        <Property name="colSpan">
+          <Value>1</Value>
+        </Property>
+        <Property name="rowSpan">
+          <Value>1</Value>
+        </Property>
+        <Property name="align">
+          <Value>left</Value>
+        </Property>
+        <Property name="show">
+          <Value>false</Value>
+        </Property>
+        <Property name="onShow">
+          <Value />
+        </Property>
+        <Property name="width">
+          <Value>90%</Value>
+        </Property>
+      </Properties>
+      <Items>
+        <Item type="button" sid="50d004">
+          <Properties>
+            <Property name="onClick">
+              <Value />
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="text">
+              <Value>新建</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="button" sid="5d0005">
+          <Properties>
+            <Property name="onClick">
+              <Value />
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="text">
+              <Value>更新</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>true</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+          </Properties>
+        </Item>
+      </Items>
+    </Item>
+    <Item type="bottomBar" sid="90001">
+      <Properties>
+        <Property name="show">
+          <Value>true</Value>
+        </Property>
+        <Property name="onShow">
+          <Value />
+        </Property>
+      </Properties>
+      <Items>
+        <Item type="tbMenu" sid="90002_1">
+          <Properties>
+            <Property name="text">
+              <Value>Bottom Menu</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+          <Items>
+            <Item type="tbMenuItem" sid="90002_1_1">
+              <Properties>
+                <Property name="text">
+                  <Value>Button1</Value>
+                </Property>
+                <Property name="disabled">
+                  <Value>true</Value>
+                </Property>
+                <Property name="hidden">
+                  <Value>false</Value>
+                </Property>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+                <Property name="onClick">
+                  <Value />
+                </Property>
+                <Property name="iconId">
+                  <Value />
+                </Property>
+                <Property name="showType">
+                  <Value>normal</Value>
+                </Property>
+                <Property name="checked">
+                  <Value>false</Value>
+                </Property>
+                <Property name="group">
+                  <Value />
+                </Property>
+              </Properties>
+            </Item>
+            <Item type="tbMenuItem" sid="90002_1_2">
+              <Properties>
+                <Property name="text">
+                  <Value>Button2</Value>
+                </Property>
+                <Property name="disabled">
+                  <Value>false</Value>
+                </Property>
+                <Property name="hidden">
+                  <Value>false</Value>
+                </Property>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+                <Property name="onClick">
+                  <Value />
+                </Property>
+                <Property name="iconId">
+                  <Value />
+                </Property>
+                <Property name="showType">
+                  <Value>normal</Value>
+                </Property>
+                <Property name="checked">
+                  <Value>false</Value>
+                </Property>
+                <Property name="group">
+                  <Value />
+                </Property>
+              </Properties>
+            </Item>
+            <Item type="tbSeparator" sid="90002_1_3">
+              <Properties>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+              </Properties>
+            </Item>
+            <Item type="tbMenuItem" sid="90002_1_4">
+              <Properties>
+                <Property name="text">
+                  <Value>Button3</Value>
+                </Property>
+                <Property name="disabled">
+                  <Value>false</Value>
+                </Property>
+                <Property name="hidden">
+                  <Value>false</Value>
+                </Property>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+                <Property name="onClick">
+                  <Value />
+                </Property>
+                <Property name="iconId">
+                  <Value />
+                </Property>
+                <Property name="showType">
+                  <Value>normal</Value>
+                </Property>
+                <Property name="checked">
+                  <Value>false</Value>
+                </Property>
+                <Property name="group">
+                  <Value />
+                </Property>
+              </Properties>
+            </Item>
+            <Item type="tbMenu" sid="90002_1_6">
+              <Properties>
+                <Property name="text">
+                  <Value>Sub Menu</Value>
+                </Property>
+                <Property name="disabled">
+                  <Value>false</Value>
+                </Property>
+                <Property name="hidden">
+                  <Value>false</Value>
+                </Property>
+                <Property name="show">
+                  <Value>true</Value>
+                </Property>
+                <Property name="onShow">
+                  <Value />
+                </Property>
+              </Properties>
+              <Items>
+                <Item type="tbMenuItem" sid="90002_1_6_1">
+                  <Properties>
+                    <Property name="text">
+                      <Value>Button4</Value>
+                    </Property>
+                    <Property name="disabled">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="hidden">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="show">
+                      <Value>true</Value>
+                    </Property>
+                    <Property name="onShow">
+                      <Value />
+                    </Property>
+                    <Property name="onClick">
+                      <Value />
+                    </Property>
+                    <Property name="iconId">
+                      <Value />
+                    </Property>
+                    <Property name="showType">
+                      <Value>normal</Value>
+                    </Property>
+                    <Property name="checked">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="group">
+                      <Value />
+                    </Property>
+                  </Properties>
+                </Item>
+                <Item type="tbMenuItem" sid="90002_1_6_2">
+                  <Properties>
+                    <Property name="text">
+                      <Value>Button5</Value>
+                    </Property>
+                    <Property name="disabled">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="hidden">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="show">
+                      <Value>true</Value>
+                    </Property>
+                    <Property name="onShow">
+                      <Value />
+                    </Property>
+                    <Property name="onClick">
+                      <Value />
+                    </Property>
+                    <Property name="iconId">
+                      <Value />
+                    </Property>
+                    <Property name="showType">
+                      <Value>normal</Value>
+                    </Property>
+                    <Property name="checked">
+                      <Value>false</Value>
+                    </Property>
+                    <Property name="group">
+                      <Value />
+                    </Property>
+                  </Properties>
+                </Item>
+              </Items>
+            </Item>
+          </Items>
+        </Item>
+        <Item type="tbSeparator" sid="90003">
+          <Properties>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbButton" sid="90002">
+          <Properties>
+            <Property name="text">
+              <Value>Button1</Value>
+            </Property>
+            <Property name="tooltip">
+              <Value>This is a icon button!</Value>
+            </Property>
+            <Property name="iconId">
+              <Value>F0DD4706E4092BAAFD9B919CDDBC2CC2</Value>
+            </Property>
+            <Property name="onlyShowIcon">
+              <Value>true</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>false</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onClick">
+              <Value />
+            </Property>
+            <Property name="enableToggle">
+              <Value>false</Value>
+            </Property>
+            <Property name="toggleGroup">
+              <Value />
+            </Property>
+            <Property name="pressed">
+              <Value>false</Value>
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbSeparator" sid="90005">
+          <Properties>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbFill" sid="90006">
+          <Properties>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbText" sid="90007">
+          <Properties>
+            <Property name="text">
+              <Value>这是文本字符串</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+          </Properties>
+        </Item>
+        <Item type="tbButton" sid="90008">
+          <Properties>
+            <Property name="text">
+              <Value>Button2</Value>
+            </Property>
+            <Property name="iconId">
+              <Value />
+            </Property>
+            <Property name="onlyShowIcon">
+              <Value>false</Value>
+            </Property>
+            <Property name="disabled">
+              <Value>true</Value>
+            </Property>
+            <Property name="hidden">
+              <Value>false</Value>
+            </Property>
+            <Property name="show">
+              <Value>true</Value>
+            </Property>
+            <Property name="onShow">
+              <Value />
+            </Property>
+            <Property name="onClick">
+              <Value />
+            </Property>
+            <Property name="tooltip">
+              <Value>This is a button!</Value>
+            </Property>
+            <Property name="enableToggle">
+              <Value>false</Value>
+            </Property>
+            <Property name="toggleGroup">
+              <Value />
+            </Property>
+            <Property name="pressed">
+              <Value>false</Value>
+            </Property>
+          </Properties>
+        </Item>
+      </Items>
+    </Item>
+  </Items>
+</Item>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3458f871ae41fe77047c341dee5964ce</id>
+  <defaultLocation>true</defaultLocation>
+  <javaLocation>arteryServer.jck.complib.Xjbd.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/complib/Xjbd.js</jsLocation>
+  <needLogin>false</needLogin>
+  <visitRight />
+  <descript />
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="forme39de">
+      <id>forme39de</id>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

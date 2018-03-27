@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="linkItem" cn="链接控件" jsType="artery-base"
+	icon="linkItem.gif" iconNew="linkItemNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-11-16</CreateTime>
+		<Describe>
+		<![CDATA[
+			通过本控件，可以把另外一个表单中的控件链接到本表单展现，即在同一个页面显示出来。<br>
+			所以如果在一个页面要显示多个表单中的内容，一般有两种方式：
+			<ul class="x-ul">
+				<li class="x-li">1.通过iframe链接到另外一个表单</li>
+				<li class="x-li">2.通过链接控件把另外一个表单中的元素链接过来</li>
+			</ul>
+			第一种方式会生成一个iframe，当一个页面的iframe很多的时候，性能就会有问题，并且iframe会链接到整个表单，不能是某一个控件
+			第二种方式不会生成ifame，并且可以链接到控件级别，但会增加程序的复杂度。
+			这两种方式各有优缺点，要结合具体环境来选择。
+		]]>
+		</Describe>
+	</Info>
+	<Parents>
+	</Parents>
+	<Children/>
+	<Class>com.thunisoft.artery.plugin.area.LinkItem
+	</Class>
+	<JsFile>
+		<File>linkItem.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apLinkItem</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="链接到控件" type="19" name="linkItem"
+			tips="设置链接到的控件，相当于把其它表单中的控件在本表单展现">
+			<Value />
+			<Description>
+				设置链接到的控件，相当于把其它表单中的控件在本表单展现
+			</Description>
+			<Conditions>
+				<Condition>目前只能链接到另外一个表单中的除顶层元素”表单模板“外的控件</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="改变控件id" type="11" name="changeId"
+			tips="当设置为true时，链接到的控件的id会改变，否则不变">
+			<Value>false</Value>
+			<Description>
+				设置为true时，链接到的控件的id会改变，否则不变
+			</Description>
+			<Conditions>
+				<Condition>如果一个页面需要多次链接同一个控件，请设置为true，否则id会冲突</Condition>
+			</Conditions>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+</Item>
+

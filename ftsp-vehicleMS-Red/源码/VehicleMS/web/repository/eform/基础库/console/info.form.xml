@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d0b5f2e7c7e16ede13ba81953f0db445</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.jck.console.Info.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/console/Info.js</jsLocation>
+  <cssLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form1f0b0">
+      <id>form1f0b0</id>
+      <bodyStyle>padding:4px;</bodyStyle>
+      <Items>
+        <blankPanel sid="fc734a00f6d2e0f0e9a08a8ebb9e1437">
+          <id>blankPanel8263d</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <bodyStyle>padding:5px;padding-left:20px;</bodyStyle>
+          <themeStyle>unis</themeStyle>
+          <Items>
+            <tableLayout sid="dfa1f1ecfb056b22cf64ef976ff8cb87">
+              <id>tableLayoutd7076</id>
+              <colWidths>560</colWidths>
+              <Items>
+                <blankPanel sid="cc537fc5394ea4d30a63c83f93fd3bb7">
+                  <id>blankPanel10d58</id>
+                  <synTabStyle>vertical-align:top;</synTabStyle>
+                  <Items>
+                    <tableLayout sid="edd6f070c74da7a81d32416114b9b7df">
+                      <id>tableLayout4fc58</id>
+                      <colWidths>100</colWidths>
+                      <cellpadding>5</cellpadding>
+                      <Items>
+                        <blankPanel sid="11df9d08bc55acea706f18a30b2f9a46">
+                          <id>blankPanel8c713</id>
+                          <Items>
+                            <imageArea sid="7f14574182713c00f9bf0052e496fcfb">
+                              <id>imageAreae0cdf</id>
+                              <icon>/artery/arteryImage/sys/info/01.gif</icon>
+                            </imageArea>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="efebc3c01442514b6ee78304cb94e11c">
+                          <id>blankPanel70697</id>
+                          <Items>
+                            <htmlArea sid="83d344d8352da54632430cfc66059a98">
+                              <id>htmlArea3674c</id>
+                              <value>强大的电子表单</value>
+                              <style>font-weight:700;</style>
+                              <className>bg-li</className>
+                            </htmlArea>
+                            <htmlArea sid="60f05f7363fbd70fd33699b4202dabd9">
+                              <id>htmlArea0c52d</id>
+                              <value>各种页面展现组件已经封装为控件，通过组合控件来快速生成页面</value>
+                              <className>bg-li</className>
+                            </htmlArea>
+                            <htmlArea sid="927a989bff5149d1c47581054a36c424">
+                              <id>htmlAreaa3c8c</id>
+                              <value>在摆放到页面上的各种控件上编写事件脚本，类似VB或Delphi的开发方式</value>
+                              <className>bg-li</className>
+                            </htmlArea>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="a4c1e8bc3c2fb54fdc2cb046f21655d0">
+                          <id>blankPanel58e99</id>
+                          <Items>
+                            <imageArea sid="b6cee85636382ca501c3a1e8c9ed6485">
+                              <id>imageArea2dc58</id>
+                              <icon>/artery/arteryImage/sys/info/02.gif</icon>
+                            </imageArea>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="ad646919af82fcd7fbfd8175e2d53e0d">
+                          <id>blankPanelb487c</id>
+                          <Items>
+                            <htmlArea sid="d0a31c6e67545b0ec56c8bb00210e51c">
+                              <id>htmlArea91584</id>
+                              <value>完备的元数据管理</value>
+                              <style>font-weight:700;</style>
+                              <className>bg-li</className>
+                            </htmlArea>
+                            <htmlArea sid="8233e0847e340fd1d94b9d73e6763984">
+                              <id>htmlAreae8ca3</id>
+                              <value>提供了数据库结构到平台的业务映射功能，包括数据字典管理，代码管理等</value>
+                              <className>bg-li</className>
+                            </htmlArea>
+                            <htmlArea sid="c05a9bf2f48d79b8b2b517d508a1324d">
+                              <id>htmlAreac435c</id>
+                              <value>提供了系统运行的运维管理，调度管理，主题管理等维护功能</value>
+                              <className>bg-li</className>
+                            </htmlArea>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="7204197198ca7bc071d4bfb8c4ff8934">
+                          <id>blankPanelfd5b8</id>
+                          <Items>
+                            <imageArea sid="cc5cbac05523953369616a276ff45ef7">
+                              <id>imageAreacaf29</id>
+                              <icon>/artery/arteryImage/sys/info/03.gif</icon>
+                            </imageArea>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="41374b9ed58cf8f57c158066fda055fa">
+                          <id>blankPanelfa824</id>
+                          <Items>
+                            <htmlArea sid="3562aa0188819845c4cda69b9d40af33">
+                              <id>htmlArea3d176</id>
+                              <value>可视化报表</value>
+                              <style>font-weight:700;</style>
+                              <className>bg-li</className>
+                            </htmlArea>
+                            <htmlArea sid="c67a3ebc948973a131da5ddb7e8811fc">
+                              <id>htmlAreac31ae</id>
+                              <value>报表可视化制作，提供基于单元格的制作方式</value>
+                              <className>bg-li</className>
+                            </htmlArea>
+                            <htmlArea sid="9ca63b711d7d3feab1d2ad84b97d6d80">
+                              <id>htmlAreac1192</id>
+                              <value>提高报表制作效率、保证报表格式的精确性</value>
+                              <className>bg-li</className>
+                            </htmlArea>
+                          </Items>
+                        </blankPanel>
+                        <linkArea sid="c42a5a34c4a4fccf18fbf74b63d017b6">
+                          <id>wizardHelp</id>
+                          <value>帮助向导</value>
+                          <inline>true</inline>
+                          <style>font-size:14px;padding:20px;</style>
+                          <colSpan>2</colSpan>
+                        </linkArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="9b4736533f6b3fe5bbeb8022389b6601">
+                  <id>blankPaneld06e5</id>
+                  <width>390</width>
+                  <frame>true</frame>
+                  <bodyStyle>padding:2px;</bodyStyle>
+                  <themeStyle>pear</themeStyle>
+                  <synTabStyle>vertical-align:top;padding-top:5px;</synTabStyle>
+                  <Items>
+                    <tableLayout sid="4fe8b2c310dd29db39e86bc5d3418ece">
+                      <id>tableLayoutf2c9b</id>
+                      <colWidths>100</colWidths>
+                      <Items>
+                        <blankPanel sid="cc857a68d0dbf46b0ffe55fa30e6ac28">
+                          <id>blankPanelb9ee2</id>
+                          <Items>
+                            <imageArea sid="2daace16720b9c53512f435140a3a1f5">
+                              <id>imageArea75466</id>
+                              <icon>/artery/pub/images/logo/logo100-100.jpg</icon>
+                            </imageArea>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="0e33d692036690301d60d711b4b70453">
+                          <id>blankPanel84973</id>
+                          <Items>
+                            <tableLayout sid="2dbbfa889d9735e53951f223117f183f">
+                              <id>tableLayout2f9cb</id>
+                              <colNum>1</colNum>
+                              <cellpadding>2</cellpadding>
+                              <Items>
+                                <htmlArea sid="b1bbcfd066116714564f28d56a0269e9">
+                                  <id>htmlArea1d4cc</id>
+                                  <value>通用MIS应用系统构建平台</value>
+                                  <style>font-size:16px;font-weight:700;</style>
+                                </htmlArea>
+                                <htmlArea sid="b2325cb95c2fcf4fe32a69909e3a820e">
+                                  <id>htmlAread3054</id>
+                                  <value>版&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本：v3.0 build20100909</value>
+                                </htmlArea>
+                                <htmlArea sid="49fb2993816f9bda619731c6735c89df">
+                                  <id>htmlArea62af8</id>
+                                  <value>版权所有：Copyright (C) 2008-2012</value>
+                                </htmlArea>
+                                <htmlArea sid="dbfdf318733e7c40551e275a382c65b3">
+                                  <id>htmlArea7bf46</id>
+                                  <value>北京紫光华宇软件股份有限公司</value>
+                                  <style>padding-left:60px;</style>
+                                </htmlArea>
+                                <linkArea sid="35df862ae15286cf16f898f7b7d0927b">
+                                  <id>htmlArea3059f</id>
+                                  <value>http://www.thunisoft.com</value>
+                                  <style>padding-left:60px;</style>
+                                  <linkto>{"url":"http://www.thunisoft.com","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                                </linkArea>
+                                <htmlArea sid="a814a4511d78de8c0aef625c267d4639">
+                                  <id>htmlArea2c4a9</id>
+                                  <value>通用MIS应用系统构建平台,基于Ext、Spring等框架开发。用于MIS应用系统可视化在线快速搭建。</value>
+                                </htmlArea>
+                              </Items>
+                            </tableLayout>
+                          </Items>
+                        </blankPanel>
+                        <listArea sid="2db9a6caa60594357cd57ba400beb332">
+                          <id>listArea36dd6</id>
+                          <ds>rs1</ds>
+                          <height />
+                          <stripeRows>false</stripeRows>
+                          <emptyDataTip />
+                          <isPageSplit>false</isPageSplit>
+                          <isShowRowNumber>false</isShowRowNumber>
+                          <border>true</border>
+                          <themeStyle>unis</themeStyle>
+                          <colSpan>2</colSpan>
+                          <Items>
+                            <column sid="570f211e32cdcc525af9798cb549ce7b">
+                              <id>column6f637</id>
+                              <title>中间件</title>
+                              <dataName>{rs1.name}</dataName>
+                            </column>
+                            <column sid="eb851048537f9910d0f6dd0290e4b40a">
+                              <id>columna7a0a</id>
+                              <title>版本</title>
+                              <dataName>{rs1.version}</dataName>
+                              <width>20</width>
+                            </column>
+                          </Items>
+                        </listArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </tableLayout>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

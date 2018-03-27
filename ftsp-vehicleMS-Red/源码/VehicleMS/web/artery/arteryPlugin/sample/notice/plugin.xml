@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="arteryNotice" cn="通知面板" menu="示例">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-05-05</CreateTime>
+		<Describe>示例通知面板</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+
+	<!-- 设置本控件与其它控件的位置关系 -->
+	<Parents>
+		<Parent type="form"></Parent>
+		<Parent type="tableLayout"></Parent>
+	</Parents>
+	<Class>
+		com.thunisoft.artery.plugin.sample.Notice
+  </Class>
+	<!-- 设置本控件所需的js文件 -->
+	<JsFile>
+		<File>notice.js</File>
+	</JsFile>
+
+	<HtmlFile>
+		<File>notice.html</File>
+	</HtmlFile>
+
+	<!-- 设置本控件的属性 -->
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apnotice</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true">
+			<Value />
+		</Property>
+		<Property cn="标题" type="1" name="title" export="true">
+			<Value />
+		</Property>
+		<Property cn="是否显示“更多”" type="11" name="isShowMore" export="true">
+			<Value>true</Value>
+		</Property>
+		<Property cn="“更多”链接到" type="6" name="linktoMore" export="true">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" name="onClickMoreClient" group="“更多”点击时脚本" export="true">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" name="onClickMoreServer" group="“更多”点击时脚本" export="true">
+			<Value />
+		</Property>
+		<Property cn="动态数据" type="14" name="dynamicData" >
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow" >
+			<Value />
+		</Property>
+	</Properties>
+</Item>

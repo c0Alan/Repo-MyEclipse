@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>813c76e3427ae89e8ea58be77f4cf5ad</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.rstag.MainSub.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/rstag/MainSub.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <Items>
+        <blankPanel sid="f134941c3a065bfe8bafe1080a4fa1b0">
+          <id>blankPanelf0b28</id>
+          <style>padding:20px;</style>
+          <Items>
+            <formArea sid="3b08c7f8496ac9a8e6c5874ca5820928">
+              <id>formArea0c3c2</id>
+              <labelWidth>80</labelWidth>
+              <Items>
+                <faString sid="ff500cfef867b7b52e0340b784ee2c29">
+                  <id>faString367a3</id>
+                  <value>{rs1.id}</value>
+                  <label extend="true">图书室id</label>
+                </faString>
+                <faString sid="b684f91edf20bdf2d36a395edf0c8046">
+                  <id>faStringfb8c0</id>
+                  <value>{rs1.name}</value>
+                  <label extend="true">图书室名称</label>
+                </faString>
+                <faBlankLayout sid="77884bd9915680661e98d7209edda02b">
+                  <id>faBlankLayout046da</id>
+                  <colSpan extend="true">2</colSpan>
+                  <label extend="true">所有图书</label>
+                  <Items>
+                    <loopArea sid="9c85a67f81f176951815405a3e2f5a28">
+                      <id>loopArea81629</id>
+                      <ds>{rs1.books}</ds>
+                      <Items>
+                        <faString sid="83625f2abe8b08da2458ed3d5d17f0e6">
+                          <id>faString316fc</id>
+                          <value>{rs1.name}</value>
+                        </faString>
+                        <faString sid="98768ad5cc419c091c787fcb67807341">
+                          <id>faString22a4d</id>
+                          <value>{rs1.author}</value>
+                        </faString>
+                      </Items>
+                    </loopArea>
+                  </Items>
+                </faBlankLayout>
+                <blankPanel sid="65f6c3fd2cbe6df61f68d61ecdfee335">
+                  <id>blankPanelc93c2</id>
+                  <colSpan extend="true">2</colSpan>
+                  <label extend="true">所有图书</label>
+                  <Items>
+                    <listArea sid="899423a97c5583cd060ad63520c214c6">
+                      <id>listArea52f06</id>
+                      <ds>{rs1.books}</ds>
+                      <isPageSplit>false</isPageSplit>
+                      <style>margin:10px;</style>
+                      <Items>
+                        <columnString sid="0cd6b18046f5a0748130d8d90708f034">
+                          <id>columnString5ea19</id>
+                          <dataName>{rs1.name}</dataName>
+                          <title>图书名称</title>
+                        </columnString>
+                        <columnString sid="6aba90b6be1d144b28edae6137a7037b">
+                          <id>columnStringb4ad5</id>
+                          <dataName>{rs1.author}</dataName>
+                          <title>作者</title>
+                        </columnString>
+                        <columnString sid="935e42b5ac8a4cc44c432f179e20a67e">
+                          <id>columnStringacbf2</id>
+                          <dataName>{rs1.name,1}</dataName>
+                          <title>所属图书室</title>
+                        </columnString>
+                      </Items>
+                    </listArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

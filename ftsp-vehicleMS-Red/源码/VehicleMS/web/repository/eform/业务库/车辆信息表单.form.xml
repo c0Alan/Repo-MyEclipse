@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>363de39363962babb069072edd7f40a2</id>
+  <configTable />
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>com.thunisoft.vehicle.logic.VehicleEditLogic.java</javaLocation>
+  <jsLocation>car/js/vehicleEdit.js</jsLocation>
+  <cssLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form6797a">
+      <id>form6797a</id>
+      <Items>
+        <formArea sid="ce1462aba46c33e5bc721e13e4e822eb">
+          <id>vehicleInfoForm</id>
+          <colNum>1</colNum>
+          <labelWidth>60</labelWidth>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <faString sid="763e6ae8be4f70c3597f8b5a2117d348">
+              <id>C_CAR_ID</id>
+              <inherittbl>T_VEHICLE</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.CId}</dataName>
+              <height>0</height>
+              <displayType>readOnly</displayType>
+              <hidden>true</hidden>
+              <label>CID</label>
+            </faString>
+            <faString sid="057db925940d0f8e4a029109a6db465f">
+              <id>C_CAR_NUMBER</id>
+              <required>true</required>
+              <inherittbl>T_VEHICLE</inherittbl>
+              <inheritfld>C_CAR_NUMBER</inheritfld>
+              <dataName>{rs1.CCarNumber}</dataName>
+              <label>车牌号</label>
+            </faString>
+            <faCode sid="01686c1363b580ef67beede3b1f1812b">
+              <id>C_CAR_TYPE</id>
+              <required>true</required>
+              <inherittbl>T_VEHICLE</inherittbl>
+              <inheritfld>C_CAR_TYPE</inheritfld>
+              <dataName>{rs1.CCarType}</dataName>
+              <codeType>-700</codeType>
+              <ajaxLoad>false</ajaxLoad>
+              <value>1</value>
+              <label>车类型</label>
+            </faCode>
+            <faString sid="bf6327a1fa01efca535bd28540ee5052">
+              <id>C_BRAND</id>
+              <required>true</required>
+              <inherittbl>T_VEHICLE</inherittbl>
+              <inheritfld>C_BRAND</inheritfld>
+              <dataName>{rs1.CBrand}</dataName>
+              <label>车品牌</label>
+            </faString>
+            <faNumeric sid="0e35580197798941005fdb576c74495e">
+              <id>N_SEAT</id>
+              <required>true</required>
+              <inherittbl>T_VEHICLE</inherittbl>
+              <inheritfld>N_SEAT</inheritfld>
+              <dataName>{rs1.NSeat}</dataName>
+              <label>座位数</label>
+            </faNumeric>
+            <faOrgan sid="1022a33fb0b24f47b6e8271a11a76cab">
+              <id>C_RESPONSE_USER_ID</id>
+              <required>true</required>
+              <dataName>{rs1.CResponseUserId}</dataName>
+              <label>管理人</label>
+            </faOrgan>
+            <faCode sid="e88497d1c194f315961786b5c4d361b4">
+              <id>N_ISAVAILABLE</id>
+              <inherittbl>T_VEHICLE</inherittbl>
+              <dataName>{rs1.NIsAvailable}</dataName>
+              <editor>sRadio</editor>
+              <codeType>-1</codeType>
+              <valueText>1</valueText>
+              <value>1</value>
+              <label>是否可用</label>
+            </faCode>
+            <faString sid="877fd8802eae10ea3df3f7e9e64a5876">
+              <id>C_NOTE</id>
+              <inherittbl>T_VEHICLE</inherittbl>
+              <inheritfld>C_NOTE</inheritfld>
+              <dataName>{rs1.CNote}</dataName>
+              <editor>textarea</editor>
+              <label>备注</label>
+            </faString>
+            <buttonArea sid="e286de86ed0a7cb70993eaca39a5bc3b">
+              <id>buttonAread4cfc</id>
+              <width />
+              <align>center</align>
+              <hideLabel>true</hideLabel>
+              <hideMode>visibility</hideMode>
+              <Items>
+                <button sid="a213857dca9ed4bcf74f1fcf784f439c">
+                  <id>button127c5</id>
+                  <text>返回</text>
+                  <onClickClient><![CDATA[backBtn_reback]]></onClickClient>
+                </button>
+                <button sid="61ded98b252c8d5c2233f5c57a79fa4b">
+                  <id>buttonfe704</id>
+                  <text>保存</text>
+                  <onClickClient><![CDATA[saveBtn_save]]></onClickClient>
+                  <onClickServer><![CDATA[save]]></onClickServer>
+                </button>
+              </Items>
+            </buttonArea>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="cid" showName="" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getCar</ds>
+  </dslist>
+</form>
+

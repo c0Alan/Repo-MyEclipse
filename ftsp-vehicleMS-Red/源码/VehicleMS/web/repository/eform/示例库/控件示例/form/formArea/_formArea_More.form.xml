@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>955369d7596a2f8038be0671552f25c4</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.formArea._formArea_More.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/formArea/_formarea_more.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formff0ad">
+      <id>formff0ad</id>
+      <Items>
+        <tableLayout sid="478a19eb4e64f4fcdbbdbfdf9d50e984">
+          <id>tableLayoutb87a7</id>
+          <width>90%</width>
+          <cellpadding>7</cellpadding>
+          <Items>
+            <blankPanel sid="bcc6e6c528daef0f4ecd9c1a59e55a07">
+              <id>blankPanelfe309</id>
+              <border>true</border>
+              <Items>
+                <header sid="ebb3f84683f1f18a71162ac1a2cd5774">
+                  <id>headerc39e1</id>
+                  <text>【折叠状态名称】属性</text>
+                </header>
+                <tableLayout sid="7a6d628d8703959881f75e334ed3f147">
+                  <id>tableLayout9eb6c</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <formArea sid="a3ed1e08b3c4016d1c945859a8b729ad">
+                      <id>formAreaab86d</id>
+                      <labelWidth>50</labelWidth>
+                      <Items>
+                        <htmlArea sid="4e1cfd1c4b39560f5f0472acaa1e0139">
+                          <id>htmlAreabb456</id>
+                          <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;折叠状态名称：“&gt;&gt;填写更多信息”&lt;/span&gt;</value>
+                          <align>center</align>
+                          <colSpan>2</colSpan>
+                          <hideLabel>true</hideLabel>
+                        </htmlArea>
+                        <faString sid="d291bc14099d0c8de920d4603e66fabc">
+                          <id>faString9812a</id>
+                        </faString>
+                        <faString sid="d74cc663af86e641cfd9860249aa18bf">
+                          <id>faStringc0438</id>
+                        </faString>
+                        <faString sid="ddb6cab402c2649df747a02e21e9c10d">
+                          <id>faStringc21bd</id>
+                        </faString>
+                        <faString sid="41b0500e6c118a34a5d7d25355f8a6e4">
+                          <id>faString092ee</id>
+                        </faString>
+                        <faString sid="c4f85ea56127af08ba1efdeac32badea">
+                          <id>faString37b17</id>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                        <faString sid="fe9b2453c3ffbda487f71a8d9d421a13">
+                          <id>faStringb7d39</id>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="10244e1b7bb8ace5c48245ad5ad1ae2c">
+                      <id>formAreadd3bf</id>
+                      <labelWidth>50</labelWidth>
+                      <collapseStateName>这里是折叠状态名称</collapseStateName>
+                      <Items>
+                        <htmlArea sid="27a9e54e93db129790e9bb7c31a81933">
+                          <id>htmlAreab667d</id>
+                          <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;折叠状态名称：“这里是折叠状态名称”&lt;/span&gt;</value>
+                          <align>center</align>
+                          <colSpan>2</colSpan>
+                          <hideLabel>true</hideLabel>
+                        </htmlArea>
+                        <faString sid="7c877f1276e41e96926cb7eb455ad68a">
+                          <id>faString0a9b9</id>
+                        </faString>
+                        <faString sid="8f96d28047903ad4618f11f96a314a34">
+                          <id>faStringe325d</id>
+                        </faString>
+                        <faString sid="7ac26f440fea2fd078e36c0ce7c9fbaa">
+                          <id>faString714d2</id>
+                        </faString>
+                        <faString sid="89becca6821d0dfba32be117fd1816f5">
+                          <id>faString44bf4</id>
+                        </faString>
+                        <faString sid="456caadb0cc8d23607fbb0f2380ebc88">
+                          <id>faString32502</id>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                        <faString sid="b423693390d4be7f0e0e22fe1d80f539">
+                          <id>faString98085</id>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="27e53abf36ddfb24f10dbf343c2a32ea">
+              <id>blankPanelc540a</id>
+              <border>true</border>
+              <Items>
+                <header sid="ef3b50ec7c31b8584e617835a4ecae86">
+                  <id>headerd1066</id>
+                  <text>【折叠状态名称(展现)】属性</text>
+                </header>
+                <tableLayout sid="a51e1977e5ca9c299feadfe084ca642c">
+                  <id>tableLayout86eb9</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <htmlArea sid="a684ec51ec66a75927a4a0d49635f2e3">
+                      <id>htmlArea24bea</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;折叠状态名称(展现)：“&gt;&gt;展开更多信息”&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <htmlArea sid="7551b1865fe90549bf81e6471725ff5b">
+                      <id>htmlAread2150</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;折叠状态名称(展现)：“这里是折叠状态名称(展现)”&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <formArea sid="ae9fd8310b3adc671039f05d97969ae3">
+                      <id>formArea28b33</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>display</displayType>
+                      <Items>
+                        <faString sid="8143f65b93559cd08228ed96c2e89332">
+                          <id>faStringbfc03</id>
+                          <value>字符串</value>
+                        </faString>
+                        <faString sid="c186bd0ef3a254ddd2408f50a49fc08a">
+                          <id>faString6acae</id>
+                          <value>字符串</value>
+                        </faString>
+                        <faString sid="1e99c640e298c8aecd0bcbbbe4030d2a">
+                          <id>faString0ea22</id>
+                          <value>字符串</value>
+                        </faString>
+                        <faString sid="fa717802471c7a90c67f684801025ad5">
+                          <id>faString8b018</id>
+                          <value>字符串</value>
+                        </faString>
+                        <faString sid="dd55bc5b3f9b47ce6364b8cf529002fe">
+                          <id>faStringbae0f</id>
+                          <value>字符串</value>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                        <faString sid="48dc6a74efb4217af49260cbe15b945c">
+                          <id>faStringf8984</id>
+                          <value>字符串</value>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="5d56c4d59fb3c4c1bc869bc8605d3a0d">
+                      <id>formArea38850</id>
+                      <labelWidth>50</labelWidth>
+                      <displayType>display</displayType>
+                      <collapseStateNameDisplay>这里是折叠状态名称(展现)</collapseStateNameDisplay>
+                      <Items>
+                        <faString sid="8ff4658cc08ecc25a7fd6594b725d742">
+                          <id>faStringed3ef</id>
+                          <value>字符串</value>
+                        </faString>
+                        <faString sid="9583dc4daaa6218a8f3e4c710ca0980f">
+                          <id>faStringb8978</id>
+                          <value>字符串</value>
+                        </faString>
+                        <faString sid="2cba38af2b2afbb038388211bac608b3">
+                          <id>faString1ac04</id>
+                          <value>字符串</value>
+                        </faString>
+                        <faString sid="79e232565d557e1da56f83aaee047a66">
+                          <id>faString617ad</id>
+                          <value>字符串</value>
+                        </faString>
+                        <faString sid="e97e75de8ddde50fbde351b3b730575c">
+                          <id>faString2a58c</id>
+                          <value>字符串</value>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                        <faString sid="eadc6a001f56e64628c20dd6a5836b7d">
+                          <id>faString67661</id>
+                          <value>字符串</value>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+            <blankPanel sid="5d44fee42a95edc17be5167c7fc2ee50">
+              <id>blankPanel701b4</id>
+              <border>true</border>
+              <Items>
+                <header sid="63e6e594eed8fc355a04a2453f6bdc34">
+                  <id>header052be</id>
+                  <text>【展开状态名称】属性</text>
+                </header>
+                <tableLayout sid="85927d18967abbaafc9518073dff43ec">
+                  <id>tableLayout38431</id>
+                  <colSpacing>2</colSpacing>
+                  <style>padding:5px;</style>
+                  <Items>
+                    <htmlArea sid="ff919d75435290a6bf31a87db9772c75">
+                      <id>htmlArea0d3e7</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展开状态名称：“&gt;&gt;展开更多信息”&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <htmlArea sid="38bbba858f33e92eb565d82a992f2bfd">
+                      <id>htmlArea568a5</id>
+                      <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展开状态名称：“这里是展开状态名称”&lt;/span&gt;</value>
+                      <align>center</align>
+                    </htmlArea>
+                    <formArea sid="65bd9b00532aaefc8de3abd69d2e713f">
+                      <id>formArea8b29f</id>
+                      <labelWidth>50</labelWidth>
+                      <Items>
+                        <faString sid="b3bb38cffcc8a6297e0135c00d0b75d8">
+                          <id>faString5a5d6</id>
+                          <inheritkey />
+                          <inherittbl />
+                          <inheritfld />
+                        </faString>
+                        <faString sid="46d2480d3eefe6aae42dfbcc2e7fc3aa">
+                          <id>faString76ac4</id>
+                          <inheritkey />
+                          <inherittbl />
+                          <inheritfld />
+                        </faString>
+                        <faString sid="824ce1e298c7617db09fbdedf457efa4">
+                          <id>faString5e497</id>
+                          <inheritkey />
+                          <inherittbl />
+                          <inheritfld />
+                        </faString>
+                        <faString sid="01b4938fe56278c3889eec6200c7f15b">
+                          <id>faString53ce2</id>
+                          <inheritkey />
+                          <inherittbl />
+                          <inheritfld />
+                        </faString>
+                        <faString sid="8285193426c476bc9178e09b37797ba3">
+                          <id>faString1bee0</id>
+                          <inheritkey />
+                          <inherittbl />
+                          <inheritfld />
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                        <faString sid="adb5153945e137109a783d4e647e2c00">
+                          <id>faStringf9c2b</id>
+                          <inheritkey />
+                          <inherittbl />
+                          <inheritfld />
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                      </Items>
+                    </formArea>
+                    <formArea sid="ee604237ac6c3bf11ede20a0c4f8f3bd">
+                      <id>formAreada87c</id>
+                      <labelWidth>50</labelWidth>
+                      <expandStateName>这里是展开状态名称</expandStateName>
+                      <Items>
+                        <faString sid="b691f8b0ecdf57c1779026625297ffc3">
+                          <id>faStringbebec</id>
+                        </faString>
+                        <faString sid="f05a9bb740bf8b9de7d0425b74eedd20">
+                          <id>faString5851a</id>
+                        </faString>
+                        <faString sid="92388b1f2c1e9b56ef4ea265e0b52b8c">
+                          <id>faString13616</id>
+                        </faString>
+                        <faString sid="c04bd41a49ab7b0e3c2558301c960b0b">
+                          <id>faString04dda</id>
+                        </faString>
+                        <faString sid="71de3f1de416f78f101dd5e3a2347256">
+                          <id>faString50ac6</id>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                        <faString sid="cf046d20c459ffd1c252d1044d36966e">
+                          <id>faString9403f</id>
+                          <showInContainer>more</showInContainer>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </tableLayout>
+              </Items>
+            </blankPanel>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

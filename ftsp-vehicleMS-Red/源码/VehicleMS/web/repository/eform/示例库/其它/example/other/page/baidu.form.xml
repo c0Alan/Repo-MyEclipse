@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>27824f411f03e149d67d0aa99c72e3e9</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.other.page.Baidu.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/other/page/Baidu.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <text-align>left</text-align>
+      <Items>
+        <tableLayout sid="tableLayoutA001F">
+          <id>tableLayoutA001F</id>
+          <colNum>2</colNum>
+          <colWidths>137,*</colWidths>
+          <Items>
+            <imageArea sid="imageArea15B06">
+              <id>imageArea15B06</id>
+              <style>padding:5px;</style>
+              <rowSpan extend="true">2</rowSpan>
+            </imageArea>
+            <buttonArea sid="buttonArea60233">
+              <id>buttonArea60233</id>
+              <Items>
+                <simpleButton sid="simpleButtonF0225">
+                  <id>simpleButtonF0225</id>
+                  <text>新闻</text>
+                  <style>font-size:14px;padding-right:5px;</style>
+                </simpleButton>
+                <simpleButton sid="simpleButton01182">
+                  <id>simpleButton01182</id>
+                  <text>网页</text>
+                  <frame>true</frame>
+                  <style>font-size:14px;padding-right:5px;</style>
+                </simpleButton>
+                <simpleButton sid="simpleButton25572">
+                  <id>simpleButton25572</id>
+                  <text>贴吧</text>
+                  <style>font-size:14px;padding-right:5px;</style>
+                </simpleButton>
+                <simpleButton sid="simpleButtonC125A">
+                  <id>simpleButtonC125A</id>
+                  <text>知道</text>
+                  <style>font-size:14px;padding-right:5px;</style>
+                </simpleButton>
+                <simpleButton sid="simpleButton3D6A2">
+                  <id>simpleButton3D6A2</id>
+                  <text>MP3</text>
+                  <style>font-size:14px;padding-right:5px;</style>
+                </simpleButton>
+                <simpleButton sid="simpleButton3D34B">
+                  <id>simpleButton3D34B</id>
+                  <text>图片</text>
+                  <style>font-size:14px;padding-right:5px;</style>
+                </simpleButton>
+                <simpleButton sid="simpleButtonE8338">
+                  <id>simpleButtonE8338</id>
+                  <text>视频</text>
+                  <style>font-size:14px;padding-right:5px;</style>
+                </simpleButton>
+                <simpleButton sid="simpleButton005AB">
+                  <id>simpleButton005AB</id>
+                  <text>词典</text>
+                  <style>font-size:14px;padding-right:5px;</style>
+                </simpleButton>
+              </Items>
+            </buttonArea>
+            <formArea sid="formArea5D80F">
+              <id>formArea5D80F</id>
+              <colWidths>308</colWidths>
+              <bodyStyle>padding-bottom:5px;</bodyStyle>
+              <labelBackColor>#dfe8f6</labelBackColor>
+              <formTableBorder />
+              <readOnlyBorder />
+              <Items>
+                <faString sid="faStringE231B">
+                  <id>searchFld</id>
+                  <width>300</width>
+                  <value>小沈阳</value>
+                  <labelColor extend="true" />
+                  <hideLabel extend="true">true</hideLabel>
+                </faString>
+                <buttonArea sid="buttonArea00C45">
+                  <id>buttonArea00C45</id>
+                  <hideLabel extend="true">true</hideLabel>
+                  <Items>
+                    <button sid="button94C31">
+                      <id>button_search</id>
+                      <text>百度一下</text>
+                      <onClickClient><![CDATA[button_search_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="button8868C">
+                      <id>button8868C</id>
+                      <text>结果查找</text>
+                    </button>
+                    <simpleButton sid="simpleButton68B0E">
+                      <id>simpleButton68B0E</id>
+                      <text>设置</text>
+                    </simpleButton>
+                    <simpleButton sid="simpleButtonC70B9">
+                      <id>simpleButtonC70B9</id>
+                      <text>高级搜索</text>
+                    </simpleButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </formArea>
+          </Items>
+        </tableLayout>
+        <tableLayout sid="tableLayout164B9">
+          <id>tableLayout164B9</id>
+          <colNum>2</colNum>
+          <height>20</height>
+          <style>background-color:#D9E1F7;</style>
+          <Items>
+            <buttonArea sid="buttonAreaF79DB">
+              <id>buttonAreaF79DB</id>
+              <Items>
+                <simpleButton sid="simpleButton539DF">
+                  <id>simpleButton539DF</id>
+                  <text>把百度设置为主页</text>
+                  <style>color:#000;</style>
+                </simpleButton>
+              </Items>
+            </buttonArea>
+            <htmlArea sid="htmlArea32141">
+              <id>htmlArea32141</id>
+              <value>&amp;nbsp;百度一下，找到相关网页约817,000篇，用时0.080秒</value>
+              <width>300</width>
+              <synTabStyle extend="true">text-align:right;</synTabStyle>
+            </htmlArea>
+          </Items>
+        </tableLayout>
+        <searchResult sid="searchResultD2A8C">
+          <id>searchResult</id>
+          <width>500</width>
+          <dynamicData><![CDATA[searchResult_dynamicData]]></dynamicData>
+          <extParams>{searchKey:Artery.get('searchFld').getValue()}</extParams>
+        </searchResult>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist />
+</form>
+

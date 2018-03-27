@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="tabItem" cn="tab面板" jsType="artery-base" nameprop="title"
+	icon="tabItem.gif" iconNew="tabItemNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>页签控件</Describe>
+	</Info>
+	<Parents>
+		<Parent type="tabArea" />
+	</Parents>
+	<Children>
+		<Child type="upRegion" />
+		<Child type="leftRegion" />
+		<Child type="downRegion" />
+		<Child type="rightRegion" />
+		<Child type="centerRegion" />
+		<Child type="htmlArea" />
+		<Child type="treeArea" />
+		<Child type="tabArea" />
+		<Child type="buttonArea" />
+		<Child type="formArea" />
+		<Child type="listArea" />
+		<Child type="topbar" />
+		<Child type="bottomBar" />
+		<Child type="dynamicNav" />
+		<Child type="operArea" />
+		<Child type="tableLayout" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.tabs.tabpanel.TabItem
+	</Class>
+	<JsFile>
+		<File>tabItem.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apTabItem</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="标题" type="1" name="title" export="true"
+			tips="设置tab面板标题，支持html">
+			<Value>title</Value>
+		</Property>
+		<Property cn="页签宽度" type="1" name="tabWidth" tips="设置tab标题的宽度，内容超过此宽度则省略">
+			<Value></Value>
+		</Property>
+		<Property cn="图片" type="5" name="icon" tips="设置组件的显示图标，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value />
+		</Property>
+		<Property cn="可否关闭" type="11" name="closable" export="true"
+			tips="设置面板可否被用户关闭">
+			<Value>false</Value>
+		</Property>
+		<Property cn="URL" type="1" name="url" tips="使面板通过url链接到一个页面">
+			<Value />
+		</Property>
+		<Property cn="链接到" type="6" name="linkto" tips="选择当组件点击时连接到的表单">
+			<Value />
+		</Property>
+		<Property cn="修正滚动条" type="11" name="isFixScroll" export="true"
+			tips="设置为true时，如果容器中的内容超出容器的宽度时，由容器的宽度不变，会出横向滚动条，否则容器会被撑开。注意，设置为true时会影响一定的性能">
+			<Value>false</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden"
+			tips="当为true是为隐藏组件，组件还是生成了，可以用组件对应的show()方法来显示组件，要注意与show属性的区别">
+			<Value>false</Value>
+		</Property>
+		<Property cn="客户端" type="15" group="激活时脚本" name="onActivateClient"
+			tips="当本组件激活时触发的事件，客户端脚本">
+			<Value />
+        <Description>
+        
+        <![CDATA[
+        <p>当本组件激活时触发的事件，客户端脚本</p>     
+
+        <pre>
+/**
+ * onActivateClient(tabItem77415)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function tabItem77415_onActivateClient (rc){
+	
+}
+</pre>]]>
+      </Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="激活时脚本" name="onActivateServer"
+			tips="当本组件激活时触发的事件，服务器端脚本">
+			<Value />
+        <Description>
+        
+        <![CDATA[
+        <p>当本组件激活时触发的事件，服务器端脚本</p>     
+
+        <pre>
+/**
+	 * 激活时方法
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public Object tabItem77415_onActivateServer(Item item) {
+		return null;
+	}
+</pre>]]>
+      </Description>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="激活时是否刷新" type="11"  name="isReloadIframe"
+			tips="当为true时，item激活时刷新当前tabArea的iframe">
+			<Value>false</Value>
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="openForm" inherit="false" return="void"
+			tips="在本页签打开表单，需要传入表单配置对象">
+			<Description>
+        <![CDATA[在本页签打开表单，需要传入表单配置对象，如：
+          <pre>
+Artery.get("tabItem").openForm({
+  formId : "84164EF6D5CD16FD724C8BB4ADB7E54C",
+  formType : "1",
+  runTimeType : "insert",
+  params:{
+    p1 : "corp",
+    p2 : "2009"
+  }
+});</pre>]]>
+			</Description>
+			<Parameters>
+				<Param>linkto:json 需要显示的表单配置对象</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="active" inherit="false" return="void"
+			tips="激活本组件，reload为true时，刷新iframe">
+			<Description>
+        <![CDATA[激活本组件，reload为true时，刷新iframe，如：
+          <pre>
+Artery.get("tabItem").active(true);</pre>]]>
+			</Description>
+			<Parameters>
+				<Param>reload:boolean 为true，则刷新iframe（页签链接到的表单）
+				</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	
+	
+	
+    	<Method name="setTitle" inherit="false" return="void"
+			tips="为tab面板设置title">
+			<Description>
+          <![CDATA[为tab面板设置title
+          <pre>
+Artery.get("tabItem").setTitle(titleName);</pre>]]>
+			</Description>
+			<Parameters>
+				<Param>String|titleName
+				</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+
+	<Method name="getTitle" inherit="false" return="title"
+			tips="获得tab面板的title">
+			<Description>
+        <![CDATA[获得tab面板的title
+          <pre>
+Artery.get("tabItem").getTitle();</pre>]]>
+			</Description>
+			<Parameters>
+				<Param>无
+				</Param>
+			</Parameters>
+			<Return>title</Return>
+		</Method>
+	</Methods>
+	
+  	<JavaFunctions>
+		<JavaFunction name="onActivateServer">
+<![CDATA[
+/**
+ * 激活时方法
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

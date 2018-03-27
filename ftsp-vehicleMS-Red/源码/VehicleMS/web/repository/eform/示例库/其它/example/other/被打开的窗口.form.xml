@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0b862b9fedb1596b26fde72e8b02adc5</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.other.Bdkdck.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/example/other/Bdkdck.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form0c651">
+      <id>form0c651</id>
+      <bodyStyle>padding:10px;</bodyStyle>
+      <Items>
+        <formArea sid="cb5385ba6010e40127e19401ca239102">
+          <id>formAreab44ff</id>
+          <colNum>1</colNum>
+          <Items>
+            <faString sid="f9b883023d678d6d7b7f97cce966d4de">
+              <id>faString_textarea</id>
+              <editor>textarea</editor>
+              <height>120</height>
+              <label>字符串值</label>
+            </faString>
+          </Items>
+        </formArea>
+        <footer sid="a8409b4451ea9cacff4828c5513ee2c6">
+          <id>footer49f7a</id>
+          <Items>
+            <button sid="4d8c041c6d9ff728460de826c8c7e81f">
+              <id>button58989</id>
+              <text>执行回调函数</text>
+              <onClickClient>button58989_onClickClient</onClickClient>
+            </button>
+            <button sid="5d073d5e009e72f973a42c1edff4851f">
+              <id>button00249</id>
+              <text>关闭窗口</text>
+              <onClickClient>button00249_onClickClient</onClickClient>
+            </button>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+</form>
+

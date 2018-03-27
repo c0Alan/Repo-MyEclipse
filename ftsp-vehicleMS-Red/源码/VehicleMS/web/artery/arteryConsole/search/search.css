@@ -1,0 +1,15 @@
+.folder{
+	background-image: url(images/folder.gif) !important;
+}
+.x-tree-node img.CorpIcon {
+	background-image: url(images/treenode_corp.gif)
+		!important;
+}
+
+.x-tree-node img.DeptIcon {
+	background-image: url(images/treenode_dept.gif);
+}
+
+.x-tree-node img.PersonIcon {
+	background-image: url(images/treenode_emp.gif);
+}

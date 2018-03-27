@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9476a7eaf3c7847de0d4b3a9873c466a</id>
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <rptLayout sid="bodyPanel">
+      <id>Aae239ba5bd377c2ed42d07c792190ecf</id>
+      <background-color>#FFFFFF</background-color>
+      <Items>
+        <topbar sid="toolbarsid">
+          <id>toolbar</id>
+          <Items>
+            <tbButton sid="A943ad674a7687e0bc8f3e31424ffcbe5">
+              <id>A943ad674a7687e0bc8f3e31424ffcbe5</id>
+              <text>查询</text>
+              <icon>/artery/report/parse/images/search.gif</icon>
+              <onClickClient><![CDATA[Artery.get("resultArea").search();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="Af2453966654835dc38257122aa5fbaf6">
+              <id>Af2453966654835dc38257122aa5fbaf6</id>
+              <text>显示/隐藏</text>
+              <icon>/artery/report/parse/images/split.gif</icon>
+              <onClickClient><![CDATA[Artery.get('resultArea').toggleCondition();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="A5589d27d7ec5fa73402256f9d83ec69f">
+              <id>A5589d27d7ec5fa73402256f9d83ec69f</id>
+              <text>业务口径</text>
+              <icon>/artery/report/parse/images/comment.gif</icon>
+              <onClickClient><![CDATA[Artery.get("resultArea").showComment();]]></onClickClient>
+            </tbButton>
+            <tbSeparator sid="Ad8ea600f515585dc1989dd14accf7614">
+              <id>Ad8ea600f515585dc1989dd14accf7614</id>
+            </tbSeparator>
+            <tbMenu sid="A8a0daa02a28ae7d8894b5a91c7b210b9">
+              <id>A8a0daa02a28ae7d8894b5a91c7b210b9</id>
+              <text>自动调整</text>
+              <icon>/artery/report/parse/images/autoCol.gif</icon>
+              <Items>
+                <tbMenuItem sid="A9fb6909553129946c6e1c4c2d25c98d4">
+                  <id>A9fb6909553129946c6e1c4c2d25c98d4</id>
+                  <text>自动列宽</text>
+                  <icon>/artery/report/parse/images/autoCol.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").autoCol();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="Ab04af006fe96cb9efece2cd84822bef2">
+                  <id>Ab04af006fe96cb9efece2cd84822bef2</id>
+                  <text>自动行高</text>
+                  <icon>/artery/report/parse/images/autoRow.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").autoRow();]]></onClickClient>
+                </tbMenuItem>
+                <tbSeparator sid="A31741a1d5770c85379857620b4c8dddc">
+                  <id>A31741a1d5770c85379857620b4c8dddc</id>
+                </tbSeparator>
+                <tbMenuItem sid="A8db25c87b7dac79aceddbb0004b63b72">
+                  <id>A8db25c87b7dac79aceddbb0004b63b72</id>
+                  <text>恢复初始</text>
+                  <onClickClient><![CDATA[Artery.get("resultArea").autoRecover();]]></onClickClient>
+                </tbMenuItem>
+              </Items>
+            </tbMenu>
+            <tbMenu sid="Ab8b2583c02e6b297c7c24bc7e15bc72c">
+              <id>Ab8b2583c02e6b297c7c24bc7e15bc72c</id>
+              <text>导出</text>
+              <icon>/artery/report/parse/images/excel.gif</icon>
+              <Items>
+                <tbMenuItem sid="Aaa4cca2931f37f0f7c8fc04507afd4f8">
+                  <id>Aaa4cca2931f37f0f7c8fc04507afd4f8</id>
+                  <text>导出Excel</text>
+                  <icon>/artery/report/parse/images/excel.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportExcel();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="A1d142118ed4138b44f6f2486d112b9fc">
+                  <id>A1d142118ed4138b44f6f2486d112b9fc</id>
+                  <text>导出全部Excel</text>
+                  <icon>/artery/report/parse/images/excel.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportAllExcel();]]></onClickClient>
+                </tbMenuItem>
+                <tbSeparator sid="Ac545808ad1e2663d1e3ea5a026eeb86c">
+                  <id>Ac545808ad1e2663d1e3ea5a026eeb86c</id>
+                </tbSeparator>
+                <tbMenuItem sid="A0f12c3bcb08dcea30b5a4cb766cf969c">
+                  <id>A0f12c3bcb08dcea30b5a4cb766cf969c</id>
+                  <text>导出Excel(OCX)</text>
+                  <icon>/artery/report/parse/images/excel.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportExcelWin();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="Ab1316e3f49b82c55b34c9ab3db6cd0da">
+                  <id>Ab1316e3f49b82c55b34c9ab3db6cd0da</id>
+                  <text>导出全部Excel(OCX)</text>
+                  <icon>/artery/report/parse/images/excel.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportAllExcelWin();]]></onClickClient>
+                </tbMenuItem>
+                <tbSeparator sid="A904ca9d7777ada03f3d1724fee091c22">
+                  <id>A904ca9d7777ada03f3d1724fee091c22</id>
+                </tbSeparator>
+                <tbMenuItem sid="A4393893e099585c11249341153f12243">
+                  <id>A4393893e099585c11249341153f12243</id>
+                  <text>导出Pdf</text>
+                  <icon>/artery/report/parse/images/pdf.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportPdf();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="Abccbc784458851abe12408fa7810efdb">
+                  <id>Abccbc784458851abe12408fa7810efdb</id>
+                  <text>导出全部Pdf</text>
+                  <icon>/artery/report/parse/images/pdf.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportAllPdf();]]></onClickClient>
+                </tbMenuItem>
+              </Items>
+            </tbMenu>
+            <tbMenu sid="Ad4fa1832653e38c31a448237cf2ad85d">
+              <id>Ad4fa1832653e38c31a448237cf2ad85d</id>
+              <text>打印</text>
+              <icon>/artery/report/parse/images/print.gif</icon>
+              <Items>
+                <tbMenuItem sid="Adcc4a4a480098f351a777de7c820a654">
+                  <id>Adcc4a4a480098f351a777de7c820a654</id>
+                  <text>打印本页</text>
+                  <icon>/artery/report/parse/images/print.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").print();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="A1c4551d6c0bc3e3536218633b95c47e5">
+                  <id>A1c4551d6c0bc3e3536218633b95c47e5</id>
+                  <text>打印全部</text>
+                  <icon>/artery/report/parse/images/print.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").printAll();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="A65ec9dfaf7ac6d9c76a63f8073860c5e">
+                  <id>A65ec9dfaf7ac6d9c76a63f8073860c5e</id>
+                  <text>打印全部(分页)</text>
+                  <icon>/artery/report/parse/images/print.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").printAllPage();]]></onClickClient>
+                </tbMenuItem>
+                <tbSeparator sid="A86f2762056a87e222ac8eab1ec98823e">
+                  <id>A86f2762056a87e222ac8eab1ec98823e</id>
+                </tbSeparator>
+                <tbMenuItem sid="A6f23691c562acfc28e7a1e7c22a6f566">
+                  <id>A6f23691c562acfc28e7a1e7c22a6f566</id>
+                  <text>打印本页(OCX)</text>
+                  <icon>/artery/report/parse/images/print.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportExcelWin();]]></onClickClient>
+                </tbMenuItem>
+                <tbMenuItem sid="A4ebfeff4e1e8e609e0b7087f0e5fccf9">
+                  <id>A4ebfeff4e1e8e609e0b7087f0e5fccf9</id>
+                  <text>打印全部(OCX)</text>
+                  <icon>/artery/report/parse/images/print.gif</icon>
+                  <onClickClient><![CDATA[Artery.get("resultArea").exportAllExcelWin();]]></onClickClient>
+                </tbMenuItem>
+              </Items>
+            </tbMenu>
+          </Items>
+        </topbar>
+        <rptCondition sid="A36ff3fdc071890fc1144791531a4a5cf">
+          <id>conditionArea</id>
+          <width>90%</width>
+          <cellpadding>5</cellpadding>
+          <borderStyle>solid</borderStyle>
+        </rptCondition>
+        <rptResult sid="Ae7426be790949f95926593e72055e698">
+          <id>resultArea</id>
+          <autoCellType>row</autoCellType>
+          <showPageNum>false</showPageNum>
+          <pageRs />
+        </rptResult>
+      </Items>
+    </rptLayout>
+  </Item>
+  <Template ver="1.0">
+    <Table DefaultColWidth="84" DefaultRowHeight="20" FixedCols="0" FixedRows="0" FixedLineColor="0" />
+    <ImgList />
+    <Cells>
+      <Cell Col="1" Row="1" ColWidths="12" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="1" Row="2" ColWidths="12" RowHeights="37" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="1" Row="3" ColWidths="12" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="1" Row="4" ColWidths="12" RowHeights="36" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="1" Row="5" ColWidths="12" RowHeights="29" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="1" Row="6" ColWidths="12" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="2" Row="1" ColWidths="35" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="2" Row="2" ColWidths="35" MergeWidths="200,84,108,84,84,168" RowHeights="37" AlignMode="4" MergeRight="8" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" FontSize="14" ForeText="图书合计小计" Bold="1" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="2" Row="3" ColWidths="35" AlignMode="4" Color="16764057" ForeText="序号" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="2" Row="4" ColWidths="35" MergeWidths="200,84,108" RowHeights="36" AlignMode="4" MergeRight="5" Color="12632256" ForeText="合计" TrailingZero="1" ThousandSep="1" TdBT="0" />
+      <Cell Col="2" Row="5" ColWidths="35" RowHeights="29" ForeText="{seq}{cc([D5])}" TrailingZero="1" ThousandSep="1" TdBT="0" />
+      <Cell Col="2" Row="6" ColWidths="35" MergeWidths="200,84,108" MergeRight="5" Color="10841658" ForeText="小计{cc([C5])}" TrailingZero="1" ThousandSep="1" TdBT="0" />
+      <Cell Col="3" Row="1" ColWidths="200" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="3" Row="3" ColWidths="200" AlignMode="4" Color="16764057" ForeText="图书室" TrailingZero="1" ThousandSep="1" TdBL="0" />
+      <Cell Col="3" Row="5" ColWidths="200" RowHeights="29" ForeText="{rs1.group(#5)}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="4" Row="1" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="4" Row="3" AlignMode="4" Color="16764057" ForeText="图书名称" TrailingZero="1" ThousandSep="1" TdBL="0" />
+      <Cell Col="4" Row="5" RowHeights="29" ForeText="{rs1.select(#2)}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="5" Row="1" ColWidths="108" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="5" Row="3" ColWidths="108" AlignMode="4" Color="16764057" ForeText="购买时间" TrailingZero="1" ThousandSep="1" TdBL="0" />
+      <Cell Col="5" Row="5" ColWidths="108" RowHeights="29" ForeText="{rs1.#4}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="6" Row="1" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="6" Row="3" AlignMode="4" Color="16764057" ForeText="购买价格" TrailingZero="1" ThousandSep="1" TdBL="0" />
+      <Cell Col="6" Row="4" RowHeights="36" Color="12632256" ForeText="{nf(&lt;sum([F5])&gt;,[#0.00])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="6" Row="5" RowHeights="29" ForeText="{rs1.#3}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="6" Row="6" Color="10841658" ForeText="{nf(&lt;sum([F5])&gt;,[#0.00])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="7" Row="1" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="7" Row="3" MergeWidths="168" AlignMode="4" MergeRight="8" Color="16764057" ForeText="总计" TrailingZero="1" ThousandSep="1" TdBL="0" />
+      <Cell Col="7" Row="4" MergeWidths="168" RowHeights="36" MergeRight="8" Color="12632256" ForeText="{nf(&lt;sum([H5])&gt;,[#0.00])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="7" Row="5" RowHeights="29" ForeText="{exp([F5]*10)}{nf([0.00])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="7" Row="6" MergeWidths="168" MergeRight="8" Color="10841658" ForeText="{nf(&lt;sum([H5])&gt;,[#0.00])}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+      <Cell Col="8" Row="1" ColWidths="168" DrawTop="0" DrawLeft="0" DrawBottom="0" DrawRight="0" TrailingZero="1" ThousandSep="1" />
+      <Cell Col="8" Row="5" ColWidths="168" RowHeights="29" ForeText="{[G5]}{chart(0,3000)}" TrailingZero="1" ThousandSep="1" TdBL="0" TdBT="0" />
+    </Cells>
+  </Template>
+  <dataSources>
+    <ds dsName="dataSource" rsName="rs1" type="sql" splitpage="1" record="30">SELECT C_ID,&#xD;
+       C_NAME,&#xD;
+       F_PRICE,&#xD;
+       D_BUY,&#xD;
+       C_LIBRARYID     &#xD;
+ FROM T_Eg_Book</ds>
+  </dataSources>
+</form>
+

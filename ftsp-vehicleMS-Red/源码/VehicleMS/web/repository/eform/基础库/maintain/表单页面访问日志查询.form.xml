@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>bd3b24be7f37e697219c4a65506c5bd1</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.jck.maintain.Bdymfwrzcx.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/maintain/Bdymfwrzcx.js</jsLocation>
+  <cssLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formc3ab8">
+      <id>formc3ab8</id>
+      <Items>
+        <blankPanel sid="6c00cd29eb5ace18e517509f1fe1a512">
+          <id>blankPanel1c2c8</id>
+          <width>100%</width>
+          <height>100%</height>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="ccce50d0ff7084191fe79ac5e152a028">
+              <id>headerf0785</id>
+              <text />
+              <headerStyle>padding:0;</headerStyle>
+              <bodyStyle>display:none;</bodyStyle>
+              <Items>
+                <blankPanel sid="67723fbc5e4d10698d096259b97fce88">
+                  <id>blankPanel732e9</id>
+                  <bodyStyle>display:none;</bodyStyle>
+                  <Items>
+                    <topbar sid="7a08ff1413f8e6f0abafa42cda6dc7b8">
+                      <id>topbar3acbf</id>
+                      <themeStyle>unis</themeStyle>
+                      <Items>
+                        <tbText sid="9c7c8b0dabe1c0c239d84705a68633a7">
+                          <id>tbTextb2836</id>
+                          <text>&lt;span style="font-size:14px;font-weight:700;color:#15428B;"&gt;表单页面访问日志&lt;/span&gt;</text>
+                        </tbText>
+                        <tbSeparator sid="6da1ae09350b3804a491425e1f0605d2">
+                          <id>tbSeparatordde09</id>
+                        </tbSeparator>
+                        <formArea sid="7fc528d2124f48d7459259b2644d12eb">
+                          <id>formAreab3229</id>
+                          <width>350</width>
+                          <labelSeparator>：</labelSeparator>
+                          <labelWidth>60</labelWidth>
+                          <Items>
+                            <faDate sid="cc50c315afb3382349ead61e54cf2ea8">
+                              <id>faStartDate</id>
+                              <onShow><![CDATA[faStartDate_onShow]]></onShow>
+                              <label>开始时间</label>
+                            </faDate>
+                            <faDate sid="7e645d634382b4f9367e8d477fe0f0d1">
+                              <id>faEndDate</id>
+                              <onShow><![CDATA[faEndDate_onShow]]></onShow>
+                              <label>结束时间</label>
+                            </faDate>
+                          </Items>
+                        </formArea>
+                        <tbButton sid="babd0a553d97de63c1ad484421a55315">
+                          <id>tbButtoned05f</id>
+                          <text>查询</text>
+                          <icon>/artery/arteryImage/sample/search.gif</icon>
+                          <onClickClient><![CDATA[tbButtoned05f_onClickClient]]></onClickClient>
+                        </tbButton>
+                      </Items>
+                    </topbar>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+            <listArea sid="1cba0c452f182b50be546432940d38e0">
+              <id>listArea</id>
+              <ds>rs1</ds>
+              <height>100%</height>
+              <defaultOrder>D_Time desc</defaultOrder>
+              <emptyDataTip />
+              <isShowRowNumber>false</isShowRowNumber>
+              <isExpExcel>true</isExpExcel>
+              <Items>
+                <columnString sid="061018bdc9c56fd3f0cbf318b1b0a2bc">
+                  <id>columnString6a2d2</id>
+                  <inheritfld>C_FormName</inheritfld>
+                  <dataName>{rs1.C_FormName}</dataName>
+                  <title>表单名称</title>
+                  <isFilter>true</isFilter>
+                  <isOrderBy>true</isOrderBy>
+                  <linkto>{"url":"/artery/complib.do?action=index&amp;formId={rs1.C_FormID}&amp;runTimeType=display","target":"_parent","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                  <onClickClient><![CDATA[columnString6a2d2_onClickClient]]></onClickClient>
+                </columnString>
+                <columnDate sid="44c79758f89df15b292a2c96bd2f575f">
+                  <id>columnDateb5e86</id>
+                  <inheritfld>D_Time</inheritfld>
+                  <dataName>{rs1.D_Time}</dataName>
+                  <title>进入时间</title>
+                  <width>60</width>
+                  <showTime>true</showTime>
+                  <isOrderBy>true</isOrderBy>
+                </columnDate>
+                <columnString sid="5b8936f8acae578a5bc2df216d1e2ede">
+                  <id>columnString1f15a</id>
+                  <inheritfld>C_UserName</inheritfld>
+                  <dataName>{rs1.C_UserName}</dataName>
+                  <title>操作者名称</title>
+                  <isFilter>true</isFilter>
+                  <isOrderBy>true</isOrderBy>
+                </columnString>
+                <columnString sid="ce5fb883aace0b5e319808ad70fabb5c">
+                  <id>columnString39e4d</id>
+                  <inheritfld>C_CorpName</inheritfld>
+                  <dataName>{rs1.C_CorpName}</dataName>
+                  <title>所属单位</title>
+                  <isFilter>true</isFilter>
+                  <isOrderBy>true</isOrderBy>
+                </columnString>
+                <columnString sid="205df3df9eac6b6e4c56dc7a2c2c2468">
+                  <id>columnStringee7b0</id>
+                  <inheritfld>C_DeptName</inheritfld>
+                  <dataName>{rs1.C_DeptName}</dataName>
+                  <title>所属部门</title>
+                  <isFilter>true</isFilter>
+                  <isOrderBy>true</isOrderBy>
+                </columnString>
+                <columnString sid="de228b63f9de67b95d036b7c007c7519">
+                  <id>columnString735cd</id>
+                  <inheritfld>C_IP</inheritfld>
+                  <dataName>{rs1.C_IP}</dataName>
+                  <title>ip</title>
+                  <isFilter>true</isFilter>
+                  <isOrderBy>true</isOrderBy>
+                </columnString>
+                <columnNumeric sid="c0dcf41ff279fb6e81ada67d2462ca11">
+                  <id>columnNumerice3563</id>
+                  <inheritfld>N_Cost</inheritfld>
+                  <dataName>{rs1.N_Cost}</dataName>
+                  <title>消耗时间(毫秒)</title>
+                  <isFilter>true</isFilter>
+                  <isOrderBy>true</isOrderBy>
+                </columnNumeric>
+                <columnString sid="a22ddea1dd8dd045dd4f53a8b49956a4">
+                  <id>columnBinary15868</id>
+                  <inheritfld>C_Error</inheritfld>
+                  <dataName>{rs1.C_Error}</dataName>
+                  <title>错误信息</title>
+                  <isFilter>true</isFilter>
+                </columnString>
+              </Items>
+            </listArea>
+            <footer sid="0abbf426dc9575793b5a16f416ba35b2">
+              <id>footer08111</id>
+              <show>false</show>
+              <Items>
+                <blankPanel sid="4e74094bbbc3bfb7585a6ae0280ed2d0">
+                  <id>blankPanel573fd</id>
+                  <Items>
+                    <pagingbar1 sid="dca9603b00ca6707a7538df38ea44d30">
+                      <id>pagingbar1c1d5e</id>
+                    </pagingbar1>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </footer>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getFormLoginLogList</ds>
+  </dslist>
+</form>
+

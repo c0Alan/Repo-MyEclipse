@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1414b39d533de22836027f6ab5920143</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.area._office.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/area/_office.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form89886">
+      <id>form89886</id>
+      <Items>
+        <blankPanel sid="4c992a7e7a14587bae5605d47fa25690">
+          <id>blankPanel6b64d</id>
+          <bodyStyle>background-color: #c0c0c0;</bodyStyle>
+          <Items>
+            <htmlArea sid="abd2c571baab773b8ec1b59010e5ba15">
+              <id>htmlArea606e2</id>
+              <value>&lt;li&gt;office控件是ActiveX控件的一个特例&lt;/li&gt;&#xD;
+&lt;li&gt;office控件主要用于在线浏览Office文档&lt;/li&gt;&#xD;
+&lt;li&gt;如果需要使用更加复杂全面的功能可以通过ActiveX控件使用原生的OfficeControl.cab控件&lt;/li&gt;&#xD;
+&lt;h1&gt;说明&lt;/h1&gt;&#xD;
+&lt;li&gt;CreateWord：在office控件中创建新的Word文档，可以通过改变参数创建其他类型的office文档&lt;/li&gt;&#xD;
+&lt;li&gt;OpenFromURL：打开远程的office文档，url返回office文件byte即可&lt;/li&gt;&#xD;
+&lt;li&gt;OpenLocalFile：打开本地office文档&lt;/li&gt;&#xD;
+&lt;li&gt;Reload：刷新&lt;/li&gt;&#xD;
+&lt;li&gt;Close：关闭当前office控件&lt;/li&gt;</value>
+            </htmlArea>
+          </Items>
+        </blankPanel>
+        <office sid="52795a990747f0cf3f9eab98cbd43e73">
+          <id>officeShow</id>
+          <width>100%</width>
+          <height>80%</height>
+        </office>
+        <bottomBar sid="d10cbcb60e9c06b40708468888386f95">
+          <id>bottomBarb8f5a</id>
+          <Items>
+            <tbButton sid="f4cd5f34579f4fd7cada5fc0db6da8b2">
+              <id>tbCreateWord</id>
+              <text>CreateWord</text>
+              <onClickClient><![CDATA[tbCreateWord_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="8a487eb30be3442bc31ca5ef86dd002c">
+              <id>tbCreateExcel</id>
+              <text>CreateExcel</text>
+              <onClickClient><![CDATA[tbCreateExcel_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="de294358d5c733c5e4498ae79af897c9">
+              <id>tbOpenFromURL</id>
+              <text>OpenFromURL</text>
+              <onClickClient><![CDATA[tbOpenFromURL_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="1aeb9a03c53a723c15d10ff9abd15c27">
+              <id>tbOpenLocalFile</id>
+              <text>OpenLocalFile</text>
+              <onClickClient><![CDATA[tbOpenLocalFile_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="d44253a8770dbb1c908d19ee2ed63808">
+              <id>tbReload</id>
+              <text>Reload</text>
+              <onClickClient><![CDATA[tbReload_onClickClient]]></onClickClient>
+            </tbButton>
+            <tbButton sid="87e019154549ca11230ea9ef0d17eb11">
+              <id>tbClose</id>
+              <text>Close</text>
+              <onClickClient><![CDATA[tbClose_onClickClient]]></onClickClient>
+            </tbButton>
+          </Items>
+        </bottomBar>
+      </Items>
+    </form>
+  </Item>
+</form>
+

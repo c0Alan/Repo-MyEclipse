@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d3146f849f7f5433c92ad1d3c79d3e08</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.xtx.ajax.Loop.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/qt/xtx/ajax/Loop.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formB36DC">
+      <id>formB36DC</id>
+      <style>padding:20px;</style>
+      <Items>
+        <blankPanel sid="38ea14d4a19de8864b5d181df1c5e523">
+          <id>blankPanel0ad3d</id>
+          <width>300</width>
+          <frame>true</frame>
+          <themeStyle>cherry</themeStyle>
+          <Items>
+            <blankPanel sid="06510e1c6e449d80defc64cff32d5b65">
+              <id>blankPanelad267</id>
+              <Items>
+                <blankPanel sid="6a83e868bda5533d8c72b67dd9e6f324">
+                  <id>blankPanel8ec96</id>
+                  <bodyStyle>padding:3px;</bodyStyle>
+                  <Items>
+                    <loopArea sid="618c4c510f4fcb26fa847a7899850101">
+                      <id>loopArea1d24e</id>
+                      <ds>rs1</ds>
+                      <Items>
+                        <blankPanel sid="84fcd634ba78ec982387ee4a87c11d74">
+                          <id>blankPanel0e613</id>
+                          <bodyStyle>border-bottom:1px dashed #E1E1E1;padding-bottom:3px;padding-top:3px;</bodyStyle>
+                          <toggleGroup>group1</toggleGroup>
+                          <onMouseOutClient><![CDATA[blankPanel0e613_onMouseOutClient]]></onMouseOutClient>
+                          <Items>
+                            <tableLayout sid="5e0b2ab6530ccdae91f5e06d51948074">
+                              <id>tableLayouta095d</id>
+                              <cellpadding>3</cellpadding>
+                              <Items>
+                                <htmlArea sid="4e9322787a0246b74391bcc39b1f1ed4">
+                                  <id>htmlAreab357f</id>
+                                  <value>{rs1.C_NAME}</value>
+                                  <style>color:#3A6BB6;font-size:14px;</style>
+                                </htmlArea>
+                                <htmlArea sid="59be314e040f8db6b3b1db8fe924874d">
+                                  <id>htmlArea124a9</id>
+                                  <value>{rs1.C_AUTH}</value>
+                                  <style>color:#999999;text-align:right;</style>
+                                </htmlArea>
+                              </Items>
+                            </tableLayout>
+                            <tableLayout sid="de45fba39ab3ba625fd32061d8132765">
+                              <id>tableLayout38fc0</id>
+                              <colWidths>80%</colWidths>
+                              <height>28</height>
+                              <cellpadding />
+                              <Items>
+                                <htmlArea sid="ad956a8d90eb2cc3d1a440be2c7ba052">
+                                  <id>htmlAreaca29a</id>
+                                  <value>{rs1.C_PUBLISHER}</value>
+                                  <style>padding-left:3px;</style>
+                                </htmlArea>
+                                <imageArea sid="480dd2d162ed495d47a4a23573de6888">
+                                  <id>imageArea7af3b</id>
+                                  <icon>/artery/arteryImage/arrow/down.gif</icon>
+                                  <value>1</value>
+                                  <tip>显示详情</tip>
+                                  <style>text-align:right;</style>
+                                  <hidden>true</hidden>
+                                </imageArea>
+                              </Items>
+                            </tableLayout>
+                            <blankPanel sid="e131ade8923ce391fac4f1ab74c63a7c">
+                              <id>blankPanel75d97</id>
+                              <hidden>true</hidden>
+                            </blankPanel>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </loopArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+            <pagingbar1 sid="f170a3c6c4c1998dda4ff8cf4edb681a">
+              <id>pagingbar196360</id>
+              <ds>rs1</ds>
+              <pageCount>5</pageCount>
+            </pagingbar1>
+          </Items>
+        </blankPanel>
+        <formArea sid="375a07d93a6b9671b1e4158842129207">
+          <id>formArea50f57</id>
+          <ds>rs2</ds>
+          <colNum>1</colNum>
+          <show>false</show>
+          <Items>
+            <faString sid="cee95a35aa9414975a002c4217fbdc3e">
+              <id>faStringCISBN</id>
+              <required>false</required>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ISBN</inheritfld>
+              <dataName>{rs2.C_ISBN}</dataName>
+              <label extend="true">ISBN号</label>
+            </faString>
+            <faDate sid="99d604c3b4749c2c5b52cd511bc3ba0e">
+              <id>faDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs2.D_PUBLISHER}</dataName>
+              <label extend="true">出版日期</label>
+            </faDate>
+            <faDate sid="65a179dc1f7694a0cf9ba3c207c8d8a7">
+              <id>faDateDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{rs2.D_BUY}</dataName>
+              <label extend="true">购买日期</label>
+            </faDate>
+            <faBinary sid="8cc7945800f384de4ef97e024592b679">
+              <id>faBinaryIPHOTO</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>I_PHOTO</inheritfld>
+              <dataName>{rs2.I_PHOTO}</dataName>
+              <label extend="true">图书封面</label>
+            </faBinary>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Book where C_ID='{req.bookId}'</ds>
+  </dslist>
+</form>
+

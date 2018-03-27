@@ -1,0 +1,574 @@
+body.left
+{
+  font-size: 9pt;
+  scrollbar-face-color: #587FA7;
+  scrollbar-shadow-color: #DFE6ED;
+  scrollbar-highlight-color: #E7EDF2;
+  scrollbar-3dlight-color: #587FA7;
+  scrollbar-darkshadow-color: black;
+  scrollbar-track-color: #BFCEDD;
+  scrollbar-arrow-color: #FFFFFF;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: #E7EDF2;
+}
+body.main
+{
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: white;
+}
+
+.error_body
+{
+    background-color:#FFFFFF;
+    MARGIN-TOP: 0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	MARGIN-LEFT: 0px;
+}
+
+A, TD, INPUT
+{
+  font-family: ËÎÌו;
+  font-size: 12px
+}
+A
+{
+  color: #587fa7;
+  font-size: 9pt;
+  text-decoration: none;
+  text-transform: none;
+}
+A:visited
+{
+  color: #587fa7
+  text-decoration: none;
+  text-transform: none;
+}
+A:active
+{
+  color: #00486e
+}
+A:hover
+{
+  color: #FF0000
+  text-decoration: none
+}
+TABLE.frame
+{
+  width: 100%;
+  text-align: center
+}
+TABLE.visitinfo
+{
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+  padding-top: 0px;
+  text-align: center
+}
+TABLE.interface
+{
+  width: 100%;
+  border:0;
+  background-color: #557F91;
+}
+TR.interface
+{
+  background-color: #ffffff;
+  text-valign: top
+}
+TD.interface
+{
+  background-color: #ffffff;
+  text-valign: top;
+  text-align: center;
+}
+TABLE.head
+{
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  width: 100%;
+  text-align: center;
+  border-right-width: 0px
+}
+TD.headfirst
+{
+  font-weight: bolder;
+  font-size: 85%;
+  width: 80%;
+  color: black;
+  height: 36pt;
+  text-align: left
+}
+TD.headlast
+{
+  width: 20%;
+  height: 38pt;
+  text-align: right
+}
+TD.titleline
+{
+  height: 1pt;
+  background-color: #A4D5DD
+}
+TABLE.op
+{
+  width:100%;
+  background-image: url(../images/second/tab_pagehead.gif);
+}
+TD.op
+{
+  height:28pt;
+  text-align: center;
+}
+.op A
+{
+  color: #587fa7;
+  font-size: 9pt;
+  text-decoration: none;
+  text-transform: none;
+}
+.op A:LINK
+{
+  color: #587fa7; text-decoration: none
+}
+.op A:HOVER
+{
+  color: #FF0000
+}
+TABLE.pageinfo
+{
+  width:100%;
+}
+TR.pageinfo
+{
+  text-align: center;
+}
+TD.pageinfo
+{
+  height: 25pt;
+  text-align: center;
+}
+.pageinfo_number
+{
+  color: #ff0000;
+}
+.pageinfo
+{
+  font-size: 9pt;
+  padding-top: 2px;
+}
+.pageinfo A
+{
+  color: #587fa7;
+  font-size: 9pt;
+  text-decoration: none;
+  text-transform: none;
+}
+.pageinfo A:LINK
+{
+  color: #587fa7; text-decoration: none
+}
+.pageinfo A:HOVER
+{
+  color: #FF0000
+}
+TD.infobar
+{
+  font-size: 9pt;
+  background-color: #F4FAFB;
+  text-align: center
+}
+TABLE.list
+{
+  width: 100%;
+}
+TR.listHead
+{
+  background-color: #A4D5DD;
+  text-align: center
+}
+TD.listHead
+{
+  font-size: 10pt
+}
+.listHead A
+{
+  color: #00486e;
+  font-size: 9pt;
+  text-decoration: none;
+  text-transform: none;
+}
+.listHead A:link
+{
+  color: #00486e; text-decoration: none
+}
+.listHead A:hover
+{
+  color: #FF0000
+}
+TR.listEvenLine
+{
+  padding-top: 3px;
+  text-align: center
+}
+TR.listOddLine
+{
+  background-color: #D8EDF1;
+  text-align: center
+}
+TD.listInfo
+{
+  font-size: 9pt
+}
+.listInfo A
+{
+  color: RED;
+}
+.listInfo A:visited
+{
+  color: #587fa7;
+}
+.listInfo A:active
+{
+  color: #587fa7;
+}
+.listInfo A:hover
+{
+  color: #587fa7;
+}
+TABLE.listPrint
+{
+  width: 90%;
+}
+TR.listPrintHead
+{
+  background-color: white;
+  text-align: center
+}
+TD.listPrintHead
+{
+  font-size: 10pt
+}
+TR.listPrintLine
+{
+  background-color: #ffffff;
+  text-align: center
+}
+TD.listPrintInfo
+{
+  font-size: 9pt
+}
+TABLE.input
+{
+  width: 100%
+}
+TR.inputTitle
+{
+  background-color: #A4D5DD;
+  text-align: left
+}
+TD.inputTitle
+{
+  padding-top: 3px;
+  color: #FFFFFF;
+  background-color: #A4D5DD;
+  padding-left: 10px;
+}
+.inputTitle a
+{
+  color: black;
+}
+.inputTitle a:visited
+{
+  color: black;
+}
+.inputTitle a:active
+{
+  color: black;
+}
+.inputTitle a:hover
+{
+  color: black;
+}
+TR.inputEvenLine
+{
+  border-right: blue inset;
+  border-top: solid;
+  border-bottom: solid;
+  background-color: white;
+  text-align: left
+}
+TR.inputOddLine
+{
+  background-color: white;
+  text-align: left
+}
+TD.inputMainName
+{
+  width: 20%;
+  background-color: #D8EDF1;
+  text-align: right
+}
+TD.inputMainValue
+{
+  width: 30%;
+  background-color: white;
+  text-align: left
+}
+TD.inputSubName
+{
+  width: 10%;
+  background-color: #D8EDF1;
+  text-align: right
+}
+TD.inputSubValueB
+{
+  width: 15%;
+  background-color: white;
+  text-align: left
+}
+TD.inputSubValueE
+{
+  width: 15%;
+  background-color: white;
+  text-align: left
+}
+TD.inputLongValue
+{
+  background-color: white;
+  text-align: left
+}
+TR.listSubTb
+{
+  background-color: white;
+  text-align: center
+}
+TABLE.subTbRowSpace
+{
+  width:100%;
+  background-color:"#F1F4F7";
+}
+TD.subTbRowSpace
+{
+  height:1;
+}
+TABLE.search
+{
+  width: 98%;
+  text-align: center
+}
+TR.searchTitle
+{
+  background-color: #A4D5DD;
+  text-align: left
+}
+TD.searchFieldName
+{
+  width: 15%;
+  background-color: #D8EDF1;
+  text-align: left
+}
+TD.searchAndOr
+{
+  width: 5%;
+  background-color: #e7eef0;
+  text-align: left
+}
+TABLE.stat
+{
+  width: 98%;
+  text-align: center
+}
+TR.statHead
+{
+  background-color: #c2d2d8;
+  text-align: center
+}
+TD.statHead
+{
+  font-size: 10pt
+}
+TR.statEvenLine
+{
+  background-color: #ffffff;
+  text-align: center
+}
+TR.statOddLine
+{
+  background-color: #ffffff;
+  text-align: center
+}
+TR.statOption
+{
+  background-color: #F4FAFB;
+  text-align: center
+}
+TD.statInfo
+{
+  font-size: 9pt
+}
+TABLE.statusbar
+{
+  background-color: #c0c0c0
+}
+TABLE.navimenu
+{
+  width: 100%;
+  background-color: #C2D2D8
+}
+TR.navimenuEvenLine
+{
+  background-color: #ffffff;
+  text-align: center
+}
+TR.navimenuOddLine
+{
+  background-color: #E7EEF0;
+  text-align: center
+}
+TABLE.dateSet
+{
+  width: 90%;
+}
+TR.dateList
+{
+  background-color: #ffffff;
+  height:40;
+}
+INPUT.dateInput
+{
+  border: 1px solid #CAD4D9;
+  background-color: #EDF1F3;
+}
+TD.ctxsearchTitle
+{
+  height: 26;
+  width:  70;
+  text-align: right;
+}
+TD.ctxsearchOption
+{
+  height: 26;
+  text-align: left;
+}
+.ctxsearchOption a
+{
+  color: #587fa7;
+  font-size: 9pt;
+  text-decoration: none;
+  text-transform: none;
+}
+TABLE.navibar
+{
+  width: 97%;
+}
+TD.navibar
+{
+  height: 30;
+}
+.navibar a
+{
+  color: #587fa7;
+  font-size: 9pt;
+  text-decoration: none;
+  text-transform: none;
+}
+TABLE.navitree1
+{
+  width:100%;
+  background-color: #587fa7;
+}
+TD.navitree1
+{
+  padding-top: 2px;
+}
+TD.navitree1_head
+{
+  background-color: #1aba00;
+  width:8;
+}
+TABLE.navitree2
+{
+  width:100%;
+  background-color: white;
+  background-image: url(../images/second/bg_left_navi.gif);
+}
+TD.navitree2
+{
+  width:5%;
+  height: 18;
+}
+TABLE.navitree3
+{
+  width:100%;
+  background-color: white;
+}
+TD.navitree3
+{
+  width:7%;
+  height: 18;
+}
+TD.tree
+{
+  height: 18;
+}
+A.tree
+{
+}
+A.treeHead
+{
+  color:white;
+}
+A.treeInvalid
+{
+  color:#A8A8A8;
+}
+A.function
+{
+  color:white;
+}
+.refreshbtn
+{
+  border: none;
+  background-image: url(../images/refresh.gif);
+  height: 11px;
+  width: 11px;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+TABLE.left1
+{
+  width:100%;
+}
+TABLE.left2
+{
+  width:100%;
+  background-color: white;
+  background-image: url(../../iweb/images/bg_left.gif);
+}
+TABLE.left3
+{
+  width:100%;
+  background-color: white;
+}
+TD.rightcolumnhead
+{
+  width:15;
+  height:30;
+  text-align: center
+}
+TD.rightcolumn
+{
+  text-align: left
+}
+
+

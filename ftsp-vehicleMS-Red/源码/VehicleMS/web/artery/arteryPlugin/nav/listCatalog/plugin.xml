@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="listCatalog" cn="列表导航目录" jsType="artery-base" nameprop="caption"
+	icon="listCatalog.gif" iconNew="listCatalogNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe><![CDATA[列表导航目录是列表导航的分组单位，每个目录下，可以包含其他导航栏，目录，或操作项等控件。
+		通过点击目录上方的折叠按钮，同一目录中的导航控件可以被折叠隐藏。]]></Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="listNav" />
+	</Parents>
+	<Children>
+		<Child type="listItem" />
+		<Child type="listCatalog" />
+		<Child type="treeNav" />
+		<Child type="dynamicNav" />
+		<Child type="blankPanel" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.nav.ListCatalog
+	</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value/>
+		</Property>
+		<Property cn="说明" type="1" name="caption" tips="设置导航目录的说明">
+			<Value />
+		</Property>
+		<Property cn="图片" type="5" name="icon"
+			tips="设置组件的显示图标，直接从系统文件中读取，此处要写相对路径，如/artery/form/parse/images/checked.gif">
+			<Value />
+		</Property><!--
+		<Property cn="操作区域编号" type="1" name="operAreaId" tips="设置控件的操作区域ID，当点击此节点时，将会在此属性指定的区域，连接一个url，url由节点的link属性指定">
+			<Value />
+		</Property>
+		-->
+		<Property cn="只作为分组" type="11" name="onlyGroup" export="true" tips="当设置为true时，本组件只会作为分组展现，不能折叠隐藏子组件">
+			<Value>false</Value>
+		</Property>
+		<Property cn="使用Frame样式" type="11" name="frame" export="true"
+			tips="当设置为true，时，会以另一种样式展现控件，如：如果是面板控件的话...">
+			<Value>false</Value>
+		</Property>
+		<Property cn="是否显示边框" type="11" name="border" export="true"
+			tips="设置为true时，显示最外层的边框，否则不显示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="组件间隔" type="1" name="cellpadding" inherit="false" tips="设置此分组中组件间的间隔，默认为4">
+			<Value>4</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style" tips="设置本组件的样式，可填写css代码">
+			<Value />
+		</Property>
+		<Property cn="样式名称" type="1" name="className"
+			tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+			<Value />
+		</Property>
+		<Property cn="主题样式" type="21" name="themeStyle" tips="设置列表的风格样式">
+			<Value>inherit</Value>
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+		<Property cn="客户端" type="15" group="点击时脚本" name="onClickClient" tips="设置单击控件时所执行的脚本">
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer" tips="设置单击控件时所执行的脚本">
+			<Value />
+			<Description><![CDATA[	
+			<pre>	
+/**
+ * 点击时脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public Object listItemde9cf_onClickServer(Item item) {
+	return null;
+}
+				</pre>	
+	]]>
+			</Description>
+		</Property>
+		<Property cn="客户端" type="15" group="取消选中时脚本" name="onDeselectClient" tips="设置控件取消选中时所执行的客户端脚本">
+			<Value />
+			<Description><![CDATA[	
+			<pre>	
+/**
+ * onDeselectClient(listItemde9cf)
+ * 
+ * @param  rc 系统提供的AJAX调用对象
+ */
+function listItemde9cf_onDeselectClient (rc){
+	
+}
+</pre>	
+			]]>
+			</Description>
+		</Property>
+		<Property cn="服务器端" type="14" group="取消选中时脚本" name="onDeselectServer" tips="设置控件取消选中时所执行的服务器端脚本">
+			<Value />
+			<Description><![CDATA[
+			<pre>
+/**
+ *  列表导航操作项
+ * 
+ * @param item
+ *            控件对象
+ */
+public void listItemde9cf_onDeselectServer(Item item) {
+
+}
+			</pre>
+				]]>
+			</Description>
+		</Property>
+	</Properties>
+	<JavaFunctions>
+		<JavaFunction name="onCount">
+<![CDATA[
+/**
+ * 计数脚本
+ * 
+ * @param item
+ *            控件对象
+ */
+public String {methodName}(Item item) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

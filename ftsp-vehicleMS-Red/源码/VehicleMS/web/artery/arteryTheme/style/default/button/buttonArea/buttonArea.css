@@ -1,0 +1,66 @@
+/***************************************************************************************
+ * x-theme-buttonArea-simple
+ ***************************************************************************************/
+/*a link*/
+.x-theme-buttonArea-simple .x-btn-simple .x-btn-simple-link {
+	color: #3C5DA6;
+	width: 30px;
+	white-space: nowrap;
+}
+.x-theme-buttonArea-simple .x-btn-simple .x-btn-pressed {
+	font-weight: 700;
+	text-decoration: none;
+}
+/*button*/
+
+.x-theme-buttonArea-simple .x-btn {
+	height: 23px !important;
+}
+
+.x-theme-buttonArea-simple .x-btn-left {
+	background-image: none;
+}
+
+.x-theme-buttonArea-simple .x-btn-right {
+	background-image: none;
+}
+
+.x-theme-buttonArea-simple .x-btn-center {
+	background-image: none;
+}
+
+.x-theme-buttonArea-simple .x-btn-over .x-btn-left,.x-theme-buttonArea-simple .x-btn-focus .x-btn-left
+	{
+	background-image: url(images/simple/button.png) !important;
+	background-position: 0 0px !important;
+}
+
+.x-theme-buttonArea-simple .x-btn-over .x-btn-right,.x-theme-buttonArea-simple .x-btn-focus .x-btn-right
+	{
+	background-image: url(images/simple/button.png) !important;
+	background-position: right -26px !important;
+}
+
+.x-theme-buttonArea-simple .x-btn-over .x-btn-center,.x-theme-buttonArea-simple .x-btn-focus .x-btn-center
+	{
+	background-image: url(images/simple/button.png) !important;
+	background-position: 0 -54px !important;
+}
+
+.x-theme-buttonArea-simple .x-btn-pressed .x-btn-left
+	{
+	background-image: url(images/simple/button.png) !important;
+	background-position: 0 -79px !important;
+}
+
+.x-theme-buttonArea-simple .x-btn-pressed .x-btn-right
+	{
+	background-image: url(images/simple/button.png) !important;
+	background-position: right -107px !important;
+}
+
+.x-theme-buttonArea-simple .x-btn-pressed .x-btn-center
+	{
+	background-image: url(images/simple/button.png) !important;
+	background-position: 0 -135px !important;
+}

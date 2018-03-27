@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d0ed6c1a719cb07e93eccfe58e4b8c8e</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tabs.navTab._navTabforWeeklys.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tabs/navTab/_navTabforWeeklys.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form7d2e7">
+      <id>form7d2e7</id>
+      <Items>
+        <upRegion sid="87b51dff3cba4ca4c8c9f81695cc9a88">
+          <id>upRegion1945f</id>
+          <height>100</height>
+          <split>false</split>
+          <border>false</border>
+          <Items>
+            <tableLayout sid="05b5ebd893111e6e3fc8014771db1b37">
+              <id>tableLayout23FA9</id>
+              <colNum>1</colNum>
+              <height>100%</height>
+              <borderWidth>0</borderWidth>
+              <cellpadding>0</cellpadding>
+              <Items>
+                <blankPanel sid="8a9459b1e423c95e2b161b7804d5e4f6">
+                  <id>blankPanel0A48C</id>
+                  <height>100%</height>
+                  <synTabHeight>true</synTabHeight>
+                </blankPanel>
+                <blankPanel sid="11a90f88f423d7bd3c2fb3d4d6463fef">
+                  <id>blankPanel689F2</id>
+                  <style>border-bottom:1px solid #999;</style>
+                  <Items>
+                    <bottomBar sid="3ff5b54a780e3c25e931ac1e6b03046d">
+                      <id>bottomBarBD8CD</id>
+                      <Items>
+                        <tbFill sid="96c5ca7d052f618cbb7e34ff4a15b85d">
+                          <id>tbFillA8F98</id>
+                        </tbFill>
+                        <tbButton sid="1727f208a390c9f90bb60df5a5862cb1">
+                          <id>tbButton5E59A</id>
+                          <text>周报填写</text>
+                          <pressed>true</pressed>
+                        </tbButton>
+                        <tbButton sid="1df7bb259b0dda802cfc090d92d511bb">
+                          <id>tbButton319B0</id>
+                          <text>周报查询</text>
+                        </tbButton>
+                        <tbButton sid="f726ccb63380a882d05071be01288413">
+                          <id>tbButton09861</id>
+                          <text>统计</text>
+                        </tbButton>
+                        <tbButton sid="5f9436b20e78ab4e9c06e8d33fec1d9f">
+                          <id>tbButtonCB6A1</id>
+                          <text>配置</text>
+                        </tbButton>
+                      </Items>
+                    </bottomBar>
+                  </Items>
+                </blankPanel>
+                <navTabArea sid="ff99a51ddf7cf09684621d1b3ce21b91">
+                  <id>navTabArea03CBF3718B5BDF909435A5931D1D5242</id>
+                  <height>30</height>
+                  <tabPosition>top</tabPosition>
+                  <operAreaId>operArea57D8E</operAreaId>
+                  <style>background-color:#DFE8F6;</style>
+                  <synTabStyle>vertical-align:bottom;</synTabStyle>
+                  <Items>
+                    <blankPanel sid="c1b75fbfb8c4672654a903239a908860">
+                      <id>blankPanelD3407</id>
+                      <width>250</width>
+                      <bodyStyle>padding-bottom:4px;</bodyStyle>
+                      <Items>
+                        <buttonArea sid="c10a89f29683dad18b84069c326338c0">
+                          <id>buttonArea15447</id>
+                          <align>right</align>
+                          <Items>
+                            <button sid="c5c1861fb95465d3cfcfd09ec402d8ee">
+                              <id>button3FE8C</id>
+                              <text>前五周</text>
+                              <show>false</show>
+                            </button>
+                            <simpleButton sid="feaba1477f512b9c17dc531a11f9e019">
+                              <id>simpleButton7EC37</id>
+                              <text>前五周</text>
+                            </simpleButton>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </blankPanel>
+                    <navTabItem sid="2e6c8aeb8ee057f3c78190a4978fdfee">
+                      <id>navTabItemBB756413F2BC8941D6EB35279ABF2675</id>
+                      <title>01~06</title>
+                      <linkto>{"formId":"1414b39d533de22836027f6ab5920143","formName":"_office","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                    </navTabItem>
+                    <navTabItem sid="04affbe28f6780a47b53fda010e5efb3">
+                      <id>navTabItemA37F97950225878B621D1A487C06436F</id>
+                      <title>07~13</title>
+                      <linkto>{"formId":"2beb8d1e75d63ed8ab3b7aadc8716bb9","formName":"_form","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                    </navTabItem>
+                    <navTabItem sid="b323adbc5db35d3d7dea86743b52e063">
+                      <id>navTabItem4AB958F1E6E480258D221A25DF057B6C</id>
+                      <title>&lt;span style="color:blue;font-weight:700;"&gt;14~20&lt;/span&gt;</title>
+                      <active>true</active>
+                      <linkto>{"formId":"74376239e57d9cf210ca7c7ad50f7de1","formName":"_window","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                    </navTabItem>
+                    <navTabItem sid="8093a343422a6eff7cb5a9502a351d1f">
+                      <id>navTabItem116BCBCBE972CE3570072F5193A55C15</id>
+                      <title>21~27</title>
+                      <linkto>{"formId":"9e74c9b77072612eb411b8333c006319","formName":"_faDate","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                    </navTabItem>
+                    <navTabItem sid="ae2c31f0abc8cf895613d046ec1425eb">
+                      <id>navTabItem92726BBA7E6B3F9BA9A1ECB8075E3106</id>
+                      <title>28~04</title>
+                    </navTabItem>
+                    <blankPanel sid="f3082a00d0b5704d22dd2f50a0673d6f">
+                      <id>blankPanelBB560</id>
+                      <width>100</width>
+                      <bodyStyle>padding-bottom:4px;</bodyStyle>
+                      <Items>
+                        <buttonArea sid="3e076ab229979635867bf1385434236a">
+                          <id>buttonArea2F5D0</id>
+                          <Items>
+                            <button sid="96e4369143e424e17770f8f4fb80f170">
+                              <id>buttonD6CC7</id>
+                              <text>后五周</text>
+                              <show>false</show>
+                            </button>
+                            <simpleButton sid="454e7877be1e2bb7cf85fe36a48934da">
+                              <id>simpleButtonDEB44</id>
+                              <text>后五周</text>
+                            </simpleButton>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </blankPanel>
+                    <tbFill sid="4bb362d3b7202a4f090c67d15788bd5f">
+                      <id>tbFill98420</id>
+                    </tbFill>
+                    <blankPanel sid="c3ea877bc23b442c6e52717ad8c434e5">
+                      <id>blankPanel61A13</id>
+                      <width>100%</width>
+                      <bodyStyle>padding-bottom:2px;</bodyStyle>
+                      <Items>
+                        <buttonArea sid="29ee9fd169dc603d05107e9cecc527df">
+                          <id>buttonArea81DB2</id>
+                          <width>100</width>
+                          <Items>
+                            <button sid="424d63b82b879affb9ad9d22eac69f7f">
+                              <id>button79B42</id>
+                              <text>按项目填</text>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </navTabArea>
+              </Items>
+            </tableLayout>
+          </Items>
+        </upRegion>
+        <leftRegion sid="434254b568b1c315a3421d1425993c34">
+          <id>leftRegion0e11d</id>
+          <width>170</width>
+          <border>false</border>
+          <Items>
+            <navTabArea sid="bc76f1a007c13fce51bf25c075c972f3">
+              <id>navTabAreaBA3B5</id>
+              <height>100%</height>
+              <activeTab>1</activeTab>
+              <operAreaId>operArea57D8E</operAreaId>
+              <Items>
+                <navTabItem sid="e0b47f128e586296f7ba48b11f637cb2">
+                  <id>navTabItem0A62F</id>
+                  <title>2009年12月07日 星期一</title>
+                  <linkto>{"formId":"1414b39d533de22836027f6ab5920143","formName":"_office","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                </navTabItem>
+                <navTabItem sid="393b9defce2af3eaf7101bd4128f0244">
+                  <id>navTabItem33A3E</id>
+                  <title>&lt;span style="color:blue;"&gt;2009年12月08日 星期二&lt;/span&gt;</title>
+                  <linkto>{"formId":"2beb8d1e75d63ed8ab3b7aadc8716bb9","formName":"_form","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                </navTabItem>
+                <navTabItem sid="88538bf5059b83df6aef3a828455f00b">
+                  <id>navTabItem30A19</id>
+                  <title>2009年12月09日 星期三</title>
+                  <linkto>{"formId":"74376239e57d9cf210ca7c7ad50f7de1","formName":"_window","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                </navTabItem>
+                <navTabItem sid="8f36f351d8e8216e5c7e2bb1f4ef447b">
+                  <id>navTabItem465561EACD3B44A334B1F9E8DC2A1206</id>
+                  <title>2009年12月10日 星期四</title>
+                  <linkto>{"formId":"9e74c9b77072612eb411b8333c006319","formName":"_faDate","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                </navTabItem>
+                <navTabItem sid="a0131706f7070bcdea811209283238f9">
+                  <id>navTabItem70A0A0BB29CDFDE1A0C8FDDAEA829523</id>
+                  <title>2009年12月11日 星期五</title>
+                  <linkto>{"formId":"3ab9f41b942773d187a747c7ff4144b8","formName":"_faTree","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                </navTabItem>
+                <navTabItem sid="5a63b5a403f00663dbf3dd5496833b2e">
+                  <id>navTabItem6770B712B13DA66579A1F260B6699437</id>
+                  <title>&lt;span style="color:red;"&gt;2009年12月12日 星期六&lt;/span&gt;</title>
+                  <linkto>{"formId":"b45a1943d2dee7a1c3b09e4c45e56933","formName":"_fakindeditor","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                </navTabItem>
+                <navTabItem sid="c112c19285b8eaf696522322f2732bf0">
+                  <id>navTabItemD6291CBEA05F6CA60F857B3EF253867F</id>
+                  <title>&lt;span style="color:red;"&gt;2009年12月13日 星期日&lt;/span&gt;</title>
+                  <linkto>{"formId":"b45a1943d2dee7a1c3b09e4c45e56933","formName":"_fakindeditor","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                </navTabItem>
+                <blankPanel sid="7bef16db95cc4845e22edac213889ee2">
+                  <id>blankPanel616BB</id>
+                  <bodyStyle>padding:5px;</bodyStyle>
+                  <Items>
+                    <header sid="2d851189340103c1214c7a11ced0e42b">
+                      <id>headerB346E</id>
+                      <text>下周计划</text>
+                    </header>
+                    <buttonArea sid="730da31b2df984be97633043f94ba216">
+                      <id>buttonAreaE0FF2</id>
+                      <Items>
+                        <button sid="58508e94c66500363cbb1fa8327c7699">
+                          <id>button8E033</id>
+                        </button>
+                        <button sid="2ba9e1903070d54d320799c75850e72c">
+                          <id>button72FD5</id>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="7477dc611321d07c95dcef80f8f399bf">
+                  <id>blankPanel6C19E</id>
+                  <bodyStyle>padding:5px;</bodyStyle>
+                  <style>margin-top:10px;</style>
+                  <Items>
+                    <header sid="32daf7a784c475bfa68067956fee789e">
+                      <id>header443D9</id>
+                      <text>周报</text>
+                    </header>
+                    <buttonArea sid="2efadf3e90b6afc8b53f115ed009be62">
+                      <id>buttonArea2135D</id>
+                      <Items>
+                        <button sid="9c39158088d9baa43fd06a993eb46213">
+                          <id>button79133</id>
+                        </button>
+                        <button sid="d03e01cdabb3e7fb6a18476b8ba85386">
+                          <id>button378D0</id>
+                        </button>
+                      </Items>
+                    </buttonArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </navTabArea>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="6be02809912cc70369648d2077c17e02">
+          <id>centerRegionc2c81</id>
+          <border>false</border>
+          <Items>
+            <operArea sid="a5401f2eead82ab2ba7cdc5f69fc7274">
+              <id>operArea57D8E</id>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

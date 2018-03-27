@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>dc36d6dde1aef88e0115cdb2f2950412</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.button._button.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/button/_button.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formb5947">
+      <id>formb5947</id>
+      <text-align>left</text-align>
+      <Items>
+        <formArea sid="bdbc18f3d05160157602c7132dfa7886">
+          <id>formArea12348</id>
+          <width>1000</width>
+          <colNum>3</colNum>
+          <colSpacing>10</colSpacing>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <Items>
+            <faFieldSet sid="3e7ecfe61d3b75c9112f6316b80b22a8">
+              <id>faFieldSetca4fa</id>
+              <fieldSetName>常用按钮主题</fieldSetName>
+              <colWidths>20%,80%</colWidths>
+              <colSpan>3</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="1507e4b40ab05ad17aaaba01302e0432">
+                  <id>buttonArea0bb3a</id>
+                  <spacing>15</spacing>
+                  <colSpan>2</colSpan>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="80eefe5ea4454056485247df160ea09d">
+                      <id>button7dbe2</id>
+                      <text>默认</text>
+                    </button>
+                    <button sid="5d75288b864dfbdb356d921ae49d8eca">
+                      <id>buttonc67c0</id>
+                      <text>apple</text>
+                      <themeStyle>apple</themeStyle>
+                    </button>
+                    <button sid="351ebaaa5a221c5d55c22a0df4dbe853">
+                      <id>button96f68</id>
+                      <width>70</width>
+                      <text>appleSilent</text>
+                      <themeStyle>appleSilent</themeStyle>
+                    </button>
+                    <button sid="69ab77adbb8d61d2ad43efe6de7e12d4">
+                      <id>button5dbe8</id>
+                      <width>70</width>
+                      <text>bigWhite</text>
+                      <themeStyle>bigWhite</themeStyle>
+                    </button>
+                    <button sid="6079534070c0fc5680d25c9d83867825">
+                      <id>button0ea0f</id>
+                      <text>block</text>
+                      <themeStyle>block</themeStyle>
+                    </button>
+                    <button sid="3fc7d3a841843e250da8c73a8495e3d6">
+                      <id>button47284</id>
+                      <text>cat</text>
+                      <themeStyle>cat</themeStyle>
+                    </button>
+                    <button sid="8fb3d16d6b0377842423a3383411017e">
+                      <id>buttonda2e9</id>
+                      <text>catLike</text>
+                      <themeStyle>catLike</themeStyle>
+                    </button>
+                    <button sid="4d5f8e2f8eeb6aceb36e9c2ab04e1c7d">
+                      <id>button74220</id>
+                      <text>cookie</text>
+                      <themeStyle>cookie</themeStyle>
+                    </button>
+                    <button sid="9d6f7e0af51f1fb5105b5194932f1fdf">
+                      <id>button784c9</id>
+                      <width>70</width>
+                      <text>cookieLike</text>
+                      <themeStyle>cookieLike</themeStyle>
+                    </button>
+                    <button sid="e5793f8a66a7a81de7ee5f78c8f3a799">
+                      <id>buttonc08f5</id>
+                      <text>darkblue</text>
+                      <themeStyle>darkblue</themeStyle>
+                    </button>
+                    <button sid="ed5ae8699a511f255e7e6bfa07531254">
+                      <id>buttonca81d</id>
+                      <text>listBlue</text>
+                      <themeStyle>listBlue</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+                <buttonArea sid="6cb70d19bdf1bc1f86fb658862769dac">
+                  <id>buttonArea0cf3e</id>
+                  <width />
+                  <spacing>0</spacing>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="2cb2a332ddde0a7878c21700300a43bf">
+                      <id>buttonc5437</id>
+                      <text>ovalLeft</text>
+                      <themeStyle>ovalLeft</themeStyle>
+                    </button>
+                    <button sid="30e39f15f443ed93b5a0fdb1fa0a80c5">
+                      <id>button818d5</id>
+                      <text>ovalRight</text>
+                      <themeStyle>ovalRight</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+                <buttonArea sid="ee4212fb8e34c320bf208634757bfcf6">
+                  <id>buttonAreae8a4a</id>
+                  <spacing>0</spacing>
+                  <toggle>true</toggle>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="90d82eb81f4d94b3d9898444e280ef14">
+                      <id>buttonb6e20</id>
+                      <width>70</width>
+                      <text>switchLeft</text>
+                      <pressed>true</pressed>
+                      <themeStyle>switchLeft</themeStyle>
+                    </button>
+                    <button sid="8219bb37600a0c8cef7bee7ff3f355d0">
+                      <id>buttoncb2aa</id>
+                      <width>70</width>
+                      <text>switchRight</text>
+                      <themeStyle>switchRight</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="05210f33acf82a92e2e87e49dc03b1ed">
+              <id>faFieldSeta7a44</id>
+              <fieldSetName>图标相关</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="32617e83d02a3b2638ecb3d4f3504ed6">
+                  <id>buttonAreadfa3f</id>
+                  <align>center</align>
+                  <spacing>15</spacing>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="3bb1bfbdf92c8e2e7a7cfbe0dc6a93e5">
+                      <id>button42b3e</id>
+                      <text>图标</text>
+                      <icon>/artery/arteryImage/symbol/add.gif</icon>
+                    </button>
+                    <button sid="5dfdfc93fd64aca45804f80a5fcd2b0a">
+                      <id>button13bae</id>
+                      <width>65</width>
+                      <text>只显示图标</text>
+                      <tooltip>只显示图标</tooltip>
+                      <icon>/artery/arteryImage/symbol/add.gif</icon>
+                      <onlyShowIcon>true</onlyShowIcon>
+                    </button>
+                    <button sid="d90032c5aa78466e7b60366a0fff1067">
+                      <id>button8d7e8</id>
+                      <width>80</width>
+                      <text>图标上方显示</text>
+                      <icon>/artery/arteryImage/symbol/add.gif</icon>
+                      <iconTop>true</iconTop>
+                      <themeStyle>block</themeStyle>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="6d7798e5e18e0c351e242b6d3a283779">
+              <id>faFieldSet92c3b</id>
+              <fieldSetName>无效按钮</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="fb77c8c7050886c2c3a6e01363f0cbab">
+                  <id>buttonAreace6f2</id>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="abd425e3a653bb7bc4e7d064748b9f2b">
+                      <id>buttoneab9b</id>
+                      <text>无效状态</text>
+                      <disabled>true</disabled>
+                    </button>
+                    <button sid="076ccdef4219e5763ffb255db72a05f2">
+                      <id>button73483</id>
+                      <text>有效状态</text>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="03b6820d3b3730d3236f21a748de1e96">
+              <id>faFieldSet5677d</id>
+              <fieldSetName>开关模式</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="132717742c041cc3f8bb69bda39b7a91">
+                  <id>buttonArea3af52</id>
+                  <align>center</align>
+                  <toggle>true</toggle>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="f7f1b4df3412570832efc5fccede6608">
+                      <id>buttonba64a</id>
+                      <width>60</width>
+                      <text>pressed</text>
+                      <pressed>true</pressed>
+                    </button>
+                    <button sid="6f07ba40a09c714c4ecf1d0388ae91f7">
+                      <id>button4acd5</id>
+                      <width>60</width>
+                      <text>click me 1</text>
+                    </button>
+                    <button sid="2788135a14096bc3068622021734076f">
+                      <id>button6bffc</id>
+                      <width>60</width>
+                      <text>click me 2</text>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="2f1ba9177aa939df6beecd81762c78a3">
+              <id>faFieldSet25926</id>
+              <fieldSetName>提示信息</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="6b53aa2621951a39a241c8f7cda5a403">
+                  <id>buttonArea11361</id>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="39fabbc5ff2fe41e02e23c77ca1d90cf">
+                      <id>buttonc1d4c</id>
+                      <text>添加</text>
+                      <tooltip>点击按钮添加新的用户信息</tooltip>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="1bf7e728a3252793f15d77d45f9326d5">
+              <id>faFieldSet660ff</id>
+              <fieldSetName>按钮点击</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="acd96d2f55f1074a088b9f999be77634">
+                  <id>buttonArea6073a</id>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="a2240a49fd31136da9e881ec4dbcc12e">
+                      <id>button22b8e</id>
+                      <text>链接到</text>
+                      <linkto>{"url":"http://api.thunisoft.com/","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                    </button>
+                    <button sid="ecaeaa6fbcb2d20cc795fcad1140bb1a">
+                      <id>button7f43c</id>
+                      <width>70</width>
+                      <text>点击时脚本</text>
+                      <onClickClient><![CDATA[button7f43c_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[button7f43c_onClickServer]]></onClickServer>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="a5643b6d11f20be45157f66c6bfc6401">
+              <id>faFieldSet2ac29</id>
+              <fieldSetName>请求状态</fieldSetName>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="2001d9ccffb09a5f6af57461c6795f75">
+                  <id>buttonArea22c56</id>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="103b61da8bf758bcbf06432dce350d53">
+                      <id>buttonc6563</id>
+                      <width>80</width>
+                      <text>发送请求</text>
+                      <loadingState>true</loadingState>
+                      <onClickClient><![CDATA[buttonc6563_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[buttonc6563_onClickServer]]></onClickServer>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="c4cb2c7f597d9833f0179d6ba0da89ab">
+              <id>faFieldSet5d30e</id>
+              <fieldSetName>常用方法</fieldSetName>
+              <colNum>1</colNum>
+              <colSpan>3</colSpan>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <buttonArea sid="471a1eae704bbe46d795ecd6dc27a927">
+                  <id>buttonArea345d0</id>
+                  <height>50</height>
+                  <align>center</align>
+                  <synTabHeight>true</synTabHeight>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="796ed6ecb082e7380890f70b3277de65">
+                      <id>buttond6f07</id>
+                      <width>70</width>
+                      <text>预览示例</text>
+                      <icon>/artery/arteryImage/other/lightbulb.gif</icon>
+                      <onClickClient><![CDATA[buttond6f07_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+                <buttonArea sid="4da6b1126fa1b3f588db4e123922ba5d">
+                  <id>buttonArea96166</id>
+                  <align>center</align>
+                  <spacing>15</spacing>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <button sid="283a2e9c8ea89e05b6caca85673e4140">
+                      <id>button75300</id>
+                      <text>getText</text>
+                      <onClickClient><![CDATA[button75300_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="893f0166a576ee98de4136ebe16e3013">
+                      <id>buttondc2d6</id>
+                      <text>setText</text>
+                      <onClickClient><![CDATA[buttondc2d6_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="a4728dc32d7e682c7eb8f90442294b43">
+                      <id>buttonff0ce</id>
+                      <text>hideIcon</text>
+                      <onClickClient><![CDATA[buttonff0ce_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="2c3cbd2c9b7176a45ef2eb3898050fff">
+                      <id>buttonc7930</id>
+                      <text>showIcon</text>
+                      <onClickClient><![CDATA[buttonc7930_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="6f41f8efccb432a341dc07c28110e5c6">
+                      <id>buttonef230</id>
+                      <text>setIcon</text>
+                      <onClickClient><![CDATA[buttonef230_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="cd623230f168ff07694ffa85a8b94dd4">
+                      <id>button0ec48</id>
+                      <text>click</text>
+                      <onClickClient><![CDATA[button0ec48_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="32d535d81c96328a31111e0788b69d8f">
+                      <id>buttonacfc7</id>
+                      <text>hide</text>
+                      <onClickClient><![CDATA[buttonacfc7_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="90c080194cbc4d9b5b2cc0d238db8703">
+                      <id>button50f02</id>
+                      <text>show</text>
+                      <onClickClient><![CDATA[button50f02_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="79f9a51e323ecb54810d99ed89c4b946">
+                      <id>button5e21d</id>
+                      <text>disable</text>
+                      <onClickClient><![CDATA[button5e21d_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="65304c84c08808492e3b840bbaf30e5b">
+                      <id>button5c345</id>
+                      <text>enable</text>
+                      <onClickClient><![CDATA[button5c345_onClickClient]]></onClickClient>
+                    </button>
+                    <button sid="780935314e3a61b3f1ac61dd371994df">
+                      <id>buttond56cb</id>
+                      <width>70</width>
+                      <text>setTooltip</text>
+                      <onClickClient><![CDATA[buttond56cb_onClickClient]]></onClickClient>
+                    </button>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

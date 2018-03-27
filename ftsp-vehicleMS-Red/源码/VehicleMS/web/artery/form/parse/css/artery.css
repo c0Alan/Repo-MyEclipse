@@ -1,0 +1,135 @@
+A:link {
+  color: #3C5DA6;
+}
+A:hover,a:ACTIVE {
+  color: #FF8400;
+}
+a:VISITED{
+	color: #707070;
+}
+
+/*****************************
+ *         tipMessage        *
+ *****************************/
+.x-tip-message {
+    position: absolute;
+    z-index: 20002;
+}
+.x-tip-message .tips_body {
+	position: absolute;
+    font: 11px tahoma,arial,verdana,sans-serif;
+    border: 2px dashed #88ABD8;
+    background: #fff;
+    padding: 8px;
+    padding-top:2px;
+    color: #333;
+}
+
+.x-tip-message .x-tip-text {
+	white-space: nowrap;
+}
+
+.x-tip-message .tips_loading{
+	padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/loading.gif) no-repeat;
+}
+
+.x-tip-message .tips_ok{
+    padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/tips_ok.gif) no-repeat;
+}
+.x-tip-message .tips_info{
+    padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/tips_info.gif) no-repeat;
+}
+.x-tip-message .tips_warning{
+    padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/tips_warning.gif) no-repeat;
+}
+.x-tip-message .tips_error{
+    padding-left: 25px;
+    padding-bottom:5px;
+    background: url(../images/tips/tips_error.gif) no-repeat;
+}
+.x-tip-message .x-message-top{
+    text-align: right;
+}
+.x-tip-message .x-message-top-close{
+	display:inline;
+	background: url(../images/tips/close.gif) no-repeat;
+	height:10px;
+	width:8px;
+	cursor:hand;
+}
+.x-tip-message-small {
+	display:none;
+	width:10px;
+	padding:0px;
+	height:10px;
+	overflow:hidden;
+	cursor:hand;
+	background: url(../images/tips/restore.gif) no-repeat ;
+}
+
+.add .x-btn-text{
+  background-image: url(../images/icon/add.gif);
+}
+.delete .x-btn-text{
+  background-image: url(../images/icon/del.gif);
+}
+.save .x-btn-text{
+  background-image: url(../images/icon/save.gif);
+}
+.syntax .x-btn-text{
+  background-image: url(../images/icon/chkSyntax.gif);
+}
+.back .x-btn-text{
+  background-image: url(../images/icon/back.gif);
+}
+.export .x-btn-text{
+  background-image: url(../images/icon/export.gif);
+}
+.import .x-btn-text{
+  background-image: url(../images/icon/import.gif);
+}
+.menu_show .x-btn-text{
+  background-image: url(../images/icon/menu-show.gif);
+}
+.refresh .x-btn-text{
+  background-image: url(../images/icon/refresh.gif);
+}
+.search .x-btn-text{
+  background-image: url(../images/icon/search.gif);
+}
+.excel .x-btn-text{
+  background-image: url(../images/icon/excel.gif);
+}
+.order .x-btn-text{
+  background-image: url(../images/icon/order.gif);
+}
+.up .x-btn-text{
+  background-image: url(../images/icon/up.gif);
+}
+.down .x-btn-text{
+  background-image: url(../images/icon/down.gif);
+}
+
+.preview .x-btn-text{
+  background-image: url(../images/icon/preview.gif);
+}
+
+.preview-d .x-btn-text{
+  background-image: url(../images/icon/preview_D.gif);
+}
+
+.preview-u .x-btn-text{
+  background-image: url(../images/icon/preview_U.gif);
+}
+
+.preview-i .x-btn-text{
+  background-image: url(../images/icon/preview_I.gif);
+}

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>240b6a89299f37240e82dd7bbab93d41</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight>artery</visitRight>
+  <javaLocation>arteryServer.jck.console.Zym.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/console/Zym.js</jsLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form35204">
+      <id>form35204</id>
+      <background-color>#3D5DA6</background-color>
+      <bodyStyle>padding:2px;</bodyStyle>
+      <Items>
+        <tableLayout sid="1846946300968ae082cce65570caf895">
+          <id>tableLayout4b66d</id>
+          <colNum>1</colNum>
+          <height>100%</height>
+          <cellpadding>0</cellpadding>
+          <Items>
+            <blankPanel sid="26bae9cf648bfd7c86fa410f4cd150f7">
+              <id>blankPanelc1599</id>
+              <Items>
+                <blankPanel sid="d656d87f25a1c53d185d72c75cb2390a">
+                  <id>blankPanel88057</id>
+                  <height>30</height>
+                  <bodyStyle>overflow:visible</bodyStyle>
+                  <Items>
+                    <tableLayout sid="edabab000e8195940583eb97e3b0ffc4">
+                      <id>tableLayout371f3</id>
+                      <colWidths>750</colWidths>
+                      <cellpadding>0</cellpadding>
+                      <Items>
+                        <blankPanel sid="e2242faa75bfd239602ee58fed130213">
+                          <id>blankPanel04ab7</id>
+                          <height>41</height>
+                          <className>bg-logo-top</className>
+                          <Items>
+                            <htmlArea sid="ca129ad771214ccf85664044d0577871">
+                              <id>htmlArea2c0a4</id>
+                              <style>color:#fff;font-weight:700;font-size:14px;padding-left:337px;padding-top:16px;</style>
+                              <onShow><![CDATA[htmlArea2c0a4_onShow]]></onShow>
+                            </htmlArea>
+                          </Items>
+                        </blankPanel>
+                        <buttonArea sid="4779b88fc4af4eee19197f84fd1cb604">
+                          <id>buttonArea36ec3</id>
+                          <align>right</align>
+                          <spacing>0</spacing>
+                          <style>padding-top:5px;padding-right:8px;</style>
+                          <Items>
+                            <button sid="848f2d2e56680efbc4b44ecd99ebca5a">
+                              <id>currentUserBtn</id>
+                              <text>{ses.username}</text>
+                              <icon>/artery/arteryImage/sample/person.gif</icon>
+                              <onClickClient><![CDATA[currentUserBtn_onClickClient]]></onClickClient>
+                              <themeStyle>ovalLeft</themeStyle>
+                            </button>
+                            <button sid="2a920e7bf8139408d3385daecbb52ebf">
+                              <id>buttonb3cd3</id>
+                              <text>退出系统</text>
+                              <icon>/artery/arteryImage/sample/exit.gif</icon>
+                              <onClickClient><![CDATA[buttonb3cd3_onClickClient]]></onClickClient>
+                              <themeStyle>ovalRight</themeStyle>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+                <ribbonArea sid="6dd08ccd78812a8681baab2efe3e9cbf">
+                  <id>ribbonAreadfd3f</id>
+                  <operAreaId>operArea41165</operAreaId>
+                  <style>background-color:#3D5DA6;</style>
+                  <themeStyle>blue</themeStyle>
+                  <className>bg-logo-bottom</className>
+                  <Items>
+                    <ribbonItem sid="ebf379aa2b214e5d317bb1d4e4e3e320">
+                      <id>ribbonItemXtwh</id>
+                      <title>系统维护</title>
+                      <Items>
+                        <ribbonGroup sid="831092797a9e0c8914fa69c013c1a13e">
+                          <id>ribbonGroupfedfe</id>
+                          <title>数据字典</title>
+                          <showRight>artery.dict &amp; (artery.dict.dict | artery.dict.relation | artery.dict.modify)</showRight>
+                          <Items>
+                            <ribbonCell sid="3cd32afb7730eb84a4c24401ffb90a47">
+                              <id>ribbonCelle806d</id>
+                              <title>数据字典</title>
+                              <linkto>{"url":"/artery/dict/dealDict.do?action=index","target":"operArea41165","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.dict.dict</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="04572fd6dc7080908bc4d08f39331ad4">
+                              <id>ribbonCellbe5ba</id>
+                              <title>表间关系</title>
+                              <linkto>{"url":"/artery/dict/dealRel.do?action=relationList","target":"operArea41165","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.dict.relation</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="27f4ff3747684b5997a661b4e0d4fb6c">
+                              <id>ribbonCellc9c42</id>
+                              <title>字典个性化</title>
+                              <linkto>{"formId":"0e15aeb8b8b09ab77673b755c2d5e39a","formName":"字典个性化维护","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.dict.modify</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="30d471fae77baabd0952fbcb5e5a1225">
+                              <id>ribbonCelle6f91</id>
+                              <title>字典库维护</title>
+                              <linkto>{"formId":"a8a8a2251b1c61610a588275063279f3","formName":"数据字典分组列表","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="ba58d1ca27be97c7be6c34b68947f8bc">
+                          <id>ribbonGroup237df</id>
+                          <title>代码管理</title>
+                          <showRight>artery.code &amp; (artery.code.normalcode | artery.code.classcode)</showRight>
+                          <Items>
+                            <ribbonCell sid="577730623bf0c0701dcddd03715490a5">
+                              <id>ribbonCell47199</id>
+                              <title>代码维护</title>
+                              <linkto>{"formId":"07eba2885ab0e1155b06027717a60bca","formName":"代码类型列表","formType":"1","runTimeType":"update","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.code.normalcode</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="9e34f731f96f4f36f878faf2c8695638">
+                              <id>ribbonCell21892</id>
+                              <title>分级代码维护</title>
+                              <linkto>{"url":"/artery/classCode/dealClassCode.do?action=listClassCode","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.code.classcode</showRight>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="e85397f0e2d763a96db4d619b5ff9edc">
+                          <id>ribbonGroup3647e</id>
+                          <title>组织机构</title>
+                          <showRight>artery.organ &amp; (artery.organ.organ | artery.organ.role | artery.organ.right)</showRight>
+                          <Items>
+                            <ribbonCell sid="676fd565f078deb2672526c117c14e01">
+                              <id>ribbonCellb5945</id>
+                              <title>组织机构人员</title>
+                              <linkto>{"formId":"c6c8b9ed478292fde2ae90f6e4261681","formName":"组织机构维护","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.organ.organ</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="6e8a2b1f659e0798a55e07683aabf08d">
+                              <id>ribbonCellb94bd</id>
+                              <title>角色维护</title>
+                              <linkto>{"formId":"1b3b408e9d3d76daa4fcfc96facbb538","formName":"角色维护","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.organ.role</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="793721dbbfe714cd76bdeac23e0198b7">
+                              <id>ribbonCellJcqxwh</id>
+                              <title>基础权限维护</title>
+                              <linkto>{"formId":"4d042c93e9b328c4093958824b52dbe1","formName":"权限维护","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.organ.right</showRight>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="6144193955989752ad4dfe3c0e43e52d">
+                          <id>ribbonGroup1d95a</id>
+                          <title>表单维护</title>
+                          <showRight>artery.eform &amp; (artery.eform.eform | artery.eform.subsys)</showRight>
+                          <Items>
+                            <ribbonCell sid="60de7724dff276c26934e434eb25535d">
+                              <id>ribbonCell727ae</id>
+                              <title>电子表单制作</title>
+                              <linkto>{"url":"/artery/complib.do?action=index","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.eform.eform</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="62299e1e3e9c138c6c57982761db89c6">
+                              <id>ribbonCellc1123</id>
+                              <title>子系统维护</title>
+                              <linkto>{"formId":"512a4417950d4b3c0263e60d0d7a3855","formName":"子系统维护","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.eform.subsys</showRight>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="7b148bc6e9270af5aa5d0ca0a72f5760">
+                          <id>ribbonGroup13fd6</id>
+                          <title>工具</title>
+                          <showRight>artery.tools &amp; (artery.tools.schedule | artery.tools.monitor | artery.tools.eformmonitor |artery.tools.theme)</showRight>
+                          <Items>
+                            <ribbonCell sid="3b4e79d188b5185a1d051576dcef7377">
+                              <id>ribbonCellXtdd</id>
+                              <title>系统调度</title>
+                              <linkto>{"formId":"47126f43ac28aaf736a6a83e0b96bb11","formName":"计划列表","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.tools.schedule</showRight>
+                              <onShow><![CDATA[ribbonCellXtdd_onShow]]></onShow>
+                            </ribbonCell>
+                            <ribbonCell sid="d36763df95ac91783aa843471a7371f9">
+                              <id>ribbonCellYwgl</id>
+                              <title>运维管理</title>
+                              <linkto>{"formId":"7c0a7c5c70724b6d3863125d3352eeb5","formName":"运维管理","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.tools.monitor</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="cd02dd8fb806293e58c55938ca35fc71">
+                              <id>ribbonCelled861</id>
+                              <title>表单解析监控</title>
+                              <show>false</show>
+                              <showRight>artery.tools.eformmonitor</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="b06e640af5f39d4450195335e6ff7a61">
+                              <id>ribbonCell71683</id>
+                              <title>主题管理</title>
+                              <linkto>{"formId":"d7c9bdb1eefaa649de1baa779177de41","formName":"主题维护","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.tools.theme</showRight>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="89daec21c4130c572c35969b95a5a8ad">
+                          <id>ribbonGroupd542c</id>
+                          <title>系统信息</title>
+                          <showRight>artery.system &amp; (artery.system.platinfo | artery.system.helper)</showRight>
+                          <Items>
+                            <ribbonCell sid="3b8f1ec9021eaca6524bb8f6a41eefa3">
+                              <id>ribbonCellInfo</id>
+                              <title>平台信息</title>
+                              <active>true</active>
+                              <linkto>{"formId":"d0b5f2e7c7e16ede13ba81953f0db445","formName":"info","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>artery.system.platinfo</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="2b0d456a4b95d5d409333503d85cf8fe">
+                              <id>ribbonCellApi</id>
+                              <title>系统帮助</title>
+                              <showRight>artery.system.helper</showRight>
+                              <onShow><![CDATA[ribbonCellApi_onShow]]></onShow>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                      </Items>
+                    </ribbonItem>
+                    <ribbonItem sid="e29e1fb7930465852c5f28efd038fa64">
+                      <id>ribbonItemKzmk</id>
+                      <title>扩展模块</title>
+                      <Items>
+                        <ribbonGroup sid="c61f0340d179c0698ed60399cc101dff">
+                          <id>ribbonGroup1cd3c</id>
+                          <title>配置</title>
+                          <showRight>extend.config &amp; extend.config.sysconfig</showRight>
+                          <Items>
+                            <ribbonCell sid="7c6a77f5058cb635d96fc2d24d066b95">
+                              <id>ribbonCellfbf3d</id>
+                              <title>系统配置</title>
+                              <linkto>{"formId":"9f7b98252d98d85129d77227cdb57259","formName":"系统配置","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>extend.config.sysconfig</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="6ee3f18422ab91227fec0309c1f6be77">
+                              <id>ribbonCell44ef7</id>
+                              <title>系统监控</title>
+                              <linkto>{"formId":"bce9c516221612736a17de83fbfecc34","formName":"系统监控","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                        <ribbonGroup sid="e21f1374916398f382d59192d0acb9e3">
+                          <id>ribbonGroup2e865</id>
+                          <title>验证</title>
+                          <showRight>extend.valid &amp; (extend.valid.template | extend.valid.point | extend.valid.example |extend.valid.refresh)</showRight>
+                          <Items>
+                            <ribbonCell sid="ab7f62adf32248642fac4f1f9047edc3">
+                              <id>ribbonCellfcd49</id>
+                              <title>验证模板维护</title>
+                              <linkto>{"formId":"b2eba28069111f677327fc0f29215d0e","formName":"验证模板主页面","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"display","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>extend.valid.template</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="bd37108de26bf72dc6868b3a44bdcba8">
+                              <id>ribbonCellValidPoint</id>
+                              <title>验证点维护</title>
+                              <showRight>extend.valid.point</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="ee45578986c5b32e723230a1a22231e0">
+                              <id>ribbonCellab075</id>
+                              <title>示例表单</title>
+                              <linkto>{"formId":"937f52ed0cb383f67ba89aea00ec1d38","formName":"示例表单","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                              <showRight>extend.valid.example</showRight>
+                            </ribbonCell>
+                            <ribbonCell sid="690e73165bc65aa1e21741c2535b5e79">
+                              <id>ribbonCellRefreshValid</id>
+                              <title>刷新验证</title>
+                              <showRight>extend.valid.refresh</showRight>
+                            </ribbonCell>
+                          </Items>
+                        </ribbonGroup>
+                      </Items>
+                    </ribbonItem>
+                    <tbFill sid="d367209b819ae5b01cbfe73cae4fff21">
+                      <id>tbFilla69e0</id>
+                    </tbFill>
+                    <blankPanel sid="0e6f84d3b88cb2a2643eb9b530b7d41a">
+                      <id>blankPanel691fb</id>
+                      <Items>
+                        <htmlArea sid="1af45f5f8a2f13b1c543dc0e9606730e">
+                          <id>dateTimeArea</id>
+                          <value>aaa</value>
+                          <style>color:#fff;padding-bottom:5px;padding-right:20px;</style>
+                        </htmlArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </ribbonArea>
+              </Items>
+            </blankPanel>
+            <operArea sid="31cdeec09627d6d5ef151e907b81175e">
+              <id>operArea41165</id>
+              <style>background-color:#D3DCF9;</style>
+              <synTabHeight>true</synTabHeight>
+            </operArea>
+          </Items>
+        </tableLayout>
+        <blankPanel sid="2c820b4be9daadac6d3b188701591100">
+          <id>wizardMain</id>
+          <width>300</width>
+          <height>150</height>
+          <border>true</border>
+          <bodyStyle>padding-left:10px;padding-right:10px;</bodyStyle>
+          <style>background-color:#FFFFC6;border:1px solid #FF9000;</style>
+          <hidden>true</hidden>
+          <Items>
+            <tableLayout sid="8df52014d64f887a0923c5ce027cb6ae">
+              <id>tableLayout5687a</id>
+              <height>100%</height>
+              <Items>
+                <htmlArea sid="5a65fb6f21862219d5e1679b3623e1f8">
+                  <id>htmlArea4bcf2</id>
+                  <value>欢迎您，{ses.username}！</value>
+                </htmlArea>
+                <buttonArea sid="8210569e5bad2b483acf965d50c355f7">
+                  <id>buttonArea91489</id>
+                  <align>right</align>
+                  <Items>
+                    <simpleButton sid="46c6acf040f5db365fd1a352964931c0">
+                      <id>closeWizardBtn</id>
+                      <text>关闭</text>
+                      <style>font-size:14px;color:#006699;</style>
+                    </simpleButton>
+                  </Items>
+                </buttonArea>
+                <htmlArea sid="2a3b569da951daed5f0dfd5b5eca7c08">
+                  <id>htmlAreac002b</id>
+                  <value>下面会讲解一些系统技巧，简单几步将使您轻松掌握本系统！</value>
+                  <colSpan>2</colSpan>
+                </htmlArea>
+                <buttonArea sid="6d8322ee4dd3c6b2085e3c9529bfa809">
+                  <id>buttonAreadd6b9</id>
+                  <align>right</align>
+                  <colSpan>2</colSpan>
+                  <Items>
+                    <simpleButton sid="b972c747eca706e5a5b3750740500400">
+                      <id>wizardMainGoBtn</id>
+                      <text>快来吧！&gt;&gt;</text>
+                      <style>font-size:15px;color:#006699;</style>
+                    </simpleButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </tableLayout>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="59dda11989d11085a3f40acc1f6c5f7d">
+          <id>wizardTipPanel</id>
+          <width>200</width>
+          <height>100</height>
+          <frame>true</frame>
+          <bodyStyle>padding-top:10px;</bodyStyle>
+          <themeStyle>cooltip</themeStyle>
+          <hidden>true</hidden>
+          <Items>
+            <centerRegion sid="6fc5ffee37fb8c17f65e392c1f5fc817">
+              <id>centerRegion5a7f4</id>
+              <border>false</border>
+              <Items>
+                <htmlArea sid="c785684f876c0fc1839b90caf6734b16">
+                  <id>wizardTipHtmlPanel</id>
+                  <style>font-size:14px;</style>
+                </htmlArea>
+              </Items>
+            </centerRegion>
+            <downRegion sid="a09b5815485b1a697106c92d034f405b">
+              <id>downRegion36ad0</id>
+              <height>30</height>
+              <split>false</split>
+              <border>false</border>
+              <Items>
+                <buttonArea sid="75dd943260538ff931c977ed2eec3096">
+                  <id>buttonArea6af0a</id>
+                  <align>right</align>
+                  <Items>
+                    <simpleButton sid="2846209aacb0096fd9b00698468c7f2a">
+                      <id>wizardTipGoBtn</id>
+                      <text>下一步&gt;&gt;</text>
+                      <style>font-size:15px;color:#006699;</style>
+                    </simpleButton>
+                  </Items>
+                </buttonArea>
+              </Items>
+            </downRegion>
+          </Items>
+        </blankPanel>
+        <synchTimer sid="876c1f38aece4bceb1b2fd0ae7a05094">
+          <id>synchTimerae586</id>
+          <interval>60</interval>
+          <onRunClient><![CDATA[synchTimerae586_onRunClient]]></onRunClient>
+          <onRunServer><![CDATA[synchTimerae586_onRunServer]]></onRunServer>
+        </synchTimer>
+      </Items>
+    </form>
+  </Item>
+</form>
+

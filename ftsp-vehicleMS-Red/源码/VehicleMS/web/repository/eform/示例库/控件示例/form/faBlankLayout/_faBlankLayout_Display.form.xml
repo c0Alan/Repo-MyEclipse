@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3a9cd7c7d546c7f34d6d7dcc889305ec</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.form.faBlankLayout._faBlankLayout_Display.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/form/faBlankLayout/_fablanklayout_display.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form19e5f">
+      <id>form19e5f</id>
+      <Items>
+        <tableLayout sid="5e4acc3a3a830a4173c8f29c9293bc1f">
+          <id>tableLayoutb87a7</id>
+          <width>90%</width>
+          <cellpadding>7</cellpadding>
+          <Items>
+            <formArea sid="46741ee90e9ad030176426ab3d8de8ed">
+              <id>formAreab9188</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="f6424163ea2dbd590254a4405e72a8b6">
+                  <id>header7765d</id>
+                  <text>【展现时子标签背景色】属性</text>
+                </header>
+                <htmlArea sid="01c9299f6acfb50c40a3bf489e3f6254">
+                  <id>htmlArea3e0f0</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时子标签背景色：blue&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <htmlArea sid="c73971742f3536ac20435f41d418bcc9">
+                  <id>htmlAreaf5d46</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时子标签背景色：red&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <faBlankLayout sid="dc5173dff358b27785322b0ab9624673">
+                  <id>faFieldSet220a9</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <labelBackColorDisplay>blue</labelBackColorDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="de3745bb6b95bdfec5a5603093a78e06">
+                      <id>faString7bbae</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="d76e6508606501ff6bb46ff29d57e5d2">
+                      <id>faStringae348</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="fe2dbc888230b3afde8788ca1de30a06">
+                      <id>faStringb5dee</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="7c9d50c4cb720062b2193c24bfd1079b">
+                      <id>faString5a9de</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="0d7f32239f0334790a40755c1e5a4d4b">
+                      <id>faStringb5194</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="1d54be06bcf40ef127bbfdc8703e9e32">
+                      <id>faString7666d</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+                <faBlankLayout sid="51bd90512be3c56a6bd511f949bb6e1e">
+                  <id>faFieldSet0ca2c</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <labelBackColorDisplay>red</labelBackColorDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="cc1a5b96a8ee7ed82a2634d27dcc78a3">
+                      <id>faStringb6b72</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="a965aa6f856df98f043aaa635a91afd2">
+                      <id>faString6b920</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="c5b8de5f58faa11f699eb210378f11e5">
+                      <id>faString56955</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="5ee25e32ee146d431a154f333035c8bc">
+                      <id>faStringdc305</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="fa080236de8538e3fba6b8f067e32285">
+                      <id>faString13700</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="66d2682824639004577a33ab21f70bfc">
+                      <id>faStringd9282</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+              </Items>
+            </formArea>
+            <formArea sid="ed03413a8f18c2898561cf2a335f6ff6">
+              <id>formAreae0ee7</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="6705bc78956285191602e72e14789e6b">
+                  <id>headerb1454</id>
+                  <text>【展现时子标签容器背景色】属性</text>
+                </header>
+                <htmlArea sid="2649b47025b9ec66a2808fcb45f92e66">
+                  <id>htmlAreac30fa</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时子标签容器背景色：blue&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <htmlArea sid="ce9ced5764dde6aa5ea34421423ce3f1">
+                  <id>htmlArea9f7e3</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时子标签容器背景色：red&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <faBlankLayout sid="58259d46b0969d4a802f31e3c31bfddb">
+                  <id>faFieldSete6dc6</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <labelCtBackColorDisplay>blue</labelCtBackColorDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="4f5bec89f2da1edfe7e41b199838735f">
+                      <id>faString6318f</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="d36506a0f42db69194890a4117c4c9e5">
+                      <id>faStringad137</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="0c62ea03a9942919398be2cfd718e699">
+                      <id>faString35cff</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="c7fb5de425ea2c6b4d7fc0285e71fa92">
+                      <id>faStringe188e</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="470b95589a020cf0230e36187ca496c7">
+                      <id>faStringcb11d</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="f590364958f28714e08ec6d0ca389ca7">
+                      <id>faString5c282</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+                <faBlankLayout sid="868f56ab8f9af0b23184c9f55a517279">
+                  <id>faFieldSetf5b92</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <labelCtBackColorDisplay>red</labelCtBackColorDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="c7a6c8c57b14530cd786e4166c7dbe34">
+                      <id>faStringeff69</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="3d67dfcd3ec0bb711c6521ab44e7100f">
+                      <id>faString180a2</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="6310ac16c76305facb54d8739abe2731">
+                      <id>faString9a7c2</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="c8ce132b632471564f8c8381d94bfe70">
+                      <id>faString58696</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="880754ebde4ccc47913bc9eb8cede90d">
+                      <id>faString92202</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="3e7bf65be4d41a0a64e0435bdd05bc91">
+                      <id>faStringf101b</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+              </Items>
+            </formArea>
+            <formArea sid="86766c989ade26187e3b0d299c5c9b0a">
+              <id>formArea9b4a1</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="a37819ae210b6098b7b772d63be11ee7">
+                  <id>headercd310</id>
+                  <text>【展现时子标签样式】属性</text>
+                </header>
+                <htmlArea sid="1132164f09673e9e910113522ce226db">
+                  <id>htmlArea6b8e5</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时子标签样式：border:1px solid blue;&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <htmlArea sid="a1b7a0a8ca5905669f3f27522901dc83">
+                  <id>htmlAreafd0ca</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时子标签样式：border:1px solid red;&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <faBlankLayout sid="406e07c0e8f2933d141e09afb17d16d2">
+                  <id>faFieldSetee2c6</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <labelSubStyleDisplay>border:1px solid blue;</labelSubStyleDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="ace3ea20acb1d43ff1e0985fc612e1ec">
+                      <id>faStringc1d4f</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="45a4e87cd1d30cd03f29a553a0763013">
+                      <id>faStringc507f</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="7d529fdc0430f209ceb0127bc4ce59dc">
+                      <id>faString587a8</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="080187d095e828252fe99e08ddaab75a">
+                      <id>faString8c982</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="2f87fbc546be488dc975c39c838ee06d">
+                      <id>faString81054</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="2cd1db1b9a5028e90b8bfb968a8c6f8b">
+                      <id>faString3b7a2</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+                <faBlankLayout sid="83043ab3fa6d2947be3e07fadad2d5f9">
+                  <id>faFieldSet89baf</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <labelSubStyleDisplay>border:1px solid red;</labelSubStyleDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="9fc9df3d8a2bbd97c93f27f48c37ea4a">
+                      <id>faString14466</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="1819229e81bb76e4b692789d3dc51b77">
+                      <id>faStringd80d7</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="05b007af68be893f1af578184047cd62">
+                      <id>faStringe6315</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="b3a44a905f0808a4458fa86b3506ad3c">
+                      <id>faString17c68</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="5a559d918dcc429a6aa52aa165c8df19">
+                      <id>faString8a0d4</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="dbc2307e0e28d6d9a506972b638b5464">
+                      <id>faStringac584</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+              </Items>
+            </formArea>
+            <formArea sid="281bebdb438d78e1083e157d2d565943">
+              <id>formArea26be6</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="4f77f55ef4d0ceaf17d25032985d95d4">
+                  <id>header4f6dd</id>
+                  <text>【展现时内容容器样式】属性</text>
+                </header>
+                <htmlArea sid="b69904ee7576f3753d41bb1e7f59047f">
+                  <id>htmlArea382d7</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时内容容器样式：border:1px solid blue;&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <htmlArea sid="bb48bf041ef372e8c3974bbe81d2da7b">
+                  <id>htmlArea010a7</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时内容容器样式：border:1px solid red;&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <faBlankLayout sid="a7f597fa8f79653a08a80aaa74c7e088">
+                  <id>faFieldSet86f12</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <contentCtStyleDisplay>border:1px solid blue;</contentCtStyleDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="77a9f3dc05d04090575c87f0a73ed33f">
+                      <id>faString08439</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="b6038346ea78c376a99862a711c6bb90">
+                      <id>faString4c089</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="6024514a3a7c7cd1dd1fc66f91cd0ae0">
+                      <id>faString07611</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="015861c37c8131ecb90cd9ac3b4f6951">
+                      <id>faString1a7d1</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="43bf67f2c6c9ec782b6246319aa700a5">
+                      <id>faStringfa42b</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="f8678c027b48611d1fcb8f33cce5aa0d">
+                      <id>faStringcd56c</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+                <faBlankLayout sid="9ccc6772c323bf7f878da35bd9323654">
+                  <id>faFieldSet9aaea</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <contentCtStyleDisplay>border:1px solid red;</contentCtStyleDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="e323e311694d9ec748b5fb54cf2fbd20">
+                      <id>faString8db4c</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="da41d7c6aafac353f25a79a834a4c5b5">
+                      <id>faString82453</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="97796bbc0af0e716efbededf2d33ede1">
+                      <id>faString91e30</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="949ec50e9094fee6bce312766f70a5ab">
+                      <id>faString29cdf</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="199d263d5747e449f8f04bc31b5b797c">
+                      <id>faString9c1db</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="0b4b0f49f728dd55be09da8795c4730c">
+                      <id>faStringd90a2</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+              </Items>
+            </formArea>
+            <formArea sid="6c07c1e18acfd24e38a73fcfd9a30565">
+              <id>formAread0295</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="efb132e870b1bad1975eaea4e60ac03c">
+                  <id>headerbb32b</id>
+                  <text>【展现时是否显示表格线】属性</text>
+                </header>
+                <htmlArea sid="4ae1350ad813f72553695f7b4ba14eeb">
+                  <id>htmlArea62220</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时是否显示表格线：true&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <htmlArea sid="65e46d6e0d7f2d2ff8246b908c10c658">
+                  <id>htmlArea2a25a</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时是否显示表格线：false&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <faBlankLayout sid="17a2f8dcfa52a114c634ada809811c25">
+                  <id>faFieldSet4f286</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <displayBorder>true</displayBorder>
+                  <borderStyleDisplay>border:1px solid gray;</borderStyleDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="1e359e259839f55500973faa6fe97215">
+                      <id>faStringdf2eb</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="70c9894121f5e0e6a7f9f38bb156cc12">
+                      <id>faString0265a</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="cbacfc13341ad4afcefaa6f17c841848">
+                      <id>faStringe1ae1</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="9edec081237ed72319f3825ecb189af9">
+                      <id>faStringa80b6</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="dadf913cb99f0ebf7ed5ea4eab3c4f47">
+                      <id>faStringcef81</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="cb56e4065ae48e50289efd55aab98e0d">
+                      <id>faString84494</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+                <faBlankLayout sid="5ae024f25b3ef8742208ac8bae78f90e">
+                  <id>faFieldSetee4bb</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <borderStyleDisplay>border:1px solid gray;</borderStyleDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="3f9d89977af7a2af4a48e986c2762292">
+                      <id>faString07ae0</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="b3c2054678fa0bfa89a5748fd61aba35">
+                      <id>faString65f1c</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="54c3ca2c1672b1722441461c11f79042">
+                      <id>faStringe2589</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="1c33695474618cacd450e215f7df648c">
+                      <id>faString04da7</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="03d1e6496a0ea9c545d9dfb9486a9956">
+                      <id>faString6f4c9</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="06b2467593e97015c2ff38ad4ae29e07">
+                      <id>faString1f96b</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+              </Items>
+            </formArea>
+            <formArea sid="a588bb9710a150a10a4824f525427d29">
+              <id>formAreaf31c4</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="9a7562d5ec74a4f2bd0e1a03e6756a71">
+                  <id>header54310</id>
+                  <text>【展现时间距】属性</text>
+                </header>
+                <htmlArea sid="5db70534bef2733cb7e77cc18d56d3a7">
+                  <id>htmlArea46222</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时间距：2&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <htmlArea sid="ea2e0f6820bf3b4a54665898729ac628">
+                  <id>htmlAreabcdd4</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时间距：5&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <faBlankLayout sid="fd77468b5cd75f2b17c5b5a1b6d47ef1">
+                  <id>faFieldSet05fb2</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <cellpaddingDisplay>2</cellpaddingDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="5a1b25666f75e570829e53277df8e1d0">
+                      <id>faString1ad3a</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="a376eb3739be29961c547fedde11b256">
+                      <id>faStringa1397</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="f6f14bfc770439942346802d604e201b">
+                      <id>faString0c2d5</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="381a15dd1f34ed07debe407113da82e6">
+                      <id>faStringec42d</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="85aafdf447645e0c2532417bc1068e55">
+                      <id>faString9674a</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="6ba1e22f4419be7f29c5ace01e5aeb8e">
+                      <id>faString18dc5</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+                <faBlankLayout sid="eee299cfef2c3d942a0e1aed3b2ca31b">
+                  <id>faFieldSetff5a8</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <cellpaddingDisplay>5</cellpaddingDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="c7ad23d984d3ec79516023bc316e3d16">
+                      <id>faStringb522b</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="4de5dd51487d6c0477b29d56286d1a43">
+                      <id>faString7be79</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="6b82f4429e82146a6363b1b8728e08ba">
+                      <id>faString1ec4f</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="de4edc82f8c494fb2e3d1a7b6937f3d1">
+                      <id>faStringd6368</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="2a86d135eccd3770508b4d52eb900cd4">
+                      <id>faStringb8367</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="af6f4c8548887566a03639d188984594">
+                      <id>faString8b2f7</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+              </Items>
+            </formArea>
+            <formArea sid="7b6c46d5c22ebb5559337b52820f180f">
+              <id>formArea05a08</id>
+              <colSpacing>2</colSpacing>
+              <border>true</border>
+              <bodyStyle>padding:5px;</bodyStyle>
+              <Items>
+                <header sid="063e596297a98f1b8e2cd3df0853f364">
+                  <id>header96f47</id>
+                  <text>【展现时表格线样式】属性</text>
+                </header>
+                <htmlArea sid="ed26eb2febfd9aa9ef1911bec9cb04fc">
+                  <id>htmlArea83091</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时表格线样式：border:1px solid blue;&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <htmlArea sid="5811e406f825a3aee0f2712b33cc79d2">
+                  <id>htmlArea03221</id>
+                  <value>&lt;span style="color:#15428b;font-size:12px;font-weight:700;"&gt;展现时表格线样式：border:1px solid red;&lt;/span&gt;</value>
+                  <align>center</align>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <faBlankLayout sid="8e9846f87e4c1c177777d73b30ab34a6">
+                  <id>faFieldSetc07e7</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <displayBorder>true</displayBorder>
+                  <borderStyleDisplay>border:1px solid blue;</borderStyleDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="066e5d525c3255b6a11b1ca6957b97f8">
+                      <id>faString2b902</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="b71f8403316d321bde56d8a0b29788ed">
+                      <id>faStringc5def</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="ac7e7cae97c4976b8242d1c3a73e3421">
+                      <id>faStringc90c3</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="e8881255c95583fa1ee746b7d0bf1497">
+                      <id>faString9377b</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="9a2360e4cbfeabffa4b3819e359b6b78">
+                      <id>faString668c8</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="8259c287c5254adca5be9958efee6cc1">
+                      <id>faStringebccd</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+                <faBlankLayout sid="6e1074d72bb52b0d7ffa77362edc3bab">
+                  <id>faFieldSet82a46</id>
+                  <labelWidth>50</labelWidth>
+                  <displayType>display</displayType>
+                  <displayBorder>true</displayBorder>
+                  <borderStyleDisplay>border:1px solid red;</borderStyleDisplay>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <faString sid="f424726368ab39b9a48d90faef8e5643">
+                      <id>faStringffd45</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="80038ed6926644ddd4ea6440c5906f00">
+                      <id>faString2df1a</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="7d2530288ca372b1d8b5bd2c2f70dec6">
+                      <id>faStringe7fa3</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="6e5f28e1ce2cb7da99977356411b8b86">
+                      <id>faString5486a</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="69f13193d29b1eee69a45ea156bd031c">
+                      <id>faString0ce72</id>
+                      <value>字符串</value>
+                    </faString>
+                    <faString sid="9c8b1ac02cca1e4e6674fc4f34dd24f2">
+                      <id>faString8f8f9</id>
+                      <value>字符串</value>
+                    </faString>
+                  </Items>
+                </faBlankLayout>
+              </Items>
+            </formArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

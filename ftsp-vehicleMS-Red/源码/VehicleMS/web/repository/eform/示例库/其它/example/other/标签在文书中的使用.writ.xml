@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>be5852044155bed05168d449ed4263fd</id>
+  <helpID />
+  <creator>100000000000001</creator>
+  <makeRight>3</makeRight>
+  <visitRight />
+  <logicClass />
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <writLayout sid="bodyPanel">
+      <id>writlayout</id>
+      <background-color>ffffff</background-color>
+      <onShow><![CDATA[Aty.set("key1","看看布局中的onshow事件你就明白这个怎么用了");]]></onShow>
+      <Items>
+        <topbar sid="toolbarsid">
+          <id>A206ea7fbe3a842d3908c3f888f7dd1d0</id>
+          <Items>
+            <tbButton sid="btnSaveAsSid">
+              <id>btnSaveAs</id>
+              <text>保存到本地</text>
+              <tooltip>保存文书到本地磁盘</tooltip>
+              <icon>/artery/writ/parse/images/save.gif</icon>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").saveAs();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnSaveToSvrSid">
+              <id>btnSaveToSvr</id>
+              <text>保存到服务器</text>
+              <tooltip>保存文书到服务器</tooltip>
+              <icon>/artery/writ/parse/images/savetosvr.gif</icon>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").save();
+//alert("::::::::::::::::::"+Artery.params.writid);]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnPrintSid">
+              <id>btnPrint</id>
+              <text>打印</text>
+              <tooltip>打印文书</tooltip>
+              <icon>/artery/writ/parse/images/print.gif</icon>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").print(true);]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnPrintSetupSid">
+              <id>btnPrintSetup</id>
+              <text>打印设置</text>
+              <tooltip>打印项目配置</tooltip>
+              <icon>/artery/writ/parse/images/printSetup.gif</icon>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").printSetup();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnPreviewSid">
+              <id>btnPreview</id>
+              <text>打印预览</text>
+              <tooltip>打印预览</tooltip>
+              <icon>/artery/writ/parse/images/preview.gif</icon>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").preview();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnLoadSid">
+              <id>btnLoad</id>
+              <text>从本地加载</text>
+              <tooltip>打开本地磁盘保存的文书</tooltip>
+              <icon>/artery/writ/parse/images/open.gif</icon>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").openDoc();]]></onClickClient>
+            </tbButton>
+            <tbButton sid="btnShowHisSid">
+              <id>btnShowHis</id>
+              <text>显示历史</text>
+              <tooltip>显示本文书的修改历史记录</tooltip>
+              <icon>/artery/writ/parse/images/showHis.gif</icon>
+              <onClickClient><![CDATA[Artery.getCmp("ntkoeditor").showHistory();]]></onClickClient>
+            </tbButton>
+          </Items>
+        </topbar>
+        <writTplContainer sid="ntkoeditorsid">
+          <BorderStyle>none</BorderStyle>
+        </writTplContainer>
+      </Items>
+    </writLayout>
+  </Item>
+  <params>
+    <param name="param1" showName="参数1" value="" type="1" pvalue="123" />
+    <param name="param2" showName="参数2" value="" type="1" pvalue="abc" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT C_PID,C_Code,C_Name from T_Aty_Code</ds>
+  </dslist>
+  <BookMarks>
+    <Mark>
+      <name>{img.4e5df3eeec1d831adb3910d464f985a8}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{imgwidth.4e5df3eeec1d831adb3910d464f985a8}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{imgheight.4e5df3eeec1d831adb3910d464f985a8}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{cfg.corp.curcorpname}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{req.param1}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{req.param2}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.userid}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.username}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.deptid}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.deptname}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.corpid}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.corpname}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.identifier}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.email}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.ip}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.os}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ses.browser}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{sesright.artery.metadata &amp; artery.eform}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{nf(12345123.4567,aa#,###.00bb)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{df(2008-07-07,yyyy-MM-dd,yyyy年MM月dd日 E)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{df(2008-03-25 00:23:34,yyyy年MM月dd日 E HH:mm:ss)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ncoDe_m('1,2','-1',',')}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ncode(-11)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ocode(10000002,corp)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ocode(100000003,dept)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ocode(100000000000001,user)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ocode_m('100000000000001,100000000000002','user',',')}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{exp((1+100)*12-122/2)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ccode(2,T_Eg_ClassCode)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{ccode_m('2;3;4','T_Eg_ClassCode',';')}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{isnull(,sss)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{isnull(abc,sss)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{decode(1+1,&lt;2,小于2,=2,等于2,&gt;2,大于2,默认值)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{rs1.C_Name}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{list(rs1,C_Name,N_PID=-12,',')}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{var.key1}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{calendar(y.m.0,yyyy年MM月dd日))}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{calendar(y.m-1.1,yyyy年MM月dd日))}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{calendar(y.m-1.1))}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{nf([nf([rs1.C_PID]2347.6723,#.0)],#,###.00)}</name>
+      <value />
+    </Mark>
+    <Mark>
+      <name>{nf([exp(87*29*27-[exp(12345*1)])].[exp(73+3)],#.0)}</name>
+      <value />
+    </Mark>
+  </BookMarks>
+</form>
+

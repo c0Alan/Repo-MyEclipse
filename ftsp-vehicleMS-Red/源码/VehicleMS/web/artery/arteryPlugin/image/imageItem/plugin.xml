@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="imageItem" cn="图片组件" jsType="artery-base" nameprop="title"
+	icon="imageItem.gif" iconNew="imageItemNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2009-05-05</CreateTime>
+		<Describe><![CDATA[图片组件控件代表图片区域控件中的一个图片元素。单击同一图片区域中的一个图片组件可以选中该组件，此时此图片区域的值，为选中图片的值。]]></Describe>
+		<Images>
+			<File>info1.jpg</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="imageArea" />
+	</Parents>
+	<Class>com.thunisoft.artery.plugin.image.ImageItem</Class>
+	<JsFile>
+		<File>imageItem.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apimageitem</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="标题" type="1" name="title" tips="设置图片标题说明" inherit="false">
+			<Value />
+		</Property>
+		<Property cn="图片" type="5" name="icon" export="true" inherit="false" tips="设置组件的显示图片，图片从系统文件中读取。">
+			<Value />
+			<Description>
+		  		<![CDATA[
+		  			<p>设置组件的显示图片，图片从系统文件中读取。此处要写相对路径，如/artery/form/parse/images/checked.gif</p>
+		  		]]>
+			</Description>
+		</Property>	
+		<Property cn="图片宽度" type="1" name="imgWidth" inherit="false" tips="设置图片宽度 （可输入数值或百分比，实现缩放图片效果）">
+			<Value />
+		</Property>
+		<Property cn="图片高度" type="1" name="imgHeight" inherit="false" tips="设置图片高度（可输入数值或百分比，实现缩放图片效果）">
+			<Value />
+		</Property>
+		<Property cn="图片样式" type="1" name="imgStyle">
+			<Value />
+		</Property>
+		<Property cn="值" type="1" name="value" export="true" inherit="false"
+			tips="图片组件所代表的的值">
+			<Value></Value>
+		</Property>
+		<Property cn="是否显示边框" type="11" name="border" export="true" inherit="false"
+			tips="设置为true时，显示最外层的边框，否则不显示">
+			<Value>false</Value>
+		</Property>
+		<Property cn="组件样式" type="1" name="bodyStyle"
+			tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+			<Value />
+		</Property>
+		<Property cn="组件容器样式" type="1" name="style">
+			<Value />
+		</Property>
+		<Property cn="是否隐藏" type="11" name="hidden" export="true">
+			<Value>false</Value>
+		</Property><Property cn="是否生成" type="11" name="show">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1" name="showRight">
+			<Value />
+		</Property><Property cn="客户端" type="15" group="点击时脚本" name="onClickClient">
+			<Value />
+		</Property>
+			  <Property cn="加载的数据" type="14" name="getImage"
+			tips="可写服务器端脚本，用于控件初始的数据，优先级低于‘从本地文件加载’和‘从URL加载’两个属性">
+			<Description><![CDATA[
+			可写服务器端脚本，用于控件初始的数据，优先级低于‘从本地文件加载’和‘从URL加载’两个属性"
+			<pre>
+	/**
+	 * 生成时脚本
+	 * 
+	 * @param item
+	 *            控件对象
+	 */
+	public byte[] ImageItemc7b44_getImage(Item item) {
+		String pathname = "C:/Users/artery/Desktop/1.jpg";
+		File file = new File(pathname);
+		return FileUtils.readFileData(file);
+	}
+			</pre>
+			]]></Description>
+			<Value />
+		</Property>
+		<Property cn="服务器端" type="14" group="点击时脚本" name="onClickServer" inherit="false"
+			tips="鼠标点击本组件时触发的服务器端事件">
+			<Value/>
+			<Description><![CDATA[			
+			<p>当前通过ajax方式发送后台请求时，将执行此方法</p>  
+        	<p>示例代码如下：</p>    
+        	<pre> 
+			/**
+			 * 点击时脚本
+			 * 
+			 * @param item
+			 *            控件对象
+			 */
+				public Object dynamicNavc2551_onNodeClickServer(Item item) {
+					//获取参数
+					String param = ParamUtil.getString("param1");
+					//后台操作
+					
+					//返回消息
+					return "ok";
+				}
+			</pre>
+			]]></Description>
+		</Property>
+		
+		
+		<Property cn="生成时脚本" type="14" name="onShow">
+			<Value />
+		</Property>
+	</Properties>
+	
+<JavaFunctions>
+	<JavaFunction name="getImage">
+<![CDATA[
+/**
+ * 获得图片数据
+ * 
+ * @param item
+ *            控件对象
+ */
+public byte[] {methodName}(Item item) {
+	return null;
+}
+]]>
+	</JavaFunction>
+</JavaFunctions>
+</Item>
+

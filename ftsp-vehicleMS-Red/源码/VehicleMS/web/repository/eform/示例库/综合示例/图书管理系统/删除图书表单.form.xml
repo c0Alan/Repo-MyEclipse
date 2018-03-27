@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>F966504A68D2C3372D9041A2FBE3D4D8</id>
+  <cfgTbl />
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.book.DeleteBookLogic.java</javaLocation>
+  <jsLocation>artery/arteryClient/book/deleteBook.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <formArea sid="Acea0ec1cc6c60a18859f207872ae736b">
+          <id>formArea</id>
+          <height>100%</height>
+          <colNum>1</colNum>
+          <cellpadding>5</cellpadding>
+          <Items>
+            <faString sid="A107014921e975f6b0fdabe84bafe7a1d">
+              <id>bkid</id>
+              <dataName>{req.bookId}</dataName>
+              <height>0</height>
+              <displayType>readOnly</displayType>
+              <show>false</show>
+              <label>图书id</label>
+            </faString>
+            <faString sid="Ab88a2d79273929b6897a66b74e10490d">
+              <id>frmTINVALIDREASON</id>
+              <editor>textarea</editor>
+              <height>100</height>
+              <label>删除原因</label>
+            </faString>
+            <footer sid="A92597ac18b3956bbafbe92284cab266e">
+              <id>A92597ac18b3956bbafbe92284cab266e</id>
+              <buttonAlign>right</buttonAlign>
+              <Items>
+                <button sid="Af3ec2d96a28877bd2da5c2e34940fef9">
+                  <id>deleteButton</id>
+                  <text>确定</text>
+                  <onClickClient><![CDATA[deleteButton_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[deleteButton_onClickServer]]></onClickServer>
+                </button>
+                <button sid="A508950580d94031989587736ac36f987">
+                  <id>cancelButton</id>
+                  <text>取消</text>
+                  <onClickClient><![CDATA[cancelButton_onClickClient]]></onClickClient>
+                </button>
+              </Items>
+            </footer>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="bookId" showName="" value="" pvalue="" />
+  </params>
+</form>
+

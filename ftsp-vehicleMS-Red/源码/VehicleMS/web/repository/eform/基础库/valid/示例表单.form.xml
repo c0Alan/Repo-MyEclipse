@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>937f52ed0cb383f67ba89aea00ec1d38</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.valid.Slbd.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/valid/Slbd.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form32498">
+      <id>form32498</id>
+      <Items>
+        <formArea sid="dbd5fe8d69d210e29cde09c99e68c57c">
+          <id>formArea6fb4b</id>
+          <Items>
+            <faString sid="e0f98ef3d85f2bf7b0a38a44ca5648be">
+              <id>faString2d1ff</id>
+            </faString>
+            <faString sid="9bcba2560f96eb79496d3f8aba5eb3bc">
+              <id>faString3d580</id>
+            </faString>
+            <faDate sid="80c77aa44ab9951973fef3141f2c9af0">
+              <id>faDate8bb44</id>
+            </faDate>
+            <footer sid="d8c24a93cdc09fc3142b01b62018c14e">
+              <id>footer339dd</id>
+              <Items>
+                <button sid="4c64f72b670f42285bc6518565c9ef7b">
+                  <id>buttona267b</id>
+                  <text>save</text>
+                  <onClickServer>buttona267b_onClickServer</onClickServer>
+                </button>
+                <button sid="3ec0044a8bc110e07f76a5c09ef99ba9">
+                  <id>button63a27</id>
+                </button>
+              </Items>
+            </footer>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

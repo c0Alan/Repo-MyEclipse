@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>afa1d840ba1630510c67787dbc99cd08</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.area._loopAreaPanel.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/area/_loopAreaPanel.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formdb7f8">
+      <id>formdb7f8</id>
+      <Items>
+        <blankPanel sid="36d57d5b74d585e326ca2e1f034cdbea">
+          <id>blankPanel236a4</id>
+          <width>80%</width>
+          <frame>true</frame>
+          <bodyStyle>padding:10px;background-color:#F5F4EF;</bodyStyle>
+          <themeStyle>cherry</themeStyle>
+          <Items>
+            <blankPanel sid="e93464e4b6209e3a194dabbd8523aee9">
+              <id>blankPaneldee33</id>
+              <Items>
+                <formArea sid="1634a5dd23781e9f1371c3edecafb5d6">
+                  <id>formArea32e31</id>
+                  <colWidths>*,160</colWidths>
+                  <labelWidth>105</labelWidth>
+                  <style>margin-bottom:5px;background-color:#C3D2ED;border-top:1px solid #4965B3;</style>
+                  <displayType>editable</displayType>
+                  <cellpadding>0</cellpadding>
+                  <displayBorder>false</displayBorder>
+                  <cellpaddingDisplay>0</cellpaddingDisplay>
+                  <Items>
+                    <htmlArea sid="33078ad6c72da1ece6cbd97c5d4de092">
+                      <id>htmlArea761b6</id>
+                      <value>aaa</value>
+                      <style>padding-top:3px;color:#3A6BB6;</style>
+                      <hideLabel>true</hideLabel>
+                    </htmlArea>
+                    <faCode sid="491bec0f18b8a02a79b920b14e00ef8d">
+                      <id>faCode35bf0</id>
+                      <synTabStyle>padding-right:5px;</synTabStyle>
+                      <label>每页显示案件数</label>
+                      <labelStyle>background-color:#C3D2ED;</labelStyle>
+                    </faCode>
+                  </Items>
+                </formArea>
+                <loopArea sid="b429bf270a6652f4f834a968ca52a1b2">
+                  <id>loopArea1e78e</id>
+                  <ds>rs1</ds>
+                  <Items>
+                    <blankPanel sid="b849a745b1c384909ce9b5b46a19ebf7">
+                      <id>blankPanel290ac</id>
+                      <width>100%</width>
+                      <frame>true</frame>
+                      <style>margin-bottom:15px;</style>
+                      <themeStyle>appleNormal</themeStyle>
+                      <toggleGroup>abc</toggleGroup>
+                      <Items>
+                        <blankPanel sid="b2a48fbee309b99074048839a1b6cba7">
+                          <id>blankPanel3a5c5</id>
+                          <bodyStyle>padding-left:15px;padding-bottom:8px;</bodyStyle>
+                          <Items>
+                            <tableLayout sid="329d1e9909fbff4e22a11707bb9d665e">
+                              <id>tableLayout726fd</id>
+                              <colWidths>100</colWidths>
+                              <cellpadding>0</cellpadding>
+                              <Items>
+                                <htmlArea sid="86237e3982fc17925379f65a0f6fb66b">
+                                  <id>htmlArea2e84c</id>
+                                  <value>{rs1.C_NAME}</value>
+                                  <style>color:#5B83C4;font-weight:700;</style>
+                                </htmlArea>
+                                <htmlArea sid="2befb6653677a2ed94eeeb37b3ed5512">
+                                  <id>htmlArea03ecd</id>
+                                  <value>ISBN: {rs1.C_ISBN}</value>
+                                  <style>color:#5B83C4;</style>
+                                </htmlArea>
+                              </Items>
+                            </tableLayout>
+                            <htmlArea sid="d6273f0ae6a9e06ec9ca85e7a568ffaf">
+                              <id>htmlArea94878</id>
+                              <value>{rs1.C_PUBLISHER}</value>
+                              <style>padding-left:15px;padding-top:8px;</style>
+                            </htmlArea>
+                          </Items>
+                        </blankPanel>
+                        <tableLayout sid="d656b8ee727e2f501116ebce953c46d2">
+                          <id>tableLayoutab5e4</id>
+                          <colWidths>85%</colWidths>
+                          <height>20</height>
+                          <cellpadding>0</cellpadding>
+                          <style>background-color:#EAEFF8;</style>
+                          <Items>
+                            <htmlArea sid="5d72ad8b70a3ea3e485c6e00ae21aab7">
+                              <id>htmlAreaae621</id>
+                              <value>摘要  |  文书  |  备忘  |  电子材料</value>
+                              <style>color:#3A6BB6;padding-left:10px;font-size:13px;</style>
+                              <hidden>true</hidden>
+                              <show>false</show>
+                              <synTabStyle>vertical-align:bottom;</synTabStyle>
+                            </htmlArea>
+                            <buttonArea sid="0a3de0b089c00fe8a50cc7488f2c4dca">
+                              <id>buttonArea92822</id>
+                              <style>color:#3A6BB6;padding-left:10px;font-size:13px;</style>
+                              <hidden>true</hidden>
+                              <synTabStyle>vertical-align:bottom;</synTabStyle>
+                              <Items>
+                                <simpleButton sid="ec1be5403cdd6dcd5d2018f7e407bf0d">
+                                  <id>simpleButtonae24b</id>
+                                  <text>摘要</text>
+                                  <style>text-decoration:none;color:#3A6BB6;</style>
+                                </simpleButton>
+                                <blankPanel sid="ca847b1d0d07770fdde93ed330f216e5">
+                                  <id>blankPanel9f013</id>
+                                  <width>1</width>
+                                  <style>border-left:1px solid #3A6BB6;margin-left:3px;margin-right:3px;</style>
+                                </blankPanel>
+                                <simpleButton sid="bd6d7693d6c79f0ade1c72cdfa8d0da4">
+                                  <id>simpleButton3553f</id>
+                                  <text>图书详情</text>
+                                  <style>text-decoration:none;color:#3A6BB6;</style>
+                                </simpleButton>
+                                <blankPanel sid="d1cb5b11f57f7f8d354f29f1ec1a9b70">
+                                  <id>blankPanel0acd3</id>
+                                  <width>1</width>
+                                  <style>border-left:1px solid #3A6BB6;margin-left:3px;margin-right:3px;</style>
+                                </blankPanel>
+                                <simpleButton sid="320c178e7709a1fef4975c8b6fe7189a">
+                                  <id>simpleButtonb49df</id>
+                                  <text>借阅历史</text>
+                                  <style>text-decoration:none;color:#3A6BB6;</style>
+                                </simpleButton>
+                              </Items>
+                            </buttonArea>
+                            <htmlArea sid="6f847146da1c9b5a99bc398525a65e82">
+                              <id>htmlArea379eb</id>
+                              <value>剩余审限 3 天</value>
+                              <style>font-weight:700;</style>
+                              <synTabStyle>vertical-align:bottom;</synTabStyle>
+                            </htmlArea>
+                          </Items>
+                        </tableLayout>
+                        <blankPanel sid="61f7f116c80b360fb864acb8417d57ae">
+                          <id>blankPanel7f212</id>
+                          <style>padding:15px;</style>
+                          <hidden>true</hidden>
+                        </blankPanel>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </loopArea>
+                <pagingbar1 sid="08cd0b6a0d0919f2bdb93493060f7bae">
+                  <id>pagingbar14f922</id>
+                  <ds>rs1</ds>
+                  <pageCount>4</pageCount>
+                </pagingbar1>
+              </Items>
+            </blankPanel>
+            <header sid="f42b9614654e329d095edfa1a6e7ec29">
+              <id>headerbc9c1</id>
+              <text />
+              <Items>
+                <blankPanel sid="39302816dc8ad6f4b7dd32eeed73e957">
+                  <id>blankPanela8c6f</id>
+                  <Items>
+                    <tableLayout sid="263fba62de6a1e0cd9d496722848201f">
+                      <id>tableLayout90971</id>
+                      <colWidths>*,250</colWidths>
+                      <Items>
+                        <htmlArea sid="c2a56b0e62da73a15257c1f47a9ae967">
+                          <id>htmlAreaf9ef2</id>
+                          <value>图书列表</value>
+                          <style>color:#3A6BB6;font-size:17px;font-weight:700;</style>
+                        </htmlArea>
+                        <formArea sid="c6324aca03a0d1f35c956fc337150fc0">
+                          <id>formArea54c5e</id>
+                          <colWidths>*,20</colWidths>
+                          <displayType>editable</displayType>
+                          <Items>
+                            <faString sid="f713b5807a715725d473aad374052bc3">
+                              <id>faStringf9265</id>
+                              <emptyText>请输入图书名称</emptyText>
+                              <hideLabel>true</hideLabel>
+                            </faString>
+                            <buttonArea sid="bf9cf64d6f04a7e5519fe4e76f196e5c">
+                              <id>buttonAreab4b80</id>
+                              <hideLabel>true</hideLabel>
+                              <Items>
+                                <button sid="7b3eb0f4d497c4b9717030a65049004e">
+                                  <id>button3ade1</id>
+                                  <text>查询</text>
+                                </button>
+                              </Items>
+                            </buttonArea>
+                          </Items>
+                        </formArea>
+                      </Items>
+                    </tableLayout>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </header>
+          </Items>
+        </blankPanel>
+        <htmlArea sid="2f39a0d726fd5c955ff52c33548d9df6">
+          <id>htmlAreac2812</id>
+          <value>{rs2.T_ABSTRACT}</value>
+          <convert2html>true</convert2html>
+          <show>false</show>
+        </htmlArea>
+        <formArea sid="3f3bb0bef7e1d792754d735d1e94fd42">
+          <id>formArea48459</id>
+          <ds>rs2</ds>
+          <show>false</show>
+          <Items>
+            <faString sid="f718ba0725470711366da0659ef0e10a">
+              <id>faStringCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs2.C_NAME}</dataName>
+              <value>varchar</value>
+            </faString>
+            <faString sid="1b6daf5c664dc2f56b8eab32cfc3f4b2">
+              <id>faStringCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs2.C_AUTH}</dataName>
+            </faString>
+            <faString sid="4fce9e5c01937ce892aedb87b5341934">
+              <id>faStringCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs2.C_PUBLISHER}</dataName>
+            </faString>
+            <faDate sid="21ec549b041d691806db83e6a7364ed3">
+              <id>faDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs2.D_PUBLISHER}</dataName>
+            </faDate>
+            <faString sid="f38fbdbfaab083b9deafab5c4dee4545">
+              <id>faStringCISBN</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ISBN</inheritfld>
+              <dataName>{rs2.C_ISBN}</dataName>
+            </faString>
+            <faDate sid="8d6449e248f88a217debe6b83905e6f2">
+              <id>faDateDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{rs2.D_BUY}</dataName>
+            </faDate>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Book where C_ID='{req.bookId}'</ds>
+  </dslist>
+</form>
+

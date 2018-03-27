@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>C0C7240951FBB6F53F1700DEE8812493</id>
+  <cfgTbl>T_Eg_Library</cfgTbl>
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.book.TsslbLogic.java</javaLocation>
+  <jsLocation>artery/arteryClient/book/libraryManager.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <topbar sid="Afc1eef599c532081d5459ea9649ad6df">
+          <id>Afc1eef599c532081d5459ea9649ad6df</id>
+          <Items>
+            <tbButton sid="Acbd286310d868c17403ab1f7941aa758">
+              <id>Acbd286310d868c17403ab1f7941aa758</id>
+              <text>新建图书室</text>
+              <linkto>{"formId":"61D9CFF1C5DC784893698CFF83D8D8EA","formName":"添加编辑图书室","formType":"1","params":{"admins":"","cid":""},"target":"_window","targetWidth":450,"targetHeight":130,"runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+            </tbButton>
+          </Items>
+        </topbar>
+        <listArea sid="A4c4393168ab6370da710f3ba10520f38">
+          <id>libraryList</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <height>100%</height>
+          <defaultOrder>C_NAME asc</defaultOrder>
+          <isStartNew>true</isStartNew>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <themeStyle>default</themeStyle>
+          <Items>
+            <column sid="Aa6d20262e92dac0736c7100692116943">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Library</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书室名称</title>
+              <isFilter>true</isFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <columnCode sid="columnCode6CD528E375DAB26D0D8D292AAE19A3EB">
+              <id>lstNVALID</id>
+              <inherittbl>T_Eg_Library</inherittbl>
+              <inheritfld>N_VALID</inheritfld>
+              <dataName>{rs1.N_VALID}</dataName>
+              <title>有效</title>
+              <codeType>-1</codeType>
+              <isFilter>true</isFilter>
+              <dynamicDataFilter><![CDATA[lstNVALID_dynamicDataFilter]]></dynamicDataFilter>
+            </columnCode>
+            <column sid="A7979086cdb60d67a9a74b1ab45c0b7e0">
+              <id>frmUsers</id>
+              <dataName>{ocode_m('[list(rs2,N_USERID,C_LIBRARYID=[rs1.C_ID],',')]','user',',')}</dataName>
+              <title>管理员</title>
+            </column>
+            <column sid="Ad34e5f5602ad5e744f886d655c0e30b0">
+              <id>Ad34e5f5602ad5e744f886d655c0e30b0</id>
+              <title>操作</title>
+              <Items>
+                <colOperText sid="Ac484b78dbe624a97897fc280f5f20f3e">
+                  <id>Ac484b78dbe624a97897fc280f5f20f3e</id>
+                  <text>编辑</text>
+                  <linkto>{"formId":"61D9CFF1C5DC784893698CFF83D8D8EA","formName":"添加编辑图书室","formType":"1","params":{"admins":"{list(rs2,N_USERID,C_LIBRARYID=[rs1.C_ID],',')}","cid":"{rs1.C_ID}"},"target":"_window","targetWidth":550,"targetHeight":130,"runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                </colOperText>
+                <colOperText sid="A7b5da9b38d252621752241163fb54603">
+                  <id>oper_delete</id>
+                  <text>删除</text>
+                  <onClickClient><![CDATA[oper_delete_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[var sql1="delete from T_Eg_LibAdmin where C_LIBRARYID='"+ParamUtil.getString("cid")+"'";
+Artery.dba.execUpdate(sql1);
+var sql2 = "delete from T_Eg_Library where C_ID = '"+ParamUtil.getString("cid")+"'";
+Artery.dba.execUpdate(sql2);]]></onClickServer>
+                </colOperText>
+                <colOperText sid="Ae47631c8b8a989805f0daa7c2f53ec24">
+                  <id>invalidOper</id>
+                  <text>置无效</text>
+                  <onClickClient><![CDATA[invalidOper_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[invalidOper_onClickServer]]></onClickServer>
+                </colOperText>
+                <colOperText sid="A8d321db67dbbe717af494c7e97df909c">
+                  <id>validOper</id>
+                  <text>置有效</text>
+                  <onClickClient><![CDATA[validOper_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[validOper_onClickServer]]></onClickServer>
+                </colOperText>
+              </Items>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_LibAdmin</ds>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Library</ds>
+  </dslist>
+</form>
+

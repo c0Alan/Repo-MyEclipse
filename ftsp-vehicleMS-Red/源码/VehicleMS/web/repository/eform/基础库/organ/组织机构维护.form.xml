@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>c6c8b9ed478292fde2ae90f6e4261681</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.organ.Zzjgwh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/organ/Zzjgwh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formfa61f">
+      <id>organForm</id>
+      <Items>
+        <leftRegion sid="f0e0c0a7fdcf032d826454ff132f1f51">
+          <id>leftRegion</id>
+          <width>260</width>
+          <collapsible>true</collapsible>
+          <margins>4 0 4 4</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="69b7f8598ebf1149b656c62e0a84c8b9">
+              <id>blankPanela112f</id>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="02d404cee481c7c45ddf01faca3473ab">
+                  <id>headere0b68</id>
+                  <text />
+                  <Items>
+                    <blankPanel sid="fa947d769fa20f027d0e8027dfb76323">
+                      <id>blankPanel78a58</id>
+                      <bodyStyle>display:none;</bodyStyle>
+                      <Items>
+                        <topbar sid="0fb7ddf18184142e4e301ad6e8d35112">
+                          <id>topbarc53ed</id>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbButton sid="5c96a61e3a30e626e36005e594ebee63">
+                              <id>addCorpBtn</id>
+                              <text>新建单位</text>
+                              <tooltip>新建单位</tooltip>
+                              <icon>/artery/arteryImage/organ/add_corp.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[addCorpBtn_onClickClient]]></onClickClient>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="0a4b9bb7a843e23bf40545588ba37c58">
+                              <id>addDeptBtn</id>
+                              <text>新建部门</text>
+                              <tooltip>新建部门</tooltip>
+                              <icon>/artery/arteryImage/organ/add_dept.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="abee04b8499692da3fd24bd14b79a8cc">
+                              <id>addUserBtn</id>
+                              <text>新建账号</text>
+                              <tooltip>新建账号</tooltip>
+                              <icon>/artery/arteryImage/organ/user_add.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="d9ff36789dbf60dec12f5631b0eafa68">
+                              <id>moveUserBtn</id>
+                              <text>移动账户</text>
+                              <tooltip>移动账户</tooltip>
+                              <icon>/artery/arteryImage/organ/user_move.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[moveUserBtn_onClickClient]]></onClickClient>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="9e99d6685d9f067e3604c5a1718183c2">
+                              <id>delOrganBtn</id>
+                              <text>删除</text>
+                              <tooltip>删除</tooltip>
+                              <icon>/artery/arteryImage/sys/del.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="5241cb878b8032e315968f4c6cf819a8">
+                              <id>scjpzlBtn</id>
+                              <text>生成简拼(增量)</text>
+                              <tooltip>生成简拼(增量)</tooltip>
+                              <icon>/artery/arteryImage/file/tbmenu.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[scjpzlBtn_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[scjpzlBtn_onClickServer]]></onClickServer>
+                            </tbButton>
+                            <tbButton sid="bf299c57b4aef1e548c2ebcf0b0565ad">
+                              <id>scjpqlBtn</id>
+                              <text>生成简拼(全量)</text>
+                              <tooltip>生成简拼(全量)</tooltip>
+                              <icon>/artery/arteryImage/file/tbmenu.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[scjpqlBtn_onClickClient]]></onClickClient>
+                            </tbButton>
+                            <tbButton sid="2552b67772eec50d7f1891a08d9cc879">
+                              <id>gxhcBtn</id>
+                              <text>更新缓存</text>
+                              <tooltip>更新缓存</tooltip>
+                              <icon>/artery/arteryImage/file/refresh.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[gxhcBtn_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[gxhcBtn_onClickServer]]></onClickServer>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <footer sid="ecd16a7d32d4342d41603a953d6380de">
+                  <id>footer754c5</id>
+                  <spacing>0</spacing>
+                  <Items>
+                    <blankPanel sid="6372981d079fd4291c8e19be5977f5dc">
+                      <id>blankPanelde00c</id>
+                      <bodyStyle>padding-top:3px;</bodyStyle>
+                      <Items>
+                        <formArea sid="85939460e1ee42bf7a71abb70c3b08c7">
+                          <id>formAreaf1cd6</id>
+                          <colWidths>80% 20%</colWidths>
+                          <colSpacing>5</colSpacing>
+                          <onEnter><![CDATA[formAreaf1cd6_onEnter]]></onEnter>
+                          <cellpadding>0</cellpadding>
+                          <cellpaddingRead>0</cellpaddingRead>
+                          <cellpaddingDisplay>0</cellpaddingDisplay>
+                          <Items>
+                            <faString sid="8e31c9c7d82a9feed4b3273e5b4dc6a1">
+                              <id>searchString</id>
+                              <height>100%</height>
+                              <emptyText>请输入名称或人员姓名简拼</emptyText>
+                              <displayType>editable</displayType>
+                              <hideLabel>true</hideLabel>
+                            </faString>
+                            <buttonArea sid="bf9c210dfaf59d9472d798a1762bcc68">
+                              <id>buttonArea93bd8</id>
+                              <label>查询</label>
+                              <hideLabel>true</hideLabel>
+                              <Items>
+                                <button sid="adf18b514873b95495a6b06de6240ded">
+                                  <id>searchBtn</id>
+                                  <width>30</width>
+                                  <text>查询</text>
+                                  <onClickClient><![CDATA[searchBtn_onClickClient]]></onClickClient>
+                                  <onClickServer><![CDATA[searchBtn_onClickServer]]></onClickServer>
+                                  <themeStyle>cookie</themeStyle>
+                                </button>
+                              </Items>
+                            </buttonArea>
+                          </Items>
+                        </formArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </footer>
+                <dynamicNav sid="fb033f9f70d343ef79fa7bd07fa44ed7">
+                  <id>dynamicNav</id>
+                  <line>false</line>
+                  <themeStyle>orange</themeStyle>
+                  <useArrows>true</useArrows>
+                  <operAreaId>operArea</operAreaId>
+                  <expandTree>true</expandTree>
+                  <expandLevel>1</expandLevel>
+                  <onLoad><![CDATA[dynamicNav_onLoad]]></onLoad>
+                  <onNodeClickClient><![CDATA[dynamicNav_onNodeClickClient]]></onNodeClickClient>
+                </dynamicNav>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="edc70e00381de865961dd9ef068a44ed">
+          <id>centerRegion</id>
+          <margins>4 4 4 0</margins>
+          <border>false</border>
+          <Items>
+            <operArea sid="e145a19d3e96488e0363a53026ad3300">
+              <id>operArea</id>
+              <linkto>{"formId":"95af4e9e11d6c799ae3ec40af50a9f62","formName":"leftArrow","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+              <style>background-color:transparent;</style>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>93b6a28fcaedb39ef0a01a452d161fd9</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.tabs.tabPanel._tabArea.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/tabs/tabPanel/_tabArea.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form8cd76">
+      <id>form8cd76</id>
+      <Items>
+        <tabArea sid="548641b83dd6a7bda42443432105038d">
+          <id>tabArea8cde5</id>
+          <height>100%</height>
+          <Items>
+            <topbar sid="68f701ab90aec4ba62352f6834a20f34">
+              <id>topbar9f3ca</id>
+              <Items>
+                <tbButton sid="2183b85cafa520a81698c83b6c9ccf47">
+                  <id>tbAddNew</id>
+                  <text>添加新Tab</text>
+                  <onClickClient><![CDATA[tbAddNew_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </topbar>
+            <tabItem sid="ca0629ddb21e33d45ddb1f505ccafa3a">
+              <id>tabItem27a5d</id>
+              <Items>
+                <blankPanel sid="d1b80153c3c9b0410129b4b706adf913">
+                  <id>blankPanel25e8b</id>
+                  <Items>
+                    <formArea sid="fee874152161502a6cb02c2669f6ead5">
+                      <id>formAreab2df2</id>
+                      <Items>
+                        <faString sid="f492034be7b6477181ffa5f174641bdf">
+                          <id>faStringb31c5</id>
+                        </faString>
+                        <faString sid="2dda49f714733529d8dbaca6e08bf4e4">
+                          <id>faStringb5956</id>
+                        </faString>
+                      </Items>
+                    </formArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </tabItem>
+            <bottomBar sid="ba56b52939044864ba331b077ca945f5">
+              <id>bottomBarfaff1</id>
+              <Items>
+                <tbButton sid="3b7eeac990d64cb21f2a95fac7993f37">
+                  <id>tbRemoveActiveTab</id>
+                  <text>移除激活的Tab</text>
+                  <onClickClient><![CDATA[tbRemoveActiveTab_onClickClient]]></onClickClient>
+                </tbButton>
+              </Items>
+            </bottomBar>
+            <tabItem sid="1f04a7bd700142ee552b4db49f49ce71">
+              <id>tabItem19c59</id>
+              <closable>true</closable>
+              <linkto>{"url":"http://www.baidu.com","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+            </tabItem>
+            <tabItem sid="4ac87063d9a2c7b74de38554a109cfd6">
+              <id>tabItemcd035</id>
+            </tabItem>
+          </Items>
+        </tabArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

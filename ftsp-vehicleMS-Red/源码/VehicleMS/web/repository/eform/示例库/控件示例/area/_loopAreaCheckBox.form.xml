@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e73d4d48214c5c560d95df77108bf91c</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.area._loopAreaCheckBox.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/area/_loopAreaCheckBox.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formb304f">
+      <id>formb304f</id>
+      <Items>
+        <blankPanel sid="e77eac0bf319df930453d7c1c0f64405">
+          <id>blankPanel0ad3d</id>
+          <width>300</width>
+          <border>true</border>
+          <Items>
+            <blankPanel sid="de3e690b18b85c6a6bec1a6e7edf8876">
+              <id>blankPanelad267</id>
+              <Items>
+                <blankPanel sid="5e3ca0d00645347a4a0077b236774817">
+                  <id>blankPanel8ec96</id>
+                  <bodyStyle>padding:3px;</bodyStyle>
+                  <Items>
+                    <loopArea sid="b9a0854eb882e32298fc15119b8455c8">
+                      <id>loopArea1d24e</id>
+                      <ds>rs1</ds>
+                      <Items>
+                        <blankPanel sid="9e19eabfcbe9add57c9ff2654988b315">
+                          <id>blankPanel0e613</id>
+                          <toggleGroup>group1</toggleGroup>
+                          <onMouseOutClient><![CDATA[blankPanel0e613_onMouseOutClient]]></onMouseOutClient>
+                          <Items>
+                            <tableLayout sid="4c3783d5f7752c9e7feaeae732e72b66">
+                              <id>tableLayouta095d</id>
+                              <cellpadding>3</cellpadding>
+                              <Items>
+                                <htmlArea sid="d19ac1bdd548b0d6ebc43dbc8ab2a675">
+                                  <id>htmlAreab357f</id>
+                                  <value>{rs1.C_NAME}</value>
+                                  <style>color:#3A6BB6;font-size:14px;</style>
+                                </htmlArea>
+                                <htmlArea sid="c9f8d63865ca2c002094ef28ac4c439e">
+                                  <id>htmlArea124a9</id>
+                                  <value>{rs1.C_AUTH}</value>
+                                  <style>color:#999999;text-align:right;</style>
+                                </htmlArea>
+                              </Items>
+                            </tableLayout>
+                            <tableLayout sid="45e9103e1fa3d845b8aed68a85f70116">
+                              <id>tableLayout38fc0</id>
+                              <colWidths>80%</colWidths>
+                              <height>28</height>
+                              <cellpadding />
+                              <Items>
+                                <htmlArea sid="851025f9492d8675e29e8d7be0985633">
+                                  <id>htmlAreaca29a</id>
+                                  <value>{rs1.C_PUBLISHER}</value>
+                                  <style>padding-left:3px;</style>
+                                </htmlArea>
+                                <imageArea sid="2b6a2d152fbd951a2359900ca1ba47be">
+                                  <id>imageArea7af3b</id>
+                                  <icon>/artery/arteryImage/arrow/down.gif</icon>
+                                  <value>1</value>
+                                  <tip>显示详情</tip>
+                                  <style>text-align:right;</style>
+                                  <hidden>true</hidden>
+                                </imageArea>
+                              </Items>
+                            </tableLayout>
+                            <blankPanel sid="28c40c2b6997cf7a8ab72fbfd0b3a893">
+                              <id>blankPanel75d97</id>
+                              <hidden>true</hidden>
+                            </blankPanel>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </loopArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </blankPanel>
+            <pagingbar1 sid="fb7342d52690aed621855760d787d1b2">
+              <id>pagingbar196360</id>
+              <ds>rs1</ds>
+              <pageCount>5</pageCount>
+            </pagingbar1>
+          </Items>
+        </blankPanel>
+        <formArea sid="dac2774dac55cf11081cde5befa0d330">
+          <id>formArea50f57</id>
+          <ds>rs2</ds>
+          <colNum>1</colNum>
+          <show>false</show>
+          <Items>
+            <faString sid="4383c90d383b138c2ea45395e5d64da8">
+              <id>faStringCISBN</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ISBN</inheritfld>
+              <dataName>{rs2.C_ISBN}</dataName>
+            </faString>
+            <faDate sid="e33fb288573fc76d53319700cf7f4269">
+              <id>faDateDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{rs2.D_PUBLISHER}</dataName>
+            </faDate>
+            <faDate sid="e33e9903db83e9f94d66f3f54fc522df">
+              <id>faDateDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{rs2.D_BUY}</dataName>
+            </faDate>
+          </Items>
+        </formArea>
+        <topbar sid="92b0440d0f34e164cbe890e44dc17c45">
+          <id>topbar72ee5</id>
+          <Items>
+            <tbButton sid="5b18a9201a0d3a45fd608e13f277e4e8">
+              <id>tbButton6fd17</id>
+            </tbButton>
+          </Items>
+        </topbar>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">select * from T_Eg_Book</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Book where C_ID='{req.bookId}'</ds>
+  </dslist>
+</form>
+

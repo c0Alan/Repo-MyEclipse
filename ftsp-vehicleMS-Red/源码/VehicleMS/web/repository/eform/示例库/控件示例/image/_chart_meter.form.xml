@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9f0a106ceb5fc4dbfab2ff10911b9693</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.image._chart_meter.java</javaLocation>
+  <jsLocation/>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <tableLayout sid="tableLayoutB8819">
+          <id>tableLayoutB8819</id>
+          <Items>
+            <chartArea sid="chartArea3C475">
+              <id>chartArea_1</id>
+              <chartConf>{"chartType":"AngularGauge","animation":"0","gaugeBorderColor":"0000FF","gaugeBorderThickness":2,"gaugeBorderAlpha":60,"lowerLimit":0,"upperLimit":250}</chartConf>
+              <onLoad><![CDATA[chartArea_1_onLoad]]></onLoad>
+            </chartArea>
+            <chartArea sid="chartArea11B1C">
+              <id>chartArea_2</id>
+              <chartConf>{"chartType":"AngularGauge","gaugeOuterRadius":160,"gaugeInnerRadius":"85","showTickMarks":"0","showTickValues":"1","forceTickValueDecimals":"1","tickValueDecimals":2}</chartConf>
+              <onLoad><![CDATA[chartArea_2_onLoad]]></onLoad>
+            </chartArea>
+            <chartArea sid="chartAreaF8091">
+              <id>chartArea_3</id>
+              <chartConf>{"chartType":"AngularGauge","gaugeStartAngle":360,"gaugeEndAngle":0,"lowerLimit":0,"upperLimit":250}</chartConf>
+              <onLoad><![CDATA[chartArea_3_onLoad]]></onLoad>
+            </chartArea>
+            <chartArea sid="chartArea275A385D095CDFB622DF7C7C1228C119">
+              <id>chartArea_4</id>
+              <chartConf>{"chartType":"AngularGauge","gaugeStartAngle":0,"gaugeEndAngle":360,"lowerLimit":0,"upperLimit":250}</chartConf>
+              <onLoad><![CDATA[chartArea_4_onLoad]]></onLoad>
+            </chartArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

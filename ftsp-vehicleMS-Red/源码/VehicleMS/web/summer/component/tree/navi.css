@@ -1,0 +1,97 @@
+.left_body {
+	MARGIN-TOP: 0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	MARGIN-LEFT: 0px;
+        border:0px;
+	background: white;
+	font-family: verdana;
+	FONT-SIZE: 9pt;
+	SCROLLBAR-FACE-COLOR: rgb(234,242,255);
+	SCROLLBAR-HIGHLIGHT-COLOR: rgb(234,242,255);
+	SCROLLBAR-SHADOW-COLOR: rgb(234,242,255);
+	SCROLLBAR-3DLIGHT-COLOR: rgb(120,172,255);
+	SCROLLBAR-TRACK-COLOR: #dbeaf5;
+	SCROLLBAR-DARKSHADOW-COLOR: rgb(120,172,255);
+}
+.treepanel {
+	background-color:white;
+	border-top: 1px solid #B9C8D3;
+	border-right: 1px dotted #B9C8D3;
+	border-bottom: 26px solid #B9C8D3;
+	border-left: 1px solid #B9C8D3;
+	overflow: auto;
+	top:  0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	color: black;
+	padding: 4px;
+}
+.titlebar {
+	background-color:#DBEAF5;
+	border-top: 1px solid #B9C8D3;
+	border-right: 1px dotted #B9C8D3;
+	border-bottom: 0px solid #B9C8D3;
+	border-left: 1px solid #B9C8D3;
+	overflow: hidden;
+	top:  0px;
+	left: 0px;
+	width: 100%;
+	height: 23px;
+	margin: 0;
+	color: #333333;
+	padding: 0px;
+	font-size:12px;
+}
+.mainpanel {
+	background-color:#F9F9F9;
+	border-top: 1px solid #B9C8D3;
+	border-right: 1px solid #B9C8D3;
+	border-bottom: 1px solid #B9C8D3;
+	border-left: 1px dotted #B9C8D3;
+	overflow: hidden;
+	top:  0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	color: black;
+	padding: 0px;
+}
+.clientpanel {
+	background-color:#FFFFFF;
+	border-top: 0px solid #B9C8D3;
+	border-right: 0px solid #B9C8D3;
+	border-bottom: 26px solid #B9C8D3;
+	border-left: 0px dotted #B9C8D3;
+	overflow-y: auto;
+	overflow-x: auto;
+	top:  0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	color: black;
+	padding: 0px;
+}
+.clientpanel1 {
+	background-color:#FFFFFF;
+	border-top: 0px solid #B9C8D3;
+	border-right: 0px solid #B9C8D3;
+	border-bottom: 7px solid #B9C8D3;
+	border-left: 0px dotted #B9C8D3;
+	overflow-y: auto;
+	overflow-x: auto;
+	top:  0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	color: black;
+	padding: 0px;
+}
+A {
+	COLOR: #10659e;
+}

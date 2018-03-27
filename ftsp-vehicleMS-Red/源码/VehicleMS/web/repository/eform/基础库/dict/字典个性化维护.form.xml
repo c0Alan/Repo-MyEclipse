@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>0e15aeb8b8b09ab77673b755c2d5e39a</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.dict.Zdgxhwh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/dict/Zdgxhwh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="forme7a1a">
+      <id>form_main</id>
+      <onShow><![CDATA[form_main_onShow]]></onShow>
+      <Items>
+        <leftRegion sid="a73a6fad6b8c34e6fc10c858631ba530">
+          <id>leftRegione62af</id>
+          <width>300</width>
+          <margins>4 0 4 4</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="bb891ec7b0f769493e3638b10c424c01">
+              <id>blankPanel20a21</id>
+              <width>100%</width>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="a2cc779a3b0b8812d8d9752b8ffcfbe0">
+                  <id>header4f4b8</id>
+                  <text />
+                  <Items>
+                    <blankPanel sid="3571c21bfe5e13cc6c5bd591c5a9d2a1">
+                      <id>blankPaneldad86</id>
+                      <bodyStyle>display:none;</bodyStyle>
+                      <Items>
+                        <topbar sid="de16bfad6d1a27f9579a7a60fdc0b9e0">
+                          <id>topbarcb5f5</id>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbText sid="e481bb963e4a558983e03afa0849767e">
+                              <id>tbText54cae</id>
+                              <text>&lt;span style="font-size:14px;font-weight:700;color:#15428B;"&gt;当前院：&lt;/span&gt;</text>
+                            </tbText>
+                            <formArea sid="a41d567efcca3ed61c8d2085fcc135d4">
+                              <id>formArea5453d</id>
+                              <width>120</width>
+                              <colNum>1</colNum>
+                              <labelWidth>70</labelWidth>
+                              <Items>
+                                <faTree sid="427adcdb4c2d72ed044c27a4aed1a755">
+                                  <id>faTree_group</id>
+                                  <showType>window</showType>
+                                  <showClear>false</showClear>
+                                  <onChangeClient><![CDATA[faTree_group_onChangeClient]]></onChangeClient>
+                                  <onShow><![CDATA[faTree_group_onShow]]></onShow>
+                                  <hideLabel>true</hideLabel>
+                                  <Items>
+                                    <treeDynamic sid="7775fe6076c693ac121786b0e83e5723">
+                                      <id>treeDynamic_group</id>
+                                      <onLoadTree><![CDATA[treeDynamic_group_onLoadTree]]></onLoadTree>
+                                      <onNodeDetail><![CDATA[treeDynamic_group_onNodeDetail]]></onNodeDetail>
+                                    </treeDynamic>
+                                  </Items>
+                                </faTree>
+                              </Items>
+                            </formArea>
+                            <tbSeparator sid="348f9cd88cb1861ed4982bdbd13b8bb2">
+                              <id>tbSeparator28981</id>
+                            </tbSeparator>
+                            <tbButton sid="c633eb2349e994ef0969152e037bdf67">
+                              <id>tbButton_clear</id>
+                              <text>清空选中院配置</text>
+                              <tooltip>清空选中节点的配置</tooltip>
+                              <icon>/artery/arteryImage/symbol/clear.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[tbButton_clear_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[tbButton_clear_onClickServer]]></onClickServer>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="7d7e6428124c016b00c14664881581bb">
+                              <id>tbButton_refresh</id>
+                              <text>刷新缓存</text>
+                              <tooltip>刷新字典个性化缓存</tooltip>
+                              <icon>/artery/arteryImage/file/refresh.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[tbButton_refresh_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[tbButton_refresh_onClickServer]]></onClickServer>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <dynamicNav sid="146620cde7d5963ff70d9a22d225f173">
+                  <id>groupTree</id>
+                  <onLoad><![CDATA[groupTree_onLoad]]></onLoad>
+                  <line>false</line>
+                  <useArrows>true</useArrows>
+                  <onNodeClickClient><![CDATA[groupTree_onNodeClickClient]]></onNodeClickClient>
+                  <expandTree>true</expandTree>
+                  <expandLevel>1</expandLevel>
+                  <themeStyle>orange</themeStyle>
+                </dynamicNav>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="5b30155cf050e214cfd4951bacee1d95">
+          <id>centerRegion8b59f</id>
+          <margins>4 4 4 0</margins>
+          <border>false</border>
+          <Items>
+            <operArea sid="2d86c80eb3fe2c216e1dd35e731d75bb">
+              <id>operArea_table</id>
+              <linkto>{"formId":"95af4e9e11d6c799ae3ec40af50a9f62","formName":"leftArrow","formType":"1","target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

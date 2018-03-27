@@ -1,0 +1,3 @@
+Artery.get('formArea32').submit(function(result){
+		
+});

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <cid>c768c9603dbdfe29f3153812b8455a0e</cid>
+  <name>预定图书超时判断</name>
+  <cron>0 0/15 * * * ?</cron>
+  <jobType>3</jobType>
+  <sql />
+  <className />
+  <methodName />
+  <clusterId>2</clusterId>
+  <logInfo>1</logInfo>
+  <deploy>2</deploy>
+  <script>import com.thunisoft.artery.ArteryLogic;&#xD;import java.text.SimpleDateFormat;&#xD;&#xD;int ilimit=Integer.parseInt(ArteryLogic.getBaseCfgValue("library.booktimelimit"));&#xD;SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");&#xD;Date dNow=new Date();long lNow=dNow.getTime();&#xD;long lTimeLimit=lNow-ilimit*60*60*1000l;&#xD;Date dTimeLimit=new Date(lTimeLimit);&#xD;String sTimeLimit=sdf.format(dTimeLimit);&#xD;Vector params = new Vector();&#xD;var sql="update T_Eg_Book set D_BOOKING=null,N_BOOKINGUSERID=null where N_VALID=1 and D_BOOKING&lt;?";&#xD;params.add(sTimeLimit);&#xD;Aty.userdba.execUpdate(sql,params);</script>
+  <exceptionStatus>1</exceptionStatus>
+  <exceptionProcess>2</exceptionProcess>
+</plan>
+

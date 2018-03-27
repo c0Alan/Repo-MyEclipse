@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2765BEF77ADB83F136E8E5B076CB476D</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.book.TsgljmLogic.java</javaLocation>
+  <jsLocation>artery/arteryClient/book/bookManager.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <Items>
+        <leftRegion sid="A0d9ac14c921d7e225d011f6b1b8c061d">
+          <id>zbj</id>
+          <width>230</width>
+          <onShow><![CDATA[zbj_onShow]]></onShow>
+          <Items>
+            <blankPanel sid="htmlAreaA2FEE407E7666A90FA9920939F7F6716">
+              <id>htmlArea_left</id>
+              <width>100%</width>
+              <height>100%</height>
+              <bodyStyle>padding-bottom:20px;</bodyStyle>
+              <onShow><![CDATA[htmlArea_left_onShow]]></onShow>
+              <Items>
+                <header sid="header49952A5175E10AC5A83B26DDBA2A109B">
+                  <id>header49952A5175E10AC5A83B26DDBA2A109B</id>
+                  <text>图书室列表</text>
+                </header>
+                <dynamicNav sid="Afd96b11d12fb468a1ae757665bbbec88">
+                  <id>bookLib_tree</id>
+                  <operAreaId>bookList</operAreaId>
+                  <onNodeClickClient><![CDATA[bookLib_tree_onNodeClickClient]]></onNodeClickClient>
+                  <expandTree>true</expandTree>
+                </dynamicNav>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="A3b72a79e44e067c2fd7e50b9110a9f22">
+          <id>region_center</id>
+          <border>false</border>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <onShow><![CDATA[region_center_onShow]]></onShow>
+          <Items>
+            <tableLayout sid="tableLayoutF3782">
+              <id>tableLayoutF3782</id>
+              <colNum>1</colNum>
+              <Items>
+                <tabArea sid="tabAreaD65A343D252F9C724A2045DC5C95A429">
+                  <id>tabArea_tb</id>
+                  <height>100%</height>
+                  <frame>true</frame>
+                  <onShow><![CDATA[tabArea_tb_onShow]]></onShow>
+                  <Items>
+                    <tabItem sid="tabItem471896AB0617910E84475FB425A86117">
+                      <id>tabItem471896AB0617910E84475FB425A86117</id>
+                      <title>图书管理</title>
+                      <Items>
+                        <topbar sid="A1a4ac471c38c99d12e5cf9e49e059ef9">
+                          <id>tb_toolbar</id>
+                          <onShow><![CDATA[tb_toolbar_onShow]]></onShow>
+                          <Items>
+                            <tbButton sid="Af1c2e9c3fa86763674900f372b2a91ab">
+                              <id>Af1c2e9c3fa86763674900f372b2a91ab</id>
+                              <text>添加图书</text>
+                              <linkto>{"formId":"98531BC5DBFFA34793DF6DFF79AF829C","formName":"添加编辑图书","formType":"1","params":{"bookId":""},"target":"_window","targetWidth":550,"targetHeight":470,"runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"0","title":"","wincfg":""}</linkto>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </tabItem>
+                    <tabItem sid="tabItem7C25FD8276A9C49F74CAABA6B139108E">
+                      <id>tabItem7C25FD8276A9C49F74CAABA6B139108E</id>
+                      <title>示例工具栏</title>
+                      <Items>
+                        <topbar sid="topbarE92B7E73B6359AF56E8894ABBED43462">
+                          <id>topbarE92B7E73B6359AF56E8894ABBED43462</id>
+                          <frame>true</frame>
+                          <Items>
+                            <tbButton sid="tbButtonF01D4744426557AE4A2EDCA7CEABAD62">
+                              <id>tbButtonF01D4</id>
+                              <text>考核报表</text>
+                              <enableToggle>true</enableToggle>
+                              <toggleGroup>bg1</toggleGroup>
+                              <onClickClient><![CDATA[tbButtonF01D4_onClickClient]]></onClickClient>
+                            </tbButton>
+                            <tbButton sid="tbButtonAD9206F2B623382ADD797193B3542CDB">
+                              <id>tbButtonAD920</id>
+                              <text>司法资源</text>
+                              <enableToggle>true</enableToggle>
+                              <toggleGroup>bg1</toggleGroup>
+                              <onClickClient><![CDATA[tbButtonAD920_onClickClient]]></onClickClient>
+                            </tbButton>
+                            <tbButton sid="tbButton8F6B91F76F43F54CD1770FCA7B9C533D">
+                              <id>tbButton8F6B9</id>
+                              <text>综合分析</text>
+                              <enableToggle>true</enableToggle>
+                              <toggleGroup>bg1</toggleGroup>
+                              <onClickClient><![CDATA[tbButton8F6B9_onClickClient]]></onClickClient>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                        <blankPanel sid="htmlArea17F6A6696F498445F4F58B71F0D0DAD6">
+                          <id>tb1</id>
+                          <hidden>true</hidden>
+                          <Items>
+                            <topbar sid="topbar6DF92C0DF799080990F06F916E7610D6">
+                              <id>topbar6DF92C0DF799080990F06F916E7610D6</id>
+                              <Items>
+                                <tbButton sid="tbButton7677C430202C45740FCC94FEBB0B21CD">
+                                  <id>tbButton7677C430202C45740FCC94FEBB0B21CD</id>
+                                  <text>总体情况</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg1</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButton970DF05895A5AA1635423C9A5EAA6E24">
+                                  <id>tbButton970DF05895A5AA1635423C9A5EAA6E24</id>
+                                  <text>民事</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg1</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButtonE677E86245D52A0715FDC900D1FF2863">
+                                  <id>tbButtonE677E86245D52A0715FDC900D1FF2863</id>
+                                  <text>刑事</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg1</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButtonE0CABB41CDEF7F74AEECFBC10B2A7C5D">
+                                  <id>tbButtonE0CABB41CDEF7F74AEECFBC10B2A7C5D</id>
+                                  <text>行政</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg1</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButton548EFEE1886C1BA771BA84104BB1E8D7">
+                                  <id>tbButton548EFEE1886C1BA771BA84104BB1E8D7</id>
+                                  <text>执行</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg1</toggleGroup>
+                                </tbButton>
+                              </Items>
+                            </topbar>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="htmlArea1F9E9A9A8754DFFED36DCAAA6F07786A">
+                          <id>tb2</id>
+                          <hidden>true</hidden>
+                          <Items>
+                            <topbar sid="topbar3077669F421F2DC58D6395E8AEEB37A1">
+                              <id>topbar3077669F421F2DC58D6395E8AEEB37A1</id>
+                              <Items>
+                                <tbButton sid="tbButton043F49E964555C7B9C03D7210828FBAD">
+                                  <id>tbButton043F49E964555C7B9C03D7210828FBAD</id>
+                                  <text>人力资源</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg2</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButtonA621021BB762B4553AF0FD5BECC97961">
+                                  <id>tbButtonA621021BB762B4553AF0FD5BECC97961</id>
+                                  <text>人民陪审员参审案件</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg2</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButton9306F68D06754B7B1747844DCAD39C86">
+                                  <id>tbButton9306F68D06754B7B1747844DCAD39C86</id>
+                                  <text>物资装备</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg2</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButton6D0F1E218F1EB2DF0E1E4E1E9AB2FEA3">
+                                  <id>tbButton6D0F1E218F1EB2DF0E1E4E1E9AB2FEA3</id>
+                                  <text>办公用房信息</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg2</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButton8E5554D76BDA1C80AD4017E6A9C3BBD0">
+                                  <id>tbButton8E5554D76BDA1C80AD4017E6A9C3BBD0</id>
+                                  <text>办公用品信息</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg2</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButtonF8BE66A3BEE2AA7F7137FA472646C582">
+                                  <id>tbButtonF8BE66A3BEE2AA7F7137FA472646C582</id>
+                                  <text>车辆信息</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg2</toggleGroup>
+                                </tbButton>
+                              </Items>
+                            </topbar>
+                          </Items>
+                        </blankPanel>
+                        <blankPanel sid="htmlArea9CBE2D76BC611566678A346149EFD385">
+                          <id>tb3</id>
+                          <hidden>true</hidden>
+                          <Items>
+                            <topbar sid="topbar05F791AFD4129BC85CC9A4EF90812D06">
+                              <id>topbar05F791AFD4129BC85CC9A4EF90812D06</id>
+                              <Items>
+                                <tbButton sid="tbButtonE2CD4450CD5240EB2E724D0B0C7ECD2A">
+                                  <id>tbButtonE2CD4450CD5240EB2E724D0B0C7ECD2A</id>
+                                  <text>数据管理</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg3</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButton13273E124EF4FE3632C8B6391D80E541">
+                                  <id>tbButton13273E124EF4FE3632C8B6391D80E541</id>
+                                  <text>电子表单</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg3</toggleGroup>
+                                </tbButton>
+                                <tbButton sid="tbButton3A4287C70D8411DDD353F53404969F28">
+                                  <id>tbButton3A4287C70D8411DDD353F53404969F28</id>
+                                  <text>子系统</text>
+                                  <enableToggle>true</enableToggle>
+                                  <toggleGroup>sg3</toggleGroup>
+                                </tbButton>
+                              </Items>
+                            </topbar>
+                          </Items>
+                        </blankPanel>
+                      </Items>
+                    </tabItem>
+                  </Items>
+                </tabArea>
+              </Items>
+            </tableLayout>
+            <listArea sid="Ad867d622dcac269ff60e93ba2f0977ef">
+              <id>bookList</id>
+              <ds>rs1</ds>
+              <isInitData>true</isInitData>
+              <height>100%</height>
+              <isStartNew>true</isStartNew>
+              <themeStyle>default</themeStyle>
+              <Items>
+                <columnIdentity sid="columnIdentity0B2FF13508FD7D9A1481EA8042D93DEC">
+                  <id>lstCID</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_ID</inheritfld>
+                  <dataName>{rs1.C_ID}</dataName>
+                  <title>图书编号</title>
+                  <isEditor>false</isEditor>
+                </columnIdentity>
+                <columnString sid="columnStringC8A8FA095A80D5AFB2DF55F82CECE287">
+                  <id>lstCNAME</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_NAME</inheritfld>
+                  <dataName>{rs1.C_NAME}</dataName>
+                  <title>图书名称</title>
+                  <isEditor>false</isEditor>
+                  <isFilter>true</isFilter>
+                </columnString>
+                <columnString sid="columnStringAF6A6DC88F55584A7500FA48BA7FAC9E">
+                  <id>lstCAUTH</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_AUTH</inheritfld>
+                  <dataName>{rs1.C_AUTH}</dataName>
+                  <title>作者</title>
+                  <isEditor>false</isEditor>
+                  <isFilter>true</isFilter>
+                </columnString>
+                <columnString sid="columnStringC8321C79A5783E8FB2CE8708B5FAE4E3">
+                  <id>lstCPUBLISHER</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_PUBLISHER</inheritfld>
+                  <dataName>{rs1.C_PUBLISHER}</dataName>
+                  <title>出版社</title>
+                  <isEditor>false</isEditor>
+                  <isFilter>true</isFilter>
+                </columnString>
+                <columnDate sid="columnDate1A88E2024D6BDE4A0A605520DE702C61">
+                  <id>lstDPUBLISHER</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>D_PUBLISHER</inheritfld>
+                  <dataName>{df([rs1.D_PUBLISHER],yyyy-MM-dd)}</dataName>
+                  <title>出版日期</title>
+                  <isEditor>false</isEditor>
+                  <isFilter>true</isFilter>
+                </columnDate>
+                <columnCode sid="columnCode70445C3F4D4A55770E87263220BF0789">
+                  <id>lstNTYPE</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>N_TYPE</inheritfld>
+                  <dataName>{rs1.N_TYPE}</dataName>
+                  <title>图书类型</title>
+                  <isEditor>false</isEditor>
+                  <codeType>-600</codeType>
+                  <isFilter>true</isFilter>
+                </columnCode>
+                <column sid="A619065c1c9cacb2826f4309087fe96b5">
+                  <id>lstCLIBRARYID</id>
+                  <inherittbl>T_Eg_Book</inherittbl>
+                  <inheritfld>C_LIBRARYID</inheritfld>
+                  <dataName>{list(rs2,C_NAME,C_ID=[rs1.C_LIBRARYID],',')}</dataName>
+                  <title>所属图书室</title>
+                  <isFilter>true</isFilter>
+                  <isOrderBy>true</isOrderBy>
+                </column>
+                <column sid="Aee48d4175a90d106af93ee5cc8449f38">
+                  <id>Aee48d4175a90d106af93ee5cc8449f38</id>
+                  <title>操作</title>
+                  <Items>
+                    <colOperText sid="A0f82d5389745387baccf6a616dfd5b3c">
+                      <id>A0f82d5389745387baccf6a616dfd5b3c</id>
+                      <text>编辑</text>
+                      <linkto>{"formId":"98531BC5DBFFA34793DF6DFF79AF829C","formName":"添加编辑图书","formType":"1","params":{"bookId":"{rs1.C_ID}"},"target":"_window","targetWidth":550,"targetHeight":470,"runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"0","title":"","wincfg":""}</linkto>
+                    </colOperText>
+                    <colOperText sid="A5aa2dea91b7886d1ba8625c260fe2121">
+                      <id>A5aa2dea91b7886d1ba8625c260fe2121</id>
+                      <text>删除</text>
+                      <linkto>{"formId":"F966504A68D2C3372D9041A2FBE3D4D8","formName":"删除图书表单","formType":"1","params":{"bookId":"{rs1.C_ID}"},"target":"_window","targetWidth":300,"targetHeight":200,"runTimeType":"update","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+                    </colOperText>
+                  </Items>
+                </column>
+              </Items>
+            </listArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Library where N_VALID=1</ds>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_ID , 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_PUBLISHER , 
+T_Eg_Book.D_PUBLISHER , 
+T_Eg_Book.N_TYPE , 
+T_Eg_Book.C_LIBRARYID 
+FROM T_Eg_Book 
+where N_VALID=1</ds>
+  </dslist>
+</form>
+

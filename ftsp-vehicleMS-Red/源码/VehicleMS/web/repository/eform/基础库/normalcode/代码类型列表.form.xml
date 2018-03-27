@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>07eba2885ab0e1155b06027717a60bca</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.normalcode.Dmlxlb.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/normalcode/Dmlxlb.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formd3771">
+      <id>formd3771</id>
+      <onShow><![CDATA[formd3771_onShow]]></onShow>
+      <Items>
+        <leftRegion sid="f74589b2bec31be2acc7ab607bdde348">
+          <id>leftRegiona0f26</id>
+          <width>400</width>
+          <split>false</split>
+          <margins>5 0 5 5</margins>
+          <border>false</border>
+          <Items>
+            <blankPanel sid="b665ace511d0c6d20fad0a22ea6abffb">
+              <id>blankPanelf7666</id>
+              <width>100%</width>
+              <height>100%</height>
+              <frame>true</frame>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <header sid="dea229cc43d49ceeb16cd21aa0560729">
+                  <id>header94447</id>
+                  <text />
+                  <headerStyle>padding:0;</headerStyle>
+                  <Items>
+                    <blankPanel sid="85e98f003e8769cf6e6a3f05b1b28557">
+                      <id>blankPanel2e72f</id>
+                      <bodyStyle>display:none;</bodyStyle>
+                      <Items>
+                        <topbar sid="1b5206afe0230e385f9fcb18312c9352">
+                          <id>topbar775b3</id>
+                          <themeStyle>unis</themeStyle>
+                          <Items>
+                            <tbText sid="3cfa11f2ba857c8ac9176734d7fe5779">
+                              <id>tbText075da</id>
+                              <text>&lt;span style="font-size:14px;font-weight:700;color:#15428B;"&gt;代码类型&lt;/span&gt;</text>
+                            </tbText>
+                            <blankPanel sid="58c231c81d204aecf04a103b4da19590">
+                              <id>blankPanel866dc</id>
+                              <Items>
+                                <imageArea sid="a2ed3de1b34a2135a131057ffd78981e">
+                                  <id>imageArea3abe4</id>
+                                  <icon>/artery/arteryImage/other/post.gif</icon>
+                                  <tip>负值为平台使用代码，红色表示不可维护代码</tip>
+                                </imageArea>
+                              </Items>
+                            </blankPanel>
+                            <tbSeparator sid="62164a71da22b0cc82dc4aa69229f83d">
+                              <id>tbSeparatorf90fe</id>
+                            </tbSeparator>
+                            <formArea sid="7270472328630c33867eb5c7d63d8373">
+                              <id>tbFill82c8f</id>
+                              <width>100</width>
+                              <colNum>1</colNum>
+                              <labelSeparator />
+                              <cellpadding>0</cellpadding>
+                              <Items>
+                                <faCode sid="4fa2c4f3c482d355eb6b6828d0625cd7">
+                                  <id>dbSelFaCode</id>
+                                  <showClear>false</showClear>
+                                  <dynamicData><![CDATA[dbSelFaCode_dynamicData]]></dynamicData>
+                                  <displayType>editable</displayType>
+                                  <onChangeClient><![CDATA[dbSelFaCode_onChangeClient]]></onChangeClient>
+                                  <onShow><![CDATA[dbSelFaCode_onShow]]></onShow>
+                                  <label>数据源</label>
+                                  <hideLabel>true</hideLabel>
+                                </faCode>
+                              </Items>
+                            </formArea>
+                            <tbButton sid="c22891ee3ec4eb06dd2d6ae123a2c24e">
+                              <id>addBtn</id>
+                              <text>添加代码类型</text>
+                              <tooltip>添加代码类型</tooltip>
+                              <icon>/artery/arteryImage/symbol/drop-add.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[addBtn_onClickClient]]></onClickClient>
+                            </tbButton>
+                            <tbButton sid="4feea33444391157bfce15faa4f2e68b">
+                              <id>editBtn</id>
+                              <text>编辑代码类型</text>
+                              <tooltip>编辑代码类型</tooltip>
+                              <icon>/artery/arteryImage/file/edit.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[editBtn_onClickClient]]></onClickClient>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="1475157404518a2f5ca132cfc1cd3d80">
+                              <id>validBtn</id>
+                              <text>置有效/无效</text>
+                              <tooltip>置有效/无效</tooltip>
+                              <icon>/artery/arteryImage/symbol/event.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[validBtn_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[validBtn_onClickServer]]></onClickServer>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <tbButton sid="981c92d5c68f8e578913b230f62899c2">
+                              <id>delBtn</id>
+                              <text>删除</text>
+                              <tooltip>删除</tooltip>
+                              <icon>/artery/arteryImage/symbol/cross.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[delBtn_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[delBtn_onClickServer]]></onClickServer>
+                              <disabled>true</disabled>
+                            </tbButton>
+                            <splitButton sid="0914994ec997b284bb79d9baa9ee503a">
+                              <id>splitButton1f133</id>
+                              <width>15</width>
+                              <text />
+                              <icon>/artery/arteryImage/file/tbmenu.gif</icon>
+                              <Items>
+                                <tbMenuItem sid="34ae159ce4e6b5b8f47fe97e2d2f20be">
+                                  <id>tbButton748e9</id>
+                                  <text>导出</text>
+                                  <icon>/artery/arteryImage/server/export.gif</icon>
+                                  <linkto>{"formId":"01a2df75619e7764851d165b3559b630","formName":"导出单值代码","formType":"1","runTimeType":"insert","target":"_window","targetWidth":"370","targetHeight":"200","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"1","resizable":"1","title":"导出单值代码","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                                  <hidden>true</hidden>
+                                  <show>false</show>
+								</tbMenuItem>
+                                <tbMenuItem sid="1b0ce0d88c0ddeed10c0f9beba4b1024">
+                                  <id>importBtn</id>
+                                  <text>导入</text>
+                                  <icon>/artery/arteryImage/server/import.gif</icon>
+                                  <onClickClient><![CDATA[importBtn_onClickClient]]></onClickClient>
+								  <hidden>true</hidden>
+                                  <show>false</show>
+                                </tbMenuItem>
+                                <tbSeparator sid="9cb5add82c3bf24103be91b559fc1332">
+                                  <id>tbSeparator98976</id>
+                                </tbSeparator>
+                                <tbMenuItem sid="f7f7f3942cb4b2fd04d5bf142ef33b80">
+                                  <id>increGenBtn</id>
+                                  <text>增量生成简拼</text>
+                                  <icon>/artery/arteryImage/symbol/field.gif</icon>
+                                  <onClickClient><![CDATA[increGenBtn_onClickClient]]></onClickClient>
+                                  <onClickServer><![CDATA[increGenBtn_onClickServer]]></onClickServer>
+                                </tbMenuItem>
+                                <tbMenuItem sid="dca06917ae786a4b2b7201a4f2ab26f6">
+                                  <id>allCoverBtn</id>
+                                  <text>全量覆盖简拼</text>
+                                  <icon>/artery/arteryImage/symbol/field.gif</icon>
+                                  <onClickClient><![CDATA[allCoverBtn_onClickClient]]></onClickClient>
+                                  <onClickServer><![CDATA[allCoverBtn_onClickServer]]></onClickServer>
+                                </tbMenuItem>
+                              </Items>
+                            </splitButton>
+                            <tbButton sid="f79aaec94cc4bccbe00948e311065e33">
+                              <id>refreshBtn</id>
+                              <text>刷新代码缓存</text>
+                              <tooltip>刷新代码缓存</tooltip>
+                              <icon>/artery/arteryImage/file/refresh.gif</icon>
+                              <onlyShowIcon>true</onlyShowIcon>
+                              <onClickClient><![CDATA[refreshBtn_onClickClient]]></onClickClient>
+                              <onClickServer><![CDATA[refreshBtn_onClickServer]]></onClickServer>
+                            </tbButton>
+                          </Items>
+                        </topbar>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </header>
+                <listArea sid="3dd737da62395482eb59fa9e7f3e4844">
+                  <id>codeTypelistArea</id>
+                  <ds>rs1</ds>
+                  <isInitData>true</isInitData>
+                  <height>100%</height>
+                  <stripeRows>false</stripeRows>
+                  <emptyDataTip />
+                  <isPageSplit>false</isPageSplit>
+                  <pageCount />
+                  <displayInfo>false</displayInfo>
+                  <isShowRowNumber>false</isShowRowNumber>
+                  <themeStyle>unis</themeStyle>
+                  <onClickSingleClient><![CDATA[codeTypelistArea_onClickSingleClient]]></onClickSingleClient>
+                  <highLightRule><![CDATA[codeTypelistArea_highLightRule]]></highLightRule>
+                  <onLoad><![CDATA[codeTypelistArea_onLoad]]></onLoad>
+                  <Items>
+                    <columnString sid="d7631c98d8c982b2818e82ab90726bdc">
+                      <id>typeColumn</id>
+                      <inheritfld>type</inheritfld>
+                      <dataName>{rs1.type}</dataName>
+                      <title>标志</title>
+                      <width>100</width>
+                      <isFilter>true</isFilter>
+                    </columnString>
+                    <columnString sid="cb9876eb0e030ee73607d1683a6938aa">
+                      <id>codeTypeColumn</id>
+                      <inheritfld>name</inheritfld>
+                      <dataName>{rs1.name}</dataName>
+                      <title>代码类型名称</title>
+                      <width>300</width>
+                      <isFilter>true</isFilter>
+                    </columnString>
+                    <column sid="a43ba4d0c43e4bf6bcdf77c57fe1031a">
+                      <id>maintainColumn</id>
+                      <title>是否可维护</title>
+                      <dataName>{rs1.maintain}</dataName>
+                      <isOnlyData>true</isOnlyData>
+                    </column>
+                    <column sid="5fe205105bd49c93ab43fc87b9a7789f">
+                      <id>validColumn</id>
+                      <title>是否有效</title>
+                      <dataName>{rs1.valid}</dataName>
+                      <isOnlyData>true</isOnlyData>
+                    </column>
+                  </Items>
+                </listArea>
+                <topbar sid="51065576d6250b9050cd85639fad6280">
+                  <id>topbarb4c48</id>
+                  <show>false</show>
+                  <Items>
+                    <tbText sid="9f6e38e2a6d100a550f7124287d87736">
+                      <id>tbText6cd46</id>
+                      <text>&lt;span style="font-size:14px;color:gray;padding:5px;height:30px;"&gt;负值为平台使用代码，红色表示不可维护代码&lt;/span&gt;</text>
+                    </tbText>
+                  </Items>
+                </topbar>
+              </Items>
+            </blankPanel>
+          </Items>
+        </leftRegion>
+        <centerRegion sid="70661e9242876c1fa55aa3ff28e5db1e">
+          <id>centerRegion22b9e</id>
+          <margins>5 5 5 5</margins>
+          <border>false</border>
+          <Items>
+            <operArea sid="79f92cd806dec50bdd98ce4ff1e10f04">
+              <id>codeOperArea</id>
+              <linkto>{"formId":"95af4e9e11d6c799ae3ec40af50a9f62","formName":"leftArrow","formType":"1","params":{},"target":"_blank","targetWidth":"","targetHeight":"","runTimeType":"insert","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":""}</linkto>
+              <onShow><![CDATA[codeOperArea_onShow]]></onShow>
+            </operArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getTypeList</ds>
+  </dslist>
+</form>
+

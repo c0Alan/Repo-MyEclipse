@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1ba80df7f45a3b712744d762d1d3540b</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.text._htmlArea.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/text/_htmlArea.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formccb84">
+      <id>formccb84</id>
+      <text-align>left</text-align>
+      <Items>
+        <blankPanel sid="646bc2883c856602c0d20e50e78be041">
+          <id>blankPanel10597</id>
+        </blankPanel>
+        <formArea sid="1df37fd337ca730bd5e88b3be2c95e6e">
+          <id>formAreabd426</id>
+          <width>1000</width>
+          <colNum>1</colNum>
+          <labelWidth>150</labelWidth>
+          <Items>
+            <faFieldSet sid="6aee60f8839b5b57c8c45e5f24c8ef6a">
+              <id>faFieldSeteb755</id>
+              <fieldSetName>示例</fieldSetName>
+              <colWidths>200,*</colWidths>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <htmlArea sid="30e67ab8c91efb5690c4b789beb9c64c">
+                  <id>htmlAreace07f</id>
+                  <value>&lt;div style="text-align:center;"&gt;&lt;h1&gt;一剪梅&lt;/h1&gt;&lt;/div&gt;&#xD;
+&lt;p&gt;红藕香残玉簟秋，&lt;/p&gt;&#xD;
+&lt;p&gt;轻解罗裳，独上兰舟。&lt;/p&gt;&#xD;
+&lt;p&gt;云中谁寄锦书来？&lt;/p&gt;&#xD;
+&lt;p&gt;雁字回时，月满西楼。&lt;/p&gt;&#xD;
+&lt;p&gt;花自飘零水自流。&lt;/p&gt;&#xD;
+&lt;p&gt;一种相思，两处闲愁。&lt;/p&gt;&#xD;
+&lt;p&gt;此情无计可消除。&lt;/p&gt;&#xD;
+&lt;p&gt;才下眉头，却上心头。&lt;/p&gt;</value>
+                  <width>150</width>
+                  <border>true</border>
+                  <icon>/artery/arteryImage/face/37.gif</icon>
+                  <hideLabel>true</hideLabel>
+                </htmlArea>
+                <blankPanel sid="4fbc21d947939322d271d66b193a8c71">
+                  <id>blankPanelffb0e</id>
+                  <width>500</width>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <htmlArea sid="05ba1e686278e0eea96ea97b1ef72887">
+                      <id>htmlAreac58e6</id>
+                      <value>左侧htmlArea控件中的html代码为：</value>
+                    </htmlArea>
+                    <htmlArea sid="15be48e366439d7bea0ba2a593ca6660">
+                      <id>htmlAreae36a5</id>
+                      <value>&lt;div style="text-align:center;"&gt;&lt;h1&gt;一剪梅&lt;/h1&gt;&lt;/div&gt;&#xD;
+&lt;p&gt;红藕香残玉簟秋，&lt;/p&gt;&#xD;
+&lt;p&gt;轻解罗裳，独上兰舟。&lt;/p&gt;&#xD;
+&lt;p&gt;云中谁寄锦书来？&lt;/p&gt;&#xD;
+&lt;p&gt;雁字回时，月满西楼。&lt;/p&gt;&#xD;
+&lt;p&gt;花自飘零水自流。&lt;/p&gt;&#xD;
+&lt;p&gt;一种相思，两处闲愁。&lt;/p&gt;&#xD;
+&lt;p&gt;此情无计可消除。&lt;/p&gt;&#xD;
+&lt;p&gt;才下眉头，却上心头。&lt;/p&gt;</value>
+                      <convert2html>true</convert2html>
+                      <border>true</border>
+                    </htmlArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </faFieldSet>
+            <faFieldSet sid="9cf3b388e600a81c5f110c03d51aa509">
+              <id>faFieldSet51b3f</id>
+              <fieldSetName>“行内元素”属性</fieldSetName>
+              <label />
+              <hideLabel>true</hideLabel>
+              <Items>
+                <blankPanel sid="1024dfabf18216213f1788a49c591ded">
+                  <id>blankPanelb8f9a</id>
+                  <width>100%</width>
+                  <label>行内元素设为false</label>
+                  <Items>
+                    <htmlArea sid="f63241ec31404f3eab8892d3c7d5ca47">
+                      <id>htmlArea0856f</id>
+                      <value>红藕香残玉簟秋，</value>
+                      <border>true</border>
+                    </htmlArea>
+                    <htmlArea sid="c2cd733726075de3ce42cdd99496f5f2">
+                      <id>htmlArea5aed1</id>
+                      <value>轻解罗裳，独上兰舟。</value>
+                      <border>true</border>
+                    </htmlArea>
+                  </Items>
+                </blankPanel>
+                <blankPanel sid="d8c86f2f290c0e389010add0c5afd447">
+                  <id>blankPanel6d396</id>
+                  <width>100%</width>
+                  <label>行内元素设为true</label>
+                  <Items>
+                    <htmlArea sid="2d599065931cf891c50ce7d6400ec12a">
+                      <id>htmlAread4fa5</id>
+                      <value>红藕香残玉簟秋，</value>
+                      <border>true</border>
+                      <inline>true</inline>
+                    </htmlArea>
+                    <htmlArea sid="b7896fb379e728d2bcd1deffd1a0048f">
+                      <id>htmlArea55f52</id>
+                      <value>轻解罗裳，独上兰舟。</value>
+                      <border>true</border>
+                      <inline>true</inline>
+                    </htmlArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </faFieldSet>
+          </Items>
+        </formArea>
+      </Items>
+    </form>
+  </Item>
+</form>
+

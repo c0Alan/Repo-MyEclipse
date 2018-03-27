@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Item type="rptArea" cn="报表区域" menu="面板区域" order="1000" libType="" icon="rptArea.gif" iconNew="rptAreaNew.gif">
+  <Info>
+    <Author>Artery开发小组</Author>
+    <CreateTime>2008-09-05</CreateTime>
+    <Describe><![CDATA[报表区域控件是为了将报表系统嵌入表单之中而定义的控件。		
+		此控件可以通过连接到属性，关联一个独立的报表布局控件，实现将分开定义的报表布局引入到表单中。
+		报表区域可以设定条件区域，定义传递给报表布局控件的参数,用来展现报表。
+		报表自带功能包括：打印，查询，导出excel和pdf，自动分页，定时刷新，缓存模板等功能。]]></Describe>
+    <Images>
+      <File>info1.gif</File>
+    </Images>
+  </Info>
+  <Parents>
+    <Parent type="form" />
+    <Parent type="tableLayout" />
+    <Parent type="formArea" />
+    <Parent type="faBlankLayout" />
+    <Parent type="upRegion" />
+    <Parent type="leftRegion" />
+    <Parent type="downRegion" />
+    <Parent type="rightRegion" />
+    <Parent type="centerRegion" />
+  </Parents>
+  <Children>
+    <Child type="header" />
+    <Child type="topbar" />
+    <Child type="bottomBar" />
+    <Child type="footer" />
+  </Children>
+  <Class>com.thunisoft.artery.plugin.report.RptArea</Class>
+  <JsFile>
+    <File>rptArea.js</File>
+  </JsFile>
+  <Properties>
+    <Property cn="控件类型" type="1" name="xtype" export="true" isHidden="true" cfg="true">
+      <Value>aprptarea</Value>
+    </Property>
+    <Property cn="标识" type="1" name="id" export="true" tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+      <Value />
+    </Property>
+    <Property cn="链接到报表" type="6" name="linkto" tips="连接到需要显示在表单中的报表布局" ft="2">
+      <Value />
+    </Property>
+    <Property cn="宽度" type="1" name="width" tips="设置本控件的宽度，可输入数值或百分比" mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n">
+      <Value />
+    </Property>
+    <Property cn="高度" type="1" name="height" tips="设置本控件的高度，可输入数值或百分比" mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n">
+      <Value />
+    </Property>
+    <Property cn="以原配置为准" type="11" name="baseOriginal" tips="值为true，表示以本控件关联到的报表的属性设置为准；值为false，表示以本控件的属性设置为准；（默认为true）">
+      <Value>true</Value>
+    </Property>
+    <Property cn="是否默认查询" type="11" name="defaultSearch" tips="如为true时，则根据是否关心条件来判断是否查询，如果为false，则第一次展现不会查询">
+      <Value>true</Value>
+    </Property>
+    <Property cn="是否关心条件" type="11" name="careCon" tips="如为true时，则条件没有值时不进行查询，否则会进行查询">
+      <Value>true</Value>
+    </Property>
+    <Property cn="自动调整行宽列高" type="3" name="autoCellType" tips="用来控制报表展现格式的，在报表生成的同时按照报表大小自动调整" ct="[no,col,row]">
+      <Description><![CDATA[用来控制报表展现格式的，在报表生成的同时按照报表大小自动调整,
+				no不改变原配置，col改变列宽不改变行高自适应，row改变行高不改变列宽自适应]]></Description>
+      <Value>no</Value>
+    </Property>
+    <Property cn="是否显示分页栏" type="11" name="showPageNum" tips="用来控制在展现页面报表的下面是否显示分页信息">
+      <Value>true</Value>
+    </Property>
+    <Property cn="定时刷新(以秒为单位,0为不刷新)" type="2" name="timeRefresh" tips="设置定时刷新的时间">
+      <Value>0</Value>
+    </Property>
+    <Property cn="是否全屏显示" type="11" name="fullScreen" tips="设置显示全屏显示，将跳过条件区域的解析">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否缓存模板" type="11" name="cacheTmp" tips="设置是否缓存模板，以提高Excel和pdf等的响应速度">
+      <Value>false</Value>
+    </Property>
+    <Property cn="打印方向" type="3" name="portrait" export="true" tips="用于设置打印方向" group="打印设置" ct="[纵向,横向]">
+      <Value>纵向</Value>
+    </Property>
+    <Property cn="页眉" type="1" name="printHeader" export="true" tips="用于设置打印页眉" group="打印设置">
+      <Value>第&amp;p页/共&amp;P页</Value>
+    </Property>
+    <Property cn="页脚" type="1" name="printFooter" export="true" tips="用于设置打印页脚" group="打印设置">
+      <Value />
+    </Property>
+    <Property cn="左边距" type="2" name="printLeftMargin" export="true" tips="用于设置打印时的左边距" group="打印设置">
+      <Value>19.05</Value>
+    </Property>
+    <Property cn="上边距" type="2" name="printTopMargin" export="true" tips="用于设置打印时的上边距" group="打印设置">
+      <Value>19.05</Value>
+    </Property>
+    <Property cn="右边距" type="2" name="printRightMargin" export="true" tips="用于设置打印时的右边距" group="打印设置">
+      <Value>19.05</Value>
+    </Property>
+    <Property cn="下边距" type="2" name="printBottomMargin" export="true" tips="用于设置打印时的下边距" group="打印设置">
+      <Value>19.05</Value>
+    </Property>
+    <Property cn="使用Frame样式" type="11" name="frame" export="true" tips="当设置为true时，本控件会显示Ext的边框">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否显示边框" type="11" name="border" export="true" tips="设置为true时，显示最外层的边框，否则不显示">
+      <Value>false</Value>
+    </Property>
+    <Property cn="控件样式" type="1" name="bodyStyle" tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+      <Value />
+    </Property>
+    <Property cn="控件容器样式" type="1" name="style" tips="设置本控件的样式，可填写css代码">
+      <Value />
+    </Property>
+    <Property cn="样式名称" type="1" name="className" tips="设置本控件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+      <Value />
+    </Property>
+    <Property cn="是否隐藏" type="11" name="hidden" export="true" tips="当为true是为隐藏控件，控件还是生成了，可以用控件对应的show()方法来显示控件，要注意与show属性的区别">
+      <Value>false</Value>
+    </Property>
+    <Property cn="是否生成" type="11" name="show">
+      <Value>true</Value>
+    </Property>
+    <Property cn="生成时脚本" type="14" name="onShow" tips="可写服务器端脚本，每个控件都会有此属性，会在系统解析此控件时执行此脚本">
+      <Value />
+    </Property>
+    <Property cn="是否默认判断表头" type="11" name="autoParseDataTag" export="true" tips="导入excel类型为csv时，是否默认预解析行，判断那行是表头">
+      <Value>true</Value>
+    </Property>
+  </Properties>
+  <Methods>
+    <Method name="search" return="void">
+      <Description><![CDATA[查询报表
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").search({
+	con1:Artery.get("name").getValue(),
+	con2:Artery.get("author").getValue()
+});
+//不显示提示
+Artery.get("rptArea184BD").search({
+	showTip:false
+});
+</pre>]]></Description>
+      <Conditions>
+        <Condition>可以不传参数</Condition>
+        <Condition>可以传递showTip参数来控件是否显示提示</Condition>
+      </Conditions>
+    </Method>
+    <Method name="toggleCondition" return="void">
+      <Description><![CDATA[显示隐藏
+			用法如下：
+			<pre>
+Artery.get('rptArea184BD').toggleCondition();
+</pre>]]></Description>
+    </Method>
+    <Method name="showComment" return="void">
+      <Description><![CDATA[显示业务口径
+			用法如下：
+			<pre>
+get("rptArea184BD").showComment()
+</pre>]]></Description>
+    </Method>
+    <Method name="autoCol" return="void">
+      <Description><![CDATA[自动列宽
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").autoCol();
+</pre>]]></Description>
+    </Method>
+    <Method name="autoRow" return="void">
+      <Description><![CDATA[自动行高
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").autoRow();
+</pre>]]></Description>
+    </Method>
+    <Method name="autoRecover" return="void">
+      <Description><![CDATA[恢复初始
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").autoRecover();
+</pre>]]></Description>
+    </Method>
+    <Method name="exportExcel" return="void">
+      <Description><![CDATA[导出excel
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").exportExcel();
+</pre>]]></Description>
+    </Method>
+    <Method name="exportAllExcel" return="void">
+      <Description><![CDATA[导出全部excel
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").exportAllExcel();
+</pre>]]></Description>
+    </Method>
+    <Method name="exportPdf" return="void">
+      <Description><![CDATA[导出pdf
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").exportPdf();
+</pre>]]></Description>
+    </Method>
+    <Method name="exportAllPdf" return="void">
+      <Description><![CDATA[导出全部pdf
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").exportAllPdf();
+</pre>]]></Description>
+    </Method>
+    <Method name="print" return="void">
+      <Description><![CDATA[打印本页
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").print();
+</pre>]]></Description>
+    </Method>
+    <Method name="printAll" return="void">
+      <Description><![CDATA[打印全部
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").printAll();
+</pre>]]></Description>
+    </Method>
+    <Method name="printAllPage" return="void">
+      <Description><![CDATA[打印全部（分页）
+			用法如下：
+			<pre>
+Artery.get("rptArea184BD").printAllPage();
+</pre>]]></Description>
+    </Method>
+  </Methods>
+</Item>
+

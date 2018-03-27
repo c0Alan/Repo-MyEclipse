@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>164e57c06ee31f07f8f592b2a4b9f02c</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.organ.Tjxgzh.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/organ/Tjxgzh.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formf5c10">
+      <id>formf5c10</id>
+      <Items>
+        <blankPanel sid="1f3e91db9340b9d4f359c06ac75e5ea7">
+          <id>blankPanel21477</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <bodyStyle>padding-top:10px;</bodyStyle>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="1e02aff7f44b627d626335e8c10da4b8">
+              <id>header36ec4</id>
+              <text>&lt;span style="font-size:14px;padding:3px;"&gt;{req.headString}&lt;/span&gt;</text>
+            </header>
+            <navTabArea sid="70aee9ff833d5b6e1c055ec10dfa5eb5">
+              <id>navTabArea16e66</id>
+              <height>100%</height>
+              <tabPosition>top</tabPosition>
+              <themeStyle>unis</themeStyle>
+              <Items>
+                <navTabItem sid="890abeb62484384041009d232a4b8a01">
+                  <id>navTabItemaba89</id>
+                  <title>基本信息</title>
+                  <active>true</active>
+                  <Items>
+                    <blankPanel sid="ab94b8da805ea274c186a587d6d60e5a">
+                      <id>blankPanel1df9b</id>
+                      <height>100%</height>
+                      <themeStyle />
+                      <bodyContainer>true</bodyContainer>
+                      <Items>
+                        <formArea sid="80ce7b7daef9ee5c316e5477659308b5">
+                          <id>formArea</id>
+                          <ds>rs1</ds>
+                          <width>400</width>
+                          <colNum>1</colNum>
+                          <style>margin-top:20px;</style>
+                          <cellpadding>5</cellpadding>
+                          <Items>
+                            <faString sid="b131143069ebebb342ff54308de01035">
+                              <id>userLoginId</id>
+                              <submitName>user.loginId</submitName>
+                              <required>true</required>
+                              <dataName>{rs1.loginId}</dataName>
+                              <maxLength>100</maxLength>
+                              <onValidClient><![CDATA[userLoginId_onValidClient]]></onValidClient>
+                              <onValidServer><![CDATA[userLoginId_onValidServer]]></onValidServer>
+                              <label>登录名称</label>
+                            </faString>
+                            <faString sid="7478447791587464986bd3f085718b0a">
+                              <id>userName</id>
+                              <submitName>user.name</submitName>
+                              <required>true</required>
+                              <dataName>{rs1.name}</dataName>
+                              <maxLength>100</maxLength>
+                              <label>姓名</label>
+                            </faString>
+                            <faString sid="a871509095a55df54c303a2ecf3936c1">
+                              <id>userPassword</id>
+                              <submitName>user.password</submitName>
+                              <dataName>{rs1.password}</dataName>
+                              <editor>password</editor>
+                              <onShow><![CDATA[userPassword_onShow]]></onShow>
+                              <label>密码</label>
+                            </faString>
+                            <faString sid="b6d2ea12cf45fad07ad8f6219f69e126">
+                              <id>userMail</id>
+                              <submitName>user.email</submitName>
+                              <dataName>{rs1.email}</dataName>
+                              <maxLength>100</maxLength>
+                              <label>电子邮件</label>
+                            </faString>
+                            <faString sid="bf3185770bd2b770efc0664b1d0cc690">
+                              <id>userXmjp</id>
+                              <submitName>user.xmjp</submitName>
+                              <dataName>{rs1.xmjp}</dataName>
+                              <maxLength>50</maxLength>
+                              <label>姓名简拼</label>
+                            </faString>
+                            <faCode sid="f9d150abe3403aec07c2293406fd5e56">
+                              <id>userValid</id>
+                              <submitName>user.nValid</submitName>
+                              <required>true</required>
+                              <dataName>{rs1.nValid}</dataName>
+                              <editor>sRadio</editor>
+                              <width />
+                              <dynamicData><![CDATA[faValid_dynamicData]]></dynamicData>
+                              <ajaxLoad>false</ajaxLoad>
+                              <value>1</value>
+                              <label>是否有效</label>
+                            </faCode>
+                            <faHidden sid="bd07abbbc36ba6214a3b6fdb20d46ebd">
+                              <id>faHiddenf4dbe</id>
+                              <submitName>user.id</submitName>
+                              <dataName>{rs1.id}</dataName>
+                              <label>用户编号</label>
+                            </faHidden>
+                            <faHidden sid="b2680850ce36728f7ebda6db9a156c38">
+                              <id>faHidden733cb</id>
+                              <submitName>user.order</submitName>
+                              <dataName>{rs1.order}</dataName>
+                              <label>显示顺序</label>
+                            </faHidden>
+                            <faHidden sid="2abfa2f862543be99c88b9242498d972">
+                              <id>faHidden71051</id>
+                              <submitName>user.deptId</submitName>
+                              <dataName>{rs1.deptId}</dataName>
+                              <label>部门编号</label>
+                            </faHidden>
+                            <faHidden sid="1fac997bd8154f2842598d921781a346">
+                              <id>faHidden5171f</id>
+                              <submitName>user.corpId</submitName>
+                              <dataName>{rs1.corpId}</dataName>
+                              <label>单位编号</label>
+                            </faHidden>
+                            <buttonArea sid="f422e6ae098a087b984b4acef49ddd90">
+                              <id>buttonArea5c56d</id>
+                              <spacing>10</spacing>
+                              <style>padding-left:100px;padding-top:10px;</style>
+                              <label />
+                              <hideLabel>true</hideLabel>
+                              <Items>
+                                <button sid="0cec803f7535bef332e3082cc2442695">
+                                  <id>addUserBtn</id>
+                                  <width>100</width>
+                                  <text>添加用户</text>
+                                  <themeStyle>apple</themeStyle>
+                                </button>
+                                <button sid="a97332b723fe16581eeeb70d1a07ae72">
+                                  <id>updateUserBtn</id>
+                                  <width>100</width>
+                                  <text>更新用户</text>
+                                  <onClickClient><![CDATA[updateUserBtn_onClickClient]]></onClickClient>
+                                  <onClickServer><![CDATA[updateUserBtn_onClickServer]]></onClickServer>
+                                  <themeStyle>apple</themeStyle>
+                                </button>
+                                <simpleButton sid="ace37a522ea4240b75b1dc3036320d2a">
+                                  <id>initUserPwdBtn</id>
+                                  <text>初始化密码</text>
+                                </simpleButton>
+                              </Items>
+                            </buttonArea>
+                          </Items>
+                        </formArea>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </navTabItem>
+                <navTabItem sid="461404506d0d7ca9cae26adb48b37595">
+                  <id>navTabItem843cb</id>
+                  <title>拥有权限</title>
+                  <onShow><![CDATA[navTabItem843cb_onShow]]></onShow>
+                  <Items>
+                    <blankPanel sid="c4e7b1860f7f33f7d38783cd5506136f">
+                      <id>blankPanel949fe</id>
+                      <height>100%</height>
+                      <bodyStyle>padding:5 5 0 5;</bodyStyle>
+                      <bodyContainer>true</bodyContainer>
+                      <Items>
+                        <tableLayout sid="b03af48f1daac98d3749d75eeb7431e7">
+                          <id>tableLayout9a941</id>
+                          <colNum>3</colNum>
+                          <colWidths>25%,50%,25%</colWidths>
+                          <colSpacing>4</colSpacing>
+                          <height>100%</height>
+                          <Items>
+                            <blankPanel sid="edc8a620f9b9e0782bebdc6b0a608e03">
+                              <id>blankPanel0ced1</id>
+                              <height>100%</height>
+                              <frame>true</frame>
+                              <border>true</border>
+                              <themeStyle>pear</themeStyle>
+                              <Items>
+                                <header sid="32d1eaf47b387ef3285f4511bbece444">
+                                  <id>header69402</id>
+                                  <text />
+                                  <headerStyle>padding:0;</headerStyle>
+                                  <Items>
+                                    <blankPanel sid="8aa3ae3d1e51cacaf0a9acd47d0ab2bf">
+                                      <id>blankPanel06213</id>
+                                      <bodyStyle>overflow:hidden;</bodyStyle>
+                                      <Items>
+                                        <topbar sid="62f26face41d00962352bb85dd583a5e">
+                                          <id>topbar3c2fa</id>
+                                          <themeStyle>unis</themeStyle>
+                                          <Items>
+                                            <tbText sid="c6edc9a52db0935da367d6462e098cd7">
+                                              <id>tbText927aa</id>
+                                              <text>&lt;span style="padding:3px;font-size:14px;color:#15428B;"&gt;拥有角色&lt;/span&gt;</text>
+                                            </tbText>
+                                            <tbSeparator sid="1e52dfd2f4b9807d603d6ef5e58e87d7">
+                                              <id>tbSeparatorbb390</id>
+                                            </tbSeparator>
+                                            <tbButton sid="dafc69a640e6fefdf5fea05857d1e0e5">
+                                              <id>saveBtn_Role</id>
+                                              <text>保存</text>
+                                              <icon>/artery/arteryImage/file/image005.gif</icon>
+                                              <onlyShowIcon>true</onlyShowIcon>
+                                              <onClickClient><![CDATA[saveBtn_Role_onClickClient]]></onClickClient>
+                                              <onClickServer><![CDATA[saveBtn_Role_onClickServer]]></onClickServer>
+                                            </tbButton>
+                                          </Items>
+                                        </topbar>
+                                      </Items>
+                                    </blankPanel>
+                                  </Items>
+                                </header>
+                                <treeArea sid="a61dc16d4a8e66b3fbcee68550deb3e9">
+                                  <id>roleTreeArea</id>
+                                  <selType>checkbox</selType>
+                                  <expandTree>true</expandTree>
+                                  <height>100%</height>
+                                  <line>false</line>
+                                  <useArrows>true</useArrows>
+                                  <Items>
+                                    <treeDynamic sid="98859ba8ba9659124cf083d34dbf3193">
+                                      <id>roleTreeDynamic</id>
+                                    </treeDynamic>
+                                  </Items>
+                                </treeArea>
+                              </Items>
+                            </blankPanel>
+                            <blankPanel sid="e163f13d1fb8a6dcacacc94d99dcfa3b">
+                              <id>blankPanelebd6f</id>
+                              <height>100%</height>
+                              <frame>true</frame>
+                              <border>true</border>
+                              <themeStyle>pear</themeStyle>
+                              <Items>
+                                <header sid="62f2812a0e7d49fc147c59d4f8131ff4">
+                                  <id>header9e11e</id>
+                                  <text />
+                                  <headerStyle>padding:0;</headerStyle>
+                                  <Items>
+                                    <blankPanel sid="0a742916fc124672d311526a39eb22b9">
+                                      <id>blankPanele2355</id>
+                                      <bodyStyle>overflow:hidden;</bodyStyle>
+                                      <Items>
+                                        <topbar sid="9358e6c48eb243a5b96da3204a907bb6">
+                                          <id>topbarc446e</id>
+                                          <themeStyle>unis</themeStyle>
+                                          <Items>
+                                            <tbText sid="5b50783510dfbfe926eada9c2c5ab204">
+                                              <id>tbText92cb1</id>
+                                              <text>&lt;span style="padding:3px;font-size:14px;color:#15428B;"&gt;拥有权限&lt;/span&gt;</text>
+                                            </tbText>
+                                            <tbSeparator sid="8ab98cadcdceb0d6e11625a9653804a9">
+                                              <id>tbSeparatorf77ae</id>
+                                            </tbSeparator>
+                                            <tbButton sid="bca714922c716d339d18581bbbe1974a">
+                                              <id>saveBtn_Right</id>
+                                              <text>保存</text>
+                                              <icon>/artery/arteryImage/file/image005.gif</icon>
+                                              <onlyShowIcon>true</onlyShowIcon>
+                                            </tbButton>
+                                          </Items>
+                                        </topbar>
+                                      </Items>
+                                    </blankPanel>
+                                  </Items>
+                                </header>
+                                <treeArea sid="6658dc870b8219787e6f2c5dd4d7c130">
+                                  <id>rightTreeArea</id>
+                                  <selType>checkbox</selType>
+                                  <expandTree>true</expandTree>
+                                  <height>100%</height>
+                                  <cascade>true</cascade>
+                                  <line>false</line>
+                                  <useArrows>true</useArrows>
+                                  <Items>
+                                    <treeDynamic sid="09da80b3f03a84f7346cb631402b7ca2">
+                                      <id>rightTreeDynamic</id>
+                                    </treeDynamic>
+                                  </Items>
+                                </treeArea>
+                              </Items>
+                            </blankPanel>
+                            <blankPanel sid="668b5f55c9ad21729b983fca937063af">
+                              <id>blankPanel0dd24</id>
+                              <height>100%</height>
+                              <frame>true</frame>
+                              <border>true</border>
+                              <themeStyle>pear</themeStyle>
+                              <Items>
+                                <header sid="d6250632a795f793fa1d95a7a5fdd134">
+                                  <id>headerd90f5</id>
+                                  <text />
+                                  <headerStyle>font-size:14px;padding:3px;</headerStyle>
+                                  <Items>
+                                    <blankPanel sid="a1e05412eb4892f95c7d2c2cda6b9d89">
+                                      <id>blankPanel73a2d</id>
+                                      <bodyStyle>overflow:hidden;</bodyStyle>
+                                      <Items>
+                                        <topbar sid="f07874925230af53fda0f967bbd30335">
+                                          <id>topbardbf2b</id>
+                                          <themeStyle>unis</themeStyle>
+                                          <Items>
+                                            <tbText sid="71766fad158a73f71a48b5c06ef49639">
+                                              <id>tbText00d4c</id>
+                                              <text>&lt;span style="padding:3px;font-size:14px;color:#15428B;"&gt;全部权限&lt;/span&gt;</text>
+                                            </tbText>
+                                          </Items>
+                                        </topbar>
+                                      </Items>
+                                    </blankPanel>
+                                  </Items>
+                                </header>
+                                <treeArea sid="7adec94aa07d43041208895d43539c2d">
+                                  <id>hasRightTreeArea</id>
+                                  <expandTree>true</expandTree>
+                                  <height>100%</height>
+                                  <line>false</line>
+                                  <useArrows>true</useArrows>
+                                  <Items>
+                                    <treeDynamic sid="b71bf48dc186c61b1a58bbafef946cc1">
+                                      <id>hasRightTreeDynamic</id>
+                                    </treeDynamic>
+                                  </Items>
+                                </treeArea>
+                              </Items>
+                            </blankPanel>
+                          </Items>
+                        </tableLayout>
+                      </Items>
+                    </blankPanel>
+                  </Items>
+                </navTabItem>
+              </Items>
+            </navTabArea>
+          </Items>
+        </blankPanel>
+        <blankPanel sid="be11ab09dc371f1d39c396f62d3685d7">
+          <id>blankPanel8768f</id>
+          <width>300</width>
+          <height>100</height>
+          <border>true</border>
+          <bodyStyle>padding:10px;</bodyStyle>
+          <style>background-color:#FFFFC6;border:1px solid #FF9000;</style>
+          <hidden>true</hidden>
+          <Items>
+            <tableLayout sid="69b2fe0d5f4a10f027302b08356fd034">
+              <id>tableLayout37fbd</id>
+              <height>100%</height>
+              <Items>
+                <htmlArea sid="3e7f94fab67c91d5586ee1eac10cd23e">
+                  <id>htmlArea94e74</id>
+                </htmlArea>
+                <buttonArea sid="fb92d7cd2acacf6cf933435a76185708">
+                  <id>buttonAreade4f9</id>
+                  <align>right</align>
+                  <Items>
+                    <simpleButton sid="465109b67cc430ccfa1a22aebfc3bc43">
+                      <id>closeSBtn</id>
+                      <text>关闭</text>
+                      <style>font-size:14px;color:#006699;</style>
+                      <onClickClient><![CDATA[closeSBtn_onClickClient]]></onClickClient>
+                    </simpleButton>
+                  </Items>
+                </buttonArea>
+                <htmlArea sid="df1ce0cfabd776dfc4dde1d67f032532">
+                  <id>infoArea</id>
+                  <style>font-size:14px;</style>
+                  <colSpan>2</colSpan>
+                  <synTabStyle>height:100%;</synTabStyle>
+                </htmlArea>
+              </Items>
+            </tableLayout>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="parentId" showName="父节点编号" value="" pvalue="" />
+    <param name="parentType" showName="父节点类型" value="" pvalue="" />
+    <param name="userId" showName="帐号编号" value="" pvalue="" />
+    <param name="headString" showName="标题行文字" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">getUserInfo</ds>
+  </dslist>
+</form>
+

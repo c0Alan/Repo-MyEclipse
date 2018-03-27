@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>d98c032f49ae2dfc471bc1f6ca4b0fc1</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation />
+  <jsLocation />
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>A32983d23599f48b774b7ab366362d4e4</id>
+      <background-color>#ffffff</background-color>
+      <Items>
+        <listArea sid="Ad867d622dcac269ff60e93ba2f0977ef">
+          <id>bookList</id>
+          <ds>rs1</ds>
+          <type>grid</type>
+          <width>90%</width>
+          <pageCount>8</pageCount>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <frame>true</frame>
+          <style>padding-top:5px;</style>
+          <themeStyle>default</themeStyle>
+          <isTip>true</isTip>
+          <tipTpl>&lt;table width="396" border="0" cellspacing="0" cellpadding="0" class="default-table"&gt;
+  &lt;tr&gt;
+    &lt;td width="79" height="31" nowrap="nowrap" class="default-td"&gt;图书名称：&lt;/td&gt;
+    &lt;td  width="112" nowrap="nowrap" class="default-td"&gt;{lstCNAME}&lt;/td&gt;
+    &lt;td  width="90" rowspan="5" valign="middle" nowrap="nowrap" class="default-td"&gt;图书封面：&lt;/td&gt;
+    &lt;td class="default-td"  width="115" rowspan="5"&gt;&lt;img width="113" height="152" src="{lstIPHOTO}" /&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td height="31" nowrap="nowrap" class="default-td" &gt;作者：&lt;/td&gt;
+    &lt;td nowrap="nowrap" class="default-td" &gt;{lstCAUTH}&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td height="31" nowrap="nowrap"  class="default-td" &gt;出版社：&lt;/td&gt;
+    &lt;td class="default-td" &gt;{lstCPUBLISHER}&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td height="31" nowrap="nowrap"  class="default-td" &gt;出版日期：&lt;/td&gt;
+    &lt;td class="default-td" &gt;{lstDPUBLISHER}&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td height="31"  class="default-td" &gt;购买日期：&lt;/td&gt;
+    &lt;td class="default-td" &gt;{lstDBUY}&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td height="31"  class="default-td" &gt;分类：&lt;/td&gt;
+    &lt;td class="default-td" &gt;{lstNTYPE}&lt;/td&gt;
+    &lt;td nowrap="nowrap" class="default-td" &gt;所属图书室：&lt;/td&gt;
+    &lt;td class="default-td" &gt;{lstCLIBRARYID}&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td height="63" class="default-td" &gt;说明：&lt;/td&gt;
+    &lt;td colspan="3" class="default-td" &gt;{lstTABSTRACT}&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</tipTpl>
+          <Items>
+            <header sid="Ae63ec6de6c185dea4a7c426d912c89f6">
+              <id>Ae63ec6de6c185dea4a7c426d912c89f6</id>
+              <text>图书详情提示</text>
+            </header>
+            <columnIdentity sid="columnIdentity4270C437E0B3D98E8A69CE0676433318">
+              <id>lstCID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ID</inheritfld>
+              <dataName>{rs1.C_ID}</dataName>
+              <title>图书编号</title>
+              <isEditor>false</isEditor>
+            </columnIdentity>
+            <column sid="A3d0bccdb986d260acb185176404891df">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>名称</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A42f4c94cf60048fee40bd7db6757e986">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A81fa79822d01c1f08cd91b12b44760f5">
+              <id>lstCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A3b6c83df8fe2af06b512629d7b275005">
+              <id>lstDPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_PUBLISHER</inheritfld>
+              <dataName>{df([rs1.D_PUBLISHER],yyyy-MM-dd)}</dataName>
+              <title>出版时间</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A9c800f6d804249ce1ebde496444cb3c9">
+              <id>lstDBUY</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>D_BUY</inheritfld>
+              <dataName>{df([rs1.D_BUY],yyyy-MM-dd)}</dataName>
+              <title>购买日期</title>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A426a12173890acfb56ca8dc0bf879b56">
+              <id>lstNTYPE</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>N_TYPE</inheritfld>
+              <dataName>{ncode([rs1.N_TYPE],600)}</dataName>
+              <title>分类</title>
+              <dynamicDataFilter><![CDATA[import com.thunisoft.book.*;
+return BookUtil.getBookTypes();]]></dynamicDataFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="A619065c1c9cacb2826f4309087fe96b5">
+              <id>lstCLIBRARYID</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_LIBRARYID</inheritfld>
+              <dataName>{list(rs2,C_NAME,C_ID=[rs1.C_LIBRARYID],',')}</dataName>
+              <title>所属图书室</title>
+              <dynamicDataFilter><![CDATA[import com.thunisoft.book.*;
+return BookUtil.getLibs();]]></dynamicDataFilter>
+              <isOrderBy>true</isOrderBy>
+            </column>
+            <column sid="Ac8663e4e16ebe994c48897358fdee715">
+              <id>lstTABSTRACT</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>T_ABSTRACT</inheritfld>
+              <dataName>{rs1.T_ABSTRACT}</dataName>
+              <isOnlyData>true</isOnlyData>
+              <title>T_ABSTRACT</title>
+            </column>
+            <columnBinary sid="columnBinaryEEBD3A6E6774C7569BDC51F66BBE61E5">
+              <id>lstIPHOTO</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>I_PHOTO</inheritfld>
+              <dataName>{rs1.I_PHOTO}</dataName>
+              <isOnlyData>true</isOnlyData>
+              <title>图书封面</title>
+              <isEditor>false</isEditor>
+            </columnBinary>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs2" type="sql">select * from T_Eg_Library where N_VALID=1</ds>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_ID , 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_PUBLISHER , 
+T_Eg_Book.D_PUBLISHER , 
+T_Eg_Book.D_BUY , 
+T_Eg_Book.N_TYPE , 
+T_Eg_Book.C_LIBRARYID , 
+T_Eg_Book.T_ABSTRACT , 
+T_Eg_Book.I_PHOTO 
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

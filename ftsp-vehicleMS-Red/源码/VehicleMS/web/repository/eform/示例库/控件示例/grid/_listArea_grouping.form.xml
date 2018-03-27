@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>b5dba45803f8e5a601b21e5dec7a940c</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.grid._listArea_grouping.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/grid/_listArea_grouping.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="formed126">
+      <id>formed126</id>
+      <Items>
+        <listArea sid="35ec0f6fa8f5d35e549866b82369a6c7">
+          <id>listArea061db</id>
+          <ds>rs1</ds>
+          <Items>
+            <columnString sid="c7924eb3b180e51987deb6dbf03ecab0">
+              <id>columnString38751</id>
+              <dataName>{rs1.C_NAME}</dataName>
+            </columnString>
+            <column sid="080cd0c732ffb72f58f3a27ed260f090">
+              <id>columnf674e</id>
+              <Items>
+                <blankPanel sid="c26026205b87b9e74a9109d7c999ceaf">
+                  <id>blankPanel95ed4</id>
+                  <Items>
+                    <loopArea sid="ca2898d18866c33716e84b3d7b05029c">
+                      <id>loopAreabf680</id>
+                      <ds>{rs2,'#C_LIBRARYID'='[rs1.C_ID]'}</ds>
+                      <Items>
+                        <htmlArea sid="328e7dcdc7e7b0647b624a2797e6ffb6">
+                          <id>htmlArea636ef</id>
+                          <value>{rs2.C_NAME}</value>
+                        </htmlArea>
+                      </Items>
+                    </loopArea>
+                  </Items>
+                </blankPanel>
+              </Items>
+            </column>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT * FROM T_Eg_Library</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">SELECT * FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="treeDynamic" cn="动态节点" jsType="artery-tree" icon="treeDynamic.gif"
+	iconNew="treeDynamicNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe><![CDATA[
+		树的动态节点，用于动态生成树状结构。每次点击树上节点会动态加载此节点下面的节点列表。
+		此节点（树目录，树节点）不能与静态节点同时使用，一般情況下生成一颗动态树只需要在树区域加入一个动态节点。
+		加载脚本示例如下：
+		  <pre>
+					/**
+					 * 加载节点脚本
+					 * 
+					 * @param item
+					 *            控件对象
+					 * @param node
+					 *            树节点对象
+					 * @return 返回本node节点的子节点列表
+					 */
+					public List<TreeNode> treeDynamic5f56f_onLoadTree(Item item, TreeNode node) {
+						List nodeList = new ArrayList();
+						for (int i = 1; i <= 3; i++) {
+							TreeNode tn = new TreeNode();
+							tn.setId("node" + i);
+							tn.setName("节点" + tn.getId());
+							nodeList.add(tn);
+						}
+						return nodeList;
+					}
+		      </pre>
+		]]></Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="faTree" />
+		<Parent type="columnTree" />
+		<Parent type="treeArea" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.tree.TreeDynamic</Class>
+	<JsFile />
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+	    <Property cn="加载前脚本" type="15"  name="onBeforeLoad" tips="在加载子节点前，将执行此脚本，可以在此处设置一些传回的参数">
+	      <Value />
+	    </Property>
+		<Property cn="加载节点脚本" type="14"  name="onLoadTree"
+			sh="自动引入：com.thunisoft.artery.eform.frame.parse.bean.TreeNode,需要返回List"
+			tips="树控件或树区域控件，加载节点的脚本">
+			<Value />
+			<Description><![CDATA[
+			树控件或树区域控件，加载节点的脚本，用以得到展开节点下子节点的信息。		      <pre>
+					/**
+					 * 加载节点脚本
+					 * 
+					 * @param item
+					 *            控件对象
+					 * @param node
+					 *            树节点对象
+					 * @return 返回本node节点的子节点列表
+					 */
+					public List<TreeNode> treeDynamic5f56f_onLoadTree(Item item, TreeNode node) {
+						List nodeList = new ArrayList();
+						for (int i = 1; i <= 3; i++) {
+							TreeNode tn = new TreeNode();
+							tn.setId("node" + i);
+							tn.setName("节点" + tn.getId());
+							nodeList.add(tn);
+						}
+						return nodeList;
+					}
+		      </pre>
+      		]]></Description>
+		</Property>
+		<Property cn="节点显示值和路径脚本" type="14"  name="onNodeDetail"
+			tips="通过脚本，指定控件的输入框中显示内容和自动定位路径">
+			<Value />
+			<Description><![CDATA[
+			通过脚本，指定控件的输入框中显示内容和自动定位路径，格式自定义
+		      <pre>
+				 /**
+				 * 节点显示值和路径脚本
+				 * 
+				 * @param item
+				 *            控件对象
+				 * @param value
+				 *            代表表单区域中的FaTree控件的值
+				 * @param result
+				 *            结果对象，此map需要valueText和valuePath返回值
+				 */
+				@SuppressWarnings("unchecked")
+				public void treeDynamic_group_onNodeDetail(Item item, Map result, String value) {
+					ICustomGroup group = groupBridge.getGroupById(value);
+					if(group!=null){
+						result.put("valueText", group.getName());
+						StringBuffer sb = new StringBuffer();
+						sb.append(group.getId());
+						while(StringUtils.isNotBlank(group.getParentId())){
+							sb.insert(0, group.getParentId()+",");
+							group = groupBridge.getGroupById(group.getParentId());
+						}
+						result.put("valuePath", sb.toString());
+						
+					}
+				}
+		      </pre>
+      		]]></Description>
+		</Property>
+		<Property cn="是否生成" type="11" name="show" isHidden="1" tips="设置是否生成动态节点">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"	tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="生成时脚本" type="14"  name="onShow" tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+  <JsFunctions>
+    <JsFunction name="onBeforeLoad">
+/**
+ * 加载前脚本({itemid})
+ * 
+ * @param  loader 加载器
+ * @param  node 导航树节点
+ */
+function {methodName} (loader, node){
+	
+}
+    </JsFunction>
+  </JsFunctions>
+  	<JavaFunctions>
+		<JavaFunction name="onNodeDetail">
+<![CDATA[
+/**
+ * 节点显示值和路径脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param value
+ *            代表表单区域中的FaTree控件的值
+ * @param result
+ *            结果对象，此map需要valueText和valuePath返回值
+ */
+public void {methodName}(Item item, Map result, String value) {
+
+}
+]]>
+		</JavaFunction>
+		<JavaFunction name="onLoadTree" imports="com.thunisoft.artery.plugin.tree.TreeNode;">
+<![CDATA[
+/**
+ * 加载节点脚本
+ * 
+ * @param item
+ *            控件对象
+ * @param node
+ *            树节点对象
+ * @return 返回本node节点的子节点列表
+ */
+public List<TreeNode> {methodName}(Item item, TreeNode node) {
+	return null;
+}
+]]>
+		</JavaFunction>
+	</JavaFunctions>
+</Item>
+

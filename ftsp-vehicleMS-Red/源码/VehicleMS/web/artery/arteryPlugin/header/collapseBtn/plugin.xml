@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="collapseBtn" cn="折叠按钮" jsType="artery-base" icon="collapseBtn.gif"
+	iconNew="collapseBtnNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-08-05</CreateTime>
+		<Describe>生成页面的按钮控件,可以将header部分折叠和打开</Describe>
+		<Images>
+			<File>info2.png</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="header" />
+	</Parents>
+	<Children />
+	<Class>com.thunisoft.artery.plugin.header.CollapseBtn
+	</Class>
+	<JsFile>
+		<File>collapseBtn.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="组件类型" type="1" name="xtype" isHidden="1"
+			export="true" cfg="true">
+			<Value>apCollapseBtn</Value>
+		</Property>
+		<Property cn="标识" type="1" name="id" export="true"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="是否生成" type="11" name="show"
+			tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+			<Value>true</Value>
+		</Property>
+		<Property cn="生成时权限" type="1"  name="showRight"
+			tips="设置后，拥有设置的权限才会生成控件">
+			<Value />
+		</Property>
+		<Property cn="是否折叠状态" inherit="false" type="11" name="collapsible" tips="当为true时，面板初始为折叠状态">
+			<Value>false</Value>
+		</Property>
+		<Property cn="生成时脚本" type="14" name="onShow"
+			tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+			<Value />
+		</Property>
+	</Properties>
+	<Methods>
+		<Method name="collapse" inherit="false" return="void" tips="收起展开部分">
+			<Description><![CDATA[<p>收起展开部分</p><pre>
+Artery.get("collapseBtnId").collapse();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="expand" inherit="false" return="void" tips="展开折叠部分">
+			<Description><![CDATA[<p>展开折叠部分</p><pre>
+Artery.get("collapseBtnId").expand();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+		<Method name="change" inherit="false" return="void" tips="展开与折叠状态切换">
+			<Description><![CDATA[<p>展开与折叠状态切换</p><pre>
+Artery.get("collapseBtnId").change();
+  		</pre>]]></Description>
+			<Parameters>
+				<Param>无</Param>
+			</Parameters>
+			<Return>void</Return>
+		</Method>
+	</Methods>
+</Item>
+

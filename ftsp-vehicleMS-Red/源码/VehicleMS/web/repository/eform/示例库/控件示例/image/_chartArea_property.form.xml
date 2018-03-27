@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>710bb582e7f0f627d1507e670ce63179</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.kjsl.image._chartArea_property.java</javaLocation>
+  <jsLocation>artery/arteryClient/slk/kjsl/image/_chartArea_property.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="form5b9f4">
+      <id>form5b9f4</id>
+      <Items>
+        <tableLayout sid="5c715f972a9838e93ae246aabbb9c652">
+          <id>tableLayoutB712D</id>
+          <Items>
+            <chartArea sid="1dc046761a2316138f28c920905b886a">
+              <id>chart_confProp1</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="133e19d4565b3bcad912530324018ffd">
+              <id>chart_confProp2</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="4019ad13b9dd3764ea6d56fa7f6aeffd">
+              <id>chart_confProp3</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+            </chartArea>
+            <chartArea sid="2c59198d085537a1835867bc2390d9c9">
+              <id>chart_confProp4</id>
+              <chartConf>{"chartType":"Column2D"}</chartConf>
+              <loadType>ajax</loadType>
+            </chartArea>
+          </Items>
+        </tableLayout>
+      </Items>
+    </form>
+  </Item>
+</form>
+

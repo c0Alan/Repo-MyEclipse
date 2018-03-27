@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>9d64f88b13fa74be58b92de036aec1d9</id>
+  <cfgTbl>T_Eg_Book</cfgTbl>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.slk.qt.example.list.lx.Lx1.java</javaLocation>
+  <jsLocation />
+  <descript>​</descript>
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="bodyPanel">
+      <id>bodyPanel</id>
+      <background-color>ffffff</background-color>
+      <Items>
+        <listArea sid="A0c758c294a0fee28985730bea4c42599">
+          <id>listArea</id>
+          <ds>rs1</ds>
+          <isInitData>true</isInitData>
+          <height>100%</height>
+          <pageCount>10</pageCount>
+          <isStartNew>true</isStartNew>
+          <isExpExcel>true</isExpExcel>
+          <isExpPdf>true</isExpPdf>
+          <themeStyle>table</themeStyle>
+          <highLightRule><![CDATA[listArea_highLightRule]]></highLightRule>
+          <Items>
+            <columnString sid="columnString723876E6C2383656CD0A680070047056">
+              <id>lstCNAME</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_NAME</inheritfld>
+              <dataName>{rs1.C_NAME}</dataName>
+              <title>图书名称</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnString33AA2B4720A2F7A8C0C59A9EB3EC09AC">
+              <id>lstCAUTH</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_AUTH</inheritfld>
+              <dataName>{rs1.C_AUTH}</dataName>
+              <title>作者</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnString6062892C3792C44C1B7255DABA2C9F6B">
+              <id>lstCISBN</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_ISBN</inheritfld>
+              <dataName>{rs1.C_ISBN}</dataName>
+              <title>ISBN号</title>
+              <isEditor>false</isEditor>
+            </columnString>
+            <columnString sid="columnStringD80926FB86606BC2669E6B9C4EEBFAD6">
+              <id>lstCPUBLISHER</id>
+              <inherittbl>T_Eg_Book</inherittbl>
+              <inheritfld>C_PUBLISHER</inheritfld>
+              <dataName>{rs1.C_PUBLISHER}</dataName>
+              <title>出版社</title>
+              <isEditor>false</isEditor>
+            </columnString>
+          </Items>
+        </listArea>
+      </Items>
+    </form>
+  </Item>
+  <params />
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT 
+T_Eg_Book.C_NAME , 
+T_Eg_Book.C_AUTH , 
+T_Eg_Book.C_ISBN , 
+T_Eg_Book.C_PUBLISHER ,
+T_Eg_Book.N_VALID 
+FROM T_Eg_Book</ds>
+  </dslist>
+</form>
+

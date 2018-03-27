@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2b9fecffbda50bbb66797ce3b4619a80</id>
+  <configTable />
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>com.thunisoft.vehicle.logic.VehicleList.java</javaLocation>
+  <jsLocation>car/js/vehicleList.js</jsLocation>
+  <cssLocation />
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="form222c2">
+      <id>form222c2</id>
+      <Items>
+        <upRegion sid="22557a029067c298e3b44bc800bafe3f">
+          <id>upRegiona8a67</id>
+          <height>102</height>
+          <border>false</border>
+          <Items>
+            <imageArea sid="f51f40db752f5b95be429c6fff4a4024">
+              <id>imageAreae7eb9</id>
+              <width>100%</width>
+              <height>100%</height>
+              <icon>/artery/sample/book/banner_l.gif</icon>
+              <imgWidth>100%</imgWidth>
+              <imgHeight>100</imgHeight>
+            </imageArea>
+          </Items>
+        </upRegion>
+        <centerRegion sid="bed62744a0a827127e0c58206b124ed4">
+          <id>centerRegion73ebf</id>
+          <Items>
+            <tabArea sid="2ffa3138a52f6fa7e59b663fb6591ffb">
+              <id>tabArea8ed77</id>
+              <height>100%</height>
+              <Items>
+                <tabItem sid="2badf57abea52fbc2e9933f7b51d8550">
+                  <id>tabItemc8226</id>
+                  <title>车辆管理</title>
+                  <Items>
+                    <formArea sid="10a5a44304eb5a60e6e7804dd0fcffdc">
+                      <id>formQuery</id>
+                      <width>800</width>
+                      <height>25</height>
+                      <colNum>3</colNum>
+                      <labelAlign>left</labelAlign>
+                      <labelWidth>60</labelWidth>
+                      <contentCtStyleDisplay>margin-top:10px</contentCtStyleDisplay>
+                      <Items>
+                        <faString sid="12f99231a00b318900e97e162e6d3783">
+                          <id>CCarNo</id>
+                          <submitName>CCarNo</submitName>
+                          <width>175</width>
+                          <label>车牌号</label>
+                        </faString>
+                        <faCode sid="6b7733d7e876ce8424e5d42a5c31c8c8">
+                          <id>CCarType</id>
+                          <submitName>CCarType</submitName>
+                          <width>175</width>
+                          <codeType>-700</codeType>
+                          <label>车辆类型</label>
+                        </faCode>
+                        <buttonArea sid="3654bcfa31f9a5e0d1eaafa68f73ee55">
+                          <id>buttonAreaa089c</id>
+                          <hideLabel>true</hideLabel>
+                          <Items>
+                            <button sid="7fb6882e47bb755917cb6c8f9ab2b09a">
+                              <id>buttond4e7f</id>
+                              <text>查询</text>
+                              <onClickClient><![CDATA[Query_onClickClient]]></onClickClient>
+                            </button>
+                            <button sid="bad35e2860763f8837e2f92b78a558b6">
+                              <id>buttonbaa94</id>
+                              <text>新增</text>
+                              <linkto>{"formId":"363de39363962babb069072edd7f40a2","formName":"车辆信息表单","formType":"1","params":{"cid":""},"runTimeType":"insert","target":"_window","targetWidth":"330","targetHeight":"350","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"新增车辆","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                            </button>
+                          </Items>
+                        </buttonArea>
+                      </Items>
+                    </formArea>
+                    <listArea sid="6dff34512c81857d56c27b58373a5063">
+                      <id>listQuery</id>
+                      <ds>rs1</ds>
+                      <height>91%</height>
+                      <stripeColor>#DBDBDB</stripeColor>
+                      <pageCount>10</pageCount>
+                      <Items>
+                        <columnString sid="491eb4f1e29818cef9d1676d96b296a2">
+                          <id>columnStringf09bd</id>
+                          <dataName>{rs1.CId}</dataName>
+                          <title>序号</title>
+                          <hidden>true</hidden>
+                          <show>false</show>
+                        </columnString>
+                        <columnString sid="b55b94db1e566c0f40707c07f10a9641">
+                          <id>CCarNumber</id>
+                          <dataName>{rs1.CCarNumber}</dataName>
+                          <title>车牌号</title>
+                          <isOrderBy>true</isOrderBy>
+                        </columnString>
+                        <columnString sid="4deb8a7999da8d61ea520958699c5dd0">
+                          <id>CCarTypeName</id>
+                          <dataName>{rs1.CCarTypeName}</dataName>
+                          <title>车辆类型</title>
+                          <width>30</width>
+                          <isOrderBy>true</isOrderBy>
+                        </columnString>
+                        <columnString sid="5d7f1dfa6fb92d1b1197d8cc28338b70">
+                          <id>CBrand</id>
+                          <dataName>{rs1.CBrand}</dataName>
+                          <title>品牌</title>
+                          <isOrderBy>true</isOrderBy>
+                        </columnString>
+                        <columnString sid="7a9df92d5d571bf9c41eba81cb14b66e">
+                          <id>NSeat</id>
+                          <dataName>{rs1.NSeat}</dataName>
+                          <title>座位</title>
+                          <width>20</width>
+                          <isOrderBy>true</isOrderBy>
+                        </columnString>
+                        <columnString sid="bf9460e15ed3bb76b802e04c65f12746">
+                          <id>CResponseUserName</id>
+                          <dataName>{rs1.CResponseUserName}</dataName>
+                          <title>管理人</title>
+                          <width>30</width>
+                          <isOrderBy>true</isOrderBy>
+                        </columnString>
+                        <columnCode sid="464e1c86a04bf60686e2ce2de58d6da4">
+                          <id>NIsAvailable</id>
+                          <dataName>{rs1.NIsAvailable}</dataName>
+                          <title>是否可用</title>
+                          <width>20</width>
+                          <codeType>-1</codeType>
+                          <isOrderBy>true</isOrderBy>
+                        </columnCode>
+                        <columnString sid="25ed1e39b3867a1098c532e134ec8f3f">
+                          <id>columnStringfdc03</id>
+                          <dataName>{rs1.CNote}</dataName>
+                          <title>备注</title>
+                          <width>80</width>
+                        </columnString>
+                        <column sid="6a82fabe31ab611b6fc38b20a7038f92">
+                          <id>column3aed5</id>
+                          <title>操作</title>
+                          <Items>
+                            <colOperText sid="bb64e4b9ae4ab0e6b073cad0cf98a416">
+                              <id>colOperText668e3</id>
+                              <text>编辑</text>
+                              <linkto>{"formId":"363de39363962babb069072edd7f40a2","formName":"车辆信息表单","formType":"1","params":{"cid":"{rs1.CId}"},"runTimeType":"update","paramsRequest":"true","target":"_window","targetWidth":"330","targetHeight":"350","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"编辑车辆","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                            </colOperText>
+                          </Items>
+                        </column>
+                      </Items>
+                    </listArea>
+                  </Items>
+                </tabItem>
+                <tabItem sid="357be6ec1aeddbbfb11db6ee98b9b621">
+                  <id>tabItembd8bf</id>
+                  <title>车辆申请</title>
+                  <linkto>{"formId":"5e8c627d5f049ad158a4de088f48a061","formName":"carapply","formType":"1","runTimeType":"insert","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                </tabItem>
+              </Items>
+            </tabArea>
+          </Items>
+        </centerRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">Vehiclelist</ds>
+  </dslist>
+</form>
+

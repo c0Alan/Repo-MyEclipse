@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1f833bae08f9d211f4809d604beb8fd1</id>
+  <cfgTbl />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.subsys.Zxttj.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/subsys/Zxttj.js</jsLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <sysform>false</sysform>
+  <Item version="2">
+    <form sid="forme4a1d">
+      <id>forme4a1d</id>
+      <Items>
+        <blankPanel sid="a9dc7bf58bb09f510983ff0d9fc857f4">
+          <id>blankPanel22974</id>
+          <height>100%</height>
+          <frame>true</frame>
+          <bodyStyle>padding-top:10px;</bodyStyle>
+          <themeStyle>pear</themeStyle>
+          <Items>
+            <header sid="e8587d5098090f98a3910038380a5050">
+              <id>header84809</id>
+              <text>&lt;span style="font-size:14px;padding:3px;"&gt;子系统数量&lt;/span&gt;</text>
+            </header>
+            <formArea sid="fd0dc37d361ff40631021bd472c76532">
+              <id>formArea3f2aa</id>
+              <colNum>1</colNum>
+              <labelSeparator>：</labelSeparator>
+              <labelWidth>200</labelWidth>
+              <bodyStyle>padding:30px</bodyStyle>
+              <displayType>display</displayType>
+              <onShow><![CDATA[formArea3f2aa_onShow]]></onShow>
+              <cellpadding>5</cellpadding>
+              <cellpaddingDisplay>5</cellpaddingDisplay>
+              <Items>
+                <faString sid="72e7242de612449477c8dbee8fefcf11">
+                  <id>faString2932b</id>
+                  <label>子系统总数</label>
+                  <labelStyle>font-size:15px;font-weight:800;</labelStyle>
+                </faString>
+                <faString sid="a17eb5c7e3235fd483492c8bf4efee24">
+                  <id>faString61554</id>
+                  <label>已发布的子系统数</label>
+                  <labelStyle>font-size:15px;font-weight:800;</labelStyle>
+                </faString>
+                <faString sid="8e27b82880ca13c93efc1229a60746cf">
+                  <id>faString115a1</id>
+                  <label>未发布的子系统数</label>
+                  <labelStyle>font-size:15px;font-weight:800;</labelStyle>
+                </faString>
+              </Items>
+            </formArea>
+          </Items>
+        </blankPanel>
+      </Items>
+    </form>
+  </Item>
+</form>
+

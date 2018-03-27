@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>6abde7032f184bee36c0ce208b066fd0</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <javaLocation>arteryServer.jck.dict.group.Fzwjbjq.java</javaLocation>
+  <jsLocation>artery/arteryClient/jck/dict/group/Fzwjbjq.js</jsLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="formc441b">
+      <id>formc441b</id>
+      <bodyStyle>padding:20px;</bodyStyle>
+      <themeStyle>funis</themeStyle>
+      <onLoadServer><![CDATA[formc441b_onLoadServer]]></onLoadServer>
+      <onShow><![CDATA[formc441b_onShow]]></onShow>
+      <Items>
+        <formArea sid="a9cd02bc42a30c19d9c3dd3e552dd8eb">
+          <id>formAreaGroup</id>
+          <height>100%</height>
+          <colNum>1</colNum>
+          <labelWidth>80</labelWidth>
+          <Items>
+            <faString sid="d60cc1850604aee187e939e1c0f31a47">
+              <id>faStringGroupName</id>
+              <label>库名称</label>
+            </faString>
+            <faString sid="a4cd8cc6e4773c48bb8d9545df9f3775">
+              <id>faStringShowName</id>
+              <required>true</required>
+              <label>显示名称</label>
+            </faString>
+            <faString sid="a51c44c9d430ecb3704c9b6280a27dba">
+              <id>faStringDesc</id>
+              <editor>textarea</editor>
+              <label>描述</label>
+            </faString>
+            <faHidden sid="77de22ad42347f90c9d3f80a8b420cd4">
+              <id>faHiddenId</id>
+            </faHidden>
+          </Items>
+        </formArea>
+        <footer sid="057d4d31472008eb3b9442a8b5260f43">
+          <id>footerf814b</id>
+          <Items>
+            <button sid="650e0b38a06a3cd76b00494ed2c4e59e">
+              <id>buttonupdate</id>
+              <text>更新</text>
+              <onClickClient><![CDATA[buttonupdate_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[buttonupdate_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[buttonupdate_onShow]]></onShow>
+            </button>
+            <button sid="bfb250d2477be6cc6d2ed82f5f48c60e">
+              <id>buttonadd</id>
+              <text>添加</text>
+              <onClickClient><![CDATA[buttonadd_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[buttonadd_onClickServer]]></onClickServer>
+              <themeStyle>cookie</themeStyle>
+              <onShow><![CDATA[buttonadd_onShow]]></onShow>
+            </button>
+          </Items>
+        </footer>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="groupName" showName="库名称" value="" pvalue="" />
+    <param name="showName" showName="显示名称" value="" pvalue="" />
+    <param name="desc" showName="描述" value="" pvalue="" />
+  </params>
+</form>
+

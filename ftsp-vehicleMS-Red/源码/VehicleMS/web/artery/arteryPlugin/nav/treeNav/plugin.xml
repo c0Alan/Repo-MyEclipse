@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Item type="treeNav" cn="树导航" menu="导航控件" jsType="artery-tree"
+	icon="treeNav.gif" iconNew="treeNavNew.gif">
+	<Info>
+		<Author>Artery开发小组</Author>
+		<CreateTime>2008-09-05</CreateTime>
+		<Describe>
+			<![CDATA[
+			静态树导航控件实现了可分组显示，折叠隐藏子项的树状导航功能，通过向导航栏中加入导航目录，导航操作项等内容可快速实现树状结构的导航栏。
+			对于循环出现的控件，导航栏可以通过加入循环区域绑定数据源得以实现。
+			]]>
+		</Describe>
+		<Images>
+			<File>info1.gif</File>
+		</Images>
+	</Info>
+	<Parents>
+		<Parent type="upRegion" />
+		<Parent type="leftRegion" />
+		<Parent type="downRegion" />
+		<Parent type="rightRegion" />
+		<Parent type="centerRegion" />
+		<Parent type="blankPanel" />
+	</Parents>
+	<Children>
+		<Child type="treeCatalog" />
+		<Child type="treeItem" />
+	</Children>
+	<Class>com.thunisoft.artery.plugin.nav.TreeNav
+	</Class>
+	<JsFile>
+		<File>treeNav.js</File>
+	</JsFile>
+	<Properties>
+		<Property cn="标识" type="1" name="id"
+			tips="在同一表单中唯一标识一个表单对象，不可重复，默认由系统自动生成uuid。可更改，便于在脚本中通过Aty.get('id')进行调用。">
+			<Value />
+		</Property>
+		<Property cn="宽度" type="1" name="width" mask="^\d{1,}%{0,1}$"
+			et="正确输入为：n%或n" tips="设置本组件的宽度，可输入数值或百分比">
+			<Value>100%</Value>
+    </Property>
+    <Property cn="高度" type="1" name="height"  mask="^\d{1,}%{0,1}$" et="正确输入为：n%或n" tips="设置本组件的高度，可输入数值或百分比">
+      <Value>100%</Value>
+    </Property>
+    <Property cn="操作区域编号" type="1" name="operAreaId" export="true" tips="指明了此树中节点中的链接将在这里标识的区域中打开。相当于target，一般为框架页面中某个中心布局下面的操作区域id。(使用此属性需要设置连接到的target为空)">
+      <Value />
+    </Property>
+    <Property cn="使用虚线" type="3" name="line" ct="[true,false]" tips="当设置为true时,树的父子节点之间会用虚线连接">
+      <Value>true</Value>
+      <Description>
+      当设置为true时,树的父子节点之间会用虚线连接,设置为false时则不会用虚线连接
+			<![CDATA[
+<table border="1">  
+  <tr>
+   <td><img src='../../resources/images/common/tree/line.gif'></td>
+   <td><img src='../../resources/images/common/tree/arrow.gif'></td>
+  </tr>
+</table>
+			]]>
+		</Description>
+    </Property>
+    <Property cn="使用箭头" type="3" name="useArrows" ct="[true,false]" tips="当设置为true时,树的父节点使用箭头表示收起与展开">
+      <Value>false</Value>
+      <Description>
+      当设置为true时,树的父节点使用箭头表示收起与展开,并且此时默认'使用虚线'为false,且不可修改.
+			<![CDATA[
+<table border="1">  
+  <tr>
+   <td><img src='../../resources/images/common/tree/line.gif'></td>
+   <td><img src='../../resources/images/common/tree/arrow.gif'></td>
+  </tr>
+</table>
+			]]>
+		</Description>
+    </Property>
+    <Property cn="动画效果" type="11" name="animate" export="true" tips="设置展开时是否有动画效果">
+      <Value>false</Value>
+    </Property>
+    <Property cn="展开导航树" type="11" name="expandTree" export="true" tips="设置是否在生成时，展开导航树">
+      <Value>true</Value>
+    </Property>
+    <Property cn="展开级数" type="2" name="expandLevel" tips="用于指定展开几级节点，为0，则都展开，为正数，则展开指定级数，前提：设置expandTree为true">
+      <Value>0</Value>
+    </Property>
+    <Property cn="组件样式" type="1" name="bodyStyle"  tips="设置内容区域容器的样式，可填写css代码。示例：padding:5px;border:1px solid red">
+      <Value />
+    </Property>
+    <Property cn="组件容器样式" type="1" name="style"  tips="设置本组件的样式，可填写css代码">
+      <Value />
+    </Property>
+    <Property cn="样式名称" type="1" name="className"  tips="设置本组件的样式名称，相当于html的className属性，此样式会应用到控件最外层标签上">
+      <Value />
+    </Property>
+    <Property cn="主题样式" type="21" name="themeStyle" tips="设置风格样式">
+	  <Value>inherit</Value>
+	</Property>
+    <Property cn="是否生成" type="11" name="show" tips="当为false时在页面不会生成本组件，即本组件不存在，而不是隐藏本组件，注意与hidden属性的区别">
+      <Value>true</Value>
+    </Property>
+	<Property cn="生成时权限" type="1"  name="showRight"
+		tips="设置后，拥有设置的权限才会生成控件">
+		<Value />
+	</Property>
+    <Property cn="生成时脚本" type="14"  name="onShow" tips="可写服务器端脚本，每个组件都会有此属性，会在系统解析此组件时执行此脚本">
+      <Value />
+    </Property>
+  </Properties>
+  <Methods>
+    <Method name="reloadAllCount" inherit="false" return="void" tips="重新加载全部节点计数" >
+      <Description>
+        <![CDATA[重新加载全部节点计数，会执行全部节点的计数脚本，如：
+        <pre>
+			Artery.get("treeNav").reloadAllCount();
+		</pre>]]>
+      </Description>
+      <Parameters>
+        <Param>无</Param>
+      </Parameters>
+      <Return>void</Return>
+    </Method>
+    <Method name="reloadCount" inherit="false" return="void" tips="重新加载指定的节点计数">
+      <Description>
+        <![CDATA[重新加载指定的节点计数，会执行相应节点的计数脚本，如：
+        <pre>
+			Artery.get("treeNav").reloadCount(["treeItem1","treeItem2"]);
+		</pre>]]>
+      </Description>
+      <Parameters>
+        <Param>na:array 需要重新计数的节点id列表,javascript中的Array对象</Param>
+      </Parameters>
+      <Return>void</Return>
+    </Method>
+  </Methods>
+</Item>
+

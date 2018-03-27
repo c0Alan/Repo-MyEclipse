@@ -1,0 +1,155 @@
+/*ie*/
+.x-tab-strip-top .x-tab-right {
+	display: inline;
+	height: 100%;
+}
+/*ff*/
+html>body .x-tab-strip-top .x-tab-right {
+	display: block;
+}
+
+.x-tab-scroller-right,.x-tab-scroller-left{
+	height: 26px !important;
+}
+
+.x-tab-panel{
+	overflow: visible;
+}
+
+.x-tab-strip-top .x-tab-strip-inner{
+	display: inline-block; /*解决多浏览器时，tab页签的样式显示不正确*/
+	overflow: visible;
+}
+.x-tab-strip-top .x-tab-strip-text{
+	line-height: 16px !important;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+/**覆盖EXT中的样式，解决对浏览器时，tab页面右边滚动不到头的问题**/
+.x-tab-scrolling {
+	position:relative;
+	padding-left:18px;
+	padding-right:18px;
+}
+.x-tab-scrolling .x-tab-strip-wrap {
+	margin-left:0px;
+	margin-right:0px;
+}
+
+/***************************************************************************************
+ * x-theme-nav
+ ***************************************************************************************/
+.x-theme-tabArea-nav .x-tab-panel-header,.x-theme-tabArea-nav .x-tab-panel-footer {
+	background: #fff;
+	border: 0;
+}
+
+.x-theme-tabArea-nav .x-tab-panel-header {
+	border-bottom-width:0px;
+	border-color: #d0d0d0;
+	padding-top: 2px;
+	padding-bottom: 0;
+	background: #DFE8F6;
+	background-image: url("images/tabs/tab-header-bottom.gif");
+	background-repeat: repeat-x;
+	background-position: bottom 0;
+}
+
+.x-theme-tabArea-nav .x-tab-panel-footer {
+	border: 0;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-top {
+	background: none;
+	border-bottom: 0;
+	border-color: #d0d0d0;
+	padding-top: 0px;;
+	border-color: #d0d0d0;
+}
+
+.x-theme-tabArea-nav .x-tab-strip span.x-tab-strip-text {
+	color: #364B63;
+	padding: 5px;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-active .x-tab-strip-text {
+	cursor: default;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-top .x-tab-strip-active .x-tab-right .x-tab-strip-text{
+	padding: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.x-theme-tabArea-nav .x-tab-strip .x-tab-with-icon .x-tab-strip-text {
+	padding-left:20px !important;
+	background-position: 0 7px !important;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-top .x-tab-strip-active .x-tab-right {
+	background-position: 0 0;
+	padding-left:6px;
+	background-image: url(images/tabs/navTab-header-top.gif);
+}
+
+.x-theme-tabArea-nav .x-tab-strip-top .x-tab-strip-active .x-tab-left {
+	background-position: right 0;
+	padding-right:6px;
+	background-image: url(images/tabs/navTab-footer-top.gif);
+}
+
+.x-theme-tabArea-nav .x-tab-strip-top .x-tab-strip-active .x-tab-strip-inner {
+	background-image: none;
+	background-color: #fff;
+	border-top: 1px solid #999;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-over .x-tab-strip-text {
+	color: #111;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-active .x-tab-strip-text {
+	color: #333;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-disabled .x-tabs-text {
+	color: #aaaaaa;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-top .x-tab-right {
+	background-image: none;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-top .x-tab-left {
+	background-image: none;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-top .x-tab-strip-inner {
+	background-image: none;
+}
+
+.x-theme-tabArea-nav .x-tab-strip-closable .x-tab-left {
+    padding-right:10px;
+}
+
+.x-theme-tabArea-nav .x-tab-strip .x-tab-strip-closable .x-tab-strip-close {
+	background-image: url(images/classic/hbg.png);
+}
+
+.x-theme-tabArea-nav .x-tab-strip .x-tab-strip-closable .x-tab-strip-close:hover {
+	background-image: url(images/classic/hbg.png);
+}
+
+.x-theme-tabArea-nav .x-tab-strip .x-tab-strip-close {
+	display: none !important;
+}
+
+.x-theme-tabArea-nav .x-tab-strip .x-tab-strip-active .x-tab-strip-close {
+	display: block !important;
+}
+
+.x-theme-tabArea-nav .x-tab-strip .x-tab-with-icon .x-tab-strip-text {
+	background-position: 0 10px;
+}

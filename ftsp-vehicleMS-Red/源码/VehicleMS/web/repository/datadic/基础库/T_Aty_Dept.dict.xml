@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>dd46faf3bbb006b773066c00d13ad51f</cid>
+  <key />
+  <tableName>T_Aty_Dept</tableName>
+  <showName>部门表</showName>
+  <desc />
+  <fields>
+    <field cid="fb248d3c49e63d9c2c6f6497abcb598d" fieldName="C_ID" fieldType="text" dbmsType="varchar" pk="true" defaultValue="" unique="true" desc="">
+      <extend required="true" label="部门编号" maxLength="50" />
+    </field>
+    <field cid="57576fba3249f0f94712147a6cb22ba8" fieldName="C_Name" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="true" label="部门名称" maxLength="150" />
+    </field>
+    <field cid="10ba91f4fc8d4291a01d381e3cea58a7" fieldName="C_PID" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="父组织编号" maxLength="50" />
+    </field>
+    <field cid="2b183c1fb237f2908d1e489e07f926ad" fieldName="C_CORP" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="所属单位" maxLength="50" />
+    </field>
+    <field cid="3a56e648b49a49471ce87ec87558ba02" fieldName="C_Alias" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false" desc="">
+      <extend required="false" label="简称" maxLength="100" />
+    </field>
+    <field cid="0671a3f46bfc6ea5944c18c6e621d487" fieldName="N_Valid" fieldType="number" dbmsType="number" pk="false" defaultValue="1 " unique="false" desc="">
+      <extend required="true" label="是否有效" maxLength="3" maxPrecision="0" maxValue="255" minValue="0" />
+    </field>
+    <field cid="787a1c643950143b4ef044070c9cdba5" fieldName="N_Order" fieldType="number" dbmsType="number" pk="false" defaultValue="1 " unique="false" desc="">
+      <extend required="true" label="显示顺序" maxLength="5" maxPrecision="0" maxValue="65535" minValue="-65536" />
+    </field>
+  </fields>
+</table>
+
