@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArterySupport cnName="用车管理" cssFolder="artery/arteryClient" defaultLocation="true" javaFolder="arteryServer" jsFolder="artery/arteryClient" server="http://localhost:8080/VehicleMS" src="src" web="web"/>
